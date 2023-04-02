@@ -122,13 +122,13 @@ h2 {
     font-weight: bold;
 }
 
-ol+div,
-ul+div {
+ol+button,
+ul+button {
     text-align: center;
 }
 
-ol+div>i,
-ul+div>i {
+ol+button>i,
+ul+button>i {
     padding: 10px;
 }
 
@@ -357,8 +357,8 @@ h2 {
 
     }
 
-    .steps>ol+div,
-    .topings>ul+div {
+    .steps>ol+button,
+    .topings>ul+button {
         display: none;
     }
 }
