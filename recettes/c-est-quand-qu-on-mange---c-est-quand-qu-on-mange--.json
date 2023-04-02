@@ -1,0 +1,21 @@
+{
+    "title": "C'est quand qu'on mange ? C'est quand qu'on mange ?",
+    "topings": [
+        {
+            "quantity": "1",
+            "unit": "cc",
+            "name": "suc en poud"
+        }
+    ],
+    "steps": [
+        "pwet"
+    ],
+    "for": "1",
+    "preptime": "2",
+    "resttime": "3",
+    "cooktime": "4",
+    "mold": {
+        "name": "Moule qui esixte pas",
+        "picture": "https://www.pngall.com/wp-content/uploads/4/Hole-PNG-Clipart.png"
+    }
+}
