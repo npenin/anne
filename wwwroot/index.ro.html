@@ -1,0 +1,78 @@
+﻿<html>
+
+<head>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+    <link href="/fa/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+    <div class="backdrop"></div>
+    <div class="info">
+        <span mold class="count fal fa-utensils"></i></span>
+        <span mold class="preptime fal fa-hat-chef"></span>
+        <span mold class="resttime fal fa-snooze"></span>
+        <span mold class="cooktime fal fa-oven"></span>
+        <span class="mold">
+            <img src="https://boutique.guydemarle.com/11017-large_default/moule-flower-power.jpg"
+                style="height:75px;width:75px" />
+            <span class="name" mold></span>
+        </span>
+    </div>
+    <header>
+        <h1 mold>C'est quand qu'on mange ? C'est quand qu'on mange ? </h1>
+    </header>
+    <div class="topings">
+        <h2>Ingrédients</h2>
+        <ul>
+        </ul>
+    </div>
+    <div class="steps">
+        <h2>Préparation</h2>
+        <ol>
+        </ol>
+        <span style="position: absolute; bottom:5px; padding-left:24px"><a
+                href="https://www.guydemarle.com/profil/annep_a143-44563">Anne Penin</a>, conseillère Guy Demarle</span>
+    </div>
+    <div class="logo">
+        <img class="qr" src="/qr_code.svg" style="height:100%" />
+        <span class="ad">Retrouvez-moi sur facebook </span>
+        <a href="https://www.facebook.com/profile.php?id=100090744024852">
+            <img src="/logo.svg" style="height:100%" />
+        </a>
+    </div>
+</body>
+<script type="text/javascript">
+
+    if (window.location.pathname)
+    {
+        fetch(window.location.href.replace(/\.html$/i, '.json')).then(async (res) =>
+        {
+            const recipe = await res.json();
+            document.querySelector('h1').innerText = recipe.title;
+            document.querySelector('.info>.count').innerText = recipe.for;
+            document.querySelector('.info>.preptime').innerText = recipe.preptime;
+            document.querySelector('.info>.resttime').innerText = recipe.resttime;
+            document.querySelector('.info>.cooktime').innerText = recipe.cooktime;
+            document.querySelector('.info>.mold>.name').innerText = recipe.mold.name;
+            document.querySelector('.info>.mold>img').src = recipe.mold.picture;
+            recipe.topings.forEach(t =>
+            {
+                const li = addTopings(false);
+                li.querySelector('.quantity').innerText = t.quantity;
+                li.querySelector('.unit').innerText = t.unit;
+                li.querySelector('.toping').innerText = t.name;
+            })
+            recipe.steps.forEach(t =>
+            {
+                const li = addPrepStep(false);
+                li.innerText = t;
+            })
+        })
+    }
+
+
+</script>
+
+</html>
