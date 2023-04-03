@@ -1,4 +1,5 @@
-﻿<html>
+﻿<!DOCTYPE HTML>
+<html lang="fr-fr">
 
 <head>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
@@ -42,37 +43,37 @@
             <img src="/logo.svg" style="height:100%" />
         </a>
     </div>
-</body>
-<script type="text/javascript">
+    <script type="text/javascript">
 
-    if (window.location.pathname)
-    {
-        fetch(window.location.href.replace(/\.html$/i, '.json')).then(async (res) =>
+        if (window.location.pathname)
         {
-            const recipe = await res.json();
-            document.querySelector('h1').innerText = recipe.title;
-            document.querySelector('.info>.count').innerText = recipe.for;
-            document.querySelector('.info>.preptime').innerText = recipe.preptime;
-            document.querySelector('.info>.resttime').innerText = recipe.resttime;
-            document.querySelector('.info>.cooktime').innerText = recipe.cooktime;
-            document.querySelector('.info>.mold>.name').innerText = recipe.mold.name;
-            document.querySelector('.info>.mold>img').src = recipe.mold.picture;
-            recipe.topings.forEach(t =>
+            fetch(window.location.href.replace(/\.html$/i, '.json')).then(async (res) =>
             {
-                const li = addTopings(false);
-                li.querySelector('.quantity').innerText = t.quantity;
-                li.querySelector('.unit').innerText = t.unit;
-                li.querySelector('.toping').innerText = t.name;
+                const recipe = await res.json();
+                document.querySelector('h1').innerText = recipe.title;
+                document.querySelector('.info>.count').innerText = recipe.for;
+                document.querySelector('.info>.preptime').innerText = recipe.preptime;
+                document.querySelector('.info>.resttime').innerText = recipe.resttime;
+                document.querySelector('.info>.cooktime').innerText = recipe.cooktime;
+                document.querySelector('.info>.mold>.name').innerText = recipe.mold.name;
+                document.querySelector('.info>.mold>img').src = recipe.mold.picture;
+                recipe.topings.forEach(t =>
+                {
+                    const li = addTopings(false);
+                    li.querySelector('.quantity').innerText = t.quantity;
+                    li.querySelector('.unit').innerText = t.unit;
+                    li.querySelector('.toping').innerText = t.name;
+                })
+                recipe.steps.forEach(t =>
+                {
+                    const li = addPrepStep(false);
+                    li.innerText = t;
+                })
             })
-            recipe.steps.forEach(t =>
-            {
-                const li = addPrepStep(false);
-                li.innerText = t;
-            })
-        })
-    }
+        }
 
 
-</script>
+    </script>
+</body>
 
 </html>
