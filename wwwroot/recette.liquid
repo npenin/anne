@@ -1,0 +1,52 @@
+﻿---
+layout: index.liquid
+pagination:
+    data: recettes
+    size: 1
+    alias: recette
+permalink: "recettes/{{ recette.title | slugify }}/"
+eleventyComputed:
+    title: "{{recette.title}} - Anne et ses delices"
+tags:
+    - recettes
+    - {{recette.mold.name}}
+---
+    <div class="info">
+        <span class="count fal fa-utensils"></i>{{recette.for}}</span>
+        <span class="preptime fal fa-hat-chef">{{recette.preptime}}</span>
+        <span class="resttime fal fa-snooze">{{recette.resttime}}</span>
+        <span class="cooktime fal fa-oven">{{recette.cooktime}}</span>
+        <span class="mold">
+            <img src="{{recette.mold.picture}}"
+                style="height:75px;width:75px" />
+            <span class="name">{{recette.mold.name}}</span>
+        </span>
+    </div>
+    <header>
+        <h1>C'est quand qu'on mange ? C'est quand qu'on mange ? </h1>
+    </header>
+    <div class="topings">
+        <h2>Ingrédients</h2>
+        <ul>
+        {%- for toping in recette.topings %}
+            <li>{{ toping.quantity }} {{ toping.unit }} {{ toping.name }}</li>
+        {% endfor -%}
+        </ul>
+    </div>
+    <div class="steps">
+        <h2>Préparation</h2>
+        <ol>            
+        {%- for step in recette.steps %}
+            <li>{{ step }}</li>
+        {% endfor -%}
+        </ol>
+        <span style="position: absolute; bottom:5px; padding-left:24px"><a
+                href="https://www.guydemarle.com/profil/annep_a143-44563">Anne Penin</a>, conseillère Guy Demarle</span>
+    </div>
+    <div class="logo">
+        <img class="qr" src="{{relativePath}}/assets/qr_code.svg" style="height:100%" />
+        <span class="ad">Retrouvez-moi sur facebook </span>
+        <a href="https://www.facebook.com/profile.php?id=100090744024852">
+            <img src="{{relativePath}}/assets/logo.svg" style="height:100%" />
+        </a>
+    </div>

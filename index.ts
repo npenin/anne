@@ -14,17 +14,11 @@ server.get(/\/boutique\/.+$/, (req, res) =>
 });
 const recettes = Server();
 
-server.use('/recette/', recettes);
+server.use('/admin/', recettes);
 
-recettes.use(Server.static(path.resolve('./wwwroot'), { fallthrough: true }));
+server.use(Server.static(path.resolve('./_site'), { fallthrough: true }));
 
-recettes.get('*.json', Server.static(path.resolve('recettes'), { fallthrough: false }));
-recettes.get('*', (req, res) =>
-{
-    res.sendFile(path.resolve('./wwwroot/index.html'));
-})
-
-recettes.post('/', jsonbodyparser(), async (req, res) =>
+recettes.post('/recette', jsonbodyparser(), async (req, res) =>
 {
     const recipe = req.body
     try

@@ -1,0 +1,31 @@
+﻿---
+eleventyImport:
+    collections: ["recette"]
+permalink: "recettes/"
+title: "Anne et ses recettes"
+layout: generic.liquid
+pagination:
+    data: recettes
+    size: 1
+    alias: recette
+tags: 
+  - menu
+---
+<ul>
+  {%- for item in collections.recettes %}
+    <li>
+      <a href="{{item.page.url }}">[{{ item.page.date | date: '%d-%m-%Y' }}] {{ item.data.recette.title }}</a>
+    </li>
+  {% endfor -%}
+</ul>
+{%- if pagination.pages.length > 1 %}
+  <nav aria-labelledby="my-pagination">
+    <ol>
+      {%- for pageEntry in pagination.pages %}
+        <li>
+          <a href="{{ pagination.hrefs[ forloop.index0 ] }}"{% if page.url == pagination.hrefs[forloop.index0] %}aria-current="page"{% endif %}>Page {{ forloop.index }}</a>
+        </li>
+      {%- endfor %}
+    </ol>
+  </nav>
+{%- endif %}

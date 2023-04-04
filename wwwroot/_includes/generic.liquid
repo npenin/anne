@@ -1,0 +1,31 @@
+---
+layout: index.liquid
+leftPaneTitle: Menu
+leftPane: "menu"
+mainContentTitle: Recettes
+---
+<header>
+  <h1>{{ title }}</h1>
+</header>
+<div class="topings">
+  <h2>{{ leftPaneTitle }}</h2>
+  {% include leftPane %}
+</div>
+<div class="steps">
+  <h2>{{ mainContentTitle }}</h2>
+  {{ content }}
+  <span style="position: absolute; bottom:5px; padding-left:24px">
+    <a href="https://www.guydemarle.com/profil/annep_a143-44563">Anne Penin</a>, conseillère Guy
+    Demarle</span>
+</div>
+<div class="logo">
+  <img
+    class="qr"
+    src="/assets/qr_code.svg"
+    style="height:100%" />
+  <span class="ad">Retrouvez-moi sur facebook
+  </span>
+  <a href="https://www.facebook.com/profile.php?id=100090744024852">
+    <img src="/assets/logo.svg" style="height:100%" />
+  </a>
+</div>

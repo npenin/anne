@@ -47,13 +47,9 @@ server.get(/\/boutique\/.+$/, (req, res) => {
     fetch(url).then(r => { var _a; return (_a = r.body) === null || _a === void 0 ? void 0 : _a.pipeTo(node_stream_1.Writable.toWeb(res)); });
 });
 const recettes = (0, express_1.default)();
-server.use('/recette/', recettes);
-recettes.use(express_1.default.static(node_path_1.default.resolve('./wwwroot'), { fallthrough: true }));
-recettes.get('*.json', express_1.default.static(node_path_1.default.resolve('recettes'), { fallthrough: false }));
-recettes.get('*', (req, res) => {
-    res.sendFile(node_path_1.default.resolve('./wwwroot/index.html'));
-});
-recettes.post('/', (0, body_parser_1.json)(), (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+server.use('/admin/', recettes);
+server.use(express_1.default.static(node_path_1.default.resolve('./_site'), { fallthrough: true }));
+recettes.post('/recette', (0, body_parser_1.json)(), (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const recipe = req.body;
     try {
         fs.promises.writeFile('recettes/' + recipe.title.replace(/[^a-z]+/gi, '-').toLowerCase() + '.json', JSON.stringify(recipe));

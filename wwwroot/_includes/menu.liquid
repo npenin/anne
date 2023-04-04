@@ -1,0 +1,7 @@
+<ul>
+  {%- for item in collections.menu %}
+    <li>
+      <a href="{{item.page.url}}">{{ item.data.title }}</a>
+    </li>
+  {% endfor -%}
+</ul>
