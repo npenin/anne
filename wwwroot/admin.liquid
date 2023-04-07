@@ -60,30 +60,26 @@ permalink: "/admin/{{recette.title|slugify}}/"
 
     <script>
 
-        if (window.location.pathname)
+        const recipe = {{ recette | json }};
+        document.querySelector('h1').innerText = recipe.title;
+        document.querySelector('.info>.count').innerText = recipe.for;
+        document.querySelector('.info>.preptime').innerText = recipe.preptime;
+        document.querySelector('.info>.resttime').innerText = recipe.resttime;
+        document.querySelector('.info>.cooktime').innerText = recipe.cooktime;
+        document.querySelector('.info>.mold>.name').innerText = recipe.mold.name;
+        document.querySelector('.info>.mold>img').src = recipe.mold.picture;
+        recipe.topings.forEach(t =>
         {
-                const recipe = {{ recette | json }};
-                document.querySelector('h1').innerText = recipe.title;
-                document.querySelector('.info>.count').innerText = recipe.for;
-                document.querySelector('.info>.preptime').innerText = recipe.preptime;
-                document.querySelector('.info>.resttime').innerText = recipe.resttime;
-                document.querySelector('.info>.cooktime').innerText = recipe.cooktime;
-                document.querySelector('.info>.mold>.name').innerText = recipe.mold.name;
-                document.querySelector('.info>.mold>img').src = recipe.mold.picture;
-                recipe.topings.forEach(t =>
-                {
-                    const li = addTopings(false);
-                    li.querySelector('.quantity').innerText = t.quantity;
-                    li.querySelector('.unit').innerText = t.unit;
-                    li.querySelector('.toping').innerText = t.name;
-                })
-                recipe.steps.forEach(t =>
-                {
-                    const li = addPrepStep(false);
-                    li.innerText = t;
-                })
-            })
-        }
+            const li = addTopings(false);
+            li.querySelector('.quantity').innerText = t.quantity;
+            li.querySelector('.unit').innerText = t.unit;
+            li.querySelector('.toping').innerText = t.name;
+        })
+        recipe.steps.forEach(t =>
+        {
+            const li = addPrepStep(false);
+            li.innerText = t;
+        })
 
         dynamic(document.querySelector('.info>.mold>.name'), {
             Enter(ev)
