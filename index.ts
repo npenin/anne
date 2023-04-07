@@ -11,6 +11,11 @@ const Eleventy = require('@11ty/eleventy');
 
 const server = Server()
 
+const eleventy = new Eleventy("wwwroot", "_site", {
+    configPath: 'eleventy.js'
+});
+eleventy.wite();
+
 server.get(/\/boutique\/.+$/, (req, res) =>
 {
     const url = new URL(req.path.substring('/boutique/'.length), 'https://boutique.guydemarle.com/');
