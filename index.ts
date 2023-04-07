@@ -6,6 +6,7 @@ import { json as jsonbodyparser } from 'body-parser'
 import cookieParser = require('cookie-parser')
 import { webcrypto as crypto } from 'node:crypto'
 import credentials from './credentials.json'
+import { spawn } from 'node:child_process'
 
 const server = Server()
 
@@ -58,6 +59,11 @@ server.use('/admin/', cookieParser(), async (req, res, next) =>
 }, recettes);
 
 server.use(Server.static(path.resolve('./_site'), { fallthrough: true }));
+
+recettes.get('/git', () =>
+{
+    spawn('git', ['pull', '--rebase'], { shell: true })
+})
 
 recettes.post('/recette', jsonbodyparser(), async (req, res) =>
 {
