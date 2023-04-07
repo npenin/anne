@@ -71,7 +71,7 @@ recettes.get('/git', () =>
     spawn('git', ['pull', '--rebase'], { shell: true })
 })
 
-recettes.post('/recette', jsonbodyparser(), async (req, res) =>
+recettes.post('/*', jsonbodyparser(), async (req, res) =>
 {
     const recipe = req.body
     try

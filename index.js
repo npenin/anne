@@ -82,7 +82,7 @@ server.use('/admin/', cookieParser(), (req, res, next) => __awaiter(void 0, void
     }
     res.status(401).append('WWW-Authenticate', 'Basic').end();
 }), (req, res, next) => {
-    res.append('set-cookie', `auth=${req.user}; path=/; HttpOnly; Secure`);
+    res.append('set-cookie', `auth=${req.user}; path=/; Max-Age=3600; HttpOnly; Secure`);
     adminCookies[req.user] = credentials_json_1.default[req.user];
     next();
 }, recettes);
@@ -90,7 +90,7 @@ server.use(express_1.default.static(node_path_1.default.resolve('./_site'), { fa
 recettes.get('/git', () => {
     (0, node_child_process_1.spawn)('git', ['pull', '--rebase'], { shell: true });
 });
-recettes.post('/recette', (0, body_parser_1.json)(), (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+recettes.post('/*', (0, body_parser_1.json)(), (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const recipe = req.body;
     try {
         yield fs.promises.writeFile('recettes/' + recipe.title.replace(/[^a-z]+/gi, '-').toLowerCase() + '.json', JSON.stringify(recipe));
