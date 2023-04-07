@@ -87,7 +87,7 @@
         document.querySelector('.info>.mold').addEventListener('click', () => document.querySelector('.info>.mold>.name').focus());
         async function fetchmold(ev)
         {
-            const res = await fetch(ev.target.innerText.replace('http://boutique.guydemarle.com/', '/boutique'));
+            const res = await fetch(ev.target.innerText.replace('https://boutique.guydemarle.com', '/boutique'));
             const content = res.text();
             const dummy = document.createElement('div');
             dummy.innerHTML = await content;

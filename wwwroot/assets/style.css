@@ -84,6 +84,7 @@ h1 {
 
 .topings ul {
     list-style: url('./toque.png');
+    font-size: larger;
 }
 
 .topings {
