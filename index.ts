@@ -7,6 +7,7 @@ import cookieParser = require('cookie-parser')
 import { webcrypto as crypto } from 'node:crypto'
 import credentials from './credentials.json'
 import { spawn } from 'node:child_process'
+const Eleventy = require('@11ty/eleventy');
 
 const server = Server()
 
@@ -70,7 +71,12 @@ recettes.post('/recette', jsonbodyparser(), async (req, res) =>
     const recipe = req.body
     try
     {
-        fs.promises.writeFile('recettes/' + recipe.title.replace(/[^a-z]+/gi, '-').toLowerCase() + '.json', JSON.stringify(recipe));
+        await fs.promises.writeFile('recettes/' + recipe.title.replace(/[^a-z]+/gi, '-').toLowerCase() + '.json', JSON.stringify(recipe));
+
+        const eleventy = new Eleventy("wwwroot", "_site", {
+            configPath: 'eleventy.js'
+        });
+        await eleventy.wite();
         res.status(201);
         res.end();
     }
