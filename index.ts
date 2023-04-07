@@ -59,7 +59,7 @@ server.use('/admin/', cookieParser(), async (req, res, next) =>
     res.status(401).append('WWW-Authenticate', 'Basic').end();
 }, (req, res, next) =>
 {
-    res.append('set-cookie', `auth=${req.user}; path=/; HttpOnly; Secure`);
+    res.append('set-cookie', `auth=${req.user}; path=/; Max-Age=3600; HttpOnly; Secure`);
     adminCookies[req.user] = credentials[req.user];
     next();
 }, recettes);
