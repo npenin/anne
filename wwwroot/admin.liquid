@@ -1,6 +1,10 @@
 ﻿---
-permalink: "/admin/"
+permalink: "/admin/{{recette.name|slugify}}"
 title: Anne et ses délices
+pagination:
+    data: recettes
+    size: 1
+    alias: recette
 ---
 <!DOCTYPE HTML>
 <html lang="fr-fr">
@@ -23,13 +27,13 @@ title: Anne et ses délices
         <span contenteditable class="resttime fal fa-snooze"></span>
         <span contenteditable class="cooktime fal fa-oven"></span>
         <span class="mold">
-            <img src="https://boutique.guydemarle.com/11017-large_default/moule-flower-power.jpg"
+            <img src="{{recette.mold.picture}}"
                 style="height:75px;width:75px" />
-            <span class="name" contenteditable=""></span>
+            <span class="name" contenteditable="">{{recette.mold.name}}</span>
         </span>
     </div>
     <header>
-        <h1 contenteditable></h1>
+        <h1 contenteditable>{{recette.title}}</h1>
     </header>
     <div class="topings">
         <h2>Ingrédients</h2>
@@ -58,9 +62,7 @@ title: Anne et ses délices
 
         if (window.location.pathname)
         {
-            fetch(window.location.href.replace(/\.html$/i, '.json')).then(async (res) =>
-            {
-                const recipe = await res.json();
+                const recipe = {{ recette | json }};
                 document.querySelector('h1').innerText = recipe.title;
                 document.querySelector('.info>.count').innerText = recipe.for;
                 document.querySelector('.info>.preptime').innerText = recipe.preptime;
