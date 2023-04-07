@@ -1,7 +1,13 @@
 <ul>
+  <li>
+    <a href="/">Accueil</a>
+  </li>
   {%- for item in collections.menu %}
     <li>
       <a href="{{item.page.url}}">{{ item.data.title }}</a>
     </li>
   {% endfor -%}
+  <li>
+    <a href="mailto:anne@anneetsesdelices.fr">Contact</a>
+  </li>
 </ul>

@@ -12,6 +12,10 @@ h2 {
     margin: 0;
 }
 
+h1:empty::before {
+    content: "Titre de la recette";
+}
+
 .logo {
     /* background: url('./logo.svg'); */
     height: 100px;
@@ -76,6 +80,10 @@ h1 {
     position: relative;
 
     box-shadow: 0 0 8px #905800;
+}
+
+.topings ul {
+    list-style: none;
 }
 
 .topings {

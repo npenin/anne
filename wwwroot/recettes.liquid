@@ -1,24 +1,25 @@
 ﻿---
 eleventyImport:
-    collections: ["recette"]
-permalink: "recettes/"
+    collections: ["recettes"]
+permalink: "recettes/{% if pagination.pageNumber > 0 %}page-{{ (pagination.pageNumber + 1) }}/{% endif %}index.html"
 title: "Anne et ses recettes"
 layout: generic.liquid
 pagination:
-    data: recettes
-    size: 1
-    alias: recette
+    data: collections.recettes
+    size: 4
+    reverse: true
 tags: 
   - menu
 ---
+
 <ul>
-  {%- for item in collections.recettes %}
+  {% for item in pagination.items reversed %}
     <li>
       <a href="{{item.page.url }}">[{{ item.page.date | date: '%d-%m-%Y' }}] {{ item.data.recette.title }}</a>
     </li>
-  {% endfor -%}
+  {% endfor %}
 </ul>
-{%- if pagination.pages.length > 1 %}
+{% if pagination.pages.length > 1 %}
   <nav aria-labelledby="my-pagination">
     <ol>
       {%- for pageEntry in pagination.pages %}
@@ -28,4 +29,4 @@ tags:
       {%- endfor %}
     </ol>
   </nav>
-{%- endif %}
+{% endif %}

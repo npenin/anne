@@ -4,12 +4,12 @@ pagination:
     data: recettes
     size: 1
     alias: recette
+    addAllPagesToCollections: true
 permalink: "recettes/{{ recette.title | slugify }}/"
 eleventyComputed:
     title: "{{recette.title}} - Anne et ses delices"
 tags:
     - recettes
-    - {{recette.mold.name}}
 ---
     <div class="info">
         <span class="count fal fa-utensils"></i>{{recette.for}}</span>

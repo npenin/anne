@@ -40,6 +40,9 @@ const node_stream_1 = require("node:stream");
 const fs = __importStar(require("node:fs"));
 const node_path_1 = __importDefault(require("node:path"));
 const body_parser_1 = require("body-parser");
+const cookieParser = require("cookie-parser");
+const node_crypto_1 = require("node:crypto");
+const credentials_json_1 = __importDefault(require("./credentials.json"));
 const server = (0, express_1.default)();
 server.get(/\/boutique\/.+$/, (req, res) => {
     const url = new URL(req.path.substring('/boutique/'.length), 'https://boutique.guydemarle.com/');
@@ -47,7 +50,36 @@ server.get(/\/boutique\/.+$/, (req, res) => {
     fetch(url).then(r => { var _a; return (_a = r.body) === null || _a === void 0 ? void 0 : _a.pipeTo(node_stream_1.Writable.toWeb(res)); });
 });
 const recettes = (0, express_1.default)();
-server.use('/admin/', recettes);
+const adminCookies = {};
+const key = fs.promises.readFile('key.pem').then(f => {
+    return node_crypto_1.webcrypto.subtle.importKey('raw', f, { name: 'HMAC', hash: { name: 'SHA-512' } }, false, ['sign', 'verify']);
+}, () => __awaiter(void 0, void 0, void 0, function* () {
+    const key = yield node_crypto_1.webcrypto.subtle.generateKey({ name: 'HMAC', hash: { name: 'SHA-512' } }, true, ['sign', 'verify']);
+    yield fs.promises.writeFile('key.pem', Buffer.from((yield node_crypto_1.webcrypto.subtle.exportKey('raw', key))));
+    return key;
+}));
+server.use('/admin/', cookieParser(), (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
+    console.log(req.headers);
+    if (req.cookies.auth in adminCookies) {
+        req.user = req.cookies.auth;
+        next();
+        return;
+    }
+    if (req.headers.authorization) {
+        const signedAuth = Buffer.from(yield node_crypto_1.webcrypto.subtle.sign('HMAC', yield key, Buffer.from(req.headers.authorization.substring('Basic '.length), 'base64'))).toString('base64');
+        console.log(signedAuth);
+        if (signedAuth in credentials_json_1.default) {
+            req.user = signedAuth;
+            next();
+            return;
+        }
+    }
+    res.status(401).append('WWW-Authenticate', 'Basic').end();
+}), (req, res, next) => {
+    res.append('set-cookie', `auth=${req.user}; path=/; HttpOnly; Secure`);
+    adminCookies[req.user] = credentials_json_1.default[req.user];
+    next();
+}, recettes);
 server.use(express_1.default.static(node_path_1.default.resolve('./_site'), { fallthrough: true }));
 recettes.post('/recette', (0, body_parser_1.json)(), (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const recipe = req.body;

@@ -3,6 +3,9 @@ import { Writable } from 'node:stream'
 import * as fs from 'node:fs'
 import path from 'node:path'
 import { json as jsonbodyparser } from 'body-parser'
+import cookieParser = require('cookie-parser')
+import { webcrypto as crypto } from 'node:crypto'
+import credentials from './credentials.json'
 
 const server = Server()
 
@@ -14,7 +17,45 @@ server.get(/\/boutique\/.+$/, (req, res) =>
 });
 const recettes = Server();
 
-server.use('/admin/', recettes);
+const adminCookies = {};
+
+const key = fs.promises.readFile('key.pem').then(f =>
+{
+    return crypto.subtle.importKey('raw', f, { name: 'HMAC', hash: { name: 'SHA-512' } }, false, ['sign', 'verify']);
+}, async () =>
+{
+    const key = await crypto.subtle.generateKey({ name: 'HMAC', hash: { name: 'SHA-512' } }, true, ['sign', 'verify'])
+    await fs.promises.writeFile('key.pem', Buffer.from((await crypto.subtle.exportKey('raw', key))));
+    return key
+})
+
+server.use('/admin/', cookieParser(), async (req, res, next) =>
+{
+    console.log(req.headers)
+    if (req.cookies.auth in adminCookies)
+    {
+        req.user = req.cookies.auth;
+        next();
+        return;
+    }
+    if (req.headers.authorization)
+    {
+        const signedAuth = Buffer.from(await crypto.subtle.sign('HMAC', await key, Buffer.from(req.headers.authorization.substring('Basic '.length), 'base64'))).toString('base64');
+        console.log(signedAuth);
+        if (signedAuth in credentials)
+        {
+            req.user = signedAuth;
+            next();
+            return;
+        }
+    }
+    res.status(401).append('WWW-Authenticate', 'Basic').end();
+}, (req, res, next) =>
+{
+    res.append('set-cookie', `auth=${req.user}; path=/; HttpOnly; Secure`);
+    adminCookies[req.user] = credentials[req.user];
+    next();
+}, recettes);
 
 server.use(Server.static(path.resolve('./_site'), { fallthrough: true }));
 

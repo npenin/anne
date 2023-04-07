@@ -1,3 +1,7 @@
+---
+meta:
+    og:type: website
+---
 <!DOCTYPE HTML>
 <html lang="fr-fr">
 
@@ -7,7 +11,14 @@
     <link rel="stylesheet" href="/assets/style.css">
     <title>{{ title }}</title>
     <meta name="generator" content="{{ eleventy.generator }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta property="og:title" content="{{title}}" />
+    <meta property="og:url" content="{{permalink}}" />
 
+    {%- for item in meta %}
+      <meta property="{{foorloop.index}}" content="{{item}}" />
+    {% endfor -%}
   </head>
 
   <body>

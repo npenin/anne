@@ -1,0 +1,20 @@
+﻿---
+layout: generic.liquid
+pagination:
+    data: collections.moules
+    size: 1
+    alias: moule
+    reverse: true
+permalink: "moules/{{ moule.data.recette.mold.name | slugify }}/"
+eleventyComputed:
+    title: "{{moule.data.recette.mold.name}} - Anne et ses delices"
+---
+<ul>
+  {% for item in collections.recettes %}
+    {% if item.data.recette.mold.name == moule.data.recette.mold.name %}
+      <li>
+        <a href="{{item.page.url}}">{{ item.data.recette.title }}</a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>

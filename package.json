@@ -4,13 +4,21 @@
   "main": "index.js",
   "license": "MIT",
   "private": true,
+  "type": "commonjs",
   "scripts": {
     "start": "node index.js"
   },
-  "dependencies": {},
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2"
+  },
   "packageManager": "yarn@3.5.0",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "@akala/core": "^10.2.20",
+    "@types/cookie-parser": "^1.4.3",
+    "@types/node": "^18.15.11",
     "typescript": "^5.0.3"
   }
 }
