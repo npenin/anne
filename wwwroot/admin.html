@@ -93,7 +93,7 @@ title: Anne et ses délices
         document.querySelector('.info>.mold').addEventListener('click', () => document.querySelector('.info>.mold>.name').focus());
         async function fetchmold(ev)
         {
-            const res = await fetch(ev.target.innerText.replace('boutique.guydemarle.com', 'dev.dragon-angel.fr/proxy/3000/boutique'));
+            const res = await fetch(ev.target.innerText.replace('http://boutique.guydemarle.com/', '/boutique'));
             const content = res.text();
             const dummy = document.createElement('div');
             dummy.innerHTML = await content;
@@ -177,7 +177,7 @@ title: Anne et ses délices
             self.addEventListener('blur', function (ev)
             {
                 let li = self;
-                while (li.tagName !== 'LI')
+                while (li && li.tagName !== 'LI')
                     li = li.parentNode;
 
                 if (li.innerText == '')

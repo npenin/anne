@@ -83,7 +83,7 @@ h1 {
 }
 
 .topings ul {
-    list-style: none;
+    list-style: url('./toque.png');
 }
 
 .topings {
