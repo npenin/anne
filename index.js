@@ -43,7 +43,13 @@ const body_parser_1 = require("body-parser");
 const cookieParser = require("cookie-parser");
 const node_crypto_1 = require("node:crypto");
 const credentials_json_1 = __importDefault(require("./credentials.json"));
+const node_child_process_1 = require("node:child_process");
+const Eleventy = require('@11ty/eleventy');
 const server = (0, express_1.default)();
+const eleventy = new Eleventy("wwwroot", "_site", {
+    configPath: 'eleventy.js'
+});
+eleventy.write();
 server.get(/\/boutique\/.+$/, (req, res) => {
     const url = new URL(req.path.substring('/boutique/'.length), 'https://boutique.guydemarle.com/');
     console.log(url);
@@ -81,10 +87,17 @@ server.use('/admin/', cookieParser(), (req, res, next) => __awaiter(void 0, void
     next();
 }, recettes);
 server.use(express_1.default.static(node_path_1.default.resolve('./_site'), { fallthrough: true }));
+recettes.get('/git', () => {
+    (0, node_child_process_1.spawn)('git', ['pull', '--rebase'], { shell: true });
+});
 recettes.post('/recette', (0, body_parser_1.json)(), (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const recipe = req.body;
     try {
-        fs.promises.writeFile('recettes/' + recipe.title.replace(/[^a-z]+/gi, '-').toLowerCase() + '.json', JSON.stringify(recipe));
+        yield fs.promises.writeFile('recettes/' + recipe.title.replace(/[^a-z]+/gi, '-').toLowerCase() + '.json', JSON.stringify(recipe));
+        const eleventy = new Eleventy("wwwroot", "_site", {
+            configPath: 'eleventy.js'
+        });
+        yield eleventy.write();
         res.status(201);
         res.end();
     }

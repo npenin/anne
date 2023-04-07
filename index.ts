@@ -14,7 +14,7 @@ const server = Server()
 const eleventy = new Eleventy("wwwroot", "_site", {
     configPath: 'eleventy.js'
 });
-eleventy.wite();
+eleventy.write();
 
 server.get(/\/boutique\/.+$/, (req, res) =>
 {
@@ -81,7 +81,7 @@ recettes.post('/recette', jsonbodyparser(), async (req, res) =>
         const eleventy = new Eleventy("wwwroot", "_site", {
             configPath: 'eleventy.js'
         });
-        await eleventy.wite();
+        await eleventy.write();
         res.status(201);
         res.end();
     }
