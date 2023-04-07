@@ -116,7 +116,7 @@ permalink: "/admin/{{recette.title|slugify}}/"
                 preptime: document.querySelector('.info>.preptime').innerText,
                 resttime: document.querySelector('.info>.resttime').innerText,
                 cooktime: document.querySelector('.info>.cooktime').innerText,
-                mold: document.querySelector('.info>.mold').innerText,
+                mold:{name: document.querySelector('.info>.mold').innerText, picture:document.querySelector('.info>.mold>img').attributes.src},
             };
 
             fetch(window.location.href, { method: 'POST', body: JSON.stringify(recipe), headers: { 'Content-Type': 'application/json' } });
