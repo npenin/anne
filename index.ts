@@ -12,17 +12,21 @@ const Eleventy = require('@11ty/eleventy');
 const server = Server()
 
 const eleventy = new Eleventy("wwwroot", "_site", {
-    configPath: 'eleventy.js'
+    configPath: 'eleventy.js',
+    runMode: process.argv[2] || 'build',
 });
-eleventy.write();
-
-server.get(/\/boutique\/.+$/, (req, res) =>
+eleventy.init().then(() =>
 {
-    const url = new URL(req.path.substring('/boutique/'.length), 'https://boutique.guydemarle.com/');
+    eleventy.write();
+})
+
+const recettes = Server();
+server.get(/\/boutique\/(.+)$/, (req, res) =>
+{
+    const url = new URL(req.params[0], 'https://boutique.guydemarle.com/');
     console.log(url);
     fetch(url).then(r => r.body?.pipeTo(Writable.toWeb(res)));
 });
-const recettes = Server();
 
 const adminCookies = {};
 

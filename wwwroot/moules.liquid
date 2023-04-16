@@ -1,6 +1,6 @@
 ﻿---
 permalink: "moules/"
-title: "Anne et ses moules"
+title: "Anne et ses moules OHRA®"
 layout: generic.liquid
 mainContentTitle: Moules
 pagination:
@@ -12,10 +12,11 @@ tags:
 ---
 <ul>
   {%- for item in collections.moules %}
-    <li>
+    <li class="mold">
       <a href="/moules/{{item.data.recette.mold.name | slugify}}">
         <img src="{{ item.data.recette.mold.picture }}" height="64px" />
-        {{ item.data.recette.mold.name }}</a>
+        <span class="name">{{ item.data.recette.mold.name }}</span>
+      </a>
     </li>
   {% endfor -%}
 </ul>

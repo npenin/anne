@@ -1,31 +1,40 @@
-﻿---
-layout: index.liquid
-title: Anne et son admin
-pagination:
-    data: recettes
-    size: 1
-    alias: recette
-permalink: "/admin/{{recette.title|slugify}}/"
----
-    <div class="toolbar">
+<!DOCTYPE HTML>
+<html lang="fr-fr">
+
+  <head>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link href="/proxy/3000/assets/fa/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/proxy/3000/assets/style.css">
+    <title>Anne et son admin</title>
+    <meta name="generator" content="Eleventy v2.0.1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta property="og:title" content="Anne et son admin">
+    <meta property="og:url" content="/admin/{{recette.title|slugify}}/">
+      <meta property="" content="og:typewebsite">
+    </head>
+
+  <body>
+    <div class="backdrop"></div>
+        <div class="toolbar">
         <i class="fal fa-save fa-2x" onclick="save()"></i>
     </div>
     <div class="info panel">
         <div>
-            <span contenteditable class="count fal fa-utensils"></i></span>
-            <span contenteditable class="preptime fal fa-hat-chef"></span>
-            <span contenteditable class="resttime fal fa-snooze"></span>
-            <span contenteditable class="cooktime fal fa-oven"></span>
+            <span contenteditable="" class="count fal fa-utensils"></span>
+            <span contenteditable="" class="preptime fal fa-hat-chef"></span>
+            <span contenteditable="" class="resttime fal fa-snooze"></span>
+            <span contenteditable="" class="cooktime fal fa-oven"></span>
         </div>
         <div class="mold">
             <a href="#">
-                <img src="{{recette.mold.picture}}" />
+                <img src="https://boutique.guydemarle.com/11017-nq_social_share/moule-flower-power.jpg">
             </a>
-            <span class="name" contenteditable="">{{recette.mold.name}}</span>
+            <span class="name" contenteditable="">Moule 12 Flower Power OHRA®</span>
         </div>
     </div>
     <header>
-        <h1 contenteditable>{{recette.title}}</h1>
+        <h1 contenteditable="">Gâteau à la noix de coco</h1>
     </header>
     <div class="accessories panel">
         <h2>Accessoires</h2>
@@ -44,21 +53,20 @@ permalink: "/admin/{{recette.title|slugify}}/"
         <ol>
         </ol>
         <button onclick="addPrepStep(true)"><i class="fal fa-plus"></i></button>
-        <span style="position: absolute; bottom:5px; padding-left:24px"><a
-                href="https://www.guydemarle.com/profil/annep_a143-44563">Anne Penin</a>, conseillère Guy Demarle</span>
+        <span style="position: absolute; bottom:5px; padding-left:24px"><a href="https://www.guydemarle.com/profil/annep_a143-44563">Anne Penin</a>, conseillère Guy Demarle</span>
     </div>
     <div class="logo">
-        <img class="qr" src="/assets/qr_code.svg" style="height:100%" />
+        <img class="qr" src="/proxy/3000/assets/qr_code.svg" style="height:100%">
         <span class="ad">Retrouvez-moi sur facebook </span>
         <a href="https://www.facebook.com/profile.php?id=100090744024852">
-            <img src="/assets/logo.svg" style="height:100%" />
+            <img src="/proxy/3000/assets/logo.svg" style="height:100%">
         </a>
     </div>
 
     <script>
-        const root=window.location.href.substring(0, window.location.href.length-'{{page.url}}'.length+'/admin/'.length);
+        const root=window.location.href.substring(0, window.location.href.length-'/admin/gateau-a-la-noix-de-coco/'.length+'/admin/'.length);
         
-        const recipe = {{ recette | json }};
+        const recipe = {"title":"Gâteau à la noix de coco","topings":[{"quantity":"3","unit":"Oeufs","name":"\n"},{"quantity":"60","unit":"g","name":"Farine"},{"quantity":"125","unit":"cL","name":"Lait"},{"quantity":"125","unit":"cL","name":"Crème fraîche"},{"quantity":"70","unit":"g","name":"Sucre"},{"quantity":"1","unit":"Sachet ","name":"Sucre vanillé"},{"quantity":"60","unit":"g","name":"Noix de coco râpée"},{"quantity":"1","unit":"Pincée de sel","name":""}],"accessories":[{"name":"Plaque Aluminium perforée 40 x 30 cm","picture":"https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg","url":""},{"name":"Grand cul de poule 3,7L / 25 cm","picture":"https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg","url":"https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"},{"name":"Support cul-de-poule","picture":"https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg","url":"https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"},{"name":"Petit cul de poule 2L / 20 cm","picture":"https://boutique.guydemarle.com/2233-nq_social_share/petit-cul-de-poule-2l-20-cm-guy-demarle.jpg","url":"https://boutique.guydemarle.com/accessoires-de-cuisine/683-petit-cul-de-poule-2l-20-cm-guy-demarle.html"},{"name":"Mini Louche - Rose","picture":"https://boutique.guydemarle.com/9092-nq_social_share/mini-louche-rose-cuisine.jpg","url":"https://boutique.guydemarle.com/accessoires-de-cuisine/3396-mini-louche-rose-cuisine.html"}],"steps":["Poser le moule sur une plaque aluminium perforée.","Séparer les blancs d'œufs des jaunes.","Réserver les blancs.","Dans un petit saladier, mélanger le lait et la crème.","Dans un cul de poule, mettre les jaunes d’oeufs et la farine et mélanger au fouet électrique pour éviter les grumeaux. Ajouter au fur et à mesure le mélange lait/crème sans cesser de battre.","Lorsque le mélange est lisse, ajouter les sucres, puis la noix de coco.","Mélanger énergiquement pour que le mélange redevienne lisse.","Préchauffer le four à 180°C.","Dans un second cul de poule, battre les blancs en neige, avec la pincée de sel, jusqu'à ce qu'ils soient fermes","Ajouter progressivement l’appareil dans les blancs et remuer délicatement.","Verser la préparation obtenue dans le moule flower power à l'aide l'aide la mini-louche pour plus de facilité.","Faire cuire 25 min à 180°C, le temps pourra changer en fonction des fours.","Le dessus du gâteau se colorera en foncé c'est qu'il est cuit.","Laisser refroidir avant de démouler."],"for":"12","preptime":"15 min","resttime":"0","cooktime":"25 min","mold":{"name":"Moule 12 Flower Power OHRA®","picture":"https://boutique.guydemarle.com/11017-nq_social_share/moule-flower-power.jpg","url":"https://dev.dragon-angel.fr/proxy/3000/admin/gateau-a-la-noix-de-coco/#"}};
         document.querySelector('h1').innerText = recipe.title;
         document.querySelector('.info .count').innerText = recipe.for;
         document.querySelector('.info .preptime').innerText = recipe.preptime;
@@ -221,3 +229,6 @@ permalink: "/admin/{{recette.title|slugify}}/"
             });
         }
     </script>
+  </body>
+
+</html>

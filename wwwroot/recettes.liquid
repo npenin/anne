@@ -12,10 +12,10 @@ tags:
   - menu
 ---
 
-<ul>
+<ul style="font-size:larger">
   {% for item in pagination.items reversed %}
     <li>
-      <a href="{{item.page.url }}">[{{ item.page.date | date: '%d-%m-%Y' }}] {{ item.data.recette.title }}</a>
+      <a href="{{item.page.url }}">{{ item.data.recette.title }}</a>
     </li>
   {% endfor %}
 </ul>

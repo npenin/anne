@@ -47,15 +47,18 @@ const node_child_process_1 = require("node:child_process");
 const Eleventy = require('@11ty/eleventy');
 const server = (0, express_1.default)();
 const eleventy = new Eleventy("wwwroot", "_site", {
-    configPath: 'eleventy.js'
+    configPath: 'eleventy.js',
+    runMode: process.argv[2] || 'build',
 });
-eleventy.write();
-server.get(/\/boutique\/.+$/, (req, res) => {
-    const url = new URL(req.path.substring('/boutique/'.length), 'https://boutique.guydemarle.com/');
+eleventy.init().then(() => {
+    eleventy.write();
+});
+const recettes = (0, express_1.default)();
+server.get(/\/boutique\/(.+)$/, (req, res) => {
+    const url = new URL(req.params[0], 'https://boutique.guydemarle.com/');
     console.log(url);
     fetch(url).then(r => { var _a; return (_a = r.body) === null || _a === void 0 ? void 0 : _a.pipeTo(node_stream_1.Writable.toWeb(res)); });
 });
-const recettes = (0, express_1.default)();
 const adminCookies = {};
 const key = fs.promises.readFile('key.pem').then(f => {
     return node_crypto_1.webcrypto.subtle.importKey('raw', f, { name: 'HMAC', hash: { name: 'SHA-512' } }, false, ['sign', 'verify']);

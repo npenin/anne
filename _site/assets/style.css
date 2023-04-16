@@ -54,7 +54,7 @@ h1:empty::before {
 
 body {
     display: grid;
-    grid-template-rows: auto 1fr 120px;
+    grid-template-rows: auto auto 1fr 120px;
     grid-template-columns: 35% 65%;
 }
 
@@ -72,13 +72,10 @@ h1 {
     grid-row: 1;
 }
 
-.steps,
-.topings {
+.panel {
     background-color: rgba(255, 255, 255, .5);
     border-radius: 24px;
     margin: 20px;
-    position: relative;
-
     box-shadow: 0 0 8px #905800;
 }
 
@@ -87,16 +84,24 @@ h1 {
     font-size: larger;
 }
 
+.steps ol {
+    font-size: larger;
+}
+
 .topings {
     grid-column: 1;
-    grid-row: 2;
-    margin-left: 5px;
+    grid-row: 3;
 }
 
 .steps {
     grid-column: 2;
-    grid-row-start: 2;
-    grid-row-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.topings,
+.steps {
+    position: relative;
 }
 
 .topings:before,
@@ -117,7 +122,7 @@ h1 {
 
 .logo {
     grid-column: 1;
-    grid-row: 3;
+    grid-row: 4;
 
     /* -webkit-print-color-adjust: exact;
     print-color-adjust: exact; */
@@ -142,7 +147,6 @@ ul+button>i {
 }
 
 ol {
-    margin: 0 0 1.5em;
     padding: 0;
     counter-reset: item;
 }
@@ -175,7 +179,7 @@ ol>li:before {
 header {
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row: 1;
+    grid-row: 1/1;
 }
 
 h1 {
@@ -189,42 +193,44 @@ h2 {
 }
 
 .info {
-    grid-column: 1;
-    grid-row: 1;
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: stretch;
+}
+
+.info>div:first-child {
     display: flex;
     flex-direction: row;
-    margin: 20px;
-    margin-left: 5px;
-
-    background-color: rgba(255, 255, 255, .5);
-    border-radius: 24px;
     justify-content: space-evenly;
-    flex-wrap: wrap;
-    box-shadow: 0 0 8px #905800;
 
 }
 
-.info>span {
-    padding: 10px 0;
-    font-size: 12pt;
+.info>div>span,
+.mold {
+    padding: 10px 10px;
+    font-size: 14pt;
     margin: 0;
     display: flex;
     text-align: center;
     align-items: center;
+    align-self: center;
 }
 
-.info>span.fal {
+.info span.fal {
     height: 75px;
     width: 75px;
     font-size: 14pt;
     flex-direction: column;
 }
 
-.info>span>img {
+.mold>a>img {
     margin-right: 10px;
 }
 
-.info>span:before {
+.info>div>span:before {
     display: block;
     color: var(--primary-color);
     font-size: 16pt;
@@ -232,7 +238,7 @@ h2 {
     margin-bottom: 5px;
 }
 
-.info>span:empty:after {
+.info>div>span:empty:after {
     font-size: smaller;
     color: #888;
     font-family: Arial, Helvetica, sans-serif;
@@ -255,9 +261,11 @@ h2 {
     content: "Cuisson";
 }
 
-.info>span>img {
+.mold>a>img {
     box-shadow: 0 0 3px #905800;
     border-radius: 50px;
+    height: 75px;
+    width: 75px;
 }
 
 .info>.mold>.name:empty:after {
@@ -266,8 +274,78 @@ h2 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.steps {
+.accessories {
+    padding: 10px;
+    grid-column: 1;
+    grid-row: span 2;
+}
+
+.accessories>ul {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.accessories>ul>.mold>.name:empty:after {
+    content: 'Lien vers l\'accessoire';
+    color: #888;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.accessories>ul>.mold {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.accessories>ul>.mold>.name:empty,
+.accessories>ul>.mold>.name:focus,
+.accessories>ul>.mold>.name:active {
+    display: inline;
+}
+
+.accessories>ul .steps {
     padding-bottom: 1em;
+}
+
+@media screen and (max-width:768px) {
+    .accessories {
+        grid-row: 3;
+        grid-column: 1;
+    }
+
+    .info {
+        grid-row: 2;
+        grid-column: 1;
+        margin-left: 20px;
+    }
+
+    .topings {
+        grid-row: 4;
+        grid-column: 1;
+        margin-left: 20px;
+    }
+
+    .logo {
+        grid-row: 6;
+        grid-column: 1;
+    }
+
+    .steps {
+        grid-row: 5;
+        grid-column: 1;
+    }
+
+    header {
+        grid-column: 1;
+    }
+
+    body {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
 }
 
 @media print {
@@ -310,7 +388,7 @@ h2 {
             grid-template-columns: 9cm auto;
         }
 
-        .info>span.fal {
+        .info>div>span.fal {
             width: 2cm;
         }
     }
@@ -322,7 +400,7 @@ h2 {
     }
 
 
-    .info>span>img {
+    .info>div>span>img {
         box-shadow: none;
         border-radius: 0;
     }
@@ -345,7 +423,7 @@ h2 {
     }
 
 
-    .info>span:empty:after {
+    .info>div>span:empty:after {
         content: "-" !important;
     }
 

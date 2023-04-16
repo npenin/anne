@@ -11,21 +11,39 @@ eleventyComputed:
 tags:
     - recettes
 ---
-    <div class="info">
-        <span class="count fal fa-utensils"></i>{{recette.for}}</span>
-        <span class="preptime fal fa-hat-chef">{{recette.preptime}}</span>
-        <span class="resttime fal fa-snooze">{{recette.resttime}}</span>
-        <span class="cooktime fal fa-oven">{{recette.cooktime}}</span>
-        <span class="mold">
-            <img src="{{recette.mold.picture}}"
-                style="height:75px;width:75px" />
+    <div class="info panel">
+        <div>
+            <span class="count fal fa-utensils"></i>{{recette.for}}</span>
+            <span class="preptime fal fa-hat-chef">{{recette.preptime}}</span>
+            <span class="resttime fal fa-snooze">{{recette.resttime}}</span>
+            <span class="cooktime fal fa-oven">{{recette.cooktime}}</span>
+        </div>
+        <div class="mold">
+            <a href="{{recette.mold.url || '#'}}">
+                <img src="{{recette.mold.picture}}" />
+            </a>
             <span class="name">{{recette.mold.name}}</span>
-        </span>
+        </div>
     </div>
+    {% if recette.accessories.length %}
+    <div class="accessories panel">
+        <h2>Accessoires</h2>
+        <ul>
+            {%- for accessory in recette.accessories %}
+                <li class="mold">
+                    <a href="{{accessory.url}}">
+                        <img src="{{accessory.picture}}" />
+                    </a>
+                    <span class="name">{{accessory.name}}</span>
+                </li>
+            {% endfor -%}    
+        </ul>
+    </div>
+        {% endif %}
     <header>
         <h1>{{recette.title}}</h1>
     </header>
-    <div class="topings">
+    <div class="topings panel">
         <h2>Ingrédients</h2>
         <ul>
         {%- for toping in recette.topings %}
@@ -33,15 +51,15 @@ tags:
         {% endfor -%}
         </ul>
     </div>
-    <div class="steps">
+    <div class="steps panel">
         <h2>Préparation</h2>
         <ol>            
         {%- for step in recette.steps %}
             <li>{{ step }}</li>
         {% endfor -%}
         </ol>
-        <span style="position: absolute; bottom:5px; padding-left:24px"><a
-                href="https://www.guydemarle.com/profil/annep_a143-44563">Anne Penin</a>, conseillère Guy Demarle</span>
+        <span style="padding-top:10px; padding-bottom:5px; padding-left:24px"><a
+                href="https://www.guydemarle.com/profil/annep_a143-44563">Anne Penin</a>, votre conseillère Guy Demarle</span>
     </div>
     <div class="logo">
         <img class="qr" src="{{relativePath}}/assets/qr_code.svg" style="height:100%" />
