@@ -86,6 +86,12 @@ recettes.post('/*', jsonbodyparser(), async (req, res) =>
             configPath: 'eleventy.js'
         });
         await eleventy.write();
+        console.log(req.path);
+        if (req.path === '/')
+        {
+            res.redirect('/admin/' + recipe.title.replace(/[^a-z]+/gi, '-').toLowerCase());
+            return;
+        }
         res.status(201);
         res.end();
     }

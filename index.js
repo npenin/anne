@@ -101,6 +101,11 @@ recettes.post('/*', (0, body_parser_1.json)(), (req, res) => __awaiter(void 0, v
             configPath: 'eleventy.js'
         });
         yield eleventy.write();
+        console.log(req.path);
+        if (req.path === '/') {
+            res.redirect('/admin/' + recipe.title.replace(/[^a-z]+/gi, '-').toLowerCase());
+            return;
+        }
         res.status(201);
         res.end();
     }
