@@ -15,6 +15,5 @@ module.exports = function (config)
         return recettes.filter(r => r.data.recette.mold.name == moule);
     });
     return {
-        pathPrefix: '/proxy/3000/'
     };
 };
