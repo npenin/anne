@@ -1,0 +1,193 @@
+﻿---
+layout: index.liquid
+title: Anne et son admin
+permalink: "/admin/"
+---
+    <div class="toolbar">
+        <i class="fal fa-save fa-2x" onclick="save()"></i>
+    </div>
+    <div class="info panel">
+        <div>
+            <span contenteditable class="count fal fa-utensils"></i></span>
+            <span contenteditable class="preptime fal fa-hat-chef"></span>
+            <span contenteditable class="resttime fal fa-snooze"></span>
+            <span contenteditable class="cooktime fal fa-oven"></span>
+        </div>
+        <div class="mold">
+            <a href="#">
+                <img />
+            </a>
+            <span class="name" contenteditable=""></span>
+        </div>
+    </div>
+    <header>
+        <h1 contenteditable></h1>
+    </header>
+    <div class="accessories panel">
+        <h2>Accessoires</h2>
+        <ul></ul>
+        <button onclick="addAccessory(true)"><i class="fal fa-plus"></i></button>
+    </div>
+    <div class="topings panel">
+        <h2>Ingrédients</h2>
+        <ul>
+        </ul>
+        <button onclick="addTopings(true)"><i class="fal fa-plus"></i></button>
+
+    </div>
+    <div class="steps panel">
+        <h2>Préparation</h2>
+        <ol>
+        </ol>
+        <button onclick="addPrepStep(true)"><i class="fal fa-plus"></i></button>
+        <span style="position: absolute; bottom:5px; padding-left:24px"><a
+                href="https://www.guydemarle.com/profil/annep_a143-44563">Anne Penin</a>, conseillère Guy Demarle</span>
+    </div>
+    <div class="logo">
+        <img class="qr" src="/assets/qr_code.svg" style="height:100%" />
+        <span class="ad">Retrouvez-moi sur facebook </span>
+        <a href="https://www.facebook.com/profile.php?id=100090744024852">
+            <img src="/assets/logo.svg" style="height:100%" />
+        </a>
+    </div>
+
+    <script>
+        const root=window.location.href.substring(0, window.location.href.length);
+        
+        dynamic(document.querySelector('.info>.mold>.name'), {
+            Enter(ev)
+            {
+                fetchmold(ev).then(()=>ev.target.blur());
+            }
+        })
+        document.querySelector('.mold').addEventListener('click', () => document.querySelector('.info>.mold>.name').focus());
+        async function fetchmold(ev)
+        {
+            const res = await fetch(new URL(ev.target.innerText.replace('https://boutique.guydemarle.com', 'boutique'), root));
+            const content = res.text();
+            const dummy = document.createElement('div');
+            dummy.innerHTML = await content;
+            const meta = Object.fromEntries(Array.from(dummy.querySelectorAll('meta').values()).filter(v => v.attributes.property).map(v => [v.attributes.property.value, v.attributes.content.value]));
+            dummy.remove();
+            ev.target.innerText = meta['og:title'];
+            ev.target.parentNode.querySelector('img').src = meta['og:image'];
+            ev.target.parentNode.querySelector('a').href = meta['og:url'];
+        }
+
+        async function save()
+        {
+            const recipe = {
+                title: document.querySelector('h1').innerText,
+                topings: Array.from(document.querySelectorAll('.topings li')).map(li => ({
+                    quantity: li.querySelector('.quantity').innerText,
+                    unit: li.querySelector('.unit').innerText,
+                    name: li.querySelector('.toping').innerText
+                })),
+                accessories:Array.from(document.querySelectorAll('.accessories > ul > li')).map(span=>({
+                    name: span.querySelector('.name').innerText,
+                    picture: span.querySelector('img').src,
+                    url: span.querySelector('a').href,
+                })),
+                steps: Array.from(document.querySelectorAll('.steps li')).map(li => li.innerText),
+                for: document.querySelector('.info .count').innerText,
+                preptime: document.querySelector('.info .preptime').innerText,
+                resttime: document.querySelector('.info .resttime').innerText,
+                cooktime: document.querySelector('.info .cooktime').innerText,
+                mold:{
+                    name: document.querySelector('.info>.mold').innerText, 
+                    picture:document.querySelector('.info>.mold>a>img').src,
+                    url:document.querySelector('.info>.mold>a').href,
+                },
+            };
+
+            const r = await fetch(window.location.href, { method: 'POST', body: JSON.stringify(recipe), headers: { 'Content-Type': 'application/json' } });
+            if (r.redirected)
+                window.location.assign(r.url);
+        }
+
+        function addAccessory(focus)
+        {
+            const li = document.createElement('li')
+            li.classList.add('mold');
+            const a = document.createElement('a');
+            a.target='_blank';
+            li.appendChild(a);
+            const img=document.createElement('img');
+            a.appendChild(img);
+            const name = document.createElement('span')
+            name.classList.add('name');
+            name.contentEditable=true;
+            li.appendChild(name);
+            document.querySelector('.accessories>ul').appendChild(li);
+            dynamic(name, { Enter:(ev) => {
+                if(ev.target.innerText!=='')
+                    fetchmold(ev).then(()=>ev.target.blur());
+                else
+                    li.remove();
+            } });
+            if (focus)
+                name.focus();
+            return li;
+        }
+
+        function addPrepStep(focus)
+        {
+            const li = document.createElement('li')
+            li.contentEditable = true;
+            document.querySelector('.steps ol').appendChild(li);
+            dynamic(li);
+            if (focus)
+                li.focus();
+            return li;
+        }
+
+        function addTopings(focus)
+        {
+            const li = document.createElement('li')
+            const quantity = document.createElement('span')
+            const unit = document.createElement('span')
+            const toping = document.createElement('span')
+            quantity.classList.add('quantity');
+            unit.classList.add('unit');
+            toping.classList.add('toping');
+            quantity.contentEditable = true;
+            unit.contentEditable = true;
+            toping.contentEditable = true;
+            li.appendChild(quantity);
+            li.appendChild(unit);
+            li.appendChild(toping);
+            // li.contentEditable = true;
+            document.querySelector('.topings ul').appendChild(li);
+            dynamic(quantity, { Enter(ev) { unit.focus(); ev.preventDefault(); return false } })
+            dynamic(unit, { Enter(ev) { toping.focus(); ev.preventDefault(); return false } })
+            dynamic(toping, { Enter(ev) { toping.blur(); setTimeout(() => addTopings(true)); ev.preventDefault(); return false } });
+            if (focus)
+                quantity.focus();
+            return li;
+        }
+
+        function dynamic(self, keys)
+        {
+            keys = Object.assign({}, keys);
+            self.addEventListener('keydown', function (ev)
+            {
+                if (self.innerText === '' && (ev.key == 'Delete' || ev.key == 'Backspace' || ev.key == 'Escape'))
+                {
+                    self.blur();
+                }
+                //else if (this.innerText === '' && ev.key.length > 1 && ev.key !== 'Unidentified')
+                //    self.innerText = ev.key;
+                else if (ev.key in keys)
+                    keys[ev.key](ev);
+            });
+            self.addEventListener('blur', function (ev)
+            {
+                let li = self;
+                while (li && li.tagName !== 'LI')
+                    li = li.parentNode;
+
+                if (li && li.textContent == '')
+                    li.remove();
+            });
+        }
+    </script>

@@ -6,7 +6,7 @@ module.exports = function (config)
     config.addPlugin(EleventyHtmlBasePlugin);
     config.addCollection("moules", function (collections)
     {
-        const result = akala.distinctStrings(collections.getFilteredByTag('recettes').filter(item => item.data.recette.mold), (item) => item.data.recette.mold.name);
+        const result = akala.distinctStrings(collections.getFilteredByTag('recettes').filter(item => item.data.recette.mold?.name), (item) => item.data.recette.mold.name);
         // console.log(result.map(p => p.data.recette.mold));
         return result;
     });
