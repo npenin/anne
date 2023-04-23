@@ -310,6 +310,15 @@ h2 {
     padding-bottom: 1em;
 }
 
+.steps {
+    display: flex;
+    flex-direction: column;
+}
+
+.steps p {
+    margin-top: auto;
+}
+
 @media screen and (max-width:768px) {
     .accessories {
         grid-row: 3;
@@ -421,7 +430,6 @@ h2 {
     .steps {
         margin-right: 0;
     }
-
 
     .info>div>span:empty:after {
         content: "-" !important;
