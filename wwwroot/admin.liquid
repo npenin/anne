@@ -117,7 +117,7 @@ permalink: "/admin/{{recette.title|slugify}}/"
             }
         })
         document.querySelector('.mold').addEventListener('click', () => document.querySelector('.info>.mold>.name').focus());
-        export async function fetchmold(ev)
+        window.fetchmold= async function fetchmold(ev)
         {
             const res = await fetch(new URL(ev.target.innerText.replace('https://boutique.guydemarle.com', 'boutique'), root));
             const content = res.text();
@@ -130,7 +130,7 @@ permalink: "/admin/{{recette.title|slugify}}/"
             ev.target.parentNode.querySelector('a').href = meta['og:url'];
         }
 
-        export async function save()
+        window.save= async function save()
         {
             const recipe = {
                 title: document.querySelector('h1').innerText,
@@ -178,7 +178,7 @@ permalink: "/admin/{{recette.title|slugify}}/"
             })
         }
 
-        export function addAccessory(focus)
+        window.addAccessory= function addAccessory(focus)
         {
             const li = document.createElement('li')
             li.classList.add('mold');
@@ -203,7 +203,7 @@ permalink: "/admin/{{recette.title|slugify}}/"
             return li;
         }
 
-        export function addPrepStep(focus)
+        window.addPrepStep= function addPrepStep(focus)
         {
             const li = document.createElement('li')
             li.contentEditable = true;
@@ -214,7 +214,7 @@ permalink: "/admin/{{recette.title|slugify}}/"
             return li;
         }
 
-        export function addTopings(focus)
+        window.addTopings= function addTopings(focus)
         {
             const li = document.createElement('li')
             const quantity = document.createElement('span')
