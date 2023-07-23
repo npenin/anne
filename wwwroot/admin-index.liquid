@@ -59,24 +59,54 @@ permalink: "/admin/"
         let token = localStorage.getItem('GITHUB_TOKEN');
         if(!token && (token = prompt('Token?')))
             localStorage.setItem('GITHUB_TOKEN', token)
-        
+        let username = localStorage.getItem('user.name');
+        if(!username && (username = prompt('user name?')))
+            localStorage.setItem('user.name', username)
+        let usermail = localStorage.getItem('user.email');
+        if(!usermail && (usermail = prompt('user.email')))
+            localStorage.setItem('user.email', usermail)
+            
         const dir="/{{recette.title|slugify}}"
         const root=window.location.href.substring(0, window.location.href.length-'{{page.url}}'.length+'/admin/'.length);
         // Initialize isomorphic-git with a file system
         const fs = new LightningFS('fs')
 
         const pfs = fs.promises
-
-        await git.clone({
+        if((await pfs.readdir(dir)).length)
+        {
+            await git.setConfig({
             fs,
-            http,
             dir,
-            corsProxy: 'https://cors.isomorphic-git.org',
-            url: 'https://github.com/npenin/anne',
-            ref: 'master',
-            singleBranch: true,
-            depth: 1
-        });
+            path: 'user.name',
+            value: username
+            })
+            
+            await git.setConfig({
+            fs,
+            dir,
+            path: 'user.email',
+            value: usermail
+            })
+         
+            await git.pull({
+                fs,
+                http,
+                dir,
+                ref: 'master',
+                singleBranch: true,
+            });
+        }
+        else
+            await git.clone({
+                fs,
+                http,
+                dir,
+                corsProxy: 'https://cors.isomorphic-git.org',
+                url: 'https://github.com/npenin/anne',
+                ref: 'master',
+                singleBranch: true,
+                depth: 1
+            });
 
         dynamic(document.querySelector('.info>.mold>.name'), {
             Enter(ev)
@@ -85,9 +115,9 @@ permalink: "/admin/"
             }
         })
         document.querySelector('.mold').addEventListener('click', () => document.querySelector('.info>.mold>.name').focus());
-        async function fetchmold(ev)
+        window.fetchmold= async function fetchmold(ev)
         {
-            const res = await fetch(new URL(ev.target.innerText.replace('https://boutique.guydemarle.com', 'boutique'), root));
+            const res = await fetch(new URL(ev.target.innerText.replace('https://boutique.guydemarle.com', 'https://d2quloop9d8ihx.cloudfront.net'), root));
             const content = res.text();
             const dummy = document.createElement('div');
             dummy.innerHTML = await content;
@@ -98,7 +128,7 @@ permalink: "/admin/"
             ev.target.parentNode.querySelector('a').href = meta['og:url'];
         }
 
-        async function save()
+        window.save= async function save()
         {
             const recipe = {
                 title: document.querySelector('h1').innerText,
@@ -123,9 +153,9 @@ permalink: "/admin/"
                     url:document.querySelector('.info>.mold>a').href,
                 },
             };
-
-            await pfs.writeFile('recettes/${{recette.title|slugify}}', JSON.stringify(recipe));            
-            await git.add({fs, dir, filepath: 'README.md'})
+        const filename=`${dir}/recettes/${recipe.title.replace(/[^a-z]+/gi, '-').toLowerCase()}.json`;
+            await pfs.writeFile(filename, JSON.stringify(recipe));            
+            await git.add({fs, dir, filepath: filename.substring(dir.length+1)})
             let sha = await git.commit({
             fs,
             dir,
@@ -146,7 +176,7 @@ permalink: "/admin/"
             })
         }
 
-        function addAccessory(focus)
+        window.addAccessory= function addAccessory(focus)
         {
             const li = document.createElement('li')
             li.classList.add('mold');
@@ -171,7 +201,7 @@ permalink: "/admin/"
             return li;
         }
 
-        function addPrepStep(focus)
+        window.addPrepStep= function addPrepStep(focus)
         {
             const li = document.createElement('li')
             li.contentEditable = true;
@@ -182,7 +212,7 @@ permalink: "/admin/"
             return li;
         }
 
-        function addTopings(focus)
+        window.addTopings= function addTopings(focus)
         {
             const li = document.createElement('li')
             const quantity = document.createElement('span')
