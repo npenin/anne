@@ -67,16 +67,25 @@ permalink: "/admin/"
 
         const pfs = fs.promises
 
-        git.clone({
-            fs,
-            http,
-            dir,
-            corsProxy: 'https://cors.isomorphic-git.org',
-            url: 'https://github.com/npenin/anne',
-            ref: 'master',
-            singleBranch: true,
-            depth: 1
-        });
+        if(await pfs.readdir().length)
+            await git.pull({
+                fs,
+                http,
+                dir,
+                ref: 'master',
+                singleBranch: true,
+            });
+        else
+            await git.clone({
+                fs,
+                http,
+                dir,
+                corsProxy: 'https://cors.isomorphic-git.org',
+                url: 'https://github.com/npenin/anne',
+                ref: 'master',
+                singleBranch: true,
+                depth: 1
+            });
 
         dynamic(document.querySelector('.info>.mold>.name'), {
             Enter(ev)
