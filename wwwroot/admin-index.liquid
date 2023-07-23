@@ -59,15 +59,35 @@ permalink: "/admin/"
         let token = localStorage.getItem('GITHUB_TOKEN');
         if(!token && (token = prompt('Token?')))
             localStorage.setItem('GITHUB_TOKEN', token)
-        
+        let username = localStorage.getItem('user.name');
+        if(!username && (username = prompt('user name?')))
+            localStorage.setItem('user.name', username)
+        let usermail = localStorage.getItum('user.email');
+        if(!usermail && (usermail = prompt('user.email')))
+            localStorage.setItem('user.email', usermail)
+            
         const dir="/{{recette.title|slugify}}"
         const root=window.location.href.substring(0, window.location.href.length-'{{page.url}}'.length+'/admin/'.length);
         // Initialize isomorphic-git with a file system
         const fs = new LightningFS('fs')
 
         const pfs = fs.promises
-
         if((await pfs.readdir(dir)).length)
+        {
+            await git.setConfig({
+            fs,
+            dir,
+            path: 'user.name',
+            value: username
+            })
+            
+            await git.setConfig({
+            fs,
+            dir,
+            path: 'user.email',
+            value: usermail
+            })
+         
             await git.pull({
                 fs,
                 http,
@@ -75,6 +95,7 @@ permalink: "/admin/"
                 ref: 'master',
                 singleBranch: true,
             });
+        }
         else
             await git.clone({
                 fs,
