@@ -61,7 +61,7 @@ permalink: "/admin/{{recette.title|slugify}}/"
         import http from 'https://unpkg.com/isomorphic-git@beta/http/web/index.js'
 
         let token = localStorage.getItem('GITHUB_TOKEN');
-        if(!token && token = prompt('Token?'))
+        if(!token && (token = prompt('Token?')))
             localStorage.setItem('GITHUB_TOKEN', token)
         
         const dir="/{{recette.title|slugify}}"
