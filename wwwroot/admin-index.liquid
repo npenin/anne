@@ -125,7 +125,7 @@ permalink: "/admin/"
             };
         const filename=`${dir}/recettes/${recipe.title.replace(/[^a-z]+/gi, '-').toLowerCase()}.json`;
             await pfs.writeFile(filename, JSON.stringify(recipe));            
-            await git.add({fs, dir, filepath: filename.substring(dir.length)})
+            await git.add({fs, dir, filepath: filename.substring(dir.length+1)})
             let sha = await git.commit({
             fs,
             dir,
