@@ -124,7 +124,7 @@ permalink: "/admin/"
                 },
             };
 
-            await pfs.writeFile('recettes/${{recette.title|slugify}}', JSON.stringify(recipe));            
+            await pfs.writeFile(`${dir}/recettes/${recipe.title.replace(/[^a-z]+/gi, '-').toLowerCase()}.json`, JSON.stringify(recipe));            
             await git.add({fs, dir, filepath: 'README.md'})
             let sha = await git.commit({
             fs,
