@@ -70,7 +70,7 @@ permalink: "/admin/{{recette.title|slugify}}/"
         const fs = new LightningFS('fs')
 
         const pfs = fs.promises
-        if(await pfs.readdir('.').length)
+        if(await pfs.readdir(dir).length)
             await git.pull({
                 fs,
                 http,
