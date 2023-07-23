@@ -70,13 +70,13 @@ permalink: "/admin/{{recette.title|slugify}}/"
         if(!usermail && (usermail = prompt('user.email')))
             localStorage.setItem('user.email', usermail)
             
-        const dir="/{{recette.title|slugify}}"
+        const dir="/{{recette.filepath}}"
         const root=window.location.href.substring(0, window.location.href.length-'{{page.url}}'.length+'/admin/'.length);
         // Initialize isomorphic-git with a file system
         const fs = new LightningFS('fs')
 
         const pfs = fs.promises;
-        
+
         (async function (){
         if((await pfs.readdir(dir)).length)
         {
@@ -144,6 +144,8 @@ permalink: "/admin/{{recette.title|slugify}}/"
             li.innerText = t;
         })
 
+        await Notification.requestPermission();
+
         dynamic(document.querySelector('.info>.mold>.name'), {
             Enter(ev)
             {
@@ -190,11 +192,9 @@ permalink: "/admin/{{recette.title|slugify}}/"
                 },
             };
 
-            const filename=`${dir}/recettes/{{recipe.title | slugify}}.json`;
+            const filename=`${dir}/recettes/{{recette.filepath}}.json`;
             await pfs.writeFile(filename, JSON.stringify(recipe));            
             await git.add({fs, dir, filepath: filename.substring(dir.length+1)})
-
-            await git.add({fs, dir, filepath: 'README.md'})
             let sha = await git.commit({
             fs,
             dir,
@@ -213,6 +213,9 @@ permalink: "/admin/{{recette.title|slugify}}/"
                 ref: 'master',
                 onAuth: () => ({ username: token }),
             })
+
+            if(await Notification.requestPermission())
+                new Notification('Recette enregistree');
         }
 
         window.addAccessory= function addAccessory(focus)

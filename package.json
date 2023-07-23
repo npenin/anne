@@ -6,7 +6,7 @@
   "private": true,
   "type": "commonjs",
   "scripts": {
-    "start": "node index.js"
+    "build": "yarn eleventy --config=eleventy.js --input=wwwroot"
   },
   "dependencies": {
     "body-parser": "^1.20.2",

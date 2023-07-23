@@ -73,7 +73,7 @@ permalink: "/admin/"
 
        
         const pfs = fs.promises;
-        
+
         (async function (){
         if((await pfs.readdir(dir)).length)
         {
@@ -113,6 +113,8 @@ permalink: "/admin/"
 
             document.querySelector('.fa-save').style.visibility='visible'
         })()
+        
+        await Notification.requestPermission();
 
         dynamic(document.querySelector('.info>.mold>.name'), {
             Enter(ev)
@@ -180,6 +182,10 @@ permalink: "/admin/"
                 ref: 'master',
                 onAuth: () => ({ username: token }),
             })
+
+            if(await Notification.requestPermission())
+                new Notification('Recette enregistree');
+
         }
 
         window.addAccessory= function addAccessory(focus)
