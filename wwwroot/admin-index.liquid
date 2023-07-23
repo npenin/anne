@@ -123,9 +123,9 @@ permalink: "/admin/"
                     url:document.querySelector('.info>.mold>a').href,
                 },
             };
-
-            await pfs.writeFile(`${dir}/recettes/${recipe.title.replace(/[^a-z]+/gi, '-').toLowerCase()}.json`, JSON.stringify(recipe));            
-            await git.add({fs, dir, filepath: 'README.md'})
+        const filename=`${dir}/recettes/${recipe.title.replace(/[^a-z]+/gi, '-').toLowerCase()}.json`;
+            await pfs.writeFile(filename, JSON.stringify(recipe));            
+            await git.add({fs, dir, filepath: filename.substring(dir.length)})
             let sha = await git.commit({
             fs,
             dir,

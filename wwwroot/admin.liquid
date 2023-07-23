@@ -156,7 +156,10 @@ permalink: "/admin/{{recette.title|slugify}}/"
                 },
             };
 
-            await pfs.writeFile('recettes/${{recette.title|slugify}}', JSON.stringify(recipe));            
+            const filename=`${dir}/recettes/{{recipe.title | slugify}}.json`;
+            await pfs.writeFile(filename, JSON.stringify(recipe));            
+            await git.add({fs, dir, filepath: filename.substring(dir.length)})
+
             await git.add({fs, dir, filepath: 'README.md'})
             let sha = await git.commit({
             fs,
