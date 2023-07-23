@@ -51,9 +51,33 @@ permalink: "/admin/"
         </a>
     </div>
 
-    <script>
-        const root=window.location.href.substring(0, window.location.href.length);
+    <script src="https://unpkg.com/@isomorphic-git/lightning-fs"></script>
+    <script src="https://unpkg.com/isomorphic-git@beta"></script>
+    <script type="module">
+        import http from 'https://unpkg.com/isomorphic-git@beta/http/web/index.js'
+
+        let token = localStorage.getItem('GITHUB_TOKEN');
+        if(!token && token = prompt('Token?'))
+            localStorage.setItem('GITHUB_TOKEN', token)
         
+        const dir="/{{recette.title|slugify}}"
+        const root=window.location.href.substring(0, window.location.href.length-'{{page.url}}'.length+'/admin/'.length);
+        // Initialize isomorphic-git with a file system
+        const fs = new LightningFS('fs')
+
+        const pfs = window.fs.promises
+
+        await git.clone({
+            fs,
+            http,
+            dir,
+            corsProxy: 'https://cors.isomorphic-git.org',
+            url: 'https://github.com/npenin/anne',
+            ref: 'master',
+            singleBranch: true,
+            depth: 1
+        });
+
         dynamic(document.querySelector('.info>.mold>.name'), {
             Enter(ev)
             {
@@ -100,9 +124,26 @@ permalink: "/admin/"
                 },
             };
 
-            const r = await fetch(window.location.href, { method: 'POST', body: JSON.stringify(recipe), headers: { 'Content-Type': 'application/json' } });
-            if (r.redirected)
-                window.location.assign(r.url);
+            await pfs.writeFile('recettes/${{recette.title|slugify}}', JSON.stringify(recipe));            
+            await git.add({fs, dir, filepath: 'README.md'})
+            let sha = await git.commit({
+            fs,
+            dir,
+            message: 'update recipe',
+            author: {
+                name: 'Anne',
+                email: 'anne@anneetsesdelices.fr'
+            }
+            })
+
+            return await git.push({
+                fs,
+                http,
+                dir,
+                remote: 'origin',
+                ref: 'master',
+                onAuth: () => ({ username: token }),
+            })
         }
 
         function addAccessory(focus)
