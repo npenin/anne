@@ -119,7 +119,7 @@ permalink: "/admin/{{recette.title|slugify}}/"
         document.querySelector('.mold').addEventListener('click', () => document.querySelector('.info>.mold>.name').focus());
         window.fetchmold= async function fetchmold(ev)
         {
-            const res = await fetch(new URL(ev.target.innerText.replace('https://boutique.guydemarle.com', 'boutique'), root));
+            const res = await fetch(new URL(ev.target.innerText.replace('https://boutique.guydemarle.com', 'https://d2quloop9d8ihx.cloudfront.net'), root));
             const content = res.text();
             const dummy = document.createElement('div');
             dummy.innerHTML = await content;
