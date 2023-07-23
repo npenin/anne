@@ -67,7 +67,7 @@ permalink: "/admin/"
 
         const pfs = fs.promises
 
-        if(await pfs.readdir().length)
+        if(await pfs.readdir('.').length)
             await git.pull({
                 fs,
                 http,
