@@ -8,7 +8,7 @@ pagination:
 permalink: "/admin/{{recette.title|slugify}}/"
 ---
     <div class="toolbar">
-        <i class="fal fa-save fa-2x" onclick="save()"></i>
+        <i class="fal fa-save fa-2x" style="visibility:hidden" onclick="save()"></i>
     </div>
     <div class="info panel">
         <div>
@@ -75,7 +75,9 @@ permalink: "/admin/{{recette.title|slugify}}/"
         // Initialize isomorphic-git with a file system
         const fs = new LightningFS('fs')
 
-        const pfs = fs.promises
+        const pfs = fs.promises;
+        
+        (async function (){
         if((await pfs.readdir(dir)).length)
         {
             await git.setConfig({
@@ -112,6 +114,8 @@ permalink: "/admin/{{recette.title|slugify}}/"
                 depth: 1
             });
 
+            document.querySelector('.fa-save').style.visibility='visible'
+        })()
         const recipe = {{ recette | json }};
         document.querySelector('h1').innerText = recipe.title;
         document.querySelector('.info .count').innerText = recipe.for;

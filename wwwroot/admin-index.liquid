@@ -4,7 +4,7 @@ title: Anne et son admin
 permalink: "/admin/"
 ---
     <div class="toolbar">
-        <i class="fal fa-save fa-2x" onclick="save()"></i>
+        <i class="fal fa-save fa-2x" style="visibility:hidden" onclick="save()"></i>
     </div>
     <div class="info panel">
         <div>
@@ -71,7 +71,10 @@ permalink: "/admin/"
         // Initialize isomorphic-git with a file system
         const fs = new LightningFS('fs')
 
-        const pfs = fs.promises
+       
+        const pfs = fs.promises;
+        
+        (async function (){
         if((await pfs.readdir(dir)).length)
         {
             await git.setConfig({
@@ -87,13 +90,13 @@ permalink: "/admin/"
             path: 'user.email',
             value: usermail
             })
-         
             await git.pull({
                 fs,
                 http,
                 dir,
                 ref: 'master',
                 singleBranch: true,
+
             });
         }
         else
@@ -107,6 +110,9 @@ permalink: "/admin/"
                 singleBranch: true,
                 depth: 1
             });
+
+            document.querySelector('.fa-save').style.visibility='visible'
+        })()
 
         dynamic(document.querySelector('.info>.mold>.name'), {
             Enter(ev)
