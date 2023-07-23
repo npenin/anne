@@ -85,7 +85,7 @@ permalink: "/admin/"
             }
         })
         document.querySelector('.mold').addEventListener('click', () => document.querySelector('.info>.mold>.name').focus());
-        async function fetchmold(ev)
+        export async function fetchmold(ev)
         {
             const res = await fetch(new URL(ev.target.innerText.replace('https://boutique.guydemarle.com', 'boutique'), root));
             const content = res.text();
@@ -98,7 +98,7 @@ permalink: "/admin/"
             ev.target.parentNode.querySelector('a').href = meta['og:url'];
         }
 
-        async function save()
+        export async function save()
         {
             const recipe = {
                 title: document.querySelector('h1').innerText,
@@ -146,7 +146,7 @@ permalink: "/admin/"
             })
         }
 
-        function addAccessory(focus)
+        export function addAccessory(focus)
         {
             const li = document.createElement('li')
             li.classList.add('mold');
@@ -171,7 +171,7 @@ permalink: "/admin/"
             return li;
         }
 
-        function addPrepStep(focus)
+        export function addPrepStep(focus)
         {
             const li = document.createElement('li')
             li.contentEditable = true;
@@ -182,7 +182,7 @@ permalink: "/admin/"
             return li;
         }
 
-        function addTopings(focus)
+        export function addTopings(focus)
         {
             const li = document.createElement('li')
             const quantity = document.createElement('span')
