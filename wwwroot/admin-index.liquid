@@ -72,7 +72,8 @@ permalink: "/admin/"
         const fs = new LightningFS('fs')
 
        
-        const pfs = fs.promises
+        const pfs = fs.promises;
+        
         (async function (){
         if((await pfs.readdir(dir)).length)
         {

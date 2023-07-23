@@ -75,7 +75,8 @@ permalink: "/admin/{{recette.title|slugify}}/"
         // Initialize isomorphic-git with a file system
         const fs = new LightningFS('fs')
 
-        const pfs = fs.promises
+        const pfs = fs.promises;
+        
         (async function (){
         if((await pfs.readdir(dir)).length)
         {
