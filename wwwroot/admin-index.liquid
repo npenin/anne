@@ -65,7 +65,7 @@ permalink: "/admin/"
         // Initialize isomorphic-git with a file system
         const fs = new LightningFS('fs')
 
-        const pfs = window.fs.promises
+        const pfs = fs.promises
 
         await git.clone({
             fs,
