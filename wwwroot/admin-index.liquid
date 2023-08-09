@@ -71,7 +71,7 @@ permalink: "/admin/"
         // Initialize isomorphic-git with a file system
         const fs = new LightningFS('fs')
 
-if(localStorage.hasItem('tmpRecipe')){
+if(localStorage.getItem('tmpRecipe')){
 const recipe=JSON.parse(localStorage.getItem('tmpRecipe') )
 document.querySelector('h1').innerText = recipe.title;
         document.querySelector('.info .count').innerText = recipe.for;
