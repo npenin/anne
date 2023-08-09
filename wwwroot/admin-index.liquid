@@ -163,7 +163,7 @@ document.querySelector('h1').innerText = recipe.title;
         dynamic(document.querySelector('.info>.mold>.name'), {
             Enter(ev)
             {
-                fetchmold(ev).then(()=>ev.target.blur());
+                fetchmold(ev).then(()=>ev.target.blur()).then(()=>saveLocally());
             }
         })
         document.querySelector('.mold').addEventListener('click', () => document.querySelector('.info>.mold>.name').focus());
@@ -259,13 +259,12 @@ localStorage.removeItem('tmpRecipe')
             document.querySelector('.accessories>ul').appendChild(li);
             dynamic(name, { Enter:(ev) => {
                 if(ev.target.innerText!=='')
-                    fetchmold(ev).then(()=>ev.target.blur());
+                    fetchmold(ev).then(()=>ev.target.blur()).then(()=>saveLocally());
                 else
                     li.remove();
             } });
             if (focus)
                 name.focus();
-name.addEventListener('blur', saveLocally());
             return li;
         }
 
