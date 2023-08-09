@@ -71,6 +71,35 @@ permalink: "/admin/"
         // Initialize isomorphic-git with a file system
         const fs = new LightningFS('fs')
 
+if(localStorage.getItem('tmpRecipe')){
+const recipe=JSON.parse(localStorage.getItem('tmpRecipe') )
+document.querySelector('h1').innerText = recipe.title;
+        document.querySelector('.info .count').innerText = recipe.for;
+        document.querySelector('.info .preptime').innerText = recipe.preptime;
+        document.querySelector('.info .resttime').innerText = recipe.resttime;
+        document.querySelector('.info .cooktime').innerText = recipe.cooktime;
+        document.querySelector('.info .mold>.name').innerText = recipe.mold.name;
+        document.querySelector('.info .mold>a>img').src = recipe.mold.picture;
+        recipe.topings.forEach(t =>
+        {
+            const li = addTopings(false);
+            li.querySelector('.quantity').innerText = t.quantity;
+            li.querySelector('.unit').innerText = t.unit;
+            li.querySelector('.toping').innerText = t.name;
+        })
+        if(recipe.accessories)
+            recipe.accessories.forEach(a =>
+            {
+                const li = addAccessory(false);
+                li.querySelector('.name').innerText=a.name;
+                li.querySelector('img').src=a.picture;
+            })
+        recipe.steps.forEach(t =>
+        {
+            const li = addPrepStep(false);
+            li.innerText = t;
+        })
+}
        
         const pfs = fs.promises;
 
@@ -151,9 +180,8 @@ permalink: "/admin/"
             ev.target.parentNode.querySelector('a').href = meta['og:url'];
         }
 
-        window.save= async function save()
-        {
-            const recipe = {
+function getRecipe() {
+return {
                 title: document.querySelector('h1').innerText,
                 topings: Array.from(document.querySelectorAll('.topings li')).map(li => ({
                     quantity: li.querySelector('.quantity').innerText,
@@ -176,6 +204,16 @@ permalink: "/admin/"
                     url:document.querySelector('.info>.mold>a').href,
                 },
             };
+} 
+
+function saveLocally() {
+ localStorage.setItem('tmpRecipe', JSON.stringify(getRecipe()));
+} 
+
+        window.save= async function save()
+        {
+            const recipe = getRecipe();
+                
         const filename=`${dir}/recettes/${recipe.title.replace(/[^a-z]+/gi, '-').toLowerCase()}.json`;
             await pfs.writeFile(filename, JSON.stringify(recipe));            
             await git.add({fs, dir, filepath: filename.substring(dir.length+1)})
@@ -189,7 +227,7 @@ permalink: "/admin/"
             }
             })
 
-            return await git.push({
+             await git.push({
                 fs,
                 http,
                 dir,
@@ -200,6 +238,8 @@ permalink: "/admin/"
 
             if(await Notification.requestPermission())
                 new Notification('Recette enregistree');
+
+localStorage.removeItem('tmpRecipe')
 
         }
 
@@ -225,6 +265,7 @@ permalink: "/admin/"
             } });
             if (focus)
                 name.focus();
+name.addEventListener('blur', saveLocally());
             return li;
         }
 
@@ -236,6 +277,7 @@ permalink: "/admin/"
             dynamic(li);
             if (focus)
                 li.focus();
+li.addEventListener('blur', saveLocally());
             return li;
         }
 
@@ -261,6 +303,9 @@ permalink: "/admin/"
             dynamic(toping, { Enter(ev) { toping.blur(); setTimeout(() => addTopings(true)); ev.preventDefault(); return false } });
             if (focus)
                 quantity.focus();
+quantity.addEventListener('blur', saveLocally());
+unit.addEventListener('blur', saveLocally());
+toping.addEventListener('blur', saveLocally());
             return li;
         }
 
