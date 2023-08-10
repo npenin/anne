@@ -167,7 +167,7 @@ document.querySelector('h1').innerText = recipe.title;
             }
         })
         document.querySelector('.mold').addEventListener('click', () => document.querySelector('.info>.mold>.name').focus());
-        window.fetchmold= async function fetchmold(ev)
+         async function fetchmold(ev)
         {
             const res = await fetch(new URL(ev.target.innerText.replace('https://boutique.guydemarle.com', 'https://d2quloop9d8ihx.cloudfront.net'), root));
             const content = res.text();
@@ -179,7 +179,7 @@ document.querySelector('h1').innerText = recipe.title;
             ev.target.parentNode.querySelector('img').src = meta['og:image'];
             ev.target.parentNode.querySelector('a').href = meta['og:url'];
         }
-
+window.fetchmold=fetchmold;
 function getRecipe() {
 return {
                 title: document.querySelector('h1').innerText,
@@ -243,7 +243,7 @@ localStorage.removeItem('tmpRecipe')
 
         }
 
-        window.addAccessory= function addAccessory(focus)
+        function addAccessory(focus)
         {
             const li = document.createElement('li')
             li.classList.add('mold');
@@ -267,8 +267,9 @@ localStorage.removeItem('tmpRecipe')
                 name.focus();
             return li;
         }
+window.addAccessory= addAccessory
 
-        window.addPrepStep= function addPrepStep(focus)
+        function addPrepStep(focus)
         {
             const li = document.createElement('li')
             li.contentEditable = true;
@@ -279,8 +280,8 @@ localStorage.removeItem('tmpRecipe')
 li.addEventListener('blur', saveLocally());
             return li;
         }
-
-        window.addTopings= function addTopings(focus)
+window.addPrepStep=addPrepStep 
+        function addTopings(focus)
         {
             const li = document.createElement('li')
             const quantity = document.createElement('span')
@@ -307,7 +308,7 @@ unit.addEventListener('blur', saveLocally());
 toping.addEventListener('blur', saveLocally());
             return li;
         }
-
+window.addTopings= addTopings
         function dynamic(self, keys)
         {
             keys = Object.assign({}, keys);
