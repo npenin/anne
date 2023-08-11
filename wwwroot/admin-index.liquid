@@ -261,7 +261,10 @@ localStorage.removeItem('tmpRecipe')
                 if(ev.target.innerText!=='')
                     fetchmold(ev).then(()=>ev.target.blur()).then(()=>saveLocally());
                 else
+{
                     li.remove();
+saveLocally();
+}
             } });
             if (focus)
                 name.focus();
@@ -330,7 +333,10 @@ window.addTopings= addTopings
                     li = li.parentNode;
 
                 if (li && li.textContent == '')
+{
                     li.remove();
+saveLocally();
+}
             });
         }
     </script>
