@@ -58,7 +58,7 @@ permalink: "/admin/{{recette.title|slugify}}/"
     <script src="https://unpkg.com/@isomorphic-git/lightning-fs"></script>
     <script src="https://unpkg.com/isomorphic-git@beta"></script>
     <script type="module">
-        import http from 'https://unpkg.com/isomorphic-git@beta/http/web/index.js'
+         import http from 'https://unpkg.com/isomorphic-git@beta/http/web/index.js'
 
         let token = localStorage.getItem('GITHUB_TOKEN');
         if(!token && (token = prompt('Token?')))
@@ -70,54 +70,13 @@ permalink: "/admin/{{recette.title|slugify}}/"
         if(!usermail && (usermail = prompt('user.email')))
             localStorage.setItem('user.email', usermail)
             
-        const dir="/{{recette.filepath}}"
+        const dir="/{{recette.title|slugify}}"
         const root=window.location.href.substring(0, window.location.href.length-'{{page.url}}'.length+'/admin/'.length);
         // Initialize isomorphic-git with a file system
         const fs = new LightningFS('fs')
 
-        const pfs = fs.promises;
-
-        (async function (){
-        if((await pfs.readdir(dir)).length)
-        {
-            await git.setConfig({
-            fs,
-            dir,
-            path: 'user.name',
-            value: username
-            })
-            
-            await git.setConfig({
-            fs,
-            dir,
-            path: 'user.email',
-            value: usermail
-            })
-            await git.pull({
-                fs,
-                http,
-                dir,
-                ref: 'master',
-                singleBranch: true,
-
-            });
-        }
-        else
-            await git.clone({
-                fs,
-                http,
-                dir,
-                corsProxy: 'https://cors.isomorphic-git.org',
-                url: 'https://github.com/npenin/anne',
-                ref: 'master',
-                singleBranch: true,
-                depth: 1
-            });
-
-            document.querySelector('.fa-save').style.visibility='visible'
-        })()
-        const recipe = {{ recette | json }};
-        document.querySelector('h1').innerText = recipe.title;
+const recipe={{recette | json }}
+document.querySelector('h1').innerText = recipe.title;
         document.querySelector('.info .count').innerText = recipe.for;
         document.querySelector('.info .preptime').innerText = recipe.preptime;
         document.querySelector('.info .resttime').innerText = recipe.resttime;
@@ -143,17 +102,75 @@ permalink: "/admin/{{recette.title|slugify}}/"
             const li = addPrepStep(false);
             li.innerText = t;
         })
+}
+       
+        const pfs = fs.promises;
 
+        (async function (){
+            try{
+                if((await pfs.readdir(dir)).length)
+                {
+                    await git.setConfig({
+                    fs,
+                    dir,
+                    path: 'user.name',
+                    value: username
+                    })
+                    
+                    await git.setConfig({
+                    fs,
+                    dir,
+                    path: 'user.email',
+                    value: usermail
+                    })
+                    await git.pull({
+                        fs,
+                        http,
+                        dir,
+                        ref: 'master',
+                        singleBranch: true,
+
+                    });
+                }
+                else
+                await git.clone({
+                    fs,
+                    http,
+                    dir,
+                    corsProxy: 'https://cors.isomorphic-git.org',
+                    url: 'https://github.com/npenin/anne',
+                    ref: 'master',
+                    singleBranch: true,
+                    depth: 1
+                });
+        }
+        catch(e)
+        {
+            await git.clone({
+                fs,
+                http,
+                dir,
+                corsProxy: 'https://cors.isomorphic-git.org',
+                url: 'https://github.com/npenin/anne',
+                ref: 'master',
+                singleBranch: true,
+                depth: 1
+            });
+        }
+
+            document.querySelector('.fa-save').style.visibility='visible'
+        })()
+        
         await Notification.requestPermission();
 
         dynamic(document.querySelector('.info>.mold>.name'), {
             Enter(ev)
             {
-                fetchmold(ev).then(()=>ev.target.blur());
+                fetchmold(ev).then(()=>ev.target.blur()).then(()=>saveLocally());
             }
         })
         document.querySelector('.mold').addEventListener('click', () => document.querySelector('.info>.mold>.name').focus());
-        window.fetchmold= async function fetchmold(ev)
+         async function fetchmold(ev)
         {
             const res = await fetch(new URL(ev.target.innerText.replace('https://boutique.guydemarle.com', 'https://d2quloop9d8ihx.cloudfront.net'), root));
             const content = res.text();
@@ -165,10 +182,9 @@ permalink: "/admin/{{recette.title|slugify}}/"
             ev.target.parentNode.querySelector('img').src = meta['og:image'];
             ev.target.parentNode.querySelector('a').href = meta['og:url'];
         }
-
-        window.save= async function save()
-        {
-            const recipe = {
+window.fetchmold=fetchmold;
+function getRecipe() {
+return {
                 title: document.querySelector('h1').innerText,
                 topings: Array.from(document.querySelectorAll('.topings li')).map(li => ({
                     quantity: li.querySelector('.quantity').innerText,
@@ -191,8 +207,16 @@ permalink: "/admin/{{recette.title|slugify}}/"
                     url:document.querySelector('.info>.mold>a').href,
                 },
             };
+} 
 
-            const filename=`${dir}/recettes/{{recette.filepath}}.json`;
+function saveLocally() {
+} 
+
+        window.save= async function save()
+        {
+            const recipe = getRecipe();
+                
+        const filename=`${dir}/recettes/${recipe.title.replace(/[^a-z]+/gi, '-').toLowerCase()}.json`;
             await pfs.writeFile(filename, JSON.stringify(recipe));            
             await git.add({fs, dir, filepath: filename.substring(dir.length+1)})
             let sha = await git.commit({
@@ -205,7 +229,7 @@ permalink: "/admin/{{recette.title|slugify}}/"
             }
             })
 
-            return await git.push({
+             await git.push({
                 fs,
                 http,
                 dir,
@@ -216,9 +240,12 @@ permalink: "/admin/{{recette.title|slugify}}/"
 
             if(await Notification.requestPermission())
                 new Notification('Recette enregistree');
+
+localStorage.removeItem('tmpRecipe')
+
         }
 
-        window.addAccessory= function addAccessory(focus)
+        function addAccessory(focus)
         {
             const li = document.createElement('li')
             li.classList.add('mold');
@@ -234,16 +261,20 @@ permalink: "/admin/{{recette.title|slugify}}/"
             document.querySelector('.accessories>ul').appendChild(li);
             dynamic(name, { Enter:(ev) => {
                 if(ev.target.innerText!=='')
-                    fetchmold(ev).then(()=>ev.target.blur());
+                    fetchmold(ev).then(()=>ev.target.blur()).then(()=>saveLocally());
                 else
+{
                     li.remove();
+saveLocally();
+}
             } });
             if (focus)
                 name.focus();
             return li;
         }
+window.addAccessory= addAccessory
 
-        window.addPrepStep= function addPrepStep(focus)
+        function addPrepStep(focus)
         {
             const li = document.createElement('li')
             li.contentEditable = true;
@@ -251,10 +282,11 @@ permalink: "/admin/{{recette.title|slugify}}/"
             dynamic(li);
             if (focus)
                 li.focus();
+li.addEventListener('blur', saveLocally());
             return li;
         }
-
-        window.addTopings= function addTopings(focus)
+window.addPrepStep=addPrepStep 
+        function addTopings(focus)
         {
             const li = document.createElement('li')
             const quantity = document.createElement('span')
@@ -276,9 +308,12 @@ permalink: "/admin/{{recette.title|slugify}}/"
             dynamic(toping, { Enter(ev) { toping.blur(); setTimeout(() => addTopings(true)); ev.preventDefault(); return false } });
             if (focus)
                 quantity.focus();
+quantity.addEventListener('blur', saveLocally());
+unit.addEventListener('blur', saveLocally());
+toping.addEventListener('blur', saveLocally());
             return li;
         }
-
+window.addTopings= addTopings
         function dynamic(self, keys)
         {
             keys = Object.assign({}, keys);
@@ -300,7 +335,10 @@ permalink: "/admin/{{recette.title|slugify}}/"
                     li = li.parentNode;
 
                 if (li && li.textContent == '')
+{
                     li.remove();
+saveLocally();
+}
             });
         }
     </script>
