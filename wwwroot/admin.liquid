@@ -75,8 +75,8 @@ permalink: "/admin/{{recette.title|slugify}}/"
         // Initialize isomorphic-git with a file system
         const fs = new LightningFS('fs')
 
-const recipe={{recette | json }}
-document.querySelector('h1').innerText = recipe.title;
+        const recipe={{recette | json }}
+        document.querySelector('h1').innerText = recipe.title;
         document.querySelector('.info .count').innerText = recipe.for;
         document.querySelector('.info .preptime').innerText = recipe.preptime;
         document.querySelector('.info .resttime').innerText = recipe.resttime;
@@ -102,7 +102,6 @@ document.querySelector('h1').innerText = recipe.title;
             const li = addPrepStep(false);
             li.innerText = t;
         })
-}
        
         const pfs = fs.promises;
 
@@ -182,9 +181,10 @@ document.querySelector('h1').innerText = recipe.title;
             ev.target.parentNode.querySelector('img').src = meta['og:image'];
             ev.target.parentNode.querySelector('a').href = meta['og:url'];
         }
-window.fetchmold=fetchmold;
-function getRecipe() {
-return {
+
+        window.fetchmold=fetchmold;
+        function getRecipe() {
+            return {
                 title: document.querySelector('h1').innerText,
                 topings: Array.from(document.querySelectorAll('.topings li')).map(li => ({
                     quantity: li.querySelector('.quantity').innerText,
@@ -207,16 +207,15 @@ return {
                     url:document.querySelector('.info>.mold>a').href,
                 },
             };
-} 
+        } 
 
-function saveLocally() {
-} 
+function saveLocally() {} 
 
         window.save= async function save()
         {
             const recipe = getRecipe();
                 
-        const filename=`${dir}/recettes/${recipe.title.replace(/[^a-z]+/gi, '-').toLowerCase()}.json`;
+            const filename=`${dir}/recettes/${recipe.title.replace(/[^a-z]+/gi, '-').toLowerCase()}.json`;
             await pfs.writeFile(filename, JSON.stringify(recipe));            
             await git.add({fs, dir, filepath: filename.substring(dir.length+1)})
             let sha = await git.commit({
@@ -241,8 +240,6 @@ function saveLocally() {
             if(await Notification.requestPermission())
                 new Notification('Recette enregistree');
 
-localStorage.removeItem('tmpRecipe')
-
         }
 
         function addAccessory(focus)
@@ -263,16 +260,16 @@ localStorage.removeItem('tmpRecipe')
                 if(ev.target.innerText!=='')
                     fetchmold(ev).then(()=>ev.target.blur()).then(()=>saveLocally());
                 else
-{
+                {
                     li.remove();
-saveLocally();
-}
+                    saveLocally();
+                }
             } });
             if (focus)
                 name.focus();
             return li;
         }
-window.addAccessory= addAccessory
+        window.addAccessory= addAccessory
 
         function addPrepStep(focus)
         {
@@ -282,10 +279,12 @@ window.addAccessory= addAccessory
             dynamic(li);
             if (focus)
                 li.focus();
-li.addEventListener('blur', saveLocally());
+            li.addEventListener('blur', saveLocally());
             return li;
         }
-window.addPrepStep=addPrepStep 
+        
+        window.addPrepStep=addPrepStep 
+
         function addTopings(focus)
         {
             const li = document.createElement('li')
@@ -308,12 +307,13 @@ window.addPrepStep=addPrepStep
             dynamic(toping, { Enter(ev) { toping.blur(); setTimeout(() => addTopings(true)); ev.preventDefault(); return false } });
             if (focus)
                 quantity.focus();
-quantity.addEventListener('blur', saveLocally());
-unit.addEventListener('blur', saveLocally());
-toping.addEventListener('blur', saveLocally());
+            quantity.addEventListener('blur', saveLocally());
+            unit.addEventListener('blur', saveLocally());
+            toping.addEventListener('blur', saveLocally());
             return li;
         }
-window.addTopings= addTopings
+        window.addTopings= addTopings
+        
         function dynamic(self, keys)
         {
             keys = Object.assign({}, keys);
@@ -335,10 +335,10 @@ window.addTopings= addTopings
                     li = li.parentNode;
 
                 if (li && li.textContent == '')
-{
+                {
                     li.remove();
-saveLocally();
-}
+                    saveLocally();
+                }
             });
         }
     </script>
