@@ -134,8 +134,7 @@ document.querySelector('h1').innerText = recipe.title;
                     fs,
                     http,
                     dir,
-                    corsProxy: 'https://cors.isomorphic-git.org',
-                    url: 'https://github.com/npenin/anne',
+                    url: 'https://d3jotk6z3nyuvt.cloudfront.net/anne',
                     ref: 'master',
                     singleBranch: true,
                     depth: 1
@@ -147,8 +146,7 @@ document.querySelector('h1').innerText = recipe.title;
                 fs,
                 http,
                 dir,
-                corsProxy: 'https://cors.isomorphic-git.org',
-                url: 'https://github.com/npenin/anne',
+                url: 'https://d3jotk6z3nyuvt.cloudfront.net/anne',
                 ref: 'master',
                 singleBranch: true,
                 depth: 1
@@ -280,7 +278,7 @@ window.addAccessory= addAccessory
             dynamic(li);
             if (focus)
                 li.focus();
-li.addEventListener('blur', saveLocally());
+li.addEventListener('blur', saveLocally);
             return li;
         }
 window.addPrepStep=addPrepStep 
@@ -306,9 +304,9 @@ window.addPrepStep=addPrepStep
             dynamic(toping, { Enter(ev) { toping.blur(); setTimeout(() => addTopings(true)); ev.preventDefault(); return false } });
             if (focus)
                 quantity.focus();
-quantity.addEventListener('blur', saveLocally());
-unit.addEventListener('blur', saveLocally());
-toping.addEventListener('blur', saveLocally());
+quantity.addEventListener('blur', saveLocally);
+unit.addEventListener('blur', saveLocally);
+toping.addEventListener('blur', saveLocally);
             return li;
         }
 window.addTopings= addTopings
