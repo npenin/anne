@@ -236,8 +236,9 @@ function saveLocally() {
                 onAuth: () => ({ username: token }),
             })
 
-            if(await Notification.requestPermission())
-                new Notification('Recette enregistree');
+            const notif=Notification.requestPermission();
+            if(notif)
+                notif.showNotification('Recette enregistree');
 
 localStorage.removeItem('tmpRecipe')
 
