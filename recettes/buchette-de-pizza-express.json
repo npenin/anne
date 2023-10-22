@@ -1,0 +1,112 @@
+{
+    "title": "Bûchettes de pizza express",
+    "topings": [
+        {
+            "quantity": "165",
+            "unit": "g",
+            "name": "Eau"
+        },
+        {
+            "quantity": "30",
+            "unit": "g",
+            "name": "Huile d’olive"
+        },
+        {
+            "quantity": "1",
+            "unit": "c-à-c",
+            "name": "Epices pizza"
+        },
+        {
+            "quantity": "165",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "1",
+            "unit": "sachet préparation pour pâtes à pizza",
+            "name": ""
+        },
+        {
+            "quantity": "1",
+            "unit": "œuf ",
+            "name": ""
+        },
+        {
+            "quantity": "1",
+            "unit": "Petite brique",
+            "name": "Coulis de tomates "
+        },
+        {
+            "quantity": "Garnitures de votre choix (comté, mozzarella, parmesan, champignons, lardons de bacon, anchois, olives, ....)",
+            "unit": "",
+            "name": ""
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": ""
+        },
+        {
+            "name": "Préparation pour pâtes à pizzas, 5 sachets de 17,5 g",
+            "picture": "https://boutique.guydemarle.com/5267-nq_social_share/preparation-pates-a-pizzas-rapide-facile.jpg",
+            "url": "https://boutique.guydemarle.com/epicerie/119-preparation-pates-a-pizzas-rapide-facile.html"
+        },
+        {
+            "name": "Mix d'épices - Spécial Pizza & Pasta",
+            "picture": "https://boutique.guydemarle.com/9772-nq_social_share/mix-d-epices-special-pizza-pasta.jpg",
+            "url": "https://boutique.guydemarle.com/epicerie/3510-mix-d-epices-special-pizza-pasta.html"
+        },
+        {
+            "name": "Petite spatule coudée 9 cm",
+            "picture": "https://boutique.guydemarle.com/2142-nq_social_share/petite-spatule-coudee-9-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/617-petite-spatule-coudee-9-cm-guy-demarle.html"
+        },
+        {
+            "name": "Pichet verseur",
+            "picture": "https://boutique.guydemarle.com/2230-nq_social_share/pichet-verseur-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/681-pichet-verseur-guy-demarle.html"
+        }
+    ],
+    "steps": [
+        "Poser votre moule sur une plaque aluminium perforée.",
+        "Dans un cul de poule, mélanger l’eau, l’huile, les épices et la préparation pour pâtes à pizza.",
+        "Ajouter la farine puis mélanger.",
+        "Ajouter l’œuf et mélanger à nouveau.",
+        "Verser la préparation dans le pichet verseur et remplir ensuite les empreintes, attendre 15 min avant de déposer les garnitures.",
+        "Au bout de 15 min, préchauffer votre fourgon à 180°C.",
+        "Déposer le coulis de tomates sur la pâte et garnir suivant vos goûts.",
+        "Enfourner à 180°C pendant 30-35 min suivant votre four.",
+        "Attention, le moule est chaud, pour plus de facilité pour démouler vos pizzas, prenez la petite spatule coudée et l'insérer sur un côté de l'empreinte pour lever la pizza."
+    ],
+    "for": "3",
+    "preptime": "15",
+    "resttime": "15",
+    "cooktime": "30-35",
+    "mold": {
+        "name": "Moule 14 Bûchettes OHRA®",
+        "picture": "https://boutique.guydemarle.com/11804-nq_social_share/moule-buchettes.jpg",
+        "url": "https://boutique.guydemarle.com/moules-ohra/4417-moule-buchettes.html"
+    }
+}
