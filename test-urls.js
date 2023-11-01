@@ -9,7 +9,7 @@ fs.readdir(__dirname + '/recettes').then(async files =>
         await previous;
         const file = await fs.readFile(__dirname + '/recettes/' + current);
         const recipe = JSON.parse(file);
-        console.log("testing " + recipe.title);
+        // console.debug("testing " + recipe.title);
         if ('mold' in recipe.mold)
             if (!(await fetch(recipe.mold.picture)).ok)
             {
@@ -34,4 +34,7 @@ fs.readdir(__dirname + '/recettes').then(async files =>
         console.log('Failed recipes:')
         failures.forEach(r => console.log(r.recipe.title, r.accessory.name));
     }
+    else
+        console.log('ALL OK');
+    process.exit()
 });
