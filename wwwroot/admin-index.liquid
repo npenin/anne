@@ -166,7 +166,7 @@ permalink: "/admin/"
         });
 
 
-        const notif = Notification.requestPermission();
+        const notif = await Notification.requestPermission();
         if (notif)
             notif.showNotification('Recette enregistree');
 

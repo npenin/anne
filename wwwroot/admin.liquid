@@ -164,8 +164,9 @@ permalink: "/admin/{{recette.title|slugify}}/"
             )
         });
 
-        if (await Notification.requestPermission())
-            new Notification('Recette enregistree');
+        const notif=await Notification.requestPermission();
+        if (notif)
+            notif.showNotification('Recette enregistree');
 
     }
 
