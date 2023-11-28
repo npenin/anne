@@ -3,77 +3,74 @@ layout: index.liquid
 title: Anne et son admin
 permalink: "/admin/"
 ---
-    <div class="toolbar">
-        <i class="fal fa-save fa-2x" style="visibility:hidden" onclick="save()"></i>
+<div class="toolbar">
+    <i class="fal fa-save fa-2x" style="visibility:hidden" onclick="save()"></i>
+</div>
+<div class="info panel">
+    <div>
+        <span contenteditable class="count fal fa-utensils"></i></span>
+        <span contenteditable class="preptime fal fa-hat-chef"></span>
+        <span contenteditable class="resttime fal fa-snooze"></span>
+        <span contenteditable class="cooktime fal fa-oven"></span>
     </div>
-    <div class="info panel">
-        <div>
-            <span contenteditable class="count fal fa-utensils"></i></span>
-            <span contenteditable class="preptime fal fa-hat-chef"></span>
-            <span contenteditable class="resttime fal fa-snooze"></span>
-            <span contenteditable class="cooktime fal fa-oven"></span>
-        </div>
-        <div class="mold">
-            <a href="#">
-                <img />
-            </a>
-            <span class="name" contenteditable=""></span>
-        </div>
-    </div>
-    <header>
-        <h1 contenteditable></h1>
-    </header>
-    <div class="accessories panel">
-        <h2>Accessoires</h2>
-        <ul></ul>
-        <button onclick="addAccessory(true)"><i class="fal fa-plus"></i></button>
-    </div>
-    <div class="topings panel">
-        <h2>Ingrédients</h2>
-        <ul>
-        </ul>
-        <button onclick="addTopings(true)"><i class="fal fa-plus"></i></button>
-
-    </div>
-    <div class="steps panel">
-        <h2>Préparation</h2>
-        <ol>
-        </ol>
-        <button onclick="addPrepStep(true)"><i class="fal fa-plus"></i></button>
-        <p style="padding-left:24px"><a
-                href="https://www.guydemarle.com/profil/annep_a143-44563">Anne Penin</a>, conseillère Guy Demarle</p>
-    </div>
-    <div class="logo">
-        <img class="qr" src="/assets/qr_code.svg" style="height:100%" />
-        <span class="ad">Retrouvez-moi sur facebook </span>
-        <a href="https://www.facebook.com/profile.php?id=100090744024852">
-            <img src="/assets/logo.svg" style="height:100%" />
+    <div class="mold">
+        <a href="#">
+            <img />
         </a>
+        <span class="name" contenteditable=""></span>
     </div>
+</div>
+<header>
+    <h1 contenteditable></h1>
+</header>
+<div class="accessories panel">
+    <h2>Accessoires</h2>
+    <ul></ul>
+    <button onclick="addAccessory(true)"><i class="fal fa-plus"></i></button>
+</div>
+<div class="topings panel">
+    <h2>Ingrédients</h2>
+    <ul>
+    </ul>
+    <button onclick="addTopings(true)"><i class="fal fa-plus"></i></button>
 
-    <script src="https://unpkg.com/@isomorphic-git/lightning-fs"></script>
-    <script src="https://unpkg.com/isomorphic-git@beta"></script>
-    <script type="module">
-        import http from 'https://unpkg.com/isomorphic-git@beta/http/web/index.js'
+</div>
+<div class="steps panel">
+    <h2>Préparation</h2>
+    <ol>
+    </ol>
+    <button onclick="addPrepStep(true)"><i class="fal fa-plus"></i></button>
+    <p style="padding-left:24px"><a href="https://www.guydemarle.com/profil/annep_a143-44563">Anne Penin</a>,
+        conseillère Guy Demarle</p>
+</div>
+<div class="logo">
+    <img class="qr" src="/assets/qr_code.svg" style="height:100%" />
+    <span class="ad">Retrouvez-moi sur facebook </span>
+    <a href="https://www.facebook.com/profile.php?id=100090744024852">
+        <img src="/assets/logo.svg" style="height:100%" />
+    </a>
+</div>
 
-        let token = localStorage.getItem('GITHUB_TOKEN');
-        if(!token && (token = prompt('Token?')))
-            localStorage.setItem('GITHUB_TOKEN', token)
-        let username = localStorage.getItem('user.name');
-        if(!username && (username = prompt('user name?')))
-            localStorage.setItem('user.name', username)
-        let usermail = localStorage.getItem('user.email');
-        if(!usermail && (usermail = prompt('user.email')))
-            localStorage.setItem('user.email', usermail)
-            
-        const dir="/{{recette.title|slugify}}"
-        const root=window.location.href.substring(0, window.location.href.length-'{{page.url}}'.length+'/admin/'.length);
-        // Initialize isomorphic-git with a file system
-        const fs = new LightningFS('fs')
+<script type="module">
+    import http from 'https://unpkg.com/isomorphic-git@beta/http/web/index.js'
 
-if(localStorage.getItem('tmpRecipe')){
-const recipe=JSON.parse(localStorage.getItem('tmpRecipe') )
-document.querySelector('h1').innerText = recipe.title;
+    let token = localStorage.getItem('GITHUB_TOKEN');
+    if (!token && (token = prompt('Token?')))
+        localStorage.setItem('GITHUB_TOKEN', token)
+    let username = localStorage.getItem('user.name');
+    if (!username && (username = prompt('user name?')))
+        localStorage.setItem('user.name', username)
+    let usermail = localStorage.getItem('user.email');
+    if (!usermail && (usermail = prompt('user.email')))
+        localStorage.setItem('user.email', usermail)
+
+    const dir = "/{{recette.title|slugify}}"
+    const root = window.location.href.substring(0, window.location.href.length - '{{page.url}}'.length + '/admin/'.length);
+
+    if (localStorage.getItem('tmpRecipe'))
+    {
+        const recipe = JSON.parse(localStorage.getItem('tmpRecipe'))
+        document.querySelector('h1').innerText = recipe.title;
         document.querySelector('.info .count').innerText = recipe.for;
         document.querySelector('.info .preptime').innerText = recipe.preptime;
         document.querySelector('.info .resttime').innerText = recipe.resttime;
@@ -87,257 +84,193 @@ document.querySelector('h1').innerText = recipe.title;
             li.querySelector('.unit').innerText = t.unit;
             li.querySelector('.toping').innerText = t.name;
         })
-        if(recipe.accessories)
+        if (recipe.accessories)
             recipe.accessories.forEach(a =>
             {
                 const li = addAccessory(false);
-                li.querySelector('.name').innerText=a.name;
-                li.querySelector('img').src=a.picture;
+                li.querySelector('.name').innerText = a.name;
+                li.querySelector('img').src = a.picture;
             })
         recipe.steps.forEach(t =>
         {
             const li = addPrepStep(false);
             li.innerText = t;
         })
-}
-       
-        const pfs = fs.promises;
+    }
 
-        (async function (){
-            try{
-                if((await pfs.readdir(dir)).length)
-                {
-                    await git.setConfig({
-                    fs,
-                    dir,
-                    path: 'user.name',
-                    value: username
-                    })
-                    
-                    await git.setConfig({
-                    fs,
-                    dir,
-                    path: 'user.email',
-                    value: usermail
-                    })
-                    await git.pull({
-                        fs,
-                        http,
-                        dir,
-                        ref: 'master',
-                        singleBranch: true,
+    document.querySelector('.fa-save').style.visibility = 'visible'
 
-                    });
-                }
+    await Notification.requestPermission();
+
+    dynamic(document.querySelector('.info>.mold>.name'), {
+        Enter(ev)
+        {
+            fetchmold(ev).then(() => ev.target.blur()).then(() => saveLocally());
+        }
+    })
+    document.querySelector('.mold').addEventListener('click', () => document.querySelector('.info>.mold>.name').focus());
+    async function fetchmold(ev)
+    {
+        const res = await fetch(new URL(ev.target.innerText.replace('https://boutique.guydemarle.com', 'https://d2quloop9d8ihx.cloudfront.net'), root));
+        const content = res.text();
+        const dummy = document.createElement('div');
+        dummy.innerHTML = await content;
+        const meta = Object.fromEntries(Array.from(dummy.querySelectorAll('meta').values()).filter(v => v.attributes.property).map(v => [v.attributes.property.value, v.attributes.content.value]));
+        dummy.remove();
+        ev.target.innerText = meta['og:title'];
+        ev.target.parentNode.querySelector('img').src = meta['og:image'];
+        ev.target.parentNode.querySelector('a').href = meta['og:url'];
+    }
+    window.fetchmold = fetchmold;
+    function getRecipe()
+    {
+        return {
+            title: document.querySelector('h1').innerText,
+            topings: Array.from(document.querySelectorAll('.topings li')).map(li => ({
+                quantity: li.querySelector('.quantity').innerText,
+                unit: li.querySelector('.unit').innerText,
+                name: li.querySelector('.toping').innerText
+            })),
+            accessories: Array.from(document.querySelectorAll('.accessories > ul > li')).map(span => ({
+                name: span.querySelector('.name').innerText,
+                picture: span.querySelector('img').src,
+                url: span.querySelector('a').href,
+            })),
+            steps: Array.from(document.querySelectorAll('.steps li')).map(li => li.innerText),
+            for: document.querySelector('.info .count').innerText,
+            preptime: document.querySelector('.info .preptime').innerText,
+            resttime: document.querySelector('.info .resttime').innerText,
+            cooktime: document.querySelector('.info .cooktime').innerText,
+            mold: {
+                name: document.querySelector('.info>.mold').innerText,
+                picture: document.querySelector('.info>.mold>a>img').src,
+                url: document.querySelector('.info>.mold>a').href,
+            },
+        };
+    }
+
+    function saveLocally()
+    {
+        localStorage.setItem('tmpRecipe', JSON.stringify(getRecipe()));
+    }
+
+    window.save = async function save()
+    {
+        const recipe = getRecipe();
+
+        const filename = `${dir}/recettes/${recipe.title.replace(/[^a-z]+/gi, '-').toLowerCase()}.json`;
+        await fetch('https://api.github.com/repos/npenin/anne/contents/' + filename.substring(dir.length + 1), {
+            headers: { accept: 'application/vnd.github+json', authorization: 'Bearer ' + token, 'X-GitHub-Api-Version': '2022-11-28' }, method: 'PUT', body: JSON.stringify(
+                { "message": "update recipe", "committer": { "name": "Anne", "email": "anne@anneetsesdelices.fr" }, "content": atob(JSON.stringify(recipe)) }
+            )
+        });
+
+
+        const notif = Notification.requestPermission();
+        if (notif)
+            notif.showNotification('Recette enregistree');
+
+        localStorage.removeItem('tmpRecipe')
+
+    }
+
+    function addAccessory(focus)
+    {
+        const li = document.createElement('li')
+        li.classList.add('mold');
+        const a = document.createElement('a');
+        a.target = '_blank';
+        li.appendChild(a);
+        const img = document.createElement('img');
+        a.appendChild(img);
+        const name = document.createElement('span')
+        name.classList.add('name');
+        name.contentEditable = true;
+        li.appendChild(name);
+        document.querySelector('.accessories>ul').appendChild(li);
+        dynamic(name, {
+            Enter: (ev) =>
+            {
+                if (ev.target.innerText !== '')
+                    fetchmold(ev).then(() => ev.target.blur()).then(() => saveLocally());
                 else
-                await git.clone({
-                    fs,
-                    http,
-                    dir,
-                    corsProxy: 'https://cors.isomorphic-git.org',
-                    url: 'https://github.com/npenin/anne',
-                    ref: 'master',
-                    singleBranch: true,
-                    depth: 1
-                });
-        }
-        catch(e)
-        {
-            await git.clone({
-                fs,
-                http,
-                dir,
-                corsProxy: 'https://cors.isomorphic-git.org',
-                url: 'https://github.com/npenin/anne',
-                ref: 'master',
-                singleBranch: true,
-                depth: 1
-            });
-        }
-
-            document.querySelector('.fa-save').style.visibility='visible'
-        })()
-        
-        await Notification.requestPermission();
-
-        dynamic(document.querySelector('.info>.mold>.name'), {
-            Enter(ev)
-            {
-                fetchmold(ev).then(()=>ev.target.blur()).then(()=>saveLocally());
-            }
-        })
-        document.querySelector('.mold').addEventListener('click', () => document.querySelector('.info>.mold>.name').focus());
-         async function fetchmold(ev)
-        {
-            const res = await fetch(new URL(ev.target.innerText.replace('https://boutique.guydemarle.com', 'https://d2quloop9d8ihx.cloudfront.net'), root));
-            const content = res.text();
-            const dummy = document.createElement('div');
-            dummy.innerHTML = await content;
-            const meta = Object.fromEntries(Array.from(dummy.querySelectorAll('meta').values()).filter(v => v.attributes.property).map(v => [v.attributes.property.value, v.attributes.content.value]));
-            dummy.remove();
-            ev.target.innerText = meta['og:title'];
-            ev.target.parentNode.querySelector('img').src = meta['og:image'];
-            ev.target.parentNode.querySelector('a').href = meta['og:url'];
-        }
-window.fetchmold=fetchmold;
-function getRecipe() {
-return {
-                title: document.querySelector('h1').innerText,
-                topings: Array.from(document.querySelectorAll('.topings li')).map(li => ({
-                    quantity: li.querySelector('.quantity').innerText,
-                    unit: li.querySelector('.unit').innerText,
-                    name: li.querySelector('.toping').innerText
-                })),
-                accessories:Array.from(document.querySelectorAll('.accessories > ul > li')).map(span=>({
-                    name: span.querySelector('.name').innerText,
-                    picture: span.querySelector('img').src,
-                    url: span.querySelector('a').href,
-                })),
-                steps: Array.from(document.querySelectorAll('.steps li')).map(li => li.innerText),
-                for: document.querySelector('.info .count').innerText,
-                preptime: document.querySelector('.info .preptime').innerText,
-                resttime: document.querySelector('.info .resttime').innerText,
-                cooktime: document.querySelector('.info .cooktime').innerText,
-                mold:{
-                    name: document.querySelector('.info>.mold').innerText, 
-                    picture:document.querySelector('.info>.mold>a>img').src,
-                    url:document.querySelector('.info>.mold>a').href,
-                },
-            };
-} 
-
-function saveLocally() {
- localStorage.setItem('tmpRecipe', JSON.stringify(getRecipe()));
-} 
-
-        window.save= async function save()
-        {
-            const recipe = getRecipe();
-                
-        const filename=`${dir}/recettes/${recipe.title.replace(/[^a-z]+/gi, '-').toLowerCase()}.json`;
-            await pfs.writeFile(filename, JSON.stringify(recipe));            
-            await git.add({fs, dir, filepath: filename.substring(dir.length+1)})
-            let sha = await git.commit({
-            fs,
-            dir,
-            message: 'update recipe',
-            author: {
-                name: 'Anne',
-                email: 'anne@anneetsesdelices.fr'
-            }
-            })
-
-             await git.push({
-                fs,
-                http,
-                dir,
-                remote: 'origin',
-                ref: 'master',
-                onAuth: () => ({ username: token }),
-            })
-
-            const notif=Notification.requestPermission();
-            if(notif)
-                notif.showNotification('Recette enregistree');
-
-localStorage.removeItem('tmpRecipe')
-
-        }
-
-        function addAccessory(focus)
-        {
-            const li = document.createElement('li')
-            li.classList.add('mold');
-            const a = document.createElement('a');
-            a.target='_blank';
-            li.appendChild(a);
-            const img=document.createElement('img');
-            a.appendChild(img);
-            const name = document.createElement('span')
-            name.classList.add('name');
-            name.contentEditable=true;
-            li.appendChild(name);
-            document.querySelector('.accessories>ul').appendChild(li);
-            dynamic(name, { Enter:(ev) => {
-                if(ev.target.innerText!=='')
-                    fetchmold(ev).then(()=>ev.target.blur()).then(()=>saveLocally());
-                else
-{
-                    li.remove();
-saveLocally();
-}
-            } });
-            if (focus)
-                name.focus();
-            return li;
-        }
-window.addAccessory= addAccessory
-
-        function addPrepStep(focus)
-        {
-            const li = document.createElement('li')
-            li.contentEditable = true;
-            document.querySelector('.steps ol').appendChild(li);
-            dynamic(li);
-            if (focus)
-                li.focus();
-li.addEventListener('blur', saveLocally);
-            return li;
-        }
-window.addPrepStep=addPrepStep 
-        function addTopings(focus)
-        {
-            const li = document.createElement('li')
-            const quantity = document.createElement('span')
-            const unit = document.createElement('span')
-            const toping = document.createElement('span')
-            quantity.classList.add('quantity');
-            unit.classList.add('unit');
-            toping.classList.add('toping');
-            quantity.contentEditable = true;
-            unit.contentEditable = true;
-            toping.contentEditable = true;
-            li.appendChild(quantity);
-            li.appendChild(unit);
-            li.appendChild(toping);
-            // li.contentEditable = true;
-            document.querySelector('.topings ul').appendChild(li);
-            dynamic(quantity, { Enter(ev) { unit.focus(); ev.preventDefault(); return false } })
-            dynamic(unit, { Enter(ev) { toping.focus(); ev.preventDefault(); return false } })
-            dynamic(toping, { Enter(ev) { toping.blur(); setTimeout(() => addTopings(true)); ev.preventDefault(); return false } });
-            if (focus)
-                quantity.focus();
-quantity.addEventListener('blur', saveLocally);
-unit.addEventListener('blur', saveLocally);
-toping.addEventListener('blur', saveLocally);
-            return li;
-        }
-window.addTopings= addTopings
-        function dynamic(self, keys)
-        {
-            keys = Object.assign({}, keys);
-            self.addEventListener('keydown', function (ev)
-            {
-                if (self.innerText === '' && (ev.key == 'Delete' || ev.key == 'Backspace' || ev.key == 'Escape'))
                 {
-                    self.blur();
-                }
-                //else if (this.innerText === '' && ev.key.length > 1 && ev.key !== 'Unidentified')
-                //    self.innerText = ev.key;
-                else if (ev.key in keys)
-                    keys[ev.key](ev);
-            });
-            self.addEventListener('blur', function (ev)
-            {
-                let li = self;
-                while (li && li.tagName !== 'LI')
-                    li = li.parentNode;
-
-                if (li && li.textContent == '')
-{
                     li.remove();
-saveLocally();
-}
-            });
-        }
-    </script>
+                    saveLocally();
+                }
+            }
+        });
+        if (focus)
+            name.focus();
+        return li;
+    }
+    window.addAccessory = addAccessory
+
+    function addPrepStep(focus)
+    {
+        const li = document.createElement('li')
+        li.contentEditable = true;
+        document.querySelector('.steps ol').appendChild(li);
+        dynamic(li);
+        if (focus)
+            li.focus();
+        li.addEventListener('blur', saveLocally);
+        return li;
+    }
+    window.addPrepStep = addPrepStep
+    function addTopings(focus)
+    {
+        const li = document.createElement('li')
+        const quantity = document.createElement('span')
+        const unit = document.createElement('span')
+        const toping = document.createElement('span')
+        quantity.classList.add('quantity');
+        unit.classList.add('unit');
+        toping.classList.add('toping');
+        quantity.contentEditable = true;
+        unit.contentEditable = true;
+        toping.contentEditable = true;
+        li.appendChild(quantity);
+        li.appendChild(unit);
+        li.appendChild(toping);
+        // li.contentEditable = true;
+        document.querySelector('.topings ul').appendChild(li);
+        dynamic(quantity, { Enter(ev) { unit.focus(); ev.preventDefault(); return false } })
+        dynamic(unit, { Enter(ev) { toping.focus(); ev.preventDefault(); return false } })
+        dynamic(toping, { Enter(ev) { toping.blur(); setTimeout(() => addTopings(true)); ev.preventDefault(); return false } });
+        if (focus)
+            quantity.focus();
+        quantity.addEventListener('blur', saveLocally);
+        unit.addEventListener('blur', saveLocally);
+        toping.addEventListener('blur', saveLocally);
+        return li;
+    }
+    window.addTopings = addTopings
+    function dynamic(self, keys)
+    {
+        keys = Object.assign({}, keys);
+        self.addEventListener('keydown', function (ev)
+        {
+            if (self.innerText === '' && (ev.key == 'Delete' || ev.key == 'Backspace' || ev.key == 'Escape'))
+            {
+                self.blur();
+            }
+            //else if (this.innerText === '' && ev.key.length > 1 && ev.key !== 'Unidentified')
+            //    self.innerText = ev.key;
+            else if (ev.key in keys)
+                keys[ev.key](ev);
+        });
+        self.addEventListener('blur', function (ev)
+        {
+            let li = self;
+            while (li && li.tagName !== 'LI')
+                li = li.parentNode;
+
+            if (li && li.textContent == '')
+            {
+                li.remove();
+                saveLocally();
+            }
+        });
+    }
+</script>
