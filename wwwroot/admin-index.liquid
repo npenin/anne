@@ -159,18 +159,25 @@ permalink: "/admin/"
         const recipe = getRecipe();
 
         const filename = `${dir}/recettes/${recipe.title.replace(/[^a-z]+/gi, '-').toLowerCase()}.json`;
-        await fetch('https://api.github.com/repos/npenin/anne/contents/' + filename.substring(dir.length + 1), {
+        const res=await fetch('https://api.github.com/repos/npenin/anne/contents/' + filename.substring(dir.length + 1), {
             headers: { accept: 'application/vnd.github+json', authorization: 'Bearer ' + token, 'X-GitHub-Api-Version': '2022-11-28' }, method: 'PUT', body: JSON.stringify(
                 { "message": "create "+recipe.title, "committer": { "name": "Anne", "email": "anne@anneetsesdelices.fr" }, "content": btoa(unescape(encodeURIComponent(JSON.stringify(recipe)))) }
             )
         });
 
-
+        if(res.ok){
         const notif = await Notification.requestPermission();
         if (notif)
-            notif.showNotification('Recette enregistree');
-
+            new Notification('Recette enregistree');
         localStorage.removeItem('tmpRecipe')
+}
+else
+{
+    const notif = await Notification.requestPermission();
+        if (notif)
+            new Notification('Une erreur s\'est produite', { body: await res.text()});
+    
+}
 
     }
 
