@@ -1,14 +1,14 @@
 ﻿---
 layout: index.liquid
 title: Anne et son admin
-pagination:
-    data: recettes
-    size: 1
-    alias: recette
-permalink: "/admin/{{recette.title|slugify}}/"
+permalink: /admin/recette/
 ---
 <div class="toolbar">
     <i class="fal fa-save fa-2x" style="visibility:hidden" onclick="save()"></i>
+    <div>
+        <input type="checkbox" name="private">
+        <label for="private">Privée</label>
+    </div>
 </div>
 <div class="info panel">
     <div>
@@ -19,13 +19,13 @@ permalink: "/admin/{{recette.title|slugify}}/"
     </div>
     <div class="mold">
         <a href="#">
-            <img src="{{recette.mold.picture}}" />
+            <img />
         </a>
-        <span class="name" contenteditable="">{{recette.mold.name}}</span>
+        <span class="name" contenteditable=""></span>
     </div>
 </div>
 <header>
-    <h1 contenteditable>{{recette.title}}</h1>
+    <h1 contenteditable></h1>
 </header>
 <div class="accessories panel">
     <h2>Accessoires</h2>
@@ -55,9 +55,9 @@ permalink: "/admin/{{recette.title|slugify}}/"
     </a>
 </div>
 
-<script src="https://unpkg.com/@isomorphic-git/lightning-fs"></script>
-<script src="https://unpkg.com/isomorphic-git@beta"></script>
 <script type="module">
+    import http from 'https://unpkg.com/isomorphic-git@beta/http/web/index.js'
+
     let token = localStorage.getItem('GITHUB_TOKEN');
     if (!token && (token = prompt('Token?')))
         localStorage.setItem('GITHUB_TOKEN', token)
@@ -71,33 +71,36 @@ permalink: "/admin/{{recette.title|slugify}}/"
     const dir = "/{{recette.title|slugify}}"
     const root = window.location.href.substring(0, window.location.href.length - '{{page.url}}'.length + '/admin/'.length);
 
-    const recipe = {{ recette | json }}
-    document.querySelector('h1').innerText = recipe.title;
-    document.querySelector('.info .count').innerText = recipe.for;
-    document.querySelector('.info .preptime').innerText = recipe.preptime;
-    document.querySelector('.info .resttime').innerText = recipe.resttime;
-    document.querySelector('.info .cooktime').innerText = recipe.cooktime;
-    document.querySelector('.info .mold>.name').innerText = recipe.mold.name;
-    document.querySelector('.info .mold>a>img').src = recipe.mold.picture;
-    recipe.topings.forEach(t =>
+    if (localStorage.getItem('tmpRecipe'))
     {
-        const li = addTopings(false);
-        li.querySelector('.quantity').innerText = t.quantity;
-        li.querySelector('.unit').innerText = t.unit;
-        li.querySelector('.toping').innerText = t.name;
-    })
-    if (recipe.accessories)
-        recipe.accessories.forEach(a =>
+        const recipe = JSON.parse(localStorage.getItem('tmpRecipe'))
+        document.querySelector('h1').innerText = recipe.title;
+        document.querySelector('.info .count').innerText = recipe.for;
+        document.querySelector('.info .preptime').innerText = recipe.preptime;
+        document.querySelector('.info .resttime').innerText = recipe.resttime;
+        document.querySelector('.info .cooktime').innerText = recipe.cooktime;
+        document.querySelector('.info .mold>.name').innerText = recipe.mold.name;
+        document.querySelector('.info .mold>a>img').src = recipe.mold.picture;
+        recipe.topings.forEach(t =>
         {
-            const li = addAccessory(false);
-            li.querySelector('.name').innerText = a.name;
-            li.querySelector('img').src = a.picture;
+            const li = addTopings(false);
+            li.querySelector('.quantity').innerText = t.quantity;
+            li.querySelector('.unit').innerText = t.unit;
+            li.querySelector('.toping').innerText = t.name;
         })
-    recipe.steps.forEach(t =>
-    {
-        const li = addPrepStep(false);
-        li.innerText = t;
-    })
+        if (recipe.accessories)
+            recipe.accessories.forEach(a =>
+            {
+                const li = addAccessory(false);
+                li.querySelector('.name').innerText = a.name;
+                li.querySelector('img').src = a.picture;
+            })
+        recipe.steps.forEach(t =>
+        {
+            const li = addPrepStep(false);
+            li.innerText = t;
+        })
+    }
 
     document.querySelector('.fa-save').style.visibility = 'visible'
 
@@ -122,12 +125,12 @@ permalink: "/admin/{{recette.title|slugify}}/"
         ev.target.parentNode.querySelector('img').src = meta['og:image'];
         ev.target.parentNode.querySelector('a').href = meta['og:url'];
     }
-
     window.fetchmold = fetchmold;
     function getRecipe()
     {
         return {
             title: document.querySelector('h1').innerText,
+            private: document.querySelector('.input[name="private"]').checked,
             topings: Array.from(document.querySelectorAll('.topings li')).map(li => ({
                 quantity: li.querySelector('.quantity').innerText,
                 unit: li.querySelector('.unit').innerText,
@@ -151,34 +154,36 @@ permalink: "/admin/{{recette.title|slugify}}/"
         };
     }
 
-    function saveLocally() { }
+    function saveLocally()
+    {
+        localStorage.setItem('tmpRecipe', JSON.stringify(getRecipe()));
+    }
 
     window.save = async function save()
     {
         const recipe = getRecipe();
 
         const filename = `${dir}/recettes/${recipe.title.replace(/[^a-z]+/gi, '-').toLowerCase()}.json`;
-        let res=await fetch('https://api.github.com/repos/npenin/anne/contents/' + filename.substring(dir.length + 1), {
-            headers: { accept: 'application/vnd.github+json', authorization: 'Bearer ' + token, 'X-GitHub-Api-Version': '2022-11-28' }, method: 'GET'
-        });
-
-        if(!res.ok)
-            new Notification('Probleme lors de la recuperation', {body:await res.text()});
-
-        res=await fetch('https://api.github.com/repos/npenin/anne/contents/' + filename.substring(dir.length + 1), {
+        const res=await fetch('https://api.github.com/repos/npenin/anne/contents/' + filename.substring(dir.length + 1), {
             headers: { accept: 'application/vnd.github+json', authorization: 'Bearer ' + token, 'X-GitHub-Api-Version': '2022-11-28' }, method: 'PUT', body: JSON.stringify(
-                { "message": "update "+recipe.title, "committer": { "name": "Anne", "email": "anne@anneetsesdelices.fr" }, sha:(await res.json()).sha, "content": btoa(unescape(encodeURIComponent(JSON.stringify(recipe)))) }
+                { "message": "create "+recipe.title, "committer": { "name": "Anne", "email": "anne@anneetsesdelices.fr" }, "content": btoa(unescape(encodeURIComponent(JSON.stringify(recipe)))) }
             )
         });
 
-        if(res.ok)
-        {
-            const notif=await Notification.requestPermission();
-            if (notif)
-                new Notification('Recette enregistree');
-        }
-        else
-                new Notification('Une erreur s\'est produite', {body:await res.text()});
+        if(res.ok){
+        const notif = await Notification.requestPermission();
+        if (notif)
+            new Notification('Recette enregistree');
+        localStorage.removeItem('tmpRecipe')
+}
+else
+{
+    const notif = await Notification.requestPermission();
+        if (notif)
+            new Notification('Une erreur s\'est produite', { body: await res.text()});
+    
+}
+
     }
 
     function addAccessory(focus)
@@ -221,12 +226,10 @@ permalink: "/admin/{{recette.title|slugify}}/"
         dynamic(li);
         if (focus)
             li.focus();
-        li.addEventListener('blur', saveLocally());
+        li.addEventListener('blur', saveLocally);
         return li;
     }
-
     window.addPrepStep = addPrepStep
-
     function addTopings(focus)
     {
         const li = document.createElement('li')
@@ -249,13 +252,12 @@ permalink: "/admin/{{recette.title|slugify}}/"
         dynamic(toping, { Enter(ev) { toping.blur(); setTimeout(() => addTopings(true)); ev.preventDefault(); return false } });
         if (focus)
             quantity.focus();
-        quantity.addEventListener('blur', saveLocally());
-        unit.addEventListener('blur', saveLocally());
-        toping.addEventListener('blur', saveLocally());
+        quantity.addEventListener('blur', saveLocally);
+        unit.addEventListener('blur', saveLocally);
+        toping.addEventListener('blur', saveLocally);
         return li;
     }
     window.addTopings = addTopings
-
     function dynamic(self, keys)
     {
         keys = Object.assign({}, keys);

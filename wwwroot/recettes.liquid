@@ -13,11 +13,10 @@ tags:
 ---
 
 <ul style="font-size:larger">
-  {% for item in pagination.items reversed %}
+  {% for item in pagination.items reversed %}{% if not item.data.recette.private %}
     <li>
       <a href="{{item.page.url }}">{{ item.data.recette.title }}</a>
-    </li>
-  {% endfor %}
+    </li>{% endif %}{% endfor %}
 </ul>
 {% if pagination.pages.length > 1 %}
   <nav aria-labelledby="my-pagination">

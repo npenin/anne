@@ -1,0 +1,30 @@
+﻿---
+eleventyImport:
+    collections: ["allrecettes"]
+permalink: "admin/recettes/{% if pagination.pageNumber > 0 %}page-{{ (pagination.pageNumber + 1) }}/{% endif %}index.html"
+title: "Anne et son admin"
+layout: generic.liquid
+pagination:
+    data: collections.allrecettes
+    size: 300
+---
+<script>
+  window.addEventListener('load', ()=> !localStorage.getItem('GITHUB_TOKEN') && document.getElementById('recipes').remove())
+</script>
+<ul style="font-size:larger" id="recipes">
+  {% for item in pagination.items  %}
+    <li>
+  <a href="{{item.page.url }}">{% if item.data.recette.private %} [PRIVEE] {% endif %}{{ item.data.recette.title }}</a>
+    </li>{% endfor %}
+</ul>
+{% if pagination.pages.length > 1 %}
+  <nav aria-labelledby="my-pagination" onload="onload()">
+    <ol>
+      {%- for pageEntry in pagination.pages %}
+        <li>
+          <a href="{{ pagination.hrefs[ forloop.index0 ] }}"{% if page.url == pagination.hrefs[forloop.index0] %}aria-current="page"{% endif %}>Page {{ forloop.index }}</a>
+        </li>
+      {%- endfor %}
+    </ol>
+  </nav>
+{% endif %}
