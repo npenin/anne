@@ -130,7 +130,7 @@ permalink: /admin/recette/
     {
         return {
             title: document.querySelector('h1').innerText,
-            private: document.querySelector('.input[name="private"]').checked,
+            private: document.querySelector('input[name="private"]').checked,
             topings: Array.from(document.querySelectorAll('.topings li')).map(li => ({
                 quantity: li.querySelector('.quantity').innerText,
                 unit: li.querySelector('.unit').innerText,
