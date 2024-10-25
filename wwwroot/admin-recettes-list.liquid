@@ -9,9 +9,9 @@ pagination:
     size: 300
 ---
 <script>
-  window.addEventListener('load', ()=> !localStorage.getItem('GITHUB_TOKEN') && document.getElementById('recipes').remove())
+  window.addEventListener('load', ()=> !localStorage.getItem('GITHUB_TOKEN') ? document.getElementById('recipes').remove(): document.getElementById('recipes').style.display='block')
 </script>
-<ul style="font-size:larger" id="recipes">
+<ul style="font-size:larger; display:none" id="recipes">
   {% for item in pagination.items  %}
     <li>
   <a href="{{item.page.url }}">{% if item.data.recette.private %} [PRIVEE] {% endif %}{{ item.data.recette.title }}</a>
