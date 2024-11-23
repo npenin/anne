@@ -1,0 +1,99 @@
+{
+  "title": "Bûche marrons",
+  "private": true,
+  "toppings": [
+    {
+      "quantity": "10",
+      "unit": "g",
+      "name": "Beurre pommade"
+    },
+    {
+      "quantity": "10",
+      "unit": "g",
+      "name": "Sucre glace"
+    },
+    {
+      "quantity": "10",
+      "unit": "g",
+      "name": "Blanc d'œuf"
+    },
+    {
+      "quantity": "7",
+      "unit": "g",
+      "name": "Farine"
+    },
+    {
+      "quantity": "3",
+      "unit": "g",
+      "name": "Cacao"
+    },
+    {
+      "quantity": "60",
+      "unit": "g",
+      "name": "Poudre d'amandes"
+    },
+    {
+      "quantity": "30",
+      "unit": "g",
+      "name": "Farine"
+    },
+    {
+      "quantity": "50",
+      "unit": "g",
+      "name": "Beurre"
+    },
+    {
+      "quantity": "3",
+      "unit": "",
+      "name": "Œufs"
+    },
+    {
+      "quantity": "90",
+      "unit": "g",
+      "name": "Sucre semoule"
+    },
+    {
+      "quantity": "300",
+      "unit": "g",
+      "name": "Crème de marrons"
+    },
+    {
+      "quantity": "3",
+      "unit": "feuilles",
+      "name": "Gélatine"
+    },
+    {
+      "quantity": "20",
+      "unit": "g",
+      "name": "Rhum"
+    },
+    {
+      "quantity": "250",
+      "unit": "g",
+      "name": "Crème pour chantilly"
+    },
+    {
+      "quantity": "40",
+      "unit": "g",
+      "name": "Brisures de marrons glacés"
+    }
+  ],
+  "accessories": [],
+  "steps": [
+    "Préparez la pâte à cigarette : Mélangez le beurre mou et le sucre glace au fouet. Ajoutez le blanc d'œuf ainsi que la farine et le cacao. Étalez cette pâte sur le tapis relief, puis placez-le dans un coin du Flexipan plat.",
+    "Préparez le biscuit : Mélangez la poudre d'amandes et la farine. Montez les blancs en neige avec le sucre semoule, puis incorporez les jaunes et le mélange farine-amandes. Faites fondre le beurre et incorporez-le à la masse.",
+    "Étalez la pâte sur le Flexipan et faites cuire le tout pendant 12 minutes à 180 °C.",
+    "Hydratez la gélatine dans de l'eau froide.",
+    "Préparez la mousse marrons : Faites tiédir la crème de marrons avec le rhum, incorporez les feuilles de gélatine hydratées, puis laissez refroidir. Incorporez la crème fouettée.",
+    "Découpez le biscuit et placez le relief dans le moule bûche. Garnissez avec la moitié de la mousse de marrons, ajoutez une bande de biscuit, les brisures de marrons, le reste de la mousse, puis terminez avec une autre bande de biscuit."
+  ],
+  "for": "8",
+  "preptime": "",
+  "resttime": "",
+  "cooktime": "12",
+  "mold": {
+    "name": "Moule bûche",
+    "picture": "",
+    "url": ""
+  }
+}
