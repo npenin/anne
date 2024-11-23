@@ -43,10 +43,10 @@ tags:
     <header>
         <h1>{{recette.title}}</h1>
     </header>
-    <div class="topings panel">
+    <div class="toppings panel">
         <h2>Ingrédients</h2>
         <ul>
-        {%- for toping in recette.topings %}
+        {%- for toping in recette.toppings %}
             <li>{{ toping.quantity }} {{ toping.unit }} {{ toping.name }}</li>
         {% endfor -%}
         </ul>

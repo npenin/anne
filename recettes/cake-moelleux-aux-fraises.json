@@ -1,1 +1,113 @@
-{"title":"Cake moelleux aux fraises","topings":[{"quantity":"150","unit":"g","name":"Poudre d'amandes"},{"quantity":"150","unit":"g","name":"Maïzena "},{"quantity":"1","unit":"sachet","name":"Levure chimique"},{"quantity":"4","unit":"œufs","name":""},{"quantity":"180","unit":"g","name":"sucre"},{"quantity":"1","unit":"sachet","name":"Sucre vanillé"},{"quantity":"30","unit":"g","name":"Crème fraîche"},{"quantity":"250","unit":"g","name":"Fraises"},{"quantity":"10","unit":"cL","name":"Lait"},{"quantity":"9","unit":"cL","name":"Huile"},{"quantity":"Éclats de pistaches torréfiées ","unit":"","name":""}],"accessories":[{"name":"Grand cul de poule 3,7L / 25 cm","picture":"https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg","url":""},{"name":"Support cul-de-poule","picture":"https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg","url":""},{"name":"Balance de cuisine en inox","picture":"https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg","url":""},{"name":"Plaque Aluminium perforée 40 x 30 cm","picture":"https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg","url":""},{"name":"Fouet 13 cm","picture":"https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg","url":""},{"name":"Spatule haute température 25 cm","picture":"https://boutique.guydemarle.com/3113-nq_social_share/spatule-haute-temperature-25-cm-guy-demarle.jpg","url":"https://boutique.guydemarle.com/accessoires-de-cuisine/622-spatule-haute-temperature-25-cm-guy-demarle.html"}],"steps":["Préchauffer votre four à 180°C.","Poser votre moule sur une plaque aluminium perforée.","Dans un cul de poule, mélanger la poudre d'amandes, la Maïzena, les sucres et la levure.","Ajouter les œufs, l’huile, le lait, la crème puis mélanger.","Couper les fraises en morceaux.","Ajouter les fraises à la préparation et mélanger délicatement avec une spatule.","Répartir dans les empreintes.","Parsemer les empreintes d’éclats de pistaches.","Enfourner à 180°C pendant 20-25 min selon votre four.","Laisser refroidir avant de démouler."],"for":"8","preptime":"10","resttime":"0","cooktime":"20-25","mold":{"name":"Moule 15 Napolitains OHRA®","picture":"https://boutique.guydemarle.com/11827-nq_social_share/moule-napolitains.jpg","url":"https://anneetsesdelices.fr/admin/#"}}
+{
+    "title": "Cake moelleux aux fraises",
+    "toppings": [
+        {
+            "quantity": "150",
+            "unit": "g",
+            "name": "Poudre d'amandes"
+        },
+        {
+            "quantity": "150",
+            "unit": "g",
+            "name": "Maïzena "
+        },
+        {
+            "quantity": "1",
+            "unit": "sachet",
+            "name": "Levure chimique"
+        },
+        {
+            "quantity": "4",
+            "unit": "œufs",
+            "name": ""
+        },
+        {
+            "quantity": "180",
+            "unit": "g",
+            "name": "sucre"
+        },
+        {
+            "quantity": "1",
+            "unit": "sachet",
+            "name": "Sucre vanillé"
+        },
+        {
+            "quantity": "30",
+            "unit": "g",
+            "name": "Crème fraîche"
+        },
+        {
+            "quantity": "250",
+            "unit": "g",
+            "name": "Fraises"
+        },
+        {
+            "quantity": "10",
+            "unit": "cL",
+            "name": "Lait"
+        },
+        {
+            "quantity": "9",
+            "unit": "cL",
+            "name": "Huile"
+        },
+        {
+            "quantity": "Éclats de pistaches torréfiées ",
+            "unit": "",
+            "name": ""
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": ""
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Spatule haute température 25 cm",
+            "picture": "https://boutique.guydemarle.com/3113-nq_social_share/spatule-haute-temperature-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/622-spatule-haute-temperature-25-cm-guy-demarle.html"
+        }
+    ],
+    "steps": [
+        "Préchauffer votre four à 180°C.",
+        "Poser votre moule sur une plaque aluminium perforée.",
+        "Dans un cul de poule, mélanger la poudre d'amandes, la Maïzena, les sucres et la levure.",
+        "Ajouter les œufs, l’huile, le lait, la crème puis mélanger.",
+        "Couper les fraises en morceaux.",
+        "Ajouter les fraises à la préparation et mélanger délicatement avec une spatule.",
+        "Répartir dans les empreintes.",
+        "Parsemer les empreintes d’éclats de pistaches.",
+        "Enfourner à 180°C pendant 20-25 min selon votre four.",
+        "Laisser refroidir avant de démouler."
+    ],
+    "for": "8",
+    "preptime": "10",
+    "resttime": "0",
+    "cooktime": "20-25",
+    "mold": {
+        "name": "Moule 15 Napolitains OHRA®",
+        "picture": "https://boutique.guydemarle.com/11827-nq_social_share/moule-napolitains.jpg",
+        "url": "https://anneetsesdelices.fr/admin/#"
+    }
+}

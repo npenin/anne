@@ -1,1 +1,103 @@
-{"title":"Mini moelleux pistaches framboises","topings":[{"quantity":"125","unit":"g","name":"Poudre d'amandes"},{"quantity":"95","unit":"g","name":"Sucre"},{"quantity":"95","unit":"g","name":"Beurre"},{"quantity":"3","unit":"œufs","name":""},{"quantity":"30","unit":"g","name":"Pâte de pistache"},{"quantity":"5","unit":"gouttes","name":"Arôme de pistache"},{"quantity":"20","unit":"framboises entières","name":""},{"quantity":"Éclats de pistaches torréfiées","unit":"","name":""}],"accessories":[{"name":"Grand cul de poule 3,7L / 25 cm","picture":"https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg","url":""},{"name":"Support cul-de-poule","picture":"https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg","url":""},{"name":"Balance de cuisine en inox","picture":"https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg","url":""},{"name":"Plaque Aluminium perforée 40 x 30 cm","picture":"https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg","url":""},{"name":"Fouet 13 cm","picture":"https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg","url":""},{"name":"Bol micro-ondes 1L","picture":"https://boutique.guydemarle.com/3363-nq_social_share/bol-micro-ondes-1l.jpg","url":"https://boutique.guydemarle.com/accessoires-de-cuisine/1009-bol-micro-ondes-1l.html"},{"name":"Pâte de pistache pure 100% - 160g","picture":"https://boutique.guydemarle.com/11006-nq_social_share/pate-de-pistache-premium.jpg","url":"https://boutique.guydemarle.com/epicerie-en-ligne/4115-pate-de-pistache-premium.html"}],"steps":["Préchauffer votre four à 180°C.","Poser votre moule sur une plaque aluminium perforée.","Dans le bol micro-ondes, faire fondre le beurre et réserver.","Dans un cul de poule, mélanger la poudre d’amandes et le sucre.","Ajouter les œufs et mélanger.","Ajouter la pâte de pistache, l'arôme et le beurre puis mélanger.","Remplir les empreintes.","Déposer une framboise dans chaque empreinte.","Parsemer des éclats de pistaches sur les empreintes.","Enfourner à 180°C pour 14 min."],"for":"10","preptime":"10","resttime":"0","cooktime":"14","mold":{"name":"Moule 20 Mini-Muffins OHRA®","picture":"https://boutique.guydemarle.com/11029-nq_social_share/moule-mini-muffins.jpg","url":"https://boutique.guydemarle.com/moules-ohra/4149-moule-mini-muffins.html"}}
+{
+    "title": "Mini moelleux pistaches framboises",
+    "toppings": [
+        {
+            "quantity": "125",
+            "unit": "g",
+            "name": "Poudre d'amandes"
+        },
+        {
+            "quantity": "95",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "95",
+            "unit": "g",
+            "name": "Beurre"
+        },
+        {
+            "quantity": "3",
+            "unit": "œufs",
+            "name": ""
+        },
+        {
+            "quantity": "30",
+            "unit": "g",
+            "name": "Pâte de pistache"
+        },
+        {
+            "quantity": "5",
+            "unit": "gouttes",
+            "name": "Arôme de pistache"
+        },
+        {
+            "quantity": "20",
+            "unit": "framboises entières",
+            "name": ""
+        },
+        {
+            "quantity": "Éclats de pistaches torréfiées",
+            "unit": "",
+            "name": ""
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": ""
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Bol micro-ondes 1L",
+            "picture": "https://boutique.guydemarle.com/3363-nq_social_share/bol-micro-ondes-1l.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1009-bol-micro-ondes-1l.html"
+        },
+        {
+            "name": "Pâte de pistache pure 100% - 160g",
+            "picture": "https://boutique.guydemarle.com/11006-nq_social_share/pate-de-pistache-premium.jpg",
+            "url": "https://boutique.guydemarle.com/epicerie-en-ligne/4115-pate-de-pistache-premium.html"
+        }
+    ],
+    "steps": [
+        "Préchauffer votre four à 180°C.",
+        "Poser votre moule sur une plaque aluminium perforée.",
+        "Dans le bol micro-ondes, faire fondre le beurre et réserver.",
+        "Dans un cul de poule, mélanger la poudre d’amandes et le sucre.",
+        "Ajouter les œufs et mélanger.",
+        "Ajouter la pâte de pistache, l'arôme et le beurre puis mélanger.",
+        "Remplir les empreintes.",
+        "Déposer une framboise dans chaque empreinte.",
+        "Parsemer des éclats de pistaches sur les empreintes.",
+        "Enfourner à 180°C pour 14 min."
+    ],
+    "for": "10",
+    "preptime": "10",
+    "resttime": "0",
+    "cooktime": "14",
+    "mold": {
+        "name": "Moule 20 Mini-Muffins OHRA®",
+        "picture": "https://boutique.guydemarle.com/11029-nq_social_share/moule-mini-muffins.jpg",
+        "url": "https://boutique.guydemarle.com/moules-ohra/4149-moule-mini-muffins.html"
+    }
+}

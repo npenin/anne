@@ -1,1 +1,98 @@
-{"title":"Mini gâteau bossu","topings":[{"quantity":"3","unit":"Œufs ","name":""},{"quantity":"1/2","unit":"Citron ","name":""},{"quantity":"150","unit":"g","name":"Sucre"},{"quantity":"1","unit":"Sachet","name":"Levure chimique "},{"quantity":"210","unit":"g","name":"Farine "},{"quantity":"1","unit":"Sachet","name":"Sucre vanillé "},{"quantity":"170","unit":"g","name":"Beurre fondu"}],"accessories":[{"name":"Plaque Aluminium perforée 40 x 30 cm","picture":"https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg","url":"https://boutique.guydemarle.com/plaques-patisserie-et-cuisson/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"},{"name":"Presse agrumes inox","picture":"https://boutique.guydemarle.com/2219-nq_social_share/presse-agrumes-inox-guy-demarle.jpg","url":"https://boutique.guydemarle.com/accessoires-de-cuisine/675-presse-agrumes-inox-guy-demarle.html"},{"name":"Petit cul de poule 2L / 20 cm","picture":"https://boutique.guydemarle.com/2233-nq_social_share/petit-cul-de-poule-2l-20-cm-guy-demarle.jpg","url":"https://boutique.guydemarle.com/accessoires-de-cuisine/683-petit-cul-de-poule-2l-20-cm-guy-demarle.html"},{"name":"Support cul-de-poule","picture":"https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg","url":"https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"},{"name":"Fouet 13 cm","picture":"https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg","url":"https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"},{"name":"Bol micro-ondes 1L","picture":"https://boutique.guydemarle.com/3363-nq_social_share/bol-micro-ondes-1l.jpg","url":"https://boutique.guydemarle.com/accessoires-de-cuisine/1009-bol-micro-ondes-1l.html"},{"name":"Mini Louche","picture":"https://boutique.guydemarle.com/7327-nq_social_share/mini-louche-cuisine-flexipan.jpg","url":"https://boutique.guydemarle.com/ustensiles-de-cuisine/2528-mini-louche-cuisine-flexipan.html"}],"steps":["Poser le moule sur une plaque aluminium perforée.","Presser le citron et mettre le jus dans un cul de poule.","Ajouter les œufs, les sucres et fouetter jusqu'à ce que les sucres soient dissous.","Ajouter la farine et la levure puis mélanger.","Ajouter le beurre et mélanger.","Mettre l’appareil dans les empreintes.","Placer votre moule au réfrigérateur pendant 30 min.","Préchauffer le four à 220°C, attendre qu'il soit bien chaud pour mettre le moule dedans. En effet, c'est le choc thermique froid/chaud qui provoquera la belle bosse du gâteau.","Enfourner à 220°C pendant 12 min.","Laisser refroidir avant de démouler."],"for":"10","preptime":"15","resttime":"0","cooktime":"12","mold":{"name":"Moule 20 Mini-Muffins OHRA®","picture":"https://boutique.guydemarle.com/11027-nq_social_share/moule-mini-muffins.jpg","url":"https://boutique.guydemarle.com/moules-ohra/4149-moule-mini-muffins.html"}}
+{
+    "title": "Mini gâteau bossu",
+    "toppings": [
+        {
+            "quantity": "3",
+            "unit": "Œufs ",
+            "name": ""
+        },
+        {
+            "quantity": "1/2",
+            "unit": "Citron ",
+            "name": ""
+        },
+        {
+            "quantity": "150",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "1",
+            "unit": "Sachet",
+            "name": "Levure chimique "
+        },
+        {
+            "quantity": "210",
+            "unit": "g",
+            "name": "Farine "
+        },
+        {
+            "quantity": "1",
+            "unit": "Sachet",
+            "name": "Sucre vanillé "
+        },
+        {
+            "quantity": "170",
+            "unit": "g",
+            "name": "Beurre fondu"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaques-patisserie-et-cuisson/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Presse agrumes inox",
+            "picture": "https://boutique.guydemarle.com/2219-nq_social_share/presse-agrumes-inox-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/675-presse-agrumes-inox-guy-demarle.html"
+        },
+        {
+            "name": "Petit cul de poule 2L / 20 cm",
+            "picture": "https://boutique.guydemarle.com/2233-nq_social_share/petit-cul-de-poule-2l-20-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/683-petit-cul-de-poule-2l-20-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Bol micro-ondes 1L",
+            "picture": "https://boutique.guydemarle.com/3363-nq_social_share/bol-micro-ondes-1l.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1009-bol-micro-ondes-1l.html"
+        },
+        {
+            "name": "Mini Louche",
+            "picture": "https://boutique.guydemarle.com/7327-nq_social_share/mini-louche-cuisine-flexipan.jpg",
+            "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine/2528-mini-louche-cuisine-flexipan.html"
+        }
+    ],
+    "steps": [
+        "Poser le moule sur une plaque aluminium perforée.",
+        "Presser le citron et mettre le jus dans un cul de poule.",
+        "Ajouter les œufs, les sucres et fouetter jusqu'à ce que les sucres soient dissous.",
+        "Ajouter la farine et la levure puis mélanger.",
+        "Ajouter le beurre et mélanger.",
+        "Mettre l’appareil dans les empreintes.",
+        "Placer votre moule au réfrigérateur pendant 30 min.",
+        "Préchauffer le four à 220°C, attendre qu'il soit bien chaud pour mettre le moule dedans. En effet, c'est le choc thermique froid/chaud qui provoquera la belle bosse du gâteau.",
+        "Enfourner à 220°C pendant 12 min.",
+        "Laisser refroidir avant de démouler."
+    ],
+    "for": "10",
+    "preptime": "15",
+    "resttime": "0",
+    "cooktime": "12",
+    "mold": {
+        "name": "Moule 20 Mini-Muffins OHRA®",
+        "picture": "https://boutique.guydemarle.com/11027-nq_social_share/moule-mini-muffins.jpg",
+        "url": "https://boutique.guydemarle.com/moules-ohra/4149-moule-mini-muffins.html"
+    }
+}

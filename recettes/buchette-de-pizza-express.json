@@ -1,6 +1,6 @@
 {
     "title": "Bûchettes de pizza express",
-    "topings": [
+    "toppings": [
         {
             "quantity": "165",
             "unit": "g",

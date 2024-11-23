@@ -1,1 +1,115 @@
-{"title":"Cake moelleux pistaches framboises","topings":[{"quantity":"120","unit":"g","name":"Beurre pommade "},{"quantity":"120 g","unit":"Sucre","name":""},{"quantity":"3","unit":"Œufs ","name":""},{"quantity":"120","unit":"g","name":"Farine "},{"quantity":"60 g","unit":"Poudre d'amandes ","name":""},{"quantity":"60","unit":"g","name":"Pâte de pistache"},{"quantity":"200","unit":"g","name":"Framboises fraîches + quelques unes  pour le décoration "},{"quantity":"2","unit":"gouttes","name":"d'amande amère "},{"quantity":"8","unit":"gouttes","name":"d'arôme de pistache "}],"accessories":[{"name":"Plaque Aluminium perforée 40 x 30 cm","picture":"https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg","url":""},{"name":"Grand cul de poule 3,7L / 25 cm","picture":"https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg","url":""},{"name":"Support cul-de-poule","picture":"https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg","url":""},{"name":"Pâte de pistache pure 100% - 160g","picture":"https://boutique.guydemarle.com/11006-nq_social_share/pate-de-pistache-premium.jpg","url":""},{"name":"Petit cul de poule 2L / 20 cm","picture":"https://boutique.guydemarle.com/2233-nq_social_share/petit-cul-de-poule-2l-20-cm-guy-demarle.jpg","url":""},{"name":"Fouet 13 cm","picture":"https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg","url":""},{"name":"Spatule double embout - Gris Anthracite","picture":"https://boutique.guydemarle.com/5792-nq_social_share/spatule-double-embout-gris-anthracite.jpg","url":""},{"name":"Petite spatule coudée 9 cm","picture":"https://boutique.guydemarle.com/2142-nq_social_share/petite-spatule-coudee-9-cm-guy-demarle.jpg","url":""}],"steps":["Préchauffer le four à 180°C.","Poser le moule sur une plaque aluminium perforée.","Dans un cul de poule, mélanger le beurre pommade et le sucre jusqu'à obtenir une consistance crémeuse.","Ajouter les œufs un par un en mélangeant bien après chaque ajout.","Incorporer la pâte de pistache, l'extrait d'amande amère et l'arôme de pistache et mélanger jusqu'à ce que la pâte homogène.","Dans un autre cul de poule, mélanger la farine et la poudre d’amandes.","Ajouter ce mélange progressivement à la pâte en remuant doucement jusqu'à ce que tous les ingrédients soient bien incorporés.","Délicatement, ajouter les framboises fraîches à la pâte et mélanger doucement pour les répartir uniformément.","Verser la pâte dans le moule et lisser avec la petite spatule coudée.","Enfourner 45-50 min à 180°C, en surveillant.","Laisser refroidir avant de démouler.","Vous pouvez décorer avec quelques framboises fraîches."],"for":"8","preptime":"15","resttime":"0","cooktime":"45-50","mold":{"name":"Moule à cake cannelé OHRA®","picture":"https://boutique.guydemarle.com/11202-nq_social_share/moule-cake-canneles.jpg","url":"https://anneetsesdelices.fr/admin/cake-moelleux-pistaches-framboises/#"}}
+{
+    "title": "Cake moelleux pistaches framboises",
+    "toppings": [
+        {
+            "quantity": "120",
+            "unit": "g",
+            "name": "Beurre pommade "
+        },
+        {
+            "quantity": "120 g",
+            "unit": "Sucre",
+            "name": ""
+        },
+        {
+            "quantity": "3",
+            "unit": "Œufs ",
+            "name": ""
+        },
+        {
+            "quantity": "120",
+            "unit": "g",
+            "name": "Farine "
+        },
+        {
+            "quantity": "60 g",
+            "unit": "Poudre d'amandes ",
+            "name": ""
+        },
+        {
+            "quantity": "60",
+            "unit": "g",
+            "name": "Pâte de pistache"
+        },
+        {
+            "quantity": "200",
+            "unit": "g",
+            "name": "Framboises fraîches + quelques unes  pour le décoration "
+        },
+        {
+            "quantity": "2",
+            "unit": "gouttes",
+            "name": "d'amande amère "
+        },
+        {
+            "quantity": "8",
+            "unit": "gouttes",
+            "name": "d'arôme de pistache "
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Pâte de pistache pure 100% - 160g",
+            "picture": "https://boutique.guydemarle.com/11006-nq_social_share/pate-de-pistache-premium.jpg",
+            "url": ""
+        },
+        {
+            "name": "Petit cul de poule 2L / 20 cm",
+            "picture": "https://boutique.guydemarle.com/2233-nq_social_share/petit-cul-de-poule-2l-20-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Spatule double embout - Gris Anthracite",
+            "picture": "https://boutique.guydemarle.com/5792-nq_social_share/spatule-double-embout-gris-anthracite.jpg",
+            "url": ""
+        },
+        {
+            "name": "Petite spatule coudée 9 cm",
+            "picture": "https://boutique.guydemarle.com/2142-nq_social_share/petite-spatule-coudee-9-cm-guy-demarle.jpg",
+            "url": ""
+        }
+    ],
+    "steps": [
+        "Préchauffer le four à 180°C.",
+        "Poser le moule sur une plaque aluminium perforée.",
+        "Dans un cul de poule, mélanger le beurre pommade et le sucre jusqu'à obtenir une consistance crémeuse.",
+        "Ajouter les œufs un par un en mélangeant bien après chaque ajout.",
+        "Incorporer la pâte de pistache, l'extrait d'amande amère et l'arôme de pistache et mélanger jusqu'à ce que la pâte homogène.",
+        "Dans un autre cul de poule, mélanger la farine et la poudre d’amandes.",
+        "Ajouter ce mélange progressivement à la pâte en remuant doucement jusqu'à ce que tous les ingrédients soient bien incorporés.",
+        "Délicatement, ajouter les framboises fraîches à la pâte et mélanger doucement pour les répartir uniformément.",
+        "Verser la pâte dans le moule et lisser avec la petite spatule coudée.",
+        "Enfourner 45-50 min à 180°C, en surveillant.",
+        "Laisser refroidir avant de démouler.",
+        "Vous pouvez décorer avec quelques framboises fraîches."
+    ],
+    "for": "8",
+    "preptime": "15",
+    "resttime": "0",
+    "cooktime": "45-50",
+    "mold": {
+        "name": "Moule à cake cannelé OHRA®",
+        "picture": "https://boutique.guydemarle.com/11202-nq_social_share/moule-cake-canneles.jpg",
+        "url": "https://anneetsesdelices.fr/admin/cake-moelleux-pistaches-framboises/#"
+    }
+}

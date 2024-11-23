@@ -1,1 +1,128 @@
-{"title":"Fleurs fraises pistaches","private":false,"topings":[{"quantity":"200","unit":"g","name":"Farine"},{"quantity":"1/2","unit":"sachet","name":"Levure chimique"},{"quantity":"100","unit":"g","name":"Sucre"},{"quantity":"3","unit":"œufs","name":""},{"quantity":"100","unit":"g","name":"Beurre"},{"quantity":"100","unit":"mL","name":"Lait"},{"quantity":"40","unit":"g","name":"Pâte de pistaches"},{"quantity":"250","unit":"g","name":"Fraises fraîches"},{"quantity":"1","unit":"c-à-c","name":"Extrait de vanille"},{"quantity":"1","unit":"pincée de sel","name":""},{"quantity":"1/2","unit":"c-à-c","name":"Arôme de pistaches"}],"accessories":[{"name":"Grand cul de poule 3,7L / 25 cm","picture":"https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg","url":""},{"name":"Support cul-de-poule","picture":"https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg","url":""},{"name":"Balance de cuisine en inox","picture":"https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg","url":""},{"name":"Plaque Aluminium perforée 40 x 30 cm","picture":"https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg","url":""},{"name":"Fouet 13 cm","picture":"https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg","url":""},{"name":"Spatule double embout - Corail","picture":"https://boutique.guydemarle.com/5802-nq_social_share/spatule-double-embout-corail.jpg","url":""},{"name":"Cuillère magique","picture":"https://boutique.guydemarle.com/2139-nq_social_share/cuillere-magique-guy-demarle.jpg","url":""},{"name":"Bol micro-ondes 1L","picture":"https://boutique.guydemarle.com/3363-nq_social_share/bol-micro-ondes-1l.jpg","url":"https://boutique.guydemarle.com/accessoires-de-cuisine/1009-bol-micro-ondes-1l.html"}],"steps":["Préchauffer votre four à 180°C.","Poser votre moule sur une plaque aluminium perforée.","Laver et équeuter les fraises puis les couper en petits morceaux et réserver.","Dans le bol micro-ondes, faire fondre le beurre et réserver.","Dans un cul de poule, battre les œufs et le sucre avec la cuillère magique jusqu'à ce que le mélange blanchisse.","Ajouter le beurre fondu, le lait, l'extrait de vanille et l'arôme de pistaches puis mélanger.","Incorporer progressivement la farine, la levure et le sel et mélanger doucement pour obtenir une pâte homogène.","Ajouter la pâte de pistaches et mélanger.","Incorporer les morceaux de fraises à la pâte en mélangeant doucement avec une spatule double embouts.","Répartir la pâte dans les empreintes.","Tapoter le moule pour enlever les bulles d'air.","Poser une toile de cuisson sur le moule.","Enfourner à 180°C pendant 20 min.","Laisser refroidir avant de démouler."],"for":"12","preptime":"15","resttime":"0","cooktime":"20","mold":{"name":"Moule 12 Flower Power OHRA®","picture":"https://boutique.guydemarle.com/11019-nq_social_share/moule-flower-power.jpg","url":"https://anneetsesdelices.fr/admin/recette/#"}}
+{
+    "title": "Fleurs fraises pistaches",
+    "private": false,
+    "toppings": [
+        {
+            "quantity": "200",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "1/2",
+            "unit": "sachet",
+            "name": "Levure chimique"
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "3",
+            "unit": "œufs",
+            "name": ""
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Beurre"
+        },
+        {
+            "quantity": "100",
+            "unit": "mL",
+            "name": "Lait"
+        },
+        {
+            "quantity": "40",
+            "unit": "g",
+            "name": "Pâte de pistaches"
+        },
+        {
+            "quantity": "250",
+            "unit": "g",
+            "name": "Fraises fraîches"
+        },
+        {
+            "quantity": "1",
+            "unit": "c-à-c",
+            "name": "Extrait de vanille"
+        },
+        {
+            "quantity": "1",
+            "unit": "pincée de sel",
+            "name": ""
+        },
+        {
+            "quantity": "1/2",
+            "unit": "c-à-c",
+            "name": "Arôme de pistaches"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": ""
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Spatule double embout - Corail",
+            "picture": "https://boutique.guydemarle.com/5802-nq_social_share/spatule-double-embout-corail.jpg",
+            "url": ""
+        },
+        {
+            "name": "Cuillère magique",
+            "picture": "https://boutique.guydemarle.com/2139-nq_social_share/cuillere-magique-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Bol micro-ondes 1L",
+            "picture": "https://boutique.guydemarle.com/3363-nq_social_share/bol-micro-ondes-1l.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1009-bol-micro-ondes-1l.html"
+        }
+    ],
+    "steps": [
+        "Préchauffer votre four à 180°C.",
+        "Poser votre moule sur une plaque aluminium perforée.",
+        "Laver et équeuter les fraises puis les couper en petits morceaux et réserver.",
+        "Dans le bol micro-ondes, faire fondre le beurre et réserver.",
+        "Dans un cul de poule, battre les œufs et le sucre avec la cuillère magique jusqu'à ce que le mélange blanchisse.",
+        "Ajouter le beurre fondu, le lait, l'extrait de vanille et l'arôme de pistaches puis mélanger.",
+        "Incorporer progressivement la farine, la levure et le sel et mélanger doucement pour obtenir une pâte homogène.",
+        "Ajouter la pâte de pistaches et mélanger.",
+        "Incorporer les morceaux de fraises à la pâte en mélangeant doucement avec une spatule double embouts.",
+        "Répartir la pâte dans les empreintes.",
+        "Tapoter le moule pour enlever les bulles d'air.",
+        "Poser une toile de cuisson sur le moule.",
+        "Enfourner à 180°C pendant 20 min.",
+        "Laisser refroidir avant de démouler."
+    ],
+    "for": "12",
+    "preptime": "15",
+    "resttime": "0",
+    "cooktime": "20",
+    "mold": {
+        "name": "Moule 12 Flower Power OHRA®",
+        "picture": "https://boutique.guydemarle.com/11019-nq_social_share/moule-flower-power.jpg",
+        "url": "https://anneetsesdelices.fr/admin/recette/#"
+    }
+}

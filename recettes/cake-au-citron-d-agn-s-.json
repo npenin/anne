@@ -1,1 +1,105 @@
-{"title":"Cake au citron d'Agnès ","topings":[{"quantity":"3","unit":"Œufs ","name":""},{"quantity":"150","unit":"g","name":"Sucre"},{"quantity":"150","unit":"g","name":"Beurre"},{"quantity":"150","unit":"g","name":"Farine"},{"quantity":"1","unit":"C-à-c ","name":"Levure chimique"},{"quantity":"1","unit":"Zeste","name":"Citron"},{"quantity":"1/2","unit":"Jus","name":"Citron"},{"quantity":"Décoration: sucre glace, jus de citron, billes de sucre ","unit":"","name":""}],"accessories":[{"name":"Grand cul de poule 3,7L / 25 cm","picture":"https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg","url":""},{"name":"Support cul-de-poule","picture":"https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg","url":""},{"name":"Fouet 13 cm","picture":"https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg","url":""},{"name":"Balance de cuisine en inox","picture":"https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg","url":""},{"name":"Plaque Aluminium perforée 40 x 30 cm","picture":"https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg","url":""},{"name":"Spatule double embout - Corail","picture":"https://boutique.guydemarle.com/5802-nq_social_share/spatule-double-embout-corail.jpg","url":""},{"name":"Bol micro-ondes 1L","picture":"https://boutique.guydemarle.com/3363-nq_social_share/bol-micro-ondes-1l.jpg","url":""}],"steps":["Préchauffer votre four à 170°C.","Poser votre moule sur une plaque aluminium perforée.","Dans le bol micro-ondes, faire fondre le beurre et réserver.","Dans un cul de poule, fouetter les œufs et le sucre jusqu'à ce que le mélange blanchisse.","Ajouter le beurre fondu et bien mélanger à l'aide de la spatule.","Incorporer la farine, la levure et travailler la pâte jusqu'à obtenir un mélange bien lisse.","Ajouter le jus et le zeste de citron. ","Verser la préparation dans le moule.","Enfourner à 170°C pendant 40 min.","Laisser refroidir avant de démouler.\n\n\nDécoration :","Prendre un peu de jus de citron et incorporer au fur et à mesure le sucre glace afin d’obtenir une pâte un peu coulante.","Couler le glaçage sur le sommet du cake et décorer avec des billes de sucre."],"for":"14","preptime":"15","resttime":"0","cooktime":"40","mold":{"name":"Moule à Bûche Sapin OHRA®","picture":"https://boutique.guydemarle.com/12418-nq_social_share/moule-a-buche-sapin-de-noel.jpg","url":"https://boutique.guydemarle.com/moule-en-silicone/4629-moule-a-buche-sapin-de-noel.html"}}
+{
+    "title": "Cake au citron d'Agnès ",
+    "toppings": [
+        {
+            "quantity": "3",
+            "unit": "Œufs ",
+            "name": ""
+        },
+        {
+            "quantity": "150",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "150",
+            "unit": "g",
+            "name": "Beurre"
+        },
+        {
+            "quantity": "150",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "1",
+            "unit": "C-à-c ",
+            "name": "Levure chimique"
+        },
+        {
+            "quantity": "1",
+            "unit": "Zeste",
+            "name": "Citron"
+        },
+        {
+            "quantity": "1/2",
+            "unit": "Jus",
+            "name": "Citron"
+        },
+        {
+            "quantity": "Décoration: sucre glace, jus de citron, billes de sucre ",
+            "unit": "",
+            "name": ""
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": ""
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Spatule double embout - Corail",
+            "picture": "https://boutique.guydemarle.com/5802-nq_social_share/spatule-double-embout-corail.jpg",
+            "url": ""
+        },
+        {
+            "name": "Bol micro-ondes 1L",
+            "picture": "https://boutique.guydemarle.com/3363-nq_social_share/bol-micro-ondes-1l.jpg",
+            "url": ""
+        }
+    ],
+    "steps": [
+        "Préchauffer votre four à 170°C.",
+        "Poser votre moule sur une plaque aluminium perforée.",
+        "Dans le bol micro-ondes, faire fondre le beurre et réserver.",
+        "Dans un cul de poule, fouetter les œufs et le sucre jusqu'à ce que le mélange blanchisse.",
+        "Ajouter le beurre fondu et bien mélanger à l'aide de la spatule.",
+        "Incorporer la farine, la levure et travailler la pâte jusqu'à obtenir un mélange bien lisse.",
+        "Ajouter le jus et le zeste de citron. ",
+        "Verser la préparation dans le moule.",
+        "Enfourner à 170°C pendant 40 min.",
+        "Laisser refroidir avant de démouler.\n\n\nDécoration :",
+        "Prendre un peu de jus de citron et incorporer au fur et à mesure le sucre glace afin d’obtenir une pâte un peu coulante.",
+        "Couler le glaçage sur le sommet du cake et décorer avec des billes de sucre."
+    ],
+    "for": "14",
+    "preptime": "15",
+    "resttime": "0",
+    "cooktime": "40",
+    "mold": {
+        "name": "Moule à Bûche Sapin OHRA®",
+        "picture": "https://boutique.guydemarle.com/12418-nq_social_share/moule-a-buche-sapin-de-noel.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/4629-moule-a-buche-sapin-de-noel.html"
+    }
+}

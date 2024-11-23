@@ -1,1 +1,80 @@
-{"title":"Cœurder country","topings":[{"quantity":"425","unit":"g","name":"Chocolat lait"},{"quantity":"125","unit":"g","name":"Chocolat blanc"},{"quantity":"100","unit":"g","name":"Blé soufflé (Smacks)"},{"quantity":"62,5","unit":"g","name":"Crème liquide entière"}],"accessories":[{"name":"Grand cul de poule 3,7L / 25 cm","picture":"https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg","url":""},{"name":"Support cul-de-poule","picture":"https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg","url":""},{"name":"Balance de cuisine en inox","picture":"https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg","url":""},{"name":"Plaque Aluminium perforée 40 x 30 cm","picture":"https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg","url":""},{"name":"Bol micro-ondes 1L","picture":"https://boutique.guydemarle.com/3363-nq_social_share/bol-micro-ondes-1l.jpg","url":""},{"name":"Spatule double embout - Bleu","picture":"https://boutique.guydemarle.com/5798-nq_social_share/spatule-double-embout-bleu.jpg","url":""}],"steps":["Poser votre moule sur une plaque aluminium perforée.","Dans le bol micro-ondes ou au bain marie, faire fondre le chocolat au lait.","A l’aide du pinceau, badigeonner le chocolat sur les empreintes. Il faut bien insister sur les bords des empreintes. Il vous restera du chocolat.","Réserver au réfrigérateur jusqu'à ce que le chocolat durcisse.","Une fois le chocolat dur, faites fondre le chocolat blanc au bain marie.","Ajouter la crème au chocolat blanc et mélanger pour obtenir une préparation homogène.","Dans un cul de poule, mettre le blé soufflé et la préparation chocolat blanc/crème puis mélanger avec une spatule.","Sortir le moule du réfrigérateur et répartir le mélange dans les empreintes, en appuyant bien, laisser au frais 5 min.","Reprendre le chocolat au lait et le faire fondre un peu si il a durci.","Mettre une couche de chocolat sur chaque empreinte et lisser avec la spatule coudée.","Laisser refroidir au moins 1h30 au réfrigérateur.","Démouler délicatement."],"for":"12","preptime":"20","resttime":"65","cooktime":"0","mold":{"name":"Moule coeurs OHRA®","picture":"https://boutique.guydemarle.com/16089-nq_social_share/moule-coeurs-ohra.jpg","url":"https://boutique.guydemarle.com/moule-en-silicone/8107-moule-coeurs-ohra.html"}}
+{
+    "title": "Cœurder country",
+    "toppings": [
+        {
+            "quantity": "425",
+            "unit": "g",
+            "name": "Chocolat lait"
+        },
+        {
+            "quantity": "125",
+            "unit": "g",
+            "name": "Chocolat blanc"
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Blé soufflé (Smacks)"
+        },
+        {
+            "quantity": "62,5",
+            "unit": "g",
+            "name": "Crème liquide entière"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": ""
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Bol micro-ondes 1L",
+            "picture": "https://boutique.guydemarle.com/3363-nq_social_share/bol-micro-ondes-1l.jpg",
+            "url": ""
+        },
+        {
+            "name": "Spatule double embout - Bleu",
+            "picture": "https://boutique.guydemarle.com/5798-nq_social_share/spatule-double-embout-bleu.jpg",
+            "url": ""
+        }
+    ],
+    "steps": [
+        "Poser votre moule sur une plaque aluminium perforée.",
+        "Dans le bol micro-ondes ou au bain marie, faire fondre le chocolat au lait.",
+        "A l’aide du pinceau, badigeonner le chocolat sur les empreintes. Il faut bien insister sur les bords des empreintes. Il vous restera du chocolat.",
+        "Réserver au réfrigérateur jusqu'à ce que le chocolat durcisse.",
+        "Une fois le chocolat dur, faites fondre le chocolat blanc au bain marie.",
+        "Ajouter la crème au chocolat blanc et mélanger pour obtenir une préparation homogène.",
+        "Dans un cul de poule, mettre le blé soufflé et la préparation chocolat blanc/crème puis mélanger avec une spatule.",
+        "Sortir le moule du réfrigérateur et répartir le mélange dans les empreintes, en appuyant bien, laisser au frais 5 min.",
+        "Reprendre le chocolat au lait et le faire fondre un peu si il a durci.",
+        "Mettre une couche de chocolat sur chaque empreinte et lisser avec la spatule coudée.",
+        "Laisser refroidir au moins 1h30 au réfrigérateur.",
+        "Démouler délicatement."
+    ],
+    "for": "12",
+    "preptime": "20",
+    "resttime": "65",
+    "cooktime": "0",
+    "mold": {
+        "name": "Moule coeurs OHRA®",
+        "picture": "https://boutique.guydemarle.com/16089-nq_social_share/moule-coeurs-ohra.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/8107-moule-coeurs-ohra.html"
+    }
+}

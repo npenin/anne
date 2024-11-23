@@ -1,1 +1,107 @@
-{"title":"Gâteau au yaourt ","topings":[{"quantity":"1","unit":"Yaourt nature (garder le pot et l’utiliser pour les mesures)","name":""},{"quantity":"3","unit":"Œufs moyens","name":""},{"quantity":"1 1/2","unit":"Pots","name":"Sucre"},{"quantity":"1","unit":"Sachet","name":"Sucre vanillé"},{"quantity":"2","unit":"Pots","name":"Farine tamisée "},{"quantity":"1/2","unit":"Pot","name":"Maïzena tamisée"},{"quantity":"1","unit":"Sachet","name":"Levure chimique tamisée"},{"quantity":"1","unit":"Pot","name":"Huile neutre"},{"quantity":"1 petite","unit":"C-à-c","name":"Vanille en poudre"},{"quantity":"1","unit":"Pincée","name":"Sel"}],"accessories":[{"name":"Grand cul de poule 3,7L / 25 cm","picture":"https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg","url":""},{"name":"Support cul-de-poule","picture":"https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg","url":""},{"name":"Balance de cuisine en inox","picture":"https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg","url":""},{"name":"Plaque Aluminium perforée 40 x 30 cm","picture":"https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg","url":""},{"name":"Spatule double embout - Bleu","picture":"https://boutique.guydemarle.com/5798-nq_social_share/spatule-double-embout-bleu.jpg","url":""},{"name":"Fouet 13 cm","picture":"https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg","url":"https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"}],"steps":["Préchauffer votre four à 180°C.","Poser votre moule sur une plaque aluminium perforée.","Dans un cul de poule, fouetter le yaourt avec les œufs.","Ajouter les sucres, la vanille en poudre et mélanger.","Ajouter l’huile, le sel et mélanger.","Ajouter la farine, la levure chimique et la Maïzena tamisées puis mélanger pour obtenir une pâte lisse et homogène.","Verser la préparation dans le moule,  tapoter un peu la plaque sur votre plan de travail.","Enfourner à 180°C pendant 40 - 45 min en surveillant.","Laisser refroidir avant de démouler."],"for":"6-8","preptime":"10","resttime":"0","cooktime":"40-45","mold":{"name":"Moule à charlotte OHRA®","picture":"https://boutique.guydemarle.com/16284-nq_social_share/moule-a-charlotte-ohra.jpg","url":"https://boutique.guydemarle.com/moule-en-silicone/8253-moule-a-charlotte-ohra.html"}}
+{
+    "title": "Gâteau au yaourt ",
+    "toppings": [
+        {
+            "quantity": "1",
+            "unit": "Yaourt nature (garder le pot et l’utiliser pour les mesures)",
+            "name": ""
+        },
+        {
+            "quantity": "3",
+            "unit": "Œufs moyens",
+            "name": ""
+        },
+        {
+            "quantity": "1 1/2",
+            "unit": "Pots",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "1",
+            "unit": "Sachet",
+            "name": "Sucre vanillé"
+        },
+        {
+            "quantity": "2",
+            "unit": "Pots",
+            "name": "Farine tamisée "
+        },
+        {
+            "quantity": "1/2",
+            "unit": "Pot",
+            "name": "Maïzena tamisée"
+        },
+        {
+            "quantity": "1",
+            "unit": "Sachet",
+            "name": "Levure chimique tamisée"
+        },
+        {
+            "quantity": "1",
+            "unit": "Pot",
+            "name": "Huile neutre"
+        },
+        {
+            "quantity": "1 petite",
+            "unit": "C-à-c",
+            "name": "Vanille en poudre"
+        },
+        {
+            "quantity": "1",
+            "unit": "Pincée",
+            "name": "Sel"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": ""
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Spatule double embout - Bleu",
+            "picture": "https://boutique.guydemarle.com/5798-nq_social_share/spatule-double-embout-bleu.jpg",
+            "url": ""
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        }
+    ],
+    "steps": [
+        "Préchauffer votre four à 180°C.",
+        "Poser votre moule sur une plaque aluminium perforée.",
+        "Dans un cul de poule, fouetter le yaourt avec les œufs.",
+        "Ajouter les sucres, la vanille en poudre et mélanger.",
+        "Ajouter l’huile, le sel et mélanger.",
+        "Ajouter la farine, la levure chimique et la Maïzena tamisées puis mélanger pour obtenir une pâte lisse et homogène.",
+        "Verser la préparation dans le moule,  tapoter un peu la plaque sur votre plan de travail.",
+        "Enfourner à 180°C pendant 40 - 45 min en surveillant.",
+        "Laisser refroidir avant de démouler."
+    ],
+    "for": "6-8",
+    "preptime": "10",
+    "resttime": "0",
+    "cooktime": "40-45",
+    "mold": {
+        "name": "Moule à charlotte OHRA®",
+        "picture": "https://boutique.guydemarle.com/16284-nq_social_share/moule-a-charlotte-ohra.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/8253-moule-a-charlotte-ohra.html"
+    }
+}

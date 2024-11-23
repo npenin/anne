@@ -84,7 +84,7 @@ a.panel {
     display: block;
 }
 
-.topings ul {
+.toppings ul {
     list-style: url('./toque.svg');
     font-size: larger;
 }
@@ -93,7 +93,7 @@ a.panel {
     font-size: larger;
 }
 
-.topings {
+.toppings {
     grid-column: 1;
     grid-row: 3;
 }
@@ -104,12 +104,12 @@ a.panel {
     grid-row-end: 5;
 }
 
-.topings,
+.toppings,
 .steps {
     position: relative;
 }
 
-.topings:before,
+.toppings:before,
 .steps:before {
     content: "";
     background-image: url('./background.svg');
@@ -341,7 +341,7 @@ h2 {
         margin-left: 20px;
     }
 
-    .topings {
+    .toppings {
         grid-row: 4;
         grid-column: 1;
         margin-left: 20px;
@@ -455,7 +455,7 @@ h2 {
         margin-right: 0;
     }
 
-    .topings {
+    .toppings {
         border-radius: 24px;
         grid-column: 1;
         grid-row: 4;
@@ -473,7 +473,7 @@ h2 {
         content: "-" !important;
     }
 
-    .topings::before,
+    .toppings::before,
     .steps::before {
         content: "";
         position: absolute;
@@ -495,13 +495,13 @@ h2 {
 
     .accessories>ul+button,
     .steps>ol+button,
-    .topings>ul+button {
+    .toppings>ul+button {
         display: none;
     }
 
     .mold,
     .steps ol,
-    .topings ul {
+    .toppings ul {
         font-size: inherit;
     }
 
@@ -522,6 +522,6 @@ h2 {
     }
 }
 
-.topings li>span {
+.toppings li>span {
     margin-right: 5px;
 }

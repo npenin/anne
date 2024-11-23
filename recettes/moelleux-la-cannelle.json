@@ -1,1 +1,109 @@
-{"title":"Moelleux à la cannelle","topings":[{"quantity":"200","unit":"g","name":"Compote de pommes sans sucre"},{"quantity":"100","unit":"g","name":"Sucre"},{"quantity":"100","unit":"g","name":"Beurre"},{"quantity":"3","unit":"œufs","name":""},{"quantity":"150","unit":"g","name":"Farine"},{"quantity":"100","unit":"g","name":"Poudre d'amandes"},{"quantity":"1/2","unit":"sachet","name":"Levure chimique"},{"quantity":"1","unit":"c-à-c","name":"Cannelle en poudre"},{"quantity":"1","unit":"Pincée de sel","name":""}],"accessories":[{"name":"Grand cul de poule 3,7L / 25 cm","picture":"https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg","url":""},{"name":"Support cul-de-poule","picture":"https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg","url":""},{"name":"Balance de cuisine en inox","picture":"https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg","url":""},{"name":"Plaque Aluminium perforée 40 x 30 cm","picture":"https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg","url":""},{"name":"Fouet 13 cm","picture":"https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg","url":""},{"name":"Bol micro-ondes 1L","picture":"https://boutique.guydemarle.com/3363-nq_social_share/bol-micro-ondes-1l.jpg","url":""},{"name":"Toile de cuisson 40 x 30 cm","picture":"https://boutique.guydemarle.com/12035-nq_social_share/toile-de-cuisson-en-silicone-40-x-30-cm.jpg","url":"https://boutique.guydemarle.com/toiles-et-tapis-de-cuisson/4508-toile-de-cuisson-en-silicone-40-x-30-cm.html"}],"steps":["Préchauffer votre four à 180°C.","Poser votre moule sur une plaque aluminium perforée.","Dans le bol micro-ondes, faire fondre le beurre et réserver.","Dans un cul de poule, mélanger la compote et le sucre.","Verser le beurre fondu et mélanger.","Ajouter les œufs et mélanger à nouveau.","Ajouter la farine, la poudre d’amandes, le sel, la cannelle et la levure puis mélanger.","Répartir dans les empreintes.","Poser une toile de cuisson sur le moule.","Enfourner à 180°C pendant 30 min.","Laisser refroidir avant de démouler."],"for":"12","preptime":"10","resttime":"0","cooktime":"30","mold":{"name":"Moule céramiques OHRA®","picture":"https://boutique.guydemarle.com/16372-nq_social_share/moule-ceramiques-ohra.jpg","url":"https://anneetsesdelices.fr/admin/moelleux-a-la-cannelle/#"}}
+{
+    "title": "Moelleux à la cannelle",
+    "toppings": [
+        {
+            "quantity": "200",
+            "unit": "g",
+            "name": "Compote de pommes sans sucre"
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Beurre"
+        },
+        {
+            "quantity": "3",
+            "unit": "œufs",
+            "name": ""
+        },
+        {
+            "quantity": "150",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Poudre d'amandes"
+        },
+        {
+            "quantity": "1/2",
+            "unit": "sachet",
+            "name": "Levure chimique"
+        },
+        {
+            "quantity": "1",
+            "unit": "c-à-c",
+            "name": "Cannelle en poudre"
+        },
+        {
+            "quantity": "1",
+            "unit": "Pincée de sel",
+            "name": ""
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": ""
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Bol micro-ondes 1L",
+            "picture": "https://boutique.guydemarle.com/3363-nq_social_share/bol-micro-ondes-1l.jpg",
+            "url": ""
+        },
+        {
+            "name": "Toile de cuisson 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/12035-nq_social_share/toile-de-cuisson-en-silicone-40-x-30-cm.jpg",
+            "url": "https://boutique.guydemarle.com/toiles-et-tapis-de-cuisson/4508-toile-de-cuisson-en-silicone-40-x-30-cm.html"
+        }
+    ],
+    "steps": [
+        "Préchauffer votre four à 180°C.",
+        "Poser votre moule sur une plaque aluminium perforée.",
+        "Dans le bol micro-ondes, faire fondre le beurre et réserver.",
+        "Dans un cul de poule, mélanger la compote et le sucre.",
+        "Verser le beurre fondu et mélanger.",
+        "Ajouter les œufs et mélanger à nouveau.",
+        "Ajouter la farine, la poudre d’amandes, le sel, la cannelle et la levure puis mélanger.",
+        "Répartir dans les empreintes.",
+        "Poser une toile de cuisson sur le moule.",
+        "Enfourner à 180°C pendant 30 min.",
+        "Laisser refroidir avant de démouler."
+    ],
+    "for": "12",
+    "preptime": "10",
+    "resttime": "0",
+    "cooktime": "30",
+    "mold": {
+        "name": "Moule céramiques OHRA®",
+        "picture": "https://boutique.guydemarle.com/16372-nq_social_share/moule-ceramiques-ohra.jpg",
+        "url": "https://anneetsesdelices.fr/admin/moelleux-a-la-cannelle/#"
+    }
+}

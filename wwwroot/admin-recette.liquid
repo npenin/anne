@@ -39,11 +39,11 @@ tags:
     <ul></ul>
     <button onclick="addAccessory(true)"><i class="fal fa-plus"></i></button>
 </div>
-<div class="topings panel">
+<div class="toppings panel">
     <h2>Ingrédients</h2>
     <ul>
     </ul>
-    <button onclick="addTopings(true)"><i class="fal fa-plus"></i></button>
+    <button onclick="addtoppings(true)"><i class="fal fa-plus"></i></button>
 
 </div>
 <div class="steps panel">
@@ -86,9 +86,9 @@ tags:
     document.querySelector('.info .cooktime').innerText = recipe.cooktime;
     document.querySelector('.info .mold>.name').innerText = recipe.mold.name;
     document.querySelector('.info .mold>a>img').src = recipe.mold.picture;
-    recipe.topings.forEach(t =>
+    recipe.toppings.forEach(t =>
     {
-        const li = addTopings(false);
+        const li = addtoppings(false);
         li.querySelector('.quantity').innerText = t.quantity;
         li.querySelector('.unit').innerText = t.unit;
         li.querySelector('.toping').innerText = t.name;
@@ -136,7 +136,7 @@ tags:
         return {
             title: document.querySelector('h1').innerText,
             private: document.querySelector('input[name="private"]').checked,
-            topings: Array.from(document.querySelectorAll('.topings li')).map(li => ({
+            toppings: Array.from(document.querySelectorAll('.toppings li')).map(li => ({
                 quantity: li.querySelector('.quantity').innerText,
                 unit: li.querySelector('.unit').innerText,
                 name: li.querySelector('.toping').innerText
@@ -236,7 +236,7 @@ tags:
 
     window.addPrepStep = addPrepStep
 
-    function addTopings(focus)
+    function addtoppings(focus)
     {
         const li = document.createElement('li')
         const quantity = document.createElement('span')
@@ -252,10 +252,10 @@ tags:
         li.appendChild(unit);
         li.appendChild(toping);
         // li.contentEditable = true;
-        document.querySelector('.topings ul').appendChild(li);
+        document.querySelector('.toppings ul').appendChild(li);
         dynamic(quantity, { Enter(ev) { unit.focus(); ev.preventDefault(); return false } })
         dynamic(unit, { Enter(ev) { toping.focus(); ev.preventDefault(); return false } })
-        dynamic(toping, { Enter(ev) { toping.blur(); setTimeout(() => addTopings(true)); ev.preventDefault(); return false } });
+        dynamic(toping, { Enter(ev) { toping.blur(); setTimeout(() => addtoppings(true)); ev.preventDefault(); return false } });
         if (focus)
             quantity.focus();
         quantity.addEventListener('blur', saveLocally());
@@ -263,7 +263,7 @@ tags:
         toping.addEventListener('blur', saveLocally());
         return li;
     }
-    window.addTopings = addTopings
+    window.addtoppings = addtoppings
 
     function dynamic(self, keys)
     {

@@ -1,1 +1,92 @@
-{"title":"Flan de carottes au comté ","topings":[{"quantity":"300","unit":"g","name":"Carottes"},{"quantity":"100","unit":"g","name":"Comté"},{"quantity":"3","unit":"Œufs","name":""},{"quantity":"15","unit":"cL","name":"Crème liquide entière"},{"quantity":"15","unit":"cL","name":"Lait"},{"quantity":"Sel","unit":"","name":""},{"quantity":"Poivre 5 baies","unit":"","name":""},{"quantity":"Noix de muscade","unit":"","name":""}],"accessories":[{"name":"Plaque Aluminium perforée 40 x 30 cm","picture":"https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg","url":""},{"name":"Grand cul de poule 3,7L / 25 cm","picture":"https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg","url":""},{"name":"Support cul-de-poule","picture":"https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg","url":""},{"name":"Fouet 13 cm","picture":"https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg","url":""},{"name":"Râpe double paroi","picture":"https://boutique.guydemarle.com/7342-nq_social_share/rape-double-paroi-de-cuisine.jpg","url":""}],"steps":["Préchauffer votre four à 180°C.","Poser votre moule sur une plaque aluminium perforée.","Râper les carottes et le comté.","Dans un cul de poule, battre les œufs.","Ajouter le lait, la crème, le comté, sel, poivre et noix de muscade puis mélanger.","Incorporer les carottes à la préparation et mélanger.","Répartir la préparation dans les empreintes.","Enfourner à 180°C pendant 25 min.","Démouler délicatement et servir."],"for":"8","preptime":"15","resttime":"0","cooktime":"25 ","mold":{"name":"Moule 8 Donuts OHRA®","picture":"https://boutique.guydemarle.com/11566-nq_social_share/moule-8-donuts-ohra.jpg","url":"https://anneetsesdelices.fr/admin/#"}}
+{
+    "title": "Flan de carottes au comté ",
+    "toppings": [
+        {
+            "quantity": "300",
+            "unit": "g",
+            "name": "Carottes"
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Comté"
+        },
+        {
+            "quantity": "3",
+            "unit": "Œufs",
+            "name": ""
+        },
+        {
+            "quantity": "15",
+            "unit": "cL",
+            "name": "Crème liquide entière"
+        },
+        {
+            "quantity": "15",
+            "unit": "cL",
+            "name": "Lait"
+        },
+        {
+            "quantity": "Sel",
+            "unit": "",
+            "name": ""
+        },
+        {
+            "quantity": "Poivre 5 baies",
+            "unit": "",
+            "name": ""
+        },
+        {
+            "quantity": "Noix de muscade",
+            "unit": "",
+            "name": ""
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Râpe double paroi",
+            "picture": "https://boutique.guydemarle.com/7342-nq_social_share/rape-double-paroi-de-cuisine.jpg",
+            "url": ""
+        }
+    ],
+    "steps": [
+        "Préchauffer votre four à 180°C.",
+        "Poser votre moule sur une plaque aluminium perforée.",
+        "Râper les carottes et le comté.",
+        "Dans un cul de poule, battre les œufs.",
+        "Ajouter le lait, la crème, le comté, sel, poivre et noix de muscade puis mélanger.",
+        "Incorporer les carottes à la préparation et mélanger.",
+        "Répartir la préparation dans les empreintes.",
+        "Enfourner à 180°C pendant 25 min.",
+        "Démouler délicatement et servir."
+    ],
+    "for": "8",
+    "preptime": "15",
+    "resttime": "0",
+    "cooktime": "25 ",
+    "mold": {
+        "name": "Moule 8 Donuts OHRA®",
+        "picture": "https://boutique.guydemarle.com/11566-nq_social_share/moule-8-donuts-ohra.jpg",
+        "url": "https://anneetsesdelices.fr/admin/#"
+    }
+}

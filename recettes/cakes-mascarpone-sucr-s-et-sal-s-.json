@@ -1,1 +1,118 @@
-{"title":"Cakes mascarpone sucrés et salés ","topings":[{"quantity":"Cake sucré / cake salé ","unit":"","name":""},{"quantity":"250 g","unit":"/ 250 g","name":"Mascarpone"},{"quantity":"4 /","unit":"4","name":"Œufs "},{"quantity":"250 g /","unit":"150 g","name":"Farine "},{"quantity":"1 sachet /","unit":" 1 sachet","name":"Levure chimique "},{"quantity":"1 pincée ","unit":"Sel /","name":"Sel-poivre"},{"quantity":"200 g","unit":"Sucre en poudre /","name":"0"},{"quantity":"1 c à s","unit":"Vanille liquide /","name":"0"},{"quantity":"0 / ","unit":"100 g","name":"Gruyère râpé "},{"quantity":"Fruits de votre choix /","unit":"Garnitures de votre choix","name":""}],"accessories":[{"name":"Plaque Aluminium perforée 40 x 30 cm","picture":"https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg","url":""},{"name":"Grand cul de poule 3,7L / 25 cm","picture":"https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg","url":""},{"name":"Support cul-de-poule","picture":"https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg","url":""},{"name":"Fouet 13 cm","picture":"https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg","url":""},{"name":"Petite spatule coudée 9 cm","picture":"https://boutique.guydemarle.com/2142-nq_social_share/petite-spatule-coudee-9-cm-guy-demarle.jpg","url":""},{"name":"Mini Louche - Rose","picture":"https://boutique.guydemarle.com/9092-nq_social_share/mini-louche-rose-cuisine.jpg","url":""},{"name":"Mélange 6 céréales pour pain - BIO - 500g","picture":"https://boutique.guydemarle.com/11349-nq_social_share/melange-6-cereales-pour-pain-bio-500g.jpg","url":""}],"steps":["Poser le moule 6 cakes hauts sur une plaque aluminium perforée.","Préchauffer le four à 180 °C.\n\n\n3 Cakes sucrés\n\n","Dans un cul de poule, fouetter le mascarpone, le sucre, les œufs et la vanille jusqu'à obtenir une pâte homogène.","Ajouter le sel, la farine, la levure et mélanger.","Répartir la pâte dans 3 cakes hauts à l’aide de la mini-louche.","Pour éviter que les fruits ne tombent dans le fond du moule, saupoudrer un peu de farine dessus avant de les déposer dans les empreintes.","Pour répartir les fruits une fois dans vos empreintes, utiliser la petite spatule coudée.","Vous pouvez utiliser des fruits rouges, des poires, des pommes, citron,...\n\n\n3 Cakes salés\n\n","Dans un cul de poule, mélanger la mascarpone et les œufs.","Ajouter la farine et la levure puis mélanger.","Ajouter le gruyère, saler et poivrer.","Répartir dans les 3 cakes hauts et ajouter les garnitures choisies. ","Vous pouvez utiliser tomates séchées, olives, mélange de graines, jambon, saumon fumé,...","Enfourner 40 min à 180°C.","Laisser refroidir avant de démouler."],"for":"6","preptime":"20","resttime":"0","cooktime":"40","mold":{"name":"Moule 6 Cakes Hauts OHRA®","picture":"https://boutique.guydemarle.com/11010-nq_social_share/moule-cake-haut.jpg","url":"https://anneetsesdelices.fr/cakes-mascarpone-sucres-et-sales/#"}}
+{
+    "title": "Cakes mascarpone sucrés et salés ",
+    "toppings": [
+        {
+            "quantity": "Cake sucré / cake salé ",
+            "unit": "",
+            "name": ""
+        },
+        {
+            "quantity": "250 g",
+            "unit": "/ 250 g",
+            "name": "Mascarpone"
+        },
+        {
+            "quantity": "4 /",
+            "unit": "4",
+            "name": "Œufs "
+        },
+        {
+            "quantity": "250 g /",
+            "unit": "150 g",
+            "name": "Farine "
+        },
+        {
+            "quantity": "1 sachet /",
+            "unit": " 1 sachet",
+            "name": "Levure chimique "
+        },
+        {
+            "quantity": "1 pincée ",
+            "unit": "Sel /",
+            "name": "Sel-poivre"
+        },
+        {
+            "quantity": "200 g",
+            "unit": "Sucre en poudre /",
+            "name": "0"
+        },
+        {
+            "quantity": "1 c à s",
+            "unit": "Vanille liquide /",
+            "name": "0"
+        },
+        {
+            "quantity": "0 / ",
+            "unit": "100 g",
+            "name": "Gruyère râpé "
+        },
+        {
+            "quantity": "Fruits de votre choix /",
+            "unit": "Garnitures de votre choix",
+            "name": ""
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Petite spatule coudée 9 cm",
+            "picture": "https://boutique.guydemarle.com/2142-nq_social_share/petite-spatule-coudee-9-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Mini Louche - Rose",
+            "picture": "https://boutique.guydemarle.com/9092-nq_social_share/mini-louche-rose-cuisine.jpg",
+            "url": ""
+        },
+        {
+            "name": "Mélange 6 céréales pour pain - BIO - 500g",
+            "picture": "https://boutique.guydemarle.com/11349-nq_social_share/melange-6-cereales-pour-pain-bio-500g.jpg",
+            "url": ""
+        }
+    ],
+    "steps": [
+        "Poser le moule 6 cakes hauts sur une plaque aluminium perforée.",
+        "Préchauffer le four à 180 °C.\n\n\n3 Cakes sucrés\n\n",
+        "Dans un cul de poule, fouetter le mascarpone, le sucre, les œufs et la vanille jusqu'à obtenir une pâte homogène.",
+        "Ajouter le sel, la farine, la levure et mélanger.",
+        "Répartir la pâte dans 3 cakes hauts à l’aide de la mini-louche.",
+        "Pour éviter que les fruits ne tombent dans le fond du moule, saupoudrer un peu de farine dessus avant de les déposer dans les empreintes.",
+        "Pour répartir les fruits une fois dans vos empreintes, utiliser la petite spatule coudée.",
+        "Vous pouvez utiliser des fruits rouges, des poires, des pommes, citron,...\n\n\n3 Cakes salés\n\n",
+        "Dans un cul de poule, mélanger la mascarpone et les œufs.",
+        "Ajouter la farine et la levure puis mélanger.",
+        "Ajouter le gruyère, saler et poivrer.",
+        "Répartir dans les 3 cakes hauts et ajouter les garnitures choisies. ",
+        "Vous pouvez utiliser tomates séchées, olives, mélange de graines, jambon, saumon fumé,...",
+        "Enfourner 40 min à 180°C.",
+        "Laisser refroidir avant de démouler."
+    ],
+    "for": "6",
+    "preptime": "20",
+    "resttime": "0",
+    "cooktime": "40",
+    "mold": {
+        "name": "Moule 6 Cakes Hauts OHRA®",
+        "picture": "https://boutique.guydemarle.com/11010-nq_social_share/moule-cake-haut.jpg",
+        "url": "https://anneetsesdelices.fr/cakes-mascarpone-sucres-et-sales/#"
+    }
+}

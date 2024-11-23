@@ -1,1 +1,87 @@
-{"title":"Mini moelleux chocolat blanc framboises","topings":[{"quantity":"100","unit":"g","name":"Chocolat blanc "},{"quantity":"50 ","unit":"g","name":"Beurre "},{"quantity":"2","unit":"Œufs ","name":""},{"quantity":"80","unit":"g","name":"Sucre en poudre"},{"quantity":"60","unit":"g","name":"Farine"},{"quantity":"30","unit":"Framboises fraîches ou surgelées ","name":""}],"accessories":[{"name":"Plaque Aluminium perforée 40 x 30 cm","picture":"https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg","url":"https://boutique.guydemarle.com/plaques-patisserie-et-cuisson/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"},{"name":"Pistoles de chocolat blanc 1 Kg","picture":"https://boutique.guydemarle.com/367-nq_social_share/pistoles-de-chocolat-blanc-1-kg-callebaut.jpg","url":"https://boutique.guydemarle.com/epicerie/246-pistoles-de-chocolat-blanc-1-kg-callebaut.html"},{"name":"Bol micro-ondes 1L","picture":"https://boutique.guydemarle.com/3363-nq_social_share/bol-micro-ondes-1l.jpg","url":"https://boutique.guydemarle.com/accessoires-de-cuisine/1009-bol-micro-ondes-1l.html"},{"name":"Fouet 13 cm","picture":"https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg","url":"https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"},{"name":"Grand cul de poule 3,7L / 25 cm","picture":"https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg","url":"https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"},{"name":"Support cul-de-poule","picture":"https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg","url":"https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"}],"steps":["Préchauffer le four à 180°C.","Poser votre moule sur une plaque aluminium perforée.","Faire fondre dans le bol micro-ondes le chocolat et le beurre en surveillant bien et jusqu'à ce que l’ensemble soit complètement fondu, puis remuer pour une texture lisse.","Dans un cul de poule, fouetter les œufs et le sucre jusqu'à ce que le mélange blanchisse et devienne mousseux.","Ajouter la préparation beurre-chocolat aux œufs battus puis mélanger.","Incorporer la farine petit à petit et remuer délicatement pour obtenir une pâte homogène.","Verser un petit peu de pâte dans chaque empreinte puis mettre une framboise et remettre un petit peu de pâte pour remplir aux trois quarts.","Enfourner, en chaleur statique, 15-20 min en fonction du moelleux que vous souhaitez.","Laisser refroidir avant de démouler."],"for":"15","preptime":"10","resttime":"0","cooktime":"15-20","mold":{"name":"Moule 30 Mini cannelés OHRA®","picture":"https://boutique.guydemarle.com/11580-nq_social_share/moule-30-mini-canneles-ohra.jpg","url":"https://boutique.guydemarle.com/moules-ohra/4363-moule-30-mini-canneles-ohra.html"}}
+{
+    "title": "Mini moelleux chocolat blanc framboises",
+    "toppings": [
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Chocolat blanc "
+        },
+        {
+            "quantity": "50 ",
+            "unit": "g",
+            "name": "Beurre "
+        },
+        {
+            "quantity": "2",
+            "unit": "Œufs ",
+            "name": ""
+        },
+        {
+            "quantity": "80",
+            "unit": "g",
+            "name": "Sucre en poudre"
+        },
+        {
+            "quantity": "60",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "30",
+            "unit": "Framboises fraîches ou surgelées ",
+            "name": ""
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaques-patisserie-et-cuisson/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Pistoles de chocolat blanc 1 Kg",
+            "picture": "https://boutique.guydemarle.com/367-nq_social_share/pistoles-de-chocolat-blanc-1-kg-callebaut.jpg",
+            "url": "https://boutique.guydemarle.com/epicerie/246-pistoles-de-chocolat-blanc-1-kg-callebaut.html"
+        },
+        {
+            "name": "Bol micro-ondes 1L",
+            "picture": "https://boutique.guydemarle.com/3363-nq_social_share/bol-micro-ondes-1l.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1009-bol-micro-ondes-1l.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        }
+    ],
+    "steps": [
+        "Préchauffer le four à 180°C.",
+        "Poser votre moule sur une plaque aluminium perforée.",
+        "Faire fondre dans le bol micro-ondes le chocolat et le beurre en surveillant bien et jusqu'à ce que l’ensemble soit complètement fondu, puis remuer pour une texture lisse.",
+        "Dans un cul de poule, fouetter les œufs et le sucre jusqu'à ce que le mélange blanchisse et devienne mousseux.",
+        "Ajouter la préparation beurre-chocolat aux œufs battus puis mélanger.",
+        "Incorporer la farine petit à petit et remuer délicatement pour obtenir une pâte homogène.",
+        "Verser un petit peu de pâte dans chaque empreinte puis mettre une framboise et remettre un petit peu de pâte pour remplir aux trois quarts.",
+        "Enfourner, en chaleur statique, 15-20 min en fonction du moelleux que vous souhaitez.",
+        "Laisser refroidir avant de démouler."
+    ],
+    "for": "15",
+    "preptime": "10",
+    "resttime": "0",
+    "cooktime": "15-20",
+    "mold": {
+        "name": "Moule 30 Mini cannelés OHRA®",
+        "picture": "https://boutique.guydemarle.com/11580-nq_social_share/moule-30-mini-canneles-ohra.jpg",
+        "url": "https://boutique.guydemarle.com/moules-ohra/4363-moule-30-mini-canneles-ohra.html"
+    }
+}

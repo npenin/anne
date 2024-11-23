@@ -1,1 +1,117 @@
-{"title":"Bun’s pizza","private":true,"topings":[{"quantity":"1","unit":"sachet préparation pâtes à pizzas","name":""},{"quantity":"325","unit":"g","name":"Farine"},{"quantity":"15","unit":"g","name":"Huile d’olive"},{"quantity":"190","unit":"g","name":"Eau tiède"},{"quantity":"150","unit":"g","name":"Fromage râpé"},{"quantity":"100","unit":"g","name":"Jambon"},{"quantity":"1","unit":"petite boite","name":"Champignons"},{"quantity":"1","unit":"briquette","name":"Coulis de tomates"},{"quantity":"Mix d'épices à pizza","unit":"","name":""}],"accessories":[{"name":"Grand cul de poule 3,7L / 25 cm","picture":"https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg","url":""},{"name":"Support cul-de-poule","picture":"https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg","url":""},{"name":"Balance de cuisine en inox","picture":"https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg","url":""},{"name":"Plaque Aluminium perforée 40 x 30 cm","picture":"https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg","url":""},{"name":"Fouet 13 cm","picture":"https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg","url":""},{"name":"Mix d'épices - Spécial Pizza & Pasta","picture":"https://boutique.guydemarle.com/9772-nq_social_share/mix-d-epices-special-pizza-pasta.jpg","url":"https://boutique.guydemarle.com/epicerie-en-ligne/3510-mix-d-epices-special-pizza-pasta.html"},{"name":"Préparation pour pâtes à pizzas, 5 sachets de 17,5 g","picture":"https://boutique.guydemarle.com/16471-nq_social_share/preparation-pates-a-pizzas-facile-rapide.jpg","url":"https://boutique.guydemarle.com/pates-a-pain-et-levures/119-preparation-pates-a-pizzas-facile-rapide.html"},{"name":"Rouleau à pâtisserie en inox","picture":"https://boutique.guydemarle.com/3329-nq_social_share/rouleau-a-patisserie-reglable-en-inox.jpg","url":"https://boutique.guydemarle.com/accessoires-de-cuisine/996-rouleau-a-patisserie-reglable-en-inox.html"}],"steps":["Poser votre moule sur une plaque aluminium perforée.","Dans un cul de poule, mélanger la farine et la préparation pour pâtes à pizzas.","Ajouter l’eau tiède, l’huile d’olive et mélanger la pâte pendant 5 min.","Laisser lever pendant 30 min en couvrant le cul de poule.","Reprendre la pâte et diviser en 20 boules.","Déposer un peu de farine sur les boules et les aplatir à l'aide du rouleau à pâtisserie.","Déposer au centre de la pâte, le coulis de tomates, les champignons, le fromage râpé.","Refermer chaque boule.","Déposer les boules dans les empreintes avec la partie fermée en dessous.","Laisser pousser 20 min.","Préchauffer votre four à 210 °C.","Badigeonner d’huile d’olive, déposer du fromage râpé et des épices.","Enfourner à 200°C pendant 20 min selon votre four."],"for":"5","preptime":"25","resttime":"50","cooktime":"20","mold":{"name":"Moule Cubicube OHRA®","picture":"https://boutique.guydemarle.com/12404-nq_social_share/moule-en-silicone-cubicube-ohra.jpg","url":"https://anneetsesdelices.fr/admin/recette/#"}}
+{
+    "title": "Bun’s pizza",
+    "private": true,
+    "toppings": [
+        {
+            "quantity": "1",
+            "unit": "sachet préparation pâtes à pizzas",
+            "name": ""
+        },
+        {
+            "quantity": "325",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "15",
+            "unit": "g",
+            "name": "Huile d’olive"
+        },
+        {
+            "quantity": "190",
+            "unit": "g",
+            "name": "Eau tiède"
+        },
+        {
+            "quantity": "150",
+            "unit": "g",
+            "name": "Fromage râpé"
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Jambon"
+        },
+        {
+            "quantity": "1",
+            "unit": "petite boite",
+            "name": "Champignons"
+        },
+        {
+            "quantity": "1",
+            "unit": "briquette",
+            "name": "Coulis de tomates"
+        },
+        {
+            "quantity": "Mix d'épices à pizza",
+            "unit": "",
+            "name": ""
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": ""
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Mix d'épices - Spécial Pizza & Pasta",
+            "picture": "https://boutique.guydemarle.com/9772-nq_social_share/mix-d-epices-special-pizza-pasta.jpg",
+            "url": "https://boutique.guydemarle.com/epicerie-en-ligne/3510-mix-d-epices-special-pizza-pasta.html"
+        },
+        {
+            "name": "Préparation pour pâtes à pizzas, 5 sachets de 17,5 g",
+            "picture": "https://boutique.guydemarle.com/16471-nq_social_share/preparation-pates-a-pizzas-facile-rapide.jpg",
+            "url": "https://boutique.guydemarle.com/pates-a-pain-et-levures/119-preparation-pates-a-pizzas-facile-rapide.html"
+        },
+        {
+            "name": "Rouleau à pâtisserie en inox",
+            "picture": "https://boutique.guydemarle.com/3329-nq_social_share/rouleau-a-patisserie-reglable-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/996-rouleau-a-patisserie-reglable-en-inox.html"
+        }
+    ],
+    "steps": [
+        "Poser votre moule sur une plaque aluminium perforée.",
+        "Dans un cul de poule, mélanger la farine et la préparation pour pâtes à pizzas.",
+        "Ajouter l’eau tiède, l’huile d’olive et mélanger la pâte pendant 5 min.",
+        "Laisser lever pendant 30 min en couvrant le cul de poule.",
+        "Reprendre la pâte et diviser en 20 boules.",
+        "Déposer un peu de farine sur les boules et les aplatir à l'aide du rouleau à pâtisserie.",
+        "Déposer au centre de la pâte, le coulis de tomates, les champignons, le fromage râpé.",
+        "Refermer chaque boule.",
+        "Déposer les boules dans les empreintes avec la partie fermée en dessous.",
+        "Laisser pousser 20 min.",
+        "Préchauffer votre four à 210 °C.",
+        "Badigeonner d’huile d’olive, déposer du fromage râpé et des épices.",
+        "Enfourner à 200°C pendant 20 min selon votre four."
+    ],
+    "for": "5",
+    "preptime": "25",
+    "resttime": "50",
+    "cooktime": "20",
+    "mold": {
+        "name": "Moule Cubicube OHRA®",
+        "picture": "https://boutique.guydemarle.com/12404-nq_social_share/moule-en-silicone-cubicube-ohra.jpg",
+        "url": "https://anneetsesdelices.fr/admin/recette/#"
+    }
+}

@@ -1,1 +1,111 @@
-{"title":"Crêpommes","topings":[{"quantity":"2","unit":"Œufs","name":""},{"quantity":"19","unit":"g","name":"Beurre"},{"quantity":"19","unit":"cL","name":"Lait"},{"quantity":"1","unit":"Pincée","name":"Sel"},{"quantity":"1","unit":"Sachet","name":"Sucre vanillé"},{"quantity":"1","unit":"C-à-c","name":"Rhum ambré"},{"quantity":"1","unit":"Pomme","name":""},{"quantity":"95","unit":"g","name":"Farine"},{"quantity":"Sucre cassonade","unit":"","name":""}],"accessories":[{"name":"Grand cul de poule 3,7L / 25 cm","picture":"https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg","url":""},{"name":"Support cul-de-poule","picture":"https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg","url":""},{"name":"Fouet 13 cm","picture":"https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg","url":""},{"name":"Balance de cuisine en inox","picture":"https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg","url":""},{"name":"Plaque Aluminium perforée 40 x 30 cm","picture":"https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg","url":""},{"name":"Bol micro-ondes 1L","picture":"https://boutique.guydemarle.com/3363-nq_social_share/bol-micro-ondes-1l.jpg","url":""},{"name":"Mini Louche","picture":"https://boutique.guydemarle.com/7327-nq_social_share/mini-louche-cuisine.jpg","url":"https://boutique.guydemarle.com/ustensiles-de-cuisine/2528-mini-louche-cuisine.html"}],"steps":["Préchauffer votre four à 180°C.\n","Poser votre moule sur une plaque aluminium perforée.","Dans le bol micro-ondes, faire fondre le beurre et réserver.","Dans un cul de poule, mélanger la farine, le sucre, le sel et le beurre fondu.","Ajouter les œufs l’un après l’autre et mélanger.","Ajouter le lait et le rhum puis mélanger.","Répartir la préparation dans les empreintes. Attention, les empreintes seront peu remplies.","Eplucher, évider et couper la pomme en fines tranches ou en petits dés. ","Déposer les morceaux de pomme dans les empreintes.","Recette peu sucrée, saupoudrer, si vous le souhaitez, du sucre cassonade sur la préparation.","Enfourner à 180°C pendant 20-30 min.","Attendre 5 à 10 min avant de démouler.","Déguster tiède ou froid."],"for":"6","preptime":"10","resttime":"0","cooktime":"20-30","mold":{"name":"Moule 20 Mini-Muffins OHRA®","picture":"https://boutique.guydemarle.com/11029-nq_social_share/moule-mini-muffins.jpg","url":"https://boutique.guydemarle.com/moules-ohra/4149-moule-mini-muffins.html"}}
+{
+    "title": "Crêpommes",
+    "toppings": [
+        {
+            "quantity": "2",
+            "unit": "Œufs",
+            "name": ""
+        },
+        {
+            "quantity": "19",
+            "unit": "g",
+            "name": "Beurre"
+        },
+        {
+            "quantity": "19",
+            "unit": "cL",
+            "name": "Lait"
+        },
+        {
+            "quantity": "1",
+            "unit": "Pincée",
+            "name": "Sel"
+        },
+        {
+            "quantity": "1",
+            "unit": "Sachet",
+            "name": "Sucre vanillé"
+        },
+        {
+            "quantity": "1",
+            "unit": "C-à-c",
+            "name": "Rhum ambré"
+        },
+        {
+            "quantity": "1",
+            "unit": "Pomme",
+            "name": ""
+        },
+        {
+            "quantity": "95",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "Sucre cassonade",
+            "unit": "",
+            "name": ""
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": ""
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Bol micro-ondes 1L",
+            "picture": "https://boutique.guydemarle.com/3363-nq_social_share/bol-micro-ondes-1l.jpg",
+            "url": ""
+        },
+        {
+            "name": "Mini Louche",
+            "picture": "https://boutique.guydemarle.com/7327-nq_social_share/mini-louche-cuisine.jpg",
+            "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine/2528-mini-louche-cuisine.html"
+        }
+    ],
+    "steps": [
+        "Préchauffer votre four à 180°C.\n",
+        "Poser votre moule sur une plaque aluminium perforée.",
+        "Dans le bol micro-ondes, faire fondre le beurre et réserver.",
+        "Dans un cul de poule, mélanger la farine, le sucre, le sel et le beurre fondu.",
+        "Ajouter les œufs l’un après l’autre et mélanger.",
+        "Ajouter le lait et le rhum puis mélanger.",
+        "Répartir la préparation dans les empreintes. Attention, les empreintes seront peu remplies.",
+        "Eplucher, évider et couper la pomme en fines tranches ou en petits dés. ",
+        "Déposer les morceaux de pomme dans les empreintes.",
+        "Recette peu sucrée, saupoudrer, si vous le souhaitez, du sucre cassonade sur la préparation.",
+        "Enfourner à 180°C pendant 20-30 min.",
+        "Attendre 5 à 10 min avant de démouler.",
+        "Déguster tiède ou froid."
+    ],
+    "for": "6",
+    "preptime": "10",
+    "resttime": "0",
+    "cooktime": "20-30",
+    "mold": {
+        "name": "Moule 20 Mini-Muffins OHRA®",
+        "picture": "https://boutique.guydemarle.com/11029-nq_social_share/moule-mini-muffins.jpg",
+        "url": "https://boutique.guydemarle.com/moules-ohra/4149-moule-mini-muffins.html"
+    }
+}

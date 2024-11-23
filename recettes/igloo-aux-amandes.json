@@ -1,1 +1,99 @@
-{"title":"Igloo aux amandes","topings":[{"quantity":"290","unit":"g","name":"Poudre d'amandes"},{"quantity":"65","unit":"g","name":"Farine"},{"quantity":"1","unit":"sachet","name":"Levure chimique"},{"quantity":"6","unit":"œufs","name":""},{"quantity":"155","unit":"g","name":"Sucre"},{"quantity":"210","unit":"g","name":"Beurre"},{"quantity":"1","unit":"c-à-c","name":"Amande amère"}],"accessories":[{"name":"Plaque Aluminium perforée 40 x 30 cm","picture":"https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg","url":""},{"name":"Grand cul de poule 3,7L / 25 cm","picture":"https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg","url":""},{"name":"Support cul-de-poule","picture":"https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg","url":""},{"name":"Fouet 13 cm","picture":"https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg","url":""},{"name":"Balance de cuisine en inox","picture":"https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg","url":""},{"name":"Toile de cuisson 40 x 30 cm","picture":"https://boutique.guydemarle.com/12035-nq_social_share/toile-de-cuisson-en-silicone-40-x-30-cm.jpg","url":""},{"name":"Bol micro-ondes 1L","picture":"https://boutique.guydemarle.com/3363-nq_social_share/bol-micro-ondes-1l.jpg","url":"https://boutique.guydemarle.com/accessoires-de-cuisine/1009-bol-micro-ondes-1l.html"}],"steps":["Préchauffer votre four à 180°C.","Poser votre moule sur une plaque aluminium perforée.","Dans un cul de poule, mélanger la poudre d'amandes, le sucre, la farine et la levure.","Dans le bol micro-ondes, faire fondre le beurre et réserver.","Ajouter à la préparation, les œufs puis mélanger.","Ajouter l’amande amère et le beurre fondu et mélanger jusqu'à obtenir une pâte homogène.","Verser dans le moule et tapoter légèrement la plaque avec le moule dessus sur votre plan de travail.","Mettre une toile de cuisson sur le moule.","Enfourner 45-55 min suivant votre four. Pour savoir si le gâteau est cuit, enfoncer la pointe d'un couteau, délicatement, dans le gâteau, elle doit ressortir sèche.","Attendre quelques minutes avant de démouler.","A déguster tiède de préférence."],"for":"8-12","preptime":"15","resttime":"0","cooktime":"45-55","mold":{"name":"Moule Igloo OHRA®","picture":"https://boutique.guydemarle.com/12409-nq_social_share/moule-igloo-ohra.jpg","url":"https://anneetsesdelices.fr/admin/#"}}
+{
+    "title": "Igloo aux amandes",
+    "toppings": [
+        {
+            "quantity": "290",
+            "unit": "g",
+            "name": "Poudre d'amandes"
+        },
+        {
+            "quantity": "65",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "1",
+            "unit": "sachet",
+            "name": "Levure chimique"
+        },
+        {
+            "quantity": "6",
+            "unit": "œufs",
+            "name": ""
+        },
+        {
+            "quantity": "155",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "210",
+            "unit": "g",
+            "name": "Beurre"
+        },
+        {
+            "quantity": "1",
+            "unit": "c-à-c",
+            "name": "Amande amère"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": ""
+        },
+        {
+            "name": "Toile de cuisson 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/12035-nq_social_share/toile-de-cuisson-en-silicone-40-x-30-cm.jpg",
+            "url": ""
+        },
+        {
+            "name": "Bol micro-ondes 1L",
+            "picture": "https://boutique.guydemarle.com/3363-nq_social_share/bol-micro-ondes-1l.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1009-bol-micro-ondes-1l.html"
+        }
+    ],
+    "steps": [
+        "Préchauffer votre four à 180°C.",
+        "Poser votre moule sur une plaque aluminium perforée.",
+        "Dans un cul de poule, mélanger la poudre d'amandes, le sucre, la farine et la levure.",
+        "Dans le bol micro-ondes, faire fondre le beurre et réserver.",
+        "Ajouter à la préparation, les œufs puis mélanger.",
+        "Ajouter l’amande amère et le beurre fondu et mélanger jusqu'à obtenir une pâte homogène.",
+        "Verser dans le moule et tapoter légèrement la plaque avec le moule dessus sur votre plan de travail.",
+        "Mettre une toile de cuisson sur le moule.",
+        "Enfourner 45-55 min suivant votre four. Pour savoir si le gâteau est cuit, enfoncer la pointe d'un couteau, délicatement, dans le gâteau, elle doit ressortir sèche.",
+        "Attendre quelques minutes avant de démouler.",
+        "A déguster tiède de préférence."
+    ],
+    "for": "8-12",
+    "preptime": "15",
+    "resttime": "0",
+    "cooktime": "45-55",
+    "mold": {
+        "name": "Moule Igloo OHRA®",
+        "picture": "https://boutique.guydemarle.com/12409-nq_social_share/moule-igloo-ohra.jpg",
+        "url": "https://anneetsesdelices.fr/admin/#"
+    }
+}

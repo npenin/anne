@@ -1,1 +1,107 @@
-{"title":"Cœurizza","topings":[{"quantity":"135","unit":"g","name":"Eau"},{"quantity":"25","unit":"g","name":"Huile d’olive"},{"quantity":"1","unit":"c-à-c","name":"Epices pizza"},{"quantity":"135","unit":"g","name":"Farine"},{"quantity":"1","unit":"sachet préparation pour pâtes à pizza","name":""},{"quantity":"1","unit":"œuf","name":""},{"quantity":"1","unit":"Petite brique","name":"Coulis de tomates"},{"quantity":"Garnitures de votre choix (comté, mozzarella, parmesan, champignons, lardons de bacon, anchois, olives, ....)","unit":"","name":""}],"accessories":[{"name":"Plaque Aluminium perforée 40 x 30 cm","picture":"https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg","url":""},{"name":"Support cul-de-poule","picture":"https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg","url":""},{"name":"Fouet 13 cm","picture":"https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg","url":""},{"name":"Balance de cuisine en inox","picture":"https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg","url":""},{"name":"Préparation pour pâtes à pizzas, 5 sachets de 17,5 g","picture":"https://boutique.guydemarle.com/16471-nq_social_share/preparation-pates-a-pizzas-facile-rapide.jpg","url":"https://boutique.guydemarle.com/pates-a-pain-et-levures/119-preparation-pates-a-pizzas-facile-rapide.html"},{"name":"Mix d'épices - Spécial Pizza & Pasta","picture":"https://boutique.guydemarle.com/9772-nq_social_share/mix-d-epices-special-pizza-pasta.jpg","url":""},{"name":"Petite spatule coudée 9 cm","picture":"https://boutique.guydemarle.com/2142-nq_social_share/petite-spatule-coudee-9-cm-guy-demarle.jpg","url":""},{"name":"Mini Louche","picture":"https://boutique.guydemarle.com/7327-nq_social_share/mini-louche-cuisine.jpg","url":"https://boutique.guydemarle.com/ustensiles-de-cuisine/2528-mini-louche-cuisine.html"}],"steps":["Poser votre moule sur une plaque aluminium perforée.","Dans un cul de poule, mélanger l’eau, l’huile, les épices et la préparation pour pâtes à pizza.","Ajouter la farine puis mélanger.","Ajouter l’œuf et mélanger à nouveau.","A l’aide de la mini-louche, remplir les empreintes, attendre 15 min avant de déposer les garnitures.","Au bout de 15 min, préchauffer votre four à 180°C.","Déposer le coulis de tomates sur la pâte et garnir suivant vos goûts.","Enfourner à 180°C pendant 30-35 min suivant votre four.","Attention, le moule est chaud, pour plus de facilité pour démouler vos pizzas, prenez la petite spatule coudée et l'insérer sur un côté de l'empreinte pour lever la pizza."],"for":"6","preptime":"15","resttime":"15","cooktime":"30-35","mold":{"name":"Moule coeurs OHRA®","picture":"https://boutique.guydemarle.com/16089-nq_social_share/moule-coeurs-ohra.jpg","url":"https://boutique.guydemarle.com/moule-en-silicone/8107-moule-coeurs-ohra.html"}}
+{
+    "title": "Cœurizza",
+    "toppings": [
+        {
+            "quantity": "135",
+            "unit": "g",
+            "name": "Eau"
+        },
+        {
+            "quantity": "25",
+            "unit": "g",
+            "name": "Huile d’olive"
+        },
+        {
+            "quantity": "1",
+            "unit": "c-à-c",
+            "name": "Epices pizza"
+        },
+        {
+            "quantity": "135",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "1",
+            "unit": "sachet préparation pour pâtes à pizza",
+            "name": ""
+        },
+        {
+            "quantity": "1",
+            "unit": "œuf",
+            "name": ""
+        },
+        {
+            "quantity": "1",
+            "unit": "Petite brique",
+            "name": "Coulis de tomates"
+        },
+        {
+            "quantity": "Garnitures de votre choix (comté, mozzarella, parmesan, champignons, lardons de bacon, anchois, olives, ....)",
+            "unit": "",
+            "name": ""
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": ""
+        },
+        {
+            "name": "Préparation pour pâtes à pizzas, 5 sachets de 17,5 g",
+            "picture": "https://boutique.guydemarle.com/16471-nq_social_share/preparation-pates-a-pizzas-facile-rapide.jpg",
+            "url": "https://boutique.guydemarle.com/pates-a-pain-et-levures/119-preparation-pates-a-pizzas-facile-rapide.html"
+        },
+        {
+            "name": "Mix d'épices - Spécial Pizza & Pasta",
+            "picture": "https://boutique.guydemarle.com/9772-nq_social_share/mix-d-epices-special-pizza-pasta.jpg",
+            "url": ""
+        },
+        {
+            "name": "Petite spatule coudée 9 cm",
+            "picture": "https://boutique.guydemarle.com/2142-nq_social_share/petite-spatule-coudee-9-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Mini Louche",
+            "picture": "https://boutique.guydemarle.com/7327-nq_social_share/mini-louche-cuisine.jpg",
+            "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine/2528-mini-louche-cuisine.html"
+        }
+    ],
+    "steps": [
+        "Poser votre moule sur une plaque aluminium perforée.",
+        "Dans un cul de poule, mélanger l’eau, l’huile, les épices et la préparation pour pâtes à pizza.",
+        "Ajouter la farine puis mélanger.",
+        "Ajouter l’œuf et mélanger à nouveau.",
+        "A l’aide de la mini-louche, remplir les empreintes, attendre 15 min avant de déposer les garnitures.",
+        "Au bout de 15 min, préchauffer votre four à 180°C.",
+        "Déposer le coulis de tomates sur la pâte et garnir suivant vos goûts.",
+        "Enfourner à 180°C pendant 30-35 min suivant votre four.",
+        "Attention, le moule est chaud, pour plus de facilité pour démouler vos pizzas, prenez la petite spatule coudée et l'insérer sur un côté de l'empreinte pour lever la pizza."
+    ],
+    "for": "6",
+    "preptime": "15",
+    "resttime": "15",
+    "cooktime": "30-35",
+    "mold": {
+        "name": "Moule coeurs OHRA®",
+        "picture": "https://boutique.guydemarle.com/16089-nq_social_share/moule-coeurs-ohra.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/8107-moule-coeurs-ohra.html"
+    }
+}
