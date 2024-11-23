@@ -171,18 +171,19 @@ permalink: /admin/recette/
         });
 
         if(res.ok){
-        const notif = await Notification.requestPermission();
-        if (notif)
-            new Notification('Recette enregistree');
-        localStorage.removeItem('tmpRecipe')
-}
-else
-{
-    const notif = await Notification.requestPermission();
-        if (notif)
-            new Notification('Une erreur s\'est produite', { body: await res.text()});
-    
-}
+            const notif = await Notification.requestPermission();
+            if (notif)
+                new Notification('Recette enregistrée');
+            localStorage.removeItem('tmpRecipe')
+            document.querySelector('.toolbar').style.display='none';
+        }
+        else
+        {
+            const notif = await Notification.requestPermission();
+                if (notif)
+                    new Notification('Une erreur s\'est produite', { body: await res.text()});
+            
+        }
 
     }
 
