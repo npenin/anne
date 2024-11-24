@@ -1,5 +1,6 @@
 {
     "title": "Namandier",
+    "private": true,
     "toppings": [
         {
             "quantity": "",
@@ -88,6 +89,6 @@
     "mold": {
         "name": "Moule 20 Mini-Muffins OHRA®",
         "picture": "https://boutique.guydemarle.com/11029-nq_social_share/moule-mini-muffins.jpg",
-        "url": "https://anneetsesdelices.fr/admin/#"
+        "url": "http://localhost:3000/admin/recette/namandier/#"
     }
 }
