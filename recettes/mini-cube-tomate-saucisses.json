@@ -38,9 +38,9 @@
             "name": "Tomate fraîche"
         },
         {
-            "quantity": "75",
-            "unit": "g",
-            "name": "Saucisse de Strasbourg"
+            "quantity": "2",
+            "unit": "",
+            "name": "saucisses de Strasbourg"
         },
         {
             "quantity": "70",
@@ -77,7 +77,7 @@
         {
             "name": "Mix d’épices - Spécial Recettes ensoleillées",
             "picture": "https://boutique.guydemarle.com/7924-nq_social_share/mix-melange-epices-special-recettes-ensoleillees.jpg",
-            "url": "https://boutique.guydemarle.com/epicerie-en-ligne/2845-mix-melange-epices-special-recettes-ensoleillees.html"
+            "url": ""
         }
     ],
     "steps": [
@@ -100,6 +100,6 @@
     "mold": {
         "name": "Moule 48 mini cubes OHRA®",
         "picture": "https://boutique.guydemarle.com/11564-nq_social_share/moule-48-mini-cubes-ohra.jpg",
-        "url": "https://boutique.guydemarle.com/moules-ohra/4359-moule-48-mini-cubes-ohra.html"
+        "url": "https://anneetsesdelices.fr/admin/recette/mini-cube-tomate-saucisses/#"
     }
 }
