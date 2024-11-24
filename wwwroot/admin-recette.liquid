@@ -183,15 +183,22 @@ tags:
 
         if(res.ok)
         {
-            const notif = await Notification.requestPermission();
-            if (notif)
-                new Notification('Recette enregistree');
             document.querySelector('.toolbar').style.display='none';
+            if('Notification' in window)
+            {
+                const notif = await Notification.requestPermission();
+                if (notif=="granted")
+                    new Notification('Recette enregistree');
+            }
+            
             Swal.fire({
                 title: "Recette enregistrée !",
                 timer: 10000,
                 timerProgressBar:true,
-                icon: "success"
+                icon: "success",
+                willClose:()=>{
+                    delete document.querySelector('.toolbar').style.display;
+                }
             });
         }
         else {

@@ -171,11 +171,14 @@ permalink: /admin/recette/
         });
 
         if(res.ok){
-            const notif = await Notification.requestPermission();
-            if (notif)
-                new Notification('Recette enregistrée');
-            localStorage.removeItem('tmpRecipe')
             document.querySelector('.toolbar').style.display='none';
+            if('Notification' in window)
+            {
+                const notif = await Notification.requestPermission();
+                if (notif=='granted')
+                    new Notification('Recette enregistrée');
+            }
+            localStorage.removeItem('tmpRecipe', {...recipe, toppings:[], steps:[], title:''})
             let timerInterval;
             Swal.fire({
                 title: "Recette enregistrée !",
