@@ -19,6 +19,7 @@
     "@akala/core": "^10.2.20",
     "@types/cookie-parser": "^1.4.3",
     "@types/node": "^18.15.11",
+    "marked": "^15.0.2",
     "typescript": "^5.0.3"
   }
 }

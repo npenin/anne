@@ -1,3 +1,4 @@
 key.pem
 credentials.json
 _site
+node_modules/

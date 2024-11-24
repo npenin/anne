@@ -46,18 +46,26 @@ tags:
     <div class="toppings panel">
         <h2>Ingrédients</h2>
         <ul>
-        {%- for toping in recette.toppings %}
-            <li>{{ toping.quantity }} {{ toping.unit }} {{ toping.name }}</li>
-        {% endfor -%}
+        {%- if recette.categorizedToppings[''] %}
+            {%- for topping in recette.categorizedToppings[''] %}
+                <li>{{ topping.quantity }} {{ topping.unit }} {{ topping.name }}</li>
+            {% endfor -%}
+        {%- else %}
+            {%- for category in recette.categorizedToppings %}
+                <li><h3>{{ category[0] }}</h3>
+                    <ul>
+                    {%- for topping in category[1] %}
+                        <li>{{ topping.quantity }} {{ topping.unit }} {{ topping.name }}</li>
+                    {% endfor -%}
+                    </ul>
+                </li>
+            {% endfor -%}
+        {% endif -%}
         </ul>
     </div>
     <div class="steps panel">
         <h2>Préparation</h2>
-        <ol>            
-        {%- for step in recette.steps %}
-            <li style="white-space:pre-line">{{ step }}</li>
-        {% endfor -%}
-        </ol>
+        {{recette.formattedSteps}}
         <p style="padding-left:24px"><a
                 href="https://www.guydemarle.com/profil/annep_a143-44563">Anne Penin</a>, votre conseillère Guy Demarle</p>
     </div>
