@@ -1,0 +1,105 @@
+{
+    "title": "Mini cube tomate saucisses",
+    "private": false,
+    "toppings": [
+        {
+            "quantity": "115",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "2",
+            "unit": "œufs",
+            "name": ""
+        },
+        {
+            "quantity": "1/2",
+            "unit": "sachet",
+            "name": "Levure chimique"
+        },
+        {
+            "quantity": "9",
+            "unit": "cL",
+            "name": "Lait"
+        },
+        {
+            "quantity": "3",
+            "unit": "cL",
+            "name": "Huile de tournesol"
+        },
+        {
+            "quantity": "4",
+            "unit": "pincées",
+            "name": "Mix d’épices recettes ensoleillées"
+        },
+        {
+            "quantity": "80",
+            "unit": "g",
+            "name": "Tomate fraîche"
+        },
+        {
+            "quantity": "75",
+            "unit": "g",
+            "name": "Saucisse de Strasbourg"
+        },
+        {
+            "quantity": "70",
+            "unit": "g",
+            "name": "Gruyère râpé"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": ""
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Mix d’épices - Spécial Recettes ensoleillées",
+            "picture": "https://boutique.guydemarle.com/7924-nq_social_share/mix-melange-epices-special-recettes-ensoleillees.jpg",
+            "url": "https://boutique.guydemarle.com/epicerie-en-ligne/2845-mix-melange-epices-special-recettes-ensoleillees.html"
+        }
+    ],
+    "steps": [
+        "Préchauffer votre four à 180°C.",
+        "Poser votre moule sur une plaque aluminium perforée.",
+        "Dans un cul de poule, mélanger la farine et la levure.",
+        "Ajouter les œufs, le lait et l’huile puis mélanger jusqu'à obtenir une pâte homogène.",
+        "Couper la tomate en petits morceaux.",
+        "Couper les saucisses dans le sens de la longueur et couper de nouveau dans le sens de la longueur. Couper les ensuite en petits dés.",
+        "Incorporer les morceaux de tomates et de saucisses puis le gruyère et les épices et mélanger.",
+        "Remplir les empreintes au 2/3.",
+        "Enfourner à 180°C pendant 15 à 20 min (suivant votre four).",
+        "Laisser refroidir quelques instants avant démouler.",
+        "A déguster tiède."
+    ],
+    "for": "12",
+    "preptime": "20",
+    "resttime": "",
+    "cooktime": "15-20",
+    "mold": {
+        "name": "Moule 48 mini cubes OHRA®",
+        "picture": "https://boutique.guydemarle.com/11564-nq_social_share/moule-48-mini-cubes-ohra.jpg",
+        "url": "https://boutique.guydemarle.com/moules-ohra/4359-moule-48-mini-cubes-ohra.html"
+    }
+}
