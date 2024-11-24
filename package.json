@@ -6,7 +6,9 @@
   "private": true,
   "type": "commonjs",
   "scripts": {
-    "build": "yarn eleventy --config=eleventy.js --input=wwwroot"
+    "build": "yarn eleventy --config=eleventy.js --input=wwwroot",
+    "watch": "yarn eleventy --config=eleventy.js --input=wwwroot --watch",
+    "serve": "yarn dlx serve _site"
   },
   "dependencies": {
     "body-parser": "^1.20.2",
