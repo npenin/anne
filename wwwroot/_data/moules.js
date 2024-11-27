@@ -1,7 +1,7 @@
-const { distinctStrings } = require('@akala/core')
-const recettes = require('./recettes')
+import { distinctStrings }  from '@akala/core'
+import recettes from './recettes.js'
 
-module.exports = async function ()
+export default async function ()
 {
     return distinctStrings((await recettes()).map(r => r.mold), m => m.name);
 };

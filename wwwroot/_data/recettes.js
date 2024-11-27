@@ -1,6 +1,6 @@
-const recettes = require('./allrecettes')
+import recettes  from './allrecettes.js'
 
-module.exports = async function ()
+export default async function ()
 {
     return (await recettes()).filter(r => {
         if(r.private)

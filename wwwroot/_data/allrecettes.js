@@ -1,8 +1,8 @@
-const fs = require('fs/promises')
-const path = require('path')
-const marked = require('marked');
+import fs  from 'fs/promises'
+import path  from 'path'
+import {parse }  from 'marked'
 
-module.exports = async function ()
+export default async  function ()
 {
     let files = await fs.readdir(path.resolve('./recettes'));
     files = files.filter(f => f.endsWith('.json'));
@@ -62,7 +62,7 @@ module.exports = async function ()
                 return previous + (i + 1) + '. ' + current.replace(/\n([^-\n][^\n]{5,256})\n*$/, (m, g) => '\n### ' + g).replace(/\n- /g, '\n    - ') + '\n'
             }, '');
 
-        result.formattedSteps = marked.parse(r.formattedSteps);
+        result.formattedSteps = parse(r.formattedSteps);
         return { ...r, ...result };
     });
 };
