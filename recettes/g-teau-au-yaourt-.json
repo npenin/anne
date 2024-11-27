@@ -43,12 +43,12 @@
         },
         {
             "quantity": "1 petite",
-            "unit": "C-à-c",
+            "unit": "c-à-c",
             "name": "Vanille en poudre"
         },
         {
             "quantity": "1",
-            "unit": "Pincée",
+            "unit": "pincée",
             "name": "Sel"
         }
     ],

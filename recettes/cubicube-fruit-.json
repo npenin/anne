@@ -27,14 +27,14 @@
             "name": ""
         },
         {
-            "quantity": "1 c.à.c",
-            "unit": "de",
+            "quantity": "1",
+            "unit": "c.à.c",
             "name": "Levure chimique "
         },
         {
-            "quantity": "320g de fruits rouges frais ",
-            "unit": "(Myrtilles, fraises, framboises...)",
-            "name": ""
+            "quantity": "320",
+            "unit": "g",
+            "name": "Fruits rouges frais (Myrtilles, fraises, framboises...)"
         }
     ],
     "accessories": [
@@ -49,8 +49,8 @@
             "url": ""
         },
         {
-            "name": "Cuillère magique",
-            "picture": "https://boutique.guydemarle.com/2139-nq_social_share/cuillere-magique-guy-demarle.jpg",
+        "name": "Cuillère magique",
+        "picture": "https://boutique.guydemarle.com/2139-nq_social_share/cuillere-magique-guy-demarle.jpg",
             "url": ""
         },
         {
@@ -82,11 +82,15 @@
             "name": "Petite spatule coudée 9 cm",
             "picture": "https://boutique.guydemarle.com/2142-nq_social_share/petite-spatule-coudee-9-cm-guy-demarle.jpg",
             "url": ""
+        },  {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
         }
     ],
     "steps": [
+        "Préchauffer votre four à 180°C.",
         "Poser votre moule sur une plaque aluminium perforée.",
-        "Préchauffer le four à 180°C.",
         "Dans le pichet verseur, mélanger à l'aide de la cuillère magique le beurre et le sucre jusqu'à obtenir une consistance crémeuse.",
         "Ajouter les œufs un par un, en mélangeant après chaque ajout.",
         "Ajouter le jus et le zeste et mélanger.",
@@ -94,7 +98,7 @@
         "Incorporer petit à petit le mélange liquide au mélange sec en mélangeant pour obtenir une pâte homogène.",
         "Mélanger délicatement les fruits à la pâte.",
         "Verser la pâte dans le moule puis lisser avec la spatule coudée.",
-        "Enfourner pour 40-45 min à 180°C.",
+        "Enfourner à 180°C pendant 40-45 min (suivant votre four).",
         "Laisser refroidir avant de démouler.",
         "Peut être accompagné d’une crème ou glace (vanille, pistache,...)."
     ],

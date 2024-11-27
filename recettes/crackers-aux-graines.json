@@ -27,7 +27,7 @@
             "name": "Levure chimique"
         },
         {
-            "quantity": "Sel / poivre",
+            "quantity": "Sel / Poivre",
             "unit": "",
             "name": ""
         }
@@ -77,16 +77,21 @@
             "name": "Mélange 6 céréales pour pain - BIO - 500g",
             "picture": "https://boutique.guydemarle.com/11349-nq_social_share/melange-6-cereales-pour-pain-bio-500g.jpg",
             "url": ""
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
         }
     ],
     "steps": [
         "Poser votre toile de cuisson sur une plaque aluminium perforée.",
-        "Préchauffer le four à 180°C.",
+        "Préchauffer votre four à 180°C.",
         "Dans un cul de poule, mélanger tous les ingrédients.",
         "Sur la toile roul'pat, étaler la pâte sur une épaisseur de 5mm.",
         "A l'aide d'un emporte-pièce, découper les crackers.",
         "Disposer les crackers sur la toile de cuisson. Vous ferez plusieurs plaques.",
-        "Enfourner 13-15 min à 180°C, jusqu'à ce que les crackers soient légèrement dorés.",
+        "Enfourner à 180°C pendant 13-15 min (suivant votre four), jusqu'à ce que les crackers soient légèrement dorés.",
         "Laisser refroidir avant de déguster."
     ],
     "for": "6",

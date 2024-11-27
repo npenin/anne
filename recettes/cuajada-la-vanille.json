@@ -9,7 +9,7 @@
         },
         {
             "quantity": "1",
-            "unit": "Pot",
+            "unit": "pot",
             "name": "Farine"
         },
         {
@@ -34,7 +34,7 @@
         },
         {
             "quantity": "3",
-            "unit": "œufs",
+            "unit": "Œufs",
             "name": ""
         },
         {
@@ -81,7 +81,7 @@
         }
     ],
     "steps": [
-        "Préchauffer le four à 180 °C (chaleur tournante).",
+        "Préchauffer votre four à 180 °C (chaleur tournante).",
         "Poser votre moule sur une plaque aluminium perforée.",
         "Dans un cul de poule, fouetter ensemble le yaourt, le sucre et les œufs jusqu'à obtenir un mélange homogène.",
         "Incorporer la farine et la pincée de sel puis mélanger pour éviter les grumeaux.",

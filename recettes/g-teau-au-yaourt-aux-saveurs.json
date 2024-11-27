@@ -8,7 +8,7 @@
         },
         {
             "quantity": "2",
-            "unit": "C-à-s",
+            "unit": "c-à-s",
             "name": "Crème fraîche "
         },
         {
@@ -48,17 +48,17 @@
         },
         {
             "quantity": "1",
-            "unit": "C-à-s",
+            "unit": "c-à-s",
             "name": "Pâte de praliné"
         },
         {
             "quantity": "2",
-            "unit": "C-à-s",
+            "unit": "c-à-s",
             "name": "Noix de coco"
         },
         {
             "quantity": "2",
-            "unit": "C-à-c",
+            "unit": "c-à-c",
             "name": "Jus de citron + 1 c-à-s graines de pavot"
         },
         {
@@ -68,7 +68,7 @@
         },
         {
             "quantity": "1",
-            "unit": "C-à-s",
+            "unit": "c-à-s",
             "name": "Poudre d'amandes + 5 gouttes d'amande amère "
         }
     ],
