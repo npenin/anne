@@ -172,7 +172,7 @@ permalink: /admin/recette/
         });
 
         if(res.ok){
-            localStorage.removeItem('tmpRecipe', {...recipe, toppings:[], steps:[], title:''})
+            localStorage.setItem('tmpRecipe', {...recipe, toppings:[], steps:[], title:''})
             let timerInterval;
             Swal.fire({
                 title: "Recette enregistrée !",
