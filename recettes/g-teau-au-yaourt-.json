@@ -1,5 +1,6 @@
 {
     "title": "Gâteau au yaourt ",
+    "private": false,
     "toppings": [
         {
             "quantity": "1",
@@ -13,7 +14,7 @@
         },
         {
             "quantity": "1 1/2",
-            "unit": "Pots",
+            "unit": "pots",
             "name": "Sucre"
         },
         {
@@ -23,12 +24,12 @@
         },
         {
             "quantity": "2",
-            "unit": "Pots",
+            "unit": "pots",
             "name": "Farine tamisée "
         },
         {
             "quantity": "1/2",
-            "unit": "Pot",
+            "unit": "pot",
             "name": "Maïzena tamisée"
         },
         {
@@ -38,7 +39,7 @@
         },
         {
             "quantity": "1",
-            "unit": "Pot",
+            "unit": "pot",
             "name": "Huile neutre"
         },
         {
@@ -56,27 +57,27 @@
         {
             "name": "Grand cul de poule 3,7L / 25 cm",
             "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/gateau-au-yaourt/"
         },
         {
             "name": "Support cul-de-poule",
             "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/gateau-au-yaourt/"
         },
         {
             "name": "Balance de cuisine en inox",
             "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/gateau-au-yaourt/"
         },
         {
             "name": "Plaque Aluminium perforée 40 x 30 cm",
             "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/gateau-au-yaourt/"
         },
         {
             "name": "Spatule double embout - Bleu",
             "picture": "https://boutique.guydemarle.com/5798-nq_social_share/spatule-double-embout-bleu.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/gateau-au-yaourt/"
         },
         {
             "name": "Fouet 13 cm",
@@ -92,7 +93,7 @@
         "Ajouter l’huile, le sel et mélanger.",
         "Ajouter la farine, la levure chimique et la Maïzena tamisées puis mélanger pour obtenir une pâte lisse et homogène.",
         "Verser la préparation dans le moule,  tapoter un peu la plaque sur votre plan de travail.",
-        "Enfourner à 180°C pendant 40 - 45 min en surveillant.",
+        "Enfourner à 180°C pendant 40 - 45 min (suivant votre four).",
         "Laisser refroidir avant de démouler."
     ],
     "for": "6-8",
@@ -102,6 +103,6 @@
     "mold": {
         "name": "Moule à charlotte OHRA®",
         "picture": "https://boutique.guydemarle.com/16284-nq_social_share/moule-a-charlotte-ohra.jpg",
-        "url": "https://boutique.guydemarle.com/moule-en-silicone/8253-moule-a-charlotte-ohra.html"
+        "url": "https://anneetsesdelices.fr/admin/recette/gateau-au-yaourt/#"
     }
 }
