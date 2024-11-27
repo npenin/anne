@@ -1,55 +1,91 @@
 {
     "title": "Cakes mascarpone sucrés et salés ",
+    "private": false,
     "toppings": [
         {
-            "quantity": "Cake sucré / cake salé ",
+            "quantity": "Cake sucré:",
             "unit": "",
             "name": ""
         },
         {
-            "quantity": "250 g",
-            "unit": "/ 250 g",
+            "quantity": "250",
+            "unit": "g",
             "name": "Mascarpone"
         },
         {
-            "quantity": "4 /",
-            "unit": "4",
-            "name": "Œufs "
-        },
-        {
-            "quantity": "250 g /",
-            "unit": "150 g",
-            "name": "Farine "
-        },
-        {
-            "quantity": "1 sachet /",
-            "unit": " 1 sachet",
-            "name": "Levure chimique "
-        },
-        {
-            "quantity": "1 pincée ",
-            "unit": "Sel /",
-            "name": "Sel-poivre"
-        },
-        {
-            "quantity": "200 g",
-            "unit": "Sucre en poudre /",
-            "name": "0"
-        },
-        {
-            "quantity": "1 c à s",
-            "unit": "Vanille liquide /",
-            "name": "0"
-        },
-        {
-            "quantity": "0 / ",
-            "unit": "100 g",
-            "name": "Gruyère râpé "
-        },
-        {
-            "quantity": "Fruits de votre choix /",
-            "unit": "Garnitures de votre choix",
+            "quantity": "4",
+            "unit": "Œufs",
             "name": ""
+        },
+        {
+            "quantity": "250",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "1",
+            "unit": "sachet",
+            "name": "Levure chimique"
+        },
+        {
+            "quantity": "1",
+            "unit": "pincée",
+            "name": "Sel"
+        },
+        {
+            "quantity": "200",
+            "unit": "g",
+            "name": "Sucre en poudre"
+        },
+        {
+            "quantity": "1",
+            "unit": "c-à-s",
+            "name": "Vanille liquide"
+        },
+        {
+            "quantity": "Fruits",
+            "unit": ": ",
+            "name": "fruits rouges, poires, pommes, citron, …"
+        },
+        {
+            "quantity": "Cake salé:",
+            "unit": "",
+            "name": ""
+        },
+        {
+            "quantity": "250",
+            "unit": "g",
+            "name": "Mascarpone"
+        },
+        {
+            "quantity": "4",
+            "unit": "Œufs",
+            "name": ""
+        },
+        {
+            "quantity": "150",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "1",
+            "unit": "sachet",
+            "name": "Levure chimique"
+        },
+        {
+            "quantity": "1",
+            "unit": "pincée",
+            "name": "Sel"
+        },
+        {
+            "quantity": "1",
+            "unit": "pincée",
+            "name": "Poivre"
+        },
+        {
+            "quantity": "Garnitures :",
+            "unit": "",
+            "name": "tomates séchées, olives, melange de graines, jambon, saumon fumé, …"
         }
     ],
     "accessories": [
@@ -87,23 +123,26 @@
             "name": "Mélange 6 céréales pour pain - BIO - 500g",
             "picture": "https://boutique.guydemarle.com/11349-nq_social_share/melange-6-cereales-pour-pain-bio-500g.jpg",
             "url": ""
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
         }
     ],
     "steps": [
-        "Préchauffer le four à 180 °C.",
-        "Poser votre moule 6 cakes hauts sur une plaque aluminium perforée.\n\n\n3 Cakes sucrés\n\n",
+        "Préchauffer votre four à 180 °C.",
+        "Poser votre moule sur une plaque aluminium perforée.\n\n3 Cakes sucrés :\n\n",
         "Dans un cul de poule, fouetter le mascarpone, le sucre, les œufs et la vanille jusqu'à obtenir une pâte homogène.",
         "Ajouter le sel, la farine, la levure et mélanger.",
         "Répartir la pâte dans 3 cakes hauts à l’aide de la mini-louche.",
         "Pour éviter que les fruits ne tombent dans le fond du moule, saupoudrer un peu de farine dessus avant de les déposer dans les empreintes.",
-        "Pour répartir les fruits une fois dans vos empreintes, utiliser la petite spatule coudée.",
-        "Vous pouvez utiliser des fruits rouges, des poires, des pommes, citron,...\n\n\n3 Cakes salés\n\n",
+        "Pour répartir les fruits une fois dans vos empreintes, utiliser la petite spatule coudée.\n\n3 Cakes salés :\n",
         "Dans un cul de poule, mélanger la mascarpone et les œufs.",
         "Ajouter la farine et la levure puis mélanger.",
         "Ajouter le gruyère, saler et poivrer.",
-        "Répartir dans les 3 cakes hauts et ajouter les garnitures choisies. ",
-        "Vous pouvez utiliser tomates séchées, olives, mélange de graines, jambon, saumon fumé,...",
-        "Enfourner 40 min à 180°C.",
+        "Répartir dans les 3 cakes hauts et ajouter les garnitures choisies. \nCuisson :",
+        "Enfourner à 180°C pendant 40 min.",
         "Laisser refroidir avant de démouler."
     ],
     "for": "6",
@@ -113,6 +152,6 @@
     "mold": {
         "name": "Moule 6 Cakes Hauts OHRA®",
         "picture": "https://boutique.guydemarle.com/11010-nq_social_share/moule-cake-haut.jpg",
-        "url": "https://anneetsesdelices.fr/cakes-mascarpone-sucres-et-sales/#"
+        "url": "https://anneetsesdelices.fr/admin/recette/cakes-mascarpone-sucres-et-sales/#"
     }
 }
