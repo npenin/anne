@@ -1,5 +1,6 @@
 {
     "title": "Gâteau au yaourt aux 6 saveurs",
+    "private": false,
     "toppings": [
         {
             "quantity": "2",
@@ -37,7 +38,7 @@
             "name": "Levure chimique "
         },
         {
-            "quantity": "   ",
+            "quantity": "Garniture :",
             "unit": "",
             "name": ""
         },
@@ -76,42 +77,47 @@
         {
             "name": "Plaque Aluminium perforée 40 x 30 cm",
             "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/gateau-au-yaourt-aux-6-saveurs/"
         },
         {
             "name": "Grand cul de poule 3,7L / 25 cm",
             "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/gateau-au-yaourt-aux-6-saveurs/"
         },
         {
             "name": "Support cul-de-poule",
             "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/gateau-au-yaourt-aux-6-saveurs/"
         },
         {
             "name": "Mini Louche",
             "picture": "https://boutique.guydemarle.com/7327-nq_social_share/mini-louche-cuisine-flexipan.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/gateau-au-yaourt-aux-6-saveurs/"
         },
         {
             "name": "Spatule double embout - Bleu",
             "picture": "https://boutique.guydemarle.com/5798-nq_social_share/spatule-double-embout-bleu.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/gateau-au-yaourt-aux-6-saveurs/"
         },
         {
             "name": "Bol micro-ondes 1L",
             "picture": "https://boutique.guydemarle.com/3363-nq_social_share/bol-micro-ondes-1l.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/gateau-au-yaourt-aux-6-saveurs/"
         },
         {
             "name": "Pâte de pistache pure 100% - 160g",
             "picture": "https://boutique.guydemarle.com/11006-nq_social_share/pate-de-pistache-premium.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/gateau-au-yaourt-aux-6-saveurs/"
         },
         {
             "name": "Pâte de praliné noisettes 250 g",
             "picture": "https://boutique.guydemarle.com/5707-nq_social_share/pate-de-praline-noisette.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/gateau-au-yaourt-aux-6-saveurs/"
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
         }
     ],
     "steps": [
@@ -135,6 +141,6 @@
     "mold": {
         "name": "Moule 6 Cakes Hauts OHRA®",
         "picture": "https://boutique.guydemarle.com/11010-nq_social_share/moule-cake-haut.jpg",
-        "url": "https://anneetsesdelices.fr/admin/gateau-au-yaourt-aux-6-saveurs/#"
+        "url": "https://anneetsesdelices.fr/admin/recette/gateau-au-yaourt-aux-6-saveurs/#"
     }
 }
