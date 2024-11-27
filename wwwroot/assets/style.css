@@ -110,7 +110,7 @@ a.panel {
 }
 
 .steps>p:last-child {
-    margin-top: 12px;
+    padding-top: 12px;
 }
 
 .steps>ol {
