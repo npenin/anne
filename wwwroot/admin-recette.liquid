@@ -99,6 +99,7 @@ tags:
             const li = addAccessory(false);
             li.querySelector('.name').innerText = a.name;
             li.querySelector('img').src = a.picture;
+            li.querySelector('a').href = a.url;
         })
     recipe.steps.forEach(t =>
     {
