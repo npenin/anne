@@ -1,5 +1,6 @@
 {
     "title": "Cake courgettes parmesan",
+    "private": false,
     "toppings": [
         {
             "quantity": "20",
@@ -38,7 +39,7 @@
         },
         {
             "quantity": "1",
-            "unit": "Sachet",
+            "unit": "sachet",
             "name": "Levure chimique"
         },
         {
@@ -96,7 +97,7 @@
         {
             "name": "Mandoline professionnelle",
             "picture": "https://boutique.guydemarle.com/8246-nq_social_share/mandoline-professionnelle-de-cuisine-guy-demarle.jpg",
-            "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine/3030-mandoline-professionnelle-de-cuisine-guy-demarle.html"
+            "url": ""
         }
     ],
     "steps": [
@@ -109,7 +110,7 @@
         "Ajouter la farine, la levure et mélanger.",
         "Ajouter le parmesan, le gruyère, le thym et les courgettes puis mélanger.",
         "Verser la préparation dans le moule.",
-        "Enfourner à 180°C pendant 45-50 min suivant votre four.",
+        "Enfourner à 180°C pendant 45-50 min (suivant votre four).",
         "Laisser refroidir avant de démouler."
     ],
     "for": "8",
@@ -119,6 +120,6 @@
     "mold": {
         "name": "Moule à cake OHRA®",
         "picture": "https://boutique.guydemarle.com/11587-nq_social_share/moule-a-cake-ohra.jpg",
-        "url": "https://boutique.guydemarle.com/moules-ohra/4364-moule-a-cake-ohra.html"
+        "url": "https://anneetsesdelices.fr/admin/recette/cake-courgettes-parmesan/#"
     }
 }
