@@ -1,5 +1,6 @@
 {
     "title": "Flan de carottes au comté ",
+    "private": false,
     "toppings": [
         {
             "quantity": "300",
@@ -46,27 +47,32 @@
         {
             "name": "Plaque Aluminium perforée 40 x 30 cm",
             "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/flan-de-carottes-au-comte/"
         },
         {
             "name": "Grand cul de poule 3,7L / 25 cm",
             "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/flan-de-carottes-au-comte/"
         },
         {
             "name": "Support cul-de-poule",
             "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/flan-de-carottes-au-comte/"
         },
         {
             "name": "Fouet 13 cm",
             "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/flan-de-carottes-au-comte/"
         },
         {
             "name": "Râpe double paroi",
             "picture": "https://boutique.guydemarle.com/7342-nq_social_share/rape-double-paroi-de-cuisine.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/flan-de-carottes-au-comte/"
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
         }
     ],
     "steps": [
@@ -87,6 +93,6 @@
     "mold": {
         "name": "Moule 8 Donuts OHRA®",
         "picture": "https://boutique.guydemarle.com/11566-nq_social_share/moule-8-donuts-ohra.jpg",
-        "url": "https://anneetsesdelices.fr/admin/#"
+        "url": "https://anneetsesdelices.fr/admin/recette/flan-de-carottes-au-comte/#"
     }
 }
