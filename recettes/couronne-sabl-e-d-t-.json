@@ -2,42 +2,67 @@
     "title": "Couronne sablée d’été ",
     "toppings": [
         {
-            "quantity": "Sablé breton / Crème d'amandes",
+            "quantity": "Sablé breton",
             "unit": "",
             "name": ""
         },
         {
             "quantity": "200 g",
-            "unit": "/ 1 c.à.s",
+            "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "120 g",
-            "unit": "/ 100 g",
+            "quantity": "120",
+            "unit": "g",
             "name": "Beurre mou"
         },
         {
-            "quantity": "100 g",
-            "unit": "/ 100 g",
+            "quantity": "100",
+            "unit": "g",
             "name": "Sucre"
         },
         {
-            "quantity": "3 jaunes ",
-            "unit": "/ 2",
-            "name": "Œufs "
+            "quantity": "3",
+            "unit": "jaunes",
+            "name": "Œufs"
         },
         {
             "quantity": "1",
-            "unit": "Pincée de sel / 0",
+            "unit": "pincée",
+            "name": "Sel"
+        },
+        {
+            "quantity": "Crème d'amandes",
+            "unit": "",
             "name": ""
         },
         {
-            "quantity": "0 / ",
-            "unit": "100 g",
+            "quantity": "1",
+            "unit": "c-à-s",
+            "name": "Farine"
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Beurre mou"
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "2",
+            "unit": "",
+            "name": "Œufs"
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
             "name": "Poudre d'amandes"
         },
         {
-            "quantity": "0 / 2",
+            "quantity": "2",
             "unit": "gouttes",
             "name": "Extrait d’amandes amères "
         },
@@ -97,6 +122,11 @@
             "name": "Rouleau à pâtisserie en inox",
             "picture": "https://boutique.guydemarle.com/3329-large_default/rouleau-a-patisserie-reglable-en-inox.jpg",
             "url": ""
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
         }
     ],
     "steps": [

@@ -3,7 +3,7 @@
     "toppings": [
         {
             "quantity": "3",
-            "unit": "Œufs ",
+            "unit": "Œufs",
             "name": ""
         },
         {
@@ -13,12 +13,12 @@
         },
         {
             "quantity": "1",
-            "unit": "Sachet",
+            "unit": "sachet",
             "name": "Sucre vanillé"
         },
         {
             "quantity": "1/2",
-            "unit": "Sachet",
+            "unit": "sachet",
             "name": "Levure chimique"
         },
         {
