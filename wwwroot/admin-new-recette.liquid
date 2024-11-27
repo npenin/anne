@@ -72,6 +72,11 @@ permalink: /admin/recette/
     const dir = "/{{recette.title|slugify}}"
     const root = window.location.href.substring(0, window.location.href.length - '{{page.url}}'.length + '/admin/'.length);
 
+    window.cleanTmpRecipe = async function cleanTmpRecipe() {
+        localStorage.setItem('tmpRecipe', {});
+        location.reload();
+    }
+    
     if (localStorage.getItem('tmpRecipe'))
     {
         const recipe = JSON.parse(localStorage.getItem('tmpRecipe'))
@@ -159,11 +164,6 @@ permalink: /admin/recette/
     function saveLocally()
     {
         localStorage.setItem('tmpRecipe', JSON.stringify(getRecipe()));
-    }
-
-    window.cleanTmpRecipe = async function cleanTmpRecipe() {
-        localStorage.setItem('tmpRecipe', {});
-        location.reload();
     }
 
     window.save = async function save()
