@@ -109,6 +109,10 @@ a.panel {
     margin-top: 0;
 }
 
+.steps>p:last-child {
+    margin-top: 12px;
+}
+
 .steps>ol {
     margin-bottom: 0;
 }
