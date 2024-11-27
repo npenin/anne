@@ -1,5 +1,6 @@
 {
     "title": "Moelleux à la cannelle",
+    "private": false,
     "toppings": [
         {
             "quantity": "200",
@@ -43,40 +44,40 @@
         },
         {
             "quantity": "1",
-            "unit": "pincée de sel",
-            "name": ""
+            "unit": "pincée",
+            "name": "Sel"
         }
     ],
     "accessories": [
         {
             "name": "Grand cul de poule 3,7L / 25 cm",
             "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/moelleux-a-la-cannelle/"
         },
         {
             "name": "Support cul-de-poule",
             "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/moelleux-a-la-cannelle/"
         },
         {
             "name": "Balance de cuisine en inox",
             "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/moelleux-a-la-cannelle/"
         },
         {
             "name": "Plaque Aluminium perforée 40 x 30 cm",
             "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/moelleux-a-la-cannelle/"
         },
         {
             "name": "Fouet 13 cm",
             "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/moelleux-a-la-cannelle/"
         },
         {
             "name": "Bol micro-ondes 1L",
             "picture": "https://boutique.guydemarle.com/3363-nq_social_share/bol-micro-ondes-1l.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/moelleux-a-la-cannelle/"
         },
         {
             "name": "Toile de cuisson 40 x 30 cm",
@@ -104,6 +105,6 @@
     "mold": {
         "name": "Moule céramiques OHRA®",
         "picture": "https://boutique.guydemarle.com/16372-nq_social_share/moule-ceramiques-ohra.jpg",
-        "url": "https://anneetsesdelices.fr/admin/moelleux-a-la-cannelle/#"
+        "url": "https://anneetsesdelices.fr/admin/recette/moelleux-a-la-cannelle/#"
     }
 }
