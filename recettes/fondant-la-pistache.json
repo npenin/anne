@@ -1,5 +1,6 @@
 {
     "title": "Fondant à la pistache",
+    "private": false,
     "toppings": [
         {
             "quantity": "145",
@@ -24,7 +25,7 @@
         {
             "quantity": "2",
             "unit": "C à c",
-            "name": "D'arôme de pistache ( ou amande amère)"
+            "name": "Arôme de pistache ( ou amande amère)"
         },
         {
             "quantity": "40",
@@ -77,18 +78,23 @@
             "name": "Spatule double embout - Gris Anthracite",
             "picture": "https://boutique.guydemarle.com/5792-nq_social_share/spatule-double-embout-gris-anthracite.jpg",
             "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1793-spatule-double-embout-gris-anthracite.html"
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
         }
     ],
     "steps": [
         "Préchauffer votre four à 180°C.",
         "Poser votre moule sur une plaque aluminium perforée.",
-        "Faire fondre le beurre dans le bol micro-ondes.",
+        "Dans le bol micro-ondes, faire fondre le beurre.",
         "Dans un cul de poule, mélanger le beurre et le sucre.",
         "Incorporer les œufs un à un en mélangeant bien entre chaque ajout.",
         "Ajouter la farine et la poudre d'amandes puis mélanger.",
         "Ajouter la pâte de pistache et l’arôme de pistache ou d'amande puis mélanger.",
         "Verser la préparation dans les empreintes.",
-        "Enfourner 10 min à 180°C, le centre doit rester fondant.",
+        "Enfourner à 180°C pendant 10 min, le centre doit rester fondant.",
         "Laisser refroidir avant de démouler.\n\n\nPour la décoration, plusieurs idées possibles :\n\n",
         "Un coulis de fruits comme un coulis de fraises, de framboises ou de fruits de la passion.",
         "Une crème fouettée légèrement sucrée.",
@@ -97,12 +103,12 @@
         "Une coque en chocolat...."
     ],
     "for": "12",
-    "preptime": "15 min",
+    "preptime": "15",
     "resttime": "0",
     "cooktime": "10",
     "mold": {
         "name": "Moule 12 Carrés Gourmands OHRA®",
         "picture": "https://boutique.guydemarle.com/11790-nq_social_share/moule-carres-gourmands.jpg",
-        "url": "https://boutique.guydemarle.com/moules-ohra/4425-moule-carres-gourmands.html"
+        "url": "https://anneetsesdelices.fr/admin/recette/fondant-a-la-pistache/#"
     }
 }
