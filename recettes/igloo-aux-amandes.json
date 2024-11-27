@@ -1,5 +1,6 @@
 {
     "title": "Igloo aux amandes",
+    "private": false,
     "toppings": [
         {
             "quantity": "290",
@@ -41,32 +42,32 @@
         {
             "name": "Plaque Aluminium perforée 40 x 30 cm",
             "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/igloo-aux-amandes/"
         },
         {
             "name": "Grand cul de poule 3,7L / 25 cm",
             "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/igloo-aux-amandes/"
         },
         {
             "name": "Support cul-de-poule",
             "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/igloo-aux-amandes/"
         },
         {
             "name": "Fouet 13 cm",
             "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/igloo-aux-amandes/"
         },
         {
             "name": "Balance de cuisine en inox",
             "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/igloo-aux-amandes/"
         },
         {
             "name": "Toile de cuisson 40 x 30 cm",
             "picture": "https://boutique.guydemarle.com/12035-nq_social_share/toile-de-cuisson-en-silicone-40-x-30-cm.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/igloo-aux-amandes/"
         },
         {
             "name": "Bol micro-ondes 1L",
@@ -83,7 +84,7 @@
         "Ajouter l’amande amère et le beurre fondu et mélanger jusqu'à obtenir une pâte homogène.",
         "Verser dans le moule et tapoter légèrement la plaque avec le moule dessus sur votre plan de travail.",
         "Mettre une toile de cuisson sur le moule.",
-        "Enfourner 45-55 min suivant votre four. Pour savoir si le gâteau est cuit, enfoncer la pointe d'un couteau, délicatement, dans le gâteau, elle doit ressortir sèche.",
+        "Enfourner à 180°C pendant 45-55 min (suivant votre four).",
         "Attendre quelques minutes avant de démouler.",
         "A déguster tiède de préférence."
     ],
@@ -94,6 +95,6 @@
     "mold": {
         "name": "Moule Igloo OHRA®",
         "picture": "https://boutique.guydemarle.com/12409-nq_social_share/moule-igloo-ohra.jpg",
-        "url": "https://anneetsesdelices.fr/admin/#"
+        "url": "https://anneetsesdelices.fr/admin/recette/igloo-aux-amandes/#"
     }
 }
