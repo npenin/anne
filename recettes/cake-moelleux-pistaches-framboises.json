@@ -1,5 +1,6 @@
 {
     "title": "Cake moelleux pistaches framboises",
+    "private": false,
     "toppings": [
         {
             "quantity": "120",
@@ -34,17 +35,17 @@
         {
             "quantity": "200",
             "unit": "g",
-            "name": "Framboises fraîches + quelques unes  pour le décoration "
+            "name": "Framboises fraîches + quelques unes pour la décoration "
         },
         {
             "quantity": "2",
             "unit": "gouttes",
-            "name": "d'amande amère "
+            "name": "Amande amère "
         },
         {
             "quantity": "8",
             "unit": "gouttes",
-            "name": "d'arôme de pistache "
+            "name": "Arôme de pistache "
         }
     ],
     "accessories": [
@@ -110,6 +111,6 @@
     "mold": {
         "name": "Moule à cake cannelé OHRA®",
         "picture": "https://boutique.guydemarle.com/11202-nq_social_share/moule-cake-canneles.jpg",
-        "url": "https://anneetsesdelices.fr/admin/cake-moelleux-pistaches-framboises/#"
+        "url": "https://anneetsesdelices.fr/admin/recette/cake-moelleux-pistaches-framboises/#"
     }
 }
