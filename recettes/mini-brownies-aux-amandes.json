@@ -1,5 +1,6 @@
 {
     "title": "Mini brownies aux amandes",
+    "private": false,
     "toppings": [
         {
             "quantity": "150",
@@ -36,27 +37,32 @@
         {
             "name": "Plaque Aluminium perforée 40 x 30 cm",
             "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/mini-brownies-aux-amandes/"
         },
         {
             "name": "Bol micro-ondes 1L",
             "picture": "https://boutique.guydemarle.com/3363-nq_social_share/bol-micro-ondes-1l.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/mini-brownies-aux-amandes/"
         },
         {
             "name": "Pichet verseur",
             "picture": "https://boutique.guydemarle.com/2230-nq_social_share/pichet-verseur-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/mini-brownies-aux-amandes/"
         },
         {
             "name": "Fouet 13 cm",
             "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/mini-brownies-aux-amandes/"
         },
         {
             "name": "Spatule double embout - Gris Anthracite",
             "picture": "https://boutique.guydemarle.com/5792-nq_social_share/spatule-double-embout-gris-anthracite.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/mini-brownies-aux-amandes/"
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
         }
     ],
     "steps": [
@@ -67,8 +73,8 @@
         "Verser le mélange beurre/chocolat dans le pichet verseur.",
         "Ajouter le sucre et incorporer les œufs un à un en mélangeant entre chaque ajout.",
         "Ajouter la farine, les amandes et mélanger.",
-        "Verser dans les empreintes aux deux tiers et racler le pichet avec la spatule double embouts pour ne pas perdre de préparation.",
-        "Enfourner 11 min à 170°C.",
+        "Verser dans les empreintes aux 2/3 et racler le pichet avec la spatule double embouts pour ne pas perdre de préparation.",
+        "Enfourner à 170°C pendant 11 min .",
         "Laisser refroidir avant de démouler."
     ],
     "for": "12",
@@ -78,6 +84,6 @@
     "mold": {
         "name": "Moule 48 mini cubes OHRA®",
         "picture": "https://boutique.guydemarle.com/11564-nq_social_share/moule-48-mini-cubes-ohra.jpg",
-        "url": "https://anneetsesdelices.fr/admin/mini-brownies-aux-amandes/#"
+        "url": "https://anneetsesdelices.fr/admin/recette/mini-brownies-aux-amandes/#"
     }
 }
