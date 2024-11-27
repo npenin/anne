@@ -189,7 +189,7 @@ permalink: /admin/recette/
                 },
                 willClose: () => {
                     clearInterval(timerInterval);
-                    location.replace(filename.substring(dir.length));
+                    location.replace(filename.substring(dir.length).replace('.json', '/'));
                 }
             });
             if('Notification' in window)
