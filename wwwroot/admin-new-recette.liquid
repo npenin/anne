@@ -73,10 +73,10 @@ permalink: /admin/recette/
     const root = window.location.href.substring(0, window.location.href.length - '{{page.url}}'.length + '/admin/'.length);
 
     window.cleanTmpRecipe = async function cleanTmpRecipe() {
-        localStorage.setItem('tmpRecipe', {});
+        localStorage.setItem('tmpRecipe', '{}');
         location.reload();
     }
-    
+
     if (localStorage.getItem('tmpRecipe'))
     {
         const recipe = JSON.parse(localStorage.getItem('tmpRecipe'))
