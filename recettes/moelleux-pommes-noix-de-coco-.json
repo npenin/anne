@@ -1,5 +1,6 @@
 {
     "title": "Moelleux pommes noix de coco ",
+    "private": false,
     "toppings": [
         {
             "quantity": "2",
@@ -38,7 +39,7 @@
         },
         {
             "quantity": "2",
-            "unit": "Petites pommes",
+            "unit": "petites pommes",
             "name": ""
         }
     ],
@@ -92,18 +93,23 @@
             "name": "Mini Louche",
             "picture": "https://boutique.guydemarle.com/7327-nq_social_share/mini-louche-cuisine-flexipan.jpg",
             "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine/2528-mini-louche-cuisine-flexipan.html"
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
         }
     ],
     "steps": [
         "Préchauffer votre four à 180°C.",
         "Poser votre moule sur une plaque aluminium perforée.",
         "Éplucher les pommes, les couper à l'aide du coupe-pommes puis faire des petits morceaux.",
-        "Dans le bol micro-ondes, faire fondre le beurre.",
+        "Dans le bol micro-ondes, faire fondre le beurre et réserver.",
         "Dans un cul de poule, battre les œufs avec les sucres jusqu'à obtenir un mélange mousseux.",
         "Ajouter la farine et la levure puis mélanger.",
         "Incorporer le beurre fondu et mélanger.",
         "Ajouter la noix de coco et les morceaux de pommes puis mélanger à nouveau.",
-        "Répartir aux deux tiers des empreintes.",
+        "Répartir aux 2/3 des empreintes.",
         "Enfourner à 180°C pendant 15 min.",
         "Laisser refroidir avant de démouler."
     ],
@@ -114,6 +120,6 @@
     "mold": {
         "name": "Moule 12 Biscuits OHRA®",
         "picture": "https://boutique.guydemarle.com/11574-nq_social_share/moule-12-biscuits-ohra.jpg",
-        "url": "https://boutique.guydemarle.com/moules-ohra/4362-moule-12-biscuits-ohra.html"
+        "url": "https://anneetsesdelices.fr/admin/recette/moelleux-pommes-noix-de-coco/#"
     }
 }
