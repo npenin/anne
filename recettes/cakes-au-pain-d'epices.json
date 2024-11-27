@@ -1,0 +1,99 @@
+{
+    "title": "Cakes au pain d'épices",
+    "private": false,
+    "toppings": [
+        {
+            "quantity": "200",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "250",
+            "unit": "g",
+            "name": "Miel"
+        },
+        {
+            "quantity": "1",
+            "unit": "c-à-c rase",
+            "name": "Mélange d'épices pour pain d'épices"
+        },
+        {
+            "quantity": "1/2",
+            "unit": "sachet",
+            "name": "Levure chimique"
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Lait"
+        },
+        {
+            "quantity": "1",
+            "unit": "Oeuf",
+            "name": ""
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Beurre"
+        },
+        {
+            "quantity": "1",
+            "unit": "zeste",
+            "name": "Orange"
+        },
+        {
+            "quantity": "50",
+            "unit": "g",
+            "name": "Cassonade"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Mélange d'épices pour pain d'épices bio, 50g",
+            "picture": "https://boutique.guydemarle.com/4555-nq_social_share/pain-depices-melange-d-epices-et-d-aromates-bio-50g.jpg",
+            "url": "https://boutique.guydemarle.com/epicerie-en-ligne/1372-pain-depices-melange-d-epices-et-d-aromates-bio-50g.html"
+        }
+    ],
+    "steps": [
+        "Préchauffer votrte four à 170°C.",
+        "Poser votre moule sur une plaque aluminium perforée.",
+        "Dans un cul de poule, mélanger la farine avec les épices et la levure.",
+        "Dans une casserole, mettre le lait à tièdir avec le beurre, le lait et le sucre.",
+        "Verser petit à petit le mélange dans la farine.",
+        "Pétrir en incroporant l'oeuf et ajouter le zeste d'orange.",
+        "Remplir les 5 cakes environ au 3/4.",
+        "Enfourner à 170°C pendant 25 min.",
+        "Laisser refroidir avant de démouler.",
+        "Le pain d'épices est meilleur lorsqu'il est réalisé la veille."
+    ],
+    "for": "12",
+    "preptime": "30",
+    "resttime": "0",
+    "cooktime": "25",
+    "mold": {
+        "name": "Moule 5 cakes longs OHRA®",
+        "picture": "https://boutique.guydemarle.com/11509-nq_social_share/moule-5-cakes-longs-ohra.jpg",
+        "url": "https://boutique.guydemarle.com/moules-ohra/4328-moule-5-cakes-longs-ohra.html"
+    }
+}
