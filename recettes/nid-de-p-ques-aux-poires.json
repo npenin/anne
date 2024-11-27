@@ -1,5 +1,6 @@
 {
     "title": "Nid de Pâques aux poires",
+    "private": false,
     "toppings": [
         {
             "quantity": "2",
@@ -18,8 +19,8 @@
         },
         {
             "quantity": "1/2",
-            "unit": "sachet de levure",
-            "name": ""
+            "unit": "sachet",
+            "name": "Levure"
         },
         {
             "quantity": "1/2",
@@ -33,7 +34,7 @@
         },
         {
             "quantity": "3",
-            "unit": "poires au sirop",
+            "unit": "Poires au sirop",
             "name": ""
         },
         {
@@ -46,27 +47,27 @@
         {
             "name": "Grand cul de poule 3,7L / 25 cm",
             "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/nid-de-paques-aux-poires/"
         },
         {
             "name": "Support cul-de-poule",
             "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/nid-de-paques-aux-poires/"
         },
         {
             "name": "Balance de cuisine en inox",
             "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/nid-de-paques-aux-poires/"
         },
         {
             "name": "Plaque Aluminium perforée 40 x 30 cm",
             "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/nid-de-paques-aux-poires/"
         },
         {
             "name": "Fouet 13 cm",
             "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/nid-de-paques-aux-poires/"
         }
     ],
     "steps": [
@@ -77,7 +78,7 @@
         "Couper les poires en petits morceaux et les ajouter à la préparation.",
         "Mettre la cuillère à café de jus de poires au sirop et mélanger.",
         "Répartir dans les empreintes.",
-        "Enfourner à 180°C pendant 25-30 min suivant votre four.",
+        "Enfourner à 180°C pendant 25-30 min (suivant votre four).",
         "Laisser refroidir avant de démouler.",
         "Décorer à votre guise les nids de Pâques (vermicelles, petits chocolats,...)"
     ],
@@ -88,6 +89,6 @@
     "mold": {
         "name": "Moule 8 Donuts OHRA®",
         "picture": "https://boutique.guydemarle.com/11566-nq_social_share/moule-8-donuts-ohra.jpg",
-        "url": "https://anneetsesdelices.fr/admin/nid-de-paques-aux-poires/#"
+        "url": "https://anneetsesdelices.fr/admin/recette/nid-de-paques-aux-poires/#"
     }
 }
