@@ -1,5 +1,6 @@
 {
     "title": "Tarte feuilletée aux pommes",
+    "private": false,
     "toppings": [
         {
             "quantity": "1",
@@ -36,27 +37,32 @@
         {
             "name": "Plaque Aluminium perforée 40 x 30 cm",
             "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/tarte-feuilletee-aux-pommes/"
         },
         {
             "name": "Petit cul de poule 2L / 20 cm",
             "picture": "https://boutique.guydemarle.com/2233-nq_social_share/petit-cul-de-poule-2l-20-cm-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/tarte-feuilletee-aux-pommes/"
         },
         {
             "name": "Support cul-de-poule",
             "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/tarte-feuilletee-aux-pommes/"
         },
         {
             "name": "Fouet 13 cm",
             "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/tarte-feuilletee-aux-pommes/"
         },
         {
             "name": "Coupe-pommes",
             "picture": "https://boutique.guydemarle.com/3323-nq_social_share/coupe-pomme.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/tarte-feuilletee-aux-pommes/"
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
         }
     ],
     "steps": [
@@ -68,8 +74,8 @@
         "Déposer les dès de pommes dans la pâte et mélanger délicatement.",
         "Étaler votre pâte sur le moule et piquer légèrement en surface.",
         "Verser la préparation sur la pâte.",
-        "Enfourner 35-40 min, suivant votre four, à 180°C.",
-        "Attendre que la tarte soit refroidie avant de la démouler."
+        "Enfourner à 180°C pendant 35-40 min (suivant votre four).",
+        "Laisser refroidir avant de démouler."
     ],
     "for": "8",
     "preptime": "10",
@@ -78,6 +84,6 @@
     "mold": {
         "name": "Moule Tarte Cannelée OHRA®",
         "picture": "https://boutique.guydemarle.com/11823-nq_social_share/moule-tarte-cannelee.jpg",
-        "url": "https://anneetsesdelices.fr/admin/tarte-feuilletee-aux-pommes/#"
+        "url": "https://anneetsesdelices.fr/admin/recette/tarte-feuilletee-aux-pommes/#"
     }
 }
