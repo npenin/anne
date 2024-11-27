@@ -1,5 +1,6 @@
 {
     "title": "Mini-spirales au saumon fumé ",
+    "private": false,
     "toppings": [
         {
             "quantity": "2",
@@ -13,13 +14,13 @@
         },
         {
             "quantity": "1/2",
-            "unit": "sachet", "name": "levure chimique ",
+            "unit": "sachet",
             "name": ""
         },
         {
             "quantity": "5",
             "unit": "cL",
-            "name": "D’huile tournesol "
+            "name": "Huile tournesol "
         },
         {
             "quantity": "7",
@@ -61,42 +62,42 @@
         {
             "name": "Grand cul de poule 3,7L / 25 cm",
             "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/mini-spirales-au-saumon-fume/"
         },
         {
             "name": "Support cul-de-poule",
             "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/mini-spirales-au-saumon-fume/"
         },
         {
             "name": "Fouet 13 cm",
             "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/mini-spirales-au-saumon-fume/"
         },
         {
             "name": "Balance de cuisine en inox",
             "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/mini-spirales-au-saumon-fume/"
         },
         {
             "name": "Toile de cuisson 40 x 30 cm",
             "picture": "https://boutique.guydemarle.com/12035-nq_social_share/toile-de-cuisson-en-silicone-40-x-30-cm.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/mini-spirales-au-saumon-fume/"
         },
         {
             "name": "Plaque Aluminium perforée 40 x 30 cm",
             "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/mini-spirales-au-saumon-fume/"
         },
         {
             "name": "Spatule double embout - Corail",
             "picture": "https://boutique.guydemarle.com/5802-nq_social_share/spatule-double-embout-corail.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/mini-spirales-au-saumon-fume/"
         },
         {
             "name": "Pichet verseur",
             "picture": "https://boutique.guydemarle.com/2230-nq_social_share/pichet-verseur-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/mini-spirales-au-saumon-fume/"
         },
         {
             "name": "Lot de 5 douilles interchangeables",
@@ -123,7 +124,7 @@
         "Verser la préparation dans le pichet verseur puis dans les empreintes.",
         "Couper le saumon en petits morceaux et les déposer dans les empreintes. A l’aide de la spatule double embouts, enfoncer les morceaux dans la préparation.",
         "Mettre la toile de cuisson sur le moule.",
-        "Enfourner à 180°C pendant 15 min suivant votre four.",
+        "Enfourner à 180°C pendant 15-18 min (suivant votre four).",
         "Attendre le refroidissement complet pour démouler et mettre la décoration.",
         "Pour la décoration, fouetter dans un bol le fromage Mme Loïk pour le détendre puis placer le dans une poche à douille avec une douille cannelée. Déposer le fromage dans les trous.",
         "Découper le saumon en fines lamelles et ciseler la ciboulette. Mettre un morceau de saumon et ciboulette sur chaque empreinte."
@@ -135,6 +136,6 @@
     "mold": {
         "name": "Moule 24 Mini-Spirales OHRA®",
         "picture": "https://boutique.guydemarle.com/12494-nq_social_share/moule-24-mini-spirales-ohra.jpg",
-        "url": "https://anneetsesdelices.fr/admin/mini-spirales-au-saumon-fume/#"
+        "url": "https://anneetsesdelices.fr/admin/recette/mini-spirales-au-saumon-fume/#"
     }
 }
