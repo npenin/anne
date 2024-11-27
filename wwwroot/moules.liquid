@@ -11,11 +11,12 @@ tags:
   - menu
 ---
 <ul>
-  {%- for item in collections.moules %}
+  {%- for item in moules %}
     <li class="mold">
-      <a href="/moules/{{item.data.recette.mold.name | slugify}}">
-        <img src="{{ item.data.recette.mold.picture }}" height="64px" />
-        <span class="name">{{ item.data.recette.mold.name }}</span>
+      
+      <a href="/moules/{{item.name | slugify}}">
+        <img src="{{ item.picture }}" height="64px" />
+        <span class="name">{{ item.name }}</span>
       </a>
     </li>
   {% endfor -%}

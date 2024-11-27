@@ -163,6 +163,7 @@ tags:
 
     window.save = async function save()
     {
+        document.querySelector('.toolbar').style.display='none';
         const recipe = getRecipe();
 
         const filename = `${dir}/recettes/${recipe.title.replace(/[^a-z]+/gi, '-').toLowerCase()}.json`;
@@ -183,14 +184,6 @@ tags:
 
         if(res.ok)
         {
-            document.querySelector('.toolbar').style.display='none';
-            if('Notification' in window)
-            {
-                const notif = await Notification.requestPermission();
-                if (notif=="granted")
-                    new Notification('Recette enregistree');
-            }
-            
             Swal.fire({
                 title: "Recette enregistrée !",
                 timer: 10000,
@@ -200,6 +193,14 @@ tags:
                     delete document.querySelector('.toolbar').style.display;
                 }
             });
+            
+            if('Notification' in window)
+            {
+                const notif = await Notification.requestPermission();
+                if (notif=="granted")
+                    new Notification('Recette enregistree');
+            }
+            
         }
         else {
                 Swal.fire({

@@ -1,17 +1,17 @@
 ﻿---
 layout: generic.liquid
 pagination:
-    data: collections.moules
+    data: moules
     size: 1
     alias: moule
     reverse: true
-permalink: "moules/{{ moule.data.recette.mold.name | slugify }}/"
+permalink: "moules/{{ moule.name | slugify }}/"
 eleventyComputed:
-    title: "{{moule.data.recette.mold.name}} - Anne et ses delices"
+    title: "{{moule.name}} - Anne et ses delices"
 ---
 <ul>
   {% for item in collections.recettes %}
-    {% if item.data.recette.mold.name == moule.data.recette.mold.name %}
+    {% if item.data.recette.mold.name == moule.name and item.data.recette.private!=true %}
       <li>
         <a href="{{item.page.url}}">{{ item.data.recette.title }}</a>
       </li>

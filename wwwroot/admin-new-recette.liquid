@@ -161,6 +161,7 @@ permalink: /admin/recette/
 
     window.save = async function save()
     {
+        document.querySelector('.toolbar').style.display='none';
         const recipe = getRecipe();
 
         const filename = `${dir}/recettes/${recipe.title.replace(/[^a-z]+/gi, '-').toLowerCase()}.json`;
@@ -171,13 +172,6 @@ permalink: /admin/recette/
         });
 
         if(res.ok){
-            document.querySelector('.toolbar').style.display='none';
-            if('Notification' in window)
-            {
-                const notif = await Notification.requestPermission();
-                if (notif=='granted')
-                    new Notification('Recette enregistrée');
-            }
             localStorage.removeItem('tmpRecipe', {...recipe, toppings:[], steps:[], title:''})
             let timerInterval;
             Swal.fire({
@@ -190,7 +184,7 @@ permalink: /admin/recette/
                     Swal.showLoading();
                     const timer = Swal.getPopup().querySelector("b");
                     timerInterval = setInterval(() => {
-                    timer.textContent = `${Swal.getTimerLeft()/1000}`;
+                        timer.textContent = `${Swal.getTimerLeft()/1000}`;
                     }, 1000);
                 },
                 willClose: () => {
@@ -198,6 +192,12 @@ permalink: /admin/recette/
                     location.replace(filename.substring(dir.length));
                 }
             });
+            if('Notification' in window)
+            {
+                const notif = await Notification.requestPermission();
+                if (notif=='granted')
+                new Notification('Recette enregistrée');
+            }
         }
         else
         {
