@@ -1,5 +1,6 @@
 {
     "title": "Cake citron pavot ",
+    "private": false,
     "toppings": [
         {
             "quantity": "200",
@@ -8,12 +9,12 @@
         },
         {
             "quantity": "1",
-            "unit": "Sachet",
+            "unit": "sachet",
             "name": "Levure chimique"
         },
         {
             "quantity": "1",
-            "unit": "Pincée",
+            "unit": "pincée",
             "name": "Sel"
         },
         {
@@ -33,7 +34,7 @@
         },
         {
             "quantity": "1",
-            "unit": "C-à-s bombée",
+            "unit": "c-à-s bombée",
             "name": "Graines de pavot "
         },
         {
@@ -97,6 +98,6 @@
     "mold": {
         "name": "Moule à cake cannelé OHRA®",
         "picture": "https://boutique.guydemarle.com/11202-nq_social_share/moule-cake-canneles.jpg",
-        "url": "https://boutique.guydemarle.com/moules-ohra/4229-moule-cake-canneles.html"
+        "url": "https://anneetsesdelices.fr/admin/recette/cake-citron-pavot/#"
     }
 }
