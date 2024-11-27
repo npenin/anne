@@ -1,5 +1,6 @@
 {
     "title": "Mini amandines aux poires",
+    "private": false,
     "toppings": [
         {
             "quantity": "3",
@@ -18,7 +19,7 @@
         },
         {
             "quantity": "1",
-            "unit": "sachet", "name": "sucre vanillé ",
+            "unit": "sachet",
             "name": ""
         },
         {
@@ -51,29 +52,39 @@
         {
             "name": "Plaque Aluminium perforée 40 x 30 cm",
             "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/mini-amandines-aux-poires/"
         },
         {
             "name": "Grand cul de poule 3,7L / 25 cm",
             "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/mini-amandines-aux-poires/"
         },
         {
             "name": "Support cul-de-poule",
             "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/mini-amandines-aux-poires/"
         },
         {
             "name": "Cuillère magique",
             "picture": "https://boutique.guydemarle.com/2139-nq_social_share/cuillere-magique-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/mini-amandines-aux-poires/"
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Bol micro-ondes 1L",
+            "picture": "https://boutique.guydemarle.com/3363-nq_social_share/bol-micro-ondes-1l.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1009-bol-micro-ondes-1l.html"
         }
     ],
     "steps": [
         "Poser votre moule sur la plaque aluminium perforée.",
         "Préchauffer votre four à 180°C.",
         "Dans un cul de poule, mélanger avec la cuillère magique les œufs et les sucres, jusqu'à ce que le mélange blanchisse.",
-        "Faire fondre le beurre.",
+        "Dans le bol micro-ondes, faire fondre le beurre et réserver.",
         "Ajouter à la préparation l’extrait d’amande amère et le beurre, puis mélanger.",
         "Ajouter la farine, la levure puis la poudre d'amandes.",
         "Remplir les empreintes aux 2/3 de la hauteur.",
@@ -89,6 +100,6 @@
     "mold": {
         "name": "Moule 20 Mini-Muffins OHRA®",
         "picture": "https://boutique.guydemarle.com/11027-nq_social_share/moule-mini-muffins.jpg",
-        "url": "https://anneetsesdelices.fr/mini-amandines-aux-poires/#"
+        "url": "https://anneetsesdelices.fr/admin/recette/mini-amandines-aux-poires/#"
     }
 }
