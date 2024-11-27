@@ -43,7 +43,7 @@
             "name": "Fromage blanc"
         },
         {
-            "quantity": "Pâte pour crumble:",
+            "quantity": "Pâte pour le crumble:",
             "unit": "",
             "name": ""
         },
@@ -124,6 +124,6 @@
     "mold": {
         "name": "Moule 5 cakes longs OHRA®",
         "picture": "https://boutique.guydemarle.com/11509-nq_social_share/moule-5-cakes-longs-ohra.jpg",
-        "url": "https://anneetsesdelices.fr/admin/recette/#"
+        "url": "https://anneetsesdelices.fr/admin/recette/crumb-cakes-framboises/#"
     }
 }
