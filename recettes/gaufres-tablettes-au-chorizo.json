@@ -1,5 +1,6 @@
 {
     "title": "Gaufres tablettes au Chorizo",
+    "private": false,
     "toppings": [
         {
             "quantity": "160",
@@ -41,31 +42,36 @@
         {
             "name": "Plaque Aluminium perforée 40 x 30 cm",
             "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/gaufres-tablettes-au-chorizo/"
         },
         {
             "name": "Grand cul de poule 3,7L / 25 cm",
             "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/gaufres-tablettes-au-chorizo/"
         },
         {
             "name": "Support cul-de-poule",
             "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/gaufres-tablettes-au-chorizo/"
         },
         {
             "name": "Hachoir manuel Tornado",
             "picture": "https://boutique.guydemarle.com/9990-nq_social_share/tornado-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/gaufres-tablettes-au-chorizo/"
         },
         {
             "name": "Mini Louche - Rose",
             "picture": "https://boutique.guydemarle.com/9092-nq_social_share/mini-louche-rose-cuisine.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/gaufres-tablettes-au-chorizo/"
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
         }
     ],
     "steps": [
-        "Poser votre moule 3 tablettes sur la plaque perforée.",
+        "Poser votre moule sur la plaque perforée.",
         "Préchauffer votre four à 180°C.",
         "Dans un cul de poule, mélanger la farine avec la levure.",
         "Ajouter les œufs et mélanger.",
@@ -73,7 +79,7 @@
         "Enlever la peau du Chorizo, le couper et le mixer grossièrement avec le Tornado.",
         "Ajouter à la préparation, le Chorizo, le Comté, le sel et le poivre puis mélanger.",
         "Verser 3 mini-louches de préparation par empreinte.",
-        "Enfourner 30 min à 180°C."
+        "Enfourner à 180°C pendant 30 min."
     ],
     "for": "2-3",
     "preptime": "10",
@@ -82,6 +88,6 @@
     "mold": {
         "name": "Moule 3 Tablettes OHRA®",
         "picture": "https://boutique.guydemarle.com/11504-nq_social_share/moule-3-tablettes-ohra.jpg",
-        "url": "https://anneetsesdelices.fr/admin/gaufres-tablettes-au-chorizo/#"
+        "url": "https://anneetsesdelices.fr/admin/recette/gaufres-tablettes-au-chorizo/#"
     }
 }
