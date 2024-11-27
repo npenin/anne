@@ -1,5 +1,6 @@
 {
     "title": "Gâteau aux poires",
+    "private": false,
     "toppings": [
         {
             "quantity": "3",
@@ -38,11 +39,11 @@
         },
         {
             "quantity": "6",
-            "unit": "Gouttes",
+            "unit": "gouttes",
             "name": "Amande amère "
         },
         {
-            "quantity": "3 poires ou une boîte de 425 mL de poires au sirop",
+            "quantity": "3 Poires ou une boîte de 425 mL de poires au sirop",
             "unit": "",
             "name": ""
         }
@@ -51,42 +52,42 @@
         {
             "name": "Tapis Décor Rond Pétales OHRA®",
             "picture": "https://boutique.guydemarle.com/11834-nq_social_share/tapis-decor-rond-petales.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/gateau-aux-poires/"
         },
         {
             "name": "Plaque Aluminium perforée 40 x 30 cm",
             "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/gateau-aux-poires/"
         },
         {
             "name": "Grand cul de poule 3,7L / 25 cm",
             "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/gateau-aux-poires/"
         },
         {
             "name": "Support cul-de-poule",
             "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/gateau-aux-poires/"
         },
         {
             "name": "Fouet 13 cm",
             "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/gateau-aux-poires/"
         },
         {
             "name": "Balance de cuisine en inox",
             "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/gateau-aux-poires/"
         },
         {
             "name": "Toile de cuisson 40 x 30 cm",
             "picture": "https://boutique.guydemarle.com/12035-nq_social_share/toile-de-cuisson-en-silicone-40-x-30-cm.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/gateau-aux-poires/"
         },
         {
             "name": "Bol micro-ondes 1L",
             "picture": "https://boutique.guydemarle.com/3363-nq_social_share/bol-micro-ondes-1l.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/gateau-aux-poires/"
         }
     ],
     "steps": [
@@ -108,6 +109,6 @@
     "mold": {
         "name": "Moule Rond OHRA®",
         "picture": "https://boutique.guydemarle.com/11022-nq_social_share/moule-rond-silicone-gateau.jpg",
-        "url": "https://anneetsesdelices.fr/admin/gateau-aux-poires/#"
+        "url": "https://anneetsesdelices.fr/admin/recette/gateau-aux-poires/#"
     }
 }
