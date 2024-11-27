@@ -4,7 +4,7 @@ title: Anne et son admin
 permalink: /admin/recette/
 ---
 <div class="toolbar">
-    <i class="fal fa-burst fa-2x" onclick="cleanTmpRecipe()"></i>
+    <i class="fal fa-trash fa-2x" onclick="cleanTmpRecipe()"></i>
     <i class="fal fa-save fa-2x" style="visibility:hidden" onclick="save()"></i>
     <div>
         <input type="checkbox" name="private">
@@ -104,7 +104,7 @@ permalink: /admin/recette/
     }
 
     document.querySelector('.fa-save').style.visibility = 'visible'
-    document.querySelector('.fa-burst').style.visibility = 'collapsed'
+    document.querySelector('.fa-trash').style.visibility = 'collapsed'
 
     await Notification.requestPermission();
 
