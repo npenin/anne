@@ -2,6 +2,12 @@
     "title": "Gâteau au yaourt aux 6 saveurs",
     "private": false,
     "toppings": [
+
+        {
+            "quantity": "Pate à gateau :",
+            "unit": "",
+            "name": ""
+        },
         {
             "quantity": "2",
             "unit": "Pots",
