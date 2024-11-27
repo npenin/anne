@@ -1,5 +1,6 @@
 {
     "title": "Panna cotta cannelée",
+    "private": false,
     "toppings": [
         {
             "quantity": "66",
@@ -13,13 +14,13 @@
         },
         {
             "quantity": "4",
-            "unit": "Feuilles de gélatine ",
-            "name": ""
+            "unit": "feuilles",
+            "name": "Gélatine"
         },
         {
             "quantity": "1",
-            "unit": "Gousse de vanille ou quelques gouttes d'extrait de vanille  + vanille en poudre ",
-            "name": ""
+            "unit": "gousse",
+            "name": "Vanille ou quelques gouttes d'extrait de vanille  + vanille en poudre"
         },
         {
             "quantity": "Coulis de fruits",
@@ -42,10 +43,15 @@
             "name": "Pichet verseur",
             "picture": "https://boutique.guydemarle.com/2230-nq_social_share/pichet-verseur-guy-demarle.jpg",
             "url": ""
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
         }
     ],
     "steps": [
-        "Poser le moule sur une plaque aluminium perforée.",
+        "Poser votre moule sur une plaque aluminium perforée.",
         "Mettre les feuilles de gélatine dans un bol d'eau froide pour au moins 5 min.",
         "Gratter la gousse de vanille pour enlever les grains.",
         "Dans une casserole, faites chauffer, à feu moyen, la crème, le sucre et les grains de vanille ou l’extrait de vanille/vanille en poudre.",
@@ -63,6 +69,6 @@
     "mold": {
         "name": "Moule 30 Mini cannelés OHRA®",
         "picture": "https://boutique.guydemarle.com/11580-nq_social_share/moule-30-mini-canneles-ohra.jpg",
-        "url": "https://anneetsesdelices.fr/admin/panna-cotta-cannelee/#"
+        "url": "http://localhost:3000/admin/recette/panna-cotta-cannelee/#"
     }
 }
