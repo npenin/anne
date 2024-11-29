@@ -51,12 +51,14 @@ window.loadRecipe = function (recipe)
             const li = addPrepStep(false);
             li.innerText = t;
         })
+    else
+        mde.value(recipe.steps);
 
     document.querySelector('.fa-save').style.visibility = 'visible'
 }
 
-new window.SimpleMDE({ element: document.querySelector('#steps>textarea') })
-
+const mde = new window.SimpleMDE({ element: document.querySelector('#steps>textarea') })
+mde.codemirror.on('changes', () => saveLocally());
 
 document.querySelector('.mold').addEventListener('click', () => document.querySelector('.info>.mold>.name').focus());
 async function fetchmold(ev)
@@ -73,7 +75,7 @@ async function fetchmold(ev)
 }
 
 window.fetchmold = fetchmold;
-function getRecipe()
+export function getRecipe()
 {
     return {
         title: document.querySelector('h1').innerText,
@@ -88,7 +90,7 @@ function getRecipe()
             picture: span.querySelector('img').src,
             url: span.querySelector('a').href,
         })),
-        steps: document.getElementById('steps').textContent || Array.from(document.querySelectorAll('.steps li')).map(li => li.innerText),
+        steps: mde.value() || Array.from(document.querySelectorAll('.steps li')).map(li => li.innerText),
         for: document.querySelector('.info .count').innerText,
         preptime: document.querySelector('.info .preptime').innerText,
         resttime: document.querySelector('.info .resttime').innerText,
@@ -101,7 +103,7 @@ function getRecipe()
     };
 }
 
-function saveLocally() { }
+function saveLocally() { window.saveLocally(); }
 
 window.save = async function save()
 {

@@ -61,12 +61,17 @@ permalink: /admin/recette/
 <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
 <script type="module">
     import '/assets/script.mjs';
+    import {getRecipe} from '/assets/script.mjs';
 
     window.cleanTmpRecipe = async function cleanTmpRecipe() {
         localStorage.removeItem('tmpRecipe');
         location.reload();
     }
 
+    window.saveLocally=function saveLocally()
+    {
+        localStorage.setItem('tmpRecipe', JSON.stringify(getRecipe()));
+    }
     try{
         window.loadRecipe(JSON.parse(localStorage.getItem('tmpRecipe')))
         document.querySelector('.fa-trash').style.display = 'none'
