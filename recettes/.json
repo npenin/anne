@@ -1,0 +1,157 @@
+{
+    "title": "",
+    "private": false,
+    "toppings": [
+        {
+            "quantity": "Pâte à cigarette :",
+            "unit": "",
+            "name": ""
+        },
+        {
+            "quantity": "10",
+            "unit": "g",
+            "name": "Beurre pommade"
+        },
+        {
+            "quantity": "10",
+            "unit": "g",
+            "name": "Sucre glace"
+        },
+        {
+            "quantity": "10",
+            "unit": "g",
+            "name": "Blancs d'oeufs"
+        },
+        {
+            "quantity": "7",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "1",
+            "unit": "pointe",
+            "name": "Colorant rouge"
+        },
+        {
+            "quantity": "Génoise aux amandes :",
+            "unit": "",
+            "name": ""
+        },
+        {
+            "quantity": "60",
+            "unit": "g",
+            "name": "Poudre aux amandes tamisées"
+        },
+        {
+            "quantity": "30",
+            "unit": "g",
+            "name": "Farine tamisée"
+        },
+        {
+            "quantity": "50",
+            "unit": "g",
+            "name": "Beurre"
+        },
+        {
+            "quantity": "3",
+            "unit": "Oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "90",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "Mouse :",
+            "unit": "",
+            "name": ""
+        },
+        {
+            "quantity": "3",
+            "unit": "feuilles",
+            "name": "Gélatine"
+        },
+        {
+            "quantity": "2",
+            "unit": "jaunes",
+            "name": "Oeufs"
+        },
+        {
+            "quantity": "80",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "200",
+            "unit": "g",
+            "name": "Mascarpone"
+        },
+        {
+            "quantity": "200",
+            "unit": "g",
+            "name": "Crème pour Chantilly"
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Framboises congelées"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": ""
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": ""
+        }
+    ],
+    "steps": [
+        "Poser votre tapis à génoise sur une plaque aluminium preforée.\nPate à cigarette :",
+        "Dans un cul de poule, mélanger au fouet le beurre et le sucre glace.",
+        "Ajouter le blanc d'oeuf, la farine et le colorant",
+        "Etaler la pâte à cigarette sur le tapis décor à l'aide de la mini spatule coudée puis le placer dans un coin du tapis à génoise (décor visible).\nGénoise aux amandes :",
+        "Préchauffer votre fourà 180°C.",
+        "Dans un cul de poule, mélanger la poudre d'amandes et la farine tamisées.",
+        "Dans le bol micro-ondes, faire fondre le beurre et réserver.",
+        "Séparer les jaunes des blancs d'oeufs.",
+        "Monter les blancs en neige avec le sucre.",
+        "Incorporer les jaunes puis le mélange farine/amande.",
+        "Ajouter le beurre fondu et mélanger à l'aide de la spatule double embouts.",
+        "Répartir la pâte sur le tapis à génoise et égaliser à l'aide de la mini spatule coudée.",
+        "Enfourner à 180°C pendant 12 min.\nMousse :",
+        "Mettre la gélatine dans l'eau froide pendant 10 min.",
+        "Dans un cul de poule, mélanger au fouet les jaunes d'oeufs et le sucre jusqu'à ce que le mélangisse.",
+        "Faire chauffer un peu de crème dans une tasse, faire fondre la gélatine essorée et l'ajouter à la préparation.",
+        "Monter la créme liquide froide avec la Mascarpone bien froide en chantilly.",
+        "Mélanger délicatement la crème chantilly sur les oeufs.\nMontage :",
+        "Découper la génoise et couper autour du tapis décor.Poser le décor dans la bûche (dessin non visible).",
+        "Garnir d'une couche de crème, déposer une rangée de framboises.",
+        "Poser une bande de génoise.",
+        "Couvrir d'un film alimentaire.",
+        "mettre aucongélateuur pour au moins 5h.\nDémoulage :"
+    ],
+    "for": "12",
+    "preptime": "15",
+    "resttime": "40+60",
+    "cooktime": "20",
+    "mold": {
+        "name": "Moule 5 cakes longs OHRA®",
+        "picture": "https://boutique.guydemarle.com/11509-nq_social_share/moule-5-cakes-longs-ohra.jpg",
+        "url": "https://anneetsesdelices.fr/admin/recette/#"
+    }
+}
