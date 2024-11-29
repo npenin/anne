@@ -55,6 +55,8 @@ window.loadRecipe = function (recipe)
     document.querySelector('.fa-save').style.visibility = 'visible'
 }
 
+new window.SimpleMDE({ element: document.querySelector('#steps>textarea') })
+
 
 document.querySelector('.mold').addEventListener('click', () => document.querySelector('.info>.mold>.name').focus());
 async function fetchmold(ev)
@@ -86,7 +88,7 @@ function getRecipe()
             picture: span.querySelector('img').src,
             url: span.querySelector('a').href,
         })),
-        steps: Array.from(document.querySelectorAll('.steps li')).map(li => li.innerText),
+        steps: document.getElementById('steps').textContent || Array.from(document.querySelectorAll('.steps li')).map(li => li.innerText),
         for: document.querySelector('.info .count').innerText,
         preptime: document.querySelector('.info .preptime').innerText,
         resttime: document.querySelector('.info .resttime').innerText,
