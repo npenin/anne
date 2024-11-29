@@ -231,7 +231,7 @@ tags:
         dynamic(name, {
             Enter: (ev) =>
             {
-                if (ev.target.innerText !== '')
+                if (ev.target.innerText !== '' && ev.target.innerText !== '\n')
                     fetchmold(ev).then(() => ev.target.blur()).then(() => saveLocally());
                 else
                 {
