@@ -109,6 +109,24 @@ a.panel {
     margin-top: 0;
 }
 
+#steps {
+    height: 100%;
+    position: relative;
+}
+
+#steps .CodeMirror {
+    height: calc(100% - 70px);
+    background: #fff3;
+}
+
+.steps>#steps:has(+ol:empty)+ol+button {
+    display: none;
+}
+
+.steps>#steps:has(+ol:not(:empty)) {
+    display: none;
+}
+
 .steps>p:last-child {
     padding-top: 12px;
 }
