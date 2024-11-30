@@ -153,14 +153,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@akala/core@npm:^10.6.0":
-  version: 10.6.0
-  resolution: "@akala/core@npm:10.6.0"
+"@akala/core@npm:^19.0.0":
+  version: 19.0.14
+  resolution: "@akala/core@npm:19.0.14"
   dependencies:
-    debug: "npm:^4.3.4"
-    path-to-regexp: "npm:^6.2.1"
-    reflect-metadata: "npm:^0.1.13"
-  checksum: 10/e399f85fa97a40c67a5c2169728913b56d4de121d038b68079718cb4e36f856312f6abe47f3b6c643dde24c401c49cbdecc37b4a77a97eaaa75bfd417cefd5aa
+    debug: "npm:^4.3.7"
+    reflect-metadata: "npm:^0.2.2"
+  checksum: 10/0175d5a4cfeebfe98b38f5bb83c748a5eea539fb1f21982d02a34387b8e580209e7701ed0dc614d5a1a6b83bd9519c4df5dd6373c363df8cb5f26e0807519a02
   languageName: node
   linkType: hard
 
@@ -360,7 +359,7 @@ __metadata:
   resolution: "anne@workspace:."
   dependencies:
     "@11ty/eleventy": "npm:^3.0.0"
-    "@akala/core": "npm:^10.6.0"
+    "@akala/core": "npm:^19.0.0"
     "@types/cookie-parser": "npm:^1.4.8"
     "@types/node": "npm:^22.10.0"
     body-parser: "npm:^1.20.3"
@@ -2295,13 +2294,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"path-to-regexp@npm:^6.2.1":
-  version: 6.2.1
-  resolution: "path-to-regexp@npm:6.2.1"
-  checksum: 10/1e266be712d1a08086ee77beab12a1804842ec635dfed44f9ee1ba960a0e01cec8063fb8c92561115cdc0ce73158cdc7766e353ffa039340b4a85b370084c4d4
-  languageName: node
-  linkType: hard
-
 "picomatch@npm:^2.0.4, picomatch@npm:^2.2.1, picomatch@npm:^2.3.1":
   version: 2.3.1
   resolution: "picomatch@npm:2.3.1"
@@ -2467,10 +2459,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"reflect-metadata@npm:^0.1.13":
-  version: 0.1.13
-  resolution: "reflect-metadata@npm:0.1.13"
-  checksum: 10/732570da35d2d96f8fdd5aac60fb263aa92f6512eaded5962b052bd9e90f22a9dec5aaf0d7ff4bfe97646c9530e8444e8435c2d80b24d0bdf938b5d47f6f5b83
+"reflect-metadata@npm:^0.2.2":
+  version: 0.2.2
+  resolution: "reflect-metadata@npm:0.2.2"
+  checksum: 10/1c93f9ac790fea1c852fde80c91b2760420069f4862f28e6fae0c00c6937a56508716b0ed2419ab02869dd488d123c4ab92d062ae84e8739ea7417fae10c4745
   languageName: node
   linkType: hard
 
