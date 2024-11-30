@@ -40,7 +40,7 @@ jobs:
           yarn
           yarn eleventy --config=eleventy.js --input=wwwroot
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
           path: '_site'
