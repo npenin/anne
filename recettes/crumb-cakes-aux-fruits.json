@@ -1,0 +1,129 @@
+{
+    "title": "Crumb-cakes aux fruits",
+    "private": false,
+    "toppings": [
+        {
+            "quantity": "Pâte pour les 5 cakes :",
+            "unit": "",
+            "name": ""
+        },
+        {
+            "quantity": "80",
+            "unit": "g",
+            "name": "Beurre"
+        },
+        {
+            "quantity": "150",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "110",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "1/2",
+            "unit": "sachet",
+            "name": "Levure chimique"
+        },
+        {
+            "quantity": "150",
+            "unit": "g",
+            "name": "Fruits de votre choix (framboises congelées, pommes, myrtilles, poires, fruits rouges, ...)"
+        },
+        {
+            "quantity": "3",
+            "unit": "Œufs",
+            "name": ""
+        },
+        {
+            "quantity": "50",
+            "unit": "g",
+            "name": "Fromage blanc"
+        },
+        {
+            "quantity": "Pâte pour le crumble:",
+            "unit": "",
+            "name": ""
+        },
+        {
+            "quantity": "30",
+            "unit": "g",
+            "name": "Poudre d'amandes"
+        },
+        {
+            "quantity": "70",
+            "unit": "g",
+            "name": "Sucre roux"
+        },
+        {
+            "quantity": "70",
+            "unit": "g",
+            "name": "Beurre"
+        },
+        {
+            "quantity": "90",
+            "unit": "g",
+            "name": "Farine"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://anneetsesdelices.fr/admin/recette/crumb-cakes-framboises/"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://anneetsesdelices.fr/admin/recette/crumb-cakes-framboises/"
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://anneetsesdelices.fr/admin/recette/crumb-cakes-framboises/"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://anneetsesdelices.fr/admin/recette/crumb-cakes-framboises/"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://anneetsesdelices.fr/admin/recette/crumb-cakes-framboises/"
+        },
+        {
+            "name": "Bol micro-ondes 1L",
+            "picture": "https://boutique.guydemarle.com/3363-nq_social_share/bol-micro-ondes-1l.jpg",
+            "url": "https://anneetsesdelices.fr/admin/recette/crumb-cakes-framboises/"
+        },
+        {
+            "name": "Hachoir manuel Tornado",
+            "picture": "https://boutique.guydemarle.com/9990-nq_social_share/tornado-guy-demarle.jpg",
+            "url": "https://anneetsesdelices.fr/admin/recette/crumb-cakes-framboises/"
+        }
+    ],
+    "steps": [
+        "Préchauffer votre four à 180°C.",
+        "Poser votre moule sur une plaque aluminium perforée.",
+        "Dans le bol micro-ondes, faire fondre le beurre et réserver.",
+        "Dans un cul de poule, à l’aide du fouet, mélanger les œufs avec le sucre.",
+        "Ajouter le beurre fondu, le fromage blanc, la farine et la levure puis mélanger.",
+        "Répartir dans les empreintes et couvrir de fruits.",
+        "A l’aide du Tornado, réaliser le crumble en mixant la poudre d’amandes, le sucre, le beurre et la farine.",
+        "Répartir sur les framboises.",
+        "Enfourner à 180°C pendant 25 min.",
+        "Laisser refroidir 1h avant de déguster."
+    ],
+    "for": "12",
+    "preptime": "15",
+    "resttime": "0",
+    "cooktime": "25-30",
+    "mold": {
+        "name": "Moule 5 cakes longs OHRA®",
+        "picture": "https://boutique.guydemarle.com/11509-nq_social_share/moule-5-cakes-longs-ohra.jpg",
+        "url": "https://anneetsesdelices.fr/admin/recette/crumb-cakes-framboises/#"
+    }
+}
