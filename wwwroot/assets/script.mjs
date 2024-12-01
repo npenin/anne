@@ -57,7 +57,7 @@ window.loadRecipe = function (recipe)
     document.querySelector('.fa-save').style.visibility = 'visible'
 }
 
-const mde = new window.SimpleMDE({ element: document.querySelector('#steps>textarea') })
+const mde = new window.SimpleMDE({ spellChecer: false, element: document.querySelector('#steps>textarea') })
 mde.codemirror.on('changes', () => saveLocally());
 
 document.querySelector('.mold').addEventListener('click', () => document.querySelector('.info>.mold>.name').focus());
