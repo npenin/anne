@@ -1,0 +1,93 @@
+{
+    "title": "Mini spirales marbrées",
+    "private": false,
+    "toppings": [
+        {
+            "quantity": "75",
+            "unit": "g",
+            "name": "Beurre fondu"
+        },
+        {
+            "quantity": "120",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "120",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "1",
+            "unit": "pincée",
+            "name": "Levure"
+        },
+        {
+            "quantity": "2",
+            "unit": "Oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "1/2",
+            "unit": "c-à-c",
+            "name": "Cacao non sucré"
+        },
+        {
+            "quantity": "1/2",
+            "unit": "c-à-c",
+            "name": "Arôme vanille"
+        },
+        {
+            "quantity": "45",
+            "unit": "g",
+            "name": "Lait"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://anneetsesdelices.fr/admin/recette/"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://anneetsesdelices.fr/admin/recette/"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://anneetsesdelices.fr/admin/recette/"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://anneetsesdelices.fr/admin/recette/"
+        },
+        {
+            "name": "Toile de cuisson 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/12035-nq_social_share/toile-de-cuisson-en-silicone-40-x-30-cm.jpg",
+            "url": "https://boutique.guydemarle.com/toiles-et-tapis-de-cuisson/4508-toile-de-cuisson-en-silicone-40-x-30-cm.html"
+        },
+        {
+            "name": "Spatule double embouts - Gris Anthracite",
+            "picture": "https://boutique.guydemarle.com/5792-nq_social_share/spatule-double-embout-gris-anthracite.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1793-spatule-double-embout-gris-anthracite.html"
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        }
+    ],
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dans un cul de poule, mélanger le beurre fondu et le sucre.\n4. Séparer les blancs des jaunes d'oeufs.\n5. Incorporer les jaunes d'oeufs à la préparation et mélanger.\n6. Ajouter le lait, la farine et la levure puis mélanger jusqu'à obtenir une pâte homogène.\n7. Monter les blancs en neige et incorporer les à la préparation en 2 fois et mélanger délicatement à l'aide de la spatule double embouts.\n8. Séparer la pâte en 2.\n9. Dans la première pâte, ajouter la vanille et mélanger délicatement.\n10. Dans la seconde pâte, ajouter le caco en poudre et mélanger délicatement.\n11. Répartir les 2 préparations dans les empreintes en alternant la pâte à la vanille et la pâte au chocolat.\n12. Recouvrir le moule d'une toile de cuisson.\n13. Enfourner à 180°C pendant 15 min (suivant votre four).\n14. Laisser refroidir avant de démouler.\n15. Dans le creux, vous pouver rajouter de la pate à tartiner, un morceau de poire, une framboise, ...",
+    "for": "8",
+    "preptime": "15",
+    "resttime": "0",
+    "cooktime": "15",
+    "mold": {
+        "name": "Moule 24 Mini-Spirales OHRA®",
+        "picture": "https://boutique.guydemarle.com/12494-nq_social_share/moule-24-mini-spirales-ohra.jpg",
+        "url": "https://anneetsesdelices.fr/admin/recette/#"
+    }
+}
