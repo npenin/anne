@@ -117,6 +117,7 @@ a.panel {
 #steps .CodeMirror {
     height: calc(100% - 70px);
     background: #fff3;
+    font-size: larger;
 }
 
 .steps>#steps:has(+ol:empty)+ol+button {
