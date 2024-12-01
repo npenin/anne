@@ -1,6 +1,6 @@
 {
     "title": "Bûche Tiramisu Framboise",
-    "private": true,
+    "private": false,
     "toppings": [
         {
             "quantity": "Pâte à cigarette :",
@@ -102,22 +102,22 @@
         {
             "name": "Grand cul de poule 3,7L / 25 cm",
             "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/buche-tiramisu-framboise/"
         },
         {
             "name": "Support cul-de-poule",
             "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/buche-tiramisu-framboise/"
         },
         {
             "name": "Fouet 13 cm",
             "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/buche-tiramisu-framboise/"
         },
         {
             "name": "Plaque Aluminium perforée 40 x 30 cm",
             "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
-            "url": ""
+            "url": "https://anneetsesdelices.fr/admin/recette/buche-tiramisu-framboise/"
         },
         {
             "name": "Petite spatule coudée 9 cm",
@@ -154,24 +154,26 @@
         "Ajouter le beurre fondu et mélanger à l'aide de la spatule double embouts.",
         "Répartir la pâte sur le tapis à génoise et égaliser à l'aide de la mini spatule coudée.",
         "Enfourner à 180°C pendant 12 min.\nMousse :",
-        "Mettre la gélatine dans l'eau froide pendant 10 min.",
+        "Réhydrater la gélatine dans l'eau froide pendant 10 min.",
         "Dans un cul de poule, mélanger au fouet les jaunes d'oeufs et le sucre jusqu'à ce que le mélangisse.",
         "Faire chauffer un peu de crème dans une tasse, faire fondre la gélatine essorée et l'ajouter à la préparation.",
         "Monter la créme liquide froide avec la Mascarpone bien froide en chantilly.",
         "Mélanger délicatement la crème chantilly sur les oeufs.\nMontage :",
         "Découper la génoise et couper autour du tapis décor. Poser le décor dans la bûche (dessin non visible).",
-        "Garnir d'une couche de crème, déposer une rangée de framboises.",
-        "Poser une bande de génoise.",
+        "Garnir d'une couche de crème, déposer une rangée de framboises et une bande de génoise puis recouvrir du reste de la crème.",
+        "Poser une dernière bande de génoise.",
         "Couvrir d'un film alimentaire.",
-        "Mettre au congélateur pour au moins 5h.\nDémoulage :"
+        "Mettre au congélateur pour au moins 5h.\nDémoulage :",
+        "Démouler votre bûche.",
+        "Laisser décongeler au réfrigérateur au moins 6 à 8 h."
     ],
-    "for": "12",
-    "preptime": "15",
-    "resttime": "40+60",
-    "cooktime": "20",
+    "for": "8",
+    "preptime": "\n",
+    "resttime": "12h+5h",
+    "cooktime": "12",
     "mold": {
         "name": "Moule à bûche OHRA®",
         "picture": "https://boutique.guydemarle.com/16302-nq_social_share/moule-a-buche-en-silicone-ohra.jpg",
-        "url": "https://boutique.guydemarle.com/moule-en-silicone/4419-moule-a-buche-en-silicone-ohra.html"
+        "url": "https://anneetsesdelices.fr/admin/recette/buche-tiramisu-framboise/#"
     }
 }
