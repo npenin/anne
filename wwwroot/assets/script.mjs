@@ -115,7 +115,8 @@ window.save = async function save()
         headers: { accept: 'application/vnd.github+json', authorization: 'Bearer ' + token, 'X-GitHub-Api-Version': '2022-11-28' }, method: 'GET'
     });
 
-    if (res.status !== 404)
+    const create = res.status == 404;
+    if (!create)
     {
         if (!res.ok)
         {
@@ -140,16 +141,43 @@ window.save = async function save()
 
     if (res.ok)
     {
-        Swal.fire({
-            title: "Recette enregistrée !",
-            timer: 10000,
-            timerProgressBar: true,
-            icon: "success",
-            willClose: () =>
-            {
-                delete document.querySelector('.toolbar').style.display;
-            }
-        });
+        if (create)
+        {
+            localStorage.setItem('tmpRecipe', JSON.stringify({ ...recipe, toppings: [], steps: [], title: '' }))
+            let timerInterval;
+            Swal.fire({
+                title: "Recette enregistrée !",
+                html: "Redirection vers la recette créée dans <b></b>s...",
+                timerProgressBar: true,
+                icon: "success",
+                timer: 30000,
+                didOpen: () =>
+                {
+                    Swal.showLoading();
+                    const timer = Swal.getPopup().querySelector("b");
+                    timerInterval = setInterval(() =>
+                    {
+                        timer.textContent = `${Swal.getTimerLeft() / 1000}`;
+                    }, 1000);
+                },
+                willClose: () =>
+                {
+                    clearInterval(timerInterval);
+                    location.replace(filename.substring(dir.length).replace('.json', '/'));
+                }
+            });
+        }
+        else
+            Swal.fire({
+                title: "Recette enregistrée !",
+                timer: 10000,
+                timerProgressBar: true,
+                icon: "success",
+                willClose: () =>
+                {
+                    delete document.querySelector('.toolbar').style.display;
+                }
+            });
 
         if ('Notification' in window)
         {
