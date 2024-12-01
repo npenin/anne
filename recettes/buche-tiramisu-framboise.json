@@ -1,5 +1,5 @@
 {
-    "title": "Buche Tiramisu Framboise",
+    "title": "Bûche Tiramisu Framboise",
     "private": true,
     "toppings": [
         {
@@ -118,14 +118,34 @@
             "name": "Plaque Aluminium perforée 40 x 30 cm",
             "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
             "url": ""
+        },
+        {
+            "name": "Petite spatule coudée 9 cm",
+            "picture": "https://boutique.guydemarle.com/2142-nq_social_share/petite-spatule-coudee-9-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/617-petite-spatule-coudee-9-cm-guy-demarle.html"
+        },
+        {
+            "name": "Tapis à Génoise OHRA®",
+            "picture": "https://boutique.guydemarle.com/11795-nq_social_share/tapis-a-genoise-en-silicone-ohra.jpg",
+            "url": "https://boutique.guydemarle.com/moules-ohra/4426-tapis-a-genoise-en-silicone-ohra.html"
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Spatule double embouts - Gris Anthracite",
+            "picture": "https://boutique.guydemarle.com/5792-nq_social_share/spatule-double-embout-gris-anthracite.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1793-spatule-double-embout-gris-anthracite.html"
         }
     ],
     "steps": [
-        "Poser votre tapis à génoise sur une plaque aluminium preforée.\nPate à cigarette :",
+        "Poser votre tapis à génoise sur une plaque aluminium preforée.\nPâte à cigarette :",
         "Dans un cul de poule, mélanger au fouet le beurre et le sucre glace.",
-        "Ajouter le blanc d'oeuf, la farine et le colorant",
+        "Ajouter le blanc d'oeuf, la farine et le colorant.",
         "Etaler la pâte à cigarette sur le tapis décor à l'aide de la mini spatule coudée puis le placer dans un coin du tapis à génoise (décor visible).\nGénoise aux amandes :",
-        "Préchauffer votre fourà 180°C.",
+        "Préchauffer votre four à 180°C.",
         "Dans un cul de poule, mélanger la poudre d'amandes et la farine tamisées.",
         "Dans le bol micro-ondes, faire fondre le beurre et réserver.",
         "Séparer les jaunes des blancs d'oeufs.",
@@ -139,19 +159,19 @@
         "Faire chauffer un peu de crème dans une tasse, faire fondre la gélatine essorée et l'ajouter à la préparation.",
         "Monter la créme liquide froide avec la Mascarpone bien froide en chantilly.",
         "Mélanger délicatement la crème chantilly sur les oeufs.\nMontage :",
-        "Découper la génoise et couper autour du tapis décor.Poser le décor dans la bûche (dessin non visible).",
+        "Découper la génoise et couper autour du tapis décor. Poser le décor dans la bûche (dessin non visible).",
         "Garnir d'une couche de crème, déposer une rangée de framboises.",
         "Poser une bande de génoise.",
         "Couvrir d'un film alimentaire.",
-        "mettre aucongélateuur pour au moins 5h.\nDémoulage :"
+        "Mettre au congélateur pour au moins 5h.\nDémoulage :"
     ],
     "for": "12",
     "preptime": "15",
     "resttime": "40+60",
     "cooktime": "20",
     "mold": {
-        "name": "Moule 5 cakes longs OHRA®",
-        "picture": "https://boutique.guydemarle.com/11509-nq_social_share/moule-5-cakes-longs-ohra.jpg",
-        "url": "https://anneetsesdelices.fr/admin/recette/#"
+        "name": "Moule à bûche OHRA®",
+        "picture": "https://boutique.guydemarle.com/16302-nq_social_share/moule-a-buche-en-silicone-ohra.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/4419-moule-a-buche-en-silicone-ohra.html"
     }
 }
