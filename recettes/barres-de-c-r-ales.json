@@ -1,0 +1,98 @@
+{
+    "title": "Barres de céréales",
+    "private": false,
+    "toppings": [
+        {
+            "quantity": "50",
+            "unit": "g",
+            "name": "Amandes entières"
+        },
+        {
+            "quantity": "40",
+            "unit": "g",
+            "name": "Noisettes"
+        },
+        {
+            "quantity": "30",
+            "unit": "g",
+            "name": "Pistaches décortiquées"
+        },
+        {
+            "quantity": "25",
+            "unit": "g",
+            "name": "Raisins blonds"
+        },
+        {
+            "quantity": "30",
+            "unit": "g",
+            "name": "Cranberries séchées"
+        },
+        {
+            "quantity": "120",
+            "unit": "g",
+            "name": "Flocons d'avoine"
+        },
+        {
+            "quantity": "65",
+            "unit": "g",
+            "name": "Beurre"
+        },
+        {
+            "quantity": "65",
+            "unit": "g",
+            "name": "Sirop d'agave"
+        },
+        {
+            "quantity": "65",
+            "unit": "g",
+            "name": "Sucre de canne"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://anneetsesdelices.fr/admin/recette/"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://anneetsesdelices.fr/admin/recette/"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://anneetsesdelices.fr/admin/recette/"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://anneetsesdelices.fr/admin/recette/"
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Hachoir manuel Tornado",
+            "picture": "https://boutique.guydemarle.com/9990-nq_social_share/tornado-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/668-tornado-guy-demarle.html"
+        },
+        {
+            "name": "Spatule haute température 25 cm",
+            "picture": "https://boutique.guydemarle.com/3113-nq_social_share/spatule-haute-temperature-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/622-spatule-haute-temperature-25-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. A l'aide du Tornado, commencer par concasser grossièrement les amandes et réserver, les noisettes et réserver puis les pistaches.\n4. Dans un cul de poule, mélanger les amandes/noisettes/pistaches, les raisins blonds et les cranberries avec les flocons d’avoine. \n5. Dans une casserole, faire fondre le beurre, ajouter le sucre et le\nsirop d’agave.\n6. A l'aide de la spatule haute température, mélanger et porter à ébullition 5 secondes.\n7. Verser sur le 1er mélange et mélanger. \n8. Répartir rapidement dans les empreintes en tassant bien.\n9. Faire cuire 18-20 minutes à 180°C.\n10. Laisser refroidir avant de démouler.\n### Conservation : \n1. 1 semaine filmées à température ambiante.\n2. 2 semaines sous vide à l’aide du BE SAVE. ",
+    "for": "5",
+    "preptime": "15",
+    "resttime": "0",
+    "cooktime": "18-20",
+    "mold": {
+        "name": "Moule 5 cakes longs OHRA®",
+        "picture": "https://boutique.guydemarle.com/11509-nq_social_share/moule-5-cakes-longs-ohra.jpg",
+        "url": "https://anneetsesdelices.fr/admin/recette/#"
+    }
+}
