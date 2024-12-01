@@ -153,14 +153,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@akala/core@npm:^10.6.0":
-  version: 10.6.0
-  resolution: "@akala/core@npm:10.6.0"
+"@akala/core@npm:^19.0.14":
+  version: 19.0.14
+  resolution: "@akala/core@npm:19.0.14"
   dependencies:
-    debug: "npm:^4.3.4"
-    path-to-regexp: "npm:^6.2.1"
-    reflect-metadata: "npm:^0.1.13"
-  checksum: 10/e399f85fa97a40c67a5c2169728913b56d4de121d038b68079718cb4e36f856312f6abe47f3b6c643dde24c401c49cbdecc37b4a77a97eaaa75bfd417cefd5aa
+    debug: "npm:^4.3.7"
+    reflect-metadata: "npm:^0.2.2"
+  checksum: 10/0175d5a4cfeebfe98b38f5bb83c748a5eea539fb1f21982d02a34387b8e580209e7701ed0dc614d5a1a6b83bd9519c4df5dd6373c363df8cb5f26e0807519a02
   languageName: node
   linkType: hard
 
@@ -274,12 +273,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^22.10.0":
-  version: 22.10.0
-  resolution: "@types/node@npm:22.10.0"
+"@types/node@npm:^22.10.1":
+  version: 22.10.1
+  resolution: "@types/node@npm:22.10.1"
   dependencies:
     undici-types: "npm:~6.20.0"
-  checksum: 10/e2561e15eaac6261cf828cd7dcd4882a5ce2e10104db4123566b00418acf30e18518e39c7a906682f44118b420c555cc774ac3e0e6f80e37f55884cfe6cf1f78
+  checksum: 10/c802a526da2f3fa3ccefd00a71244e7cb825329951719e79e8fec62b1dbc2855388c830489770611584665ce10be23c05ed585982038b24924e1ba2c2cce03fd
   languageName: node
   linkType: hard
 
@@ -360,13 +359,13 @@ __metadata:
   resolution: "anne@workspace:."
   dependencies:
     "@11ty/eleventy": "npm:^3.0.0"
-    "@akala/core": "npm:^10.6.0"
+    "@akala/core": "npm:^19.0.14"
     "@types/cookie-parser": "npm:^1.4.8"
-    "@types/node": "npm:^22.10.0"
+    "@types/node": "npm:^22.10.1"
     body-parser: "npm:^1.20.3"
     cookie-parser: "npm:^1.4.7"
     express: "npm:^4.21.1"
-    marked: "npm:^15.0.2"
+    marked: "npm:^15.0.3"
     typescript: "npm:^5.7.2"
   languageName: unknown
   linkType: soft
@@ -1824,12 +1823,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"marked@npm:^15.0.2":
-  version: 15.0.2
-  resolution: "marked@npm:15.0.2"
+"marked@npm:^15.0.3":
+  version: 15.0.3
+  resolution: "marked@npm:15.0.3"
   bin:
     marked: bin/marked.js
-  checksum: 10/dde3d918bb3938906d7a874b990cbfb193514a5fef4b41bca102db3b63d50235afb517dd70429525b6e0a5cff43abd827e7bd2b18617f8bd4776db745e75e973
+  checksum: 10/821c1af0e527b3f6f4684a68802a0fa5e91cd2b0887d0600ce9035896f8b0fbad180a3f8c5be91de25bdc20323abbd674351832c40d48820b6f0d888fd77cd59
   languageName: node
   linkType: hard
 
@@ -2295,13 +2294,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"path-to-regexp@npm:^6.2.1":
-  version: 6.2.1
-  resolution: "path-to-regexp@npm:6.2.1"
-  checksum: 10/1e266be712d1a08086ee77beab12a1804842ec635dfed44f9ee1ba960a0e01cec8063fb8c92561115cdc0ce73158cdc7766e353ffa039340b4a85b370084c4d4
-  languageName: node
-  linkType: hard
-
 "picomatch@npm:^2.0.4, picomatch@npm:^2.2.1, picomatch@npm:^2.3.1":
   version: 2.3.1
   resolution: "picomatch@npm:2.3.1"
@@ -2467,10 +2459,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"reflect-metadata@npm:^0.1.13":
-  version: 0.1.13
-  resolution: "reflect-metadata@npm:0.1.13"
-  checksum: 10/732570da35d2d96f8fdd5aac60fb263aa92f6512eaded5962b052bd9e90f22a9dec5aaf0d7ff4bfe97646c9530e8444e8435c2d80b24d0bdf938b5d47f6f5b83
+"reflect-metadata@npm:^0.2.2":
+  version: 0.2.2
+  resolution: "reflect-metadata@npm:0.2.2"
+  checksum: 10/1c93f9ac790fea1c852fde80c91b2760420069f4862f28e6fae0c00c6937a56508716b0ed2419ab02869dd488d123c4ab92d062ae84e8739ea7417fae10c4745
   languageName: node
   linkType: hard
 
