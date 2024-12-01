@@ -1,0 +1,128 @@
+{
+    "title": "5 tartes aux fruits frais",
+    "private": false,
+    "toppings": [
+        {
+            "quantity": "Sablé breton :",
+            "unit": "",
+            "name": ""
+        },
+        {
+            "quantity": "90",
+            "unit": "g",
+            "name": "Beurre mou"
+        },
+        {
+            "quantity": "90",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "1",
+            "unit": "pincée",
+            "name": "Sel"
+        },
+        {
+            "quantity": "2",
+            "unit": "jaunes",
+            "name": "Oeufs"
+        },
+        {
+            "quantity": "120",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "1/2",
+            "unit": "sachet",
+            "name": "Levure chimique"
+        },
+        {
+            "quantity": "Crème vanille :",
+            "unit": "",
+            "name": ""
+        },
+        {
+            "quantity": "1/2",
+            "unit": "gousse",
+            "name": "Vanille"
+        },
+        {
+            "quantity": "200",
+            "unit": "g",
+            "name": "Lait"
+        },
+        {
+            "quantity": "2",
+            "unit": "Oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "80",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "20",
+            "unit": "g",
+            "name": "Maïzena"
+        },
+        {
+            "quantity": "250",
+            "unit": "g",
+            "name": "Mascarpone"
+        },
+        {
+            "quantity": "200",
+            "unit": "g",
+            "name": "Fruits frais"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://anneetsesdelices.fr/admin/recette/"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://anneetsesdelices.fr/admin/recette/"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://anneetsesdelices.fr/admin/recette/"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://anneetsesdelices.fr/admin/recette/"
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Support poches à douilles",
+            "picture": "https://boutique.guydemarle.com/2213-nq_social_share/support-poches-a-douilles-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/672-support-poches-a-douilles-guy-demarle.html"
+        },
+        {
+            "name": "Poche à douilles 35 CM",
+            "picture": "https://boutique.guydemarle.com/16873-nq_social_share/poche-a-douilles-35-cm.jpg",
+            "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/8466-poche-a-douilles-35-cm.html"
+        }
+    ],
+    "steps": "### Sablé breton :\n2. Préchauffer votre four à 170°.\n2. Placer votre moule sur une plaque aluminium perforée.\n3. Dans un cul de poule, Mélanger le beurre mou avec le sucre et le sel. \n4. Ajouter les jaunes d’œufs, la farine, la levure chimique et mélanger.\n5. Etalez la pâte dans les empreintes.\n6. Enfourner à 170°C pendant 18 minutes (suivant votre four).\n7. Laisser refroidir avant de démouler.\n### Crème vanille :\n1.  Couper la gousse en 2 et gratter la pour retirer les graines.\n2. Dans une casserole, porter à ebullition le lait, les graines de vanille et les 2 parties de la gousse.\n3. Laisser infuser pendant 20 min.\n4. Dans un cul de poule, blanchir les oeufs avec le sucre et la maïzena.\n5. Enlever les 2 gousses du lait et ajouter le lait puis mélanger.\n6. Dans la casserole, mettre le tout à cuire jusqu'à épaississement.  \n7. Faire refroidir. \n8. Ajouter la mascarpone et mélanger.\n\n### Montage :\n1. Garnir le sablé à l'aide d'une poche à douille.\n2. Décorer de fruits frais.\n\nLes blancs d'oeufs restants peuvent etre conservés sous vide à l'aide du Be Save pendant 3 semaines.\n\n",
+    "for": "8",
+    "preptime": "15",
+    "resttime": "0",
+    "cooktime": "18",
+    "mold": {
+        "name": "Moule 5 cakes longs OHRA®",
+        "picture": "https://boutique.guydemarle.com/11509-nq_social_share/moule-5-cakes-longs-ohra.jpg",
+        "url": "https://anneetsesdelices.fr/admin/recette/#"
+    }
+}
