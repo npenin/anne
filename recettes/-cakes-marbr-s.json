@@ -1,0 +1,83 @@
+{
+    "title": "5 cakes marbrés",
+    "private": false,
+    "toppings": [
+        {
+            "quantity": "150",
+            "unit": "g",
+            "name": "Beurre fondu"
+        },
+        {
+            "quantity": "200",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "250",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "1",
+            "unit": "sachet",
+            "name": "Levure"
+        },
+        {
+            "quantity": "4",
+            "unit": "Oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "1",
+            "unit": "c-à-s",
+            "name": "Cacao non sucré"
+        },
+        {
+            "quantity": "1",
+            "unit": "c-à-s",
+            "name": "Arôme vanille"
+        },
+        {
+            "quantity": "70",
+            "unit": "g",
+            "name": "Lait"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://anneetsesdelices.fr/admin/recette/"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://anneetsesdelices.fr/admin/recette/"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://anneetsesdelices.fr/admin/recette/"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://anneetsesdelices.fr/admin/recette/"
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        }
+    ],
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dans un cul de poule, mélanger le beurre fondu et le sucre.\n5. Incorporer au fur et à mesure les oeufs, le lait, la farine et la levure puis mélanger jusqu'à obtenir une pâte homogène.\n8. Séparer la pâte en 2.\n9. Dans la première pâte, ajouter la vanille et mélanger.\n10. Dans la seconde pâte, ajouter le caco en poudre et mélanger.\n11. Répartir les 2 préparations dans les empreintes en alternant la pâte à la vanille et la pâte au chocolat.\n13. Enfourner à 180°C pendant 20-25 min (suivant votre four).\n14. Laisser refroidir avant de démouler.",
+    "for": "10",
+    "preptime": "15",
+    "resttime": "0",
+    "cooktime": "20-25",
+    "mold": {
+        "name": "Moule 5 cakes longs OHRA®",
+        "picture": "https://boutique.guydemarle.com/11509-nq_social_share/moule-5-cakes-longs-ohra.jpg",
+        "url": "https://boutique.guydemarle.com/moules-ohra/4328-moule-5-cakes-longs-ohra.html"
+    }
+}
