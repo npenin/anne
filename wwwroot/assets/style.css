@@ -5,6 +5,7 @@
 
 :root {
     --primary-color: #ff9c00;
+    font-size: 1.2rem;
 }
 
 h1,
@@ -77,7 +78,7 @@ h1 {
     border-radius: 24px;
     margin: 20px;
     box-shadow: 0 0 8px #905800;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 a.panel {
@@ -566,13 +567,13 @@ h2 {
     .mold,
     .steps ol,
     .toppings ul {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .toppings>ul:not(:has(ul)),
     .toppings>ul>li>ul {
         list-style: url('./toque.svg');
-        font-size: 16px;
+        font-size: 1rem;
     }
 
 
