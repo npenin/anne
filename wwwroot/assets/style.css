@@ -433,6 +433,10 @@ h2 {
 }
 
 @media print {
+    :root {
+        font-size: 1rem;
+    }
+
     .backdrop {
         background-image: none;
     }
