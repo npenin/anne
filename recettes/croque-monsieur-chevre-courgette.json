@@ -1,0 +1,88 @@
+{
+    "title": "Croque monsieur chèvre courgette",
+    "private": false,
+    "toppings": [
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Gruyère rapé"
+        },
+        {
+            "quantity": "10",
+            "unit": "tranches",
+            "name": "Pain de mie"
+        },
+        {
+            "quantity": "250",
+            "unit": "g",
+            "name": "Tomates fraiches"
+        },
+        {
+            "quantity": "200",
+            "unit": "g",
+            "name": "Courgettes fraiches"
+        },
+        {
+            "quantity": "1",
+            "unit": "c-à-s",
+            "name": "Basilic ciselé"
+        },
+        {
+            "quantity": "1",
+            "unit": "bûche",
+            "name": "Fromage de chèvre (300 g)"
+        },
+        {
+            "quantity": "1",
+            "unit": "pincée",
+            "name": "Sel"
+        },
+        {
+            "quantity": "2",
+            "unit": "pincées",
+            "name": "Poivre 5 baies"
+        },
+        {
+            "quantity": "200",
+            "unit": "g",
+            "name": "Lait"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://anneetsesdelices.fr/admin/recette/"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://anneetsesdelices.fr/admin/recette/"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://anneetsesdelices.fr/admin/recette/"
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Mandoline professionnelle",
+            "picture": "https://boutique.guydemarle.com/8246-nq_social_share/mandoline-professionnelle-de-cuisine-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/3030-mandoline-professionnelle-de-cuisine-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Réparir le gruyère dans le fond du moule.\n4. Disposer 5 tranches de pain de mie par dessus.\n5. Couper les tomates en rondelles et poser-les sur le pain.\n6. Dans un cul de poule, râper la courgette avec la mandoline et ajouter le sel et le poivre.\n7. Ajouter le basilic ciselé et mélanger le tout.\n8. Répartir ce mélange sur les tomates.\n9. Trancher la bûche de chèvre et répartir dans le moule.\n10. Tremper 5 tranches de pain de mie dans le lait et couvrir les tranches de chèvre.\n11. Tasser le tout.\n12. Enfourner à 180°C, dans un four à chaleur tournante, pendant 30 min.",
+    "for": "4",
+    "preptime": "15",
+    "resttime": "0",
+    "cooktime": "30",
+    "mold": {
+        "name": "Moule Cubicube OHRA®",
+        "picture": "https://boutique.guydemarle.com/12404-nq_social_share/moule-en-silicone-cubicube-ohra.jpg",
+        "url": "https://boutique.guydemarle.com/moules-ohra/4423-moule-en-silicone-cubicube-ohra.html"
+    }
+}
