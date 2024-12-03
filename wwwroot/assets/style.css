@@ -571,6 +571,13 @@ h2 {
         font-size: inherit;
     }
 
+    .toppings>ul:not(:has(ul)),
+    .toppings>ul>li>ul {
+        list-style: url('./toque.svg');
+        font-size: 16px;
+    }
+
+
     .accessories .mold a {
         display: none;
     }
