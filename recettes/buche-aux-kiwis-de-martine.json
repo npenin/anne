@@ -1,0 +1,63 @@
+{
+    "title": "Bûche aux kiwis de Martine",
+    "private": false,
+    "toppings": [
+        {
+            "quantity": "1300",
+            "unit": "g",
+            "name": "Kiwis"
+        },
+        {
+            "quantity": "4",
+            "unit": "g",
+            "name": "Agar-agar"
+        },
+        {
+            "quantity": "70",
+            "unit": "g",
+            "name": "Sucre"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://anneetsesdelices.fr/admin/recette/"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://anneetsesdelices.fr/admin/recette/"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://anneetsesdelices.fr/admin/recette/"
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Tapis Décors Bûches Feuilles OHRA®",
+            "picture": "https://boutique.guydemarle.com/11957-nq_social_share/tapis-decors-buches-feuilles-ohra.jpg",
+            "url": "https://boutique.guydemarle.com/moules-ohra/4477-tapis-decors-buches-feuilles-ohra.html"
+        }
+    ],
+    "steps": "1. Poser votre moule buche sur une plaque aluminim perforée.\n2. Mettre un tapis décor à l'interieur du moule (dessin visible).\n3. Laver les kiwis, éplucher-les puis les mettre dans le bol d'un blender et mixer. \n4. Dans une casserole, verser environ 300 g de la pulpe de kiwis.\n5. Dans un cul de poule, mettre le reste de la pulpe. \n6. Dans un bol, mélanger l'agar-agar et le sucre. \n7. Ajouter l'agar-agar/sucre , à la purée de kiwis qui est dans la casserole. \n8. Porter à ébullition en mélangeant sans cesse. Compter 2 mn à partir de l'ébullition. Retirer la casserole du feu et verser le contenu dans le cul-de-poule. Mélanger énergiquement à l'aide d'un fouet.\n9. Verser la purée de kiwis dans le moule. \n10. Réserver au réfrigérateur pendant 1 heure ou plus.\n### Démoulage : \n1. Démouler la bûche et enlever délicatement le tapis décor.\n2. Servir.",
+    "for": "12",
+    "preptime": "40",
+    "resttime": "60",
+    "cooktime": "0",
+    "mold": {
+        "name": "Moule à bûche OHRA®",
+        "picture": "https://boutique.guydemarle.com/16302-nq_social_share/moule-a-buche-en-silicone-ohra.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/4419-moule-a-buche-en-silicone-ohra.html"
+    }
+}
