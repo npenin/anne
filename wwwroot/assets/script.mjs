@@ -54,7 +54,7 @@ window.loadRecipe = function (recipe)
     else
         mde.value(recipe.steps);
 
-    document.querySelector('.fa-save').style.visibility = 'visible'
+    document.querySelectorAll('.toolbar i').forEach(el => el.style.visibility = 'visible')
 }
 
 const mde = new window.SimpleMDE({ spellChecer: false, element: document.querySelector('#steps>textarea') })
@@ -105,6 +105,24 @@ export function getRecipe()
 
 function saveLocally() { window.saveLocally(); }
 
+window.saveAsDraft = async function saveAsDraft()
+{
+    const recipe = getRecipe();
+    localStorage.setItem('tmpRecipe', JSON.stringify(recipe));
+
+    const filename = `${dir}/recettes/${recipe.title.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/ +/g, '-').toLowerCase()}.json`;
+    let res = await fetch('https://api.github.com/repos/npenin/anne/contents/' + filename.substring(dir.length + 1), {
+        headers: { accept: 'application/vnd.github+json', authorization: 'Bearer ' + token, 'X-GitHub-Api-Version': '2022-11-28' }, method: 'GET'
+    });
+    // console.log((await res.json()).sha);
+    res = await fetch('https://api.github.com/repos/npenin/anne/contents/' + filename.substring(dir.length + 1), {
+        headers: { accept: 'application/vnd.github+json', authorization: 'Bearer ' + token, 'X-GitHub-Api-Version': '2022-11-28' }, method: 'DELETE', body: JSON.stringify(
+            { "message": "delete " + recipe.title, "committer": { "name": localStorage.getItem('user.name'), "email": localStorage.getItem('user.email') }, sha: (await res.json()).sha }
+        )
+    });
+
+    location.replace('/admin/recette/');
+}
 window.save = async function save()
 {
     document.querySelector('.toolbar').style.display = 'none';

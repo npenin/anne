@@ -10,13 +10,6 @@ permalink: "/admin/recette/{{recette.title|slugify}}/"
 tags: 
     - allrecettes
 ---
-<div class="toolbar">
-    <i class="fal fa-save fa-2x" style="visibility:hidden" onclick="save()"></i>
-    <div>
-        <input type="checkbox" name="private">
-        <label for="private">Privée</label>
-    </div>
-</div>
 <div class="info panel">
     <div>
         <span contenteditable class="count fal fa-utensils"></i></span>
@@ -63,11 +56,21 @@ tags:
         <img src="/assets/logo.svg" style="height:100%" />
     </a>
 </div>
+
+<div class="toolbar">
+    <i class="fab fa-firstdraft fa-2x" style="visibility:hidden; color:red" onclick="saveAsDraft()"></i>
+    <i class="fal fa-save fa-2x" style="visibility:hidden" onclick="save()"></i>
+    <div>
+        <input type="checkbox" name="private">
+        <label for="private">Privée</label>
+    </div>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
 <script type="module">
     import '/assets/script.mjs';
+
 
     
     window.saveLocally=function saveLocally()
