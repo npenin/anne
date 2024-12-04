@@ -8,8 +8,9 @@ export default async function ()
     files = files.filter(f => f.endsWith('.json'));
     const result = await Promise.all(files.map(f_1 => fs.readFile(path.join('./recettes', f_1), { encoding: 'utf-8' }).then(r => ({ ...JSON.parse(r), filepath: path.basename(f_1, '.json') }))));
 
+    const promises = [];
     // console.log(result);
-    return result.map(r =>
+    const result2 = result.map(r =>
     {
         const result = {}
         if (Array.isArray(r.toppings))
@@ -64,7 +65,12 @@ export default async function ()
         else
             r.formattedSteps = r.steps;
 
+        // promises.push(fs.writeFile(path.join('./recettes', r.filepath + '.json'), JSON.stringify({ ...r, steps: r.formattedSteps, formattedSteps: undefined, filepath: undefined }, null, 4)));
+
         result.formattedSteps = parse(r.formattedSteps);
         return { ...r, ...result };
     });
+
+    await Promise.all(promises);
+    return result2;
 };
