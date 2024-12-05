@@ -437,6 +437,10 @@ h2 {
         grid-template-columns: auto;
         grid-template-rows: auto;
     }
+
+    .toolbar {
+        grid-column: 1/2;
+    }
 }
 
 @media print {
