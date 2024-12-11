@@ -28,9 +28,9 @@
             "name": ""
         },
         {
-            "quantity": "2 Oeufs",
+            "quantity": "2",
             "unit": "",
-            "name": ""
+            "name": "Oeufs"
         },
         {
             "quantity": "60",
@@ -51,6 +51,11 @@
             "quantity": "20",
             "unit": "g",
             "name": "Beurre fondu"
+        },
+        {
+            "quantity": "6",
+            "unit": "gouttes",
+            "name": "Arôme de pistache (facultatif)"
         },
         {
             "quantity": "Mousse vanille : ",
@@ -76,11 +81,6 @@
             "quantity": "1",
             "unit": "gousse Vanille (ou 1 c-à-c exrait de vanille)",
             "name": ""
-        },
-        {
-            "quantity": "6",
-            "unit": "gouttes",
-            "name": "Arôme de pistache (facultatif)"
         }
     ],
     "accessories": [
