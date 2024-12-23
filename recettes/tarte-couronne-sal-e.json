@@ -130,24 +130,7 @@
             "url": ""
         }
     ],
-    "steps": [
-        "Sablé :\n\n",
-        "Préchauffer votre four à 180°C.",
-        "Poser votre moule sur une plaque aluminium perforée.",
-        "Dans un cul de poule, mélanger la farine, la poudre d’amandes, le parmesan et la ciboulette.",
-        "Ajouter le beurre pommade et travailler du bout des doigts pour obtenir une consistance sableuse.",
-        "Ajouter les œufs et mélanger pour obtenir une pâte homogène.",
-        "Si elle est sèche, rajouter 1 c-à-s d'eau froide.",
-        "Répartir dans le moule, aplatir et finaliser avec la petite spatule coudée.",
-        "Enfourner à 180 °C pendant 20 min.",
-        "Démouler après refroidissement complet.\n\n",
-        "Garniture :\n\n",
-        "Dans le Tornado, mettre le thon pour le mixer afin qu'il n'y ait plus de morceaux.",
-        "Dans un petit cul de poule, mettre le thon, la moutarde et le fromage Mme Loïk et mélanger pour obtenir une préparation lisse sans morceaux.\n\n",
-        "Démouler le sablé.",
-        "Mettre la garniture dans une poche à douille, répartir sur le sablé.",
-        "Découper les légumes avec la mandoline compacte, déposer vos fruits de mer, garnir selon vos goûts."
-    ],
+    "steps": "### Sablé :\n\n1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dans un cul de poule, mélanger la farine, la poudre d’amandes, le parmesan et la ciboulette.\n4. Ajouter le beurre pommade et travailler du bout des doigts pour obtenir une consistance sableuse.\n5. Ajouter les œufs et mélanger pour obtenir une pâte homogène.\n6. Si elle est sèche, rajouter 1 c-à-s d'eau froide.\n7. Répartir dans le moule, aplatir et finaliser avec la petite spatule coudée.\n8. Enfourner à 180 °C pendant 20 min.\n9. Démouler après refroidissement complet.\n\n### Garniture :\n\n1. Dans le Tornado, mettre le thon pour le mixer afin qu'il n'y ait plus de morceaux.\n2. Dans un petit cul de poule, mettre le thon, la moutarde et le fromage Mme Loïk et mélanger pour obtenir une préparation lisse sans morceaux.\n\n### Montage :\n1. Démouler le sablé.\n2. Mettre la garniture dans une poche à douille, répartir sur le sablé.\n3. Découper les légumes avec la mandoline compacte, déposer vos fruits de mer, garnir selon vos goûts.",
     "for": "8",
     "preptime": "40",
     "resttime": "30",
