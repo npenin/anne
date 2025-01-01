@@ -1,0 +1,83 @@
+{
+    "title": "Biscuits fondants aux amandes",
+    "private": false,
+    "toppings": [
+        {
+            "quantity": "75",
+            "unit": "g",
+            "name": "Poudre d'amandes"
+        },
+        {
+            "quantity": "75",
+            "unit": "g",
+            "name": "Sucre glace tamisé"
+        },
+        {
+            "quantity": "2",
+            "unit": "Blancs oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "50",
+            "unit": "g",
+            "name": "Beurre"
+        },
+        {
+            "quantity": "15",
+            "unit": "g",
+            "name": "Farine tamisée"
+        },
+        {
+            "quantity": "6",
+            "unit": "gouttes",
+            "name": "Amande amère"
+        },
+        {
+            "quantity": "5",
+            "unit": "g",
+            "name": "Levure chimique tamisée"
+        },
+        {
+            "quantity": "Morceaux de fruits (facultatif)",
+            "unit": "",
+            "name": ""
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Bol micro-ondes 1L",
+            "picture": "https://boutique.guydemarle.com/3363-nq_social_share/bol-micro-ondes-1l.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1009-bol-micro-ondes-1l.html"
+        }
+    ],
+    "steps": "1. Recette pour 8 biscuits.\n2. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dans le bol micro-ondes, faire fondre le beurre et réserver.\n4. Dans un cul de poule, mélanger la poudre d'amandes, le sucre glace, la farine et la levure.\n5. Ajouter les blancs d'oeufs (non monté) et mélanger jusqu'à obtenir une pâte homogène.\n6. Incorporer le beurre fondu et l'extrait d'amande amère.\n7. Répartir la pâte dans 8 empreintes. Vous pouvez répartir des petis morceaux de fruits dans la pâte et tapoter ensuite le moule sur le plan de travail.\n8. Enfourner à 180°C pendant 12-15 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
+    "for": "4",
+    "preptime": "10",
+    "resttime": "0",
+    "cooktime": "12-15",
+    "mold": {
+        "name": "Moule 12 Biscuits OHRA®",
+        "picture": "https://boutique.guydemarle.com/11574-nq_social_share/moule-12-biscuits-ohra.jpg",
+        "url": "https://anneetsesdelices.fr/admin/recette/#"
+    }
+}
