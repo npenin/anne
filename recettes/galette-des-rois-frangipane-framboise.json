@@ -3,6 +3,11 @@
     "private": false,
     "toppings": [
         {
+            "quantity": " ",
+            "unit": "",
+            "name": ""
+        },
+        {
             "quantity": "2",
             "unit": "Pâtes feuilletées",
             "name": ""
