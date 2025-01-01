@@ -1,0 +1,83 @@
+{
+    "title": "Tarte napolitaine",
+    "private": false,
+    "toppings": [
+        {
+            "quantity": "1",
+            "unit": "",
+            "name": "Pâte brisée"
+        },
+        {
+            "quantity": "150",
+            "unit": "g",
+            "name": "Lard fumé"
+        },
+        {
+            "quantity": "5",
+            "unit": "Tomates",
+            "name": ""
+        },
+        {
+            "quantity": "125",
+            "unit": "g",
+            "name": "Gruyère en morceau"
+        },
+        {
+            "quantity": "100",
+            "unit": "mL",
+            "name": "Crème"
+        },
+        {
+            "quantity": "2",
+            "unit": "Oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "Sel",
+            "unit": "",
+            "name": ""
+        },
+        {
+            "quantity": "Poivre",
+            "unit": "",
+            "name": ""
+        },
+        {
+            "quantity": "Origan",
+            "unit": "",
+            "name": ""
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Préchauffer votre four à 180 °C.\n2. Poser votre moiule sur une plaque aluminium perforée.\n3. Couper le lard en petits dés et le faire revenir dans une poêle.\n4. Couper le fromage et les tomates en dés réguliers.\n5. Mélanger ces ingrédients et les répartir sur le fond de tarte.\n6. Dans un cul de poule, battre les oeufs en omelette, ajouter la crème, le sel, le poivre, l'origan et mélanger.\n7. Verser la préparation sur la pâte.\n8. Enfourner à 180°C, pendant 20-25 min.\n9. Démouler délicatement, à déguster chaud.",
+    "for": "6",
+    "preptime": "25",
+    "resttime": "0",
+    "cooktime": "20-25",
+    "mold": {
+        "name": "Moule Tarte Cannelée OHRA®",
+        "picture": "https://boutique.guydemarle.com/11823-nq_social_share/moule-tarte-cannelee.jpg",
+        "url": "https://boutique.guydemarle.com/moules-ohra/4421-moule-tarte-cannelee.html"
+    }
+}
