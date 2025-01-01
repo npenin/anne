@@ -38,9 +38,14 @@
             "name": "Rhum ambré"
         },
         {
-            "quantity": "4",
-            "unit": "goutes",
+            "quantity": "6",
+            "unit": "gouttes",
             "name": "Arôme d'amande amère"
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Purée de framboises"
         },
         {
             "quantity": "Crème patissière :",
@@ -64,18 +69,13 @@
         },
         {
             "quantity": "1",
-            "unit": "c--à-c",
-            "name": "Vanille en poudre"
+            "unit": "c-à-c",
+            "name": "Extrait de vanille avec graines"
         },
         {
             "quantity": "25",
             "unit": "cL",
             "name": "Lait"
-        },
-        {
-            "quantity": "100",
-            "unit": "g",
-            "name": "Purée de framboises"
         },
         {
             "quantity": "Dorure :",
