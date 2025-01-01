@@ -8,6 +8,36 @@
             "name": ""
         },
         {
+            "quantity": "Crème patissière :",
+            "unit": "",
+            "name": ""
+        },
+        {
+            "quantity": "2",
+            "unit": "Oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "60",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "30",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "1",
+            "unit": "c-à-c",
+            "name": "Extrait de vanille avec graines"
+        },
+        {
+            "quantity": "25",
+            "unit": "cL",
+            "name": "Lait"
+        },
+        {
             "quantity": "Crème d'amandes :",
             "unit": "",
             "name": ""
@@ -46,36 +76,6 @@
             "quantity": "100",
             "unit": "g",
             "name": "Purée de framboises"
-        },
-        {
-            "quantity": "Crème patissière :",
-            "unit": "",
-            "name": ""
-        },
-        {
-            "quantity": "2",
-            "unit": "Oeufs",
-            "name": ""
-        },
-        {
-            "quantity": "60",
-            "unit": "g",
-            "name": "Sucre"
-        },
-        {
-            "quantity": "30",
-            "unit": "g",
-            "name": "Farine"
-        },
-        {
-            "quantity": "1",
-            "unit": "c-à-c",
-            "name": "Extrait de vanille avec graines"
-        },
-        {
-            "quantity": "25",
-            "unit": "cL",
-            "name": "Lait"
         },
         {
             "quantity": "Dorure :",
