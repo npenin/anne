@@ -13,6 +13,11 @@
             "name": ""
         },
         {
+            "quantity": "1",
+            "unit": "",
+            "name": "Fève"
+        },
+        {
             "quantity": "Crème d'amandes :",
             "unit": "",
             "name": ""
@@ -61,11 +66,6 @@
             "quantity": "1",
             "unit": "c-à-s",
             "name": "Eau"
-        },
-        {
-            "quantity": "1",
-            "unit": "Fève",
-            "name": ""
         }
     ],
     "accessories": [
