@@ -1,6 +1,6 @@
 {
     "title": "Galette des rois crème d'amandes",
-    "private": true,
+    "private": false,
     "toppings": [
         {
             "quantity": " ",
