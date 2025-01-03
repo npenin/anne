@@ -1,0 +1,118 @@
+{
+    "title": "Galette des rois crème d'amandes",
+    "private": true,
+    "toppings": [
+        {
+            "quantity": " ",
+            "unit": "",
+            "name": ""
+        },
+        {
+            "quantity": "2",
+            "unit": "Pâtes feuilletées de 28 cm",
+            "name": ""
+        },
+        {
+            "quantity": "Crème d'amandes :",
+            "unit": "",
+            "name": ""
+        },
+        {
+            "quantity": "200",
+            "unit": "g",
+            "name": "Poudre d'amandes"
+        },
+        {
+            "quantity": "200",
+            "unit": "g",
+            "name": "Sucre glace"
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Beurre ramolli"
+        },
+        {
+            "quantity": "4",
+            "unit": "Œufs ",
+            "name": ""
+        },
+        {
+            "quantity": "1",
+            "unit": "c-à-c",
+            "name": "Amande amère"
+        },
+        {
+            "quantity": "1",
+            "unit": "pincée",
+            "name": "Sel"
+        },
+        {
+            "quantity": "Dorure :",
+            "unit": "",
+            "name": ""
+        },
+        {
+            "quantity": "1",
+            "unit": "jaune",
+            "name": "Oeuf"
+        },
+        {
+            "quantity": "1",
+            "unit": "c-à-s",
+            "name": "Eau"
+        },
+        {
+            "quantity": "1",
+            "unit": "Fève",
+            "name": ""
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Spatule double embout - Gris Anthracite",
+            "picture": "https://boutique.guydemarle.com/5792-nq_social_share/spatule-double-embout-gris-anthracite.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1793-spatule-double-embout-gris-anthracite.html"
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Pinceau de cuisine",
+            "picture": "https://boutique.guydemarle.com/11294-nq_social_share/pinceau-de-cuisine-silicone-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/4258-pinceau-de-cuisine-silicone-guy-demarle.html"
+        }
+    ],
+    "steps": "### Crème d'amandes :\n1. Dans un cul de poule, mélanger le beurre ramolli avec le sucre glace jusqu'à obtenir une texture crémeuse. \n2. Incorporer la poudre d’amandes et la pincée de sel.\n3. Ajouter les œufs un à un et mélanger bien à chaque étape. \n4. Ajouter l’amande amère et mélanger jusqu'à obtenir une crème homogène. \n### Montage :\n1. Placer votre toile boulangère sur une plaque en aluminium perforée.\n2. Étaler une première pâte feuilletée sur la toile boulangère.\n3. Garnir le centre avec la crème d'amandes, en laissant 2 cm de bord libre tout autour.\n4. Insérer la fève dans la crème. \n5. Humidifier légèrement, à l'aide du pinceau, les bords de la pâte avec un peu d'eau puis recouvrir avec la deuxième pâte feuilletée. \n6. Appuyer ",
+    "for": "8",
+    "preptime": "20",
+    "resttime": "30",
+    "cooktime": "35-40",
+    "mold": {
+        "name": "Toile Boulangère Aérée 40x30 OHRA®",
+        "picture": "https://boutique.guydemarle.com/12196-nq_social_share/toile-boulangere-aeree-40x30-ohra.jpg",
+        "url": "https://anneetsesdelices.fr/admin/recette/#"
+    }
+}
