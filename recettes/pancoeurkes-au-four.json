@@ -1,0 +1,98 @@
+{
+    "title": "Pancoeurkes au four",
+    "private": false,
+    "toppings": [
+        {
+            "quantity": "150",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "2",
+            "unit": "pincées",
+            "name": "Sel"
+        },
+        {
+            "quantity": "5",
+            "unit": "g",
+            "name": "Levure chimique"
+        },
+        {
+            "quantity": "30",
+            "unit": "g",
+            "name": "Beurre"
+        },
+        {
+            "quantity": "2",
+            "unit": "Oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "200",
+            "unit": "g",
+            "name": "Lait"
+        },
+        {
+            "quantity": "1",
+            "unit": "c-à-c",
+            "name": "Extrait de vanille"
+        },
+        {
+            "quantity": "20",
+            "unit": "g",
+            "name": "Sucre"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Spatule double embout - Gris Anthracite",
+            "picture": "https://boutique.guydemarle.com/5792-nq_social_share/spatule-double-embout-gris-anthracite.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1793-spatule-double-embout-gris-anthracite.html"
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Bol micro-ondes 1L",
+            "picture": "https://boutique.guydemarle.com/3363-nq_social_share/bol-micro-ondes-1l.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1009-bol-micro-ondes-1l.html"
+        },
+        {
+            "name": "Mini Louche",
+            "picture": "https://boutique.guydemarle.com/7327-nq_social_share/mini-louche-cuisine.jpg",
+            "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/2528-mini-louche-cuisine.html"
+        }
+    ],
+    "steps": "1. Préchauffer votre four à 220°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Une fois votre four préchauffé, placer votre moule dans le four 10 min pour le faire chauffer.\n4. Dans le bol micro-ondes, faire fondre le beurre et réserver.\n5. Dans un cul de poule, mélanger la farine avec le sel et la levure chimique.\n6. Séparer les blancs des jaunes d'oeufs.\n7. Dans un cul de poule, mélanger les jaunes d'oeufs avec le lait et la vanille.\n8. Prendre le premier cul de poule avec les ingrédients secs et les incorporer dans le mélange des oeufs.\n9. Ajouter le beurre fondu et mélanger.\n10. Monter en neige les blancs d'oeufs avec le sucre.\n11. A l'aide de la spatule double embouts, incorporer délicatement les blancs dans le précedent mélange.\n12. Répartir dans les empreintes à l'aide de la mini louche.\n13. Enfourner à 220°C pendant 10 min.\n14. Se déguste chaud ou froid.\n15. A déguster avec de la pâte à tartiner, du sucre glace, du miel, de la confiture, du sirop d'érable, ...",
+    "for": "6",
+    "preptime": "15",
+    "resttime": "0",
+    "cooktime": "10",
+    "mold": {
+        "name": "Moule coeurs OHRA®",
+        "picture": "https://boutique.guydemarle.com/16089-nq_social_share/moule-coeurs-ohra.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/8107-moule-coeurs-ohra.html"
+    }
+}
