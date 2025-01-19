@@ -1,0 +1,88 @@
+{
+    "title": "Moelleux à la clémentine",
+    "private": false,
+    "toppings": [
+        {
+            "quantity": "3",
+            "unit": "Clémentines (zeste et jus, environ 70 mL de jus)",
+            "name": ""
+        },
+        {
+            "quantity": "3",
+            "unit": "Oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "80",
+            "unit": "g",
+            "name": "Poudre d'amandes"
+        },
+        {
+            "quantity": "70",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "1/2",
+            "unit": "c-à-c",
+            "name": "Bicarbonate de soude"
+        },
+        {
+            "quantity": "50",
+            "unit": "g",
+            "name": "Huile neutre (pépins de raisin)"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://anneetsesdelices.fr/admin/recette/buche-amande-insert-pomme-cannelle/"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://anneetsesdelices.fr/admin/recette/buche-amande-insert-pomme-cannelle/"
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://anneetsesdelices.fr/admin/recette/buche-amande-insert-pomme-cannelle/"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://anneetsesdelices.fr/admin/recette/buche-amande-insert-pomme-cannelle/"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://anneetsesdelices.fr/admin/recette/buche-amande-insert-pomme-cannelle/"
+        },
+        {
+            "name": "Zesteur 4 en 1",
+            "picture": "https://boutique.guydemarle.com/7325-nq_social_share/zesteur-4-en-1.jpg",
+            "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/2527-zesteur-4-en-1.html"
+        },
+        {
+            "name": "Presse agrumes inox",
+            "picture": "https://boutique.guydemarle.com/2219-nq_social_share/presse-agrumes-inox-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/675-presse-agrumes-inox-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Préchauffer votre four à 160°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Laver et zester les clémentines à l'aide du zesteur 4 en 1.\n4. A l'aide du presse agrumes, presser les clémentines pour obtenir 70 mL de jus.\n4. Dans un cul de poule, fouetter les oeufs avec le sucre jusqu'à ce que le mélange devienne mousseux.\n5. Ajouter l'huile, le jus, et les zestes de clémentines, mélanger bien.\n6. Incorporer la farine et mélanger.\n7. Ajouter la poudre d'amandes et le bicarbonate de soude.\n8. Mélanger doucement jusqu'à obtenir une pâte homogène.\n9. Verser la pâte dans le moule.\n10. Enfourner en bas du four à 160°C pendant 40 à 45 min (suivant votre four).\n11. Laisser refroidir avant de démouler.",
+    "for": "6",
+    "preptime": "15",
+    "resttime": "0",
+    "cooktime": "40-45",
+    "mold": {
+        "name": "Moule à cake cannelé OHRA®",
+        "picture": "https://boutique.guydemarle.com/11202-nq_social_share/moule-cake-canneles.jpg",
+        "url": "https://boutique.guydemarle.com/moules-ohra/4229-moule-cake-canneles.html"
+    }
+}
