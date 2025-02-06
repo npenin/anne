@@ -5,7 +5,7 @@
         {
             "quantity": "250",
             "unit": "g",
-            "name": "Chocolat de couverture (lait, blanc, ...)"
+            "name": "Chocolat de couverture en pistoles (lait, blanc, ...)"
         },
         {
             "quantity": "250",
@@ -45,17 +45,32 @@
             "url": "https://anneetsesdelices.fr/admin/recette/c-urder-country/"
         },
         {
-            "name": "Spatule double embouts- Bleu",
-            "picture": "https://boutique.guydemarle.com/5798-nq_social_share/spatule-double-embout-bleu.jpg",
-            "url": "https://anneetsesdelices.fr/admin/recette/c-urder-country/"
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         },
         {
             "name": "Bol bain marie",
             "picture": "https://boutique.guydemarle.com/8223-nq_social_share/bol-bain-marie.jpg",
             "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3024-bol-bain-marie.html"
+        },
+        {
+            "name": "Spatule double embout - Gris Anthracite",
+            "picture": "https://boutique.guydemarle.com/5792-nq_social_share/spatule-double-embout-gris-anthracite.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1793-spatule-double-embout-gris-anthracite.html"
+        },
+        {
+            "name": "Toile de cuisson 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/12035-nq_social_share/toile-de-cuisson-en-silicone-40-x-30-cm.jpg",
+            "url": "https://boutique.guydemarle.com/toiles-et-tapis-de-cuisson/4508-toile-de-cuisson-en-silicone-40-x-30-cm.html"
+        },
+        {
+            "name": "Pinceau de cuisine",
+            "picture": "https://boutique.guydemarle.com/11294-nq_social_share/pinceau-de-cuisine-silicone-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/4258-pinceau-de-cuisine-silicone-guy-demarle.html"
         }
     ],
-    "steps": "1. Poser votre moule sur une plaque aluminium perforée.\n2. Dans le bol micro-ondes ou au bain marie, faire fondre le chocolat au lait.\n3. A l’aide du pinceau, badigeonner le chocolat sur les empreintes. Il faut bien insister sur les bords des empreintes. Il vous restera du chocolat.\n4. Réserver au réfrigérateur jusqu'à ce que le chocolat durcisse.\n5. Une fois le chocolat dur, faites fondre le chocolat blanc au bain marie.\n6. Ajouter la crème au chocolat blanc et mélanger pour obtenir une préparation homogène.\n7. Dans un cul de poule, mettre le blé soufflé et la préparation chocolat blanc/crème puis mélanger avec une spatule.\n8. Sortir le moule du réfrigérateur et répartir le mélange dans les empreintes, en appuyant bien, laisser au frais 5 min.\n9. Reprendre le chocolat au lait et le faire fondre un peu si il a durci.\n10. Mettre une couche de chocolat sur chaque empreinte et lisser avec la spatule coudée.\n11. Laisser refroidir au moins 1h30 au réfrigérateur.\n12. Démouler délicatement.\n",
+    "steps": "1. Préchauffer votre four à 100°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n2. Répartir votre chocolat de couverture dans les empreintes.\n3. Enfourner à 100°C pendant quelques minutes jusqu'à ce que vos pistoles fondent.\n4. A l’aide du pinceau, badigeonner le chocolat sur les empreintes en remontant bien sur les bords.\n4. Réserver au réfrigérateur pendant 30min.\n5. Pendant ce temps, mettre votre toile de cuisson sur une plaque aluminium perforée.\n6. Déposer le blé soufflé sur la toile de cuisson et enfourner à 180°C pendant 10 min. Laisser refroidir.\n6. Au bout de 25 min dans le bol bain marie, faire fondre le chocolat blanc.\n7. Dans un cul de poule, mettre le chocolat blanc, le blé soufflé, le lait concentré puis mélanger avec une spatule double embouts.\n8. Sortir le moule du réfrigérateur et répartir le mélange dans les empreintes, en appuyant bien soit avec le dos d'une cuillère à café soit avec les mains. \n11. Laisser refroidir au moins 1h au réfrigérateur.\n12. Démouler délicatement.\n",
     "for": "12",
     "preptime": "20",
     "resttime": "90",
