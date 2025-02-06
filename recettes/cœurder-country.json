@@ -55,20 +55,7 @@
             "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3024-bol-bain-marie.html"
         }
     ],
-    "steps": [
-        "Poser votre moule sur une plaque aluminium perforée.",
-        "Dans le bol micro-ondes ou au bain marie, faire fondre le chocolat au lait.",
-        "A l’aide du pinceau, badigeonner le chocolat sur les empreintes. Il faut bien insister sur les bords des empreintes. Il vous restera du chocolat.",
-        "Réserver au réfrigérateur jusqu'à ce que le chocolat durcisse.",
-        "Une fois le chocolat dur, faites fondre le chocolat blanc au bain marie.",
-        "Ajouter la crème au chocolat blanc et mélanger pour obtenir une préparation homogène.",
-        "Dans un cul de poule, mettre le blé soufflé et la préparation chocolat blanc/crème puis mélanger avec une spatule.",
-        "Sortir le moule du réfrigérateur et répartir le mélange dans les empreintes, en appuyant bien, laisser au frais 5 min.",
-        "Reprendre le chocolat au lait et le faire fondre un peu si il a durci.",
-        "Mettre une couche de chocolat sur chaque empreinte et lisser avec la spatule coudée.",
-        "Laisser refroidir au moins 1h30 au réfrigérateur.",
-        "Démouler délicatement."
-    ],
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée.\n2. Dans le bol micro-ondes ou au bain marie, faire fondre le chocolat au lait.\n3. A l’aide du pinceau, badigeonner le chocolat sur les empreintes. Il faut bien insister sur les bords des empreintes. Il vous restera du chocolat.\n4. Réserver au réfrigérateur jusqu'à ce que le chocolat durcisse.\n5. Une fois le chocolat dur, faites fondre le chocolat blanc au bain marie.\n6. Ajouter la crème au chocolat blanc et mélanger pour obtenir une préparation homogène.\n7. Dans un cul de poule, mettre le blé soufflé et la préparation chocolat blanc/crème puis mélanger avec une spatule.\n8. Sortir le moule du réfrigérateur et répartir le mélange dans les empreintes, en appuyant bien, laisser au frais 5 min.\n9. Reprendre le chocolat au lait et le faire fondre un peu si il a durci.\n10. Mettre une couche de chocolat sur chaque empreinte et lisser avec la spatule coudée.\n11. Laisser refroidir au moins 1h30 au réfrigérateur.\n12. Démouler délicatement.\n",
     "for": "12",
     "preptime": "20",
     "resttime": "90",
