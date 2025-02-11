@@ -1,0 +1,83 @@
+{
+    "title": "Brioche tressée",
+    "private": false,
+    "toppings": [
+        {
+            "quantity": "150",
+            "unit": "g",
+            "name": "Lait"
+        },
+        {
+            "quantity": "1",
+            "unit": "sachet",
+            "name": "Préparation pour pâte briochée "
+        },
+        {
+            "quantity": "500",
+            "unit": "g",
+            "name": "Farine T45"
+        },
+        {
+            "quantity": "90",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "30",
+            "unit": "g",
+            "name": "Crème épaisse "
+        },
+        {
+            "quantity": "3",
+            "unit": "œufs ",
+            "name": ""
+        },
+        {
+            "quantity": "1",
+            "unit": "c-à-c",
+            "name": "Extrait de vanille"
+        },
+        {
+            "quantity": "1",
+            "unit": "c-à-s",
+            "name": "Fleur d’oranger"
+        },
+        {
+            "quantity": "150",
+            "unit": "g",
+            "name": "Beurre froid (80% MG)"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Préparation pour pâte briochée, 5 sachets de 25 g",
+            "picture": "https://boutique.guydemarle.com/16464-nq_social_share/preparation-pour-pate-briochee-facile.jpg",
+            "url": "https://boutique.guydemarle.com/moules-a-brioches/118-preparation-pour-pate-briochee-facile.html"
+        },
+        {
+            "name": "Pinceau de cuisine",
+            "picture": "https://boutique.guydemarle.com/11294-nq_social_share/pinceau-de-cuisine-silicone-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/4258-pinceau-de-cuisine-silicone-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Dans la cuve d’un batteur, verser dans l’ordre le lait, la préparation pour pâte briochée, la farine, le sucre, la crème, les œufs, la vanille et la fleur d’oranger. \n2. Pétrir pendant 5 minutes à vitesse lente. \n3. Ajouter le beurrefroid coupé en morceaux et pétrir pendant 8 minutes en vitesse rapide, il faut que la pâte commence à se décoller de la cuve. \n4. Laisser reposer au frais et à couvert pendant 1 heure. \n5. Sortir la pâte du réfrigérateur et divisez-la en 3 pâtons d’environ 370 g. \n6. Former 3 boudins de 60 cm de long. \n7. Placer votre toiboulangère érée sur une plaque aluminium perforée et tresser les boudins sur la toile.\n7. Laisser pousser pendant 2 h 30 minutes à température ambiante couvert d’un linge. \n8. Préchauffer votre four à 180°C. \n9. Après la pousse, dorer la brioche à l’œuf battu à l’aide du pinceau et faire cuire pendant 35 minutes à 180°C.  \n10. Vous pouvez parsemer de sucre en grains, de pépites de chocolat ...",
+    "for": "8",
+    "preptime": "20",
+    "resttime": "3h30",
+    "cooktime": "35",
+    "mold": {
+        "name": "Toile Boulangère Aérée 40x30 OHRA®",
+        "picture": "https://boutique.guydemarle.com/12196-nq_social_share/toile-boulangere-aeree-40x30-ohra.jpg",
+        "url": "https://boutique.guydemarle.com/toiles-et-tapis-de-cuisson/4560-toile-boulangere-aeree-40x30-ohra.html"
+    }
+}
