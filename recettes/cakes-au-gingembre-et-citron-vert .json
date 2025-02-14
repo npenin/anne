@@ -1,0 +1,37 @@
+{
+    "title": "Cakes au gingembre et citron vert ",
+    "private": false,
+    "toppings": [],
+    "accessories": [
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Préparation pour pâte briochée, 5 sachets de 25 g",
+            "picture": "https://boutique.guydemarle.com/16464-nq_social_share/preparation-pour-pate-briochee-facile.jpg",
+            "url": "https://boutique.guydemarle.com/moules-a-brioches/118-preparation-pour-pate-briochee-facile.html"
+        },
+        {
+            "name": "Pinceau de cuisine",
+            "picture": "https://boutique.guydemarle.com/11294-nq_social_share/pinceau-de-cuisine-silicone-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/4258-pinceau-de-cuisine-silicone-guy-demarle.html"
+        }
+    ],
+    "steps": "> > Préparation des raisins :\n1. Faites chauffer le Limoncello et portez à ébullition.\n2. Ajoutez les raisins blonds, laissez bouillir 1 minute, puis retirez du feu et laissez reposer.\n> > Préparation de l’appareil à cake :\n3. Râpez finement le gingembre frais.Coupez la pâte d’amandes en petits morceaux et travaillez-la à la fourchette ou au fouet à main avec le sucre et le gingembre jusqu’à obtenir une texture homogène.\n4. Ajoutez les œufs un à un en mélangeant bien à chaque ajout (utilisez un fouet manuel ou électrique pour bien incorporer).\n> > Ajout des ingrédients secs et du beurre :\n5. Tamisez la farine et la levure ensemble, puis incorporez-les progressivement à la préparation tout en mélangeant doucement.\n6. Faites fondre le beurre et ajoutez-le tiède en filet, tout en mélangeant délicatement pour obtenir une pâte lisse.\n> > Incorporation des fruits secs :\n7. Égouttez les raisins et ajoutez-les à la pâte avec 150 g de noisettes concassées. \n8. Mélangez à la spatule.\n> > Cuisson :\n9. Préchauffez le four à 170°C (chaleur tournante).\n10. Versez la pâte dans une poche sans douille (ou directement à la cuillère) et répartissez-la dans les empreintes de votre moule en silicone.\n11. Parsemez du reste de noisettes concassées.Enfournez pour 30 minutes.\n> > Finition :\n1. À la sortie du four, démoulez et badigeonnez de miel de citronnier chaud.",
+    "for": "8",
+    "preptime": "20",
+    "resttime": "3h30",
+    "cooktime": "35",
+    "mold": {
+        "name": "Moule 5 cakes longs OHRA®",
+        "picture": "https://boutique.guydemarle.com/11509-nq_social_share/moule-5-cakes-longs-ohra.jpg",
+        "url": "https://boutique.guydemarle.com/moules-ohra/4328-moule-5-cakes-longs-ohra.html"
+    }
+}
