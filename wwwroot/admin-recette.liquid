@@ -78,7 +78,10 @@ tags:
     }
     window.saveLocally=function saveLocally(recipe)
     {
-        localStorage.setItem('tmp-{{recette.title | slugify }}', JSON.stringify(recipe))
+        if(recipe)
+            localStorage.setItem('tmp-{{recette.title | slugify }}', JSON.stringify(recipe))
+        else
+            localStorage.removeItem('tmp-{{recette.title | slugify }}');
     }
 
     try{
