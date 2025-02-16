@@ -1,0 +1,113 @@
+{
+    "title": "Mini moelleux chocolat praliné ",
+    "private": true,
+    "toppings": [
+        {
+            "quantity": "160",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "75",
+            "unit": "g",
+            "name": "Beurre"
+        },
+        {
+            "quantity": "90",
+            "unit": "g",
+            "name": "Pralin feuilletine"
+        },
+        {
+            "quantity": "3",
+            "unit": "pincées",
+            "name": "Sel"
+        },
+        {
+            "quantity": "90",
+            "unit": "g",
+            "name": "Crème épaisse"
+        },
+        {
+            "quantity": "15",
+            "unit": "g",
+            "name": "Cacao en poudre"
+        },
+        {
+            "quantity": "3",
+            "unit": "Œufs",
+            "name": ""
+        },
+        {
+            "quantity": "120",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "3",
+            "unit": "g",
+            "name": "Levure chimique"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Spatule fine haute température 25 cm",
+            "picture": "https://boutique.guydemarle.com/2146-nq_social_share/spatule-fine-haute-temperature-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/621-spatule-fine-haute-temperature-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support poches à douilles",
+            "picture": "https://boutique.guydemarle.com/2213-nq_social_share/support-poches-a-douilles-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/672-support-poches-a-douilles-guy-demarle.html"
+        },
+        {
+            "name": "Poche à douilles 35 CM",
+            "picture": "https://boutique.guydemarle.com/16873-nq_social_share/poche-a-douilles-35-cm.jpg",
+            "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/8466-poche-a-douilles-35-cm.html"
+        },
+        {
+            "name": "Lot de 5 douilles interchangeables",
+            "picture": "https://boutique.guydemarle.com/2176-nq_social_share/lot-de-5-douilles-interchangeables-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/649-lot-de-5-douilles-interchangeables-guy-demarle.html"
+        },
+        {
+            "name": "Pralin feuilletine 1 kg",
+            "picture": "https://boutique.guydemarle.com/606-nq_social_share/pralin-feuilletine-1-kg-cacao-barry.jpg",
+            "url": "https://boutique.guydemarle.com/epicerie-en-ligne/465-pralin-feuilletine-1-kg-cacao-barry.html"
+        }
+    ],
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n. Dans le bol micro-ondes, faire fondre le beurre et réserver.\n4. Dans un cul de poule, battre les œufs au fouet avec le sucre et le sel. \n5. Ajouter la crème puis incorporer la farine, la levure et le \ncacao tamisé. \n6. Verser le beurre et mélanger avec la spatule fine\nhaute température pour obtenir un mélange homogène.\n7. Transvaser la préparation dans une poche à douille et \ngarnir aux 3/4 les empreintes.\n8. Déposer ensuite une noisette de pralin feuilletine\npar-dessus. \n9. Enfourner à 170°C pendant 20 min.\n10. Démouler 5 minutes après la sortie du four.",
+    "for": "6",
+    "preptime": "15",
+    "resttime": "0",
+    "cooktime": "20",
+    "mold": {
+        "name": "Moule 20 Mini-Muffins OHRA®",
+        "picture": "https://boutique.guydemarle.com/11029-nq_social_share/moule-mini-muffins.jpg",
+        "url": "https://anneetsesdelices.fr/admin/recette/#"
+    }
+}
