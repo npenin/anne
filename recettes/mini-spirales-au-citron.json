@@ -1,6 +1,6 @@
 {
     "title": "Mini spirales au citron",
-    "private": true,
+    "private": false,
     "toppings": [
         {
             "quantity": "Pâte :",
@@ -39,8 +39,8 @@
         },
         {
             "quantity": "1",
-            "unit": "zeste",
-            "name": "Citron"
+            "unit": "",
+            "name": "Citron (zeste + jus pour le sirop)"
         },
         {
             "quantity": "Sirop :",
@@ -51,11 +51,6 @@
             "quantity": "40",
             "unit": "g",
             "name": "Sucre"
-        },
-        {
-            "quantity": "1",
-            "unit": "jus",
-            "name": "Citron"
         },
         {
             "quantity": "20",
