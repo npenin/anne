@@ -1,0 +1,108 @@
+{
+    "title": "Mini muffins Alsaciens",
+    "private": true,
+    "toppings": [
+        {
+            "quantity": "2",
+            "unit": "Œufs ",
+            "name": ""
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "1/2",
+            "unit": "sachet",
+            "name": "Levure chimique"
+        },
+        {
+            "quantity": "8",
+            "unit": "cL",
+            "name": "Vin blanc"
+        },
+        {
+            "quantity": "6",
+            "unit": "cL",
+            "name": "Huile"
+        },
+        {
+            "quantity": "70",
+            "unit": "g",
+            "name": "Oignons émincés"
+        },
+        {
+            "quantity": "2",
+            "unit": "c-à-c",
+            "name": "Crème fraîche épaisse"
+        },
+        {
+            "quantity": "60",
+            "unit": "g",
+            "name": "Gruyère râpé"
+        },
+        {
+            "quantity": "130",
+            "unit": "g",
+            "name": "Lardons"
+        },
+        {
+            "quantity": "Sel",
+            "unit": "  ",
+            "name": ""
+        },
+        {
+            "quantity": "Poivre",
+            "unit": "  ",
+            "name": ""
+        },
+        {
+            "quantity": "1",
+            "unit": "noisette",
+            "name": "Beurre"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Spatule haute température 25 cm",
+            "picture": "https://boutique.guydemarle.com/3113-nq_social_share/spatule-haute-temperature-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/622-spatule-haute-temperature-25-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Préchauffer le four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dans une poêle, faire revenir les oignons émincés dans une noisette de beurre.\n4. Saler et poivrer, rajoutez les lardons et faire légèrement\nrissoler, puis retirer du feu. \n5. Ajouter la crème.\n6. Dans un cul de poule, fouetter les oeufs et rajouter la farine, la levure, le vin et l’huile.\n7. Incorporer le gruyère ainsi que le mélange d’oignons,\nlardons et crème.\n8. Répartir la préparation dans les empreintes .\n9. Enfourner à 180°C pendant  20 min (suivant votre four).\n\n\n",
+    "for": "5",
+    "preptime": "15",
+    "resttime": "0",
+    "cooktime": "20",
+    "mold": {
+        "name": "Moule 20 Mini-Muffins OHRA®",
+        "picture": "https://boutique.guydemarle.com/11029-nq_social_share/moule-mini-muffins.jpg",
+        "url": "https://anneetsesdelices.fr/admin/recette/#"
+    }
+}
