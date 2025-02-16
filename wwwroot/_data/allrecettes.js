@@ -15,7 +15,7 @@ export default async function ()
         const result = {}
         if (Array.isArray(r.toppings))
         {
-            if (Object.entries(r.toppings[0]).filter(e => !e[1]).length == 2)
+            if (r.toppings.length && Object.entries(r.toppings[0]).filter(e => !e[1]).length == 2)
             {
                 result.categorizedToppings = {};
                 let toppingCategory = '';
