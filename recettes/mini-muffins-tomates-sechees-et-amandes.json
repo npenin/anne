@@ -1,0 +1,98 @@
+{
+    "title": "Mini muffins tomates séchées et amandes",
+    "private": true,
+    "toppings": [
+        {
+            "quantity": "120",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "1/2",
+            "unit": "sachet",
+            "name": "Levure chimique"
+        },
+        {
+            "quantity": "2",
+            "unit": "Œufs",
+            "name": ""
+        },
+        {
+            "quantity": "8",
+            "unit": "cL",
+            "name": "Lait"
+        },
+        {
+            "quantity": "35",
+            "unit": "g",
+            "name": "Gruyère râpé"
+        },
+        {
+            "quantity": "35",
+            "unit": "g",
+            "name": "Parmesan râpé"
+        },
+        {
+            "quantity": "6",
+            "unit": "cL",
+            "name": "Huile d’olive"
+        },
+        {
+            "quantity": "60",
+            "unit": "g",
+            "name": "Tomates confites"
+        },
+        {
+            "quantity": "40",
+            "unit": "g",
+            "name": "Amandes entières"
+        },
+        {
+            "quantity": "2",
+            "unit": "c-à-s",
+            "name": "Basilic frais ciselé"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Hachoir manuel Tornado",
+            "picture": "https://boutique.guydemarle.com/9990-nq_social_share/tornado-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/668-tornado-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dans un cul de poule, mélanger la farine et la levure, puisajouter les œufs ben mélanger et ajouter le lait.\n4. Incorporer le gruyère et le parmesan ainsi que l’huile.\n5. Couper les tomates en petits cubes, hacher les amandes à l’ aide dTornado, ajouter à la préparation et mélanger. \n6. Incorporer le basilic ciselé avec leTornado et mélanger.\n7.Verser la préparation dans les empreintes.\n8. Enfourner à 180°C pendant 15 min.\n\n\n",
+    "for": "5",
+    "preptime": "15",
+    "resttime": "0",
+    "cooktime": "20",
+    "mold": {
+        "name": "Moule 20 Mini-Muffins OHRA®",
+        "picture": "https://boutique.guydemarle.com/11029-nq_social_share/moule-mini-muffins.jpg",
+        "url": "https://anneetsesdelices.fr/admin/recette/#"
+    }
+}
