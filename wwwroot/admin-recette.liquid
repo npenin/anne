@@ -61,6 +61,7 @@ tags:
     <i class="fal fa-trash fa-2x" onclick="cleanTmpRecipe()"></i>
     <i class="fab fa-firstdraft fa-2x" style="visibility:hidden; color:red" onclick="saveAsDraft()"></i>
     <i class="fal fa-save fa-2x" style="visibility:hidden" onclick="save()"></i>
+    <i class="fal fa-print fa-2x" style="visibility:hidden" onclick="print()"></i>
     <div>
         <input type="checkbox" name="private">
         <label for="private">Privée</label>
@@ -71,6 +72,10 @@ tags:
 <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
 <script type="module">
     import '/assets/script.mjs';
+
+    window.print=function(){
+        location.href='/recettes/{{recette.title|slugify}}'
+    }
 
     window.cleanTmpRecipe = async function cleanTmpRecipe() {
         localStorage.removeItem('tmp-{{recette.title | slugify }}');
