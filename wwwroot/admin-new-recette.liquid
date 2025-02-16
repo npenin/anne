@@ -68,9 +68,9 @@ permalink: /admin/recette/
         location.reload();
     }
 
-    window.saveLocally=function saveLocally()
+    window.saveLocally=function saveLocally(recipe)
     {
-        localStorage.setItem('tmpRecipe', JSON.stringify(getRecipe()));
+        localStorage.setItem('tmpRecipe', JSON.stringify(recipe));
     }
     try{
         window.loadRecipe(JSON.parse(localStorage.getItem('tmpRecipe')))

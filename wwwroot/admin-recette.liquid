@@ -71,11 +71,15 @@ tags:
 <script type="module">
     import '/assets/script.mjs';
 
-
-    
-    window.saveLocally=function saveLocally()
+    window.cleanTmpRecipe = async function cleanTmpRecipe() {
+        localStorage.removeItem('tmp-{{recette.title | slugify }}');
+        location.reload();
+    }
+    window.saveLocally=function saveLocally(recipe)
     {
+        localStorage.setItem('tmp-{{recette.title | slugify }}', JSON.stringify(recipe))
     }
 
-    window.loadRecipe({{ recette | json }})
+    const tmpRecipe=localStorage.getItem('tmp-{{recette.title | slugify }}');
+    window.loadRecipe(tmpRecipe ? JSON.parse(tmpRecipe) :  {{ recette | json }})
 </script>

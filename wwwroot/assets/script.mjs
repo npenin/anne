@@ -103,12 +103,12 @@ export function getRecipe()
     };
 }
 
-function saveLocally() { window.saveLocally(); }
+function saveLocally() { window.saveLocally(getRecipe()); }
 
 window.saveAsDraft = async function saveAsDraft()
 {
     const recipe = getRecipe();
-    localStorage.setItem('tmpRecipe', JSON.stringify(recipe));
+    window.saveLocally(recipe);
 
     const filename = `${dir}/recettes/${recipe.title.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/ +/g, '-').toLowerCase()}.json`;
     let res = await fetch('https://api.github.com/repos/npenin/anne/contents/' + filename.substring(dir.length + 1), {
@@ -161,7 +161,7 @@ window.save = async function save()
     {
         if (create)
         {
-            localStorage.setItem('tmpRecipe', JSON.stringify({ ...recipe, toppings: [], steps: [], title: '' }))
+            window.saveLocally({ ...recipe, toppings: [], steps: [], title: '' });
             let timerInterval;
             Swal.fire({
                 title: "Recette enregistrée !",
@@ -186,6 +186,8 @@ window.save = async function save()
             });
         }
         else
+        {
+            window.saveLocally(null);
             Swal.fire({
                 title: "Recette enregistrée !",
                 timer: 10000,
@@ -196,6 +198,7 @@ window.save = async function save()
                     delete document.querySelector('.toolbar').style.display;
                 }
             });
+        }
 
         if ('Notification' in window)
         {
