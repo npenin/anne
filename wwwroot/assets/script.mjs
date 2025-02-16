@@ -24,6 +24,7 @@ dynamic(document.querySelector('.info>.mold>.name'), {
 window.loadRecipe = function (recipe)
 {
     document.querySelector('h1').innerText = recipe.title;
+    document.querySelector('input[name="private"]').checked = recipe.private;
     document.querySelector('.info .count').innerText = recipe.for;
     document.querySelector('.info .preptime').innerText = recipe.preptime;
     document.querySelector('.info .resttime').innerText = recipe.resttime;
