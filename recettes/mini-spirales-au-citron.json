@@ -39,8 +39,8 @@
         },
         {
             "quantity": "1",
-            "unit": "zeste",
-            "name": "Citron"
+            "unit": "",
+            "name": "Citron (zeste + jus pour le sirop)"
         },
         {
             "quantity": "Sirop :",
@@ -51,11 +51,6 @@
             "quantity": "40",
             "unit": "g",
             "name": "Sucre"
-        },
-        {
-            "quantity": "1",
-            "unit": "jus",
-            "name": "Citron"
         },
         {
             "quantity": "20",
@@ -100,7 +95,7 @@
             "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/675-presse-agrumes-inox-guy-demarle.html"
         },
         {
-            "name": "Râpe double parois",
+            "name": "Râpe double paroi",
             "picture": "https://boutique.guydemarle.com/7342-nq_social_share/rape-double-paroi-de-cuisine.jpg",
             "url": "https://boutique.guydemarle.com/decoupe/2531-rape-double-paroi-de-cuisine.html"
         },
@@ -125,7 +120,7 @@
             "url": "https://boutique.guydemarle.com/toiles-et-tapis-de-cuisson/4508-toile-de-cuisson-en-silicone-40-x-30-cm.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 180°C. \n2. Placer votre moule sur une plaque aluminium perforée.\n3. Dans un cul de poule, mélanger les œufs, le sucre, l’huile, la crème, la farine, la levure.\n4. Ajouter le zeste d’un citron, râpé avec la râpe double parois.\n5. Verser la préparation dans le pichet verseur.\n6. Répartir dans les empreintes au 3/4.\n7. Poser la tuile de cuisson sur le moule.\n8. Enfourner à 180°C pendant 15 min.\n9. Pendant ce temps, préparer le sirop. Porter à ébullition les 40 grammes de sucre, le jus de citron, pressé avec le presse agrumes, et le rhum.\n10. Une fois cuit, démouler les empreintes et poser les dans un  plat creux puis arroser les avec la totalité du sirop.\n11. Laisser refroidir.\n12. Garnir le creux des empreintes de Chantilly. ",
+    "steps": "1. Préchauffer votre four à 180°C. \n2. Placer votre moule sur une plaque aluminium perforée.\n3. Dans un cul de poule, mélanger les œufs, le sucre, l’huile, la crème, la farine, la levure.\n4. Ajouter le zeste d’un citron, râpé avec la râpe double parois.\n5. Verser la préparation dans le pichet verseur.\n6. Répartir dans les empreintes au 3/4.\n7. Poser la tuile de cuisson sur le moule.\n8. Enfourner à 180°C pendant 15 min.\n9. Pendant ce temps, préparer le sirop. Porter à ébullition les 40 grammes de sucre, le jus de citron, pressé avec le presse agrumes, et le rhum.\n10. Une fois cuit, démouler les empreintes et poser les dans un  plat creux puis arroser les avec la totalité du sirop.\n11. Laisser refroidir.\n12. Garnir le creux des empreintes de Chantilly.",
     "for": "8",
     "preptime": "10",
     "resttime": "0",
