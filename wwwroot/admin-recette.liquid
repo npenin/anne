@@ -58,6 +58,7 @@ tags:
 </div>
 
 <div class="toolbar">
+    <i class="fal fa-trash fa-2x" onclick="cleanTmpRecipe()"></i>
     <i class="fab fa-firstdraft fa-2x" style="visibility:hidden; color:red" onclick="saveAsDraft()"></i>
     <i class="fal fa-save fa-2x" style="visibility:hidden" onclick="save()"></i>
     <div>
@@ -80,6 +81,13 @@ tags:
         localStorage.setItem('tmp-{{recette.title | slugify }}', JSON.stringify(recipe))
     }
 
-    const tmpRecipe=localStorage.getItem('tmp-{{recette.title | slugify }}');
-    window.loadRecipe(tmpRecipe ? JSON.parse(tmpRecipe) :  {{ recette | json }})
+    try{
+        const tmpRecipe=localStorage.getItem('tmp-{{recette.title | slugify }}');
+        window.loadRecipe(tmpRecipe ? JSON.parse(tmpRecipe) :  {{ recette | json }});
+        document.querySelector('.fa-trash').style.display = 'none'
+    }
+    catch(e)
+    {
+        console.error(e);
+    }
 </script>
