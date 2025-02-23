@@ -1,0 +1,48 @@
+{
+    "title": "Lapinui",
+    "private": false,
+    "toppings": [
+        {
+            "quantity": "230",
+            "unit": "g",
+            "name": "Framboises"
+        },
+        {
+            "quantity": "170",
+            "unit": "g",
+            "name": "Chocolat au lait"
+        },
+        {
+            "quantity": "140",
+            "unit": "g",
+            "name": "Chocolat blanc"
+        },
+        {
+            "quantity": "30",
+            "unit": "g",
+            "name": "Chocolat Ruby"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Plaque Aluminium perforée 20 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2179-nq_social_share/plaque-aluminium-perforee-20-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/652-plaque-aluminium-perforee-20-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        }
+    ],
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée.\n2. Faire fondre au bain marie, les chocolats dans 3 récipients.\n3. Déposer vos framboises dans les empreintes.\n4. Répartir le chocolat blanc et ruby sur les framboises.\n5. Prendre la plaque et bougez-la de droite à gauche pour que les chocolats s'étalent dans le moule.\n6. Déposer ensuite le chocolat au lait, bougez-la plaque pour répartir le chocolat.\n7. Pour faire remonter les bulles d'air du chocolat, taper plusieurs fois, votre plaque en aluminium sur le plan de travail.\n8. Laisser reposer au réfrigérateur 1h.\n9. Démouler délicatement.\n10. A conserver au frais.",
+    "for": "6",
+    "preptime": "15",
+    "resttime": "60",
+    "cooktime": "0",
+    "mold": {
+        "name": "Moule 6 lapins OHRA®",
+        "picture": "https://boutique.guydemarle.com/17579-nq_social_share/moule-6-lapins-ohra.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/8773-moule-6-lapins-ohra.html"
+    }
+}
