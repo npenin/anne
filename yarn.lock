@@ -153,13 +153,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@akala/core@npm:^19.0.14":
-  version: 19.0.14
-  resolution: "@akala/core@npm:19.0.14"
+"@akala/core@npm:^22.0.0":
+  version: 22.0.0
+  resolution: "@akala/core@npm:22.0.0"
   dependencies:
     debug: "npm:^4.3.7"
     reflect-metadata: "npm:^0.2.2"
-  checksum: 10/0175d5a4cfeebfe98b38f5bb83c748a5eea539fb1f21982d02a34387b8e580209e7701ed0dc614d5a1a6b83bd9519c4df5dd6373c363df8cb5f26e0807519a02
+  checksum: 10/825c6793fc1d9fcb5abd460bae915209aa74fe705f0a7d030b9142f79384afa7067237aa89f2c0e2b00a5367fff0826f81fb1d6882adc02fac5e6c97bcd12cd8
   languageName: node
   linkType: hard
 
@@ -359,7 +359,7 @@ __metadata:
   resolution: "anne@workspace:."
   dependencies:
     "@11ty/eleventy": "npm:^3.0.0"
-    "@akala/core": "npm:^19.0.14"
+    "@akala/core": "npm:^22.0.0"
     "@types/cookie-parser": "npm:^1.4.8"
     "@types/node": "npm:^22.10.1"
     body-parser: "npm:^1.20.3"
