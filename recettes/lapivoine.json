@@ -1,0 +1,103 @@
+{
+    "title": "Lapivoine",
+    "private": true,
+    "toppings": [
+        {
+            "quantity": "70",
+            "unit": "g",
+            "name": "Flocons d'avoine"
+        },
+        {
+            "quantity": "50",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "35",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "25",
+            "unit": "g",
+            "name": "Poudre d'amande"
+        },
+        {
+            "quantity": "50",
+            "unit": "g",
+            "name": "Miel"
+        },
+        {
+            "quantity": "60",
+            "unit": "g",
+            "name": "Beurre"
+        },
+        {
+            "quantity": "1",
+            "unit": "c-à-c",
+            "name": "Bicarbonate de soude"
+        },
+        {
+            "quantity": "1",
+            "unit": "c-à-s",
+            "name": "Lait"
+        },
+        {
+            "quantity": "40",
+            "unit": "g",
+            "name": "Amandes émondées"
+        },
+        {
+            "quantity": "40",
+            "unit": "g",
+            "name": "Pépites de chocolat blanc"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://anneetsesdelices.fr/admin/recette/buche-amande-insert-pomme-cannelle/"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://anneetsesdelices.fr/admin/recette/buche-amande-insert-pomme-cannelle/"
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://anneetsesdelices.fr/admin/recette/buche-amande-insert-pomme-cannelle/"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://anneetsesdelices.fr/admin/recette/buche-amande-insert-pomme-cannelle/"
+        },
+        {
+            "name": "Spatule double embouts",
+            "picture": "https://boutique.guydemarle.com/5792-nq_social_share/spatule-double-embout-gris-anthracite.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1793-spatule-double-embout-gris-anthracite.html"
+        },
+        {
+            "name": "Bol micro-ondes 1L",
+            "picture": "https://boutique.guydemarle.com/3363-nq_social_share/bol-micro-ondes-1l.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1009-bol-micro-ondes-1l.html"
+        },
+        {
+            "name": "Hachoir manuel Tornado",
+            "picture": "https://boutique.guydemarle.com/9990-nq_social_share/tornado-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/668-tornado-guy-demarle.html"
+        }
+    ],
+    "steps": "\t1. Préchauffer votre four à 160°C.\n\t2. Poser votre moule sur une plaque aluminium perforée.\n\t3. Dans le bol micro-ondes, faire fondre le beurre avec le miel.\n\t4. A l'aide du tornado, concasser les amandes.\n\t5. Dans un cul de poule, mélanger à l'aide de la spatule double embouts, les flocons d'avoines, la farine, le sucre, la poudre d'amande, le bicarbonate de soude et les amandes concassées.\n\t6. Ajouter le lait, le beurre/miel fondu et mélanger à l'aide de la spatule double embouts.\n\t7. Incorporer le chocolat et mélanger.\n\t8. Répartir dans les empreintes du moule en tassant légèrement.\n\t9. Enfourner à 160°C pendant 10 à 12 min.",
+    "for": "6",
+    "preptime": "15",
+    "resttime": "0",
+    "cooktime": "10-12",
+    "mold": {
+        "name": "Moule 6 lapins OHRA®",
+        "picture": "https://boutique.guydemarle.com/17579-nq_social_share/moule-6-lapins-ohra.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/8773-moule-6-lapins-ohra.html"
+    }
+}
