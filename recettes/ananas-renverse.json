@@ -1,0 +1,108 @@
+{
+    "title": "Ananas renversé",
+    "private": true,
+    "toppings": [
+        {
+            "quantity": "Caramel : ",
+            "unit": "",
+            "name": ""
+        },
+        {
+            "quantity": "150",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "2",
+            "unit": "c-à-s",
+            "name": "Eau"
+        },
+        {
+            "quantity": "  ",
+            "unit": "",
+            "name": ""
+        },
+        {
+            "quantity": "80",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "20",
+            "unit": "cL",
+            "name": "Crème liquide entière"
+        },
+        {
+            "quantity": "10",
+            "unit": "cL",
+            "name": "Lait"
+        },
+        {
+            "quantity": "2",
+            "unit": "Oeufs + 1 jaune",
+            "name": ""
+        },
+        {
+            "quantity": "1",
+            "unit": "Gousse de vanille ou 1 sachet de sucre vanillé",
+            "name": ""
+        },
+        {
+            "quantity": "1",
+            "unit": "c-à-s",
+            "name": "Rhum"
+        },
+        {
+            "quantity": "6",
+            "unit": "tranches",
+            "name": "Ananas"
+        },
+        {
+            "quantity": "6",
+            "unit": "tranches",
+            "name": "Brioche"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Découpoir rond cannelé Exoglass® 9,5 cm",
+            "picture": "https://boutique.guydemarle.com/2172-nq_social_share/decoupoir-rond-cannele-exoglass-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/644-decoupoir-rond-cannele-exoglass-13-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée.\n2. Dans une casserole, faire un caramel liquide pas trop doré avec les 150 grammes de sucre et l’eau.\n3. Verser le caramel chaud dans les empreintes.\n4. Dans un cul de poule, fouetter ensemble le sucre, les oeufs et le jaune, la crème fraîche, le lait, le rhum et la vanille fendue et grattée.\n5. Bien mélanger le tout.\n6. Dans les empreintes, placer la tranche d’ananas sur le caramel puis ajouter la tranche de brioche découpée à l’aide du découpoir de 9,5 cm.\n7. Verser doucement la préparation sur la brioche jusqu’à ce que les ronds soient bien remplies.\n8. Enfourner à 160°C pendant 20 minutes.\n9. Démouler tiède et servir avec une glace vanille réalisée à l'aide de la Boréalia.\n",
+    "for": "6",
+    "preptime": "20",
+    "resttime": "0",
+    "cooktime": "20",
+    "mold": {
+        "name": "Moule 6 grands ronds OHRA®",
+        "picture": "https://boutique.guydemarle.com/12040-nq_social_share/moule-6-grands-ronds-ohra.jpg",
+        "url": "https://anneetsesdelices.fr/admin/recette/#"
+    }
+}
