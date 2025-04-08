@@ -1,0 +1,103 @@
+{
+    "title": "Quiche au camembert",
+    "private": true,
+    "toppings": [
+        {
+            "quantity": "1",
+            "unit": "Pâte brisée",
+            "name": ""
+        },
+        {
+            "quantity": "1",
+            "unit": "Oignon",
+            "name": ""
+        },
+        {
+            "quantity": "150",
+            "unit": "g",
+            "name": "Lardons"
+        },
+        {
+            "quantity": "5",
+            "unit": "cL",
+            "name": "Vin blanc"
+        },
+        {
+            "quantity": "2",
+            "unit": "Oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Crème fraîche"
+        },
+        {
+            "quantity": "1",
+            "unit": "Pomme",
+            "name": ""
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Camembert"
+        },
+        {
+            "quantity": "Ciboulette",
+            "unit": "",
+            "name": ""
+        },
+        {
+            "quantity": "Sel",
+            "unit": "",
+            "name": ""
+        },
+        {
+            "quantity": "Poivre",
+            "unit": "",
+            "name": ""
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Découpoir rond cannelé Exoglass® 13 cm",
+            "picture": "https://boutique.guydemarle.com/2172-nq_social_share/decoupoir-rond-cannele-exoglass-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/644-decoupoir-rond-cannele-exoglass-13-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Préchauffer votre four à 180C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. A l'aide du découpoir 13 cm, découper 6 ronds de pâte.\n4. Foncer les empreintes.\n5. Piquer la pâte, délicatement, sans trop appuyer, avec une fourchette et mettre au frais.\n6. Pendant ce temps, dans une poële, faire revenir les lardons et les oignons.\n7. Dans un cul de poule, battre les oeufs, la crème, le vin blanc, le  sel et le poivre, \n8. Eplucher la pomme, la tailler en petits cubes et répartir dans les empreintes.\n9. Recouvrir avec le mélange lardons/oignons et répartir la ciboulette.\n10. Couvrir avec le mélange oeufs/crème.\n11. Couper le camembert en morceaux et répartir sur la préparation.\n12. Enfourner à 180°C, pendant 20 à 25 min.\n\n\n",
+    "for": "6",
+    "preptime": "20",
+    "resttime": "10",
+    "cooktime": "20-25",
+    "mold": {
+        "name": "Moule 6 grands ronds OHRA®",
+        "picture": "https://boutique.guydemarle.com/12040-nq_social_share/moule-6-grands-ronds-ohra.jpg",
+        "url": "https://anneetsesdelices.fr/admin/recette/#"
+    }
+}
