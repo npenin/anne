@@ -1,0 +1,83 @@
+{
+    "title": "Délices alpins",
+    "private": true,
+    "toppings": [
+        {
+            "quantity": "1",
+            "unit": "Kg",
+            "name": "Pommes de terre"
+        },
+        {
+            "quantity": "210",
+            "unit": "g",
+            "name": "Reblochon"
+        },
+        {
+            "quantity": "3",
+            "unit": "pincées",
+            "name": "Poivre"
+        },
+        {
+            "quantity": "3",
+            "unit": "pincées",
+            "name": "Sel"
+        },
+        {
+            "quantity": "1",
+            "unit": "pincée",
+            "name": "Muscade"
+        },
+        {
+            "quantity": "80",
+            "unit": "g",
+            "name": "Beurre fondu"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Mandoline professionnelle",
+            "picture": "https://boutique.guydemarle.com/8246-nq_social_share/mandoline-professionnelle-de-cuisine-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/3030-mandoline-professionnelle-de-cuisine-guy-demarle.html"
+        },
+        {
+            "name": "Spatule double embouts - Gris Anthracite",
+            "picture": "https://boutique.guydemarle.com/5792-nq_social_share/spatule-double-embout-gris-anthracite.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1793-spatule-double-embout-gris-anthracite.html"
+        },
+        {
+            "name": "Bol micro-ondes 1L",
+            "picture": "https://boutique.guydemarle.com/3363-nq_social_share/bol-micro-ondes-1l.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1009-bol-micro-ondes-1l.html"
+        }
+    ],
+    "steps": "1. Préchauffer votre four à 180C.\n2. Poser votre moule sur une toile aluminium perforée.\n3. A l'aide de la mandoline, râper les pommes de terre et rincez-les dans une passoire afin de retirer l’amidon.  \n4. Essorez-les en les pressant entre vos mains.\n5. Dans le bol micro-ondes, faire fondre le beurre.  \n6. Dans un cul de poule, déposer vos lamelles de pommes de terre, ajouter le sel, le poivre, la muscade et le beure fondu.\n7. Mélanger à l'aide de la spatule double embouts.\n8. Dans chaque empreinte, répartir la moitié des pommes de terre râpées puis des lamelles de reblochon. Refermer par une dernière couche de pommes de terre râpées.\n9. Enfourner à 180°C pendant 40 min.\n",
+    "for": "6",
+    "preptime": "20",
+    "resttime": "0",
+    "cooktime": "40",
+    "mold": {
+        "name": "Moule 6 grands ronds OHRA®",
+        "picture": "https://boutique.guydemarle.com/12040-nq_social_share/moule-6-grands-ronds-ohra.jpg",
+        "url": "https://anneetsesdelices.fr/admin/recette/#"
+    }
+}
