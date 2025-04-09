@@ -1,0 +1,42 @@
+{
+    "title": "Pains briochés pour burgers",
+    "private": true,
+    "toppings": [],
+    "accessories": [
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Couvercle en silicone hermétique - Diamètre 30 cm",
+            "picture": "https://boutique.guydemarle.com/7656-nq_social_share/couvercle-en-silicone-hermetique-diametre-30cm.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/2752-couvercle-en-silicone-hermetique-diametre-30cm.html"
+        },
+        {
+            "name": "Toile de cuisson 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/12035-nq_social_share/toile-de-cuisson-en-silicone-40-x-30-cm.jpg",
+            "url": "https://boutique.guydemarle.com/toiles-et-tapis-de-cuisson/4508-toile-de-cuisson-en-silicone-40-x-30-cm.html"
+        },
+        {
+            "name": "Préparation pour pâte briochée, 5 sachets de 25 g",
+            "picture": "https://boutique.guydemarle.com/16464-nq_social_share/preparation-pour-pate-briochee-facile.jpg",
+            "url": "https://boutique.guydemarle.com/moules-a-brioches/118-preparation-pour-pate-briochee-facile.html"
+        }
+    ],
+    "steps": [],
+    "for": "6",
+    "preptime": "20",
+    "resttime": "0",
+    "cooktime": "25+20",
+    "mold": {
+        "name": "Moule 6 grands ronds OHRA®",
+        "picture": "https://boutique.guydemarle.com/12040-nq_social_share/moule-6-grands-ronds-ohra.jpg",
+        "url": "https://anneetsesdelices.fr/admin/recette/#"
+    }
+}
