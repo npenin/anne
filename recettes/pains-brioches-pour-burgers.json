@@ -1,7 +1,43 @@
 {
     "title": "Pains briochés pour burgers",
     "private": true,
-    "toppings": [],
+    "toppings": [
+        {
+            "quantity": "400",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "1",
+            "unit": "sachet",
+            "name": "Préparation pâte biochée"
+        },
+        {
+            "quantity": "15",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "250",
+            "unit": "g",
+            "name": "Lait"
+        },
+        {
+            "quantity": "60",
+            "unit": "g",
+            "name": "Beurre froid"
+        },
+        {
+            "quantity": "3",
+            "unit": "c-à-s",
+            "name": "Lait pour la dorure"
+        },
+        {
+            "quantity": "Graines au choix",
+            "unit": "",
+            "name": ""
+        }
+    ],
     "accessories": [
         {
             "name": "Plaque Aluminium perforée 40 x 30 cm",
@@ -29,11 +65,11 @@
             "url": "https://boutique.guydemarle.com/moules-a-brioches/118-preparation-pour-pate-briochee-facile.html"
         }
     ],
-    "steps": "1. Poser votre moule sur une plaque aliminium perforée.\n2. Dans une casserole, faire chauffer légèrement le lait.\n3. Dans le bol d'un robot, déposer la farine, la préparation spéciale pains et le sucre.\n4. Ajouter le lait tiède, puis mélanger jusqu’à ce que l’ensemble soit bien amalgamé.\n5. Pétrir à vitesse lente pendant environ 3 minutes pour commencer à structurer la pâte. \n6. Incorporer le beurre coupé en petits dés et poursuivre le pétrissage à vitesse moyenne durant 8 minutes, jusqu’à ce que la pâte devienne bien lisse et élastique.\n7. Former une boule, couvrir le bol avec un couvercle en silicone hermétique, et laisser reposer à température ambiante pendant 30 minutes.\n8. Diviser la boule de pâte en 6 morceaux égaux, roulez-les entre vos mains, puis aplatissez-les légèrement dans chaque empreinte.\n9. Badigeonner délicatement la surface avec un peu de lait, puis saupoudrez les pains de graines de votre choix.\n10. Recouvrir d’une toile de cuisson et laisser lever encore 1h.\n11. Préchauffer votre four à 200°C en mode chaleur tournante.\n12. Enfourner à 200°C pour 18 à 20 minutes, selon votre four, jusqu’à ce que les pains soient bien dorés.\n",
+    "steps": "1. Poser votre moule sur une plaque aliminium perforée.\n2. Dans une casserole, faire chauffer légèrement le lait.\n3. Dans le bol d'un robot, déposer la farine, la préparation pour pâte briochée et le sucre.\n4. Ajouter le lait tiède, puis mélanger jusqu’à ce que l’ensemble soit bien amalgamé.\n5. Pétrir à vitesse lente pendant environ 3 minutes pour commencer à structurer la pâte. \n6. Incorporer le beurre coupé en petits dés et poursuivre le pétrissage à vitesse moyenne durant 5 minutes, jusqu’à ce que la pâte devienne bien lisse et élastique.\n7. Former une boule, couvrir le bol avec un couvercle en silicone hermétique, et laisser reposer à température ambiante pendant 30 minutes.\n8. Diviser la boule de pâte en 6 morceaux égaux, roulez-les entre vos mains, puis aplatissez-les légèrement dans chaque empreinte.\n9. Badigeonner délicatement la surface avec un peu de lait, puis saupoudrer les pains de graines de votre choix.\n10. Recouvrir d’une toile de cuisson et laisser lever encore 30 min.\n11. Préchauffer votre four à 180°C en mode chaleur tournante.\n12. Enfourner à 180°C pour 18 à 20 minutes, selon votre four.\n",
     "for": "6",
     "preptime": "20",
-    "resttime": "0",
-    "cooktime": "25+20",
+    "resttime": "30-30",
+    "cooktime": "18-20",
     "mold": {
         "name": "Moule 6 grands ronds OHRA®",
         "picture": "https://boutique.guydemarle.com/12040-nq_social_share/moule-6-grands-ronds-ohra.jpg",
