@@ -18,7 +18,7 @@
   "packageManager": "yarn@4.5.3",
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "@akala/core": "^19.0.14",
+    "@akala/core": "^38.0.0",
     "@types/cookie-parser": "^1.4.8",
     "@types/node": "^22.10.1",
     "marked": "^15.0.3",
