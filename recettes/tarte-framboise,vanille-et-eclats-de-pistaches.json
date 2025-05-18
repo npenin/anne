@@ -1,0 +1,128 @@
+{
+    "title": "Tarte framboise,vanille et éclats de pistaches",
+    "private": false,
+    "toppings": [
+        {
+            "quantity": "Base :",
+            "unit": "",
+            "name": ""
+        },
+        {
+            "quantity": "3",
+            "unit": "Oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "130",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "130",
+            "unit": "g",
+            "name": "Farine tamisée"
+        },
+        {
+            "quantity": "70",
+            "unit": "g",
+            "name": "Beurre"
+        },
+        {
+            "quantity": "190",
+            "unit": "g",
+            "name": "Yaourt grecque à la vanille"
+        },
+        {
+            "quantity": "1",
+            "unit": "pincée",
+            "name": "Sel"
+        },
+        {
+            "quantity": "1",
+            "unit": "c-à-c",
+            "name": "Extrait de vanille"
+        },
+        {
+            "quantity": "1",
+            "unit": "sachet",
+            "name": "Sucre vanillé"
+        },
+        {
+            "quantity": "Garniture :",
+            "unit": "",
+            "name": ""
+        },
+        {
+            "quantity": "250",
+            "unit": "g",
+            "name": "Yaourt grecque à la vanille"
+        },
+        {
+            "quantity": "150",
+            "unit": "g",
+            "name": "Framboises"
+        },
+        {
+            "quantity": "30",
+            "unit": "g",
+            "name": "Eclats d pistaches"
+        },
+        {
+            "quantity": "2 c-à-s",
+            "unit": "Sucre",
+            "name": ""
+        },
+        {
+            "quantity": "1",
+            "unit": "c-à-s",
+            "name": "Miel"
+        },
+        {
+            "quantity": "1",
+            "unit": "c-à-c",
+            "name": "Extrait de vanille"
+        },
+        {
+            "quantity": "1,5",
+            "unit": "feuilles",
+            "name": "Gélatine (3 g)"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Petit cul de poule 2L / 20 cm",
+            "picture": "https://boutique.guydemarle.com/2233-nq_social_share/petit-cul-de-poule-2l-20-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/683-petit-cul-de-poule-2l-20-cm-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "### Base :\n1. Préchauffer le four à 170°C.\n2. Poser votre moule, sur une plaque aluminium perforée.\n3. Dans le bol micro-ondes, faire fondre le beurre.\n4. Dans un cul de poule, fouetter les oeufs avec les sucres jusqu'à ce que le mélange devienne léger et mousseux.\n5. Incorporer le yaourt, le beurre fondu, le sel et l'extrait de vanille puis mélanger.\n6. Tamiser la farine et l'ajouter petit à petit au mélange. mélanger bien pour obteir une pâte lisse et homogène.\n7. Verser la pâte dans le moule.\n8. Enfourner à 170°C pendant 30 à 35 min (suivant votre four).\n9. Laisser refroidir avant de démouler.\n### Garniture :\n1. Mettre la gélatine à tremper 10 min dans l'eau froide.\n2. Prélever 3 à 4 c-à-s de yaourt grecque et faire chauffer doucement au micro-ondes ou dans une petite casserole.\n3. Hors du feu, ajouter la gélatine essorée, bien mélanger pour la dissoudre.\n4. Dans un petit cul de poule, mettre les framboises et écraser légérement pour faire une purée.\n5. Dans un cul de poule, mélanger le reste du yaourt avec le sucre, le miel, la vanille, la purée de framboises et les éclats de pistaches.\n6. Incorporer le yaourt tiédi avec la gélatine puis mélanger délicatement.\n7. Verser la garniture dans le creux de la base cuite et froide.\n8. Mettre au frais au minimun 4h. Idéalement une nuit.",
+    "for": "8",
+    "preptime": "25",
+    "resttime": "10",
+    "cooktime": "30-35",
+    "mold": {
+        "name": "Moule tarte renversée OHRA®",
+        "picture": "https://boutique.guydemarle.com/16631-nq_social_share/moule-tarte-renversee-ohra.jpg",
+        "url": "https://anneetsesdelices.fr/admin/recette/#"
+    }
+}
