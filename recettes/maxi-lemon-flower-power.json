@@ -1,0 +1,98 @@
+{
+    "title": "Maxi lemon flower power",
+    "private": false,
+    "toppings": [
+        {
+            "quantity": "250",
+            "unit": "g",
+            "name": "Mascarpone"
+        },
+        {
+            "quantity": "3",
+            "unit": "Œufs",
+            "name": ""
+        },
+        {
+            "quantity": "2",
+            "unit": "Citrons",
+            "name": ""
+        },
+        {
+            "quantity": "150",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "140",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "40",
+            "unit": "g",
+            "name": "Poudre d'amandes"
+        },
+        {
+            "quantity": "1",
+            "unit": "sachet",
+            "name": "Levure chimique"
+        },
+        {
+            "quantity": "Quelques",
+            "unit": "gouttes",
+            "name": "Amande amère"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Toile de cuisson 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/12035-nq_social_share/toile-de-cuisson-en-silicone-40-x-30-cm.jpg",
+            "url": "https://boutique.guydemarle.com/toiles-et-tapis-de-cuisson/4508-toile-de-cuisson-en-silicone-40-x-30-cm.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Zesteur 4 en 1",
+            "picture": "https://boutique.guydemarle.com/7325-nq_social_share/zesteur-4-en-1.jpg",
+            "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/2527-zesteur-4-en-1.html"
+        },
+        {
+            "name": "Presse agrumes inox",
+            "picture": "https://boutique.guydemarle.com/2219-nq_social_share/presse-agrumes-inox-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/675-presse-agrumes-inox-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Préchauffer le four à 160°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dans un cul de poule, fouetter les œufs avec le sucre jusqu'à ce que le mélange blanchisse.\n4. Ajouter le mascarpone, le jus et les zestes des citrons. Ajouter l'amande amère puis mélanger. \n5. Incorporer la farine, la poudre d’amandes, la levure et mélanger. \n6. Verser la préparation dans le moule.\n7. Couvrir d'une toile de cuisson. \n8. Enfourner à 160°C pendant 45-50 min.\n9. Laisser refroidir avant de démouler.",
+    "for": "6",
+    "preptime": "15",
+    "resttime": "0",
+    "cooktime": "45+50",
+    "mold": {
+        "name": "COFFRET FLOWER POWER OHRA®",
+        "picture": "https://boutique.guydemarle.com/17933-nq_social_share/coffret-flower-power-ohra.jpg",
+        "url": "https://anneetsesdelices.fr/admin/recette/#"
+    }
+}
