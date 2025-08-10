@@ -154,12 +154,12 @@ __metadata:
   linkType: hard
 
 "@akala/core@npm:^19.0.14":
-  version: 19.0.14
-  resolution: "@akala/core@npm:19.0.14"
+  version: 19.1.0
+  resolution: "@akala/core@npm:19.1.0"
   dependencies:
     debug: "npm:^4.3.7"
     reflect-metadata: "npm:^0.2.2"
-  checksum: 10/0175d5a4cfeebfe98b38f5bb83c748a5eea539fb1f21982d02a34387b8e580209e7701ed0dc614d5a1a6b83bd9519c4df5dd6373c363df8cb5f26e0807519a02
+  checksum: 10/465f98504b720a854141a8496c01858c7891d6a8641518d208faaa5f9893343cf60bd93020f907597776706652174c8556b28ba1cd066ea43e42916f293951f0
   languageName: node
   linkType: hard
 
