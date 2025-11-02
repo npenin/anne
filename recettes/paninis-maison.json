@@ -3,6 +3,11 @@
     "private": false,
     "toppings": [
         {
+            "quantity": "Pâte :",
+            "unit": "",
+            "name": ""
+        },
+        {
             "quantity": "500",
             "unit": "g",
             "name": "Farine T55"
@@ -31,11 +36,6 @@
             "quantity": "25",
             "unit": "g",
             "name": "Huile d'olive"
-        },
-        {
-            "quantity": " ",
-            "unit": "",
-            "name": ""
         },
         {
             "quantity": "Garniture :",
