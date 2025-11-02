@@ -8,9 +8,14 @@
             "name": ""
         },
         {
-            "quantity": "500",
+            "quantity": "350",
             "unit": "g",
             "name": "Farine T55"
+        },
+        {
+            "quantity": "150",
+            "unit": "g",
+            "name": "Semoule Blé Dur Fine"
         },
         {
             "quantity": "150",
