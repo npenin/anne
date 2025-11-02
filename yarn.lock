@@ -153,13 +153,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@akala/core@npm:^19.0.14":
-  version: 19.0.14
-  resolution: "@akala/core@npm:19.0.14"
+"@akala/core@npm:^43.0.0":
+  version: 43.0.0
+  resolution: "@akala/core@npm:43.0.0"
   dependencies:
-    debug: "npm:^4.3.7"
+    debug: "npm:^4.4.3"
     reflect-metadata: "npm:^0.2.2"
-  checksum: 10/0175d5a4cfeebfe98b38f5bb83c748a5eea539fb1f21982d02a34387b8e580209e7701ed0dc614d5a1a6b83bd9519c4df5dd6373c363df8cb5f26e0807519a02
+    yoctocolors: "npm:^2.1.2"
+  checksum: 10/7b347b19db77368df691ec91e230328d5ac343dd5a64d8ce95198bb663ca0aa57a804f72622e45023eae9846b156892e84ddb016ba905776552c30b82033ccaf
   languageName: node
   linkType: hard
 
@@ -359,7 +360,7 @@ __metadata:
   resolution: "anne@workspace:."
   dependencies:
     "@11ty/eleventy": "npm:^3.0.0"
-    "@akala/core": "npm:^19.0.14"
+    "@akala/core": "npm:^43.0.0"
     "@types/cookie-parser": "npm:^1.4.8"
     "@types/node": "npm:^22.10.1"
     body-parser: "npm:^1.20.3"
@@ -824,6 +825,18 @@ __metadata:
     supports-color:
       optional: true
   checksum: 10/71168908b9a78227ab29d5d25fe03c5867750e31ce24bf2c44a86efc5af041758bb56569b0a3d48a9b5344c00a24a777e6f4100ed6dfd9534a42c1dde285125a
+  languageName: node
+  linkType: hard
+
+"debug@npm:^4.4.3":
+  version: 4.4.3
+  resolution: "debug@npm:4.4.3"
+  dependencies:
+    ms: "npm:^2.1.3"
+  peerDependenciesMeta:
+    supports-color:
+      optional: true
+  checksum: 10/9ada3434ea2993800bd9a1e320bd4aa7af69659fb51cca685d390949434bc0a8873c21ed7c9b852af6f2455a55c6d050aa3937d52b3c69f796dab666f762acad
   languageName: node
   linkType: hard
 
@@ -3011,5 +3024,12 @@ __metadata:
   version: 4.0.0
   resolution: "yallist@npm:4.0.0"
   checksum: 10/4cb02b42b8a93b5cf50caf5d8e9beb409400a8a4d85e83bb0685c1457e9ac0b7a00819e9f5991ac25ffabb56a78e2f017c1acc010b3a1babfe6de690ba531abd
+  languageName: node
+  linkType: hard
+
+"yoctocolors@npm:^2.1.2":
+  version: 2.1.2
+  resolution: "yoctocolors@npm:2.1.2"
+  checksum: 10/6ee42d665a4cc161c7de3f015b2a65d6c65d2808bfe3b99e228bd2b1b784ef1e54d1907415c025fc12b400f26f372bfc1b71966c6c738d998325ca422eb39363
   languageName: node
   linkType: hard
