@@ -91,9 +91,13 @@ tags:
 
     try{
         const tmpRecipe=localStorage.getItem('tmp-{{recette.title | slugify }}');
-        if(tmpRecipe)
-            document.querySelector('.fa-trash').style.display = 'none'
-        window.loadRecipe(tmpRecipe ? JSON.parse(tmpRecipe) :  {{ recette | json }});
+        if (!tmpRecipe)
+        {
+            document.querySelector('.fa-trash').style.display = 'none';
+            window.loadRecipe({{ recette | json }});
+        }
+        else
+            window.loadRecipe( JSON.parse(tmpRecipe));
     }
     catch(e)
     {
