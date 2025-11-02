@@ -1,0 +1,58 @@
+{
+    "title": "Baguettes",
+    "private": false,
+    "toppings": [
+        {
+            "quantity": "320",
+            "unit": "g",
+            "name": "d'eau"
+        },
+        {
+            "quantity": "500",
+            "unit": "g",
+            "name": "Farine T55"
+        },
+        {
+            "quantity": "1",
+            "unit": "sachet",
+            "name": "Préparation pour pâte à pains"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Couvercle en silicone hermétique - Diamètre 30cm",
+            "picture": "https://boutique.guydemarle.com/7656-thickbox_default/couvercle-en-silicone-hermetique-diametre-30cm.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/2752-couvercle-en-silicone-hermetique-diametre-30cm.html"
+        },
+        {
+            "name": "Lame incisette - Découpe",
+            "picture": "https://boutique.guydemarle.com/2154-thickbox_default/lame-incisette-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/628-lame-incisette-guy-demarle.html"
+        },
+        {
+            "name": "Préparation pour pâtes à pains",
+            "picture": "https://boutique.guydemarle.com/16469-thickbox_default/preparation-pour-pates-a-pains-facile.jpg",
+            "url": "https://boutique.guydemarle.com/epicerie-en-ligne/117-preparation-pour-pates-a-pains-facile.html"
+        }
+    ],
+    "steps": "1. Dans une casserole, faites tiédir de l'eau.\n2. Dans la cuve de votre robot, mélanger la farine, la préparation pour pâte à pains.\n3. Ajouter l'eau tiéde et pétrir 5 à 10 min à vitesse lente.\n4. Réserver à température ambiante et à couvert pendant 40 min.\n5. Diviser la pâte en 3 boules.\n6. Façonner les boules en forme de baguettes.\n7. Poser votre moule sur une plaque aluminium perforée.\n8. Déposer vos baguettes dans les empreintes.\n9. Couvrir et laisser pousser pendant 35 min.\n10. Préchauffer votre four à 230°C avec un léchefrite au fond du four.\n10. Inciser les baguettes à l'aide de la lame incisette.\n11. Mettre de l'eau dans le lèchefrite chaud pour garder l'humidité dans le four.\n11. Enfourner à 230 °C pendant 15 min suivant votre four et la coloration souhaitée.",
+    "for": "12",
+    "preptime": "20",
+    "resttime": "40 -35 ",
+    "cooktime": "15",
+    "mold": {
+        "name": "Moule 3 baguettes OHRA®",
+        "picture": "https://boutique.guydemarle.com/17521-thickbox_default/moule-3-baguettes-ohra.jpg",
+        "url": "https://anneetsesdelices.fr/admin/recette/#"
+    }
+}
