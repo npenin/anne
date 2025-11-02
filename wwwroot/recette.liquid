@@ -19,7 +19,7 @@ tags:
             <span class="cooktime fal fa-oven">{{recette.cooktime}}</span>
         </div>
         <div class="mold">
-            <a href="{{recette.mold.url ?? '#'}}">
+            <a href="{{recette.mold.url ?? '#'}}?s=AnneetsesDelices">
                 <img src="{{recette.mold.picture}}" />
             </a>
             <span class="name">{{recette.mold.name}}</span>
@@ -31,7 +31,7 @@ tags:
         <ul>
             {%- for accessory in recette.accessories %}
                 <li class="mold">
-                    <a href="{{accessory.url}}">
+                    <a href="{{accessory.url}}?s=AnneetsesDelices">
                         <img src="{{accessory.picture}}" />
                     </a>
                     <span class="name">{{accessory.name}}</span>
