@@ -1,0 +1,83 @@
+{
+    "title": "Baguette viennoise",
+    "private": true,
+    "toppings": [
+        {
+            "quantity": "330",
+            "unit": "g",
+            "name": "Lait"
+        },
+        {
+            "quantity": "1",
+            "unit": "sachet",
+            "name": "Préparation pour pâte briochée"
+        },
+        {
+            "quantity": "500",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "30",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "40",
+            "unit": "g",
+            "name": "Beurre"
+        },
+        {
+            "quantity": "Sucre en grains (facultatif)",
+            "unit": "",
+            "name": ""
+        },
+        {
+            "quantity": "1",
+            "unit": "oeuf",
+            "name": ""
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Sucre à chouquettes perlé 200 g - Pâtes à sucres et sucres",
+            "picture": "https://boutique.guydemarle.com/11088-thickbox_default/sucre-a-chouquettes-perle-200g.jpg",
+            "url": "https://boutique.guydemarle.com/epicerie-en-ligne/3154-sucre-a-chouquettes-perle-200g.html"
+        },
+        {
+            "name": "Couvercle en silicone hermétique - Diamètre 30cm",
+            "picture": "https://boutique.guydemarle.com/7656-thickbox_default/couvercle-en-silicone-hermetique-diametre-30cm.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/2752-couvercle-en-silicone-hermetique-diametre-30cm.html"
+        },
+        {
+            "name": "Lame incisette - Découpe",
+            "picture": "https://boutique.guydemarle.com/2154-thickbox_default/lame-incisette-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/628-lame-incisette-guy-demarle.html"
+        },
+        {
+            "name": "Pour des brioches faciles ? La pâte à brioche par Guy Demarle",
+            "picture": "https://boutique.guydemarle.com/16464-thickbox_default/preparation-pour-pate-briochee-facile.jpg",
+            "url": "https://boutique.guydemarle.com/moules-a-brioches/118-preparation-pour-pate-briochee-facile.html"
+        }
+    ],
+    "steps": [],
+    "for": "6",
+    "preptime": "20",
+    "resttime": "1h+35min",
+    "cooktime": "18",
+    "mold": {
+        "name": "Moule 3 baguettes OHRA®",
+        "picture": "https://boutique.guydemarle.com/17521-thickbox_default/moule-3-baguettes-ohra.jpg",
+        "url": "https://anneetsesdelices.fr/admin/recette/#"
+    }
+}
