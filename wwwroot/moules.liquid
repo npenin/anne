@@ -14,9 +14,9 @@ tags:
   {%- for item in moules %}
     <li class="mold">
       
-      <a href="/moules/{{item.name | slugify}}">
+      <a href="/moules/{{item.displayName | slugify}}">
         <img src="{{ item.picture }}" height="64px" />
-        <span class="name">{{ item.name }}</span>
+        <span class="name">{{ item.displayName }}</span>
       </a>
     </li>
   {% endfor -%}

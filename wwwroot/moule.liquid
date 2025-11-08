@@ -5,9 +5,9 @@ pagination:
     size: 1
     alias: moule
     reverse: true
-permalink: "moules/{{ moule.name | slugify }}/"
+permalink: "moules/{{ moule.displayName | slugify }}/"
 eleventyComputed:
-    title: "{{moule.name}} - Anne et ses delices"
+    title: "{{moule.displayName}} - Anne et ses delices"
 ---
 <ul>
   {% for item in collections.recettes %}

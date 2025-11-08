@@ -5,6 +5,6 @@ export default async function ()
 {
     return distinctStrings((await recettes()).map(r => r.mold), m => m.name).map(m => ({
         ...m,
-        name: m.name.replace(/([A-Z])([A-Z]+)/g, (_, letter, letters) => letter + letters.toLowerCase()),
+        displayName: m.name.replace(/([A-Z])([A-Z]+)/g, (_, letter, letters) => letter + letters.toLowerCase()),
     }))
 };
