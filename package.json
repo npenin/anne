@@ -11,7 +11,7 @@
     "serve": "yarn dlx serve _site"
   },
   "dependencies": {
-    "body-parser": "^1.20.3",
+    "body-parser": "^2.0.0",
     "cookie-parser": "^1.4.7",
     "express": "^4.21.1"
   },
