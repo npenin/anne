@@ -1,7 +1,7 @@
 ﻿---
 eleventyImport:
     collections: ["recettes"]
-permalink: "recettes/{% if pagination.pageNumber > 0 %}page-{{ (pagination.pageNumber + 1) }}/{% endif %}index.html"
+permalink: "recettes/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber | plus: 1 }}/{% endif %}index.html"
 title: "Anne et ses recettes"
 layout: generic.liquid
 pagination:

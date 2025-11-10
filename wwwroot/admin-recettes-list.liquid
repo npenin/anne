@@ -1,7 +1,7 @@
 ﻿---
 eleventyImport:
     collections: ["allrecettes"]
-permalink: "admin/recettes/{% if pagination.pageNumber > 0 %}page-{{ (pagination.pageNumber + 1) }}/{% endif %}index.html"
+permalink: "admin/recettes/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber | plus: 1 }}/{% endif %}index.html"
 title: "Anne et son admin"
 layout: generic.liquid
 pagination:

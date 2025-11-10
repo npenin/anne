@@ -1,5 +1,5 @@
 ﻿---
-permalink: "moules/{% if pagination.pageNumber > 0 %}page-{{ (pagination.pageNumber + 1) }}/{% endif %}index.html"
+permalink: "moules/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber | plus: 1 }}/{% endif %}index.html"
 title: "Anne et ses moules Ohra®"
 layout: generic.liquid
 mainContentTitle: Moules
