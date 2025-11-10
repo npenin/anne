@@ -8,20 +8,21 @@
   "scripts": {
     "build": "yarn eleventy --config=eleventy.js --input=wwwroot",
     "watch": "yarn eleventy --config=eleventy.js --input=wwwroot --watch",
-    "serve": "yarn dlx serve _site"
+    "serve": "yarn dlx serve _site",
+    "fix-recipes": "node ./tools/fix-recipes.mjs"
   },
   "dependencies": {
-    "body-parser": "^1.20.3",
+    "body-parser": "^2.2.0",
     "cookie-parser": "^1.4.7",
-    "express": "^4.21.1"
+    "express": "^5.1.0"
   },
   "packageManager": "yarn@4.5.3",
   "devDependencies": {
-    "@11ty/eleventy": "^3.0.0",
-    "@akala/core": "^43.0.0",
-    "@types/cookie-parser": "^1.4.8",
-    "@types/node": "^22.10.1",
-    "marked": "^15.0.3",
-    "typescript": "^5.7.2"
+    "@11ty/eleventy": "^3.1.2",
+    "@akala/core": "^43.0.1",
+    "@types/cookie-parser": "^1.4.10",
+    "@types/node": "^24.10.0",
+    "marked": "^17.0.0",
+    "typescript": "^5.9.3"
   }
 }
