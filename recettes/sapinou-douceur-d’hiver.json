@@ -1,0 +1,108 @@
+{
+    "title": "Sapinou Douceur d’Hiver",
+    "private": false,
+    "toppings": [
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Mascarpone (à température ambiante)"
+        },
+        {
+            "quantity": "2",
+            "unit": "Œufs ",
+            "name": ""
+        },
+        {
+            "quantity": "80",
+            "unit": "g",
+            "name": "Sucre en poudre"
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "1",
+            "unit": "c-à-c",
+            "name": "Levure chimique"
+        },
+        {
+            "quantity": "1",
+            "unit": "pincée",
+            "name": "Sel"
+        },
+        {
+            "quantity": "20",
+            "unit": "g",
+            "name": "Huile pépins de raisin"
+        },
+        {
+            "quantity": "1 Orange ou 1 clémentine:",
+            "unit": "Le zeste + 3 c-à-s de jus",
+            "name": ""
+        },
+        {
+            "quantity": "1/2",
+            "unit": "c-à-c",
+            "name": "Cannelle en poudre"
+        },
+        {
+            "quantity": "1",
+            "unit": "pincée",
+            "name": "Épices à pain d'épices"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-thickbox_default/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Petit cul de poule 2L / 20 cm",
+            "picture": "https://boutique.guydemarle.com/2233-thickbox_default/petit-cul-de-poule-2l-20-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/683-petit-cul-de-poule-2l-20-cm-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13cm",
+            "picture": "https://boutique.guydemarle.com/5820-thickbox_default/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Toile de Cuisson 29 x 21 cm",
+            "picture": "https://boutique.guydemarle.com/12370-thickbox_default/toile-de-cuisson-en-silicone-29x21-ohra.jpg",
+            "url": "https://boutique.guydemarle.com/toiles-et-tapis-de-cuisson/4615-toile-de-cuisson-en-silicone-29x21-ohra.html"
+        },
+        {
+            "name": "Zesteur 4 en 1",
+            "picture": "https://boutique.guydemarle.com/7325-thickbox_default/zesteur-4-en-1.jpg",
+            "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/2527-zesteur-4-en-1.html"
+        },
+        {
+            "name": "Presse agrumes inox ",
+            "picture": "https://boutique.guydemarle.com/2219-thickbox_default/presse-agrumes-inox-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/675-presse-agrumes-inox-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée.\n2. Préchauffer votre four à 180°C.\n3. Dans un bol, tamiser ensemble la farine, la levure chimique, la pincée de sel et les épices. \n4. Dans un cul de poule, mélanger la mascarpone avec le sucre jusqu'à obtenir une crème lisse.\n5. A l’aide du zesteur, zester l'agrume (orange ou clémentine) au-dessus du mélange mascarpone-sucre.\n6. A l’aide du presse agrumes, presser l’agrume au-dessus d'un verre.\n7. Dans le mélange mascarpone-sucre, ajouter les œufs un par un, puis incorporer l'huile et le jus d’agrume. Mélanger bien.\n8. Verser le mélange d'ingrédients secs dans le mélange humide. Mélanger délicatement, juste assez pour qu'il n'y ait plus de trace de farine.\n9. Verser la préparation dans le moule, puis mettre une toile de cuisson et une plaque en aluminium perforée pour obtenir une base plate.\n10. Enfourner à 180°C pendant 30-35 min (suivant votre four).\n11. A la sortie du four, enlever la plaque aluminium et la toile de cuisson.\n12. Laisser refroidir avant de démouler.",
+    "for": "6",
+    "preptime": "20",
+    "resttime": "0",
+    "cooktime": "30-35",
+    "mold": {
+        "name": "Moule Sapinou OHRA®",
+        "picture": "https://boutique.guydemarle.com/18357-thickbox_default/moule-sapinou-ohra.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/9209-moule-sapinou-ohra.html"
+    }
+}
