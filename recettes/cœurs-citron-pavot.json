@@ -1,0 +1,98 @@
+{
+    "title": "Cœurs citron pavot",
+    "private": false,
+    "toppings": [
+        {
+            "quantity": "2",
+            "unit": "Œufs",
+            "name": ""
+        },
+        {
+            "quantity": "60",
+            "unit": "g",
+            "name": "Sucre en poudre"
+        },
+        {
+            "quantity": "70",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "40",
+            "unit": "g",
+            "name": "Huile d’olive"
+        },
+        {
+            "quantity": "40",
+            "unit": "g",
+            "name": "Lait"
+        },
+        {
+            "quantity": "1",
+            "unit": "c-à-c",
+            "name": "Graines de pavot"
+        },
+        {
+            "quantity": "2",
+            "unit": "grosses pincées",
+            "name": "Levure chimique"
+        },
+        {
+            "quantity": "1/2 citron",
+            "unit": "Zeste",
+            "name": ""
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-thickbox_default/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Petit cul de poule 2L / 20 cm",
+            "picture": "https://boutique.guydemarle.com/2233-thickbox_default/petit-cul-de-poule-2l-20-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/683-petit-cul-de-poule-2l-20-cm-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13cm",
+            "picture": "https://boutique.guydemarle.com/5820-thickbox_default/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Toile de Cuisson 29 x 21 cm",
+            "picture": "https://boutique.guydemarle.com/12370-thickbox_default/toile-de-cuisson-en-silicone-29x21-ohra.jpg",
+            "url": "https://boutique.guydemarle.com/toiles-et-tapis-de-cuisson/4615-toile-de-cuisson-en-silicone-29x21-ohra.html"
+        },
+        {
+            "name": "Zesteur 4 en 1",
+            "picture": "https://boutique.guydemarle.com/7325-thickbox_default/zesteur-4-en-1.jpg",
+            "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/2527-zesteur-4-en-1.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 20 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2179-thickbox_default/plaque-aluminium-perforee-20-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/652-plaque-aluminium-perforee-20-x-30-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée.\n2. Préchauffer votre four à 175°C.\n3. Dans un cul de poule, fouetter les œufs avec le sucre et les zestes jusqu'à ce mélange blanchisse légèrement. \n4. Incorporer l'huile d'olive puis le lait.\n5. Ajouter la farine, la levure et les graines de pavot. Mélanger délicatement jusqu'à obtenir une pâte lisse.\n6. Remplir les empreintes et poser sur le moule une toile de cuisson puis une plaque aluminium perforée.\n7. Enfourner à 175°C pendant 15 min (suivant votre four).\n8. A la sortie du four, enlever la plaque aluminium et la toile de cuisson.\n9. Laisser refroidir avant de démouler.\n10. Garniture du creux : coulis de fruits rouges, lemon curd, marmelade d'orange amère.",
+    "for": "5",
+    "preptime": "20",
+    "resttime": "0",
+    "cooktime": "15",
+    "mold": {
+        "name": "10 cœurs surprises Ohra",
+        "picture": "https://anneetsesdelices.fr/admin/recette/undefined",
+        "url": "https://anneetsesdelices.fr/admin/recette/undefined"
+    }
+}
