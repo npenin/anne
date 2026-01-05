@@ -1,0 +1,103 @@
+{
+    "title": "Mini roses à l’amande",
+    "private": true,
+    "toppings": [
+        {
+            "quantity": "75",
+            "unit": "g",
+            "name": "Poudre d'amandes"
+        },
+        {
+            "quantity": "60",
+            "unit": "g",
+            "name": "Sucre glace"
+        },
+        {
+            "quantity": "65",
+            "unit": "g",
+            "name": "Blancs d'œufs (environ 2 œufs)"
+        },
+        {
+            "quantity": "45",
+            "unit": "g",
+            "name": "Beurre"
+        },
+        {
+            "quantity": "15",
+            "unit": "g",
+            "name": "Crème liquide entière"
+        },
+        {
+            "quantity": "10",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "5",
+            "unit": "gouttes",
+            "name": "Amande amère"
+        },
+        {
+            "quantity": "1/2",
+            "unit": "c-à-c",
+            "name": "Rhum ambré (facultatif)"
+        },
+        {
+            "quantity": "1",
+            "unit": "pincée",
+            "name": "Sel"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-thickbox_default/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Petit cul de poule 2L / 20 cm",
+            "picture": "https://boutique.guydemarle.com/2233-thickbox_default/petit-cul-de-poule-2l-20-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/683-petit-cul-de-poule-2l-20-cm-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13cm",
+            "picture": "https://boutique.guydemarle.com/5820-thickbox_default/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Toile de Cuisson 29 x 21 cm",
+            "picture": "https://boutique.guydemarle.com/12370-thickbox_default/toile-de-cuisson-en-silicone-29x21-ohra.jpg",
+            "url": "https://boutique.guydemarle.com/toiles-et-tapis-de-cuisson/4615-toile-de-cuisson-en-silicone-29x21-ohra.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 20 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2179-thickbox_default/plaque-aluminium-perforee-20-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/652-plaque-aluminium-perforee-20-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 20 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2179-thickbox_default/plaque-aluminium-perforee-20-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/652-plaque-aluminium-perforee-20-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Maxi maryse en silicone",
+            "picture": "https://boutique.guydemarle.com/18602-thickbox_default/maxi-maryse-en-silicone-ohra-cadeau.jpg",
+            "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/9275-maxi-maryse-en-silicone-ohra-cadeau.html"
+        }
+    ],
+    "steps": "1. Préchauffer votre four à 160°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dans une casserole, faire chauffer le beurre jusqu'à avoir une coloration ambrée et une odeur de noisette. Filtrer et laisser tiédir. \n4. Dans une autre casserole, faire chauffer légèrement la crème puis ajouter l'arôme d'amande amère. Laisser infuser hors du feu.\n5. Dans un cul de poule, tamiser ensemble la poudre d’amandes, le sucre glace, la farine et le sel.\n6. Ajouter les blancs d'œufs et la crème aromatisée au mélange d'ingrédients secs.\n7. Mélanger à la maryse sans fouetter.\n8. Incorporer le beurre noisette tiède et mélanger. \n9. Remplir les empreintes et tapoter la plaque sur le plan de travail.\n10. Poser une toile de cuisson sur le moule puis une plaque  aluminium perforée pour avoir un fond plat. \n11. Enfourner à 160°C pendant 15-17 min.\n12. Attendre un peu avant de démouler. \n13. A déguster de préférence tiède.",
+    "for": "5",
+    "preptime": "20",
+    "resttime": "0",
+    "cooktime": "15-17",
+    "mold": {
+        "name": "Moule 15 mini roses",
+        "picture": "https://boutique.guydemarle.com/18561-thickbox_default/moule-15-mini-roses.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/9257-moule-15-mini-roses.html"
+    }
+}
