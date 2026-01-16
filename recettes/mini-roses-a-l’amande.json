@@ -1,6 +1,6 @@
 {
     "title": "Mini roses à l’amande",
-    "private": true,
+    "private": false,
     "toppings": [
         {
             "quantity": "75",
