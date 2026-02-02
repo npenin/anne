@@ -1,0 +1,110 @@
+{
+    "title": "Gaufres à l'orange",
+    "private": false,
+    "toppings": [
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Beurre pommade"
+        },
+        {
+            "quantity": "1",
+            "unit": "pincée",
+            "name": "Sel"
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Sucre glace"
+        },
+        {
+            "quantity": "3-4",
+            "unit": "",
+            "name": "Oranges (2 pour les zestes et 150ml de jus)"
+        },
+        {
+            "quantity": "3",
+            "unit": "Oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "125",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "5",
+            "unit": "g",
+            "name": "Levure chimique"
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Amandes en poudre"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Mini Louche",
+            "picture": "https://boutique.guydemarle.com/9092-nq_social_share/mini-louche-rose-cuisine.jpg",
+            "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/2528-mini-louche-cuisine.html"
+        },
+        {
+            "name": "Spatule double embouts",
+            "picture": "https://boutique.guydemarle.com/5792-nq_social_share/spatule-double-embout-gris-anthracite.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1793-spatule-double-embout-gris-anthracite.html"
+        },
+        {
+            "name": "Zesteur 4 en 1",
+            "picture": "https://boutique.guydemarle.com/7325-nq_social_share/zesteur-4-en-1.jpg",
+            "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine/2527-zesteur-4-en-1.html"
+        },
+        {
+            "name": "Presse agrumes inox",
+            "picture": "https://boutique.guydemarle.com/2219-large_default/presse-agrumes-inox-guy-demarle.webp",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/675-presse-agrumes-inox-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Toile de cuisson 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/12035-nq_social_share/toile-de-cuisson-en-silicone-40-x-30-cm.jpg",
+            "url": "https://boutique.guydemarle.com/toiles-et-tapis-de-cuisson/4508-toile-de-cuisson-en-silicone-40-x-30-cm.html"
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        }
+    ],
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée.\n2. Préchauffer le four à 200°C et y mettre le moule à gaufres vide.\n3. Dans un cul de poule, travailler le beurre pommade avec le sucre glace en utilisant la spatule double embouts.\n4. À l'aide du zesteur, prélever les zestes de la première orange, puis les ajouter dans le cul de poule et mélanger.\n5. Ajouter les oeufs un à un en mélangeant bien entre chaque ajout.\n6. Incorporer la farine, la levure chimique et la poudre d'amandes, puis mélanger.\n7. À l'aide du presse agrumes, presser les oranges et incorporer le jus au mélange précédent et mélanger.\n8. Sortir le moule du four et répartir la préparation dans les empreintes.\n9. Enfourner à 200°C pendant 18 min (suivant votre four).\n10. Décorer avec les zestes frais de la deuxième orange.",
+    "for": "8",
+    "preptime": "20",
+    "resttime": "0",
+    "cooktime": "18",
+    "cover": "/assets/recettes/gaufres-a-l'orange/cover-1000050841.jpg",
+    "gallery": [],
+    "mold": {
+        "name": "Moule à gaufres OHRA®",
+        "picture": "https://anneetsesdelices.fr/admin/recette/gaufres-a-l-orange/",
+        "url": "https://anneetsesdelices.fr/admin/recette/gaufres-a-l-orange/#"
+    }
+}
