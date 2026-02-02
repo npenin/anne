@@ -14,6 +14,239 @@ const root = window.location.href.substring(0, window.location.href.length - '{{
 
 await Notification.requestPermission();
 
+let coverImageUrl = '';
+let galleryImages = [];
+const coverImageEl = document.querySelector('.cover-image');
+const galleryGridEl = document.querySelector('.gallery-grid');
+const isGalleryEditor = !!document.querySelector('.gallery-editor');
+
+function slugifyTitle(title)
+{
+    return title.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/ +/g, '-').toLowerCase();
+}
+
+function getRecipeSlug()
+{
+    const title = document.querySelector('h1')?.innerText?.trim();
+    if (!title)
+        return '';
+    return slugifyTitle(title);
+}
+
+function safeFilename(name)
+{
+    return name
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/[^a-zA-Z0-9._-]+/g, '-')
+        .replace(/-+/g, '-')
+        .replace(/^-|-$/g, '')
+        .toLowerCase();
+}
+
+function notifyError(message)
+{
+    if (window.Swal?.fire)
+        Swal.fire({ title: 'Erreur', text: message, icon: 'error' });
+    else
+        alert(message);
+}
+
+function renderCover()
+{
+    if (!coverImageEl)
+        return;
+    if (coverImageUrl)
+    {
+        coverImageEl.src = coverImageUrl;
+        coverImageEl.dataset.hasImage = 'true';
+    }
+    else
+    {
+        coverImageEl.removeAttribute('src');
+        coverImageEl.dataset.hasImage = 'false';
+    }
+}
+
+function renderGallery()
+{
+    if (!galleryGridEl)
+        return;
+    galleryGridEl.innerHTML = '';
+    galleryImages.forEach((url, index) =>
+    {
+        const figure = document.createElement('figure');
+        const img = document.createElement('img');
+        img.src = url;
+        img.loading = 'lazy';
+        img.alt = 'Photo de la recette';
+        figure.appendChild(img);
+
+        if (isGalleryEditor)
+        {
+            const removeBtn = document.createElement('button');
+            removeBtn.type = 'button';
+            removeBtn.classList.add('remove-photo');
+            removeBtn.innerText = 'Supprimer';
+            removeBtn.addEventListener('click', () =>
+            {
+                galleryImages.splice(index, 1);
+                renderGallery();
+                saveLocally();
+            });
+            figure.appendChild(removeBtn);
+        }
+
+        galleryGridEl.appendChild(figure);
+    });
+}
+
+async function uploadFileToGithub(pathInRepo, contentBase64, message)
+{
+    const apiPath = pathInRepo.replace(/^\/+/, '');
+    let res = await fetch('https://api.github.com/repos/npenin/anne/contents/' + apiPath, {
+        headers: { accept: 'application/vnd.github+json', authorization: 'Bearer ' + token, 'X-GitHub-Api-Version': '2022-11-28' },
+        method: 'GET'
+    });
+
+    let sha;
+    if (res.ok)
+        sha = (await res.json()).sha;
+    else if (res.status !== 404)
+        throw new Error(await res.text());
+
+    const body = {
+        message,
+        committer: { name: localStorage.getItem('user.name'), email: localStorage.getItem('user.email') },
+        content: contentBase64
+    };
+
+    if (sha)
+        body.sha = sha;
+
+    res = await fetch('https://api.github.com/repos/npenin/anne/contents/' + apiPath, {
+        headers: { accept: 'application/vnd.github+json', authorization: 'Bearer ' + token, 'X-GitHub-Api-Version': '2022-11-28' },
+        method: 'PUT',
+        body: JSON.stringify(body)
+    });
+
+    if (!res.ok)
+        throw new Error(await res.text());
+
+    return res.json();
+}
+
+function fileToBase64(file)
+{
+    return new Promise((resolve, reject) =>
+    {
+        const reader = new FileReader();
+        reader.onload = () =>
+        {
+            const result = reader.result?.toString() || '';
+            const base64 = result.split(',')[1];
+            resolve(base64 || '');
+        };
+        reader.onerror = reject;
+        reader.readAsDataURL(file);
+    });
+}
+
+async function handleCoverUpload(file)
+{
+    const slug = getRecipeSlug();
+    if (!slug)
+    {
+        notifyError('Renseignez le titre de la recette avant de téléverser une couverture.');
+        return;
+    }
+
+    const filename = safeFilename(file.name || 'couverture');
+    const targetPath = `wwwroot/assets/recettes/${slug}/cover-${filename}`;
+    const base64 = await fileToBase64(file);
+
+    await uploadFileToGithub(targetPath, base64, `cover ${slug}`);
+    coverImageUrl = `/assets/recettes/${slug}/cover-${filename}`;
+    renderCover();
+    saveLocally();
+}
+
+async function handleGalleryUpload(files)
+{
+    const slug = getRecipeSlug();
+    if (!slug)
+    {
+        notifyError('Renseignez le titre de la recette avant de téléverser des photos.');
+        return;
+    }
+
+    for (const file of files)
+    {
+        const filename = safeFilename(file.name || 'photo');
+        const uniqueName = `gallery-${Date.now()}-${filename}`;
+        const targetPath = `wwwroot/assets/recettes/${slug}/${uniqueName}`;
+        const base64 = await fileToBase64(file);
+        await uploadFileToGithub(targetPath, base64, `gallery ${slug}`);
+        galleryImages.push(`/assets/recettes/${slug}/${uniqueName}`);
+    }
+
+    renderGallery();
+    saveLocally();
+}
+
+const coverInput = document.querySelector('#coverUpload');
+if (coverInput)
+    coverInput.addEventListener('change', async (ev) =>
+    {
+        const file = ev.target.files?.[0];
+        if (!file)
+            return;
+        try
+        {
+            await handleCoverUpload(file);
+        }
+        catch (error)
+        {
+            notifyError(error.message || 'Erreur lors du téléversement de la couverture.');
+        }
+        ev.target.value = '';
+    });
+
+const galleryInput = document.querySelector('#galleryUpload');
+if (galleryInput)
+    galleryInput.addEventListener('change', async (ev) =>
+    {
+        const files = Array.from(ev.target.files || []);
+        if (!files.length)
+            return;
+        try
+        {
+            await handleGalleryUpload(files);
+        }
+        catch (error)
+        {
+            notifyError(error.message || 'Erreur lors du téléversement des photos.');
+        }
+        ev.target.value = '';
+    });
+
+globalThis.triggerCoverUpload = function triggerCoverUpload()
+{
+    coverInput?.click();
+}
+
+globalThis.triggerGalleryUpload = function triggerGalleryUpload()
+{
+    galleryInput?.click();
+}
+
+globalThis.removeCover = function removeCover()
+{
+    coverImageUrl = '';
+    renderCover();
+    saveLocally();
+}
+
 dynamic(document.querySelector('.info>.mold>.name'), {
     Enter(ev)
     {
@@ -54,6 +287,11 @@ window.loadRecipe = function (recipe)
         })
     else
         mde.value(recipe.steps);
+
+    coverImageUrl = recipe.cover || '';
+    galleryImages = Array.isArray(recipe.gallery) ? recipe.gallery.filter(Boolean) : [];
+    renderCover();
+    renderGallery();
 
     document.querySelectorAll('.toolbar i').forEach(el => el.style.visibility = 'visible')
 }
@@ -96,6 +334,8 @@ export function getRecipe()
         preptime: document.querySelector('.info .preptime').innerText,
         resttime: document.querySelector('.info .resttime').innerText,
         cooktime: document.querySelector('.info .cooktime').innerText,
+        cover: coverImageUrl,
+        gallery: galleryImages,
         mold: {
             name: document.querySelector('.info>.mold').innerText,
             picture: document.querySelector('.info>.mold>a>img').src,

@@ -27,6 +27,16 @@ permalink: /admin/recette/
 </div>
 <header>
     <h1 contenteditable></h1>
+    <div class="cover-editor">
+        <div class="cover-preview">
+            <img class="cover-image" alt="Photo de couverture" />
+        </div>
+        <div class="photo-actions">
+            <input id="coverUpload" type="file" accept="image/*" />
+            <button type="button" onclick="triggerCoverUpload()">Téléverser la couverture</button>
+            <button type="button" onclick="removeCover()">Supprimer</button>
+        </div>
+    </div>
 </header>
 <div class="accessories panel">
     <h2>Accessoires</h2>
@@ -47,6 +57,14 @@ permalink: /admin/recette/
     </div>
     <ol></ol>
     <button onclick="addPrepStep(true)"><i class="fal fa-plus"></i></button>
+    <div class="gallery-editor">
+        <h3>Galerie</h3>
+        <div class="gallery-grid"></div>
+        <div class="photo-actions">
+            <input id="galleryUpload" type="file" accept="image/*" multiple />
+            <button type="button" onclick="triggerGalleryUpload()">Ajouter des photos</button>
+        </div>
+    </div>
     <p style="padding-left:24px"><a href="https://www.guydemarle.com/profil/annep_a143-44563">Anne Penin</a>,
         conseillère Guy Demarle</p>
 </div>

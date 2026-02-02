@@ -11,6 +11,13 @@ eleventyComputed:
 tags:
     - recettes
 ---
+    <header>
+        {% if recette.cover %}
+            <img class="backdrop-cover" src="{{recette.cover}}" />
+            <img class="panel cover" src="{{recette.cover}}" />
+        {% endif %}
+        <h1 class="panel">{{recette.title}}</h1>
+    </header>
     <div class="info panel">
         <div>
             <span class="count fal fa-utensils"></i>{{recette.for}}</span>
@@ -40,9 +47,6 @@ tags:
         </ul>
     </div>
         {% endif %}
-    <header>
-        <h1>{{recette.title}}</h1>
-    </header>
     <div class="toppings panel">
         <h2>Ingrédients</h2>
         <ul>
@@ -66,6 +70,16 @@ tags:
     <div class="steps panel">
         <h2>Préparation</h2>
         {{recette.formattedSteps}}
+        {% if recette.gallery and recette.gallery.length %}
+        <div class="gallery">
+            <h3>Galerie</h3>
+            <div class="gallery-grid">
+                {%- for photo in recette.gallery %}
+                    <img src="{{photo}}" alt="Photo de la recette" loading="lazy" />
+                {% endfor -%}
+            </div>
+        </div>
+        {% endif %}
         <p style="padding-left:24px"><a
                 href="https://www.guydemarle.com/profil/annep_a143-44563">Anne Penin</a>, votre conseillère Guy Demarle</p>
     </div>
