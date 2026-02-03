@@ -55,7 +55,7 @@ h1:empty::before {
 
 body {
     display: grid;
-    grid-template-rows: auto auto 1fr 120px;
+    grid-template-rows: auto auto 1fr 1fr 1fr 120px;
     grid-template-columns: 35% 65%;
 }
 
@@ -164,13 +164,19 @@ a.panel {
 
 .toppings {
     grid-column: 1;
+    grid-row: 4;
+}
+
+.accessories {
+    padding: 10px;
+    grid-column: 1;
     grid-row: 3;
 }
 
 .steps {
     grid-column: 2;
     grid-row-start: 3;
-    grid-row-end: 5;
+    grid-row-end: 7;
 }
 
 .toppings,
@@ -196,7 +202,7 @@ a.panel {
 
 .logo {
     grid-column: 1;
-    grid-row: 4;
+    grid-row: 6;
 
     /* -webkit-print-color-adjust: exact;
     print-color-adjust: exact; */
@@ -264,7 +270,7 @@ ol>li:before {
 
 header,
 h1 {
-    grid-column-start: 2;
+    grid-column-start: 1;
     grid-column-end: 3;
     grid-row: 1/1;
 }
@@ -279,7 +285,6 @@ header {
         top: 0;
         object-fit: cover;
         max-width: 100vw;
-        height: 75vh;
         mask-image: linear-gradient(0deg, #fff0, #ffff 80%);
 
         +h1 {
@@ -290,8 +295,9 @@ header {
     img.cover {
         display: none;
         object-fit: cover;
-        width: 100vw;
+        width: calc(100% - 40px);
         grid-row: 2;
+        grid-column: 1;
     }
 }
 
@@ -312,6 +318,8 @@ h2 {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    grid-column: 1;
+    grid-row: 2;
 }
 
 .cover-preview {
@@ -321,8 +329,11 @@ h2 {
 .cover-image {
     width: calc(100% - 20px);
     object-fit: cover;
+    max-height: 320px;
 }
 
+.cover:not([src]),
+.cover[src=""],
 .cover-image:not([src]),
 .cover-image[src=""],
 .cover-image[data-has-image="false"] {
@@ -381,7 +392,7 @@ h2 {
 }
 
 .info {
-    grid-column: 2;
+    grid-column: span 2;
     grid-row: 2;
     display: flex;
     flex-direction: column;
@@ -473,12 +484,6 @@ h2 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.accessories {
-    padding: 10px;
-    grid-column: 1;
-    grid-row: span 2;
-}
-
 .accessories>ul {
     padding: 0;
     display: flex;
@@ -534,6 +539,17 @@ h2 {
 
     .panel {
         margin: 10px;
+    }
+
+    header {
+
+        img.backdrop-cover {
+            display: none;
+        }
+
+        img.cover {
+            display: block;
+        }
     }
 
     .info {
