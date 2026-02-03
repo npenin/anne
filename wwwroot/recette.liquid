@@ -5,7 +5,7 @@ pagination:
     size: 1
     alias: recette
     addAllPagesToCollections: true
-permalink: "recettes/{{ recette.title | slugify }}/"
+permalink: "recettes/{% if recette.slug %}{{ recette.slug }}{% else %}{{ recette.title | slugify }}{% endif %}/"
 eleventyComputed:
     title: "{{recette.title}} - Anne et ses delices"
 tags:
