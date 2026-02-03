@@ -11,6 +11,20 @@ permalink: /admin/recette/
         <label for="private">Privée</label>
     </div>
 </div>
+
+<header>
+    <h1 contenteditable></h1>
+    <div class="cover-editor">
+        <div class="cover-preview">
+            <img class="cover-image panel" alt="Photo de couverture" />
+        </div>
+        <div class="photo-actions">
+            <input id="coverUpload" type="file" accept="image/*" />
+            <button type="button" onclick="triggerCoverUpload()">Téléverser la couverture</button>
+            <button type="button" onclick="removeCover()">Supprimer</button>
+        </div>
+    </div>
+</header>
 <div class="info panel">
     <div>
         <span contenteditable class="count fal fa-utensils"></i></span>
@@ -25,19 +39,6 @@ permalink: /admin/recette/
         <span class="name" contenteditable=""></span>
     </div>
 </div>
-<header>
-    <h1 contenteditable></h1>
-    <div class="cover-editor">
-        <div class="cover-preview">
-            <img class="cover-image" alt="Photo de couverture" />
-        </div>
-        <div class="photo-actions">
-            <input id="coverUpload" type="file" accept="image/*" />
-            <button type="button" onclick="triggerCoverUpload()">Téléverser la couverture</button>
-            <button type="button" onclick="removeCover()">Supprimer</button>
-        </div>
-    </div>
-</header>
 <div class="accessories panel">
     <h2>Accessoires</h2>
     <ul></ul>
