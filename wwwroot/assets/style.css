@@ -365,6 +365,15 @@ h2 {
     margin-top: 20px;
 }
 
+.gallery {
+    display: none;
+}
+
+.gallery:has(.gallery-grid figure),
+.gallery:has(.photo-actions) {
+    display: block;
+}
+
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
