@@ -320,6 +320,14 @@ h2 {
     gap: 10px;
     grid-column: 1;
     grid-row: 2;
+
+    .cover-preview+#removeCover {
+        display: none;
+    }
+
+    .cover-preview:has(img.cover-image[src])+#removeCover {
+        display: block;
+    }
 }
 
 .cover-preview {
@@ -362,7 +370,7 @@ h2 {
 
 .gallery-editor,
 .gallery {
-    margin-top: 20px;
+    margin: 20px;
 }
 
 .gallery {
