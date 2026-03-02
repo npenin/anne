@@ -1,0 +1,85 @@
+{
+    "title": "Moelleux salés à la mascarpone",
+    "slug": "moelleux-sales-a-la-mascarpone",
+    "private": false,
+    "toppings": [
+        {
+            "quantity": "125",
+            "unit": "g",
+            "name": "Mascarpone"
+        },
+        {
+            "quantity": "2",
+            "unit": "Œufs ",
+            "name": ""
+        },
+        {
+            "quantity": "30",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "50",
+            "unit": "g",
+            "name": "Allumettes lardons (ou poulet, bacon, ...)"
+        },
+        {
+            "quantity": "40",
+            "unit": "g",
+            "name": "Gruyère râpé"
+        },
+        {
+            "quantity": "Sel",
+            "unit": "",
+            "name": ""
+        },
+        {
+            "quantity": "Poivre",
+            "unit": "",
+            "name": ""
+        },
+        {
+            "quantity": "Piment d'espelette (suivant vos goûts)",
+            "unit": "",
+            "name": ""
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-thickbox_default/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Bol micro-ondes 1L",
+            "picture": "https://boutique.guydemarle.com/3363-thickbox_default/bol-micro-ondes-1l.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1009-bol-micro-ondes-1l.html"
+        },
+        {
+            "name": "Pichet verseur ",
+            "picture": "https://boutique.guydemarle.com/2230-thickbox_default/pichet-verseur-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/681-pichet-verseur-guy-demarle.html"
+        },
+        {
+            "name": "Spatule double embouts",
+            "picture": "https://boutique.guydemarle.com/5792-thickbox_default/spatule-double-embout-gris-anthracite.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1793-spatule-double-embout-gris-anthracite.html"
+        },
+        {
+            "name": "Demi fouet",
+            "picture": "https://boutique.guydemarle.com/18669-thickbox_default/demi-fouet.jpg",
+            "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/9284-demi-fouet.html"
+        }
+    ],
+    "steps": "1. Dans une poêle, faire revenir les lardons, les égoutter et réserver. \n2. Dans le pichet verseur, mélanger la mascarpone, les œufs et la farine.\n3. Incorporer les allumettes de lardons cuits (ou les allumettes de poulet cru, allumettes bacon cru, ...), le gruyère râpé, les épices et mélanger.\n4. Verser dans les empreintes.\n5. Déposer les empreintes dans votre Air Fryer. \n5. Cuire en mode bake, à 160°C pendant 18 min.\n\nNB : Pour un résultat parfait, n'hésitez pas à adapter le temps de cuisson et la température à votre appareil, la recette ayant été réalisée dans la Cosori Twinfry 10L.\n",
+    "for": "6",
+    "preptime": "10",
+    "resttime": "0",
+    "cooktime": "18",
+    "gallery": [],
+    "mold": {
+        "name": "Moules Individuels Air Fryer Muffins/Cupcakes (x6) OHRA®",
+        "picture": "https://boutique.guydemarle.com/18660-thickbox_default/moules-individuels-air-fryer-muffins-cupcakes-x6-ohra.jpg",
+        "url": "https://anneetsesdelices.fr/admin/recette/#"
+    }
+}
