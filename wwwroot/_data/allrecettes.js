@@ -67,7 +67,7 @@ export default async function ()
 
         // promises.push(fs.writeFile(path.join('./recettes', r.filepath + '.json'), JSON.stringify({ ...r, steps: r.formattedSteps, formattedSteps: undefined, filepath: undefined }, null, 4)));
 
-        result.formattedSteps = parse(r.formattedSteps);
+        result.formattedSteps = parse(r.formattedSteps, { gfm: true });
         return { ...r, ...result };
     });
 
