@@ -55,7 +55,7 @@ h1:empty::before {
 
 body {
     display: grid;
-    grid-template-rows: auto auto 1fr 1fr 1fr 120px;
+    grid-template-rows: auto auto 1fr 1fr auto 120px;
     grid-template-columns: 35% 65%;
 }
 
