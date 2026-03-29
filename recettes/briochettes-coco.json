@@ -1,0 +1,75 @@
+{
+    "title": "Briochettes coco",
+    "slug": "briochettes-coco",
+    "private": false,
+    "toppings": [
+        {
+            "quantity": "250",
+            "unit": "g",
+            "name": "Noix de coco râpée"
+        },
+        {
+            "quantity": "300",
+            "unit": "g",
+            "name": "Yaourt nature (environ 2 pots et demi)"
+        },
+        {
+            "quantity": "5",
+            "unit": "Œufs",
+            "name": ""
+        },
+        {
+            "quantity": "80",
+            "unit": "g",
+            "name": "Cassonade"
+        },
+        {
+            "quantity": "1",
+            "unit": "sachet",
+            "name": "Levure chimique"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-thickbox_default/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm ",
+            "picture": "https://boutique.guydemarle.com/2234-thickbox_default/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-thickbox_default/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13cm",
+            "picture": "https://boutique.guydemarle.com/5820-thickbox_default/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Mini louche de cuisine en silicone",
+            "picture": "https://boutique.guydemarle.com/7327-thickbox_default/mini-louche-cuisine.jpg",
+            "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/2528-mini-louche-cuisine.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-thickbox_default/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dans un cul de poule, mélanger les œufs et la cassonade.\n4. Ajouter le yaourt, la noix de coco et la levure puis mélanger.\n5. Avec la mini-spatule remplir les empreintes.\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 170°C pendant 20 min (suivant votre four).\n8. Laisser refroidir avant de démouler.",
+    "for": "12",
+    "preptime": "5",
+    "resttime": "0",
+    "cooktime": "20",
+    "gallery": [],
+    "mold": {
+        "name": "Moule 12 briochettes OHRA® - Guy Demarle",
+        "picture": "https://boutique.guydemarle.com/17601-thickbox_default/moule-12-briochettes-ohra-guy-demarle.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/8787-moule-12-briochettes-ohra-guy-demarle.html"
+    }
+}
