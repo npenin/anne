@@ -7,11 +7,34 @@ pagination:
     addAllPagesToCollections: true
 permalink: "recettes/{% if recette.slug %}{{ recette.slug }}{% else %}{{ recette.title | slugify }}{% endif %}/"
 eleventyComputed:
-    title: "{{recette.title}} - Anne et ses delices"
+    title: "{{recette.title}} - Anne et ses Délices"
+    description: "Découvrez la recette {{ recette.title }} sur Anne et ses Délices."
+    meta:
+        og:type: "recipe"
+        og:title: "{{recette.title}} - Anne et ses Délices"
+        og:description: "Découvrez la recette {{ recette.title }} sur Anne et ses Délices."
+        og:image: "{{recette.cover | default: '/assets/logo.svg'}}"
+        og:url: "https://anneetsesdelices.fr{{ page.url }}"
 tags:
     - recettes
 ---
-    <header>
+
+        <script type="application/ld+json">{
+            "@context": "https://schema.org",
+            "@type": "Recipe",
+            "name": {{ recette.title | jsonify }},
+            "image": {{ recette.cover | default: '/assets/logo.svg' | jsonify }},
+            "description": {{ recette.description | default: recette.intro | default: '' | jsonify }},
+            "author": {"@type": "Person", "name": "Anne Penin"},
+            "recipeIngredient": {{ recette.toppings | map: 'name' | jsonify }},
+            "recipeInstructions": {{ recette.steps | jsonify }},
+            "prepTime": {{ recette.preptime | default: '' | jsonify }},
+            "cookTime": {{ recette.cooktime | default: '' | jsonify }},
+            "totalTime": {{ recette.totaltime | default: '' | jsonify }},
+            "recipeYield": {{ recette.for | default: '' | jsonify }}
+        }</script>
+
+        <header>
         {% if recette.cover %}
             <img class="backdrop-cover" src="{{recette.cover}}" />
             <img class="panel cover" src="{{recette.cover}}" />

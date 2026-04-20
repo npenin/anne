@@ -11,6 +11,7 @@ meta:
     <link rel="stylesheet" href="/assets/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
     <title>{{ title }}</title>
+    <meta name="description" content="{{ description | default: 'Recettes gourmandes par Anne, conseillère Guy Demarle.' }}">
     <!-- Google Tag Manager -->
     <script>
       (function(w, d, s, l, i) {
@@ -30,12 +31,26 @@ meta:
     <meta name="generator" content="{{ eleventy.generator }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <meta property="og:title" content="{{title}}" />
-    <meta property="og:url" content="{{permalink}}" />
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="{{ description | default: 'Recettes gourmandes et astuces cuisine par Anne, conseillère Guy Demarle.' }}" />
+    <meta property="og:url" content="https://anneetsesdelices.fr{{ permalink | url }}" />
+    <link rel="canonical" href="https://anneetsesdelices.fr{{ permalink | url }}" />
 
-    {%- for item in meta %}
-      <meta property="{{foorloop.index}}" content="{{item}}" />
-    {% endfor -%}
+    {%- if meta %}
+      {%- if meta["og:type"] %}<meta property="og:type" content="{{ meta["og:type"] }}" />{% endif -%}
+      {%- if meta["og:title"] %}<meta property="og:title" content="{{ meta["og:title"] }}" />{% endif -%}
+      {%- if meta["og:description"] %}<meta property="og:description" content="{{ meta["og:description"] }}" />{% endif -%}
+      {%- if meta["og:image"] %}<meta property="og:image" content="{{ meta["og:image"] }}" />{% endif -%}
+      {%- if meta["og:url"] %}<meta property="og:url" content="{{ meta["og:url"] }}" />{% endif -%}
+    {% endif -%}
+
+    <!-- Placeholder for JSON-LD structured data -->
+    {%- if structuredData %}
+    <script type="application/ld+json">
+      {{ structuredData | jsonify }}
+    </script>
+    {% endif -%}
   </head>
 
   <body>
