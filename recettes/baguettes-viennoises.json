@@ -34,8 +34,8 @@
         },
         {
             "quantity": "1",
-            "unit": "oeuf",
-            "name": ""
+            "unit": "",
+            "name": "oeuf"
         }
     ],
     "accessories": [
