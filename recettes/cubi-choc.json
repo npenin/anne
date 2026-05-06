@@ -1,0 +1,95 @@
+{
+    "title": "Cubi-choc",
+    "slug": "cubi-choc",
+    "private": true,
+    "toppings": [
+        {
+            "quantity": "4",
+            "unit": "Œufs",
+            "name": ""
+        },
+        {
+            "quantity": "230",
+            "unit": "g",
+            "name": "Sucre en poudre"
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Crème fraîche épaisse"
+        },
+        {
+            "quantity": "70",
+            "unit": "g",
+            "name": "Beurre"
+        },
+        {
+            "quantity": "135",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "35",
+            "unit": "g",
+            "name": "Cacao amer en poudre"
+        },
+        {
+            "quantity": "1",
+            "unit": "sachet",
+            "name": "Levure chimique"
+        },
+        {
+            "quantity": "1",
+            "unit": "pincée",
+            "name": "Sel"
+        },
+        {
+            "quantity": "125",
+            "unit": "g",
+            "name": "Framboises fraîches ou surgelées (facultatif)"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-thickbox_default/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-thickbox_default/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-thickbox_default/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm ",
+            "picture": "https://boutique.guydemarle.com/2234-thickbox_default/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Bol micro-ondes 1L",
+            "picture": "https://boutique.guydemarle.com/3363-thickbox_default/bol-micro-ondes-1l.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1009-bol-micro-ondes-1l.html"
+        },
+        {
+            "name": "Fouet 13cm",
+            "picture": "https://boutique.guydemarle.com/5820-thickbox_default/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Préchauffer votre four à 175°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dans le bol micro-ondes, faire fondre le beurre et réserver.\n. Dans un cul-de-poule, mélanger les œufs, le sucre, le sel et la crème fraîche jusqu'à ce que la préparation soit bien homogène.\n5. Ajouter le beurre fondu et mélanger.\n6. Incorporer le cacao, la farine et la levure tamisées et élanger sans excès\n7. Si vous mettez des framboises : Verser la moitié de la pâte, déposer les fruits, puis recouvrir avec le reste de pâte.\n8. Enfourner à 175°C pour 35 min\n9. Laisser refroidir avant de démouler.",
+    "for": "8-10",
+    "preptime": "15",
+    "resttime": "0",
+    "cooktime": "45",
+    "gallery": [],
+    "mold": {
+        "name": "Moule Cubicube en Silicone - Guy Demarle",
+        "picture": "https://boutique.guydemarle.com/12400-thickbox_default/moule-en-silicone-cubicube-ohra.jpg",
+        "url": "https://anneetsesdelices.fr/admin/recette/#"
+    }
+}
