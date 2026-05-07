@@ -105,9 +105,9 @@ function renderGallery(images)
 {
     if (!galleryGridEl)
         return;
-    images = Array.isArray(images) ? images : [];
+    galleryImages = Array.isArray(images) ? images : [];
     galleryGridEl.innerHTML = '';
-    images.forEach((url, index) =>
+    galleryImages.forEach((url, index) =>
     {
         const figure = document.createElement('figure');
         const img = document.createElement('img');
@@ -121,13 +121,13 @@ function renderGallery(images)
             const removeBtn = document.createElement('button');
             removeBtn.type = 'button';
             removeBtn.classList.add('remove-photo');
-            removeBtn.innerText = 'Supprimer';
+            removeBtn.innerHTML = '<i class="fa fa-trash"></i>';
             removeBtn.addEventListener('click', () =>
             {
                 if (isBlobUrl(url))
                     pendingGalleryFiles.delete(url);
-                images.splice(index, 1);
-                renderGallery(images);
+                galleryImages.splice(index, 1);
+                renderGallery(galleryImages);
                 saveLocally();
             });
             figure.appendChild(removeBtn);
@@ -384,7 +384,51 @@ export function getRecipe()
     };
 }
 
-function saveLocally() { globalThis.saveLocally(getRecipe()); }
+async function blobToBase64(blobUrl: string): Promise<string>
+{
+    const response = await fetch(blobUrl);
+    const blob = await response.blob();
+    return new Promise((resolve, reject) =>
+    {
+        const reader = new FileReader();
+        reader.onloadend = () => resolve(reader.result as string);
+        reader.onerror = reject;
+        reader.readAsDataURL(blob);
+    });
+}
+
+export async function getRecipeWithBase64Images()
+{
+    const recipe = getRecipe();
+
+    // Convert cover blob to base64
+    if (recipe.cover && isBlobUrl(recipe.cover))
+    {
+        recipe.cover = await blobToBase64(recipe.cover);
+    }
+
+    // Convert gallery blobs to base64
+    if (Array.isArray(recipe.gallery))
+    {
+        recipe.gallery = await Promise.all(
+            recipe.gallery.map(async (url) =>
+            {
+                if (url && isBlobUrl(url))
+                {
+                    return await blobToBase64(url);
+                }
+                return url;
+            })
+        );
+    }
+
+    return recipe;
+}
+
+function saveLocally()
+{
+    getRecipeWithBase64Images().then(recipe => globalThis.saveLocally(recipe));
+}
 
 async function uploadPendingImages(recipe)
 {
