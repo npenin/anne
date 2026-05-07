@@ -49,7 +49,7 @@ function isBlobUrl(url)
 
 function slugifyTitle(title)
 {
-    return title.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/ +/g, '-').toLowerCase();
+    return title.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[ ’]+/g, '-').toLowerCase();
 }
 
 function getRecipeSlug()
