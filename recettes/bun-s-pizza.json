@@ -14,24 +14,24 @@
             "name": "Farine"
         },
         {
-            "quantity": "15",
+            "quantity": "30",
             "unit": "g",
             "name": "Huile d’olive"
         },
         {
-            "quantity": "190",
+            "quantity": "200",
             "unit": "g",
             "name": "Eau tiède"
         },
         {
             "quantity": "150",
             "unit": "g",
-            "name": "Fromage râpé"
+            "name": "Fromage râpé (emmental, mozza, comté, ...)"
         },
         {
             "quantity": "100",
             "unit": "g",
-            "name": "Jambon"
+            "name": "Dès de jambon ou chorizo"
         },
         {
             "quantity": "1",
@@ -39,8 +39,8 @@
             "name": "Champignons"
         },
         {
-            "quantity": "1",
-            "unit": "briquette",
+            "quantity": "100",
+            "unit": "g",
             "name": "Coulis de tomates"
         },
         {
@@ -96,20 +96,20 @@
         "Dans un cul de poule, mélanger la farine et la préparation pour pâtes à pizzas.",
         "Ajouter l’eau tiède, l’huile d’olive et mélanger la pâte pendant 5 min.",
         "Laisser lever pendant 30 min en couvrant le cul de poule.",
-        "Reprendre la pâte et diviser en 20 boules.",
+        "Reprendre la pâte, la dégazer (en appuyant dessus avec le point) et la diviser en 20 boules.",
         "Déposer un peu de farine sur les boules et les aplatir à l'aide du rouleau à pâtisserie.",
-        "Déposer au centre de la pâte, le coulis de tomates, les champignons, le fromage râpé.",
+        "Déposer au centre de la pâte, le coulis de tomates, les champignons, le fromage râpé et les petits dés de jambon ou chorizo.",
         "Refermer chaque boule.",
         "Déposer les boules dans les empreintes avec la partie fermée en dessous.",
-        "Laisser pousser 20 min.",
+        "Laisser pousser 20 min à couvert.",
         "Préchauffer votre four à 210 °C.",
         "Badigeonner d’huile d’olive, déposer du fromage râpé et des épices.",
-        "Enfourner à 200°C pendant 20 min selon votre four."
+        "Enfourner à 200°C pendant 18-20 min selon votre four."
     ],
-    "for": "5",
+    "for": "8",
     "preptime": "25",
     "resttime": "50",
-    "cooktime": "20",
+    "cooktime": "18-20",
     "gallery": [],
     "mold": {
         "name": "Moule Cubicube OHRA®",
