@@ -335,7 +335,7 @@ globalThis.loadRecipe = function (recipe)
     document.querySelectorAll<HTMLElement>('.toolbar i').forEach(el => el.style.visibility = 'visible')
 }
 
-const mde = new globalThis.SimpleMDE({ spellChecker: false, indentWithTabs: false, element: document.querySelector('#steps>textarea') })
+const mde = new globalThis.EasyMDE({ spellChecker: false, forceSync: true, indentWithTabs: false, element: document.querySelector('#steps>textarea') })
 mde.codemirror.on('changes', () => saveLocally());
 
 document.querySelector('.mold').addEventListener('click', () => document.querySelector<HTMLElement>('.info>.mold>.name').focus());
