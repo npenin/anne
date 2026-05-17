@@ -1,0 +1,100 @@
+{
+    "title": "Muffins cœur de fraise",
+    "slug": "muffins-cœur-de-fraise",
+    "private": true,
+    "toppings": [
+        {
+            "quantity": "1",
+            "unit": "Oeuf",
+            "name": ""
+        },
+        {
+            "quantity": "30",
+            "unit": "g",
+            "name": "Sucre en poudre "
+        },
+        {
+            "quantity": "1",
+            "unit": "sachet",
+            "name": "Sucre vanillé"
+        },
+        {
+            "quantity": "10",
+            "unit": "g",
+            "name": "Miel acacia"
+        },
+        {
+            "quantity": "1",
+            "unit": "c-à-c",
+            "name": "Extrait de vanille liquide"
+        },
+        {
+            "quantity": "60",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "1/2",
+            "unit": "c-à-c",
+            "name": "Levure chimique (2 g)"
+        },
+        {
+            "quantity": "40",
+            "unit": "g",
+            "name": "Beurre"
+        },
+        {
+            "quantity": "Confiture de fraises ",
+            "unit": "",
+            "name": ""
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-thickbox_default/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-thickbox_default/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-thickbox_default/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Pichet verseur",
+            "picture": "https://boutique.guydemarle.com/2230-thickbox_default/pichet-verseur-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/681-pichet-verseur-guy-demarle.html"
+        },
+        {
+            "name": "Bol micro-ondes 1L",
+            "picture": "https://boutique.guydemarle.com/3363-thickbox_default/bol-micro-ondes-1l.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1009-bol-micro-ondes-1l.html"
+        },
+        {
+            "name": "Fouet 13cm ",
+            "picture": "https://boutique.guydemarle.com/5820-thickbox_default/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Toile de cuisson 40 x 30 cm en silicone",
+            "picture": "https://boutique.guydemarle.com/12035-thickbox_default/toile-de-cuisson-en-silicone-40-x-30-cm.jpg",
+            "url": "https://boutique.guydemarle.com/toiles-et-tapis-de-cuisson/4508-toile-de-cuisson-en-silicone-40-x-30-cm.html"
+        }
+    ],
+    "steps": "1. Sur une toile de cuisson posée sur une plaque aluminium 24 petites noisettes de confiture de fraises. \n2. Placer au congélateur pendant 20 à 30 minutes. \n3. Préchauffer le four à 160°C\n4. Dans le bol micro-ondes, faire fondre le beurre et le réserver. \n5. Dans un cul-de-poule, blanchir l'œuf avec les sucres, le miel et la vanille au fouet. \n6. Ajouter la farine et la levure tamisées et mélanger bien.\n7. Incorporer le beurre fondu jusqu'à obtenir une pâte homogène.\n8. Sortir les inserts de confiture du congélateur. \n9. Prendre la plaque aluminium perforée et poser le moule dessus.\n9. Garnir le fond de chaque empreinte avec une petite noisette de pâte. \n9. Déposer un insert de confiture au centre de chaque empreinte. \n10. Recouvrir avec le reste de la pâte.\n11. Enfourner à 160°C pendant 12 - 15 minutes (suivant votre four). \n12. Laisser refroidir avant de démouler. \n ",
+    "for": "6",
+    "preptime": "10",
+    "resttime": "20",
+    "cooktime": "12-15",
+    "gallery": [],
+    "mold": {
+        "name": "Moule Cubicube en Silicone - Guy Demarle",
+        "picture": "https://boutique.guydemarle.com/12400-thickbox_default/moule-en-silicone-cubicube-ohra.jpg",
+        "url": "https://anneetsesdelices.fr/admin/recette/#"
+    }
+}
