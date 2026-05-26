@@ -5,8 +5,8 @@ pagination:
     size: 1
     alias: recette
     addAllPagesToCollections: true
-permalink: "recettes/{% if recette.slug %}{{ recette.slug }}{% else %}{{ recette.title | slugify }}{% endif %}/"
 eleventyComputed:
+    permalink: "recettes/{% if recette.slug %}{{ recette.slug }}{% else %}{{ recette.title | slugify }}{% endif %}/"
     title: "{{recette.title}} - Anne et ses Délices"
     description: "Découvrez la recette {{ recette.title }} sur Anne et ses Délices."
     meta:
@@ -14,7 +14,7 @@ eleventyComputed:
         og:title: "{{recette.title}} - Anne et ses Délices"
         og:description: "Découvrez la recette {{ recette.title }} sur Anne et ses Délices."
         og:image: "{{recette.cover | default: '/assets/logo.svg'}}"
-        og:url: "https://anneetsesdelices.fr{{ page.url }}"
+        og:url: "https://anneetsesdelices.fr/{{ page.url }}"
 tags:
     - recettes
 ---

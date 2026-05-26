@@ -36,8 +36,8 @@ meta:
     <meta property="og:title" content="{{ title }}" />
     <meta property="og:type" content="website" />
     <meta property="og:description" content="{{ description | default: 'Recettes gourmandes et astuces cuisine par Anne, conseillère Guy Demarle.' }}" />
-    <meta property="og:url" content="https://anneetsesdelices.fr{{ permalink | url }}" />
-    <link rel="canonical" href="https://anneetsesdelices.fr{{ permalink | url }}" />
+    <meta property="og:url" content="https://anneetsesdelices.fr/{{ permalink | url }}" />
+    <link rel="canonical" href="https://anneetsesdelices.fr/{{ permalink | url }}" />
 
     {%- if meta %}
       {%- if meta["og:type"] %}<meta property="og:type" content="{{ meta["og:type"] }}" />{% endif -%}
