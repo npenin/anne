@@ -1,7 +1,6 @@
 ﻿---
 layout: index.liquid
 title: Anne et son admin
-usemde: true
 permalink: /admin/recette/
 ---
 <div class="toolbar">
@@ -55,7 +54,6 @@ permalink: /admin/recette/
 <div class="steps panel">
     <h2>Préparation</h2>
     <div id="steps">
-        <textarea></textarea>
     </div>
     <ol></ol>
     <button onclick="addPrepStep(true)"><i class="fal fa-plus"></i></button>
@@ -80,71 +78,27 @@ permalink: /admin/recette/
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script type="module">
     import '/assets/script.mjs';
-    import {getRecipe} from '/assets/script.mjs';
-    import { Crepe, MarkdownView, ImageUpload, Toolbar, Button, TextareaInput, CodeBlockView, LinkNode, TableNode, QuoteNode, HeadingNode } from 'https://esm.sh/@milkdown/crepe@latest';
-    import { createEditor } from 'https://esm.sh/@milkdown/core@latest';
-    import { MarkdownPreview } from 'https://esm.sh/@milkdown/plugin-markdown@latest';
-    import { HTMLRenderer } from 'https://esm.sh/@milkdown/plugin-html-renderer@latest';
-    
-    window.cleanTmpRecipe = async function cleanTmpRecipe() {
+    import { getRecipe, editor } from '/assets/script.mjs';
+
+    window.cleanTmpRecipe = async function cleanTmpRecipe()
+    {
         localStorage.removeItem('tmpRecipe');
         location.reload();
     }
 
-    window.saveLocally=function saveLocally(recipe)
+    window.saveLocally = function saveLocally(recipe)
     {
         localStorage.setItem('tmpRecipe', JSON.stringify(recipe));
     }
-    try{
+    try
+    {
         window.loadRecipe(JSON.parse(localStorage.getItem('tmpRecipe')))
         document.querySelector('.fa-trash').style.display = 'none'
     }
-    catch(e)
+    catch (e)
     {
+        // editor.create();
         console.error(e);
     }
-
-  window.initMilkdown = function(containerId, onSave) {
-    const container = document.getElementById(containerId);
-    if (!container) return;
-
-    const editor = createEditor()
-      .use(MarkdownPreview)
-      .use(HTMLRenderer)
-      .addPlugin(Toolbar)
-      .addPlugin(CodeBlockView)
-      .addPlugin(LinkNode)
-      .addPlugin(TableNode)
-      .addPlugin(QuoteNode)
-      .addPlugin(HeadingNode)
-      .addPlugin(ImageUpload)
-      .configure((config) => {
-        config.toolbar.setOptions({
-          position: 'top',
-          buttons: [
-            ['bold', 'italic', 'strike', 'code'],
-            ['link', 'image'],
-            ['quote', 'unorderedList', 'orderedList', 'table'],
-            ['heading1', 'heading2', 'heading3', 'heading4'],
-            ['undo', 'redo']
-          ]
-        });
-      })
-      .addView(MarkdownView)
-      .create();
-
-    editor.mount(container);
-
-    // Handle save button click
-    const saveBtn = container.querySelector('[onclick="save()"]');
-    if (saveBtn) {
-      saveBtn.addEventListener('click', () => {
-        const markdown = editor.markdown.getValue();
-        onSave({ markdown });
-      });
-    }
-
-    return editor;
-  };
 
 </script>

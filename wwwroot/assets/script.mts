@@ -1,3 +1,5 @@
+import { Crepe, replaceAll } from './milkdown.mjs';
+
 declare global
 {
     export function saveLocally(recipe: Recipe): void;
@@ -316,7 +318,10 @@ globalThis.loadRecipe = function (recipe)
     })
 
     if (typeof recipe.steps === 'string')
-    { mde.value(recipe.steps); }
+    {
+        // After crepe.create() has resolved, call:
+        editor.editor.action(replaceAll(mdSteps = recipe.steps));
+    }
     else
     {
         recipe.steps?.forEach(t =>
@@ -335,8 +340,10 @@ globalThis.loadRecipe = function (recipe)
     document.querySelectorAll<HTMLElement>('.toolbar i').forEach(el => el.style.visibility = 'visible')
 }
 
-const mde = new globalThis.EasyMDE({ spellChecker: false, forceSync: true, indentWithTabs: false, element: document.querySelector('#steps>textarea') })
-mde.codemirror.on('changes', () => saveLocally());
+let mdSteps = '';
+const editor = new Crepe({ root: '#steps' })
+editor.on(listener => listener.markdownUpdated((ctx, markdown) => { mdSteps = markdown; saveLocally(); }));
+await editor.create();
 
 document.querySelector('.mold').addEventListener('click', () => document.querySelector<HTMLElement>('.info>.mold>.name').focus());
 async function fetchmold(ev)
@@ -369,7 +376,7 @@ export function getRecipe()
             picture: span.querySelector<HTMLImageElement>('img').src,
             url: span.querySelector<HTMLAnchorElement>('a').href,
         })),
-        steps: mde.value() || Array.from(document.querySelectorAll<HTMLElement>('.steps li')).map(li => li.innerText),
+        steps: mdSteps || Array.from(document.querySelectorAll<HTMLElement>('.steps li')).map(li => li.innerText),
         for: document.querySelector<HTMLElement>('.info .count').innerText,
         preptime: document.querySelector<HTMLElement>('.info .preptime').innerText,
         resttime: document.querySelector<HTMLElement>('.info .resttime').innerText,

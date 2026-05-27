@@ -8,6 +8,12 @@
     font-size: 1.2rem;
 }
 
+.milkdown {
+    --crepe-color-background: transparent;
+    --crepe-font-default: inherit;
+    --crepe-font-title: inherit;
+}
+
 h1,
 h2 {
     margin: 0;
