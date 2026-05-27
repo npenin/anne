@@ -87,39 +87,53 @@ tags:
     </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-<script src="https://unpkg.com/easymde/dist/easymde.min.js"></script>
 <script type="module">
-    import '/assets/script.mjs';
+  import { Crepe, MarkdownView, ImageUpload, Toolbar, Button, TextareaInput, CodeBlockView, LinkNode, TableNode, QuoteNode, HeadingNode } from 'https://esm.sh/@milkdown/crepe@latest';
+  import { createEditor } from 'https://esm.sh/@milkdown/core@latest';
+  import { MarkdownPreview } from 'https://esm.sh/@milkdown/plugin-markdown@latest';
+  import { HTMLRenderer } from 'https://esm.sh/@milkdown/plugin-html-renderer@latest';
 
-    window.print=function(){
-        location.href='/recettes/{% if recette.slug %}{{ recette.slug }}{% else %}{{ recette.title | slugify }}{% endif %}'
+  window.initMilkdown = function(containerId, onSave) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+
+    const editor = createEditor()
+      .use(MarkdownPreview)
+      .use(HTMLRenderer)
+      .addPlugin(Toolbar)
+      .addPlugin(CodeBlockView)
+      .addPlugin(LinkNode)
+      .addPlugin(TableNode)
+      .addPlugin(QuoteNode)
+      .addPlugin(HeadingNode)
+      .addPlugin(ImageUpload)
+      .configure((config) => {
+        config.toolbar.setOptions({
+          position: 'top',
+          buttons: [
+            ['bold', 'italic', 'strike', 'code'],
+            ['link', 'image'],
+            ['quote', 'unorderedList', 'orderedList', 'table'],
+            ['heading1', 'heading2', 'heading3', 'heading4'],
+            ['undo', 'redo']
+          ]
+        });
+      })
+      .addView(MarkdownView)
+      .create();
+
+    editor.mount(container);
+
+    // Handle save button click
+    const saveBtn = container.querySelector('[onclick="save()"]');
+    if (saveBtn) {
+      saveBtn.addEventListener('click', () => {
+        const markdown = editor.markdown.getValue();
+        onSave({ markdown });
+      });
     }
 
-    window.cleanTmpRecipe = async function cleanTmpRecipe() {
-        localStorage.removeItem('tmp-{{recette.title | slugify }}');
-        location.reload();
-    }
-    window.saveLocally=function saveLocally(recipe)
-    {
-        if(recipe)
-            localStorage.setItem('tmp-{{recette.title | slugify }}', JSON.stringify(recipe))
-        else
-            localStorage.removeItem('tmp-{{recette.title | slugify }}');
-    }
+    return editor;
+  };
 
-    try{
-        const tmpRecipe=localStorage.getItem('tmp-{{recette.title | slugify }}');
-        if (!tmpRecipe)
-        {
-            document.querySelector('.fa-trash').style.display = 'none';
-            window.loadRecipe({{ recette | json }});
-        }
-        else
-            window.loadRecipe( JSON.parse(tmpRecipe));
-    }
-    catch(e)
-    {
-        console.error(e);
-    }
 </script>

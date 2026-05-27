@@ -1,10 +1,14 @@
-import { distinctStrings } from '@akala/core'
-import recettes from './recettes.js'
+import allmoules from './allmoules.js'
 
-export default async function ()
+const hiddenMoules = new Set([
+    // Add mold names here to exclude them from the public molds list,
+    // while keeping their dedicated mold page available.
+    // Example:
+    // 'Moule 3 baguettes OHRA®'
+    'Borealia® - Turbine à glace & Yaourtière'
+]);
+
+export default function moules()
 {
-    return distinctStrings((await recettes()).map(r => r.mold), m => m.name).map(m => ({
-        ...m,
-        displayName: m.name.replace(/([A-Z])([A-Z]+)/g, (_, letter, letters) => letter + letters.toLowerCase()),
-    }))
+    return allmoules().then(m => m.filter(m => !hiddenMoules.has(m.name)));
 };

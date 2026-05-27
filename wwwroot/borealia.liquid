@@ -1,0 +1,16 @@
+﻿---
+layout: generic.liquid
+permalink: "borealia/"
+title: Anne et sa Borealia
+tags:
+  - menu
+---
+<ul>
+  {% for item in collections.recettes %}
+    {% if item.data.recette.mold.name == 'Borealia® - Turbine à glace & Yaourtière' and item.data.recette.private!=true %}
+      <li>
+        <a href="{{item.page.url}}">{{ item.data.recette.title }}</a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
