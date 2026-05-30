@@ -108,8 +108,9 @@ tags:
         const tmpRecipe=localStorage.getItem('tmp-{{recette.title | slugify }}');
         if (!tmpRecipe)
         {
-            document.querySelector('.fa-trash').style.display = 'none';
+            document.querySelector('.toolbar .fa-trash').style.display = 'none';
             window.loadRecipe({{ recette | json }});
+            document.querySelector('.toolbar .fa-trash').style.display = 'block';
         }
         else
             window.loadRecipe( JSON.parse(tmpRecipe));
