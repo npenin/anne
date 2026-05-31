@@ -1,0 +1,75 @@
+{
+    "title": "Carré aux noisettes",
+    "slug": "carre-aux-noisettes",
+    "private": true,
+    "toppings": [
+        {
+            "quantity": "375",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "225",
+            "unit": "g",
+            "name": "Noisettes"
+        },
+        {
+            "quantity": "190",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "300",
+            "unit": "mL",
+            "name": "Huile de tournesol"
+        },
+        {
+            "quantity": "6",
+            "unit": "",
+            "name": "Oeufs"
+        },
+        {
+            "quantity": "1",
+            "unit": "sachet",
+            "name": "Levure chimique"
+        },
+        {
+            "quantity": "1",
+            "unit": "pincée",
+            "name": "Sel"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm ",
+            "picture": "https://boutique.guydemarle.com/2202-thickbox_default/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule ",
+            "picture": "https://boutique.guydemarle.com/2231-thickbox_default/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-thickbox_default/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Spatule haute température 25 cm",
+            "picture": "https://boutique.guydemarle.com/3113-thickbox_default/spatule-haute-temperature-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/622-spatule-haute-temperature-25-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Préchauffer le four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dans un cul de poule, mélanger les oeufs avec le sucre jusqu'à ce que le mélange blanchisse.\n4. A l'aide d'un mixer, mixer les noisettes et réserver.\n5. Ajouter l'huile, la farine, le sel, la levure et les noisettes, et mélanger.\n6. Monter les blancs en neige et les incorporer délicatement à la préparation.\n7. Verser dans le moule.\n8. Enfourner à 170°C pendant 50min (suivant votre four).\n9. Laisser refroidir avant de démouler.\n\n",
+    "for": "8",
+    "preptime": "15min",
+    "resttime": "-",
+    "cooktime": "1h",
+    "gallery": [],
+    "mold": {
+        "name": "Moule Carré en silicone OHRA® - Guy Demarle",
+        "picture": "https://boutique.guydemarle.com/16066-thickbox_default/moule-carre.jpg",
+        "url": "https://anneetsesdelices.fr/admin/recette/#"
+    }
+}
