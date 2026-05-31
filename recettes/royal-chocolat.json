@@ -1,0 +1,140 @@
+{
+    "title": "Royal chocolat",
+    "slug": "royal-chocolat",
+    "private": true,
+    "toppings": [
+        {
+            "quantity": "Dacquoise amande :",
+            "unit": "",
+            "name": ""
+        },
+        {
+            "quantity": "3",
+            "unit": "Blancs d'oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "50",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "10",
+            "unit": "g",
+            "name": "Sucre roux"
+        },
+        {
+            "quantity": "70",
+            "unit": "g",
+            "name": "Poudre d'amandes"
+        },
+        {
+            "quantity": "70",
+            "unit": "g",
+            "name": "Sucre glace"
+        },
+        {
+            "quantity": "10",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "Praliné feuilleté :",
+            "unit": "",
+            "name": ""
+        },
+        {
+            "quantity": "240",
+            "unit": "g",
+            "name": "Praliné"
+        },
+        {
+            "quantity": "120",
+            "unit": "g",
+            "name": "Crêpes dentelles"
+        },
+        {
+            "quantity": "Mousse chocolat : ",
+            "unit": "",
+            "name": ""
+        },
+        {
+            "quantity": "270",
+            "unit": "g",
+            "name": "Chocolat noir"
+        },
+        {
+            "quantity": "70",
+            "unit": "g",
+            "name": "Lait"
+        },
+        {
+            "quantity": "330",
+            "unit": "g",
+            "name": "Crème fraîche liquide entière"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-thickbox_default/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Petite spatule coudée 9 cm",
+            "picture": "https://boutique.guydemarle.com/2142-thickbox_default/petite-spatule-coudee-9-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/617-petite-spatule-coudee-9-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-thickbox_default/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm ",
+            "picture": "https://boutique.guydemarle.com/2234-thickbox_default/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Spatule haute température 25 cm",
+            "picture": "https://boutique.guydemarle.com/3113-thickbox_default/spatule-haute-temperature-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/622-spatule-haute-temperature-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13cm",
+            "picture": "https://boutique.guydemarle.com/5820-thickbox_default/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Spatule haute température 25 cm",
+            "picture": "https://boutique.guydemarle.com/3113-thickbox_default/spatule-haute-temperature-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/622-spatule-haute-temperature-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Thermomètre digital",
+            "picture": "https://boutique.guydemarle.com/2236-thickbox_default/thermometre-digital-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/686-thermometre-digital-guy-demarle.html"
+        },
+        {
+            "name": "Tapis de Décor carré pour un effet Matelassé",
+            "picture": "https://boutique.guydemarle.com/12255-thickbox_default/tapis-decor-carre-matelasse.jpg",
+            "url": "https://boutique.guydemarle.com/moules-ohra/4579-tapis-decor-carre-matelasse.html"
+        },
+        {
+            "name": "Toile de cuisson 40 x 30 cm en silicone",
+            "picture": "https://boutique.guydemarle.com/12035-thickbox_default/toile-de-cuisson-en-silicone-40-x-30-cm.jpg",
+            "url": "https://boutique.guydemarle.com/toiles-et-tapis-de-cuisson/4508-toile-de-cuisson-en-silicone-40-x-30-cm.html"
+        }
+    ],
+    "steps": "### Dacquoise amande\n\n1. Préchauffer votre four à 180°C.\n2. Placer votre moule sur une plaque aluminium perforée.\n3. Monter les blancs d’œufs en neige ferme avec le sucre et le sucre roux.\n4. Dans un cul-de-poule, mélanger la poudre d’amandes, le sucre glace et la farine. \n5. Incorporer petit à petit le mélange dans les blancs en neige.\n6. Place le tapis décor à l’envers (face lisse visible) dans le moule et étaler la préparation dans le moule à l'aide la petite spatule coudée. \n7. Saupoudrer la surface de sucre glace.\n8. Enfourner à 180°C pendant 20 min.\n\n<br />\n\n### Praliné feuilleté\n\n1. Faire fondre le praliné. Concasser les crêpes dentelle et ajoutez-les au praliné. \n2. Étaler le pralin croquant sur le biscuit. \n3. Placer 20 minutes au congélateur.\n4. Démouler sur une toile de cuisson.\n5. Nettoyer le moule et le tapis décor et faire sécher dans un four à 70°C pendant 5 min .\n\n### Mousse au chocolat\n\n1. Faire fondre le chocolat au bain-marie. \n2. Chauffer le lait et versez-le sur le chocolat fondu. \n3. Mélanger au fouet pour réaliser une émulsion.\n4. Monter la crème liquide en crème fouettée pour qu’elle soit souple et onctueuse. \n5. Mélanger 1/3 de la crème avec la ganache à 30°C précédemment réalisée. \n6. Ajouter le reste de la crème montée et mélanger délicatement.\n\n<br />\n\n### Dressage\n\n1. Poser le tapis décor (face visible) dans le moule, verser un peu de mousse et étaler à l'aide de petite spatule coudée dans le motif.\n2. Verser le reste de mousse, lisser puis poser le biscuit par-dessus. \n3. Placer 4 heures au congélateur.\n4. Sorter l'entremet du congélateur, Retournez-le et retirez le moule puis immédiatement le tapis décor. \n5. Laisser décongeler 4 heures au réfrigérateur.\n\n<br />\n\nRecette inspirée du Chef Laurent Deregnancourt\n\n",
+    "for": "12",
+    "preptime": "60",
+    "resttime": "4h",
+    "cooktime": "0",
+    "gallery": [],
+    "mold": {
+        "name": "Moule Carré en silicone OHRA® - Guy Demarle",
+        "picture": "https://boutique.guydemarle.com/16066-thickbox_default/moule-carre.jpg",
+        "url": "https://anneetsesdelices.fr/admin/recette/#"
+    }
+}
