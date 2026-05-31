@@ -61,15 +61,15 @@
             "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/622-spatule-haute-temperature-25-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer le four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dans un cul de poule, mélanger les oeufs avec le sucre jusqu'à ce que le mélange blanchisse.\n4. A l'aide d'un mixer, mixer les noisettes et réserver.\n5. Ajouter l'huile, la farine, le sel, la levure et les noisettes, et mélanger.\n6. Monter les blancs en neige et les incorporer délicatement à la préparation.\n7. Verser dans le moule.\n8. Enfourner à 170°C pendant 50min (suivant votre four).\n9. Laisser refroidir avant de démouler.\n\n",
+    "steps": "1. Préchauffer le four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dans un cul de poule, mélanger les oeufs avec le sucre jusqu'à ce que le mélange blanchisse.\n4. A l'aide d'un mixer, mixer les noisettes et réserver.\n5. Ajouter l'huile, la farine, le sel, la levure et les noisettes, et mélanger.\n6. Monter les blancs en neige et les incorporer délicatement à la préparation.\n7. Verser dans le moule.\n8. Enfourner à 170°C pendant 50 min (suivant votre four).\n9. Laisser refroidir avant de démouler.\n\n",
     "for": "8",
-    "preptime": "15min",
+    "preptime": "15",
     "resttime": "-",
-    "cooktime": "1h",
+    "cooktime": "50",
     "gallery": [],
     "mold": {
         "name": "Moule Carré en silicone OHRA® - Guy Demarle",
         "picture": "https://boutique.guydemarle.com/16066-thickbox_default/moule-carre.jpg",
-        "url": "https://anneetsesdelices.fr/admin/recette/#"
+        "url": "https://anneetsesdelices.fr/admin/recette/carre-aux-noisettes/#"
     }
 }
