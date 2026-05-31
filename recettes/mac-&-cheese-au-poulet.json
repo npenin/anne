@@ -1,0 +1,120 @@
+{
+    "title": "Mac & cheese au poulet",
+    "slug": "mac-&-cheese-au-poulet",
+    "private": true,
+    "toppings": [
+        {
+            "quantity": " ",
+            "unit": "",
+            "name": ""
+        },
+        {
+            "quantity": "250",
+            "unit": "g",
+            "name": "Macaronis"
+        },
+        {
+            "quantity": "250",
+            "unit": "g",
+            "name": "Oignons"
+        },
+        {
+            "quantity": "20",
+            "unit": "g",
+            "name": "Beurre"
+        },
+        {
+            "quantity": "150",
+            "unit": "g",
+            "name": "Aiguillettes de poulet cuites"
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Cheddar râpé"
+        },
+        {
+            "quantity": "50",
+            "unit": "g",
+            "name": "Emmental râpé"
+        },
+        {
+            "quantity": "Béchamel à la moutarde",
+            "unit": "",
+            "name": ""
+        },
+        {
+            "quantity": "50",
+            "unit": "g",
+            "name": "Beurre"
+        },
+        {
+            "quantity": "50",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "600",
+            "unit": "g",
+            "name": "Lait"
+        },
+        {
+            "quantity": "40",
+            "unit": "g",
+            "name": "Moutarde"
+        },
+        {
+            "quantity": "Noix de muscade",
+            "unit": " ",
+            "name": ""
+        },
+        {
+            "quantity": "Poivre",
+            "unit": " ",
+            "name": ""
+        },
+        {
+            "quantity": "20",
+            "unit": "g",
+            "name": "Chapelure"
+        },
+        {
+            "quantity": "30",
+            "unit": "g",
+            "name": "Emmental râpé"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm ",
+            "picture": "https://boutique.guydemarle.com/2202-thickbox_default/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Spatule en silicone",
+            "picture": "https://boutique.guydemarle.com/17319-thickbox_default/spatule-en-silicone.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/8619-spatule-en-silicone.html"
+        },
+        {
+            "name": "Mandoline Verticale",
+            "picture": "https://boutique.guydemarle.com/18709-thickbox_default/mandoline-verticale.jpg",
+            "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/9288-mandoline-verticale.html"
+        },
+        {
+            "name": "Fouet 13cm",
+            "picture": "https://boutique.guydemarle.com/5820-thickbox_default/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Dans une casserole d'eau bouillante salée, faire cuire les pates.\n2. Retirer 1min avant la fin de cuisson. Elles finiront de cuire au four.\n3. Réserver.\n4. A l'aide la mandoline, émincer les oignons.\n5. Dans une poêle, faire suer les oignons dans le beurre avec une pincée de sel jusqu'à légère coloration.\n6. Ajouter le melange aux pâtes cuites.\n7. Réserver.\n\n### Béchamel à la moutarde\n\n1. Préchauffer le four à 220°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dans une casserole, faire fondre le beurre puis ajouter la farine en mélangeant au fouet jusqu'à obtenir un roux.\n4. Ajouter le lait, la moutarde, la noix de muscade râpée et le poivre.\n5. Mélanger au fouet jusqu'à obtenir la béchamel.\n6. Incorporer 1/3 de la béchamel dans les pâtes et mélanger le tout.\n\n### Dressage\n\n1. Répartir les pâtes dans le moule.\n2. Poser le poulet sur les pâtes.\n3. Recouvrir de cheddar et d'emmental râpés.\n4. Verser la béchamel.\n5. Dans un petit recipient, mélanger la chapelure avec l'emmental râpé.\n6. Répartir sur la béchamel.\n7. Enfourner à 220°C pendant 15 min (suivant votre four).\n8. Servir avec la spatule en silicone.\n\n",
+    "for": "4",
+    "preptime": "30",
+    "resttime": "-",
+    "cooktime": "25",
+    "gallery": [],
+    "mold": {
+        "name": "Moule Carré en silicone OHRA® - Guy Demarle",
+        "picture": "https://boutique.guydemarle.com/16066-thickbox_default/moule-carre.jpg",
+        "url": "https://anneetsesdelices.fr/admin/recette/#"
+    }
+}
