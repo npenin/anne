@@ -1,0 +1,165 @@
+{
+    "title": "Entremet coco-fraise",
+    "slug": "entremet-coco-fraise",
+    "private": true,
+    "toppings": [
+        {
+            "quantity": "Dacquoise pistache :",
+            "unit": "",
+            "name": ""
+        },
+        {
+            "quantity": "3",
+            "unit": "Blancs",
+            "name": "d'oeuf"
+        },
+        {
+            "quantity": "35",
+            "unit": "g",
+            "name": "Sucre en poudre"
+        },
+        {
+            "quantity": "60",
+            "unit": "g",
+            "name": "Sucre glace"
+        },
+        {
+            "quantity": "60",
+            "unit": "g",
+            "name": "Poudre d'amande"
+        },
+        {
+            "quantity": "45",
+            "unit": "g",
+            "name": "Pistaches vertes émondées"
+        },
+        {
+            "quantity": "1",
+            "unit": "pointe de couteau",
+            "name": "Colorant vert"
+        },
+        {
+            "quantity": "Bavaroise coco:",
+            "unit": "",
+            "name": ""
+        },
+        {
+            "quantity": "4",
+            "unit": "feuilles",
+            "name": "Gélatine (8g)"
+        },
+        {
+            "quantity": "80",
+            "unit": "g",
+            "name": "Lait"
+        },
+        {
+            "quantity": "80",
+            "unit": "g",
+            "name": "Crème fraîche liquide"
+        },
+        {
+            "quantity": "160",
+            "unit": "g",
+            "name": "Lait de coco"
+        },
+        {
+            "quantity": "80",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "3",
+            "unit": "Jaunes",
+            "name": "d'oeuf"
+        },
+        {
+            "quantity": "180",
+            "unit": "g",
+            "name": "Crème fraîche liquide 30% MG"
+        },
+        {
+            "quantity": "Mousse fraise:",
+            "unit": "",
+            "name": ""
+        },
+        {
+            "quantity": "4",
+            "unit": "feuilles",
+            "name": "Gélatine (8g)"
+        },
+        {
+            "quantity": "250",
+            "unit": "g",
+            "name": "Purée de fraise"
+        },
+        {
+            "quantity": "80",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "250",
+            "unit": "g",
+            "name": "Crème fraîche liquide 30% MG"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm ",
+            "picture": "https://boutique.guydemarle.com/2202-thickbox_default/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Tapis de Décor carré pour un effet Matelassé",
+            "picture": "https://boutique.guydemarle.com/12255-thickbox_default/tapis-decor-carre-matelasse.jpg",
+            "url": "https://boutique.guydemarle.com/moules-ohra/4579-tapis-decor-carre-matelasse.html"
+        },
+        {
+            "name": "Support cul-de-poule ",
+            "picture": "https://boutique.guydemarle.com/2231-thickbox_default/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-thickbox_default/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Spatule haute température 25 cm",
+            "picture": "https://boutique.guydemarle.com/3113-thickbox_default/spatule-haute-temperature-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/622-spatule-haute-temperature-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Maxi tornado 1,2L",
+            "picture": "https://boutique.guydemarle.com/18710-thickbox_default/maxi-tornado-12l.jpg",
+            "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/9287-maxi-tornado-12l.html"
+        },
+        {
+            "name": "Petite spatule coudée 9 cm",
+            "picture": "https://boutique.guydemarle.com/2142-thickbox_default/petite-spatule-coudee-9-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/617-petite-spatule-coudee-9-cm-guy-demarle.html"
+        },
+        {
+            "name": "Purée de fraise 1 kg",
+            "picture": "https://boutique.guydemarle.com/10945-thickbox_default/puree-de-fraise-1-kg-ravifruit.jpg",
+            "url": "https://boutique.guydemarle.com/epicerie-en-ligne/4108-puree-de-fraise-1-kg-ravifruit.html"
+        },
+        {
+            "name": "Colorant alimentaire vert prairie 10 g",
+            "picture": "https://boutique.guydemarle.com/5472-thickbox_default/colorant-alimentaire-vert-prairie-10-g-les.jpg",
+            "url": "https://boutique.guydemarle.com/epicerie-en-ligne/144-colorant-alimentaire-vert-prairie-10-g-les.html"
+        }
+    ],
+    "steps": "### Dacquoise pistache\n\n1. Prechauffer votre four a 180°C.\n2. Placer votre mouler sur une plaque aluminium perforée.\n3. Monter les blancs en neige avec le sucre en poudre.\n4. Dans le tornado, mixer les pistaches.\n5. Dans un cul de poule, mélanger le sucre glace, la poudre d'amande et les pistaches mixées.\n6. Les incorporer délicatement aux blancs d'oeufs, ajouter le colorant et mélanger avec la spatule haute température.\n7. Verser dans le moule.\n8. Enfourner à 180°C pendant 25min.\n9. Laisser refroidir et démouler.\n\n### Bavaroise coco\n\n1. Mettre la gélatine dans l'eau froide pendant 10min.\n2. Dans une casserole, mettre le lait, la crème et le lait de coco.\n3. Ajouter la moitié du sucre.\n4. Dans un cul de poule, blanchir les jaunes avec le reste du sucre.\n5. Reverser cette préparation dans la casserole et chauffer à 85°C.\n6. Hors du feu, ajouter la gélatine essorée.\n7. Faire refroidir à 25°C.\n8. Monter la crème liquide en crème fouettée et l'incorporer délicatement au melange precedent.\n9. Dans le fond du moule, placer le tapis decor. \n10. Mettre une petite partie de la crème et l'étaler avec la petite spatule coudée dans les reliefs du decor.\n11. Verser le reste de la crème et la lisser avec la petite spatule coudée.\n12. Réserver au congélateur.\n\n### Mousse fraise\n\n1. Mettre la gélatine dans l'eau froide pendant 10min.\n2. Dans une casserole, chauffer a 60°C la moitié de la purée de fraise et le sucre.\n3. Hors du feu, ajouter la gélatine essorée.\n4. Ajouter le reste de purée.\n5. Faire refroidir à 25°C.\n6. Monter la crème liquide en crème fouettée et l'incorporer délicatement en 2 fois au melange precedent à l'aide la spatule haute température.\n\n### Dressage\n\n1. Sortir la bavaroise du congélateur.\n2. Verser la mousse fraise sur la bavaroise coco et poser la dacquoise pistache.\n3. Placer 6h au congélateur.\n4. Démouler l'entremet et retirer immédiatement le tapis decor.\n5. Laisser décongeler 6h avant de déguster.\n\n",
+    "for": "8",
+    "preptime": "1h",
+    "resttime": "6h",
+    "cooktime": "20min",
+    "gallery": [],
+    "mold": {
+        "name": "Moule Carré en silicone OHRA® - Guy Demarle",
+        "picture": "https://boutique.guydemarle.com/16066-thickbox_default/moule-carre.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/4220-moule-carre.html"
+    }
+}
