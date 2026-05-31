@@ -1,0 +1,250 @@
+{
+    "title": "Entremet Pina-Colada",
+    "slug": "entremet-pina-colada",
+    "private": true,
+    "toppings": [
+        {
+            "quantity": "Biscuit au citron vert :",
+            "unit": "",
+            "name": ""
+        },
+        {
+            "quantity": "2",
+            "unit": "Oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "70",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "1",
+            "unit": "pointe de couteau",
+            "name": "Colorant alimentaire vert"
+        },
+        {
+            "quantity": "1",
+            "unit": "Citron vert",
+            "name": ""
+        },
+        {
+            "quantity": "40",
+            "unit": "g",
+            "name": "Poudre d'amandes"
+        },
+        {
+            "quantity": "45",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "1",
+            "unit": "g",
+            "name": "Sel"
+        },
+        {
+            "quantity": "2",
+            "unit": "g",
+            "name": "Levure chimique"
+        },
+        {
+            "quantity": "45",
+            "unit": "g",
+            "name": "Crème fraîche liquide entière"
+        },
+        {
+            "quantity": "25",
+            "unit": "g",
+            "name": "Huile de tournesol"
+        },
+        {
+            "quantity": "10",
+            "unit": "g",
+            "name": "Jus de citron vert"
+        },
+        {
+            "quantity": "Compotée ananas et citron vert :",
+            "unit": "",
+            "name": ""
+        },
+        {
+            "quantity": "220",
+            "unit": "g",
+            "name": "Ananas"
+        },
+        {
+            "quantity": "5",
+            "unit": "g",
+            "name": "Poudre de beurre de cacao mycryo"
+        },
+        {
+            "quantity": "15",
+            "unit": "g",
+            "name": "Rhum"
+        },
+        {
+            "quantity": "300",
+            "unit": "g",
+            "name": "Purée d'ananas"
+        },
+        {
+            "quantity": "1",
+            "unit": "Citron vert",
+            "name": ""
+        },
+        {
+            "quantity": "30",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "8",
+            "unit": "g",
+            "name": "Pectine"
+        },
+        {
+            "quantity": "10",
+            "unit": "g",
+            "name": "Jus de citron vert"
+        },
+        {
+            "quantity": "Mousse coco :",
+            "unit": "",
+            "name": ""
+        },
+        {
+            "quantity": "7",
+            "unit": "g",
+            "name": "Gélatine"
+        },
+        {
+            "quantity": "330",
+            "unit": "g",
+            "name": "Pistoles chocolat blanc"
+        },
+        {
+            "quantity": "160",
+            "unit": "g",
+            "name": "Lait de coco"
+        },
+        {
+            "quantity": "10",
+            "unit": "g",
+            "name": "Jus de citron vert"
+        },
+        {
+            "quantity": "60",
+            "unit": "g",
+            "name": "Purée d'ananas"
+        },
+        {
+            "quantity": "300",
+            "unit": "g",
+            "name": "Crème fraîche liquide entière"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-thickbox_default/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Petite spatule coudée 9 cm",
+            "picture": "https://boutique.guydemarle.com/2142-thickbox_default/petite-spatule-coudee-9-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/617-petite-spatule-coudee-9-cm-guy-demarle.html"
+        },
+        {
+            "name": "Zesteur 4 en 1",
+            "picture": "https://boutique.guydemarle.com/7325-thickbox_default/zesteur-4-en-1.jpg",
+            "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/2527-zesteur-4-en-1.html"
+        },
+        {
+            "name": "Presse agrumes inox ",
+            "picture": "https://boutique.guydemarle.com/2219-thickbox_default/presse-agrumes-inox-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/675-presse-agrumes-inox-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-thickbox_default/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm ",
+            "picture": "https://boutique.guydemarle.com/2234-thickbox_default/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Spatule haute température 25 cm",
+            "picture": "https://boutique.guydemarle.com/3113-thickbox_default/spatule-haute-temperature-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/622-spatule-haute-temperature-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Tapis décor carré mosaïque",
+            "picture": "https://boutique.guydemarle.com/16392-thickbox_default/tapis-decor-carre-mosaique-ohra.jpg",
+            "url": "https://boutique.guydemarle.com/moule-en-silicone/8284-tapis-decor-carre-mosaique-ohra.html"
+        },
+        {
+            "name": "Colorant alimentaire vert prairie ",
+            "picture": "https://boutique.guydemarle.com/5472-thickbox_default/colorant-alimentaire-vert-prairie-10-g-les.jpg",
+            "url": "https://boutique.guydemarle.com/epicerie-en-ligne/144-colorant-alimentaire-vert-prairie-10-g-les.html"
+        },
+        {
+            "name": "Fouet 13cm",
+            "picture": "https://boutique.guydemarle.com/5820-thickbox_default/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Petit cul de poule 2L / 20 cm",
+            "picture": "https://boutique.guydemarle.com/2233-thickbox_default/petit-cul-de-poule-2l-20-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/683-petit-cul-de-poule-2l-20-cm-guy-demarle.html"
+        },
+        {
+            "name": "Beurre de cacao Mycryo",
+            "picture": "https://boutique.guydemarle.com/18690-thickbox_default/beurre-de-cacao-mycryo.jpg",
+            "url": "https://boutique.guydemarle.com/epicerie-en-ligne/9300-beurre-de-cacao-mycryo.html"
+        },
+        {
+            "name": "Pectine NH",
+            "picture": "https://boutique.guydemarle.com/17905-thickbox_default/pectine-nh.jpg",
+            "url": "https://boutique.guydemarle.com/epicerie-en-ligne/9025-pectine-nh.html"
+        },
+        {
+            "name": "Purée d'ananas 1 kg",
+            "picture": "https://boutique.guydemarle.com/15984-thickbox_default/puree-d-ananas-1-kg.jpg",
+            "url": "https://boutique.guydemarle.com/epicerie-en-ligne/8060-puree-d-ananas-1-kg.html"
+        },
+        {
+            "name": "Spatule haute température 25 cm",
+            "picture": "https://boutique.guydemarle.com/3113-thickbox_default/spatule-haute-temperature-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/622-spatule-haute-temperature-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Dérouleur de film alimentaire + film 75 m",
+            "picture": "https://boutique.guydemarle.com/16813-thickbox_default/derouleur-de-film-alimentaire-film-75-m.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/880-derouleur-de-film-alimentaire-film-75-m.html"
+        },
+        {
+            "name": "Pistoles de chocolat blanc 1 Kg Cacao Barry W3 - Chocolat de couverture",
+            "picture": "https://boutique.guydemarle.com/367-thickbox_default/pistoles-de-chocolat-blanc-1-kg-callebaut.jpg",
+            "url": "https://boutique.guydemarle.com/epicerie-en-ligne/246-pistoles-de-chocolat-blanc-1-kg-callebaut.html"
+        },
+        {
+            "name": "Thermomètre digital",
+            "picture": "https://boutique.guydemarle.com/2236-thickbox_default/thermometre-digital-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/686-thermometre-digital-guy-demarle.html"
+        }
+    ],
+    "steps": "Biscuit au citron vert\n\n1. Préchauffer votre four à 200°C.\n2. &#x20;Placer votre moule sur une plaque aluminium perforée.\n3.  Placer un tapis décor retournée (face lisse visible) dans le fond. \n4. A l'aide du zesteur, zester le citron vert.\n5. A l'aide du presse agrumes, presser le citron pour obtenir le jus.\n6. Dans un cul-de-poule, faire mousser les œufs avec le sucre, le colorant vert et les zestes du citron.\n7. Dans un autre cul de poule, mélanger la poudre d’amandes, la farine, le sel et la levure chimique. Ajoutez-les dans le mélange précédent.\n8. Ajouter la crème fraîche, l’huile et le jus de citron vert puis mélanger. \n9. Versez la pâte dans le moule\n10. Enfourner à 200°C pandant 12 min.\n11. Réserver le biscuit dans le moule.\n\n<br />\n\nCompotée ananas et citron vert\n\n1. Dans un petit récipient, mélanger le sucre à la pectine et réserver.\n2. A l'aide du zesteur, zester le citron vert et réserver.\n3. A l'aide du presse agrumes, presser le citron pour obtenir le jus et réserver.\n4. Couper l’ananas en cubes.\n5. Dans une poêle, faites revenir les cubes dans la poudre de beurre de cacao Mycryo.\n6. Verser le rhum sur l’ananas et faites-le flamber. \n7. Faire réduire puis ajouter la purée d’ananas, les zestes de citron vert et le sucre/pectine. \n8. Faire cuire 3 minutes à petite ébullition puis verser le jus de citron.\n9. Verser la compotée sur le biscuit cuit. Laisser refroidir puis placer au congélateur pendant 2 heures.\n10. Au bout de 2 heures, démouler sans retourner le biscuit. Aidez-vous d’une spatule coudée. Réserver au congélateur emballé dans du film alimentaire. \n11. Nettoyer le moule et son tapis et faites-les sécher dans un four à 70°C pendant 5 minutes.\n\n<br />\n\nMouse coco\n\n1. Réhydrater la gélatine dans de l’eau froide pendant 10 minutes. \n2. Faire fondre le chocolat blanc au bain-marie et réserver.\n3. Faire chauffer le lait de coco à 80°C puis ajouter la gélatine essorée. Mélanger pour la faire fondre. \n4. Ajouter le jus de citron restant (10 g) et la purée d’ananas et mélanger.\n5. Verser le mélange chaud sur les pistoles de chocolat blanc semi-fondu et mélanger au fouet. Continuer de remuer pour faire descendre la température à 30°C.\n6. Monter la crème liquide en crème montée. Incorporez-la dans la préparation précédente.\n\n<br />\n\nDressage\n\n1. Poser le moule sur une plaque aluminium perforée et placer le tapis décor dans le fond du moule face décorée visible. \n2. Incruster un peu de mousse coco dans le relief à l'aide d'une petite spatule coudée. \n3. Verser ensuite la mousse coco puis poser le palet d’ananas dessus.\n4. Placer au congélateur pendant 6 heures. \n5. Sortir l'entremet du congélateur, démoulez-le et enlever immédiatement le tapis décor.\n6. Laisser décongeler 6 heures au réfrigérateur.\n\n<br />\n\nRecette inspirée du chef Laurent Deregnaucourt\n",
+    "for": "12",
+    "preptime": "30",
+    "resttime": "2h-6h",
+    "cooktime": "12",
+    "gallery": [],
+    "mold": {
+        "name": "Moule Carré en silicone OHRA® - Guy Demarle",
+        "picture": "https://boutique.guydemarle.com/16066-thickbox_default/moule-carre.jpg",
+        "url": "https://anneetsesdelices.fr/admin/recette/#"
+    }
+}
