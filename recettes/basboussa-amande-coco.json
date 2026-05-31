@@ -1,0 +1,150 @@
+{
+    "title": "Basboussa amande coco",
+    "slug": "basboussa-amande-coco",
+    "private": true,
+    "toppings": [
+        {
+            "quantity": "1",
+            "unit": "Orange bio",
+            "name": ""
+        },
+        {
+            "quantity": "250",
+            "unit": "g",
+            "name": "Semoule fine"
+        },
+        {
+            "quantity": "50",
+            "unit": "g",
+            "name": "Poudre d'amandes"
+        },
+        {
+            "quantity": "50",
+            "unit": "g",
+            "name": "Noix de coco"
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "1",
+            "unit": "pincée",
+            "name": "Sel"
+        },
+        {
+            "quantity": "1",
+            "unit": "sachet",
+            "name": "Levure chimique"
+        },
+        {
+            "quantity": "3",
+            "unit": "oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "120",
+            "unit": "g",
+            "name": "Yaourt"
+        },
+        {
+            "quantity": "1",
+            "unit": "c-à-s",
+            "name": "Fleur d'oranger"
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Huile d'arachide"
+        },
+        {
+            "quantity": "25",
+            "unit": "Amandes blanches",
+            "name": ""
+        },
+        {
+            "quantity": "Sirop :",
+            "unit": "",
+            "name": ""
+        },
+        {
+            "quantity": "40",
+            "unit": "g",
+            "name": "Eau"
+        },
+        {
+            "quantity": "80",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "2",
+            "unit": "c-à-s",
+            "name": "Fleur d'oranger"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-thickbox_default/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Petite spatule coudée 9 cm",
+            "picture": "https://boutique.guydemarle.com/2142-thickbox_default/petite-spatule-coudee-9-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/617-petite-spatule-coudee-9-cm-guy-demarle.html"
+        },
+        {
+            "name": "Zesteur 4 en 1",
+            "picture": "https://boutique.guydemarle.com/7325-thickbox_default/zesteur-4-en-1.jpg",
+            "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/2527-zesteur-4-en-1.html"
+        },
+        {
+            "name": "Presse agrumes inox ",
+            "picture": "https://boutique.guydemarle.com/2219-thickbox_default/presse-agrumes-inox-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/675-presse-agrumes-inox-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-thickbox_default/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm ",
+            "picture": "https://boutique.guydemarle.com/2234-thickbox_default/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Bol micro-ondes 1L",
+            "picture": "https://boutique.guydemarle.com/3363-thickbox_default/bol-micro-ondes-1l.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1009-bol-micro-ondes-1l.html"
+        },
+        {
+            "name": "Spatule haute température 25 cm",
+            "picture": "https://boutique.guydemarle.com/3113-thickbox_default/spatule-haute-temperature-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/622-spatule-haute-temperature-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Spatule et pinceau 2 un 1",
+            "picture": "https://boutique.guydemarle.com/18525-thickbox_default/spatule-et-pinceau-2-en-1.jpg",
+            "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/9228-spatule-et-pinceau-2-en-1.html"
+        },
+        {
+            "name": "Couteau de précision",
+            "picture": "https://boutique.guydemarle.com/5825-thickbox_default/couteau-de-precision.jpg",
+            "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/1800-couteau-de-precision.html"
+        }
+    ],
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée et mettre au fond du moule une toile décor retournée (coté lisse visible) pour faciliter le démoulage.\n3. A l'aide du zesteur, prélever les zestes de l'orange.\n4. A l'aide du presse agrumes, presser l'orange pour obtenir le jus et réservez-le.\n5. Dans un cul de poule, mélanger la semoule fine avec la poudre d'amandes, la noix de coco rapée, le sucre, le sel et la levure.\n6. Dans le bol micro-ondes, mélanger les oeufs avec le yaourt, les zestes de l'orange, la fleur d'oranger et l'huile.\n7. Ajoutez-le au mélange semoule/amande/coco et mélanger.\n8. &#x20;Verser la pâte dans le moule et lisser à l'aide de la petite spatule coudée.\n9. Déposer 25 amandes sur le dessus équitablement réparties (pour pouvoir découper des carrés en fin de cuisson).\n10. Faire cuire à 180°C pendant 30 min.\n\n### Sirop\n\n1. Dans une casserole, faire bouillir l'eau avec le jus d'orane et le sucre.\n2. Ajouter la fleur d'oranger et mélanger avec la spatule haute température.\n3. Dès la sortie du four, à l'aide du pinceau, badigeoner le gâteau de sirop.\n\n### Dressage\n\n1. Laisser refroidir avant de démouler.\n2. Coupez-le en carrés.\n\n",
+    "for": "9",
+    "preptime": "30",
+    "resttime": "0",
+    "cooktime": "10",
+    "gallery": [],
+    "mold": {
+        "name": "Moule Carré en silicone OHRA® - Guy Demarle",
+        "picture": "https://boutique.guydemarle.com/16066-thickbox_default/moule-carre.jpg",
+        "url": "https://anneetsesdelices.fr/admin/recette/#"
+    }
+}
