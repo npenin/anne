@@ -1,0 +1,70 @@
+{
+    "title": "Lieu noir fondant chorizo-parmesan",
+    "slug": "lieu-noir-fondant-chorizo-parmesan",
+    "private": true,
+    "toppings": [
+        {
+            "quantity": "4",
+            "unit": "Lieu noir",
+            "name": ""
+        },
+        {
+            "quantity": "20",
+            "unit": "tranches fines",
+            "name": "Chorizo fort"
+        },
+        {
+            "quantity": "6",
+            "unit": "c-à-s",
+            "name": "Parmesan râpé"
+        },
+        {
+            "quantity": "4",
+            "unit": "c-à-s",
+            "name": "Chapelure"
+        },
+        {
+            "quantity": "30",
+            "unit": "g",
+            "name": "Beurre doux"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-thickbox_default/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-thickbox_default/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Petit cul de poule 2L / 20 cm - Accessoires",
+            "picture": "https://boutique.guydemarle.com/2233-thickbox_default/petit-cul-de-poule-2l-20-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/683-petit-cul-de-poule-2l-20-cm-guy-demarle.html"
+        },
+        {
+            "name": "Maxi tornado 1,2L",
+            "picture": "https://boutique.guydemarle.com/18710-thickbox_default/maxi-tornado-12l.jpg",
+            "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/9287-maxi-tornado-12l.html"
+        },
+        {
+            "name": "Spatule en silicone",
+            "picture": "https://boutique.guydemarle.com/17319-thickbox_default/spatule-en-silicone.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/8619-spatule-en-silicone.html"
+        }
+    ],
+    "steps": "1. Préchauffer le four à 200°C. \n2. Poser votre moule sur une plaque en aluminium perforée.\n3. Sortir le beurre du réfrigérateur et le laisser ramollir à température ambiante.\n4. Couper 20 tranches fines de chorizo en morceaux et les hacher finement avec le Maxi Tornado jusqu'à obtenir une texture fine et homogène.\n5. Dans un petit cul de poule, travailler du bout des doigts, le chorizo haché avec le parmesan râpé, la chapelure de chapelure et le beurre doux ramolli jusqu'à obtenir une texture sableuse. \n6. Déposer le lieu noir dans le moule et répartir généreusement le crumble chorizo-parmesan sur chaque poisson en appuyant légèrement.\n7. Enfourner à 200°C pendant 15 min jusqu'à ce que le crumble soit bien doré et croustillant et le lieu cuit à cœur. \n8. Servir directement à l'aide de la spatule en silicone.\n\n",
+    "for": "4",
+    "preptime": "25",
+    "resttime": "0",
+    "cooktime": "15",
+    "gallery": [],
+    "mold": {
+        "name": "Moule Carré en silicone OHRA® - Guy Demarle",
+        "picture": "https://boutique.guydemarle.com/16066-thickbox_default/moule-carre.jpg",
+        "url": "https://anneetsesdelices.fr/admin/recette/#"
+    }
+}
