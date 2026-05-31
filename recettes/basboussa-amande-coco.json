@@ -4,6 +4,11 @@
     "private": true,
     "toppings": [
         {
+            "quantity": "  ",
+            "unit": "",
+            "name": ""
+        },
+        {
             "quantity": "1",
             "unit": "Orange bio",
             "name": ""
