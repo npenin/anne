@@ -1,0 +1,50 @@
+{
+    "title": "Croque monsieur géant saumon - chèvre ",
+    "slug": "croque-monsieur-geant-saumon---chevre",
+    "private": true,
+    "toppings": [
+        {
+            "quantity": "12",
+            "unit": "tranches",
+            "name": "Pain de mie complet"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-thickbox_default/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Petite spatule coudée 9 cm",
+            "picture": "https://boutique.guydemarle.com/2142-thickbox_default/petite-spatule-coudee-9-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/617-petite-spatule-coudee-9-cm-guy-demarle.html"
+        },
+        {
+            "name": "Spatule en silicone",
+            "picture": "https://boutique.guydemarle.com/17319-thickbox_default/spatule-en-silicone.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/8619-spatule-en-silicone.html"
+        },
+        {
+            "name": "Pichet verseur",
+            "picture": "https://boutique.guydemarle.com/2230-thickbox_default/pichet-verseur-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/681-pichet-verseur-guy-demarle.html"
+        },
+        {
+            "name": "Cuillère magique",
+            "picture": "https://boutique.guydemarle.com/18311-thickbox_default/cuillere-magique-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/615-cuillere-magique-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dans un pichet verseur, mélanger la crème fraîche, le Philadelphia et les œufs.\n4. Assaisonner avec la noix de Muscade moulue et le poivre.\n5. A l’aide de la cuillère magique, fouetter jusqu'à obtenir un appareil homogène.\n6. Disposer 4 tranches de pain de mie dans le fond du moule en les ajustant à la taille du moule.\n7. Étaler une portion de l'appareil crémeux à l'aide de la petite spatule coudée.\n8. Disposer la moitié du saumon fumé sur l'appareil crémeux et recouvrir avec 6 tranches tranches de fromage fondu.\n9. Ajouter une nouvelle couche de 4 tranches de pain de mie, étaler de l'appareil crémeux, puis disposer le reste du saumon fumé et les 6 dernières tranches de fromage fondu.\n10. Terminer avec une couche de 4 tranches de pain de mie. Verser le reste de l'appareil crémeux sur le dessus.\n11. Répartir généreusement le gruyère râpé sur toute la surface.\n12. Enfourner à 180°C pendant 30 minutes jusqu'à ce que le dessus soit bien doré et gratiné.\n13. Servir avec la spatule en silicone.\n\n",
+    "for": "6",
+    "preptime": "10",
+    "resttime": "0",
+    "cooktime": "30",
+    "gallery": [],
+    "mold": {
+        "name": "Moule Carré en silicone OHRA® - Guy Demarle",
+        "picture": "https://boutique.guydemarle.com/16066-thickbox_default/moule-carre.jpg",
+        "url": "https://anneetsesdelices.fr/admin/recette/croque-monsieur-geant-saumon-mozza/#"
+    }
+}
