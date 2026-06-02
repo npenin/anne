@@ -2,7 +2,58 @@
     "title": "Croque monsieur géant ",
     "slug": "croque-monsieur-geant",
     "private": true,
-    "toppings": [],
+    "toppings": [
+        {
+            "quantity": "12",
+            "unit": "grandes tranches",
+            "name": "Pain de mie complet"
+        },
+        {
+            "quantity": "250",
+            "unit": "g",
+            "name": "Blanc de dinde (ou blanc de poulet ou jambon blanc)"
+        },
+        {
+            "quantity": "200",
+            "unit": "g",
+            "name": "Champignons de Paris émincés"
+        },
+        {
+            "quantity": "80",
+            "unit": "g",
+            "name": "Gruyère râpé"
+        },
+        {
+            "quantity": "300",
+            "unit": "g",
+            "name": "Crème fraîche entière"
+        },
+        {
+            "quantity": "50",
+            "unit": "g",
+            "name": "Fromage frais (type Philadelphia)"
+        },
+        {
+            "quantity": "12",
+            "unit": "tranches",
+            "name": "Fromage fondu pour croque monsieur"
+        },
+        {
+            "quantity": "2",
+            "unit": "Oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "Noix",
+            "unit": "de Muscade",
+            "name": ""
+        },
+        {
+            "quantity": "1",
+            "unit": "pincée",
+            "name": "Poivre"
+        }
+    ],
     "accessories": [
         {
             "name": "Plaque Aluminium perforée 40 x 30 cm",
@@ -10,32 +61,22 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         },
         {
-            "name": "Support cul-de-poule",
-            "picture": "https://boutique.guydemarle.com/2231-thickbox_default/support-cul-de-poule-guy-demarle.jpg",
-            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
-        },
-        {
-            "name": "Grand cul de poule 3,7L / 25 cm ",
-            "picture": "https://boutique.guydemarle.com/2234-thickbox_default/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
-            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
-        },
-        {
-            "name": "Tapis Décor Carré Pois OHRA®",
-            "picture": "https://boutique.guydemarle.com/11953-thickbox_default/tapis-decor-carre-pois-ohra.jpg",
-            "url": "https://boutique.guydemarle.com/moule-en-silicone/4476-tapis-decor-carre-pois-ohra.html"
-        },
-        {
-            "name": "Spatule haute température 25 cm ",
-            "picture": "https://boutique.guydemarle.com/3113-thickbox_default/spatule-haute-temperature-25-cm-guy-demarle.jpg",
-            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/622-spatule-haute-temperature-25-cm-guy-demarle.html"
-        },
-        {
             "name": "Petite spatule coudée 9 cm",
             "picture": "https://boutique.guydemarle.com/2142-thickbox_default/petite-spatule-coudee-9-cm-guy-demarle.jpg",
             "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/617-petite-spatule-coudee-9-cm-guy-demarle.html"
+        },
+        {
+            "name": "Pichet verseur",
+            "picture": "https://boutique.guydemarle.com/2230-thickbox_default/pichet-verseur-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/681-pichet-verseur-guy-demarle.html"
+        },
+        {
+            "name": "Cuillère magique",
+            "picture": "https://boutique.guydemarle.com/18311-thickbox_default/cuillere-magique-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/615-cuillere-magique-guy-demarle.html"
         }
     ],
-    "steps": "1. Dans une poêle, faire cuire les champignons à sec ou avec un filet d'huile d'olive jusqu'à évaporation de l'eau. Saler, poivrer et réserver.\n2. Préchauffer votre four à 180°C.\n3. Poser votre moule sur une plaque aluminium perforée.\n4. Dans le pichet verseur, mélanger la crème fraîche, le Philadelphia et les 2 œufs. \n\n3) Assaisonner avec de le noix de muscade moulue et du poivre. \n4) A l’aide de la cuillère magique, fouetter jusqu'à obtenir un appareil homogène.\n5) Disposer 4 tranches de pain de mie dans le fond du moule en les ajustant à la taille du moule. \n6) Étaler une portion de l'appareil crème/Philadelphia à l'aide de la petite spatule coudée.\n7) Disposer la moitié du blanc de dinde sur l'appareil crémeux.\n8) Ajouter la moitié des champignons et recouvrez avec 6 tranches de fromage fondu.\n9) Ajouter une nouvelle couche de tranches de pain de mie.\n10) Etaler une partie de l'appareil crémeux, puis disposer le reste du blanc de dinde, le reste des champignons et les tranches de fromage fondu.\n11) Terminer avec une dernière couche de tranches de pain de mie. \n12) Verser le reste de l'appareil crémeux sur le dessus.\n13) Répartir le gruyère râpé sur toute la surface. \n14) Enfourner à 180°C pendant 30 min jusqu'à ce que le dessus soit bien doré et gratiné.\n15) Servir avec la spatule en silicone.\n\n<br />\n\n<br />\n\n",
+    "steps": "1. Dans une poêle, faire cuire les champignons à sec ou avec un filet d'huile d'olive jusqu'à évaporation de l'eau. Saler, poivrer et réserver.\n2. Préchauffer votre four à 180°C.\n3. Poser votre moule sur une plaque aluminium perforée.\n4. Dans le pichet verseur, mélanger la crème fraîche, le Philadelphia et les 2 œufs.\n\n3) Assaisonner avec de le noix de Muscade moulue et du poivre.\n4) A l’aide de la cuillère magique, fouetter jusqu'à obtenir un appareil homogène.\n5) Disposer 4 tranches de pain de mie dans le fond du moule en les ajustant à la taille du moule.\n6) Étaler une portion de l'appareil crème/Philadelphia à l'aide de la petite spatule coudée.\n7) Disposer la moitié du blanc de dinde sur l'appareil crémeux.\n8) Ajouter la moitié des champignons et recouvrez avec 6 tranches de fromage fondu.\n9) Ajouter une nouvelle couche de tranches de pain de mie.\n10) Etaler une partie de l'appareil crémeux, puis disposer le reste du blanc de dinde, le reste des champignons et les tranches de fromage fondu.\n11) Terminer avec une dernière couche de tranches de pain de mie.\n12) Verser le reste de l'appareil crémeux sur le dessus.\n13) Répartir le gruyère râpé sur toute la surface.\n14) Enfourner à 180°C pendant 30 min jusqu'à ce que le dessus soit bien doré et gratiné.\n15) Servir avec la spatule en silicone.\n\n<br />\n\n",
     "for": "6",
     "preptime": "15",
     "resttime": "0",
@@ -44,6 +85,6 @@
     "mold": {
         "name": "Moule Carré en silicone OHRA® - Guy Demarle",
         "picture": "https://boutique.guydemarle.com/16066-thickbox_default/moule-carre.jpg",
-        "url": "https://anneetsesdelices.fr/admin/recette/#"
+        "url": "https://anneetsesdelices.fr/admin/recette/croque-monsieur-geant/#"
     }
 }
