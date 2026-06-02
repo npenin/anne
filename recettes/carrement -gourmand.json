@@ -1,0 +1,120 @@
+{
+    "title": "Carrément  gourmand",
+    "slug": "carrement -gourmand",
+    "private": true,
+    "toppings": [
+        {
+            "quantity": "Brownie :",
+            "unit": "",
+            "name": ""
+        },
+        {
+            "quantity": "200",
+            "unit": "g",
+            "name": "Chocolat noir"
+        },
+        {
+            "quantity": "80",
+            "unit": "g",
+            "name": "Beurre"
+        },
+        {
+            "quantity": "3",
+            "unit": "Oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "1",
+            "unit": "pincée",
+            "name": "Sel"
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Amandes"
+        },
+        {
+            "quantity": "75",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "1/4",
+            "unit": "sachet",
+            "name": "Levure chimique"
+        },
+        {
+            "quantity": "Cheescake :",
+            "unit": "",
+            "name": ""
+        },
+        {
+            "quantity": "200",
+            "unit": "g",
+            "name": "Philadelphia"
+        },
+        {
+            "quantity": "200",
+            "unit": "g",
+            "name": "Crème fraîche"
+        },
+        {
+            "quantity": "20",
+            "unit": "g",
+            "name": "Maïzena"
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "1",
+            "unit": "sachet",
+            "name": "Sucre vanillé"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-thickbox_default/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Petite spatule coudée 9 cm",
+            "picture": "https://boutique.guydemarle.com/2142-thickbox_default/petite-spatule-coudee-9-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/617-petite-spatule-coudee-9-cm-guy-demarle.html"
+        },
+        {
+            "name": "Spatule en silicone",
+            "picture": "https://boutique.guydemarle.com/17319-thickbox_default/spatule-en-silicone.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/8619-spatule-en-silicone.html"
+        },
+        {
+            "name": "Pichet verseur",
+            "picture": "https://boutique.guydemarle.com/2230-thickbox_default/pichet-verseur-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/681-pichet-verseur-guy-demarle.html"
+        },
+        {
+            "name": "Cuillère magique",
+            "picture": "https://boutique.guydemarle.com/18311-thickbox_default/cuillere-magique-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/615-cuillere-magique-guy-demarle.html"
+        }
+    ],
+    "steps": "### Brownie \n\n1. Préchauffer le four à 180°C. \n2. Poser votre moule sur une plaque aluminium perforée. \n3. Faire fondre le chocolat et le beurre ensemble, au bain marie. \n4. Ajouter le sucre et le sel. \n5. Incorporer les œufs un à un. \n6. Ajouter la farine et la levure. \n7. Concasser les amandes et les ajouter à la préparation.\n8. Verser les deux tiers de la préparation dans le moule.\n\n### Cheescake\n\n1. Dans un cul-de-poule, mélanger le Philadelphia, la crème fraîche, la Maïzena, le sucre et le sucre vanillé,.\n2. Verser délicatement cette préparation sur le brownie. \n\n   <br />\n3. Répartir le reste de pâte à brownie par petites cuillerées sur la préparation cheesecake.\n4. À l'aide d'une petite spatule, réaliser des mouvements en zigzag pour créer un effet marbré.\n5.  Enfourner à 180°C pendant 30-35 min (suivant votre four). Le centre doit rester légèrement tremblotant. \n6. Laisser refroidir avant de démouler.\n\n",
+    "for": "12",
+    "preptime": "20",
+    "resttime": "0",
+    "cooktime": "30-35",
+    "gallery": [],
+    "mold": {
+        "name": "Moule Carré en silicone OHRA® - Guy Demarle",
+        "picture": "https://boutique.guydemarle.com/16066-thickbox_default/moule-carre.jpg",
+        "url": "https://anneetsesdelices.fr/admin/recette/#"
+    }
+}
