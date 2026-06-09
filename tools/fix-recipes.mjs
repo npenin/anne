@@ -9,6 +9,7 @@ const preferredUrls = [
     'https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/649-lot-de-5-douilles-interchangeables-guy-demarle.html',
     'https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/672-support-poches-a-douilles-guy-demarle.html',
     'https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/2528-mini-louche-cuisine.html',
+    'https://boutique.guydemarle.com/machine-a-glace/4458-borealia-turbine-a-glace-yaourtiere.html',
 ]
 
 for (const recipeFile of await readdir('./recettes', { withFileTypes: true }))
