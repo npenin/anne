@@ -1,7 +1,7 @@
 {
     "title": "Muffins AirCocoCan",
     "slug": "muffins-aircococan",
-    "private": true,
+    "private": false,
     "toppings": [
         {
             "quantity": "85",
@@ -31,7 +31,7 @@
         {
             "quantity": "1",
             "unit": "c-à-c",
-            "name": "Cannelle (à doser suivant les goûts)"
+            "name": "Cannelle (à doser suivant les goûts) (facultatif)"
         },
         {
             "quantity": "4",
