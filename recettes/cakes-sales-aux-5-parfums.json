@@ -54,29 +54,29 @@
             "name": ""
         },
         {
-            "quantity": "50",
+            "quantity": "70",
             "unit": "g",
             "name": "Saumon fumé + ciboulette ou aneth"
         },
         {
-            "quantity": "50",
+            "quantity": "70",
             "unit": "g",
             "name": "Chorizo + comté"
         },
         {
-            "quantity": "50",
+            "quantity": "70",
             "unit": "g",
-            "name": "Dés de jambon + Tomates séchées"
+            "name": "Allumettes de poulet + Tomates séchées"
         },
         {
-            "quantity": "50",
+            "quantity": "70",
             "unit": "g",
             "name": "Fomage de chèvre + abricots secs"
         },
         {
-            "quantity": "50",
+            "quantity": "70",
             "unit": "g",
-            "name": "Thon + olives + pointe de Paprika"
+            "name": "Thon + olives + Paprika"
         }
     ],
     "accessories": [
@@ -107,6 +107,25 @@
         }
     ],
     "steps": [
+        "Text",
+        "List",
+        "Advanced",
+        "\n    \n      \n    \n    \n      \n        \n      \n    \n  Text",
+        "\n    \n      \n    \n    \n      \n        \n      \n    \n  Heading 1",
+        "\n    \n      \n    \n    \n      \n        \n      \n    \n  Heading 2",
+        "\n    \n      \n    \n    \n      \n        \n      \n    \n  Heading 3",
+        "\n    \n      \n    \n    \n      \n        \n      \n    \n  Heading 4",
+        "\n    \n      \n    \n    \n      \n        \n      \n    \n  Heading 5",
+        "\n    \n      \n    \n    \n      \n        \n      \n    \n  Heading 6",
+        "\n    \n      \n    \n    \n      \n        \n      \n    \n  Quote",
+        "\n    \n      \n    \n    \n      \n        \n      \n    \n  Divider",
+        "\n    \n      \n    \n    \n      \n        \n      \n    \n  Bullet List",
+        "\n    \n      \n    \n    \n      \n        \n      \n    \n  Ordered List",
+        "\n    \n  Task List",
+        "\n    \n      \n    \n    \n      \n        \n      \n    \n  Image",
+        "\n    \n      \n    \n    \n      \n        \n      \n    \n  Code",
+        "\n    \n      \n    \n    \n      \n        \n      \n    \n  Table",
+        "\n    \n  Math",
         "Préchauffer votre four à 180°C.\n",
         "Poser votre moule sur une plaque aluminium perforée.",
         "Dans un cul de poule, fouetter les œufs, la farine, la levure, le sel et le poivre.",
