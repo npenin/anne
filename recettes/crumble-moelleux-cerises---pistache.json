@@ -64,8 +64,13 @@
             "name": "Levure chimique"
         },
         {
+            "quantity": " ",
+            "unit": "",
+            "name": ""
+        },
+        {
             "quantity": "45",
-            "unit": "Cerises fraîches lavées, séchées, dénoyautées ",
+            "unit": "Cerises fraîches lavées, séchées, dénoyautées",
             "name": ""
         }
     ],
