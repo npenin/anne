@@ -1,0 +1,85 @@
+{
+    "title": "Muffins AirCitron",
+    "slug": "muffins-aircitron",
+    "private": true,
+    "toppings": [
+        {
+            "quantity": "70",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "1",
+            "unit": "Citron",
+            "name": ""
+        },
+        {
+            "quantity": "80",
+            "unit": "g",
+            "name": "Beurre"
+        },
+        {
+            "quantity": "2",
+            "unit": "Oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "115",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "1/2",
+            "unit": "Sachet de levure chimique",
+            "name": ""
+        },
+        {
+            "quantity": "1",
+            "unit": "pincée",
+            "name": "Sel"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Fouet 13cm ",
+            "picture": "https://boutique.guydemarle.com/5820-thickbox_default/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Bol micro-ondes 1L",
+            "picture": "https://boutique.guydemarle.com/3363-thickbox_default/bol-micro-ondes-1l.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1009-bol-micro-ondes-1l.html"
+        },
+        {
+            "name": "Pichet verseur",
+            "picture": "https://boutique.guydemarle.com/2230-thickbox_default/pichet-verseur-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/681-pichet-verseur-guy-demarle.html"
+        },
+        {
+            "name": "Zesteur 4 en 1",
+            "picture": "https://boutique.guydemarle.com/7325-thickbox_default/zesteur-4-en-1.jpg",
+            "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/2527-zesteur-4-en-1.html"
+        },
+        {
+            "name": "Presse agrumes inox",
+            "picture": "https://boutique.guydemarle.com/2219-thickbox_default/presse-agrumes-inox-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/675-presse-agrumes-inox-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 20 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2179-thickbox_default/plaque-aluminium-perforee-20-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/652-plaque-aluminium-perforee-20-x-30-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Dans le bol micro-ondes, faire fondre le beurre et réserver.\n2. A l’aide du zesteur, zester le citron.\n\n2) Dans le pichet verseur, mélanger le sucre et les zestes de citron.\n3) Ajouter le beurre fondu et les œufs, puis mélanger bien.\n4) Incorporer la farine, la levure et le sel sans trop travailler la pâte — elle doit rester légèrement grumeleuse, c'est ce qui garantit des muffins moelleux.\n5) A l’ aide du presse agrumes, presser le citron.\n6) Ajouter le jus de citron et mélanger jusqu'à obtenir un mélange homogène.\n7) Répartir la pâte dans les 6 moules.\n\n   ###### Airfryer : \n8) Placer les moules dans le panier.\n9) Enfourner à 160°C, mode Bake, pendant 14 - 16 min.\n\n   ###### Au four classique : \n10) Poser les moules sur une petite plaque aluminium perforée.\n11) Enfourner à 180°C, pendant 20 - 22 min (suivant votre four).\n12) Laisser refroidir avant de démouler.\n\nNb : Pour un résultat parfait, n'hésitez pas à adapter le temps de cuisson et la température à votre appareil. La recette ayant été réalisée dans la Cosori Twinfry 10L.\n",
+    "for": "6",
+    "preptime": "10",
+    "resttime": "0",
+    "cooktime": "14-16",
+    "gallery": [],
+    "mold": {
+        "name": "Moules Individuels Air Fryer Muffins/Cupcakes (x6) OHRA®",
+        "picture": "https://boutique.guydemarle.com/18660-thickbox_default/moules-individuels-air-fryer-muffins-cupcakes-x6-ohra.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/9282-moules-individuels-air-fryer-muffins-cupcakes-x6-ohra.html"
+    }
+}
