@@ -1,7 +1,7 @@
 {
     "title": "Muffins AirCocoCan",
     "slug": "muffins-aircococan",
-    "private": false,
+    "private": true,
     "toppings": [
         {
             "quantity": "85",
@@ -56,7 +56,7 @@
             "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1793-spatule-double-embout-gris-anthracite.html"
         }
     ],
-    "steps": "1. Préchauffer votre Airfryer à 160°C, programme Bake, pendant 3 minutes (ou ajouter 2 min de cuisson si vous ne préchauffez pas).\n2. Dans le pichet verseur, mélanger la noix de coco râpée, la levure chimique, la cannelle et le sucre vanillé.\n3. Ajouter les œufs, le yaourt nature et le sucre.\n4. Mélanger jusqu'à obtenir une pâte homogène.\n5. Répartir la pâte dans les 6 moules. Remplir aux 3/4 maximum.\n6. Placer les moules dans le panier de l'airfryer.\n7. Enfourner à 160°C, mode Bake, pendant 14 jusqu'à ce que les muffins soient légèrement dorés.\n8. Laisser refroidir avant de démouler.\n\n   <br />\n\nNB : Pour un résultat parfait, n'hésitez pas à adapter le temps de cuisson et la température à votre appareil. La recette ayant été réalisée dans la Cosori Twinfry 10L.\n",
+    "steps": "1. Dans le pichet verseur, mélanger la noix de coco râpée, la levure chimique, la cannelle et le sucre vanillé.\n2. Ajouter les œufs, le yaourt nature et le sucre.\n3. Mélanger jusqu'à obtenir une pâte homogène.\n4. Répartir la pâte dans les 6 moules.\n\n#### Airfryer\n\n1. Placer les moules dans le panier.\n2. Enfourner à 160°C, mode Bake, pendant 14 - 16 min.\n3. Laisser refroidir avant de démouler. \n\n   #### Four classique\n\n   1. Poser les moules sur une petite plaque aluminium perforée.\n   2. Enfourner à 180°C pendant 20 - 22 min (suivant votre four).\n4. Laisser refroidir avant de démouler.\n\n   > NB : Pour un résultat parfait, n'hésitez pas à adapter le temps de cuisson et la température à votre appareil. La recette ayant été réalisée dans la Cosori Twinfry 10L.\n\n",
     "for": "3-6",
     "preptime": "5",
     "resttime": "0",
