@@ -64,6 +64,13 @@ for (const recipeFile of await readdir('./recettes', { withFileTypes: true }))
 
         if (recipe.accessories?.length)
         {
+            if (!recipe.accessories.find(a => a.url === "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"))
+                recipe.accessories.push(
+                    {
+                        "name": "Balance de cuisine en inox",
+                        "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+                        "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+                    });
             for (const accessory of recipe.accessories)
             {
                 if (!index[accessory.name])
