@@ -19,6 +19,18 @@ h2 {
     margin: 0;
 }
 
+blockquote {
+    margin-left: 0.75em;
+    margin-right: 0.75em;
+    margin-top: .75em;
+    margin-bottom: .75em;
+
+    >p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
 h1:empty::before {
     content: "Titre de la recette";
 }
