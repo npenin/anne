@@ -360,8 +360,8 @@ const editor = new Crepe({
   <line x1="8" y1="12" x2="3" y2="12"/>
   <polyline points="7,8 3,12 7,16"/>
 </svg>`,
-                        label: '<--',
-                        onSelect(ctx)
+                        active: () => false,
+                        onRun(ctx)
                         {
                             return outdent(editor);
                         }
@@ -374,8 +374,8 @@ const editor = new Crepe({
   <line x1="3" y1="12" x2="8" y2="12"/>
   <polyline points="4,8 8,12 4,16"/>
 </svg>`,
-                        label: '-->',
-                        onSelect(ctx)
+                        active: () => false,
+                        onRun(ctx)
                         {
                             return indent(editor);
                         }
