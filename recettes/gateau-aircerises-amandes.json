@@ -1,0 +1,80 @@
+{
+    "title": "Gâteau AirCerises Amandes",
+    "slug": "gateau-aircerises-amandes",
+    "private": true,
+    "toppings": [
+        {
+            "quantity": "85",
+            "unit": "g",
+            "name": "Poudre d'amandes"
+        },
+        {
+            "quantity": "2",
+            "unit": "Oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "85",
+            "unit": "g",
+            "name": "Yaourt nature"
+        },
+        {
+            "quantity": "25",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "1",
+            "unit": "sachet",
+            "name": "Sucre vanillé"
+        },
+        {
+            "quantity": "4",
+            "unit": "g",
+            "name": "Levure chimique"
+        },
+        {
+            "quantity": "80",
+            "unit": "g",
+            "name": "Cerises dénoyautées"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Pichet verseur",
+            "picture": "https://boutique.guydemarle.com/2230-thickbox_default/pichet-verseur-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/681-pichet-verseur-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 20 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2179-thickbox_default/plaque-aluminium-perforee-20-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/652-plaque-aluminium-perforee-20-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-thickbox_default/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Spatule double embouts",
+            "picture": "https://boutique.guydemarle.com/5792-thickbox_default/spatule-double-embout-gris-anthracite.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1793-spatule-double-embout-gris-anthracite.html"
+        },
+        {
+            "name": "Fouet 13cm ",
+            "picture": "https://boutique.guydemarle.com/5820-thickbox_default/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Dans un pichet verseur, mélanger la poudre d'amandes, la levure chimique et le sucre vanillé.\n2. Ajouter les œufs, le yaourt nature et le sucre. \n3. Mélanger jusqu'à obtenir une pâte homogène.\n4. Couper les cerises en dés et les incorporer délicatement.\n5. Répartir la préparation dans les 6 moules.\n\n#### Airfryer : \n\n1. Placer les moules dans le panier.\n2. Enfourner à 160°C, en mode Bake, pendant 14 - 16 min. \n3. Laisser refroidir avant de démouler.\n\n#### Four classique : \n\n1. Poser les moules sur une petite plaque aluminium perforée.\n2. Enfourner à 180°C, pendant 20 min (suivant votre four).\n3. Laisser refroidir avant de démouler.\n\n   > Nb : Pour un résultat parfait, n'hésitez pas à adapter le temps de cuisson et la température à votre appareil. La recette a été réalisée dans la Cosori Twinfry 10L.\n\n<br />\n\n",
+    "for": "6",
+    "preptime": "10",
+    "resttime": "0",
+    "cooktime": "14-16",
+    "gallery": [],
+    "mold": {
+        "name": "Moules Individuels Air Fryer Muffins/Cupcakes (x6) OHRA®",
+        "picture": "https://boutique.guydemarle.com/18660-thickbox_default/moules-individuels-air-fryer-muffins-cupcakes-x6-ohra.jpg",
+        "url": "https://anneetsesdelices.fr/admin/recette/#"
+    }
+}
