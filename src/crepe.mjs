@@ -3,7 +3,8 @@ export * from '@milkdown/crepe';
 import '@milkdown/crepe/theme/common/style.css'
 import '@milkdown/crepe/theme/frame.css'
 export { replaceAll } from '@milkdown/utils';
-
+export { commonmark } from '@milkdown/kit/preset/commonmark'
+export { gfm } from '@milkdown/kit/preset/gfm'
 
 // // Re-export core editor
 // export { Editor, EditorStatus } from '@milkdown/core';
