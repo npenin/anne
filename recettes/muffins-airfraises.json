@@ -1,0 +1,105 @@
+{
+    "title": "Muffins AirFraises",
+    "slug": "muffins-airfraises",
+    "private": true,
+    "toppings": [
+        {
+            "quantity": "60",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "1/2",
+            "unit": "Citron",
+            "name": ""
+        },
+        {
+            "quantity": "1/2",
+            "unit": "c-à-c extrait extrait de vanille",
+            "name": ""
+        },
+        {
+            "quantity": "1",
+            "unit": "Oeuf",
+            "name": ""
+        },
+        {
+            "quantity": "70",
+            "unit": "g",
+            "name": "Beurre"
+        },
+        {
+            "quantity": "1",
+            "unit": "pincée ",
+            "name": "Sel"
+        },
+        {
+            "quantity": "120",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "5",
+            "unit": "g",
+            "name": "Levure chimique"
+        },
+        {
+            "quantity": "1",
+            "unit": "c-à-c",
+            "name": "Jus de citron"
+        },
+        {
+            "quantity": "40",
+            "unit": "g",
+            "name": "Lait demi-écrémé "
+        },
+        {
+            "quantity": "95",
+            "unit": "Fraises coupées en morceaux",
+            "name": ""
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Fouet 13cm ",
+            "picture": "https://boutique.guydemarle.com/5820-thickbox_default/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Bol micro-ondes 1L",
+            "picture": "https://boutique.guydemarle.com/3363-thickbox_default/bol-micro-ondes-1l.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1009-bol-micro-ondes-1l.html"
+        },
+        {
+            "name": "Pichet verseur",
+            "picture": "https://boutique.guydemarle.com/2230-thickbox_default/pichet-verseur-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/681-pichet-verseur-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 20 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2179-thickbox_default/plaque-aluminium-perforee-20-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/652-plaque-aluminium-perforee-20-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-thickbox_default/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Zesteur 4 en 1",
+            "picture": "https://boutique.guydemarle.com/7325-thickbox_default/zesteur-4-en-1.jpg",
+            "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/2527-zesteur-4-en-1.html"
+        }
+    ],
+    "steps": "1. Dans le bol micro-ondes, faire fondre le beurre et réserver\n\n2) A l’aide du zesteur, zester le citron.\n3) Dans un pichet verseur mélanger le sucre, le zeste de citron et la vanille.\n4) Ajouter l’œuf , le beurre fondu, le sel, puis mélanger.\n5) Incorporer la farine, la levure, le jus de citron et le lait.\n6) Ajouter délicatement les fraises coupées en morceaux.\n7) Répartir dans les moules.\n\n#### Airfryer :\n\n1. Placer les moule dans le panier.\n2. Enfourner à  160°C, en mode Bake, pendant 13 - 15 min.\n3. Laisser refroidir avant de démouler.\n\n#### Four classique :\n\n1. Poser les moules sur une petite plaque aluminium perforée.\n2. Enfourner à 180°C, pendant 20 - 22 min.\n3. Laisser refroidir avant de démouler.\n\n> Nb : Pour un résultat parfait, n'hésitez pas à adapter le temps de cuisson et la température de votre appareil. La recette a été réalisée dans la Cosori Twinfry 10L.\n\n",
+    "for": "6",
+    "preptime": "10",
+    "resttime": "0",
+    "cooktime": "13-15",
+    "gallery": [],
+    "mold": {
+        "name": "Moules Individuels Air Fryer Muffins/Cupcakes (x6) OHRA®",
+        "picture": "https://boutique.guydemarle.com/18660-thickbox_default/moules-individuels-air-fryer-muffins-cupcakes-x6-ohra.jpg",
+        "url": "https://anneetsesdelices.fr/admin/recette/#"
+    }
+}
