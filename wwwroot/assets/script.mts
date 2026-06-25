@@ -1,4 +1,4 @@
-import { Crepe, replaceAll } from './milkdown.mjs';
+import { Crepe, replaceAll, sinkListItemCommand, liftListItemCommand, callCommand, commonmark, gfm } from './milkdown.mjs';
 
 declare global
 {
@@ -341,7 +341,64 @@ globalThis.loadRecipe = function (recipe)
 }
 
 let mdSteps = '';
-const editor = new Crepe({ root: '#steps' })
+
+const editor = new Crepe({
+    root: '#steps', features: {
+        [Crepe.Feature.TopBar]: true,
+    },
+    featureConfigs: {
+        [Crepe.Feature.TopBar]: {
+            buildTopBar: (builder) =>
+            {
+                {
+                    builder.addGroup('indent', 'Indentation').addItem('left', {
+                        icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>Outdent</title>
+  <line x1="10" y1="6" x2="20" y2="6"/>
+  <line x1="10" y1="12" x2="17" y2="12"/>
+  <line x1="10" y1="18" x2="20" y2="18"/>
+  <line x1="8" y1="12" x2="3" y2="12"/>
+  <polyline points="7,8 3,12 7,16"/>
+</svg>`,
+                        label: '<--',
+                        onSelect(ctx)
+                        {
+                            return outdent(editor);
+                        }
+                    }).addItem('right', {
+                        icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>Indent</title>
+  <line x1="10" y1="6" x2="20" y2="6"/>
+  <line x1="10" y1="12" x2="17" y2="12"/>
+  <line x1="10" y1="18" x2="20" y2="18"/>
+  <line x1="3" y1="12" x2="8" y2="12"/>
+  <polyline points="4,8 8,12 4,16"/>
+</svg>`,
+                        label: '-->',
+                        onSelect(ctx)
+                        {
+                            return indent(editor);
+                        }
+                    })
+                }
+            }
+        }
+    }
+});
+
+
+// returns true if it actually did something, false if the cursor
+// wasn't inside a list item (so it's safe to call unconditionally)
+export function outdent(crepe)
+{
+    return !!crepe.editor.action(callCommand(liftListItemCommand.key));
+}
+
+export function indent(crepe)
+{
+    return !!crepe.editor.action(callCommand(sinkListItemCommand.key));
+}
+editor.editor.use(commonmark).use(gfm)
 editor.on(listener => listener.markdownUpdated((ctx, markdown) => { mdSteps = markdown; saveLocally(); }));
 await editor.create();
 
