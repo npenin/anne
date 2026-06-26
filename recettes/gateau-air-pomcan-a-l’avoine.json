@@ -1,0 +1,85 @@
+{
+    "title": "Gâteau Air PomCan à l’avoine",
+    "slug": "gateau-air-pomcan-a-l-avoine",
+    "private": true,
+    "toppings": [
+        {
+            "quantity": "75",
+            "unit": "g",
+            "name": "Flocons d'avoine"
+        },
+        {
+            "quantity": "90",
+            "unit": "g",
+            "name": "Pomme"
+        },
+        {
+            "quantity": "2",
+            "unit": "Œufs",
+            "name": ""
+        },
+        {
+            "quantity": "60",
+            "unit": "g",
+            "name": "Yaourt nature"
+        },
+        {
+            "quantity": "15",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "4",
+            "unit": "g",
+            "name": "Levure chimique"
+        },
+        {
+            "quantity": "1",
+            "unit": "pincée",
+            "name": "Cannelle"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Pichet verseur",
+            "picture": "https://boutique.guydemarle.com/2230-thickbox_default/pichet-verseur-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/681-pichet-verseur-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 20 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2179-thickbox_default/plaque-aluminium-perforee-20-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/652-plaque-aluminium-perforee-20-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-thickbox_default/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Spatule double embouts",
+            "picture": "https://boutique.guydemarle.com/5792-thickbox_default/spatule-double-embout-gris-anthracite.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1793-spatule-double-embout-gris-anthracite.html"
+        },
+        {
+            "name": "Fouet 13cm ",
+            "picture": "https://boutique.guydemarle.com/5820-thickbox_default/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Mandoline Verticale",
+            "picture": "https://boutique.guydemarle.com/18709-thickbox_default/mandoline-verticale.jpg",
+            "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/9288-mandoline-verticale.html"
+        }
+    ],
+    "steps": "1. Mixer les flocons d'avoine jusqu'à obtenir une poudre fine et réserver.\n2. A l’aide de la mandoline, râper la pomme et réserver.\n3. Dans un pichet verseur, mélanger la poudre d'avoine avec les œufs, le yaourt, le sucre, la levure et la cannelle.\n4. Incorporer délicatement la pomme râpée.\n5. Répartir la préparation dans les 6 moules.\n\n#### Airfryer : \n\n1. Placer les moules dans le panier.\n2. Enfourner à 160°C, en mode Bake, pendant 14 - 16 min.\n3. Laisser refroidir avant de démouler.\n\n#### Four classique : \n\n1. Poser les moules sur une petite plaque aluminium perforée.\n2. Enfourner à 175°C, pendant 18 - 20 min.\n3. Laisser refroidir avant de démouler.\n\n   > Nb : Pour un résultat parfait, n'hésitez pas à adapter le temps de cuisson et la température à votre appareil. La recette a été réalisée dans la Cosori Twinfry 10L.\n\n",
+    "for": "6",
+    "preptime": "15",
+    "resttime": "0",
+    "cooktime": "14-16",
+    "gallery": [],
+    "mold": {
+        "name": "Moules Individuels Air Fryer Muffins/Cupcakes (x6) OHRA®",
+        "picture": "https://boutique.guydemarle.com/18660-thickbox_default/moules-individuels-air-fryer-muffins-cupcakes-x6-ohra.jpg",
+        "url": "https://anneetsesdelices.fr/admin/recette/#"
+    }
+}
