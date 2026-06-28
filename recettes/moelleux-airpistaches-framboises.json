@@ -1,7 +1,7 @@
 {
     "title": "Moelleux AirPistaches Framboises",
     "slug": "moelleux-airpistaches-framboises",
-    "private": true,
+    "private": false,
     "toppings": [
         {
             "quantity": "100",
