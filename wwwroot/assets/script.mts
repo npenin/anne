@@ -1,4 +1,7 @@
 import { Crepe, replaceAll, sinkListItemCommand, liftListItemCommand, callCommand, commonmark, gfm } from './milkdown.mjs';
+// import type { Crepe } from '@milkdown/crepe';
+import type { TopBarFeatureConfig } from '@milkdown/crepe/feature/top-bar';
+// import type { Ctx } from '@milkdown/ctx';
 
 declare global
 {
@@ -40,16 +43,16 @@ await Notification.requestPermission();
 const coverImageEl = document.querySelector<HTMLImageElement>('.cover-image');
 const galleryGridEl = document.querySelector('.gallery-grid');
 const isGalleryEditor = !!document.querySelector('.gallery-editor');
-let galleryImages = [];
-let pendingCoverFile = null;
+let galleryImages: string[] = [];
+let pendingCoverFile: { file: File, blobUrl?: string } | undefined | null = null;
 const pendingGalleryFiles = new Map();
 
-function isBlobUrl(url)
+function isBlobUrl(url: unknown)
 {
     return typeof url === 'string' && url.startsWith('blob:');
 }
 
-function slugifyTitle(title)
+function slugifyTitle(title: string)
 {
     return title.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[ ’]+/g, '-').toLowerCase();
 }
@@ -62,7 +65,7 @@ function getRecipeSlug()
     return slugifyTitle(title);
 }
 
-function safeFilename(name)
+function safeFilename(name: string)
 {
     return name
         .normalize('NFD')
@@ -73,7 +76,7 @@ function safeFilename(name)
         .toLowerCase();
 }
 
-function notifyError(message)
+function notifyError(message: string)
 {
     if (Swal?.fire)
         Swal.fire({ title: 'Erreur', text: message, icon: 'error' });
@@ -81,7 +84,7 @@ function notifyError(message)
         alert(message);
 }
 
-function renderCover(coverImageUrl)
+function renderCover(coverImageUrl: string)
 {
     if (!coverImageEl)
         return;
@@ -103,7 +106,7 @@ function renderCover(coverImageUrl)
     }
 }
 
-function renderGallery(images)
+function renderGallery(images: string[])
 {
     if (!galleryGridEl)
         return;
@@ -139,7 +142,7 @@ function renderGallery(images)
     });
 }
 
-async function uploadFileToGithub(pathInRepo, contentBase64, message)
+async function uploadFileToGithub(pathInRepo: string, contentBase64: string, message: string)
 {
     const apiPath = pathInRepo.replace(/^\/+/, '');
     let res = await fetch('https://api.github.com/repos/npenin/anne/contents/' + apiPath, {
@@ -175,7 +178,7 @@ async function uploadFileToGithub(pathInRepo, contentBase64, message)
     return res.json();
 }
 
-function fileToBase64(file)
+function fileToBase64(file: Blob): Promise<string>
 {
     return new Promise((resolve, reject) =>
     {
@@ -191,7 +194,7 @@ function fileToBase64(file)
     });
 }
 
-async function handleCoverUpload(file)
+async function handleCoverUpload(file: File)
 {
     const slug = getRecipeSlug();
     if (!slug)
@@ -241,7 +244,7 @@ if (coverInput)
         {
             await handleCoverUpload(file);
         }
-        catch (error)
+        catch (error: any)
         {
             notifyError(error.message || 'Erreur lors du téléversement de la couverture.');
         }
@@ -259,7 +262,7 @@ if (galleryInput)
         {
             await handleGalleryUpload(files);
         }
-        catch (error)
+        catch (error: any)
         {
             notifyError(error.message || 'Erreur lors du téléversement des photos.');
         }
@@ -285,36 +288,36 @@ globalThis.removeCover = function removeCover()
     saveLocally();
 }
 
-dynamic(document.querySelector('.info>.mold>.name'), {
+dynamic(document.querySelector('.info>.mold>.name')!, {
     Enter(ev)
     {
         fetchmold(ev).then(() => ev.target.blur()).then(() => saveLocally());
     }
 })
 
-globalThis.loadRecipe = function (recipe)
+globalThis.loadRecipe = function (recipe: Recipe)
 {
-    document.querySelector('h1').innerText = recipe.title;
-    document.querySelector<HTMLInputElement>('input[name="private"]').checked = recipe.private;
-    document.querySelector<HTMLElement>('.info .count').innerText = recipe.for;
-    document.querySelector<HTMLElement>('.info .preptime').innerText = recipe.preptime;
-    document.querySelector<HTMLElement>('.info .resttime').innerText = recipe.resttime;
-    document.querySelector<HTMLElement>('.info .cooktime').innerText = recipe.cooktime;
-    document.querySelector<HTMLElement>('.info .mold>.name').innerText = recipe.mold?.name;
-    document.querySelector<HTMLImageElement>('.info .mold>a>img').src = recipe.mold?.picture;
+    document.querySelector('h1')!.innerText = recipe.title;
+    document.querySelector<HTMLInputElement>('input[name="private"]')!.checked = recipe.private;
+    document.querySelector<HTMLElement>('.info .count')!.innerText = recipe.for;
+    document.querySelector<HTMLElement>('.info .preptime')!.innerText = recipe.preptime;
+    document.querySelector<HTMLElement>('.info .resttime')!.innerText = recipe.resttime;
+    document.querySelector<HTMLElement>('.info .cooktime')!.innerText = recipe.cooktime;
+    document.querySelector<HTMLElement>('.info .mold>.name')!.innerText = recipe.mold?.name;
+    document.querySelector<HTMLImageElement>('.info .mold>a>img')!.src = recipe.mold?.picture;
     recipe.toppings?.forEach(t =>
     {
         const li = addtoppings(false);
-        li.querySelector<HTMLElement>('.quantity').innerText = t.quantity;
-        li.querySelector<HTMLElement>('.unit').innerText = t.unit;
-        li.querySelector<HTMLElement>('.topping').innerText = t.name;
+        li.querySelector<HTMLElement>('.quantity')!.innerText = t.quantity;
+        li.querySelector<HTMLElement>('.unit')!.innerText = t.unit;
+        li.querySelector<HTMLElement>('.topping')!.innerText = t.name;
     })
     recipe.accessories?.forEach(a =>
     {
         const li = addAccessory(false);
-        li.querySelector<HTMLElement>('.name').innerText = a.name;
-        li.querySelector<HTMLImageElement>('img').src = a.picture;
-        li.querySelector<HTMLAnchorElement>('a').href = a.url;
+        li.querySelector<HTMLElement>('.name')!.innerText = a.name;
+        li.querySelector<HTMLImageElement>('img')!.src = a.picture;
+        li.querySelector<HTMLAnchorElement>('a')!.href = a.url;
     })
 
     if (typeof recipe.steps === 'string')
@@ -342,7 +345,7 @@ globalThis.loadRecipe = function (recipe)
 
 let mdSteps = '';
 
-const editor = new Crepe({
+const editor: Crepe = new Crepe({
     root: '#steps', features: {
         [Crepe.Feature.TopBar]: true,
     },
@@ -350,9 +353,8 @@ const editor = new Crepe({
         [Crepe.Feature.TopBar]: {
             buildTopBar: (builder) =>
             {
-                {
-                    builder.addGroup('indent', 'Indentation').addItem('left', {
-                        icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img">
+                builder.addGroup('indent', 'Indentation').addItem('left', {
+                    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img">
   <title>Outdent</title>
   <line x1="10" y1="6" x2="20" y2="6"/>
   <line x1="10" y1="12" x2="17" y2="12"/>
@@ -360,13 +362,13 @@ const editor = new Crepe({
   <line x1="8" y1="12" x2="3" y2="12"/>
   <polyline points="7,8 3,12 7,16"/>
 </svg>`,
-                        active: () => false,
-                        onRun(ctx)
-                        {
-                            return outdent(editor);
-                        }
-                    }).addItem('right', {
-                        icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img">
+                    active: () => false,
+                    onRun()
+                    {
+                        return outdent(editor);
+                    }
+                }).addItem('right', {
+                    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img">
   <title>Indent</title>
   <line x1="10" y1="6" x2="20" y2="6"/>
   <line x1="10" y1="12" x2="17" y2="12"/>
@@ -374,76 +376,76 @@ const editor = new Crepe({
   <line x1="3" y1="12" x2="8" y2="12"/>
   <polyline points="4,8 8,12 4,16"/>
 </svg>`,
-                        active: () => false,
-                        onRun(ctx)
-                        {
-                            return indent(editor);
-                        }
-                    })
-                }
+                    active: () => false,
+                    onRun()
+                    {
+                        return indent(editor);
+                    }
+                })
+
             }
-        }
+        } as TopBarFeatureConfig
     }
 });
 
 
 // returns true if it actually did something, false if the cursor
 // wasn't inside a list item (so it's safe to call unconditionally)
-export function outdent(crepe)
+export function outdent(crepe: Crepe)
 {
     return !!crepe.editor.action(callCommand(liftListItemCommand.key));
 }
 
-export function indent(crepe)
+export function indent(crepe: Crepe)
 {
     return !!crepe.editor.action(callCommand(sinkListItemCommand.key));
 }
 editor.editor.use(commonmark).use(gfm)
-editor.on(listener => listener.markdownUpdated((ctx, markdown) => { mdSteps = markdown; saveLocally(); }));
+editor.on((listener: any) => listener.markdownUpdated((ctx, markdown) => { mdSteps = markdown; saveLocally(); }));
 await editor.create();
 
-document.querySelector('.mold').addEventListener('click', () => document.querySelector<HTMLElement>('.info>.mold>.name').focus());
-async function fetchmold(ev)
+document.querySelector('.mold')!.addEventListener('click', () => document.querySelector<HTMLElement>('.info>.mold>.name')!.focus());
+async function fetchmold(ev: Event)
 {
-    const res = await fetch(new URL(ev.target.innerText.replace('https://boutique.guydemarle.com', 'https://d2quloop9d8ihx.cloudfront.net'), root));
+    const res = await fetch(new URL((ev.target as HTMLElement).innerText.replace('https://boutique.guydemarle.com', 'https://d2quloop9d8ihx.cloudfront.net'), root));
     const content = res.text();
     const dummy = document.createElement('div');
     dummy.innerHTML = await content;
-    const meta = Object.fromEntries(Array.from(dummy.querySelectorAll('meta').values()).filter(v => v.attributes.getNamedItem('property')).map(v => [v.attributes.getNamedItem('property').value, v.attributes.getNamedItem('content').value]));
+    const meta = Object.fromEntries(Array.from(dummy.querySelectorAll('meta').values()).filter(v => v.attributes.getNamedItem('property')).map(v => [v.attributes.getNamedItem('property')!.value, v.attributes.getNamedItem('content')!.value]));
     dummy.remove();
-    ev.target.innerText = meta['og:title'];
-    ev.target.parentNode.querySelector('img').src = meta['og:image'];
-    ev.target.parentNode.querySelector('a').href = meta['og:url'];
+    (ev.target as HTMLElement)!.innerText = meta['og:title'];
+    (ev.target as HTMLElement)!.parentNode!.querySelector('img')!.src = meta['og:image'];
+    (ev.target as HTMLElement)!.parentNode!.querySelector('a')!.href = meta['og:url'];
 }
 
 globalThis.fetchmold = fetchmold;
 export function getRecipe()
 {
     return {
-        title: document.querySelector('h1').innerText,
+        title: document.querySelector('h1')!.innerText,
         slug: getRecipeSlug(),
-        private: document.querySelector<HTMLInputElement>('input[name="private"]').checked,
+        private: document.querySelector<HTMLInputElement>('input[name="private"]')!.checked,
         toppings: Array.from(document.querySelectorAll('.toppings li')).map(li => ({
-            quantity: li.querySelector<HTMLElement>('.quantity').innerText,
-            unit: li.querySelector<HTMLElement>('.unit').innerText,
-            name: li.querySelector<HTMLElement>('.topping').innerText
+            quantity: li.querySelector<HTMLElement>('.quantity')!.innerText,
+            unit: li.querySelector<HTMLElement>('.unit')!.innerText,
+            name: li.querySelector<HTMLElement>('.topping')!.innerText
         })),
         accessories: Array.from(document.querySelectorAll('.accessories > ul > li')).map(span => ({
-            name: span.querySelector<HTMLElement>('.name').innerText,
-            picture: span.querySelector<HTMLImageElement>('img').src,
-            url: span.querySelector<HTMLAnchorElement>('a').href,
+            name: span.querySelector<HTMLElement>('.name')!.innerText,
+            picture: span.querySelector<HTMLImageElement>('img')!.src,
+            url: span.querySelector<HTMLAnchorElement>('a')!.href,
         })),
         steps: mdSteps || Array.from(document.querySelectorAll<HTMLElement>('.steps li')).map(li => li.innerText),
-        for: document.querySelector<HTMLElement>('.info .count').innerText,
-        preptime: document.querySelector<HTMLElement>('.info .preptime').innerText,
-        resttime: document.querySelector<HTMLElement>('.info .resttime').innerText,
-        cooktime: document.querySelector<HTMLElement>('.info .cooktime').innerText,
-        cover: document.querySelector<HTMLImageElement>('.cover-image').dataset.hasImage == 'true' ? document.querySelector<HTMLImageElement>('.cover-image').src : undefined,
+        for: document.querySelector<HTMLElement>('.info .count')!.innerText,
+        preptime: document.querySelector<HTMLElement>('.info .preptime')!.innerText,
+        resttime: document.querySelector<HTMLElement>('.info .resttime')!.innerText,
+        cooktime: document.querySelector<HTMLElement>('.info .cooktime')!.innerText,
+        cover: document.querySelector<HTMLImageElement>('.cover-image')!.src,
         gallery: galleryImages,
         mold: {
-            name: document.querySelector<HTMLElement>('.info>.mold').innerText,
-            picture: document.querySelector<HTMLImageElement>('.info>.mold>a>img').src,
-            url: document.querySelector<HTMLAnchorElement>('.info>.mold>a').href,
+            name: document.querySelector<HTMLElement>('.info>.mold')!.innerText,
+            picture: document.querySelector<HTMLImageElement>('.info>.mold>a>img')!.src,
+            url: document.querySelector<HTMLAnchorElement>('.info>.mold>a')!.href,
         },
     };
 }
@@ -494,7 +496,7 @@ function saveLocally()
     getRecipeWithBase64Images().then(recipe => globalThis.saveLocally(recipe));
 }
 
-async function uploadPendingImages(recipe)
+async function uploadPendingImages(recipe: Recipe)
 {
     const slug = recipe.slug || getRecipeSlug();
     if (!slug)
@@ -569,13 +571,13 @@ globalThis.saveAsDraft = async function saveAsDraft()
 }
 globalThis.save = async function save()
 {
-    document.querySelector<HTMLElement>('.toolbar').style.display = 'none';
+    document.querySelector<HTMLElement>('.toolbar')!.style.display = 'none';
     let recipe = getRecipe();
     try
     {
         recipe = await uploadPendingImages(recipe);
     }
-    catch (error)
+    catch (error: any)
     {
         notifyError(error.message || 'Erreur lors du téléversement des images.');
         delete document.querySelector<HTMLElement>('.toolbar').style.display;
@@ -689,7 +691,7 @@ function addAccessory(focus)
     li.appendChild(name);
     document.querySelector('.accessories>ul').appendChild(li);
     dynamic(name, {
-        Enter: (ev: { target: HTMLElement }) =>
+        Enter: (ev: Event & { target: HTMLElement }) =>
         {
             if (ev.target.innerText !== '' && ev.target.innerText !== '\n')
                 fetchmold(ev).then(() => ev.target.blur()).then(() => saveLocally());

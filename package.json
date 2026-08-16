@@ -9,6 +9,7 @@
     "build": "yarn build:crepe && yarn eleventy --config=eleventy.js --input=wwwroot",
     "build:crepe": "rollup -c rollup.config.mjs",
     "watch": "yarn eleventy --config=eleventy.js --input=wwwroot --watch",
+    "watch:script": "tsc --watch -p tsconfig.json",
     "serve": "yarn dlx serve _site",
     "fix-recipes": "node ./tools/fix-recipes.mjs"
   },

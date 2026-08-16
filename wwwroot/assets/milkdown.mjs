@@ -25211,7 +25211,10 @@ var Container = class {
 		this.sliceMap = /* @__PURE__ */ new Map();
 		this.get = (slice) => {
 			const context = typeof slice === "string" ? [...this.sliceMap.values()].find((x) => x.type.name === slice) : this.sliceMap.get(slice.id);
-			if (!context) throw contextNotFound(typeof slice === "string" ? slice : slice.name);
+			if (!context) {
+				const name = typeof slice === "string" ? slice : slice.name;
+				throw contextNotFound(name);
+			}
 			return context;
 		};
 		this.remove = (slice) => {
@@ -41747,7 +41750,7 @@ Like nodes, fragments are persistent data structures, and you
 should not mutate them or their content. Rather, you create new
 instances whenever needed. The API tries to make this easy.
 */
-let Fragment$2 = class Fragment {
+let Fragment$1 = class Fragment {
     /**
     @internal
     */
@@ -42045,7 +42048,7 @@ An empty fragment. Intended to be reused whenever a node doesn't
 contain anything (rather than allocating a new empty fragment for
 each leaf node).
 */
-Fragment$2.empty = new Fragment$2([], 0);
+Fragment$1.empty = new Fragment$1([], 0);
 const found = { index: 0, offset: 0 };
 function retIndex(index, offset) {
     found.index = index;
@@ -42318,7 +42321,7 @@ class Slice {
         let openStart = json.openStart || 0, openEnd = json.openEnd || 0;
         if (typeof openStart != "number" || typeof openEnd != "number")
             throw new RangeError("Invalid input for Slice.fromJSON");
-        return new Slice(Fragment$2.fromJSON(schema, json.content), openStart, openEnd);
+        return new Slice(Fragment$1.fromJSON(schema, json.content), openStart, openEnd);
     }
     /**
     Create a slice from a fragment by taking the maximum possible
@@ -42336,7 +42339,7 @@ class Slice {
 /**
 The empty slice.
 */
-Slice.empty = new Slice(Fragment$2.empty, 0, 0);
+Slice.empty = new Slice(Fragment$1.empty, 0, 0);
 function removeRange(content, from, to) {
     let { index, offset } = content.findIndex(from), child = content.maybeChild(index);
     let { index: indexTo, offset: offsetTo } = content.findIndex(to);
@@ -42439,7 +42442,7 @@ function replaceThreeWay($from, $start, $end, $to, depth) {
             addNode(close$1(openEnd, replaceTwoWay($end, $to, depth + 1)), content);
     }
     addRange($to, null, depth, content);
-    return new Fragment$2(content);
+    return new Fragment$1(content);
 }
 function replaceTwoWay($from, $to, depth) {
     let content = [];
@@ -42449,13 +42452,13 @@ function replaceTwoWay($from, $to, depth) {
         addNode(close$1(type, replaceTwoWay($from, $to, depth + 1)), content);
     }
     addRange($to, null, depth, content);
-    return new Fragment$2(content);
+    return new Fragment$1(content);
 }
 function prepareSliceForReplace(slice, $along) {
     let extra = $along.depth - slice.openStart, parent = $along.node(extra);
     let node = parent.copy(slice.content);
     for (let i = extra - 1; i >= 0; i--)
-        node = $along.node(i).copy(Fragment$2.from(node));
+        node = $along.node(i).copy(Fragment$1.from(node));
     return { start: node.resolveNoCache(slice.openStart + extra),
         end: node.resolveNoCache(node.content.size - slice.openEnd - extra) };
 }
@@ -42853,7 +42856,7 @@ let Node$1 = class Node {
         this.type = type;
         this.attrs = attrs;
         this.marks = marks;
-        this.content = content || Fragment$2.empty;
+        this.content = content || Fragment$1.empty;
     }
     /**
     The array of this node's child nodes.
@@ -43129,7 +43132,7 @@ let Node$1 = class Node {
     can optionally pass `start` and `end` indices into the
     replacement fragment.
     */
-    canReplace(from, to, replacement = Fragment$2.empty, start = 0, end = replacement.childCount) {
+    canReplace(from, to, replacement = Fragment$1.empty, start = 0, end = replacement.childCount) {
         let one = this.contentMatchAt(from).matchFragment(replacement, start, end);
         let two = one && one.matchFragment(this.content, to);
         if (!two || !two.validEnd)
@@ -43211,7 +43214,7 @@ let Node$1 = class Node {
                 throw new RangeError("Invalid text node in JSON");
             return schema.text(json.text, marks);
         }
-        let content = Fragment$2.fromJSON(schema, json.content);
+        let content = Fragment$1.fromJSON(schema, json.content);
         let node = schema.nodeType(json.type).create(json.attrs, content, marks);
         node.type.checkAttrs(node.attrs);
         return node;
@@ -43364,7 +43367,7 @@ class ContentMatch {
         function search(match, types) {
             let finished = match.matchFragment(after, startIndex);
             if (finished && (!toEnd || finished.validEnd))
-                return Fragment$2.from(types.map(tp => tp.createAndFill()));
+                return Fragment$1.from(types.map(tp => tp.createAndFill()));
             for (let i = 0; i < match.next.length; i++) {
                 let { type, next } = match.next[i];
                 if (!(type.isText || type.hasRequiredAttrs()) && seen.indexOf(next) == -1) {
@@ -43852,7 +43855,7 @@ let NodeType$1 = class NodeType {
     create(attrs = null, content, marks) {
         if (this.isText)
             throw new Error("NodeType.create can't construct text nodes");
-        return new Node$1(this, this.computeAttrs(attrs), Fragment$2.from(content), Mark.setFrom(marks));
+        return new Node$1(this, this.computeAttrs(attrs), Fragment$1.from(content), Mark.setFrom(marks));
     }
     /**
     Like [`create`](https://prosemirror.net/docs/ref/#model.NodeType.create), but check the given content
@@ -43860,7 +43863,7 @@ let NodeType$1 = class NodeType {
     if it doesn't match.
     */
     createChecked(attrs = null, content, marks) {
-        content = Fragment$2.from(content);
+        content = Fragment$1.from(content);
         this.checkContent(content);
         return new Node$1(this, this.computeAttrs(attrs), content, Mark.setFrom(marks));
     }
@@ -43874,7 +43877,7 @@ let NodeType$1 = class NodeType {
     */
     createAndFill(attrs = null, content, marks) {
         attrs = this.computeAttrs(attrs);
-        content = Fragment$2.from(content);
+        content = Fragment$1.from(content);
         if (content.size) {
             let before = this.contentMatch.fillBefore(content);
             if (!before)
@@ -43882,7 +43885,7 @@ let NodeType$1 = class NodeType {
             content = before.append(content);
         }
         let matched = this.contentMatch.matchFragment(content);
-        let after = matched && matched.fillBefore(Fragment$2.empty, true);
+        let after = matched && matched.fillBefore(Fragment$1.empty, true);
         if (!after)
             return null;
         return new Node$1(this, attrs, content.append(after), Mark.setFrom(marks));
@@ -44390,7 +44393,7 @@ class NodeContext {
         if (!this.match) {
             if (!this.type)
                 return [];
-            let fill = this.type.contentMatch.fillBefore(Fragment$2.from(node));
+            let fill = this.type.contentMatch.fillBefore(Fragment$1.from(node));
             if (fill) {
                 this.match = this.type.contentMatch.matchFragment(fill);
             }
@@ -44418,9 +44421,9 @@ class NodeContext {
                     this.content[this.content.length - 1] = text.withText(text.text.slice(0, text.text.length - m[0].length));
             }
         }
-        let content = Fragment$2.from(this.content);
+        let content = Fragment$1.from(this.content);
         if (!openEnd && this.match)
-            content = content.append(this.match.fillBefore(Fragment$2.empty, true));
+            content = content.append(this.match.fillBefore(Fragment$1.empty, true));
         return this.type ? this.type.create(this.attrs, content, this.marks) : content;
     }
     inlineContext(node) {
@@ -45568,7 +45571,7 @@ function mapFragment(fragment, f, parent) {
             child = f(child, parent, i);
         mapped.push(child);
     }
-    return Fragment$2.fromArray(mapped);
+    return Fragment$1.fromArray(mapped);
 }
 /**
 Add a mark to all inline content between two positions.
@@ -45722,7 +45725,7 @@ class AddNodeMarkStep extends Step {
         if (!node)
             return StepResult.fail("No node at mark step's position");
         let updated = node.type.create(node.attrs, null, this.mark.addToSet(node.marks));
-        return StepResult.fromReplace(doc, this.pos, this.pos + 1, new Slice(Fragment$2.from(updated), 0, node.isLeaf ? 0 : 1));
+        return StepResult.fromReplace(doc, this.pos, this.pos + 1, new Slice(Fragment$1.from(updated), 0, node.isLeaf ? 0 : 1));
     }
     invert(doc) {
         let node = doc.nodeAt(this.pos);
@@ -45779,7 +45782,7 @@ class RemoveNodeMarkStep extends Step {
         if (!node)
             return StepResult.fail("No node at mark step's position");
         let updated = node.type.create(node.attrs, null, this.mark.removeFromSet(node.marks));
-        return StepResult.fromReplace(doc, this.pos, this.pos + 1, new Slice(Fragment$2.from(updated), 0, node.isLeaf ? 0 : 1));
+        return StepResult.fromReplace(doc, this.pos, this.pos + 1, new Slice(Fragment$1.from(updated), 0, node.isLeaf ? 0 : 1));
     }
     invert(doc) {
         let node = doc.nodeAt(this.pos);
@@ -46107,7 +46110,7 @@ function clearIncompatible(tr, pos, parentType, match = parentType.contentMatch,
                 let m, newline = /\r?\n|\r/g, slice;
                 while (m = newline.exec(child.text)) {
                     if (!slice)
-                        slice = new Slice(Fragment$2.from(parentType.schema.text(" ", parentType.allowedMarks(child.marks))), 0, 0);
+                        slice = new Slice(Fragment$1.from(parentType.schema.text(" ", parentType.allowedMarks(child.marks))), 0, 0);
                     replSteps.push(new ReplaceStep(cur + m.index, cur + m.index + m[0].length, slice));
                 }
             }
@@ -46115,7 +46118,7 @@ function clearIncompatible(tr, pos, parentType, match = parentType.contentMatch,
         cur = end;
     }
     if (!match.validEnd) {
-        let fill = match.fillBefore(Fragment$2.empty, true);
+        let fill = match.fillBefore(Fragment$1.empty, true);
         tr.replace(cur, cur, new Slice(fill, 0, 0));
     }
     for (let i = replSteps.length - 1; i >= 0; i--)
@@ -46152,21 +46155,21 @@ function lift(tr, range, target) {
     let { $from, $to, depth } = range;
     let gapStart = $from.before(depth + 1), gapEnd = $to.after(depth + 1);
     let start = gapStart, end = gapEnd;
-    let before = Fragment$2.empty, openStart = 0;
+    let before = Fragment$1.empty, openStart = 0;
     for (let d = depth, splitting = false; d > target; d--)
         if (splitting || $from.index(d) > 0) {
             splitting = true;
-            before = Fragment$2.from($from.node(d).copy(before));
+            before = Fragment$1.from($from.node(d).copy(before));
             openStart++;
         }
         else {
             start--;
         }
-    let after = Fragment$2.empty, openEnd = 0;
+    let after = Fragment$1.empty, openEnd = 0;
     for (let d = depth, splitting = false; d > target; d--)
         if (splitting || $to.after(d + 1) < $to.end(d)) {
             splitting = true;
-            after = Fragment$2.from($to.node(d).copy(after));
+            after = Fragment$1.from($to.node(d).copy(after));
             openEnd++;
         }
         else {
@@ -46214,14 +46217,14 @@ function findWrappingInside(range, type) {
     return inside;
 }
 function wrap(tr, range, wrappers) {
-    let content = Fragment$2.empty;
+    let content = Fragment$1.empty;
     for (let i = wrappers.length - 1; i >= 0; i--) {
         if (content.size) {
             let match = wrappers[i].type.contentMatch.matchFragment(content);
             if (!match || !match.validEnd)
                 throw new RangeError("Wrapper type given to Transform.wrap does not form valid content of its parent wrapper");
         }
-        content = Fragment$2.from(wrappers[i].type.create(wrappers[i].attrs, content));
+        content = Fragment$1.from(wrappers[i].type.create(wrappers[i].attrs, content));
     }
     let start = range.start, end = range.end;
     tr.step(new ReplaceAroundStep(start, end, start, end, new Slice(content, 0, 0), wrappers.length, true));
@@ -46248,7 +46251,7 @@ function setBlockType$1(tr, from, to, type, attrs) {
             clearIncompatible(tr, tr.mapping.slice(mapFrom).map(pos, 1), type, undefined, convertNewlines === null);
             let mapping = tr.mapping.slice(mapFrom);
             let startM = mapping.map(pos, 1), endM = mapping.map(pos + node.nodeSize, 1);
-            tr.step(new ReplaceAroundStep(startM, endM, startM + 1, endM - 1, new Slice(Fragment$2.from(type.create(attrsHere, null, node.marks)), 0, 0), 1, true));
+            tr.step(new ReplaceAroundStep(startM, endM, startM + 1, endM - 1, new Slice(Fragment$1.from(type.create(attrsHere, null, node.marks)), 0, 0), 1, true));
             if (convertNewlines === true)
                 replaceNewlines(tr, node, pos, mapFrom);
             return false;
@@ -46293,7 +46296,7 @@ function setNodeMarkup(tr, pos, type, attrs, marks) {
         return tr.replaceWith(pos, pos + node.nodeSize, newNode);
     if (!type.validContent(node.content))
         throw new RangeError("Invalid content for node type " + type.name);
-    tr.step(new ReplaceAroundStep(pos, pos + node.nodeSize, pos + 1, pos + node.nodeSize - 1, new Slice(Fragment$2.from(newNode), 0, 0), 1, true));
+    tr.step(new ReplaceAroundStep(pos, pos + node.nodeSize, pos + 1, pos + node.nodeSize - 1, new Slice(Fragment$1.from(newNode), 0, 0), 1, true));
 }
 /**
 Check whether splitting at the given position is allowed.
@@ -46322,11 +46325,11 @@ function canSplit(doc, pos, depth = 1, typesAfter) {
     return $pos.node(base).canReplaceWith(index, index, baseType ? baseType.type : $pos.node(base + 1).type);
 }
 function split(tr, pos, depth = 1, typesAfter) {
-    let $pos = tr.doc.resolve(pos), before = Fragment$2.empty, after = Fragment$2.empty;
+    let $pos = tr.doc.resolve(pos), before = Fragment$1.empty, after = Fragment$1.empty;
     for (let d = $pos.depth, e = $pos.depth - depth, i = depth - 1; d > e; d--, i--) {
-        before = Fragment$2.from($pos.node(d).copy(before));
+        before = Fragment$1.from($pos.node(d).copy(before));
         let typeAfter = typesAfter && typesAfter[i];
-        after = Fragment$2.from(typeAfter ? typeAfter.type.create(typeAfter.attrs, after) : $pos.node(d).copy(after));
+        after = Fragment$1.from(typeAfter ? typeAfter.type.create(typeAfter.attrs, after) : $pos.node(d).copy(after));
     }
     tr.step(new ReplaceStep(pos, pos, new Slice(before.append(after), depth, depth), true));
 }
@@ -46490,7 +46493,7 @@ class Fitter {
         this.$to = $to;
         this.unplaced = unplaced;
         this.frontier = [];
-        this.placed = Fragment$2.empty;
+        this.placed = Fragment$1.empty;
         for (let i = 0; i <= $from.depth; i++) {
             let node = $from.node(i);
             this.frontier.push({
@@ -46499,7 +46502,7 @@ class Fitter {
             });
         }
         for (let i = $from.depth; i > 0; i--)
-            this.placed = Fragment$2.from($from.node(i).copy(this.placed));
+            this.placed = Fragment$1.from($from.node(i).copy(this.placed));
     }
     get depth() { return this.frontier.length - 1; }
     fit() {
@@ -46569,7 +46572,7 @@ class Fitter {
                     // In pass 1, if the next node matches, or there is no next
                     // node but the parents look compatible, we've found a
                     // place.
-                    if (pass == 1 && (first ? match.matchType(first.type) || (inject = match.fillBefore(Fragment$2.from(first), false))
+                    if (pass == 1 && (first ? match.matchType(first.type) || (inject = match.fillBefore(Fragment$1.from(first), false))
                         : parent && type.compatibleContent(parent.type)))
                         return { sliceDepth, frontierDepth, parent, inject };
                     // In pass 2, look for a set of wrapping nodes that make
@@ -46640,7 +46643,7 @@ class Fitter {
         let toEnd = taken == fragment.childCount;
         if (!toEnd)
             openEndCount = -1;
-        this.placed = addToFragment(this.placed, frontierDepth, Fragment$2.from(add));
+        this.placed = addToFragment(this.placed, frontierDepth, Fragment$1.from(add));
         this.frontier[frontierDepth].match = match;
         // If the parent types match, and the entire node was moved, and
         // it's not open, close this frontier node right away.
@@ -46705,12 +46708,12 @@ class Fitter {
     openFrontierNode(type, attrs = null, content) {
         let top = this.frontier[this.depth];
         top.match = top.match.matchType(type);
-        this.placed = addToFragment(this.placed, this.depth, Fragment$2.from(type.create(attrs, content)));
+        this.placed = addToFragment(this.placed, this.depth, Fragment$1.from(type.create(attrs, content)));
         this.frontier.push({ type, match: type.contentMatch });
     }
     closeFrontierNode() {
         let open = this.frontier.pop();
-        let add = open.match.fillBefore(Fragment$2.empty, true);
+        let add = open.match.fillBefore(Fragment$1.empty, true);
         if (add.childCount)
             this.placed = addToFragment(this.placed, this.frontier.length, add);
     }
@@ -46739,7 +46742,7 @@ function closeNodeStart(node, openStart, openEnd) {
     if (openStart > 0) {
         frag = node.type.contentMatch.fillBefore(frag).append(frag);
         if (openEnd <= 0)
-            frag = frag.append(node.type.contentMatch.matchFragment(frag).fillBefore(Fragment$2.empty, true));
+            frag = frag.append(node.type.contentMatch.matchFragment(frag).fillBefore(Fragment$1.empty, true));
     }
     return node.copy(frag);
 }
@@ -46844,7 +46847,7 @@ function closeFragment(fragment, depth, oldOpen, newOpen, parent) {
     if (depth > newOpen) {
         let match = parent.contentMatchAt(0);
         let start = match.fillBefore(fragment).append(fragment);
-        fragment = start.append(match.matchFragment(start).fillBefore(Fragment$2.empty, true));
+        fragment = start.append(match.matchFragment(start).fillBefore(Fragment$1.empty, true));
     }
     return fragment;
 }
@@ -46854,7 +46857,7 @@ function replaceRangeWith(tr, from, to, node) {
         if (point != null)
             from = to = point;
     }
-    tr.replaceRange(from, to, new Slice(Fragment$2.from(node), 0, 0));
+    tr.replaceRange(from, to, new Slice(Fragment$1.from(node), 0, 0));
 }
 function deleteRange(tr, from, to) {
     let $from = tr.doc.resolve(from), $to = tr.doc.resolve(to);
@@ -46944,7 +46947,7 @@ class AttrStep extends Step {
             attrs[name] = node.attrs[name];
         attrs[this.attr] = this.value;
         let updated = node.type.create(attrs, null, node.marks);
-        return StepResult.fromReplace(doc, this.pos, this.pos + 1, new Slice(Fragment$2.from(updated), 0, node.isLeaf ? 0 : 1));
+        return StepResult.fromReplace(doc, this.pos, this.pos + 1, new Slice(Fragment$1.from(updated), 0, node.isLeaf ? 0 : 1));
     }
     getMap() {
         return StepMap.empty;
@@ -47132,7 +47135,7 @@ class Transform {
     fragment, node, or array of nodes.
     */
     replaceWith(from, to, content) {
-        return this.replace(from, to, new Slice(Fragment$2.from(content), 0, 0));
+        return this.replace(from, to, new Slice(Fragment$1.from(content), 0, 0));
     }
     /**
     Delete the content between the given positions.
@@ -47670,7 +47673,7 @@ class NodeSelection extends Selection {
         return new NodeSelection($pos);
     }
     content() {
-        return new Slice(Fragment$2.from(this.node), 0, 0);
+        return new Slice(Fragment$1.from(this.node), 0, 0);
     }
     eq(other) {
         return other instanceof NodeSelection && other.anchor == this.anchor;
@@ -48735,10 +48738,10 @@ function deleteBarrier(state, $cut, dispatch, dir) {
         (conn = (match = before.contentMatchAt(before.childCount)).findWrapping(after.type)) &&
         match.matchType(conn[0] || after.type).validEnd) {
         if (dispatch) {
-            let end = $cut.pos + after.nodeSize, wrap = Fragment$2.empty;
+            let end = $cut.pos + after.nodeSize, wrap = Fragment$1.empty;
             for (let i = conn.length - 1; i >= 0; i--)
-                wrap = Fragment$2.from(conn[i].create(null, wrap));
-            wrap = Fragment$2.from(before.copy(wrap));
+                wrap = Fragment$1.from(conn[i].create(null, wrap));
+            wrap = Fragment$1.from(before.copy(wrap));
             let tr = state.tr.step(new ReplaceAroundStep($cut.pos - 1, end, $cut.pos, end, new Slice(wrap, 1, 0), conn.length, true));
             let $joinAt = tr.doc.resolve(end + 2 * conn.length);
             if ($joinAt.nodeAfter && $joinAt.nodeAfter.type == before.type &&
@@ -48768,9 +48771,9 @@ function deleteBarrier(state, $cut, dispatch, dir) {
             afterDepth++;
         if (at.canReplace(at.childCount, at.childCount, afterText.content)) {
             if (dispatch) {
-                let end = Fragment$2.empty;
+                let end = Fragment$1.empty;
                 for (let i = wrap.length - 1; i >= 0; i--)
-                    end = Fragment$2.from(wrap[i].copy(end));
+                    end = Fragment$1.from(wrap[i].copy(end));
                 let tr = state.tr.step(new ReplaceAroundStep($cut.pos - wrap.length, $cut.pos + after.nodeSize, $cut.pos + afterDepth, $cut.pos + after.nodeSize - afterDepth, new Slice(end, wrap.length, 0), 0, true));
                 dispatch(tr.scrollIntoView());
             }
@@ -49250,6 +49253,22 @@ function customInputRules({ rules }) {
   return plugin;
 }
 
+function hasCodeMark(marks) {
+  return marks.some((mark) => mark.type.spec.code);
+}
+function rangeHasCodeMark(state, from, to) {
+  if (from >= to) return false;
+  let found = false;
+  state.doc.nodesBetween(from, to, (node) => {
+    if (node.isInline && hasCodeMark(node.marks)) found = true;
+    return !found;
+  });
+  return found;
+}
+function typedCharInCodeSpan(state, pos) {
+  var _a;
+  return hasCodeMark((_a = state.storedMarks) != null ? _a : state.doc.resolve(pos).marks());
+}
 function markRule(regexp, markType, options = {}) {
   return new InputRule(regexp, (state, match, start, end) => {
     var _a, _b, _c, _d;
@@ -49274,6 +49293,14 @@ function markRule(regexp, markType, options = {}) {
       const startSpaces = fullMatch.search(/\S/);
       const textStart = start + fullMatch.indexOf(group);
       const textEnd = textStart + group.length;
+      const openingDelimiterHasCodeMark = rangeHasCodeMark(
+        state,
+        start + startSpaces,
+        textStart
+      );
+      const closingDelimiterHasCodeMark = textEnd < end && rangeHasCodeMark(state, textEnd, end);
+      if (openingDelimiterHasCodeMark || closingDelimiterHasCodeMark || typedCharInCodeSpan(state, end))
+        return null;
       initialStoredMarks = (_b = tr.storedMarks) != null ? _b : [];
       if (textEnd < end) tr.delete(textEnd, end);
       if (textStart > start) tr.delete(start + startSpaces, textStart);
@@ -49799,7 +49826,7 @@ var SerializerStackElement = class SerializerStackElement extends StackElement {
 //#region src/serializer/state.ts
 var isFragment = (x) => Object.prototype.hasOwnProperty.call(x, "size");
 var SerializerState = class extends Stack$1 {
-	#marks;
+	#openMarks;
 	static {
 		this.create = (schema, remark) => {
 			const state = new this(schema);
@@ -49811,7 +49838,7 @@ var SerializerState = class extends Stack$1 {
 	}
 	constructor(schema) {
 		super();
-		this.#marks = Mark.none;
+		this.#openMarks = [];
 		this.#matchTarget = (node) => {
 			const result = Object.values({
 				...this.schema.nodes,
@@ -49828,32 +49855,29 @@ var SerializerState = class extends Stack$1 {
 		this.#runProseMark = (mark, node) => {
 			return this.#matchTarget(mark).spec.toMarkdown.runner(this, mark, node);
 		};
-		this.#runNode = (node) => {
-			const { marks } = node;
+		this.#orderMarks = (marks) => {
 			const getPriority = (x) => x.type.spec.priority ?? 50;
-			if ([...marks].sort((a, b) => getPriority(a) - getPriority(b)).every((mark) => !this.#runProseMark(mark, node))) this.#runProseNode(node);
-			marks.forEach((mark) => this.#closeMark(mark));
+			const rest = [...marks].sort((a, b) => getPriority(a) - getPriority(b));
+			const continuing = [];
+			this.#openMarks.forEach(({ mark }) => {
+				const index = rest.findIndex((x) => x.eq(mark));
+				if (index >= 0) continuing.push(...rest.splice(index, 1));
+			});
+			return continuing.concat(rest);
 		};
-		this.#searchType = (child, type) => {
-			if (child.type === type) return child;
-			if (child.children?.length !== 1) return child;
-			const searchNode = (node) => {
-				if (node.type === type) return node.value != null ? null : node;
-				if (node.children?.length !== 1) return null;
-				const [firstChild] = node.children;
-				if (!firstChild) return null;
-				return searchNode(firstChild);
-			};
-			const target = searchNode(child);
-			if (!target) return child;
-			const tmp = target.children ? [...target.children] : void 0;
-			const node = {
-				...child,
-				children: tmp
-			};
-			node.children = tmp;
-			target.children = [node];
-			return target;
+		this.#closeEndedMarks = (next) => {
+			const nextMarks = next?.marks;
+			let keep = 0;
+			while (keep < this.#openMarks.length) {
+				const { mark, spanning } = this.#openMarks[keep];
+				if (spanning && nextMarks?.some((x) => x.eq(mark))) keep++;
+				else break;
+			}
+			for (let i = this.#openMarks.length - 1; i >= keep; i--) this.#closeMark(this.#openMarks[i].mark);
+		};
+		this.#runNode = (node, next) => {
+			if (this.#orderMarks(node.marks).every((mark) => !this.#runProseMark(mark, node))) this.#runProseNode(node);
+			this.#closeEndedMarks(next);
 		};
 		this.#maybeMergeChildren = (node) => {
 			const { children } = node;
@@ -49862,7 +49886,6 @@ var SerializerState = class extends Stack$1 {
 				if (index === 0) return [child];
 				const last = nextChildren.at(-1);
 				if (last && last.isMark && child.isMark) {
-					child = this.#searchType(child, last.type);
 					const { children: currChildren, ...currRest } = child;
 					const { children: prevChildren, ...prevRest } = last;
 					if (child.type === last.type && currChildren && prevChildren && JSON.stringify(currRest) === JSON.stringify(prevRest)) {
@@ -49894,28 +49917,16 @@ var SerializerState = class extends Stack$1 {
 			let startSpaces = "";
 			let endSpaces = "";
 			const children = element.children;
-			let first = -1;
-			let last = -1;
-			const findIndex = (node) => {
-				if (!node) return;
-				node.forEach((child, index) => {
-					if (child.type === "text" && child.value) {
-						if (first < 0) first = index;
-						last = index;
-					}
-				});
-			};
 			if (children) {
-				findIndex(children);
-				const lastChild = children?.[last];
-				const firstChild = children?.[first];
-				if (lastChild && lastChild.value.endsWith(" ")) {
+				const firstChild = children[0];
+				const lastChild = children.at(-1);
+				if (lastChild && lastChild.type === "text" && lastChild.value.endsWith(" ")) {
 					const text = lastChild.value;
 					const trimmed = text.trimEnd();
 					endSpaces = text.slice(trimmed.length);
 					lastChild.value = trimmed;
 				}
-				if (firstChild && firstChild.value.startsWith(" ")) {
+				if (firstChild && firstChild.type === "text" && firstChild.value.startsWith(" ")) {
 					const text = firstChild.value;
 					const trimmed = text.trimStart();
 					startSpaces = text.slice(0, text.length - trimmed.length);
@@ -49948,16 +49959,24 @@ var SerializerState = class extends Stack$1 {
 			return this;
 		};
 		this.#openMark = (mark, type, value, props) => {
-			if (mark.isInSet(this.#marks)) return this;
-			this.#marks = mark.addToSet(this.#marks);
+			if (this.#openMarks.some((x) => x.mark.eq(mark))) return this;
+			this.#openMarks.push({
+				mark,
+				spanning: value == null
+			});
 			return this.openNode(type, value, {
 				...props,
 				isMark: true
 			});
 		};
 		this.#closeMark = (mark) => {
-			if (!mark.isInSet(this.#marks)) return;
-			this.#marks = mark.type.removeFromSet(this.#marks);
+			let index = -1;
+			for (let i = this.#openMarks.length - 1; i >= 0; i--) if (this.#openMarks[i].mark.eq(mark)) {
+				index = i;
+				break;
+			}
+			if (index < 0) return;
+			this.#openMarks.splice(index, 1);
 			this.#closeNodeAndPush(true);
 		};
 		this.withMark = (mark, type, value, props) => {
@@ -49977,8 +49996,8 @@ var SerializerState = class extends Stack$1 {
 		};
 		this.next = (nodes) => {
 			if (isFragment(nodes)) {
-				nodes.forEach((node) => {
-					this.#runNode(node);
+				nodes.forEach((node, _offset, index) => {
+					this.#runNode(node, nodes.maybeChild(index + 1) ?? void 0);
 				});
 				return this;
 			}
@@ -49987,6 +50006,7 @@ var SerializerState = class extends Stack$1 {
 		};
 		this.toString = (remark) => remark.stringify(this.build());
 		this.run = (tree) => {
+			this.#openMarks = [];
 			this.next(tree);
 			return this;
 		};
@@ -49995,8 +50015,9 @@ var SerializerState = class extends Stack$1 {
 	#matchTarget;
 	#runProseNode;
 	#runProseMark;
+	#orderMarks;
+	#closeEndedMarks;
 	#runNode;
-	#searchType;
 	#maybeMergeChildren;
 	#createMarkdownNode;
 	#moveSpaces;
@@ -51358,7 +51379,7 @@ class NodeViewDesc extends ViewDesc {
                 }
             }
             if (!rule.contentElement)
-                rule.getContent = () => Fragment$2.empty;
+                rule.getContent = () => Fragment$1.empty;
         }
         return rule;
     }
@@ -52829,7 +52850,7 @@ function parseFromClipboard(view, text, html, plainText, $context) {
     if (asText) {
         view.someProp("transformPastedText", f => { text = f(text, inCode || plainText, view); });
         if (inCode) {
-            slice = new Slice(Fragment$2.from(view.state.schema.text(text.replace(/\r\n?/g, "\n"))), 0, 0);
+            slice = new Slice(Fragment$1.from(view.state.schema.text(text.replace(/\r\n?/g, "\n"))), 0, 0);
             view.someProp("transformPasted", f => { slice = f(slice, view, true); });
             return slice;
         }
@@ -52928,13 +52949,13 @@ function normalizeSiblings(fragment, $context) {
             }
         });
         if (result)
-            return Fragment$2.from(result);
+            return Fragment$1.from(result);
     }
     return fragment;
 }
 function withWrappers(node, wrap, from = 0) {
     for (let i = wrap.length - 1; i >= from; i--)
-        node = wrap[i].create(null, Fragment$2.from(node));
+        node = wrap[i].create(null, Fragment$1.from(node));
     return node;
 }
 // Used to group adjacent nodes wrapped in similar parents by
@@ -52946,14 +52967,14 @@ function addToSibling(wrap, lastWrap, node, sibling, depth) {
             return sibling.copy(sibling.content.replaceChild(sibling.childCount - 1, inner));
         let match = sibling.contentMatchAt(sibling.childCount);
         if (match.matchType(depth == wrap.length - 1 ? node.type : wrap[depth + 1]))
-            return sibling.copy(sibling.content.append(Fragment$2.from(withWrappers(node, wrap, depth + 1))));
+            return sibling.copy(sibling.content.append(Fragment$1.from(withWrappers(node, wrap, depth + 1))));
     }
 }
 function closeRight(node, depth) {
     if (depth == 0)
         return node;
     let fragment = node.content.replaceChild(node.childCount - 1, closeRight(node.lastChild, depth - 1));
-    let fill = node.contentMatchAt(node.childCount).fillBefore(Fragment$2.empty, true);
+    let fill = node.contentMatchAt(node.childCount).fillBefore(Fragment$1.empty, true);
     return node.copy(fragment.append(fill));
 }
 function closeRange(fragment, side, from, to, depth, openEnd) {
@@ -52964,7 +52985,7 @@ function closeRange(fragment, side, from, to, depth, openEnd) {
         inner = closeRange(inner, side, from, to, depth + 1, openEnd);
     if (depth >= from)
         inner = side < 0 ? node.contentMatchAt(0).fillBefore(inner, openEnd <= depth).append(inner)
-            : inner.append(node.contentMatchAt(node.childCount).fillBefore(Fragment$2.empty, true));
+            : inner.append(node.contentMatchAt(node.childCount).fillBefore(Fragment$1.empty, true));
     return fragment.replaceChild(side < 0 ? 0 : fragment.childCount - 1, node.copy(inner));
 }
 function closeSlice(slice, openStart, openEnd) {
@@ -53046,7 +53067,7 @@ function addContext(slice, context) {
         let type = schema.nodes[array[i]];
         if (!type || type.hasRequiredAttrs())
             break;
-        content = Fragment$2.from(type.create(array[i + 1], content));
+        content = Fragment$1.from(type.create(array[i + 1], content));
         openStart++;
         openEnd++;
     }
@@ -55241,7 +55262,7 @@ function isMarkChange(cur, prev) {
     let updated = [];
     for (let i = 0; i < prev.childCount; i++)
         updated.push(update(prev.child(i)));
-    if (Fragment$2.from(updated).eq(cur))
+    if (Fragment$1.from(updated).eq(cur))
         return { mark, type };
 }
 function looksLikeBackspace(old, start, end, $newStart, $newEnd) {
@@ -56019,9 +56040,11 @@ var schema$2 = (ctx) => {
 		const remark = ctx.get(remarkCtx);
 		const processor = ctx.get(remarkPluginsCtx).reduce((acc, plug) => acc.use(plug.plugin, plug.options), remark);
 		ctx.set(remarkCtx, processor);
+		const nodes = Object.fromEntries(ctx.get(nodesCtx).map(([key, x]) => [key, extendPriority(x)]));
+		const marks = Object.fromEntries(ctx.get(marksCtx).map(([key, x]) => [key, extendPriority(x)]));
 		const schema = new Schema$1({
-			nodes: Object.fromEntries(ctx.get(nodesCtx).map(([key, x]) => [key, extendPriority(x)])),
-			marks: Object.fromEntries(ctx.get(marksCtx).map(([key, x]) => [key, extendPriority(x)]))
+			nodes,
+			marks
 		});
 		ctx.set(schemaCtx, schema);
 		ctx.done(SchemaReady);
@@ -56168,7 +56191,8 @@ var KeymapManager = class {
 				const command = (state, dispatch, view) => {
 					const ctx = this.#ctx;
 					if (ctx == null) throw ctxCallOutOfScope();
-					return chainCommands(...sortedItems.map((item) => item.onRun(ctx)))(state, dispatch, view);
+					const commands = sortedItems.map((item) => item.onRun(ctx));
+					return chainCommands(...commands)(state, dispatch, view);
 				};
 				return [key, command];
 			}));
@@ -56364,10 +56388,12 @@ var editorView = (ctx) => {
 		await ctx.waitTimers(editorViewTimerCtx);
 		const state = ctx.get(editorStateCtx);
 		const options = ctx.get(editorViewOptionsCtx);
+		const nodeViews = Object.fromEntries(ctx.get(nodeViewCtx));
+		const markViews = Object.fromEntries(ctx.get(markViewCtx));
 		const view = new EditorView(el, {
 			state,
-			nodeViews: Object.fromEntries(ctx.get(nodeViewCtx)),
-			markViews: Object.fromEntries(ctx.get(markViewCtx)),
+			nodeViews,
+			markViews,
 			transformPasted: (slice, view, isPlainText) => {
 				ctx.get(pasteRulesCtx).sort((a, b) => (b.priority ?? 50) - (a.priority ?? 50)).map((rule) => rule.run).forEach((runner) => {
 					slice = runner(slice, view, isPlainText);
@@ -56399,7 +56425,7 @@ var EditorStatus = /* @__PURE__ */ function(EditorStatus) {
 var Editor = class Editor {
 	constructor() {
 		this.#enableInspector = false;
-		this.#status = EditorStatus.Idle;
+		this.#status = "Idle";
 		this.#configureList = [];
 		this.#onStatusChange = () => void 0;
 		this.#container = new Container();
@@ -56497,11 +56523,11 @@ var Editor = class Editor {
 					cleanup: void 0
 				});
 			});
-			if (this.#status === EditorStatus.Created) this.#prepare(_plugins, this.#usrPluginStore);
+			if (this.#status === "Created") this.#prepare(_plugins, this.#usrPluginStore);
 			return this;
 		};
 		this.remove = async (plugins) => {
-			if (this.#status === EditorStatus.OnCreate) {
+			if (this.#status === "OnCreate") {
 				console.warn("[Milkdown]: You are trying to remove plugins when the editor is creating, this is not recommended, please check your code.");
 				return new Promise((resolve) => {
 					setTimeout(() => {
@@ -56513,27 +56539,27 @@ var Editor = class Editor {
 			return this;
 		};
 		this.create = async () => {
-			if (this.#status === EditorStatus.OnCreate) return this;
-			if (this.#status === EditorStatus.Created) await this.destroy();
-			this.#setStatus(EditorStatus.OnCreate);
+			if (this.#status === "OnCreate") return this;
+			if (this.#status === "Created") await this.destroy();
+			this.#setStatus("OnCreate");
 			this.#loadInternal();
 			this.#prepare([...this.#usrPluginStore.keys()], this.#usrPluginStore);
 			await Promise.all([this.#loadPluginInStore(this.#sysPluginStore), this.#loadPluginInStore(this.#usrPluginStore)].flat());
-			this.#setStatus(EditorStatus.Created);
+			this.#setStatus("Created");
 			return this;
 		};
 		this.destroy = async (clearPlugins = false) => {
-			if (this.#status === EditorStatus.Destroyed || this.#status === EditorStatus.OnDestroy) return this;
-			if (this.#status === EditorStatus.OnCreate) return new Promise((resolve) => {
+			if (this.#status === "Destroyed" || this.#status === "OnDestroy") return this;
+			if (this.#status === "OnCreate") return new Promise((resolve) => {
 				setTimeout(() => {
 					resolve(this.destroy(clearPlugins));
 				}, 50);
 			});
 			if (clearPlugins) this.#configureList = [];
-			this.#setStatus(EditorStatus.OnDestroy);
+			this.#setStatus("OnDestroy");
 			await this.#cleanup([...this.#usrPluginStore.keys()], clearPlugins);
 			await this.#cleanupInternal();
-			this.#setStatus(EditorStatus.Destroyed);
+			this.#setStatus("Destroyed");
 			return this;
 		};
 		this.action = (action) => action(this.#ctx);
@@ -56571,12 +56597,14 @@ var Editor = class Editor {
 	}
 };
 
-/* @ts-self-types="./index.d.ts" */
 let random = bytes => crypto.getRandomValues(new Uint8Array(bytes));
+
 let customRandom = (alphabet, defaultSize, getRandom) => {
   let safeByteCutoff = 256 - (256 % alphabet.length);
+
   if (safeByteCutoff === 256) {
     let mask = alphabet.length - 1;
+
     return (size = defaultSize) => {
       if (!size) return ''
       let id = '';
@@ -56590,7 +56618,9 @@ let customRandom = (alphabet, defaultSize, getRandom) => {
       }
     }
   }
+
   let step = Math.ceil((1.6 * 256 * defaultSize) / safeByteCutoff);
+
   return (size = defaultSize) => {
     if (!size) return ''
     let id = '';
@@ -56606,11 +56636,19 @@ let customRandom = (alphabet, defaultSize, getRandom) => {
     }
   }
 };
+
 let customAlphabet = (alphabet, size = 21) =>
   customRandom(alphabet, size | 0, random);
 
 //#region src/composable/utils.ts
 customAlphabet("abcedfghicklmn", 10);
+function upsertById(list, id, entry) {
+	const idx = list.findIndex(([x]) => x === id);
+	if (idx === -1) return [...list, entry];
+	const next = list.slice();
+	next[idx] = entry;
+	return next;
+}
 //#endregion
 //#region src/composable/$command.ts
 function $command(key, cmd) {
@@ -56660,7 +56698,7 @@ function $pasteRule(pasteRule) {
 function $mark(id, schema) {
 	const plugin = (ctx) => async () => {
 		const markSchema = schema(ctx);
-		ctx.update(marksCtx, (ns) => [...ns.filter((n) => n[0] !== id), [id, markSchema]]);
+		ctx.update(marksCtx, (ns) => upsertById(ns, id, [id, markSchema]));
 		plugin.id = id;
 		plugin.schema = markSchema;
 		return () => {
@@ -56679,7 +56717,7 @@ function $mark(id, schema) {
 function $node(id, schema) {
 	const plugin = (ctx) => async () => {
 		const nodeSchema = schema(ctx);
-		ctx.update(nodesCtx, (ns) => [...ns.filter((n) => n[0] !== id), [id, nodeSchema]]);
+		ctx.update(nodesCtx, (ns) => upsertById(ns, id, [id, nodeSchema]));
 		plugin.id = id;
 		plugin.schema = nodeSchema;
 		return () => {
@@ -57611,8 +57649,8 @@ function translateChange(change, absA, absB) {
 	});
 }
 function diffPairWithChangeSet(oldSide, newSide, env) {
-	const wrapperOld = oldSide.parent.copy(Fragment$2.from(oldSide.node));
-	const wrapperNew = newSide.parent.copy(Fragment$2.from(newSide.node));
+	const wrapperOld = oldSide.parent.copy(Fragment$1.from(oldSide.node));
+	const wrapperNew = newSide.parent.copy(Fragment$1.from(newSide.node));
 	const step = new ReplaceStep(0, wrapperOld.content.size, new Slice(wrapperNew.content, 0, 0));
 	return ChangeSet.create(wrapperOld, void 0, env.encoder).addSteps(wrapperNew, [step.getMap()], null).changes.map((c) => translateChange(c, oldSide.abs, newSide.abs));
 }
@@ -58677,23 +58715,23 @@ function applyPlainText({ tr, buffer, from, to }, preserveNewlines) {
 }
 var INLINE_MARKDOWN_TOKENS = /[*_~`[\\<]/;
 function parseInlineContent(ctx, schema, text) {
-	if (!text) return Fragment$2.empty;
-	if (!INLINE_MARKDOWN_TOKENS.test(text)) return Fragment$2.from(schema.text(text));
+	if (!text) return Fragment$1.empty;
+	if (!INLINE_MARKDOWN_TOKENS.test(text)) return Fragment$1.from(schema.text(text));
 	const firstBlock = ctx.get(parserCtx)(text)?.firstChild;
-	if (firstBlock?.type.name !== "paragraph" || firstBlock.content.size === 0) return Fragment$2.from(schema.text(text));
+	if (firstBlock?.type.name !== "paragraph" || firstBlock.content.size === 0) return Fragment$1.from(schema.text(text));
 	let hasInlineStructure = false;
 	firstBlock.content.forEach((child) => {
 		if (!child.isText || child.marks.length > 0) hasInlineStructure = true;
 	});
-	if (!hasInlineStructure) return Fragment$2.from(schema.text(text));
+	if (!hasInlineStructure) return Fragment$1.from(schema.text(text));
 	let content = firstBlock.content;
 	const leading = /^\s+/.exec(text)?.[0];
 	if (leading) {
-		if (!(content.firstChild?.isText ? content.firstChild.text ?? "" : "").startsWith(leading)) content = Fragment$2.from(schema.text(leading)).append(content);
+		if (!(content.firstChild?.isText ? content.firstChild.text ?? "" : "").startsWith(leading)) content = Fragment$1.from(schema.text(leading)).append(content);
 	}
 	const trailing = /\s+$/.exec(text)?.[0];
 	if (trailing) {
-		if (!(content.lastChild?.isText ? content.lastChild.text ?? "" : "").endsWith(trailing)) content = content.append(Fragment$2.from(schema.text(trailing)));
+		if (!(content.lastChild?.isText ? content.lastChild.text ?? "" : "").endsWith(trailing)) content = content.append(Fragment$1.from(schema.text(trailing)));
 	}
 	return content;
 }
@@ -58713,7 +58751,7 @@ function applySplitBlock({ ctx, tr, buffer, from, to, resolved }) {
 	const blockPart = buffer.substring(firstNewline + 1);
 	const parser = ctx.get(parserCtx);
 	const parsed = blockPart.trim() ? parser(blockPart) : null;
-	const blockContent = parsed ? stripTrailingEmptyParagraph(parsed.content) : Fragment$2.empty;
+	const blockContent = parsed ? stripTrailingEmptyParagraph(parsed.content) : Fragment$1.empty;
 	if (blockContent.childCount === 0) {
 		const inlineContent = parseInlineContent(ctx, schema, buffer.replace(/\n/g, " "));
 		tr = tr.replaceWith(from, to, inlineContent);
@@ -58725,7 +58763,7 @@ function applySplitBlock({ ctx, tr, buffer, from, to, resolved }) {
 	}
 	const depth = resolved.depth;
 	let innerContent = parseInlineContent(ctx, schema, inlinePart);
-	for (let d = depth; d > 0; d--) innerContent = Fragment$2.from(resolved.node(d).copy(innerContent));
+	for (let d = depth; d > 0; d--) innerContent = Fragment$1.from(resolved.node(d).copy(innerContent));
 	const fullContent = innerContent.append(blockContent);
 	const slice = new Slice(fullContent, depth, 0);
 	const docSize = tr.doc.content.size;
@@ -58875,8 +58913,10 @@ function createFlushController(ctx, config) {
 				lastKnownBufferLen = -1;
 				return;
 			}
-			if (state.buffer.length !== lastKnownBufferLen) if (Date.now() - state.lastApplyTime >= config.throttleMs) flush();
-			else scheduleTrailingFlush();
+			if (state.buffer.length !== lastKnownBufferLen) {
+				if (Date.now() - state.lastApplyTime >= config.throttleMs) flush();
+				else scheduleTrailingFlush();
+			}
 		},
 		destroy() {
 			if (trailingTimer != null) {
@@ -58895,24 +58935,26 @@ var startStreamingCmd = $command("StartStreaming", () => {
 		if (dispatch) {
 			let insertPos;
 			let insertEndPos;
-			if (options?.insertAt != null) if (options.insertAt === "selection") {
-				insertPos = state.selection.from;
-				insertEndPos = state.selection.to;
-				if (state.selection.empty) {
+			if (options?.insertAt != null) {
+				if (options.insertAt === "selection") {
+					insertPos = state.selection.from;
+					insertEndPos = state.selection.to;
+					if (state.selection.empty) {
+						const resolved = state.doc.resolve(insertPos);
+						if (resolved.parent.isTextblock && !resolved.parent.type.spec.code && resolved.parent.content.size === 0 && resolved.depth === 1) {
+							insertPos = resolved.before(resolved.depth);
+							insertEndPos = resolved.after(resolved.depth);
+						}
+					}
+				} else {
+					const rawPos = options.insertAt === "cursor" ? state.selection.head : options.insertAt;
+					if (!Number.isFinite(rawPos)) return false;
+					insertPos = Math.max(0, Math.min(Math.round(rawPos), state.doc.content.size));
 					const resolved = state.doc.resolve(insertPos);
 					if (resolved.parent.isTextblock && !resolved.parent.type.spec.code && resolved.parent.content.size === 0 && resolved.depth === 1) {
 						insertPos = resolved.before(resolved.depth);
 						insertEndPos = resolved.after(resolved.depth);
 					}
-				}
-			} else {
-				const rawPos = options.insertAt === "cursor" ? state.selection.head : options.insertAt;
-				if (!Number.isFinite(rawPos)) return false;
-				insertPos = Math.max(0, Math.min(Math.round(rawPos), state.doc.content.size));
-				const resolved = state.doc.resolve(insertPos);
-				if (resolved.parent.isTextblock && !resolved.parent.type.spec.code && resolved.parent.content.size === 0 && resolved.depth === 1) {
-					insertPos = resolved.before(resolved.depth);
-					insertEndPos = resolved.after(resolved.depth);
 				}
 			}
 			dispatch(state.tr.setMeta(streamingPluginKey, {
@@ -64629,7 +64671,7 @@ function setDevtoolsHook$1(hook, target) {
 }
 function devtoolsInitApp(app, version) {
   emit$1("app:init" /* APP_INIT */, app, version, {
-    Fragment: Fragment$1,
+    Fragment,
     Text: Text$1,
     Comment: Comment$1,
     Static
@@ -66419,7 +66461,7 @@ function baseCreateRenderer(options, createHydrationFns) {
           mountStaticNode(n2, container, anchor, namespace);
         }
         break;
-      case Fragment$1:
+      case Fragment:
         processFragment(
           n1,
           n2,
@@ -66778,7 +66820,7 @@ function baseCreateRenderer(options, createHydrationFns) {
         // which will not have a mounted element
         oldVNode.el && // - In the case of a Fragment, we need to provide the actual parent
         // of the Fragment itself so it can move its children.
-        (oldVNode.type === Fragment$1 || // - In the case of different nodes, there is going to be a replacement
+        (oldVNode.type === Fragment || // - In the case of different nodes, there is going to be a replacement
         // which also requires the correct parent container
         !isSameVNodeType(oldVNode, newVNode) || // - In the case of a component, it could contain anything.
         oldVNode.shapeFlag & (6 | 64 | 128)) ? hostParentNode(oldVNode.el) : (
@@ -67400,7 +67442,7 @@ function baseCreateRenderer(options, createHydrationFns) {
       type.move(vnode, container, anchor, internals);
       return;
     }
-    if (type === Fragment$1) {
+    if (type === Fragment) {
       hostInsert(el, container, anchor);
       for (let i = 0; i < children.length; i++) {
         move(children[i], container, anchor, moveType);
@@ -67507,7 +67549,7 @@ function baseCreateRenderer(options, createHydrationFns) {
       // so that it doesn't take the fast path during unmount - otherwise
       // components nested in v-once are never unmounted.
       !dynamicChildren.hasOnce && // #1153: fast path should not be taken for non-stable (v-for) fragments
-      (type !== Fragment$1 || patchFlag > 0 && patchFlag & 64)) {
+      (type !== Fragment || patchFlag > 0 && patchFlag & 64)) {
         unmountChildren(
           dynamicChildren,
           parentComponent,
@@ -67515,7 +67557,7 @@ function baseCreateRenderer(options, createHydrationFns) {
           false,
           true
         );
-      } else if (type === Fragment$1 && patchFlag & (128 | 256) || !optimized && shapeFlag & 16) {
+      } else if (type === Fragment && patchFlag & (128 | 256) || !optimized && shapeFlag & 16) {
         unmountChildren(children, parentComponent, parentSuspense);
       }
       if (doRemove) {
@@ -67535,7 +67577,7 @@ function baseCreateRenderer(options, createHydrationFns) {
   };
   const remove = (vnode) => {
     const { type, el, anchor, transition } = vnode;
-    if (type === Fragment$1) {
+    if (type === Fragment) {
       {
         removeFragment(el, anchor);
       }
@@ -67778,7 +67820,7 @@ function queueEffectWithSuspense(fn, suspense) {
   }
 }
 
-const Fragment$1 = /* @__PURE__ */ Symbol.for("v-fgt");
+const Fragment = /* @__PURE__ */ Symbol.for("v-fgt");
 const Text$1 = /* @__PURE__ */ Symbol.for("v-txt");
 const Comment$1 = /* @__PURE__ */ Symbol.for("v-cmt");
 const Static = /* @__PURE__ */ Symbol.for("v-stc");
@@ -67790,7 +67832,7 @@ function isVNode(value) {
 function isSameVNodeType(n1, n2) {
   return n1.type === n2.type && n1.key === n2.key;
 }
-const normalizeKey = ({ key }) => key != null ? key : null;
+const normalizeKey$1 = ({ key }) => key != null ? key : null;
 const normalizeRef = ({
   ref,
   ref_key,
@@ -67801,13 +67843,13 @@ const normalizeRef = ({
   }
   return ref != null ? isString(ref) || isRef(ref) || isFunction$1(ref) ? { i: currentRenderingInstance, r: ref, k: ref_key, f: !!ref_for } : ref : null;
 };
-function createBaseVNode(type, props = null, children = null, patchFlag = 0, dynamicProps = null, shapeFlag = type === Fragment$1 ? 0 : 1, isBlockNode = false, needFullChildrenNormalization = false) {
+function createBaseVNode(type, props = null, children = null, patchFlag = 0, dynamicProps = null, shapeFlag = type === Fragment ? 0 : 1, isBlockNode = false, needFullChildrenNormalization = false) {
   const vnode = {
     __v_isVNode: true,
     __v_skip: true,
     type,
     props,
-    key: props && normalizeKey(props),
+    key: props && normalizeKey$1(props),
     ref: props && normalizeRef(props),
     scopeId: currentScopeId,
     slotScopeIds: null,
@@ -67899,7 +67941,7 @@ function cloneVNode(vnode, extraProps, mergeRef = false, cloneTransition = false
     __v_skip: true,
     type: vnode.type,
     props: mergedProps,
-    key: mergedProps && normalizeKey(mergedProps),
+    key: mergedProps && normalizeKey$1(mergedProps),
     ref: extraProps && extraProps.ref ? (
       // #2078 in the case of <component :is="vnode" ref="extra"/>
       // if the vnode itself already has a ref, cloneVNode will need to merge
@@ -67918,7 +67960,7 @@ function cloneVNode(vnode, extraProps, mergeRef = false, cloneTransition = false
     // existing patch flag to be reliable and need to add the FULL_PROPS flag.
     // note: preserve flag for fragments since they use the flag for children
     // fast paths only.
-    patchFlag: extraProps && vnode.type !== Fragment$1 ? patchFlag === -1 ? 16 : patchFlag | 16 : patchFlag,
+    patchFlag: extraProps && vnode.type !== Fragment ? patchFlag === -1 ? 16 : patchFlag | 16 : patchFlag,
     dynamicProps: vnode.dynamicProps,
     dynamicChildren: vnode.dynamicChildren,
     appContext: vnode.appContext,
@@ -67954,7 +67996,7 @@ function normalizeVNode(child) {
     return createVNode(Comment$1);
   } else if (isArray(child)) {
     return createVNode(
-      Fragment$1,
+      Fragment,
       null,
       // #3666, avoid reference pollution when reusing vnode
       child.slice()
@@ -68931,6 +68973,7 @@ var BlockService = class {
 			if (!this.#active) return null;
 			const result = this.#active;
 			const view = this.#view;
+			this.#activeSelection = null;
 			if (view && NodeSelection.isSelectable(result.node)) {
 				const nodeSelection = NodeSelection.create(view.state.doc, result.$pos.pos);
 				view.dispatch(view.state.tr.setSelection(nodeSelection));
@@ -69006,12 +69049,19 @@ var BlockService = class {
 				if (activeEl) event.dataTransfer.setDragImage(activeEl, 0, 0);
 				view.dragging = {
 					slice,
-					move: true
+					move: true,
+					node: selection
 				};
 			}
 		};
 		this.#handleDragEnd = () => {
-			if (this.#view) this.#dragEnd(this.#view);
+			const view = this.#view;
+			if (!view) return;
+			this.#dragEnd(view);
+			const dragging = view.dragging;
+			window.setTimeout(() => {
+				if (view.dragging === dragging) view.dragging = null;
+			}, 50);
 		};
 		this.keydownCallback = (view) => {
 			this.#hide();
@@ -69211,7 +69261,8 @@ var BlockProvider = class {
 			};
 			const middleware = [flip()];
 			if (this.#getOffset) {
-				const offsetExt = offset(this.#getOffset(deriveContext));
+				const offsetOption = this.#getOffset(deriveContext);
+				const offsetExt = offset(offsetOption);
 				middleware.push(offsetExt);
 			}
 			computePosition(virtualEl, this.#element, {
@@ -69289,16 +69340,16 @@ function splitListItem(itemType, itemAttrs) {
                 $from.index(-2) != $from.node(-2).childCount - 1)
                 return false;
             if (dispatch) {
-                let wrap = Fragment$2.empty;
+                let wrap = Fragment$1.empty;
                 let depthBefore = $from.index(-1) ? 1 : $from.index(-2) ? 2 : 3;
                 // Build a fragment containing empty versions of the structure
                 // from the outer list item to the parent node of the cursor
                 for (let d = $from.depth - depthBefore; d >= $from.depth - 3; d--)
-                    wrap = Fragment$2.from($from.node(d).copy(wrap));
+                    wrap = Fragment$1.from($from.node(d).copy(wrap));
                 let depthAfter = $from.indexAfter(-1) < $from.node(-2).childCount ? 1
                     : $from.indexAfter(-2) < $from.node(-3).childCount ? 2 : 3;
                 // Add a second list item with an empty default start node
-                wrap = wrap.append(Fragment$2.from(itemType.createAndFill()));
+                wrap = wrap.append(Fragment$1.from(itemType.createAndFill()));
                 let start = $from.before($from.depth - (depthBefore - 1));
                 let tr = state.tr.replace(start, $from.after(-depthAfter), new Slice(wrap, 4 - depthBefore, 0));
                 let sel = -1;
@@ -69347,7 +69398,7 @@ function liftToOuterList(state, dispatch, itemType, range) {
     if (end < endOfList) {
         // There are siblings after the lifted items, which must become
         // children of the last item
-        tr.step(new ReplaceAroundStep(end - 1, endOfList, end, endOfList, new Slice(Fragment$2.from(itemType.create(null, range.parent.copy())), 1, 0), 1, true));
+        tr.step(new ReplaceAroundStep(end - 1, endOfList, end, endOfList, new Slice(Fragment$1.from(itemType.create(null, range.parent.copy())), 1, 0), 1, true));
         range = new NodeRange(tr.doc.resolve(range.$from.pos), tr.doc.resolve(endOfList), range.depth);
     }
     const target = liftTarget(range);
@@ -69372,14 +69423,14 @@ function liftOutOfList(state, dispatch, range) {
         return false;
     let atStart = range.startIndex == 0, atEnd = range.endIndex == list.childCount;
     let parent = $start.node(-1), indexBefore = $start.index(-1);
-    if (!parent.canReplace(indexBefore + (atStart ? 0 : 1), indexBefore + 1, item.content.append(atEnd ? Fragment$2.empty : Fragment$2.from(list))))
+    if (!parent.canReplace(indexBefore + (atStart ? 0 : 1), indexBefore + 1, item.content.append(atEnd ? Fragment$1.empty : Fragment$1.from(list))))
         return false;
     let start = $start.pos, end = start + item.nodeSize;
     // Strip off the surrounding list. At the sides where we're not at
     // the end of the list, the existing list is closed. At sides where
     // this is the end, it is overwritten to its end.
-    tr.step(new ReplaceAroundStep(start - (atStart ? 1 : 0), end + (atEnd ? 1 : 0), start + 1, end - 1, new Slice((atStart ? Fragment$2.empty : Fragment$2.from(list.copy(Fragment$2.empty)))
-        .append(atEnd ? Fragment$2.empty : Fragment$2.from(list.copy(Fragment$2.empty))), atStart ? 0 : 1, atEnd ? 0 : 1), atStart ? 0 : 1));
+    tr.step(new ReplaceAroundStep(start - (atStart ? 1 : 0), end + (atEnd ? 1 : 0), start + 1, end - 1, new Slice((atStart ? Fragment$1.empty : Fragment$1.from(list.copy(Fragment$1.empty)))
+        .append(atEnd ? Fragment$1.empty : Fragment$1.from(list.copy(Fragment$1.empty))), atStart ? 0 : 1, atEnd ? 0 : 1), atStart ? 0 : 1));
     dispatch(tr.scrollIntoView());
     return true;
 }
@@ -69401,8 +69452,8 @@ function sinkListItem(itemType) {
             return false;
         if (dispatch) {
             let nestedBefore = nodeBefore.lastChild && nodeBefore.lastChild.type == parent.type;
-            let inner = Fragment$2.from(nestedBefore ? itemType.create() : null);
-            let slice = new Slice(Fragment$2.from(itemType.create(null, Fragment$2.from(parent.type.create(null, inner)))), nestedBefore ? 3 : 1, 0);
+            let inner = Fragment$1.from(nestedBefore ? itemType.create() : null);
+            let slice = new Slice(Fragment$1.from(itemType.create(null, Fragment$1.from(parent.type.create(null, inner)))), nestedBefore ? 3 : 1, 0);
             let before = range.start, after = range.end;
             dispatch(state.tr.step(new ReplaceAroundStep(before - (nestedBefore ? 3 : 1), after, before, after, slice, 1, true))
                 .scrollIntoView());
@@ -69524,7 +69575,7 @@ function serializeText(state, node) {
 		if (i === node.childCount - 1) return;
 		contentArr.push(n);
 	});
-	state.next(Fragment$2.fromArray(contentArr));
+	state.next(Fragment$1.fromArray(contentArr));
 }
 //#endregion
 //#region src/__internal__/with-meta.ts
@@ -69600,7 +69651,7 @@ withMeta$a(emphasisStarInputRule, {
 	group: "Emphasis"
 });
 var emphasisUnderscoreInputRule = $inputRule((ctx) => {
-	return markRule(/\b_(?![_\s])(.*?[^_\s])_\b/, emphasisSchema.type(ctx), {
+	return markRule(/\b_(?![_\s])(.*?[^_\s])_$/, emphasisSchema.type(ctx), {
 		getAttr: () => ({ marker: "_" }),
 		updateCaptured: ({ fullMatch, start }) => !fullMatch.startsWith("_") ? {
 			fullMatch: fullMatch.slice(1),
@@ -69723,6 +69774,7 @@ withMeta$a(inlineCodeAttr, {
 var inlineCodeSchema = $markSchema("inlineCode", (ctx) => ({
 	priority: 100,
 	code: true,
+	inclusive: false,
 	parseDOM: [{ tag: "code" }],
 	toDOM: (mark) => ["code", ctx.get(inlineCodeAttr.key)(mark)],
 	parseMarkdown: {
@@ -69790,6 +69842,33 @@ withMeta$a(inlineCodeKeymap.shortcuts, {
 	group: "InlineCode"
 });
 //#endregion
+//#region src/mark/sanitize-href.ts
+var SAFE_PROTOCOLS = /* @__PURE__ */ new Set([
+	"http:",
+	"https:",
+	"mailto:",
+	"tel:",
+	"ftp:"
+]);
+function isIgnoredChar(code) {
+	return code <= 32 || code >= 127 && code <= 160 || code >= 8203 && code <= 8205 || code === 8232 || code === 8233 || code === 65279;
+}
+function stripIgnoredChars(input) {
+	let out = "";
+	for (const char of input) if (!isIgnoredChar(char.codePointAt(0) ?? 0)) out += char;
+	return out;
+}
+function sanitizeLinkHref(href) {
+	if (typeof href !== "string") return "";
+	const trimmed = href.trim();
+	if (!trimmed) return "";
+	const normalized = stripIgnoredChars(trimmed);
+	const scheme = /^([a-z][a-z0-9+.-]*):/i.exec(normalized)?.[1];
+	if (!scheme) return trimmed;
+	if (SAFE_PROTOCOLS.has(`${scheme.toLowerCase()}:`)) return trimmed;
+	return "";
+}
+//#endregion
 //#region src/mark/link.ts
 var linkAttr = $markAttr("link");
 withMeta$a(linkAttr, {
@@ -69816,7 +69895,8 @@ var linkSchema = $markSchema("link", (ctx) => ({
 	}],
 	toDOM: (mark) => ["a", {
 		...ctx.get(linkAttr.key)(mark),
-		...mark.attrs
+		...mark.attrs,
+		href: sanitizeLinkHref(mark.attrs.href)
 	}],
 	parseMarkdown: {
 		match: (node) => node.type === "link",
@@ -70662,7 +70742,7 @@ var bulletListSchema = $nodeSchema("bullet_list", (ctx) => {
 		parseMarkdown: {
 			match: ({ type, ordered }) => type === "list" && !ordered,
 			runner: (state, node, type) => {
-				const spread = node.spread != null ? `${node.spread}` : "false";
+				const spread = node.spread ?? false;
 				state.openNode(type, { spread }).next(node.children).closeNode();
 			}
 		},
@@ -70735,7 +70815,7 @@ var orderedListSchema = $nodeSchema("ordered_list", (ctx) => ({
 		getAttrs: (dom) => {
 			if (!(dom instanceof HTMLElement)) throw expectDomTypeError(dom);
 			return {
-				spread: dom.dataset.spread,
+				spread: dom.dataset.spread === "true",
 				order: dom.hasAttribute("start") ? Number(dom.getAttribute("start")) : 1
 			};
 		}
@@ -70752,7 +70832,7 @@ var orderedListSchema = $nodeSchema("ordered_list", (ctx) => ({
 	parseMarkdown: {
 		match: ({ type, ordered }) => type === "list" && !!ordered,
 		runner: (state, node, type) => {
-			const spread = node.spread != null ? `${node.spread}` : "true";
+			const spread = node.spread ?? true;
 			state.openNode(type, {
 				spread,
 				order: node.start ?? 1
@@ -70765,7 +70845,7 @@ var orderedListSchema = $nodeSchema("ordered_list", (ctx) => ({
 			state.openNode("list", void 0, {
 				ordered: true,
 				start: node.attrs.order ?? 1,
-				spread: node.attrs.spread === "true"
+				spread: node.attrs.spread
 			});
 			state.next(node.content);
 			state.closeNode();
@@ -70856,7 +70936,7 @@ var listItemSchema = $nodeSchema("list_item", (ctx) => ({
 		runner: (state, node, type) => {
 			const label = node.label != null ? `${node.label}.` : "•";
 			const listType = node.label != null ? "ordered" : "bullet";
-			const spread = node.spread != null ? `${node.spread}` : "true";
+			const spread = node.spread ?? true;
 			state.openNode(type, {
 				label,
 				listType,
@@ -71349,8 +71429,9 @@ withMeta$a(remarkMarker.options, {
 //#region src/plugin/inline-nodes-cursor-plugin.ts
 var inlineNodesCursorPlugin = $prose(() => {
 	let lock = false;
+	const inlineNodesCursorPluginKey = new PluginKey("MILKDOWN_INLINE_NODES_CURSOR");
 	const inlineNodesCursorPlugin = new Plugin({
-		key: new PluginKey("MILKDOWN_INLINE_NODES_CURSOR"),
+		key: inlineNodesCursorPluginKey,
 		state: {
 			init() {
 				return false;
@@ -71549,7 +71630,7 @@ var syncListOrderPlugin = $prose((ctx) => {
 				const base = node.maybeChild(0);
 				if (base?.type === listItemType && base.attrs.listType === "ordered") {
 					needDispatch = true;
-					tr.setNodeMarkup(pos, orderedListType, { spread: "true" });
+					tr.setNodeMarkup(pos, orderedListType, { spread: true });
 					node.descendants((child, pos, _parent, index) => {
 						if (child.type === listItemType) {
 							const attrs = { ...child.attrs };
@@ -71887,6 +71968,11 @@ withMeta$9(imageBlockSchema.node, {
 function keepAlive$6(..._args) {
 }
 
+const nanoid$3 = customAlphabet("abcdefghijklmnopqrstuvwxyz0123456789", 8);
+function inputId$3(prefix) {
+  return `${prefix}-${nanoid$3()}`;
+}
+
 keepAlive$6(h);
 function Icon$5({ icon, class: className, onClick }) {
   return /* @__PURE__ */ h(
@@ -71913,8 +71999,7 @@ Icon$5.props = {
   }
 };
 
-keepAlive$6(h);
-const nanoid$1 = customAlphabet("abcdefg", 8);
+keepAlive$6(h, Fragment);
 const ImageInput$1 = defineComponent({
   props: {
     src: {
@@ -71974,7 +72059,8 @@ const ImageInput$1 = defineComponent({
     const focusLinkInput = ref(false);
     const linkInputRef = ref();
     const currentLink = ref((_a = src.value) != null ? _a : "");
-    const uuid = ref(nanoid$1());
+    const linkId = inputId$3("milkdown-image-link");
+    const fileInputId = inputId$3("milkdown-image-upload");
     const hidePlaceholder = ref(((_b = src.value) == null ? void 0 : _b.length) !== 0);
     const onEditLink = (e) => {
       const target = e.target;
@@ -72009,6 +72095,7 @@ const ImageInput$1 = defineComponent({
       return /* @__PURE__ */ h("div", { class: clsx("image-edit", className) }, /* @__PURE__ */ h(Icon$5, { icon: imageIcon, class: "image-icon" }), /* @__PURE__ */ h("div", { class: clsx("link-importer", focusLinkInput.value && "focus") }, /* @__PURE__ */ h(
         "input",
         {
+          id: linkId,
           ref: linkInputRef,
           draggable: "true",
           onDragstart: (e) => {
@@ -72028,12 +72115,12 @@ const ImageInput$1 = defineComponent({
         {
           disabled: readonly.value,
           class: "hidden",
-          id: uuid.value,
+          id: fileInputId,
           type: "file",
           accept: "image/*",
           onChange: onUploadFile
         }
-      ), /* @__PURE__ */ h("label", { class: "uploader", for: uuid.value }, /* @__PURE__ */ h(Icon$5, { icon: uploadButton })), /* @__PURE__ */ h("span", { class: "text", onClick: () => {
+      ), /* @__PURE__ */ h("label", { class: "uploader", for: fileInputId }, /* @__PURE__ */ h(Icon$5, { icon: uploadButton })), /* @__PURE__ */ h("span", { class: "text", onClick: () => {
         var _a2;
         return (_a2 = linkInputRef.value) == null ? void 0 : _a2.focus();
       } }, uploadPlaceholderText))), currentLink.value && /* @__PURE__ */ h(Fragment, null, /* @__PURE__ */ h("div", { class: "image-preview" }, /* @__PURE__ */ h(
@@ -72049,7 +72136,7 @@ const ImageInput$1 = defineComponent({
   }
 });
 
-keepAlive$6(h, Fragment$1);
+keepAlive$6(h, Fragment);
 const ImageViewer = defineComponent({
   props: {
     src: {
@@ -72086,6 +72173,7 @@ const ImageViewer = defineComponent({
     const imageRef = ref();
     const resizeHandle = ref();
     const showCaption = ref(Boolean((_a = caption.value) == null ? void 0 : _a.length));
+    const captionId = inputId$3("milkdown-image-caption");
     const timer = ref(0);
     const onImageLoad = () => {
       var _a2;
@@ -72165,7 +72253,7 @@ const ImageViewer = defineComponent({
       window.addEventListener("pointerup", onResizeHandlePointerUp);
     };
     return () => {
-      return /* @__PURE__ */ h(Fragment$1, null, /* @__PURE__ */ h("div", { class: "image-wrapper" }, /* @__PURE__ */ h("div", { class: "operation" }, /* @__PURE__ */ h("div", { class: "operation-item", onPointerdown: onToggleCaption }, /* @__PURE__ */ h(Icon$5, { icon: config.captionIcon }))), /* @__PURE__ */ h(
+      return /* @__PURE__ */ h(Fragment, null, /* @__PURE__ */ h("div", { class: "image-wrapper" }, /* @__PURE__ */ h("div", { class: "operation" }, /* @__PURE__ */ h("div", { class: "operation-item", onPointerdown: onToggleCaption }, /* @__PURE__ */ h(Icon$5, { icon: config.captionIcon }))), /* @__PURE__ */ h(
         "img",
         {
           ref: imageRef,
@@ -72189,6 +72277,7 @@ const ImageViewer = defineComponent({
       )), showCaption.value && /* @__PURE__ */ h(
         "input",
         {
+          id: captionId,
           draggable: "true",
           onDragstart: (e) => {
             e.preventDefault();
@@ -72221,7 +72310,7 @@ var __spreadValues$7 = (a, b) => {
     }
   return a;
 };
-keepAlive$6(h, Fragment$1);
+keepAlive$6(h, Fragment);
 const MilkdownImageBlock = defineComponent({
   props: {
     src: {
@@ -72927,10 +73016,10 @@ var CellSelection = class CellSelection extends Selection {
 				}
 				rowContent.push(cell);
 			}
-			rows.push(table.child(row).copy(Fragment$2.from(rowContent)));
+			rows.push(table.child(row).copy(Fragment$1.from(rowContent)));
 		}
 		const fragment = this.isColSelection() && this.isRowSelection() ? table : rows;
-		return new Slice(Fragment$2.from(fragment), 1, 1);
+		return new Slice(Fragment$1.from(fragment), 1, 1);
 	}
 	replace(tr, content = Slice.empty) {
 		const mapFrom = tr.steps.length, ranges = this.ranges;
@@ -72942,7 +73031,7 @@ var CellSelection = class CellSelection extends Selection {
 		if (sel) tr.setSelection(sel);
 	}
 	replaceWith(tr, node) {
-		this.replace(tr, new Slice(Fragment$2.from(node), 0, 0));
+		this.replace(tr, new Slice(Fragment$1.from(node), 0, 0));
 	}
 	forEachCell(f) {
 		const table = this.$anchorCell.node(-1);
@@ -74055,12 +74144,12 @@ function ensureRectangular(schema, rows) {
 	let width = 0;
 	for (let r = 0; r < widths.length; r++) width = Math.max(width, widths[r]);
 	for (let r = 0; r < widths.length; r++) {
-		if (r >= rows.length) rows.push(Fragment$2.empty);
+		if (r >= rows.length) rows.push(Fragment$1.empty);
 		if (widths[r] < width) {
 			const empty = tableNodeTypes(schema).cell.createAndFill();
 			const cells = [];
 			for (let i = widths[r]; i < width; i++) cells.push(empty);
-			rows[r] = rows[r].append(Fragment$2.from(cells));
+			rows[r] = rows[r].append(Fragment$1.from(cells));
 		}
 	}
 	return {
@@ -74093,7 +74182,7 @@ function clipCells({ width, height, rows }, newWidth, newHeight) {
 				col += cell.attrs.colspan;
 				for (let j = 1; j < cell.attrs.rowspan; j++) added[row + j] = (added[row + j] || 0) + cell.attrs.colspan;
 			}
-			newRows.push(Fragment$2.from(cells));
+			newRows.push(Fragment$1.from(cells));
 		}
 		rows = newRows;
 		width = newWidth;
@@ -74110,7 +74199,7 @@ function clipCells({ width, height, rows }, newWidth, newHeight) {
 				}, cell.content);
 				cells.push(cell);
 			}
-			newRows.push(Fragment$2.from(cells));
+			newRows.push(Fragment$1.from(cells));
 		}
 		rows = newRows;
 		height = newHeight;
@@ -74142,7 +74231,7 @@ function growTable(tr, map, table, start, width, height, mapFrom) {
 			const header = i >= map.width ? false : table.nodeAt(map.map[start$1 + i]).type == types.header_cell;
 			cells.push(header ? emptyHead || (emptyHead = types.header_cell.createAndFill()) : empty || (empty = types.cell.createAndFill()));
 		}
-		const emptyRow = types.row.create(null, Fragment$2.from(cells)), rows = [];
+		const emptyRow = types.row.create(null, Fragment$1.from(cells)), rows = [];
 		for (let i = map.height; i < height; i++) rows.push(emptyRow);
 		tr.insert(tr.mapping.slice(mapFrom).map(start + table.nodeSize - 2), rows);
 	}
@@ -74298,7 +74387,7 @@ function handlePaste(view, _, slice) {
 		if (!cells) cells = {
 			width: 1,
 			height: 1,
-			rows: [Fragment$2.from(fitSlice(tableNodeTypes(view.state.schema).cell, slice))]
+			rows: [Fragment$1.from(fitSlice(tableNodeTypes(view.state.schema).cell, slice))]
 		};
 		const table = sel.$anchorCell.node(-1);
 		const start = sel.$anchorCell.start(-1);
@@ -79302,7 +79391,7 @@ withMeta$8(toggleStrikethroughCommand, {
 	group: "Strikethrough"
 });
 var strikethroughInputRule = $inputRule((ctx) => {
-	return markRule(/(?<![\w:/])(~{1,2})(.+?)\1(?!\w|\/)/, strikethroughSchema.type(ctx));
+	return markRule(/(?<![\w:/])(~{1,2})(.+?)\1(?!\w|\/)$/, strikethroughSchema.type(ctx));
 });
 withMeta$8(strikethroughInputRule, {
 	displayName: "InputRule<strikethrough>",
@@ -79774,9 +79863,9 @@ var tablePasteRule = $pasteRule((ctx) => ({ run: (slice, _view, isPlainText) => 
 			return node.type.create(node.attrs, [newHeaderRow, ...remainingRows]);
 		}
 		const headerCells = Array(colsCount).fill(0).map(() => tableHeaderSchema.type(ctx).createAndFill());
-		const tableCells = new Slice(Fragment$2.from(headerCells), 0, 0);
+		const tableCells = new Slice(Fragment$1.from(headerCells), 0, 0);
 		const newHeaderRow = headerRow.replace(0, 0, tableCells);
-		return node.replace(0, headerRow.nodeSize, new Slice(Fragment$2.from(newHeaderRow), 0, 0));
+		return node.replace(0, headerRow.nodeSize, new Slice(Fragment$1.from(newHeaderRow), 0, 0));
 	}
 	function wrapOrphanedRows(fragment) {
 		const rowType = tableRowSchema.type(ctx);
@@ -79800,7 +79889,7 @@ var tablePasteRule = $pasteRule((ctx) => ({ run: (slice, _view, isPlainText) => 
 			}
 		});
 		flushPendingRows();
-		return hasOrphans ? Fragment$2.from(nodes) : fragment;
+		return hasOrphans ? Fragment$1.from(nodes) : fragment;
 	}
 	function fixFragment(fragment) {
 		let result = wrapOrphanedRows(fragment);
@@ -79819,7 +79908,7 @@ var tablePasteRule = $pasteRule((ctx) => ({ run: (slice, _view, isPlainText) => 
 				} else fixed.push(node);
 			} else fixed.push(node);
 		});
-		return changed ? Fragment$2.from(fixed) : fragment;
+		return changed ? Fragment$1.from(fixed) : fragment;
 	}
 	function cleanEmptyParagraphs(fragment) {
 		const nodes = [];
@@ -79831,11 +79920,11 @@ var tablePasteRule = $pasteRule((ctx) => ({ run: (slice, _view, isPlainText) => 
 			if (node.type === paragraphSchema.type(ctx) && node.content.size === 0 && next && next.type === tableSchema.type(ctx)) continue;
 			nodes.push(node);
 		}
-		return nodes.length < allNodes.length ? Fragment$2.from(nodes) : fragment;
+		return nodes.length < allNodes.length ? Fragment$1.from(nodes) : fragment;
 	}
 	let fragment = fixFragment(slice.content);
 	fragment = cleanEmptyParagraphs(fragment);
-	return new Slice(Fragment$2.from(fragment), slice.openStart, slice.openEnd);
+	return new Slice(Fragment$1.from(fragment), slice.openStart, slice.openEnd);
 } }));
 withMeta$8(tablePasteRule, {
 	displayName: "PasteRule<table>",
@@ -80003,7 +80092,7 @@ var extendListItemSchemaForTask = listItemSchema.extendSchema((prev) => {
 					return {
 						label: dom.dataset.label,
 						listType: dom.dataset.listType,
-						spread: dom.dataset.spread,
+						spread: dom.dataset.spread === "true",
 						checked: dom.dataset.checked ? dom.dataset.checked === "true" : null
 					};
 				}
@@ -80032,7 +80121,7 @@ var extendListItemSchemaForTask = listItemSchema.extendSchema((prev) => {
 					const label = node.label != null ? `${node.label}.` : "•";
 					const checked = node.checked != null ? Boolean(node.checked) : null;
 					const listType = node.label != null ? "ordered" : "bullet";
-					const spread = node.spread != null ? `${node.spread}` : "true";
+					const spread = node.spread ?? true;
 					state.openNode(type, {
 						label,
 						listType,
@@ -80052,7 +80141,7 @@ var extendListItemSchemaForTask = listItemSchema.extendSchema((prev) => {
 					}
 					const label = node.attrs.label;
 					const listType = node.attrs.listType;
-					const spread = node.attrs.spread === "true";
+					const spread = node.attrs.spread;
 					const checked = node.attrs.checked;
 					state.openNode("listItem", void 0, {
 						label,
@@ -80151,13 +80240,25 @@ function getChildIndex(node, parent) {
 	});
 	return index;
 }
+function changedRange(prev, next) {
+	const from = prev.content.findDiffStart(next.content);
+	if (from == null) return null;
+	const diff = prev.content.findDiffEnd(next.content);
+	if (!diff) return null;
+	return {
+		from,
+		to: Math.max(diff.b, from)
+	};
+}
 var keepTableAlignPlugin = $prose(() => {
 	return new Plugin({
 		key: pluginKey,
 		appendTransaction: (_tr, oldState, state) => {
+			if (oldState.doc === state.doc) return;
+			const range = changedRange(oldState.doc, state.doc);
+			if (!range) return;
 			let tr;
 			const check = (node, pos) => {
-				if (!tr) tr = state.tr;
 				if (node.type.name !== "table_cell") return;
 				const $pos = state.doc.resolve(pos);
 				const tableRow = $pos.node($pos.depth);
@@ -80168,12 +80269,17 @@ var keepTableAlignPlugin = $prose(() => {
 				if (!headerCell) return;
 				const align = headerCell.attrs.alignment;
 				if (align === node.attrs.alignment) return;
+				if (!tr) tr = state.tr;
 				tr.setNodeMarkup(pos, void 0, {
 					...node.attrs,
 					alignment: align
 				});
 			};
-			if (oldState.doc !== state.doc) state.doc.descendants(check);
+			state.doc.nodesBetween(range.from, range.to, (node, pos) => {
+				if (node.type.name !== "table") return true;
+				state.doc.nodesBetween(pos, pos + node.nodeSize, check);
+				return false;
+			});
 			return tr;
 		}
 	});
@@ -82461,7 +82567,7 @@ var __async = (__this, __arguments, generator) => {
     step((generator = generator.apply(__this, __arguments)).next());
   });
 };
-keepAlive$5(h, Fragment$1);
+keepAlive$5(h, Fragment);
 function copyToClipboard(text) {
   return __async(this, null, function* () {
     try {
@@ -82517,12 +82623,17 @@ const CopyButton = defineComponent({
       copyToClipboard(props.text).then(() => props.onCopy(props.text)).catch(console.error);
     };
     return () => {
-      return /* @__PURE__ */ h(Fragment$1, null, /* @__PURE__ */ h("button", { type: "button", class: "copy-button", onClick: onCopyCode }, /* @__PURE__ */ h(Icon$4, { icon: props.copyIcon }), props.copyText));
+      return /* @__PURE__ */ h(Fragment, null, /* @__PURE__ */ h("button", { type: "button", class: "copy-button", onClick: onCopyCode }, /* @__PURE__ */ h(Icon$4, { icon: props.copyIcon }), props.copyText));
     };
   }
 });
 
-keepAlive$5(h, Fragment$1);
+const nanoid$2 = customAlphabet("abcdefghijklmnopqrstuvwxyz0123456789", 8);
+function inputId$2(prefix) {
+  return `${prefix}-${nanoid$2()}`;
+}
+
+keepAlive$5(h, Fragment);
 const LanguagePicker = defineComponent({
   props: {
     language: {
@@ -82550,6 +82661,7 @@ const LanguagePicker = defineComponent({
     const triggerRef = ref();
     const showPicker = ref(false);
     const searchRef = ref();
+    const searchId = inputId$2("milkdown-code-language-search");
     const pickerRef = ref();
     const filter = ref("");
     watch([showPicker, triggerRef, pickerRef], () => {
@@ -82619,7 +82731,7 @@ const LanguagePicker = defineComponent({
       window.removeEventListener("click", clickHandler);
     });
     return () => {
-      return /* @__PURE__ */ h(Fragment$1, null, /* @__PURE__ */ h(
+      return /* @__PURE__ */ h(Fragment, null, /* @__PURE__ */ h(
         "button",
         {
           type: "button",
@@ -82633,6 +82745,7 @@ const LanguagePicker = defineComponent({
       ), /* @__PURE__ */ h("div", { ref: pickerRef, class: "language-picker" }, showPicker.value ? /* @__PURE__ */ h("div", { class: "list-wrapper" }, /* @__PURE__ */ h("div", { class: "search-box" }, /* @__PURE__ */ h("div", { class: "search-icon" }, /* @__PURE__ */ h(Icon$4, { icon: config.searchIcon })), /* @__PURE__ */ h(
         "input",
         {
+          id: searchId,
           ref: searchRef,
           class: "search-input",
           placeholder: config.searchPlaceholder,
@@ -82689,7 +82802,7 @@ const LanguagePicker = defineComponent({
   }
 });
 
-keepAlive$5(h, Fragment$1);
+keepAlive$5(h, Fragment);
 const SVG_NAMESPACE = "http://www.w3.org/2000/svg";
 function createSvgAwareSanitizer() {
   const purify$1 = purify();
@@ -82753,12 +82866,12 @@ const PreviewPanel = defineComponent({
     });
     return () => {
       if (!preview.value) return null;
-      return /* @__PURE__ */ h("div", { class: "preview-panel" }, !previewOnlyMode.value && /* @__PURE__ */ h(Fragment$1, null, /* @__PURE__ */ h("div", { class: "preview-divider" }), /* @__PURE__ */ h("div", { class: "preview-label" }, config.previewLabel)), /* @__PURE__ */ h("div", { ref: previewRef, class: "preview" }));
+      return /* @__PURE__ */ h("div", { class: "preview-panel" }, !previewOnlyMode.value && /* @__PURE__ */ h(Fragment, null, /* @__PURE__ */ h("div", { class: "preview-divider" }), /* @__PURE__ */ h("div", { class: "preview-label" }, config.previewLabel)), /* @__PURE__ */ h("div", { ref: previewRef, class: "preview" }));
     };
   }
 });
 
-keepAlive$5(h, Fragment$1);
+keepAlive$5(h, Fragment);
 const CodeBlock = defineComponent({
   props: {
     text: {
@@ -82834,7 +82947,7 @@ const CodeBlock = defineComponent({
     };
     return () => {
       var _a2;
-      return /* @__PURE__ */ h(Fragment$1, null, /* @__PURE__ */ h("div", { class: "tools" }, /* @__PURE__ */ h(
+      return /* @__PURE__ */ h(Fragment, null, /* @__PURE__ */ h("div", { class: "tools" }, /* @__PURE__ */ h(
         LanguagePicker,
         {
           language: props.language,
@@ -83072,7 +83185,9 @@ const _CodeMirrorBlock = class _CodeMirrorBlock {
         drawSelection(),
         keymap$4.of(this.codeMirrorKeymap()),
         this.languageConf.of([]),
-        EditorState$1.changeFilter.of(() => this.view.editable),
+        // Block user edits when the editor is not editable, but always let
+        // updates we sync from ProseMirror through.
+        EditorState$1.changeFilter.of(() => this.view.editable || this.updating),
         ...this.config.extensions,
         EditorView$1.updateListener.of(this.forwardUpdate)
       ]
@@ -83133,8 +83248,11 @@ const _CodeMirrorBlock = class _CodeMirrorBlock {
     if (!this.cm.dom.isConnected) return;
     this.cm.focus();
     this.updating = true;
-    this.cm.dispatch({ selection: { anchor, head } });
-    this.updating = false;
+    try {
+      this.cm.dispatch({ selection: { anchor, head } });
+    } finally {
+      this.updating = false;
+    }
   }
   update(node) {
     var _a;
@@ -83163,11 +83281,16 @@ const _CodeMirrorBlock = class _CodeMirrorBlock {
     const change = computeChange(this.cm.state.doc.toString(), node.textContent);
     if (change) {
       this.updating = true;
-      this.cm.dispatch({
-        changes: { from: change.from, to: change.to, insert: change.text },
-        scrollIntoView: true
-      });
-      this.updating = false;
+      try {
+        this.cm.dispatch({
+          changes: { from: change.from, to: change.to, insert: change.text },
+          // Only follow the change when the user can actually be editing here,
+          // so programmatic updates don't scroll a readonly editor around.
+          scrollIntoView: this.view.editable
+        });
+      } finally {
+        this.updating = false;
+      }
     }
     return true;
   }
@@ -87534,9 +87657,9 @@ function beforeinput(view, event) {
     let insert = $from.parent.contentMatchAt($from.index()).findWrapping(view.state.schema.nodes.text);
     if (!insert)
         return false;
-    let frag = Fragment$2.empty;
+    let frag = Fragment$1.empty;
     for (let i = insert.length - 1; i >= 0; i--)
-        frag = Fragment$2.from(insert[i].createAndFill(null, frag));
+        frag = Fragment$1.from(insert[i].createAndFill(null, frag));
     let tr = view.state.tr.replace($from.pos, $from.pos, new Slice(frag, 0, 0));
     tr.setSelection(TextSelection.near(tr.doc.resolve($from.pos + 1)));
     view.dispatch(tr);
@@ -87661,7 +87784,7 @@ var cursor$1 = [
 // src/index.ts
 function createVirtualCursor(options) {
   var _a;
-  const skipWarning = (_a = void 0 ) != null ? _a : false;
+  const skipWarning = (_a = options == null ? void 0 : options.skipWarning) != null ? _a : false;
   let _cursor = typeof document === "undefined" ? null : document.createElement("div");
   return new Plugin({
     key: key$1,
@@ -87854,6 +87977,11 @@ withMeta$5(inlineImageConfig, {
 function keepAlive$4(..._args) {
 }
 
+const nanoid$1 = customAlphabet("abcdefghijklmnopqrstuvwxyz0123456789", 8);
+function inputId$1(prefix) {
+  return `${prefix}-${nanoid$1()}`;
+}
+
 keepAlive$4(h);
 function Icon$3({ icon, class: className, onClick }) {
   return /* @__PURE__ */ h(
@@ -87880,8 +88008,7 @@ Icon$3.props = {
   }
 };
 
-keepAlive$4(h);
-const nanoid = customAlphabet("abcdefg", 8);
+keepAlive$4(h, Fragment);
 const ImageInput = defineComponent({
   props: {
     src: {
@@ -87941,7 +88068,8 @@ const ImageInput = defineComponent({
     const focusLinkInput = ref(false);
     const linkInputRef = ref();
     const currentLink = ref((_a = src.value) != null ? _a : "");
-    const uuid = ref(nanoid());
+    const linkId = inputId$1("milkdown-image-link");
+    const fileInputId = inputId$1("milkdown-image-upload");
     const hidePlaceholder = ref(((_b = src.value) == null ? void 0 : _b.length) !== 0);
     const onEditLink = (e) => {
       const target = e.target;
@@ -87976,6 +88104,7 @@ const ImageInput = defineComponent({
       return /* @__PURE__ */ h("div", { class: clsx("image-edit", className) }, /* @__PURE__ */ h(Icon$3, { icon: imageIcon, class: "image-icon" }), /* @__PURE__ */ h("div", { class: clsx("link-importer", focusLinkInput.value && "focus") }, /* @__PURE__ */ h(
         "input",
         {
+          id: linkId,
           ref: linkInputRef,
           draggable: "true",
           onDragstart: (e) => {
@@ -87995,12 +88124,12 @@ const ImageInput = defineComponent({
         {
           disabled: readonly.value,
           class: "hidden",
-          id: uuid.value,
+          id: fileInputId,
           type: "file",
           accept: "image/*",
           onChange: onUploadFile
         }
-      ), /* @__PURE__ */ h("label", { class: "uploader", for: uuid.value }, /* @__PURE__ */ h(Icon$3, { icon: uploadButton })), /* @__PURE__ */ h("span", { class: "text", onClick: () => {
+      ), /* @__PURE__ */ h("label", { class: "uploader", for: fileInputId }, /* @__PURE__ */ h(Icon$3, { icon: uploadButton })), /* @__PURE__ */ h("span", { class: "text", onClick: () => {
         var _a2;
         return (_a2 = linkInputRef.value) == null ? void 0 : _a2.focus();
       } }, uploadPlaceholderText))), currentLink.value && /* @__PURE__ */ h(Fragment, null, /* @__PURE__ */ h("div", { class: "image-preview" }, /* @__PURE__ */ h(
@@ -88016,7 +88145,7 @@ const ImageInput = defineComponent({
   }
 });
 
-keepAlive$4(h, Fragment$1);
+keepAlive$4(h, Fragment);
 const MilkdownImageInline = defineComponent({
   props: {
     src: {
@@ -88428,15 +88557,16 @@ function getImplicitDefault(type) {
   }
 }
 function getDefaultValue(schema) {
-  if (schema.default !== undefined) {
+  if (Object.prototype.hasOwnProperty.call(schema, "default") && schema.default !== undefined) {
     return schema.default;
   }
   var type = Array.isArray(schema.type) ? schema.type[0] : schema.type;
   return getImplicitDefault(type);
 }
 function applySetting(target, prop, options, schema) {
-  var optionValue = options[prop];
-  target[prop] = optionValue !== undefined ? schema.processor ? schema.processor(optionValue) : optionValue : getDefaultValue(schema);
+  var optionValue = Object.prototype.hasOwnProperty.call(options, prop) ? options[prop] : undefined;
+  var processor = Object.prototype.hasOwnProperty.call(schema, "processor") ? schema.processor : undefined;
+  target[prop] = optionValue !== undefined ? processor ? processor(optionValue) : optionValue : getDefaultValue(schema);
 }
 /**
  * The main Settings object
@@ -91912,10 +92042,8 @@ function getGlobalMetrics(size) {
     var metrics = fontMetricsBySizeIndex[sizeIndex] = {
       cssEmPerMu: sigmasAndXis.quad[sizeIndex] / 18
     };
-    for (var key in sigmasAndXis) {
-      if (sigmasAndXis.hasOwnProperty(key)) {
-        metrics[key] = sigmasAndXis[key][sizeIndex];
-      }
+    for (var key of Object.keys(sigmasAndXis)) {
+      metrics[key] = sigmasAndXis[key][sizeIndex];
     }
   }
   return fontMetricsBySizeIndex[sizeIndex];
@@ -92977,16 +93105,16 @@ var boldSymbol = function boldSymbol(value, mode, type) {
 /**
  * Makes either a mathord or textord in the correct font and color.
  */
-var makeOrd = function makeOrd(group, options, type) {
+var makeOrd = function makeOrd(group, options) {
+  // Spacing nodes are rendered as textord.
+  var type = group.type === "mathord" ? "mathord" : "textord";
   var mode = group.mode;
   var text = group.text;
   var classes = ["mord"];
-  var {
-    font,
-    fontFamily,
-    fontWeight,
-    fontShape
-  } = options;
+  var font = options.font,
+    fontFamily = options.fontFamily,
+    fontWeight = options.fontWeight,
+    fontShape = options.fontShape;
   // Math mode or Old font (i.e. \rm)
   var useFont = mode === "math" || mode === "text" && !!font;
   var fontOrFamily = useFont ? font : fontFamily;
@@ -93016,7 +93144,7 @@ var makeOrd = function makeOrd(group, options, type) {
     }
     if (lookupSymbol(text, fontName, mode).metrics) {
       return makeSymbol(text, fontName, mode, options, classes.concat(fontClasses));
-    } else if (ligatures.hasOwnProperty(text) && fontName.slice(0, 10) === "Typewriter") {
+    } else if (Object.prototype.hasOwnProperty.call(ligatures, text) && fontName.slice(0, 10) === "Typewriter") {
       // Deconstruct ligatures in monospace fonts (\texttt, \tt).
       var parts = [];
       for (var i = 0; i < text.length; i++) {
@@ -93235,10 +93363,9 @@ var getVListChildrenAndDepth = function getVListChildrenAndDepth(params) {
  * See VListParam documentation above.
  */
 var makeVList = function makeVList(params, options) {
-  var {
-    children,
-    depth
-  } = getVListChildrenAndDepth(params);
+  var _getVListChildrenAndD = getVListChildrenAndDepth(params),
+    children = _getVListChildrenAndD.children,
+    depth = _getVListChildrenAndD.depth;
   // Create a strut that is taller than any list item. The strut is added to
   // each item, where it will determine the item's baseline. Since it has
   // `overflow:hidden`, the strut's top edge will sit on the item's line box's
@@ -93430,7 +93557,10 @@ var svgData = {
 };
 var staticSvg = function staticSvg(value, options) {
   // Create a span with inline SVG for the element.
-  var [pathName, width, height] = svgData[value];
+  var _svgData$value = svgData[value],
+    pathName = _svgData$value[0],
+    width = _svgData$value[1],
+    height = _svgData$value[2];
   var path = new PathNode(pathName);
   var svgNode = new SvgNode([path], {
     "width": makeEm(width),
@@ -93440,13 +93570,16 @@ var staticSvg = function staticSvg(value, options) {
     "viewBox": "0 0 " + 1000 * width + " " + 1000 * height,
     "preserveAspectRatio": "xMinYMin"
   });
-  var span = makeSvgSpan(["overlay"], [svgNode], options);
+  var span = makeSvgSpan(["katex-overlay"], [svgNode], options);
   span.height = height;
   span.style.height = makeEm(height);
   span.style.width = makeEm(width);
   return span;
 };
 
+/**
+ * Describes spaces between different classes of atoms.
+ */
 var thinspace = {
   number: 3,
   unit: "mu"
@@ -93555,29 +93688,15 @@ var _htmlGroupBuilders = {};
  */
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 var _mathmlGroupBuilders = {};
-function defineFunction(_ref) {
-  var {
-    type,
-    names,
-    props,
-    handler,
-    htmlBuilder,
-    mathmlBuilder
-  } = _ref;
-  // Set default values of functions
-  var data = {
-    type,
-    numArgs: props.numArgs,
-    argTypes: props.argTypes,
-    allowedInArgument: !!props.allowedInArgument,
-    allowedInText: !!props.allowedInText,
-    allowedInMath: props.allowedInMath === undefined ? true : props.allowedInMath,
-    numOptionalArgs: props.numOptionalArgs || 0,
-    infix: !!props.infix,
-    primitive: !!props.primitive,
-    handler
-  };
+function defineFunction(data) {
+  var type = data.type,
+    names = data.names,
+    htmlBuilder = data.htmlBuilder,
+    mathmlBuilder = data.mathmlBuilder;
   for (var i = 0; i < names.length; ++i) {
+    // To avoid destructuring and rebuilding an object,
+    // we store the entire FunctionDefSpec object,
+    // even though Parser only needs the FunctionSpec fields.
     _functions[names[i]] = data;
   }
   if (type) {
@@ -93594,24 +93713,16 @@ function defineFunction(_ref) {
  * if the function's ParseNode is generated in Parser.js rather than via a
  * stand-alone handler provided to `defineFunction`).
  */
-function defineFunctionBuilders(_ref2) {
-  var {
-    type,
-    htmlBuilder,
-    mathmlBuilder
-  } = _ref2;
-  defineFunction({
-    type,
-    names: [],
-    props: {
-      numArgs: 0
-    },
-    handler() {
-      throw new Error('Should never be called.');
-    },
-    htmlBuilder,
-    mathmlBuilder
-  });
+function defineFunctionBuilders(_ref) {
+  var type = _ref.type,
+    htmlBuilder = _ref.htmlBuilder,
+    mathmlBuilder = _ref.mathmlBuilder;
+  if (htmlBuilder) {
+    _htmlGroupBuilders[type] = htmlBuilder;
+  }
+  if (mathmlBuilder) {
+    _mathmlGroupBuilders[type] = mathmlBuilder;
+  }
 }
 var normalizeArgument = function normalizeArgument(arg) {
   return arg.type === "ordgroup" && arg.body.length === 1 ? arg.body[0] : arg;
@@ -93763,7 +93874,7 @@ var _traverseNonSpaceNodes = function traverseNonSpaceNodes(nodes, callback, pre
     }
     if (nonspace) {
       prev.node = node;
-    } else if (isRoot && node.hasClass("newline")) {
+    } else if (isRoot && node.hasClass("katex-newline")) {
       prev.node = makeSpan(["leftmost"]); // treat like beginning of line
     }
     prev.insertAfter = (index => n => {
@@ -93843,17 +93954,17 @@ var buildGroup$1 = function buildGroup(group, options, baseOptions) {
 };
 /**
  * Combine an array of HTML DOM nodes (e.g., the output of `buildExpression`)
- * into an unbreakable HTML node of class .base, with proper struts to
+ * into an unbreakable HTML node of class .katex-base, with proper struts to
  * guarantee correct vertical extent.  `buildHTML` calls this repeatedly to
  * make up the entire expression as a sequence of unbreakable units.
  */
 function buildHTMLUnbreakable(children, options) {
   // Compute height and depth of this chunk.
-  var body = makeSpan(["base"], children, options);
+  var body = makeSpan(["katex-base"], children, options);
   // Add strut, which ensures that the top of the HTML element falls at
   // the height of the expression, and the bottom of the HTML element
   // falls at the depth of the expression.
-  var strut = makeSpan(["strut"]);
+  var strut = makeSpan(["katex-strut"]);
   strut.style.height = makeEm(body.height + body.depth);
   if (body.depth) {
     strut.style.verticalAlign = makeEm(-body.depth);
@@ -93875,7 +93986,7 @@ function buildHTML(tree, options) {
   // Build the expression contained in the tree
   var expression = buildExpression$1(tree, options, "root");
   var eqnNum;
-  if (expression.length === 2 && expression[1].hasClass("tag")) {
+  if (expression.length === 2 && expression[1].hasClass("katex-tag")) {
     // An environment with automatic equation numbers, e.g. {gather}.
     eqnNum = expression.pop();
   }
@@ -93893,7 +94004,7 @@ function buildHTML(tree, options) {
       // Put any post-operator glue on same line as operator.
       // Watch for \nobreak along the way, and stop at \newline.
       var nobreak = false;
-      while (i < expression.length - 1 && expression[i + 1].hasClass("mspace") && !expression[i + 1].hasClass("newline")) {
+      while (i < expression.length - 1 && expression[i + 1].hasClass("mspace") && !expression[i + 1].hasClass("katex-newline")) {
         i++;
         parts.push(expression[i]);
         if (expression[i].hasClass("nobreak")) {
@@ -93905,7 +94016,7 @@ function buildHTML(tree, options) {
         children.push(buildHTMLUnbreakable(parts, options));
         parts = [];
       }
-    } else if (expression[i].hasClass("newline")) {
+    } else if (expression[i].hasClass("katex-newline")) {
       // Write the line except the newline
       parts.pop();
       if (parts.length > 0) {
@@ -93923,7 +94034,7 @@ function buildHTML(tree, options) {
   var tagChild;
   if (tag) {
     tagChild = buildHTMLUnbreakable(buildExpression$1(tag, options, true), options);
-    tagChild.classes = ["tag"];
+    tagChild.classes = ["katex-tag"];
     children.push(tagChild);
   } else if (eqnNum) {
     children.push(eqnNum);
@@ -93988,10 +94099,10 @@ class MathNode {
    */
   toNode() {
     var node = document.createElementNS("http://www.w3.org/1998/Math/MathML", this.type);
-    for (var attr in this.attributes) {
-      if (Object.prototype.hasOwnProperty.call(this.attributes, attr)) {
-        node.setAttribute(attr, this.attributes[attr]);
-      }
+    for (var _ref2 of Object.entries(this.attributes)) {
+      var attr = _ref2[0];
+      var value = _ref2[1];
+      node.setAttribute(attr, value);
     }
     if (this.classes.length > 0) {
       node.className = createClass(this.classes);
@@ -94017,12 +94128,12 @@ class MathNode {
   toMarkup() {
     var markup = "<" + this.type;
     // Add the attributes
-    for (var attr in this.attributes) {
-      if (Object.prototype.hasOwnProperty.call(this.attributes, attr)) {
-        markup += " " + attr + "=\"";
-        markup += escape(this.attributes[attr]);
-        markup += "\"";
-      }
+    for (var _ref4 of Object.entries(this.attributes)) {
+      var attr = _ref4[0];
+      var value = _ref4[1];
+      markup += " " + attr + "=\"";
+      markup += escape(value);
+      markup += "\"";
     }
     if (this.classes.length > 0) {
       markup += " class =\"" + escape(createClass(this.classes)) + "\"";
@@ -94152,7 +94263,8 @@ var rowLikeTypes = new Set(["mrow", "mtable"]);
  * optional replacement from symbols.js.
  */
 var makeText = function makeText(text, mode, options) {
-  if (symbols[mode][text] && symbols[mode][text].replace && text.charCodeAt(0) !== 0xD835 && !(ligatures.hasOwnProperty(text) && options && (options.fontFamily && options.fontFamily.slice(4, 6) === "tt" || options.font && options.font.slice(4, 6) === "tt"))) {
+  var _options$fontFamily, _options$font;
+  if (symbols[mode][text] && symbols[mode][text].replace && text.charCodeAt(0) !== 0xD835 && !(Object.prototype.hasOwnProperty.call(ligatures, text) && ((options == null || (_options$fontFamily = options.fontFamily) == null ? void 0 : _options$fontFamily.slice(4, 6)) === "tt" || (options == null || (_options$font = options.font) == null ? void 0 : _options$font.slice(4, 6)) === "tt"))) {
     text = symbols[mode][text].replace;
   }
   return new TextNode(text);
@@ -94615,7 +94727,7 @@ class Options {
    */
   sizingClasses(oldOptions) {
     if (oldOptions.size !== this.size) {
-      return ["sizing", "reset-size" + oldOptions.size, "size" + this.size];
+      return ["katex-sizing", "reset-size" + oldOptions.size, "size" + this.size];
     } else {
       return [];
     }
@@ -94626,7 +94738,7 @@ class Options {
    */
   baseSizingClasses() {
     if (this.size !== Options.BASESIZE) {
-      return ["sizing", "reset-size" + this.size, "size" + Options.BASESIZE];
+      return ["katex-sizing", "reset-size" + this.size, "size" + Options.BASESIZE];
     } else {
       return [];
     }
@@ -94863,7 +94975,9 @@ var stretchySvg = function stretchySvg(group, options) {
       if (!data) {
         throw new Error("No SVG data for \"" + label + "\".");
       }
-      var [paths, _minWidth, _viewBoxHeight] = data;
+      var paths = data[0],
+        _minWidth = data[1],
+        _viewBoxHeight = data[2];
       var _height2 = _viewBoxHeight / 1000;
       var numSvgChildren = paths.length;
       var widthClasses;
@@ -94904,17 +95018,16 @@ var stretchySvg = function stretchySvg(group, options) {
         }
       }
       return {
-        span: makeSpan(["stretchy"], spans, options),
+        span: makeSpan(["katex-stretchy"], spans, options),
         minWidth: _minWidth,
         height: _height2
       };
     }
   } // buildSvgSpan_()
-  var {
-    span,
-    minWidth,
-    height
-  } = buildSvgSpan_();
+  var _buildSvgSpan_ = buildSvgSpan_(),
+    span = _buildSvgSpan_.span,
+    minWidth = _buildSvgSpan_.minWidth,
+    height = _buildSvgSpan_.height;
   // Note that we are returning span.depth = 0.
   // Any adjustments relative to the baseline must be done in buildHTML.
   span.height = height;
@@ -94929,7 +95042,7 @@ var stretchyEnclose = function stretchyEnclose(inner, label, topPad, bottomPad, 
   var img;
   var totalHeight = inner.height + inner.depth + topPad + bottomPad;
   if (/fbox|color|angl/.test(label)) {
-    img = makeSpan(["stretchy", label], [], options);
+    img = makeSpan(["katex-stretchy", label], [], options);
     if (label === "fbox") {
       var color = options.color && options.getColor();
       if (color) {
@@ -94975,27 +95088,12 @@ var stretchyEnclose = function stretchyEnclose(inner, label, topPad, bottomPad, 
  * `symbols.ts` so that consumers (notably `contrib/render-a11y-string`) can
  * pull in `isAtom` without dragging in the ~870-line symbol tables.
  */
-// Some of these have a "-token" suffix since these are also used as `ParseNode`
-// types for raw text tokens, and we want to avoid conflicts with higher-level
-// `ParseNode` types. These `ParseNode`s are constructed within `Parser` by
-// looking up the `symbols` map.
-var ATOMS = {
-  "bin": 1,
-  "close": 1,
-  "inner": 1,
-  "open": 1,
-  "punct": 1,
-  "rel": 1
-};
-var NON_ATOMS = {
-  "accent-token": 1,
-  "mathord": 1,
-  "op-token": 1,
-  "spacing": 1,
-  "textord": 1
-};
+var atomList = ["bin", "close", "inner", "open", "punct", "rel"];
+var nonAtomList = ["accent-token", "mathord", "op-token", "spacing", "textord"];
+var Atoms = new Set(atomList);
+var NonAtoms = new Set(nonAtomList);
 function isAtom(value) {
-  return value in ATOMS;
+  return Atoms.has(value);
 }
 
 /**
@@ -95020,14 +95118,32 @@ function assertSymbolNodeType(node) {
   return typedNode;
 }
 /**
- * Returns the node more strictly typed iff it is of the given type. Otherwise,
+ * Returns the node more strictly typed if it is of the given type. Otherwise,
  * returns null.
  */
 function checkSymbolNodeType(node) {
-  if (node && (node.type === "atom" || NON_ATOMS.hasOwnProperty(node.type))) {
+  if (node.type === "atom" || NonAtoms.has(node.type)) {
     return node;
   }
   return null;
+}
+/**
+ * Returns the string spelled out by a group of plain characters, throwing the
+ * given ParseError if the group holds anything else. With allowSpaces, a
+ * literal space counts as a character; `~` and `\ ` do not.
+ */
+function assertCharacterGroup(group, errorMessage, allowSpaces) {
+  var text = "";
+  for (var node of group.body) {
+    if (node.type === "textord") {
+      text += node.text;
+    } else if (allowSpaces && node.type === "spacing" && node.text === " ") {
+      text += " ";
+    } else {
+      throw new ParseError(errorMessage, group);
+    }
+  }
+  return text;
 }
 
 var getBaseSymbol = group => {
@@ -95102,9 +95218,10 @@ var htmlBuilder$a = (grp, options) => {
       width = svgData.vec[1];
     } else {
       accent = makeOrd({
+        type: "textord",
         mode: group.mode,
         text: group.label
-      }, options, "textord");
+      }, options);
       accent = assertSymbolDomNode(accent);
       // Remove the italic correction of the accent, because it only serves to
       // shift the accent over to a place we don't want.
@@ -95125,7 +95242,7 @@ var htmlBuilder$a = (grp, options) => {
     }
     // Shift the accent over by the skew.
     var left = skew;
-    // CSS defines `.katex .accent .accent-body:not(.accent-full) { width: 0 }`
+    // CSS defines `.katex .katex-accent .accent-body:not(.accent-full) { width: 0 }`
     // so that the accent doesn't contribute to the bounding box.
     // We need to shift the character by its width (effectively half
     // its width) to compensate.
@@ -95169,7 +95286,7 @@ var htmlBuilder$a = (grp, options) => {
       }]
     });
   }
-  var accentWrap = makeSpan(["mord", "accent"], [accentBody], options);
+  var accentWrap = makeSpan(["mord", "katex-accent"], [accentBody], options);
   if (supSubGroup) {
     // Here, we replace the "base" child of the supsub with our newly
     // generated accent.
@@ -95195,9 +95312,7 @@ var NON_STRETCHY_ACCENT_REGEX = new RegExp(["\\acute", "\\grave", "\\ddot", "\\t
 defineFunction({
   type: "accent",
   names: ["\\acute", "\\grave", "\\ddot", "\\tilde", "\\bar", "\\breve", "\\check", "\\hat", "\\vec", "\\dot", "\\mathring", "\\widecheck", "\\widehat", "\\widetilde", "\\overrightarrow", "\\overleftarrow", "\\Overrightarrow", "\\overleftrightarrow", "\\overgroup", "\\overlinesegment", "\\overleftharpoon", "\\overrightharpoon"],
-  props: {
-    numArgs: 1
-  },
+  numArgs: 1,
   handler: (context, args) => {
     var base = normalizeArgument(args[0]);
     var isStretchy = !NON_STRETCHY_ACCENT_REGEX.test(context.funcName);
@@ -95218,13 +95333,11 @@ defineFunction({
 defineFunction({
   type: "accent",
   names: ["\\'", "\\`", "\\^", "\\~", "\\=", "\\u", "\\.", '\\"', "\\c", "\\r", "\\H", "\\v", "\\textcircled"],
-  props: {
-    numArgs: 1,
-    allowedInText: true,
-    allowedInMath: true,
-    // unless in strict mode
-    argTypes: ["primitive"]
-  },
+  numArgs: 1,
+  allowedInText: true,
+  allowedInMath: true,
+  // unless in strict mode
+  argTypes: ["primitive"],
   handler: (context, args) => {
     var base = args[0];
     var mode = context.parser.mode;
@@ -95240,23 +95353,17 @@ defineFunction({
       isShifty: true,
       base: base
     };
-  },
-  htmlBuilder: htmlBuilder$a,
-  mathmlBuilder: mathmlBuilder$9
+  }
 });
 
 // Horizontal overlap functions
 defineFunction({
   type: "accentUnder",
   names: ["\\underleftarrow", "\\underrightarrow", "\\underleftrightarrow", "\\undergroup", "\\underlinesegment", "\\utilde"],
-  props: {
-    numArgs: 1
-  },
+  numArgs: 1,
   handler: (_ref, args) => {
-    var {
-      parser,
-      funcName
-    } = _ref;
+    var parser = _ref.parser,
+      funcName = _ref.funcName;
     var base = args[0];
     return {
       type: "accentUnder",
@@ -95312,15 +95419,11 @@ defineFunction({
   "\\xrightleftarrows", "\\xrightequilibrium", "\\xleftequilibrium",
   // The next 3 functions are here only to support the {CD} environment.
   "\\\\cdrightarrow", "\\\\cdleftarrow", "\\\\cdlongequal"],
-  props: {
-    numArgs: 1,
-    numOptionalArgs: 1
-  },
+  numArgs: 1,
+  numOptionalArgs: 1,
   handler(_ref, args, optArgs) {
-    var {
-      parser,
-      funcName
-    } = _ref;
+    var parser = _ref.parser,
+      funcName = _ref.funcName;
     return {
       type: "xArrow",
       mode: parser.mode,
@@ -95452,9 +95555,6 @@ function mathmlBuilder$8(group, options) {
     } else if (group.mclass === "mopen" || group.mclass === "mclose") {
       node.attributes.lspace = "0em";
       node.attributes.rspace = "0em";
-    } else if (group.mclass === "minner") {
-      node.attributes.lspace = "0.0556em"; // 1 mu is the most likely option
-      node.attributes.width = "+0.1111em";
     }
     // MathML <mo> default space is 5/18 em, so <mrel> needs no action.
     // Ref: https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mo
@@ -95465,21 +95565,16 @@ function mathmlBuilder$8(group, options) {
 defineFunction({
   type: "mclass",
   names: ["\\mathord", "\\mathbin", "\\mathrel", "\\mathopen", "\\mathclose", "\\mathpunct", "\\mathinner"],
-  props: {
-    numArgs: 1,
-    primitive: true
-  },
+  numArgs: 1,
+  primitive: true,
   handler(_ref, args) {
-    var {
-      parser,
-      funcName
-    } = _ref;
+    var parser = _ref.parser,
+      funcName = _ref.funcName;
     var body = args[0];
     return {
       type: "mclass",
       mode: parser.mode,
       mclass: "m" + funcName.slice(5),
-      // TODO(kevinb): don't prefix with 'm'
       body: ordargument(body),
       isCharacterBox: isCharacterBox(body)
     };
@@ -95504,13 +95599,9 @@ var binrelClass = arg => {
 defineFunction({
   type: "mclass",
   names: ["\\@binrel"],
-  props: {
-    numArgs: 2
-  },
+  numArgs: 2,
   handler(_ref2, args) {
-    var {
-      parser
-    } = _ref2;
+    var parser = _ref2.parser;
     return {
       type: "mclass",
       mode: parser.mode,
@@ -95524,14 +95615,10 @@ defineFunction({
 defineFunction({
   type: "mclass",
   names: ["\\stackrel", "\\overset", "\\underset"],
-  props: {
-    numArgs: 2
-  },
+  numArgs: 2,
   handler(_ref3, args) {
-    var {
-      parser,
-      funcName
-    } = _ref3;
+    var parser = _ref3.parser,
+      funcName = _ref3.funcName;
     var baseArg = args[1];
     var shiftedArg = args[0];
     var mclass;
@@ -95551,12 +95638,16 @@ defineFunction({
       suppressBaseShift: funcName !== "\\stackrel",
       body: ordargument(baseArg)
     };
-    var supsub = {
+    var supsub = funcName === "\\underset" ? {
       type: "supsub",
       mode: shiftedArg.mode,
       base: baseOp,
-      sup: funcName === "\\underset" ? null : shiftedArg,
-      sub: funcName === "\\underset" ? shiftedArg : null
+      sub: shiftedArg
+    } : {
+      type: "supsub",
+      mode: shiftedArg.mode,
+      base: baseOp,
+      sup: shiftedArg
     };
     return {
       type: "mclass",
@@ -95565,9 +95656,7 @@ defineFunction({
       body: [supsub],
       isCharacterBox: isCharacterBox(supsub)
     };
-  },
-  htmlBuilder: htmlBuilder$9,
-  mathmlBuilder: mathmlBuilder$8
+  }
 });
 
 // \pmb is a simulation of bold font.
@@ -95577,14 +95666,10 @@ defineFunction({
 defineFunction({
   type: "pmb",
   names: ["\\pmb"],
-  props: {
-    numArgs: 1,
-    allowedInText: true
-  },
+  numArgs: 1,
+  allowedInText: true,
   handler(_ref, args) {
-    var {
-      parser
-    } = _ref;
+    var parser = _ref.parser;
     return {
       type: "pmb",
       mode: parser.mode,
@@ -95826,14 +95911,10 @@ function parseCD(parser) {
 defineFunction({
   type: "cdlabel",
   names: ["\\\\cdleft", "\\\\cdright"],
-  props: {
-    numArgs: 1
-  },
+  numArgs: 1,
   handler(_ref, args) {
-    var {
-      parser,
-      funcName
-    } = _ref;
+    var parser = _ref.parser,
+      funcName = _ref.funcName;
     return {
       type: "cdlabel",
       mode: parser.mode,
@@ -95871,13 +95952,9 @@ defineFunction({
 defineFunction({
   type: "cdlabelparent",
   names: ["\\\\cdparent"],
-  props: {
-    numArgs: 1
-  },
+  numArgs: 1,
   handler(_ref2, args) {
-    var {
-      parser
-    } = _ref2;
+    var parser = _ref2.parser;
     return {
       type: "cdlabelparent",
       mode: parser.mode,
@@ -95903,21 +95980,12 @@ defineFunction({
 defineFunction({
   type: "textord",
   names: ["\\@char"],
-  props: {
-    numArgs: 1,
-    allowedInText: true
-  },
+  numArgs: 1,
+  allowedInText: true,
   handler(_ref, args) {
-    var {
-      parser
-    } = _ref;
+    var parser = _ref.parser;
     var arg = assertNodeType(args[0], "ordgroup");
-    var group = arg.body;
-    var number = "";
-    for (var i = 0; i < group.length; i++) {
-      var node = assertNodeType(group[i], "textord");
-      number += node.text;
-    }
+    var number = assertCharacterGroup(arg, "\\@char has non-numeric argument");
     var code = parseInt(number);
     var text;
     if (isNaN(code)) {
@@ -95958,15 +96026,11 @@ var mathmlBuilder$7 = (group, options) => {
 defineFunction({
   type: "color",
   names: ["\\textcolor"],
-  props: {
-    numArgs: 2,
-    allowedInText: true,
-    argTypes: ["color", "original"]
-  },
+  numArgs: 2,
+  allowedInText: true,
+  argTypes: ["color", "original"],
   handler(_ref, args) {
-    var {
-      parser
-    } = _ref;
+    var parser = _ref.parser;
     var color = assertNodeType(args[0], "color-token").color;
     var body = args[1];
     return {
@@ -95982,16 +96046,12 @@ defineFunction({
 defineFunction({
   type: "color",
   names: ["\\color"],
-  props: {
-    numArgs: 1,
-    allowedInText: true,
-    argTypes: ["color"]
-  },
+  numArgs: 1,
+  allowedInText: true,
+  argTypes: ["color"],
   handler(_ref2, args) {
-    var {
-      parser,
-      breakOnTokenText
-    } = _ref2;
+    var parser = _ref2.parser,
+      breakOnTokenText = _ref2.breakOnTokenText;
     var color = assertNodeType(args[0], "color-token").color;
     // Set macro \current@color in current namespace to store the current
     // color, mimicking the behavior of color.sty.
@@ -96006,9 +96066,7 @@ defineFunction({
       color,
       body
     };
-  },
-  htmlBuilder: htmlBuilder$8,
-  mathmlBuilder: mathmlBuilder$7
+  }
 });
 
 // Row breaks within tabular environments, and line breaks at top level
@@ -96016,15 +96074,11 @@ defineFunction({
 defineFunction({
   type: "cr",
   names: ["\\\\"],
-  props: {
-    numArgs: 0,
-    numOptionalArgs: 0,
-    allowedInText: true
-  },
+  numArgs: 0,
+  numOptionalArgs: 0,
+  allowedInText: true,
   handler(_ref, args, optArgs) {
-    var {
-      parser
-    } = _ref;
+    var parser = _ref.parser;
     var size = parser.gullet.future().text === "[" ? parser.parseSizeGroup(true) : null;
     var newLine = !parser.settings.displayMode || !parser.settings.useStrictBehavior("newLineInDisplayMode", "In LaTeX, \\\\ or \\newline " + "does nothing in display mode");
     return {
@@ -96039,7 +96093,7 @@ defineFunction({
   htmlBuilder(group, options) {
     var span = makeSpan(["mspace"], [], options);
     if (group.newLine) {
-      span.classes.push("newline");
+      span.classes.push("katex-newline");
       if (group.size) {
         span.style.marginTop = makeEm(calculateSize(group.size, options));
       }
@@ -96111,15 +96165,11 @@ defineFunction({
   type: "internal",
   names: ["\\global", "\\long", "\\\\globallong" // can’t be entered directly
   ],
-  props: {
-    numArgs: 0,
-    allowedInText: true
-  },
+  numArgs: 0,
+  allowedInText: true,
   handler(_ref) {
-    var {
-      parser,
-      funcName
-    } = _ref;
+    var parser = _ref.parser,
+      funcName = _ref.funcName;
     parser.consumeSpaces();
     var token = parser.fetch();
     if (globalMap[token.text]) {
@@ -96139,16 +96189,12 @@ defineFunction({
 defineFunction({
   type: "internal",
   names: ["\\def", "\\gdef", "\\edef", "\\xdef"],
-  props: {
-    numArgs: 0,
-    allowedInText: true,
-    primitive: true
-  },
+  numArgs: 0,
+  allowedInText: true,
+  primitive: true,
   handler(_ref2) {
-    var {
-      parser,
-      funcName
-    } = _ref2;
+    var parser = _ref2.parser,
+      funcName = _ref2.funcName;
     var tok = parser.gullet.popToken();
     var name = tok.text;
     if (/^(?:[\\{}$&#^_]|EOF)$/.test(name)) {
@@ -96188,9 +96234,8 @@ defineFunction({
       }
     }
     // replacement text, enclosed in '{' and '}' and properly nested
-    var {
-      tokens
-    } = parser.gullet.consumeArg();
+    var _parser$gullet$consum = parser.gullet.consumeArg(),
+      tokens = _parser$gullet$consum.tokens;
     if (insert) {
       tokens.unshift(insert);
     }
@@ -96218,16 +96263,12 @@ defineFunction({
   type: "internal",
   names: ["\\let", "\\\\globallet" // can’t be entered directly
   ],
-  props: {
-    numArgs: 0,
-    allowedInText: true,
-    primitive: true
-  },
+  numArgs: 0,
+  allowedInText: true,
+  primitive: true,
   handler(_ref3) {
-    var {
-      parser,
-      funcName
-    } = _ref3;
+    var parser = _ref3.parser,
+      funcName = _ref3.funcName;
     var name = checkControlSequence(parser.gullet.popToken());
     parser.gullet.consumeSpaces();
     var tok = getRHS(parser);
@@ -96243,16 +96284,12 @@ defineFunction({
   type: "internal",
   names: ["\\futurelet", "\\\\globalfuture" // can’t be entered directly
   ],
-  props: {
-    numArgs: 0,
-    allowedInText: true,
-    primitive: true
-  },
+  numArgs: 0,
+  allowedInText: true,
+  primitive: true,
   handler(_ref4) {
-    var {
-      parser,
-      funcName
-    } = _ref4;
+    var parser = _ref4.parser,
+      funcName = _ref4.funcName;
     var name = checkControlSequence(parser.gullet.popToken());
     var middle = parser.gullet.popToken();
     var tok = parser.gullet.popToken();
@@ -96987,12 +97024,10 @@ function checkDelimiter(delim, context) {
 defineFunction({
   type: "delimsizing",
   names: ["\\bigl", "\\Bigl", "\\biggl", "\\Biggl", "\\bigr", "\\Bigr", "\\biggr", "\\Biggr", "\\bigm", "\\Bigm", "\\biggm", "\\Biggm", "\\big", "\\Big", "\\bigg", "\\Bigg"],
-  props: {
-    numArgs: 1,
-    argTypes: ["primitive"]
-  },
+  numArgs: 1,
+  argTypes: ["primitive"],
   handler: (context, args) => {
-    var delim = checkDelimiter(args[0], context);
+    var delim = checkDelimiter(normalizeArgument(args[0]), context);
     return {
       type: "delimsizing",
       mode: context.parser.mode,
@@ -97039,10 +97074,8 @@ function assertParsed(group) {
 defineFunction({
   type: "leftright-right",
   names: ["\\right"],
-  props: {
-    numArgs: 1,
-    primitive: true
-  },
+  numArgs: 1,
+  primitive: true,
   handler: (context, args) => {
     // \left case below triggers parsing of \right in
     //   `const right = parser.parseFunction();`
@@ -97055,17 +97088,15 @@ defineFunction({
       type: "leftright-right",
       mode: context.parser.mode,
       delim: checkDelimiter(args[0], context).text,
-      color: color // undefined if not set via \color
+      color // undefined if not set via \color
     };
   }
 });
 defineFunction({
   type: "leftright",
   names: ["\\left"],
-  props: {
-    numArgs: 1,
-    primitive: true
-  },
+  numArgs: 1,
+  primitive: true,
   handler: (context, args) => {
     var delim = checkDelimiter(args[0], context);
     var parser = context.parser;
@@ -97164,10 +97195,8 @@ defineFunction({
 defineFunction({
   type: "middle",
   names: ["\\middle"],
-  props: {
-    numArgs: 1,
-    primitive: true
-  },
+  numArgs: 1,
+  primitive: true,
   handler: (context, args) => {
     var delim = checkDelimiter(args[0], context);
     if (!context.parser.leftrightDepth) {
@@ -97228,7 +97257,7 @@ var htmlBuilder$7 = (group, options) => {
   // subjects that should get the "tall" treatment.
   var isSingleChar = isCharacterBox(group.body);
   if (label === "sout") {
-    img = makeSpan(["stretchy", "sout"]);
+    img = makeSpan(["katex-stretchy", "katex-sout"]);
     img.height = options.fontMetrics().defaultRuleThickness / scale;
     imgShift = -0.5 * options.fontMetrics().xHeight;
   } else if (label === "phase") {
@@ -97403,16 +97432,12 @@ var mathmlBuilder$6 = (group, options) => {
 defineFunction({
   type: "enclose",
   names: ["\\colorbox"],
-  props: {
-    numArgs: 2,
-    allowedInText: true,
-    argTypes: ["color", "hbox"]
-  },
+  numArgs: 2,
+  allowedInText: true,
+  argTypes: ["color", "hbox"],
   handler(_ref, args, optArgs) {
-    var {
-      parser,
-      funcName
-    } = _ref;
+    var parser = _ref.parser,
+      funcName = _ref.funcName;
     var color = assertNodeType(args[0], "color-token").color;
     var body = args[1];
     return {
@@ -97429,16 +97454,12 @@ defineFunction({
 defineFunction({
   type: "enclose",
   names: ["\\fcolorbox"],
-  props: {
-    numArgs: 3,
-    allowedInText: true,
-    argTypes: ["color", "color", "hbox"]
-  },
+  numArgs: 3,
+  allowedInText: true,
+  argTypes: ["color", "color", "hbox"],
   handler(_ref2, args, optArgs) {
-    var {
-      parser,
-      funcName
-    } = _ref2;
+    var parser = _ref2.parser,
+      funcName = _ref2.funcName;
     var borderColor = assertNodeType(args[0], "color-token").color;
     var backgroundColor = assertNodeType(args[1], "color-token").color;
     var body = args[2];
@@ -97450,22 +97471,16 @@ defineFunction({
       borderColor,
       body
     };
-  },
-  htmlBuilder: htmlBuilder$7,
-  mathmlBuilder: mathmlBuilder$6
+  }
 });
 defineFunction({
   type: "enclose",
   names: ["\\fbox"],
-  props: {
-    numArgs: 1,
-    argTypes: ["hbox"],
-    allowedInText: true
-  },
+  numArgs: 1,
+  argTypes: ["hbox"],
+  allowedInText: true,
   handler(_ref3, args) {
-    var {
-      parser
-    } = _ref3;
+    var parser = _ref3.parser;
     return {
       type: "enclose",
       mode: parser.mode,
@@ -97477,14 +97492,10 @@ defineFunction({
 defineFunction({
   type: "enclose",
   names: ["\\cancel", "\\bcancel", "\\xcancel", "\\phase"],
-  props: {
-    numArgs: 1
-  },
+  numArgs: 1,
   handler(_ref4, args) {
-    var {
-      parser,
-      funcName
-    } = _ref4;
+    var parser = _ref4.parser,
+      funcName = _ref4.funcName;
     var body = args[0];
     return {
       type: "enclose",
@@ -97492,22 +97503,16 @@ defineFunction({
       label: funcName,
       body
     };
-  },
-  htmlBuilder: htmlBuilder$7,
-  mathmlBuilder: mathmlBuilder$6
+  }
 });
 defineFunction({
   type: "enclose",
   names: ["\\sout"],
-  props: {
-    numArgs: 1,
-    allowedInText: true
-  },
+  numArgs: 1,
+  allowedInText: true,
   handler(_ref5, args) {
-    var {
-      parser,
-      funcName
-    } = _ref5;
+    var parser = _ref5.parser,
+      funcName = _ref5.funcName;
     if (parser.mode === "math") {
       parser.settings.reportNonstrict("mathVsSout", "LaTeX's \\sout works only in text mode");
     }
@@ -97518,22 +97523,16 @@ defineFunction({
       label: funcName,
       body
     };
-  },
-  htmlBuilder: htmlBuilder$7,
-  mathmlBuilder: mathmlBuilder$6
+  }
 });
 defineFunction({
   type: "enclose",
   names: ["\\angl"],
-  props: {
-    numArgs: 1,
-    argTypes: ["hbox"],
-    allowedInText: false
-  },
+  numArgs: 1,
+  argTypes: ["hbox"],
+  allowedInText: false,
   handler(_ref6, args) {
-    var {
-      parser
-    } = _ref6;
+    var parser = _ref6.parser;
     return {
       type: "enclose",
       mode: parser.mode,
@@ -97550,14 +97549,12 @@ defineFunction({
  */
 var _environments = {};
 function defineEnvironment(_ref) {
-  var {
-    type,
-    names,
-    props,
-    handler,
-    htmlBuilder,
-    mathmlBuilder
-  } = _ref;
+  var type = _ref.type,
+    names = _ref.names,
+    props = _ref.props,
+    handler = _ref.handler,
+    htmlBuilder = _ref.htmlBuilder,
+    mathmlBuilder = _ref.mathmlBuilder;
   // Set default values of environments.
   var data = {
     type,
@@ -97710,18 +97707,16 @@ function getAutoTag(name) {
  * ("text", "display", etc.), then each cell is cast into that style.
  */
 function parseArray(parser, _ref, style) {
-  var {
-    hskipBeforeAndAfter,
-    addJot,
-    cols,
-    arraystretch,
-    colSeparationType,
-    autoTag,
-    singleRow,
-    emptySingleRow,
-    maxNumCols,
-    leqno
-  } = _ref;
+  var hskipBeforeAndAfter = _ref.hskipBeforeAndAfter,
+    addJot = _ref.addJot,
+    cols = _ref.cols,
+    arraystretch = _ref.arraystretch,
+    colSeparationType = _ref.colSeparationType,
+    autoTag = _ref.autoTag,
+    singleRow = _ref.singleRow,
+    emptySingleRow = _ref.emptySingleRow,
+    maxNumCols = _ref.maxNumCols,
+    leqno = _ref.leqno;
   parser.gullet.beginGroup();
   if (!singleRow) {
     // \cr is equivalent to \\ without the optional size argument (see below)
@@ -98080,8 +98075,8 @@ var htmlBuilder$6 = function htmlBuilder(group, options) {
   var tableBody = makeSpan(["mtable"], cols);
   // Add \hline(s), if any.
   if (hlines.length > 0) {
-    var line = makeLineSpan("hline", options, ruleThickness);
-    var dashes = makeLineSpan("hdashline", options, ruleThickness);
+    var line = makeLineSpan("katex-hline", options, ruleThickness);
+    var dashes = makeLineSpan("katex-hdashline", options, ruleThickness);
     var vListElems = [{
       type: "elem",
       elem: tableBody,
@@ -98116,7 +98111,7 @@ var htmlBuilder$6 = function htmlBuilder(group, options) {
       positionType: "individualShift",
       children: tagSpans
     });
-    var tagCol = makeSpan(["tag"], [eqnNumCol], options);
+    var tagCol = makeSpan(["katex-tag"], [eqnNumCol], options);
     return makeFragment([tableBody, tagCol]);
   }
 };
@@ -98248,14 +98243,13 @@ var alignedHandler = function alignedHandler(context, args) {
     validateAmsEnvironmentContext(context);
   }
   var cols = [];
-  var separationType = context.envName.includes("at") ? "alignat" : "align";
   var isSplit = context.envName === "split";
   var res = parseArray(context.parser, {
     cols,
     addJot: true,
     autoTag: isSplit ? undefined : getAutoTag(context.envName),
     emptySingleRow: true,
-    colSeparationType: separationType,
+    colSeparationType: context.envName.includes("at") ? "alignat" : "align",
     maxNumCols: isSplit ? 2 : undefined,
     leqno: context.parser.settings.leqno
   }, "display");
@@ -98276,19 +98270,19 @@ var alignedHandler = function alignedHandler(context, args) {
     body: []
   };
   if (args[0] && args[0].type === "ordgroup") {
-    var arg0 = "";
-    for (var i = 0; i < args[0].body.length; i++) {
-      var textord = assertNodeType(args[0].body[i], "textord");
-      arg0 += textord.text;
+    var message = "Number of columns should be a positive integer";
+    var numColumns = assertCharacterGroup(args[0], message);
+    if (!/^[0-9]+$/.test(numColumns) || Number(numColumns) < 1) {
+      throw new ParseError(message, args[0]);
     }
-    numMaths = Number(arg0);
+    numMaths = Number(numColumns);
     numCols = numMaths * 2;
   }
   var isAligned = !numCols;
   res.body.forEach(function (row) {
-    for (var _i4 = 1; _i4 < row.length; _i4 += 2) {
+    for (var i = 1; i < row.length; i += 2) {
       // Modify ordgroup node within styling node
-      var styling = assertNodeType(row[_i4], "styling");
+      var styling = assertNodeType(row[i], "styling");
       var ordgroup = assertNodeType(styling.body[0], "ordgroup");
       ordgroup.body.unshift(emptyGroup);
     }
@@ -98306,16 +98300,16 @@ var alignedHandler = function alignedHandler(context, args) {
   // Adjusting alignment.
   // In aligned mode, we add one \qquad between columns;
   // otherwise we add nothing.
-  for (var _i5 = 0; _i5 < numCols; ++_i5) {
+  for (var i = 0; i < numCols; ++i) {
     var align = "r";
     var pregap = 0;
-    if (_i5 % 2 === 1) {
+    if (i % 2 === 1) {
       align = "l";
-    } else if (_i5 > 0 && isAligned) {
+    } else if (i > 0 && isAligned) {
       // "aligned" mode.
       pregap = 1; // add one \quad
     }
-    cols[_i5] = {
+    cols[i] = {
       type: "align",
       align: align,
       pregap: pregap,
@@ -98641,11 +98635,9 @@ defineFunction({
   type: "text",
   // Doesn't matter what this is.
   names: ["\\hline", "\\hdashline"],
-  props: {
-    numArgs: 0,
-    allowedInText: true,
-    allowedInMath: true
-  },
+  numArgs: 0,
+  allowedInText: true,
+  allowedInMath: true,
   handler(context, args) {
     throw new ParseError(context.funcName + " valid only within array environment");
   }
@@ -98658,35 +98650,27 @@ var environments = _environments;
 defineFunction({
   type: "environment",
   names: ["\\begin", "\\end"],
-  props: {
-    numArgs: 1,
-    argTypes: ["text"]
-  },
+  numArgs: 1,
+  argTypes: ["text"],
   handler(_ref, args) {
-    var {
-      parser,
-      funcName
-    } = _ref;
+    var parser = _ref.parser,
+      funcName = _ref.funcName;
     var nameGroup = args[0];
     if (nameGroup.type !== "ordgroup") {
       throw new ParseError("Invalid environment name", nameGroup);
     }
-    var envName = "";
-    for (var i = 0; i < nameGroup.body.length; ++i) {
-      envName += assertNodeType(nameGroup.body[i], "textord").text;
-    }
+    var envName = assertCharacterGroup(nameGroup, "Environment name should contain only text characters and spaces", true);
     if (funcName === "\\begin") {
       // begin...end is similar to left...right
-      if (!environments.hasOwnProperty(envName)) {
+      if (!Object.prototype.hasOwnProperty.call(environments, envName)) {
         throw new ParseError("No such environment: " + envName, nameGroup);
       }
       // Build the environment object. Arguments and other information will
       // be made available to the begin and end methods using properties.
       var env = environments[envName];
-      var {
-        args: _args,
-        optArgs
-      } = parser.parseArguments("\\begin{" + envName + "}", env);
+      var _parser$parseArgument = parser.parseArguments("\\begin{" + envName + "}", env),
+        _args = _parser$parseArgument.args,
+        optArgs = _parser$parseArgument.optArgs;
       var context = {
         mode: parser.mode,
         envName,
@@ -98739,20 +98723,13 @@ defineFunction({
   "\\mathbb", "\\mathcal", "\\mathfrak", "\\mathscr", "\\mathsf", "\\mathtt",
   // aliases, except \bm defined below
   "\\Bbb", "\\bold", "\\frak"],
-  props: {
-    numArgs: 1,
-    allowedInArgument: true
-  },
+  numArgs: 1,
+  allowedInArgument: true,
   handler: (_ref, args) => {
-    var {
-      parser,
-      funcName
-    } = _ref;
+    var parser = _ref.parser,
+      funcName = _ref.funcName;
     var body = normalizeArgument(args[0]);
-    var func = funcName;
-    if (func in fontAliases) {
-      func = fontAliases[func];
-    }
+    var func = funcName in fontAliases ? fontAliases[funcName] : funcName;
     return {
       type: "font",
       mode: parser.mode,
@@ -98766,13 +98743,9 @@ defineFunction({
 defineFunction({
   type: "mclass",
   names: ["\\boldsymbol", "\\bm"],
-  props: {
-    numArgs: 1
-  },
+  numArgs: 1,
   handler: (_ref2, args) => {
-    var {
-      parser
-    } = _ref2;
+    var parser = _ref2.parser;
     var body = args[0];
     // amsbsy.sty's \boldsymbol uses \binrel spacing to inherit the
     // argument's bin|rel|ord status
@@ -98794,19 +98767,13 @@ defineFunction({
 defineFunction({
   type: "font",
   names: ["\\rm", "\\sf", "\\tt", "\\bf", "\\it", "\\cal"],
-  props: {
-    numArgs: 0,
-    allowedInText: true
-  },
+  numArgs: 0,
+  allowedInText: true,
   handler: (_ref3, args) => {
-    var {
-      parser,
-      funcName,
-      breakOnTokenText
-    } = _ref3;
-    var {
-      mode
-    } = parser;
+    var parser = _ref3.parser,
+      funcName = _ref3.funcName,
+      breakOnTokenText = _ref3.breakOnTokenText;
+    var mode = parser.mode;
     var body = parser.parseExpression(true, breakOnTokenText);
     return {
       type: "font",
@@ -98818,9 +98785,7 @@ defineFunction({
         body
       }
     };
-  },
-  htmlBuilder: htmlBuilder$5,
-  mathmlBuilder: mathmlBuilder$4
+  }
 });
 
 var htmlBuilder$4 = (group, options) => {
@@ -99001,15 +98966,11 @@ defineFunction({
   // can’t be entered directly
   "\\\\bracefrac", "\\\\brackfrac" // ditto
   ],
-  props: {
-    numArgs: 2,
-    allowedInArgument: true
-  },
+  numArgs: 2,
+  allowedInArgument: true,
   handler: (_ref, args) => {
-    var {
-      parser,
-      funcName
-    } = _ref;
+    var parser = _ref.parser,
+      funcName = _ref.funcName;
     var numer = args[0];
     var denom = args[1];
     var hasBarLine;
@@ -99072,16 +99033,12 @@ defineFunction({
 defineFunction({
   type: "infix",
   names: ["\\over", "\\choose", "\\atop", "\\brace", "\\brack"],
-  props: {
-    numArgs: 0,
-    infix: true
-  },
+  numArgs: 0,
+  infix: true,
   handler(_ref2) {
-    var {
-      parser,
-      funcName,
-      token
-    } = _ref2;
+    var parser = _ref2.parser,
+      funcName = _ref2.funcName,
+      token = _ref2.token;
     var replaceWith;
     switch (funcName) {
       case "\\over":
@@ -99122,15 +99079,11 @@ var delimFromValue = function delimFromValue(delimString) {
 defineFunction({
   type: "genfrac",
   names: ["\\genfrac"],
-  props: {
-    numArgs: 6,
-    allowedInArgument: true,
-    argTypes: ["math", "math", "size", "text", "math", "math"]
-  },
+  numArgs: 6,
+  allowedInArgument: true,
+  argTypes: ["math", "math", "size", "text", "math", "math"],
   handler(_ref3, args) {
-    var {
-      parser
-    } = _ref3;
+    var parser = _ref3.parser;
     var numer = args[4];
     var denom = args[5];
     // Look into the parse nodes to get the desired delimiters.
@@ -99179,17 +99132,13 @@ defineFunction({
 defineFunction({
   type: "infix",
   names: ["\\above"],
-  props: {
-    numArgs: 1,
-    argTypes: ["size"],
-    infix: true
-  },
+  numArgs: 1,
+  argTypes: ["size"],
+  infix: true,
   handler(_ref4, args) {
-    var {
-      parser,
-      funcName,
-      token
-    } = _ref4;
+    var parser = _ref4.parser;
+      _ref4.funcName;
+      var token = _ref4.token;
     return {
       type: "infix",
       mode: parser.mode,
@@ -99202,15 +99151,11 @@ defineFunction({
 defineFunction({
   type: "genfrac",
   names: ["\\\\abovefrac"],
-  props: {
-    numArgs: 3,
-    argTypes: ["math", "size", "math"]
-  },
+  numArgs: 3,
+  argTypes: ["math", "size", "math"],
   handler: (_ref5, args) => {
-    var {
-      parser,
-      funcName
-    } = _ref5;
+    var parser = _ref5.parser;
+      _ref5.funcName;
     var numer = args[0];
     var barSize = assertNodeType(args[1], "infix").size;
     if (!barSize) {
@@ -99337,14 +99282,10 @@ var mathmlBuilder$2 = (group, options) => {
 defineFunction({
   type: "horizBrace",
   names: ["\\overbrace", "\\underbrace", "\\overbracket", "\\underbracket"],
-  props: {
-    numArgs: 1
-  },
+  numArgs: 1,
   handler(_ref, args) {
-    var {
-      parser,
-      funcName
-    } = _ref;
+    var parser = _ref.parser,
+      funcName = _ref.funcName;
     return {
       type: "horizBrace",
       mode: parser.mode,
@@ -99360,15 +99301,11 @@ defineFunction({
 defineFunction({
   type: "href",
   names: ["\\href"],
-  props: {
-    numArgs: 2,
-    argTypes: ["url", "original"],
-    allowedInText: true
-  },
+  numArgs: 2,
+  argTypes: ["url", "original"],
+  allowedInText: true,
   handler: (_ref, args) => {
-    var {
-      parser
-    } = _ref;
+    var parser = _ref.parser;
     var body = args[1];
     var href = assertNodeType(args[0], "url").url;
     if (!parser.settings.isTrusted({
@@ -99400,15 +99337,11 @@ defineFunction({
 defineFunction({
   type: "href",
   names: ["\\url"],
-  props: {
-    numArgs: 1,
-    argTypes: ["url"],
-    allowedInText: true
-  },
+  numArgs: 1,
+  argTypes: ["url"],
+  allowedInText: true,
   handler: (_ref2, args) => {
-    var {
-      parser
-    } = _ref2;
+    var parser = _ref2.parser;
     var href = assertNodeType(args[0], "url").url;
     if (!parser.settings.isTrusted({
       command: "\\url",
@@ -99450,16 +99383,12 @@ defineFunction({
 defineFunction({
   type: "hbox",
   names: ["\\hbox"],
-  props: {
-    numArgs: 1,
-    argTypes: ["text"],
-    allowedInText: true,
-    primitive: true
-  },
+  numArgs: 1,
+  argTypes: ["text"],
+  allowedInText: true,
+  primitive: true,
   handler(_ref, args) {
-    var {
-      parser
-    } = _ref;
+    var parser = _ref.parser;
     return {
       type: "hbox",
       mode: parser.mode,
@@ -99478,17 +99407,13 @@ defineFunction({
 defineFunction({
   type: "html",
   names: ["\\htmlClass", "\\htmlId", "\\htmlStyle", "\\htmlData"],
-  props: {
-    numArgs: 2,
-    argTypes: ["raw", "original"],
-    allowedInText: true
-  },
+  numArgs: 2,
+  argTypes: ["raw", "original"],
+  allowedInText: true,
   handler: (_ref, args) => {
-    var {
-      parser,
-      funcName,
-      token
-    } = _ref;
+    var parser = _ref.parser,
+      funcName = _ref.funcName;
+      _ref.token;
     var value = assertNodeType(args[0], "raw").string;
     var body = args[1];
     if (parser.settings.strict) {
@@ -99520,9 +99445,26 @@ defineFunction({
         break;
       case "\\htmlData":
         {
-          var data = value.split(",");
-          for (var i = 0; i < data.length; i++) {
-            var item = data[i];
+          // `{,}` escapes a literal comma. Braces are used rather than a
+          // backslash because `\,` is a macro (a thin space) that expands
+          // away before this raw argument is ever read.
+          var ESCAPED_COMMA = "{,}";
+          var data = [];
+          var current = "";
+          for (var i = 0; i < value.length; i++) {
+            if (value.startsWith(ESCAPED_COMMA, i)) {
+              current += ",";
+              i += ESCAPED_COMMA.length - 1;
+            } else if (value[i] === ",") {
+              data.push(current);
+              current = "";
+            } else {
+              current += value[i];
+            }
+          }
+          data.push(current);
+          for (var _i = 0; _i < data.length; _i++) {
+            var item = data[_i];
             var firstEquals = item.indexOf("=");
             if (firstEquals < 0) {
               throw new ParseError("\\htmlData key/value '" + item + "'" + " missing equals sign");
@@ -99557,9 +99499,11 @@ defineFunction({
       classes.push(...group.attributes.class.trim().split(/\s+/));
     }
     var span = makeSpan(classes, elements, options);
-    for (var attr in group.attributes) {
-      if (attr !== "class" && group.attributes.hasOwnProperty(attr)) {
-        span.setAttribute(attr, group.attributes[attr]);
+    for (var _ref3 of Object.entries(group.attributes)) {
+      var attr = _ref3[0];
+      var value = _ref3[1];
+      if (attr !== "class") {
+        span.setAttribute(attr, value);
       }
     }
     return span;
@@ -99572,15 +99516,11 @@ defineFunction({
 defineFunction({
   type: "htmlmathml",
   names: ["\\html@mathml"],
-  props: {
-    numArgs: 2,
-    allowedInArgument: true,
-    allowedInText: true
-  },
+  numArgs: 2,
+  allowedInArgument: true,
+  allowedInText: true,
   handler: (_ref, args) => {
-    var {
-      parser
-    } = _ref;
+    var parser = _ref.parser;
     return {
       type: "htmlmathml",
       mode: parser.mode,
@@ -99624,16 +99564,12 @@ var sizeData = function sizeData(str) {
 defineFunction({
   type: "includegraphics",
   names: ["\\includegraphics"],
-  props: {
-    numArgs: 1,
-    numOptionalArgs: 1,
-    argTypes: ["raw", "url"],
-    allowedInText: false
-  },
+  numArgs: 1,
+  numOptionalArgs: 1,
+  argTypes: ["raw", "url"],
+  allowedInText: false,
   handler: (_ref, args, optArgs) => {
-    var {
-      parser
-    } = _ref;
+    var parser = _ref.parser;
     var width = {
       number: 0,
       unit: "em"
@@ -99745,17 +99681,13 @@ defineFunction({
 defineFunction({
   type: "kern",
   names: ["\\kern", "\\mkern", "\\hskip", "\\mskip"],
-  props: {
-    numArgs: 1,
-    argTypes: ["size"],
-    primitive: true,
-    allowedInText: true
-  },
+  numArgs: 1,
+  argTypes: ["size"],
+  primitive: true,
+  allowedInText: true,
   handler(_ref, args) {
-    var {
-      parser,
-      funcName
-    } = _ref;
+    var parser = _ref.parser,
+      funcName = _ref.funcName;
     var size = assertNodeType(args[0], "size");
     if (parser.settings.strict) {
       var mathFunction = funcName[1] === 'm'; // \mkern, \mskip
@@ -99793,15 +99725,11 @@ defineFunction({
 defineFunction({
   type: "lap",
   names: ["\\mathllap", "\\mathrlap", "\\mathclap"],
-  props: {
-    numArgs: 1,
-    allowedInText: true
-  },
+  numArgs: 1,
+  allowedInText: true,
   handler: (_ref, args) => {
-    var {
-      parser,
-      funcName
-    } = _ref;
+    var parser = _ref.parser,
+      funcName = _ref.funcName;
     var body = args[0];
     return {
       type: "lap",
@@ -99816,19 +99744,19 @@ defineFunction({
     if (group.alignment === "clap") {
       // ref: https://www.math.lsu.edu/~aperlis/publications/mathclap/
       inner = makeSpan([], [buildGroup$1(group.body, options)]);
-      // wrap, since CSS will center a .clap > .inner > span
-      inner = makeSpan(["inner"], [inner], options);
+      // wrap, since CSS will center a .clap > .katex-inner > span
+      inner = makeSpan(["katex-inner"], [inner], options);
     } else {
-      inner = makeSpan(["inner"], [buildGroup$1(group.body, options)]);
+      inner = makeSpan(["katex-inner"], [buildGroup$1(group.body, options)]);
     }
-    var fix = makeSpan(["fix"], []);
+    var fix = makeSpan(["katex-fix"], []);
     var node = makeSpan([group.alignment], [inner, fix], options);
     // At this point, we have correctly set horizontal alignment of the
     // two items involved in the lap.
     // Next, use a strut to set the height of the HTML bounding box.
     // Otherwise, a tall argument may be misplaced.
     // This code resolved issue #1153
-    var strut = makeSpan(["strut"]);
+    var strut = makeSpan(["katex-strut"]);
     strut.style.height = makeEm(node.height + node.depth);
     if (node.depth) {
       strut.style.verticalAlign = makeEm(-node.depth);
@@ -99836,8 +99764,8 @@ defineFunction({
     node.children.unshift(strut);
     // Next, prevent vertical misplacement when next to something tall.
     // This code resolves issue #1234
-    node = makeSpan(["thinbox"], [node], options);
-    return makeSpan(["mord", "vbox"], [node], options);
+    node = makeSpan(["katex-thinbox"], [node], options);
+    return makeSpan(["mord", "katex-vbox"], [node], options);
   },
   mathmlBuilder: (group, options) => {
     // mathllap, mathrlap, mathclap
@@ -99855,16 +99783,12 @@ defineFunction({
 defineFunction({
   type: "styling",
   names: ["\\(", "$"],
-  props: {
-    numArgs: 0,
-    allowedInText: true,
-    allowedInMath: false
-  },
+  numArgs: 0,
+  allowedInText: true,
+  allowedInMath: false,
   handler(_ref, args) {
-    var {
-      funcName,
-      parser
-    } = _ref;
+    var funcName = _ref.funcName,
+      parser = _ref.parser;
     var outerMode = parser.mode;
     parser.switchMode("math");
     var close = funcName === "\\(" ? "\\)" : "$";
@@ -99885,11 +99809,9 @@ defineFunction({
   type: "text",
   // Doesn't matter what this is.
   names: ["\\)", "\\]"],
-  props: {
-    numArgs: 0,
-    allowedInText: true,
-    allowedInMath: false
-  },
+  numArgs: 0,
+  allowedInText: true,
+  allowedInMath: false,
   handler(context, args) {
     throw new ParseError("Mismatched " + context.funcName);
   }
@@ -99912,14 +99834,10 @@ var chooseMathStyle = (group, options) => {
 defineFunction({
   type: "mathchoice",
   names: ["\\mathchoice"],
-  props: {
-    numArgs: 4,
-    primitive: true
-  },
+  numArgs: 4,
+  primitive: true,
   handler: (_ref, args) => {
-    var {
-      parser
-    } = _ref;
+    var parser = _ref.parser;
     return {
       type: "mathchoice",
       mode: parser.mode,
@@ -100210,14 +100128,10 @@ var singleCharBigOps = {
 defineFunction({
   type: "op",
   names: ["\\coprod", "\\bigvee", "\\bigwedge", "\\biguplus", "\\bigcap", "\\bigcup", "\\intop", "\\prod", "\\sum", "\\bigotimes", "\\bigoplus", "\\bigodot", "\\bigsqcup", "\\smallint", "\u220F", "\u2210", "\u2211", "\u22c0", "\u22c1", "\u22c2", "\u22c3", "\u2a00", "\u2a01", "\u2a02", "\u2a04", "\u2a06"],
-  props: {
-    numArgs: 0
-  },
+  numArgs: 0,
   handler: (_ref, args) => {
-    var {
-      parser,
-      funcName
-    } = _ref;
+    var parser = _ref.parser,
+      funcName = _ref.funcName;
     var fName = funcName;
     if (fName.length === 1) {
       fName = singleCharBigOps[fName];
@@ -100234,19 +100148,13 @@ defineFunction({
   htmlBuilder: htmlBuilder$2,
   mathmlBuilder: mathmlBuilder$1
 });
-// Note: calling defineFunction with a type that's already been defined only
-// works because the same htmlBuilder and mathmlBuilder are being used.
 defineFunction({
   type: "op",
   names: ["\\mathop"],
-  props: {
-    numArgs: 1,
-    primitive: true
-  },
+  numArgs: 1,
+  primitive: true,
   handler: (_ref2, args) => {
-    var {
-      parser
-    } = _ref2;
+    var parser = _ref2.parser;
     var body = args[0];
     return {
       type: "op",
@@ -100256,9 +100164,7 @@ defineFunction({
       symbol: false,
       body: ordargument(body)
     };
-  },
-  htmlBuilder: htmlBuilder$2,
-  mathmlBuilder: mathmlBuilder$1
+  }
 });
 // There are 2 flags for operators; whether they produce limits in
 // displaystyle, and whether they are symbols and should grow in
@@ -100275,14 +100181,10 @@ var singleCharIntegrals = {
 defineFunction({
   type: "op",
   names: ["\\arcsin", "\\arccos", "\\arctan", "\\arctg", "\\arcctg", "\\arg", "\\ch", "\\cos", "\\cosec", "\\cosh", "\\cot", "\\cotg", "\\coth", "\\csc", "\\ctg", "\\cth", "\\deg", "\\dim", "\\exp", "\\hom", "\\ker", "\\lg", "\\ln", "\\log", "\\sec", "\\sin", "\\sinh", "\\sh", "\\tan", "\\tanh", "\\tg", "\\th"],
-  props: {
-    numArgs: 0
-  },
+  numArgs: 0,
   handler(_ref3) {
-    var {
-      parser,
-      funcName
-    } = _ref3;
+    var parser = _ref3.parser,
+      funcName = _ref3.funcName;
     return {
       type: "op",
       mode: parser.mode,
@@ -100291,22 +100193,16 @@ defineFunction({
       symbol: false,
       name: funcName
     };
-  },
-  htmlBuilder: htmlBuilder$2,
-  mathmlBuilder: mathmlBuilder$1
+  }
 });
 // Limits, not symbols
 defineFunction({
   type: "op",
   names: ["\\det", "\\gcd", "\\inf", "\\lim", "\\max", "\\min", "\\Pr", "\\sup"],
-  props: {
-    numArgs: 0
-  },
+  numArgs: 0,
   handler(_ref4) {
-    var {
-      parser,
-      funcName
-    } = _ref4;
+    var parser = _ref4.parser,
+      funcName = _ref4.funcName;
     return {
       type: "op",
       mode: parser.mode,
@@ -100315,23 +100211,17 @@ defineFunction({
       symbol: false,
       name: funcName
     };
-  },
-  htmlBuilder: htmlBuilder$2,
-  mathmlBuilder: mathmlBuilder$1
+  }
 });
 // No limits, symbols
 defineFunction({
   type: "op",
   names: ["\\int", "\\iint", "\\iiint", "\\oint", "\\oiint", "\\oiiint", "\u222b", "\u222c", "\u222d", "\u222e", "\u222f", "\u2230"],
-  props: {
-    numArgs: 0,
-    allowedInArgument: true
-  },
+  numArgs: 0,
+  allowedInArgument: true,
   handler(_ref5) {
-    var {
-      parser,
-      funcName
-    } = _ref5;
+    var parser = _ref5.parser,
+      funcName = _ref5.funcName;
     var fName = funcName;
     if (fName.length === 1) {
       fName = singleCharIntegrals[fName];
@@ -100344,9 +100234,7 @@ defineFunction({
       symbol: true,
       name: fName
     };
-  },
-  htmlBuilder: htmlBuilder$2,
-  mathmlBuilder: mathmlBuilder$1
+  }
 });
 
 // NOTE: Unlike most `htmlBuilder`s, this one handles not only
@@ -100456,14 +100344,10 @@ var mathmlBuilder = (group, options) => {
 defineFunction({
   type: "operatorname",
   names: ["\\operatorname@", "\\operatornamewithlimits"],
-  props: {
-    numArgs: 1
-  },
+  numArgs: 1,
   handler: (_ref, args) => {
-    var {
-      parser,
-      funcName
-    } = _ref;
+    var parser = _ref.parser,
+      funcName = _ref.funcName;
     var body = args[0];
     return {
       type: "operatorname",
@@ -100495,13 +100379,9 @@ defineFunctionBuilders({
 defineFunction({
   type: "overline",
   names: ["\\overline"],
-  props: {
-    numArgs: 1
-  },
+  numArgs: 1,
   handler(_ref, args) {
-    var {
-      parser
-    } = _ref;
+    var parser = _ref.parser;
     var body = args[0];
     return {
       type: "overline",
@@ -100533,7 +100413,7 @@ defineFunction({
         size: defaultRuleThickness
       }]
     });
-    return makeSpan(["mord", "overline"], [vlist], options);
+    return makeSpan(["mord", "katex-overline"], [vlist], options);
   },
   mathmlBuilder(group, options) {
     var operator = new MathNode("mo", [new TextNode("\u203e")]);
@@ -100547,14 +100427,10 @@ defineFunction({
 defineFunction({
   type: "phantom",
   names: ["\\phantom"],
-  props: {
-    numArgs: 1,
-    allowedInText: true
-  },
+  numArgs: 1,
+  allowedInText: true,
   handler: (_ref, args) => {
-    var {
-      parser
-    } = _ref;
+    var parser = _ref.parser;
     var body = args[0];
     return {
       type: "phantom",
@@ -100577,14 +100453,10 @@ defineMacro("\\hphantom", "\\smash{\\phantom{#1}}");
 defineFunction({
   type: "vphantom",
   names: ["\\vphantom"],
-  props: {
-    numArgs: 1,
-    allowedInText: true
-  },
+  numArgs: 1,
+  allowedInText: true,
   handler: (_ref2, args) => {
-    var {
-      parser
-    } = _ref2;
+    var parser = _ref2.parser;
     var body = args[0];
     return {
       type: "vphantom",
@@ -100593,8 +100465,8 @@ defineFunction({
     };
   },
   htmlBuilder: (group, options) => {
-    var inner = makeSpan(["inner"], [buildGroup$1(group.body, options.withPhantom())]);
-    var fix = makeSpan(["fix"], []);
+    var inner = makeSpan(["katex-inner"], [buildGroup$1(group.body, options.withPhantom())]);
+    var fix = makeSpan(["katex-fix"], []);
     return makeSpan(["mord", "rlap"], [inner, fix], options);
   },
   mathmlBuilder: (group, options) => {
@@ -100610,15 +100482,11 @@ defineFunction({
 defineFunction({
   type: "raisebox",
   names: ["\\raisebox"],
-  props: {
-    numArgs: 2,
-    argTypes: ["size", "hbox"],
-    allowedInText: true
-  },
+  numArgs: 2,
+  argTypes: ["size", "hbox"],
+  allowedInText: true,
   handler(_ref, args) {
-    var {
-      parser
-    } = _ref;
+    var parser = _ref.parser;
     var amount = assertNodeType(args[0], "size").value;
     var body = args[1];
     return {
@@ -100651,15 +100519,11 @@ defineFunction({
 defineFunction({
   type: "internal",
   names: ["\\relax"],
-  props: {
-    numArgs: 0,
-    allowedInText: true,
-    allowedInArgument: true
-  },
+  numArgs: 0,
+  allowedInText: true,
+  allowedInArgument: true,
   handler(_ref) {
-    var {
-      parser
-    } = _ref;
+    var parser = _ref.parser;
     return {
       type: "internal",
       mode: parser.mode
@@ -100670,17 +100534,13 @@ defineFunction({
 defineFunction({
   type: "rule",
   names: ["\\rule"],
-  props: {
-    numArgs: 2,
-    numOptionalArgs: 1,
-    allowedInText: true,
-    allowedInMath: true,
-    argTypes: ["size", "size", "size"]
-  },
+  numArgs: 2,
+  numOptionalArgs: 1,
+  allowedInText: true,
+  allowedInMath: true,
+  argTypes: ["size", "size", "size"],
   handler(_ref, args, optArgs) {
-    var {
-      parser
-    } = _ref;
+    var parser = _ref.parser;
     var shift = optArgs[0];
     var width = assertNodeType(args[0], "size");
     var height = assertNodeType(args[1], "size");
@@ -100694,7 +100554,7 @@ defineFunction({
   },
   htmlBuilder(group, options) {
     // Make an empty span for the rule
-    var rule = makeSpan(["mord", "rule"], [], options);
+    var rule = makeSpan(["mord", "katex-rule"], [], options);
     // Calculate the shift, width, and height of the rule, and account for units
     var width = calculateSize(group.width, options);
     var height = calculateSize(group.height, options);
@@ -100740,7 +100600,7 @@ function sizingGroup(value, options, baseOptions) {
   // Add size-resetting classes to the inner list and set maxFontSize
   // manually. Handle nested size changes.
   for (var i = 0; i < inner.length; i++) {
-    var pos = inner[i].classes.indexOf("sizing");
+    var pos = inner[i].classes.indexOf("katex-sizing");
     if (pos < 0) {
       Array.prototype.push.apply(inner[i].classes, options.sizingClasses(baseOptions));
     } else if (inner[i].classes[pos + 1] === "reset-size" + options.size) {
@@ -100765,16 +100625,12 @@ var htmlBuilder = (group, options) => {
 defineFunction({
   type: "sizing",
   names: sizeFuncs,
-  props: {
-    numArgs: 0,
-    allowedInText: true
-  },
+  numArgs: 0,
+  allowedInText: true,
   handler: (_ref, args) => {
-    var {
-      breakOnTokenText,
-      funcName,
-      parser
-    } = _ref;
+    var breakOnTokenText = _ref.breakOnTokenText,
+      funcName = _ref.funcName,
+      parser = _ref.parser;
     var body = parser.parseExpression(false, breakOnTokenText);
     return {
       type: "sizing",
@@ -100803,15 +100659,11 @@ defineFunction({
 defineFunction({
   type: "smash",
   names: ["\\smash"],
-  props: {
-    numArgs: 1,
-    numOptionalArgs: 1,
-    allowedInText: true
-  },
+  numArgs: 1,
+  numOptionalArgs: 1,
+  allowedInText: true,
   handler: (_ref, args, optArgs) => {
-    var {
-      parser
-    } = _ref;
+    var parser = _ref.parser;
     var smashHeight = false;
     var smashDepth = false;
     var tbArg = optArgs[0] && assertNodeType(optArgs[0], "ordgroup");
@@ -100859,7 +100711,7 @@ defineFunction({
     }
     if (group.smashHeight && group.smashDepth) {
       // Symmetric \smash can stay in inline layout.
-      return makeSpan(["mord", "smash"], [node], options);
+      return makeSpan(["mord", "katex-smash"], [node], options);
     }
     // In order to influence makeVList for asymmetric smashing, we have to
     // reset the children.
@@ -100902,14 +100754,10 @@ defineFunction({
 defineFunction({
   type: "sqrt",
   names: ["\\sqrt"],
-  props: {
-    numArgs: 1,
-    numOptionalArgs: 1
-  },
+  numArgs: 1,
+  numOptionalArgs: 1,
   handler(_ref, args, optArgs) {
-    var {
-      parser
-    } = _ref;
+    var parser = _ref.parser;
     var index = optArgs[0];
     var body = args[0];
     return {
@@ -100942,11 +100790,10 @@ defineFunction({
     var lineClearance = theta + phi / 4;
     var minDelimiterHeight = inner.height + inner.depth + lineClearance + theta;
     // Create a sqrt SVG of the required minimum size
-    var {
-      span: img,
-      ruleWidth,
-      advanceWidth
-    } = makeSqrtImage(minDelimiterHeight, options);
+    var _makeSqrtImage = makeSqrtImage(minDelimiterHeight, options),
+      img = _makeSqrtImage.span,
+      ruleWidth = _makeSqrtImage.ruleWidth,
+      advanceWidth = _makeSqrtImage.advanceWidth;
     var delimDepth = img.height - ruleWidth;
     // Adjust the clearance based on the delimiter size
     if (delimDepth > inner.height + inner.depth + lineClearance) {
@@ -100994,15 +100841,13 @@ defineFunction({
       });
       // Add a class surrounding it so we can add on the appropriate
       // kerning
-      var rootVListWrap = makeSpan(["root"], [rootVList]);
+      var rootVListWrap = makeSpan(["katex-root"], [rootVList]);
       return makeSpan(["mord", "sqrt"], [rootVListWrap, body], options);
     }
   },
   mathmlBuilder(group, options) {
-    var {
-      body,
-      index
-    } = group;
+    var body = group.body,
+      index = group.index;
     return index ? new MathNode("mroot", [buildGroup(body, options), buildGroup(index, options)]) : new MathNode("msqrt", [buildGroup(body, options)]);
   }
 });
@@ -101019,17 +100864,13 @@ function isStyleStr(s) {
 defineFunction({
   type: "styling",
   names: ["\\displaystyle", "\\textstyle", "\\scriptstyle", "\\scriptscriptstyle"],
-  props: {
-    numArgs: 0,
-    allowedInText: true,
-    primitive: true
-  },
+  numArgs: 0,
+  allowedInText: true,
+  primitive: true,
   handler(_ref, args) {
-    var {
-      breakOnTokenText,
-      funcName,
-      parser
-    } = _ref;
+    var breakOnTokenText = _ref.breakOnTokenText,
+      funcName = _ref.funcName,
+      parser = _ref.parser;
     // parse out the implicit body
     var body = parser.parseExpression(true, breakOnTokenText);
     // TODO: Refactor to avoid duplicating styleMap in multiple places (e.g.
@@ -101119,11 +100960,9 @@ defineFunctionBuilders({
     if (builderDelegate) {
       return builderDelegate(group, options);
     }
-    var {
-      base: valueBase,
-      sup: valueSup,
-      sub: valueSub
-    } = group;
+    var valueBase = group.base,
+      valueSup = group.sup,
+      valueSub = group.sub;
     var base = buildGroup$1(valueBase, options);
     var supm;
     var subm;
@@ -101327,7 +101166,7 @@ var defaultVariant = {
 defineFunctionBuilders({
   type: "mathord",
   htmlBuilder(group, options) {
-    return makeOrd(group, options, "mathord");
+    return makeOrd(group, options);
   },
   mathmlBuilder(group, options) {
     var node = new MathNode("mi", [makeText(group.text, group.mode, options)]);
@@ -101341,7 +101180,7 @@ defineFunctionBuilders({
 defineFunctionBuilders({
   type: "textord",
   htmlBuilder(group, options) {
-    return makeOrd(group, options, "textord");
+    return makeOrd(group, options);
   },
   mathmlBuilder(group, options) {
     var text = makeText(group.text, group.mode, options);
@@ -101364,55 +101203,48 @@ defineFunctionBuilders({
 });
 
 // A map of CSS-based spacing functions to their CSS class.
-var cssSpace = {
-  "\\nobreak": "nobreak",
-  "\\allowbreak": "allowbreak"
-};
+var cssSpace = new Map([["\\nobreak", "nobreak"], ["\\allowbreak", "allowbreak"]]);
 // A lookup table to determine whether a spacing function/symbol should be
 // treated like a regular space character.  If a symbol or command is a key
 // in this table, then it should be a regular space character.  Furthermore,
 // the associated value may have a `className` specifying an extra CSS class
 // to add to the created `span`.
-var regularSpace = {
-  " ": {},
-  "\\ ": {},
-  "~": {
-    className: "nobreak"
-  },
-  "\\space": {},
-  "\\nobreakspace": {
-    className: "nobreak"
-  }
-};
+var regularSpace = new Map([[" ", {}], ["\\ ", {}], ["~", {
+  className: "nobreak"
+}], ["\\space", {}], ["\\nobreakspace", {
+  className: "nobreak"
+}]]);
 // ParseNode<"spacing"> created in Parser.js from the "spacing" symbol Groups in
 // src/symbols.js.
 defineFunctionBuilders({
   type: "spacing",
   htmlBuilder(group, options) {
-    if (regularSpace.hasOwnProperty(group.text)) {
-      var className = regularSpace[group.text].className || "";
+    var regularSpaceItem = regularSpace.get(group.text);
+    var cssSpaceClass = cssSpace.get(group.text);
+    if (regularSpaceItem) {
+      var className = regularSpaceItem.className || "";
       // Spaces are generated by adding an actual space. Each of these
       // things has an entry in the symbols table, so these will be turned
       // into appropriate outputs.
       if (group.mode === "text") {
-        var ord = makeOrd(group, options, "textord");
+        var ord = makeOrd(group, options);
         ord.classes.push(className);
         return ord;
       } else {
         return makeSpan(["mspace", className], [mathsym(group.text, group.mode, options)], options);
       }
-    } else if (cssSpace.hasOwnProperty(group.text)) {
+    } else if (cssSpaceClass) {
       // Spaces based on just a CSS class.
-      return makeSpan(["mspace", cssSpace[group.text]], [], options);
+      return makeSpan(["mspace", cssSpaceClass], [], options);
     } else {
       throw new ParseError("Unknown type of space \"" + group.text + "\"");
     }
   },
   mathmlBuilder(group, options) {
     var node;
-    if (regularSpace.hasOwnProperty(group.text)) {
+    if (regularSpace.has(group.text)) {
       node = new MathNode("mtext", [new TextNode("\u00a0")]);
-    } else if (cssSpace.hasOwnProperty(group.text)) {
+    } else if (cssSpace.has(group.text)) {
       // CSS-based MathML spaces (\nobreak, \allowbreak) are ignored
       return new MathNode("mspace");
     } else {
@@ -101482,17 +101314,13 @@ defineFunction({
   "\\textbf", "\\textmd",
   // Font Shapes
   "\\textit", "\\textup", "\\emph"],
-  props: {
-    numArgs: 1,
-    argTypes: ["text"],
-    allowedInArgument: true,
-    allowedInText: true
-  },
+  numArgs: 1,
+  argTypes: ["text"],
+  allowedInArgument: true,
+  allowedInText: true,
   handler(_ref, args) {
-    var {
-      parser,
-      funcName
-    } = _ref;
+    var parser = _ref.parser,
+      funcName = _ref.funcName;
     var body = args[0];
     return {
       type: "text",
@@ -101515,14 +101343,10 @@ defineFunction({
 defineFunction({
   type: "underline",
   names: ["\\underline"],
-  props: {
-    numArgs: 1,
-    allowedInText: true
-  },
+  numArgs: 1,
+  allowedInText: true,
   handler(_ref, args) {
-    var {
-      parser
-    } = _ref;
+    var parser = _ref.parser;
     return {
       type: "underline",
       mode: parser.mode,
@@ -101554,7 +101378,7 @@ defineFunction({
         elem: innerGroup
       }]
     });
-    return makeSpan(["mord", "underline"], [vlist], options);
+    return makeSpan(["mord", "katex-underline"], [vlist], options);
   },
   mathmlBuilder(group, options) {
     var operator = new MathNode("mo", [new TextNode("\u203e")]);
@@ -101569,16 +101393,12 @@ defineFunction({
 defineFunction({
   type: "vcenter",
   names: ["\\vcenter"],
-  props: {
-    numArgs: 1,
-    argTypes: ["original"],
-    // In LaTeX, \vcenter can act only on a box.
-    allowedInText: false
-  },
+  numArgs: 1,
+  argTypes: ["original"],
+  // In LaTeX, \vcenter can act only on a box.
+  allowedInText: false,
   handler(_ref, args) {
-    var {
-      parser
-    } = _ref;
+    var parser = _ref.parser;
     return {
       type: "vcenter",
       mode: parser.mode,
@@ -101611,10 +101431,8 @@ defineFunction({
 defineFunction({
   type: "verb",
   names: ["\\verb"],
-  props: {
-    numArgs: 0,
-    allowedInText: true
-  },
+  numArgs: 0,
+  allowedInText: true,
   handler(context, args, optArgs) {
     // \verb and \verb* are dealt with directly in Parser.js.
     // If we end up here, it's because of a failure to match the two delimiters
@@ -101803,13 +101621,11 @@ class Namespace {
       throw new ParseError("Unbalanced namespace destruction: attempt " + "to pop global namespace; please report this as a bug");
     }
     var undefs = this.undefStack.pop();
-    for (var undef in undefs) {
-      if (undefs.hasOwnProperty(undef)) {
-        if (undefs[undef] == null) {
-          delete this.current[undef];
-        } else {
-          this.current[undef] = undefs[undef];
-        }
+    for (var key of Object.keys(undefs)) {
+      if (undefs[key] === undefined) {
+        delete this.current[key];
+      } else {
+        this.current[key] = undefs[key];
       }
     }
   }
@@ -101827,7 +101643,7 @@ class Namespace {
    * `get(name) != null`.
    */
   has(name) {
-    return this.current.hasOwnProperty(name) || this.builtins.hasOwnProperty(name);
+    return Object.prototype.hasOwnProperty.call(this.current, name) || Object.prototype.hasOwnProperty.call(this.builtins, name);
   }
   /**
    * Get the current value of a name, or `undefined` if there is no value.
@@ -101838,10 +101654,12 @@ class Namespace {
    * `if (namespace.has(...))`.
    */
   get(name) {
-    if (this.current.hasOwnProperty(name)) {
+    if (Object.prototype.hasOwnProperty.call(this.current, name)) {
       return this.current[name];
-    } else {
+    } else if (Object.prototype.hasOwnProperty.call(this.builtins, name)) {
       return this.builtins[name];
+    } else {
+      return undefined;
     }
   }
   /**
@@ -101871,8 +101689,8 @@ class Namespace {
       // unless an undo is already in place, in which case that older
       // value is the correct one.
       var top = this.undefStack[this.undefStack.length - 1];
-      if (top && !top.hasOwnProperty(name)) {
-        top[name] = this.current[name];
+      if (top && !Object.prototype.hasOwnProperty.call(top, name)) {
+        top[name] = Object.prototype.hasOwnProperty.call(this.current, name) ? this.current[name] : undefined;
       }
     }
     if (value == null) {
@@ -102886,16 +102704,14 @@ class MacroExpander {
         return null;
       }
       start = this.popToken(); // don't include [ in tokens
-      ({
-        tokens,
-        end
-      } = this.consumeArg(["]"]));
+      var _this$consumeArg = this.consumeArg(["]"]);
+      tokens = _this$consumeArg.tokens;
+      end = _this$consumeArg.end;
     } else {
-      ({
-        tokens,
-        start,
-        end
-      } = this.consumeArg());
+      var _this$consumeArg2 = this.consumeArg();
+      tokens = _this$consumeArg2.tokens;
+      start = _this$consumeArg2.start;
+      end = _this$consumeArg2.end;
     }
     // indicate the end of an argument
     this.pushToken(new Token$1("EOF", end.loc));
@@ -103193,14 +103009,17 @@ class MacroExpander {
    * `implicitCommands`.
    */
   isDefined(name) {
-    return this.macros.has(name) || functions$3.hasOwnProperty(name) || symbols.math.hasOwnProperty(name) || symbols.text.hasOwnProperty(name) || implicitCommands.hasOwnProperty(name);
+    return this.macros.has(name) || Object.prototype.hasOwnProperty.call(functions$3, name) || Object.prototype.hasOwnProperty.call(symbols.math, name) || Object.prototype.hasOwnProperty.call(symbols.text, name) || Object.prototype.hasOwnProperty.call(implicitCommands, name);
   }
   /**
    * Determine whether a command is expandable.
    */
   isExpandable(name) {
     var macro = this.macros.get(name);
-    return macro != null ? typeof macro === "string" || typeof macro === "function" || !macro.unexpandable : functions$3.hasOwnProperty(name) && !functions$3[name].primitive;
+    if (macro != null) {
+      return typeof macro === "string" || typeof macro === "function" || !macro.unexpandable;
+    }
+    return Object.prototype.hasOwnProperty.call(functions$3, name) && !functions$3[name].primitive;
   }
 }
 
@@ -103991,7 +103810,7 @@ class Parser {
     // \left(x\right)^2 work correctly.
     var base = this.parseGroup("atom", breakOnTokenText);
     // Internal nodes (e.g. \relax) cannot support super/subscripts.
-    // Instead we will pick up super/subscripts with blank base next round.
+    // Instead, we will pick up super/subscripts with blank base next round.
     if ((base == null ? void 0 : base.type) === "internal") {
       return base;
     }
@@ -103999,7 +103818,6 @@ class Parser {
     if (this.mode === "text") {
       return base;
     }
-    // Note that base may be empty (i.e. null) at this point.
     var superscript;
     var subscript;
     while (true) {
@@ -104010,8 +103828,7 @@ class Parser {
       if (lex.text === "\\limits" || lex.text === "\\nolimits") {
         // We got a limit control
         if (base && base.type === "op") {
-          var limits = lex.text === "\\limits";
-          base.limits = limits;
+          base.limits = lex.text === "\\limits";
           base.alwaysHandleSupSub = true;
         } else if (base && base.type === "operatorname") {
           if (base.alwaysHandleSupSub) {
@@ -104106,13 +103923,26 @@ class Parser {
     }
     // Base must be set if superscript or subscript are set per logic above,
     // but need to check here for type check to pass.
-    if (superscript || subscript) {
-      // If we got either a superscript or subscript, create a supsub
+    if (superscript && subscript) {
       return {
         type: "supsub",
         mode: this.mode,
-        base: base,
+        base,
         sup: superscript,
+        sub: subscript
+      };
+    } else if (superscript) {
+      return {
+        type: "supsub",
+        mode: this.mode,
+        base,
+        sup: superscript
+      };
+    } else if (subscript) {
+      return {
+        type: "supsub",
+        mode: this.mode,
+        base,
         sub: subscript
       };
     } else {
@@ -104133,15 +103963,16 @@ class Parser {
     this.consume(); // consume command token
     if (name && name !== "atom" && !funcData.allowedInArgument) {
       throw new ParseError("Got function '" + func + "' with no arguments" + (name ? " as " + name : ""), token);
+      // Treat undefined allowedInText as false.
     } else if (this.mode === "text" && !funcData.allowedInText) {
       throw new ParseError("Can't use function '" + func + "' in text mode", token);
+      // Treat undefined allowedInMath as true.
     } else if (this.mode === "math" && funcData.allowedInMath === false) {
       throw new ParseError("Can't use function '" + func + "' in math mode", token);
     }
-    var {
-      args,
-      optArgs
-    } = this.parseArguments(func, funcData);
+    var _this$parseArguments = this.parseArguments(func, funcData),
+      args = _this$parseArguments.args,
+      optArgs = _this$parseArguments.optArgs;
     return this.callFunction(func, args, optArgs, token, breakOnTokenText);
   }
   /**
@@ -104167,7 +103998,9 @@ class Parser {
   parseArguments(func,
   // Should look like "\name" or "\begin{name}".
   funcData) {
-    var totalArgs = funcData.numArgs + funcData.numOptionalArgs;
+    var _funcData$numOptional;
+    var numOptionalArgs = (_funcData$numOptional = funcData.numOptionalArgs) != null ? _funcData$numOptional : 0;
+    var totalArgs = funcData.numArgs + numOptionalArgs;
     if (totalArgs === 0) {
       return {
         args: [],
@@ -104177,8 +104010,9 @@ class Parser {
     var args = [];
     var optArgs = [];
     for (var i = 0; i < totalArgs; i++) {
-      var argType = funcData.argTypes && funcData.argTypes[i];
-      var isOptional = i < funcData.numOptionalArgs;
+      var _funcData$argTypes;
+      var argType = (_funcData$argTypes = funcData.argTypes) == null ? void 0 : _funcData$argTypes[i];
+      var isOptional = i < numOptionalArgs;
       if ("primitive" in funcData && funcData.primitive && argType == null ||
       // \sqrt expands into primitive if optional argument doesn't exist
       funcData.type === "sqrt" && i === 1 && optArgs[0] == null) {
@@ -104230,7 +104064,7 @@ class Parser {
         }
       case "raw":
         {
-          var token = this.parseStringGroup("raw", optional);
+          var token = this.parseStringGroup(optional);
           return token != null ? {
             type: "raw",
             mode: "text",
@@ -104249,7 +104083,6 @@ class Parser {
           return _group2;
         }
       case "original":
-      case null:
       case undefined:
         return this.parseArgumentGroup(optional);
       default:
@@ -104268,9 +104101,7 @@ class Parser {
    * Parses a group, essentially returning the string formed by the
    * brace-enclosed tokens plus some position information.
    */
-  parseStringGroup(modeName,
-  // Used to describe the mode in error messages.
-  optional) {
+  parseStringGroup(optional) {
     var argToken = this.gullet.scanArgument(optional);
     if (argToken == null) {
       return null;
@@ -104309,7 +104140,7 @@ class Parser {
    * Parses a color description.
    */
   parseColorGroup(optional) {
-    var res = this.parseStringGroup("color", optional);
+    var res = this.parseStringGroup(optional);
     if (res == null) {
       return null;
     }
@@ -104341,7 +104172,7 @@ class Parser {
     if (!optional && this.gullet.future().text !== "{") {
       res = this.parseRegexGroup(/^[-+]? *(?:$|\d+|\d+\.\d*|\.\d*) *[a-z]{0,2} *$/, "size");
     } else {
-      res = this.parseStringGroup("size", optional);
+      res = this.parseStringGroup(optional);
     }
     if (!res) {
       return null;
@@ -104379,7 +104210,7 @@ class Parser {
   parseUrlGroup(optional) {
     this.gullet.lexer.setCatcode("%", 13); // active character
     this.gullet.lexer.setCatcode("~", 12); // other character
-    var res = this.parseStringGroup("url", optional);
+    var res = this.parseStringGroup(optional);
     this.gullet.lexer.setCatcode("%", 14); // comment character
     this.gullet.lexer.setCatcode("~", 13); // active character
     if (res == null) {
@@ -104463,7 +104294,7 @@ class Parser {
       // If there exists a function with this name, parse the function.
       // Otherwise, just return a nucleus
       result = this.parseFunction(breakOnTokenText, name) || this.parseSymbol();
-      if (result == null && text[0] === "\\" && !implicitCommands.hasOwnProperty(text)) {
+      if (result == null && text[0] === "\\" && !Object.prototype.hasOwnProperty.call(implicitCommands, text)) {
         if (this.settings.throwOnError) {
           throw new ParseError("Undefined control sequence: " + text, firstToken);
         }
@@ -104553,7 +104384,7 @@ class Parser {
     }
     // At this point, we should have a symbol, possibly with accents.
     // First expand any accented base symbol according to unicodeSymbols.
-    if (unicodeSymbols.hasOwnProperty(text[0]) && !symbols[this.mode][text[0]]) {
+    if (Object.prototype.hasOwnProperty.call(unicodeSymbols, text[0]) && !symbols[this.mode][text[0]]) {
       // This behavior is not strict (XeTeX-compatible) in math mode.
       if (this.settings.strict && this.mode === "math") {
         this.settings.reportNonstrict("unicodeTextInMathMode", "Accented Unicode text character \"" + text[0] + "\" used in " + "math mode", nucleus);
@@ -104649,10 +104480,6 @@ class Parser {
 }
 Parser.endOfExpression = new Set(["}", "\\endgroup", "\\end", "\\right", "&"]);
 
-/**
- * Provides a single function for parsing an expression using a Parser
- * TODO(emily): Remove this
- */
 /**
  * Parses an expression using a Parser, then returns the parsed result.
  */
@@ -104757,7 +104584,7 @@ var renderToHTMLTree = function renderToHTMLTree(expression, options) {
     return renderError(error, expression, settings);
   }
 };
-var version = "0.16.47";
+var version = "0.18.4";
 var __domTree = {
   Span: Span$1,
   Anchor: Anchor$1,
@@ -105937,6 +105764,11 @@ Icon$2.props = {
   }
 };
 
+const nanoid = customAlphabet("abcdefghijklmnopqrstuvwxyz0123456789", 8);
+function inputId(prefix) {
+  return `${prefix}-${nanoid()}`;
+}
+
 keepAlive$3(h);
 const EditLink = defineComponent({
   props: {
@@ -105959,6 +105791,7 @@ const EditLink = defineComponent({
   },
   setup({ config, src, onConfirm, onCancel }) {
     const link = ref(src);
+    const id = inputId("milkdown-link-edit");
     watch(src, (value) => {
       link.value = value;
     });
@@ -105980,6 +105813,7 @@ const EditLink = defineComponent({
       return /* @__PURE__ */ h("div", { class: "link-edit" }, /* @__PURE__ */ h(
         "input",
         {
+          id,
           class: "input-area",
           placeholder: config.value.inputPlaceholder,
           onKeydown,
@@ -106026,7 +105860,7 @@ var __accessCheck$1$1 = (obj, member, msg) => member.has(obj) || __typeError$1$1
 var __privateGet$1$1 = (obj, member, getter) => (__accessCheck$1$1(obj, member, "read from private field"), getter ? getter.call(obj) : member.get(obj));
 var __privateAdd$1$1 = (obj, member, value) => member.has(obj) ? __typeError$1$1("Cannot add the same private member more than once") : member instanceof WeakSet ? member.add(obj) : member.set(obj, value);
 var __privateSet$1$1 = (obj, member, value, setter) => (__accessCheck$1$1(obj, member, "write to private field"), member.set(obj, value), value);
-var _content$1$1, _provider$1$1, _data, _app$1$1, _config$1, _src$1, _reset, _confirmEdit, _enterEditMode;
+var _content$1$1, _provider$1$1, _data, _app$1$1, _config$1, _src$1, _reset, _onOutsidePointerDown, _startOutsideClickListener, _stopOutsideClickListener, _confirmEdit, _enterEditMode;
 const defaultData = {
   from: -1,
   to: -1,
@@ -106042,24 +105876,51 @@ class LinkEditTooltip {
     __privateAdd$1$1(this, _config$1);
     __privateAdd$1$1(this, _src$1, ref(""));
     __privateAdd$1$1(this, _reset, () => {
+      __privateGet$1$1(this, _stopOutsideClickListener).call(this);
       __privateGet$1$1(this, _provider$1$1).hide();
       this.ctx.update(linkTooltipState.key, (state) => __spreadProps$1(__spreadValues$1$1({}, state), {
         mode: "preview"
       }));
       __privateSet$1$1(this, _data, __spreadValues$1$1({}, defaultData));
     });
+    __privateAdd$1$1(this, _onOutsidePointerDown, (e) => {
+      const target = e.target;
+      if (!target) return;
+      if (__privateGet$1$1(this, _content$1$1).contains(target)) return;
+      __privateGet$1$1(this, _reset).call(this);
+    });
+    __privateAdd$1$1(this, _startOutsideClickListener, () => {
+      document.addEventListener("pointerdown", __privateGet$1$1(this, _onOutsidePointerDown), true);
+    });
+    __privateAdd$1$1(this, _stopOutsideClickListener, () => {
+      document.removeEventListener(
+        "pointerdown",
+        __privateGet$1$1(this, _onOutsidePointerDown),
+        true
+      );
+    });
     __privateAdd$1$1(this, _confirmEdit, (href) => {
       const view = this.ctx.get(editorViewCtx);
       const { from, to, mark } = __privateGet$1$1(this, _data);
       const type = linkSchema.type(this.ctx);
-      const link = purify.sanitize(href);
+      const link = sanitizeLinkHref(href);
       if (mark && mark.attrs.href === link) {
         __privateGet$1$1(this, _reset).call(this);
         return;
       }
       const tr = view.state.tr;
       if (mark) tr.removeMark(from, to, mark);
-      tr.addMark(from, to, type.create({ href: link }));
+      if (from === to) {
+        if (!link) {
+          __privateGet$1$1(this, _reset).call(this);
+          return;
+        }
+        const linkMark = type.create({ href: link });
+        tr.insertText(link, from);
+        tr.addMark(from, from + link.length, linkMark);
+      } else {
+        tr.addMark(from, to, type.create({ href: link }));
+      }
       view.dispatch(tr);
       __privateGet$1$1(this, _reset).call(this);
     });
@@ -106078,6 +105939,7 @@ class LinkEditTooltip {
         { getBoundingClientRect: () => posToDOMRect(view, from, to) },
         view
       );
+      __privateGet$1$1(this, _startOutsideClickListener).call(this);
       requestAnimationFrame(() => {
         var _a;
         (_a = __privateGet$1$1(this, _content$1$1).querySelector("input")) == null ? void 0 : _a.focus();
@@ -106092,6 +105954,7 @@ class LinkEditTooltip {
       __privateGet$1$1(this, _reset).call(this);
     };
     this.destroy = () => {
+      __privateGet$1$1(this, _stopOutsideClickListener).call(this);
       __privateGet$1$1(this, _app$1$1).unmount();
       __privateGet$1$1(this, _provider$1$1).destroy();
       __privateGet$1$1(this, _content$1$1).remove();
@@ -106151,6 +106014,9 @@ _app$1$1 = new WeakMap();
 _config$1 = new WeakMap();
 _src$1 = new WeakMap();
 _reset = new WeakMap();
+_onOutsidePointerDown = new WeakMap();
+_startOutsideClickListener = new WeakMap();
+_stopOutsideClickListener = new WeakMap();
 _confirmEdit = new WeakMap();
 _enterEditMode = new WeakMap();
 
@@ -106244,6 +106110,7 @@ const PreviewLink = defineComponent({
     }
   },
   setup({ config, src, onEdit, onRemove }) {
+    const safeHref = computed(() => sanitizeLinkHref(src.value));
     const onClickEditButton = (e) => {
       e.preventDefault();
       e.stopPropagation();
@@ -106271,7 +106138,16 @@ const PreviewLink = defineComponent({
           icon: config.value.linkIcon,
           onClick: onClickPreview
         }
-      ), /* @__PURE__ */ h("a", { href: src.value, target: "_blank", class: "link-display" }, src.value), /* @__PURE__ */ h(
+      ), /* @__PURE__ */ h(
+        "a",
+        {
+          href: safeHref.value,
+          target: "_blank",
+          rel: "noopener noreferrer",
+          class: "link-display"
+        },
+        src.value
+      ), /* @__PURE__ */ h(
         Icon$2,
         {
           class: "button link-edit-button",
@@ -106660,16 +106536,22 @@ const listItemBlockView = $view(
         }
       });
       let raf = 0;
+      let mountedDiv = null;
       const onMount = (div) => {
+        if (div === mountedDiv) return;
+        mountedDiv = div;
         const { anchor, head } = view.state.selection;
         div.appendChild(contentDOM);
-        const anchorPos = view.state.doc.resolve(anchor);
-        const headPos = view.state.doc.resolve(head);
         raf = requestAnimationFrame(() => {
-          cancelAnimationFrame(raf);
-          if (!anchorPos.doc.eq(view.state.doc)) return;
-          const selection = new TextSelection(anchorPos, headPos);
-          view.dispatch(view.state.tr.setSelection(selection));
+          raf = 0;
+          if (view.isDestroyed) return;
+          const { state } = view;
+          const docSize = state.doc.content.size;
+          if (anchor > docSize || head > docSize) return;
+          const anchorPos = state.doc.resolve(anchor);
+          const headPos = state.doc.resolve(head);
+          const selection = TextSelection.between(anchorPos, headPos);
+          view.dispatch(state.tr.setSelection(selection));
         });
       };
       const app = createApp(ListItem, {
@@ -106717,6 +106599,7 @@ const listItemBlockView = $view(
           selected.value = false;
         },
         destroy: () => {
+          cancelAnimationFrame(raf);
           disposeSelectedWatcher();
           app.unmount();
           dom.remove();
@@ -107876,8 +107759,9 @@ var clipboard = $prose((ctx) => {
 			return html;
 		}
 	}));
+	const key = new PluginKey("MILKDOWN_CLIPBOARD");
 	return new Plugin({
-		key: new PluginKey("MILKDOWN_CLIPBOARD"),
+		key,
 		props: {
 			handlePaste: (view, event, preProcessedSlice) => {
 				const parser = ctx.get(parserCtx);
@@ -108092,6 +107976,7 @@ var listener = (ctx) => {
 			key,
 			view: () => {
 				return { destroy: () => {
+					debouncedHandler.cancel();
 					listeners.destroy.forEach((fn) => fn(ctx));
 				} };
 			},
@@ -109788,6 +109673,7 @@ const AIInstructionInput = defineComponent({
     const listRef = ref(null);
     const listboxId = `ai-instruction-list-${Math.random().toString(36).slice(2, 9)}`;
     const optionId = (idx) => `${listboxId}-opt-${idx}`;
+    const inputId = `ai-instruction-input-${Math.random().toString(36).slice(2, 9)}`;
     watch(resetSignal, () => {
       inputValue.value = "";
       view.value = { kind: "main" };
@@ -109939,6 +109825,7 @@ const AIInstructionInput = defineComponent({
         "input",
         {
           ref: inputRef,
+          id: inputId,
           class: "ai-instruction-input-field",
           role: "combobox",
           "aria-expanded": "true",
@@ -110987,6 +110874,7 @@ class MenuView {
       __privateGet$5(this, _app$4).unmount();
       __privateGet$5(this, _content$3).remove();
     };
+    var _a, _b;
     const content = document.createElement("div");
     content.classList.add("milkdown-slash-menu");
     const show = ref(false);
@@ -111004,6 +110892,7 @@ class MenuView {
     app.mount(content);
     __privateSet$5(this, _content$3, content);
     const self = this;
+    const slashMenuOptions = (_a = config == null ? void 0 : config.slashMenu) != null ? _a : {};
     __privateSet$5(this, _slashProvider, new SlashProvider({
       content: __privateGet$5(this, _content$3),
       debounce: 20,
@@ -111032,7 +110921,10 @@ class MenuView {
         if (!currentText.startsWith("/")) return false;
         return true;
       },
-      offset: 10
+      offset: (_b = slashMenuOptions.offset) != null ? _b : 10,
+      middleware: slashMenuOptions.middleware,
+      floatingUIOptions: slashMenuOptions.floatingUIOptions,
+      root: slashMenuOptions.root
     }));
     __privateGet$5(this, _slashProvider).onShow = () => {
       show.value = true;
@@ -111060,7 +110952,7 @@ function isSelectionAtEndOfNode(selection) {
   return offset === parent.content.size;
 }
 
-keepAlive(h, Fragment$1);
+keepAlive(h, Fragment);
 const BlockHandle = defineComponent({
   props: {
     onAdd: {
@@ -111079,7 +110971,7 @@ const BlockHandle = defineComponent({
   setup(props) {
     const addButton = ref();
     return () => {
-      return /* @__PURE__ */ h(Fragment$1, null, /* @__PURE__ */ h(
+      return /* @__PURE__ */ h(Fragment, null, /* @__PURE__ */ h(
         "div",
         {
           ref: addButton,
@@ -111141,7 +111033,7 @@ class BlockHandleView {
       __privateGet$4(this, _provider$1).hide();
       ctx.get(menuAPI.key).show(tr.selection.from);
     };
-    var _a, _b, _c;
+    var _a, _b, _c, _d, _e;
     __privateSet$4(this, _ctx, ctx);
     const content = document.createElement("div");
     content.classList.add("milkdown-block-handle");
@@ -111157,8 +111049,8 @@ class BlockHandleView {
     __privateSet$4(this, _provider$1, new BlockProvider({
       ctx,
       content,
-      getOffset: () => 16,
-      getPlacement: ({ active, blockDom }) => {
+      getOffset: (_d = blockProviderOptions.getOffset) != null ? _d : (() => 16),
+      getPlacement: (_e = blockProviderOptions.getPlacement) != null ? _e : (({ active, blockDom }) => {
         if (active.node.type.name === "heading") return "left";
         let totalDescendant = 0;
         active.node.descendants((node) => {
@@ -111173,8 +111065,12 @@ class BlockHandleView {
         const height = domRect.height - paddingTop - paddingBottom;
         const handleHeight = handleRect.height;
         return totalDescendant > 2 || handleHeight < height ? "left-start" : "left";
-      },
-      ...blockProviderOptions
+      }),
+      shouldShow: blockProviderOptions.shouldShow,
+      getPosition: blockProviderOptions.getPosition,
+      middleware: blockProviderOptions.middleware,
+      floatingUIOptions: blockProviderOptions.floatingUIOptions,
+      root: blockProviderOptions.root
     }));
     this.update();
   }
@@ -111259,7 +111155,7 @@ const cursor = (editor, config) => {
   if ((config == null ? void 0 : config.virtual) === false) {
     return;
   }
-  const virtualCursor = createVirtualCursor();
+  const virtualCursor = createVirtualCursor({ skipWarning: ["inlineCode"] });
   editor.use($prose(() => virtualCursor));
 };
 
@@ -111321,6 +111217,8 @@ const blockLatexSchema = codeBlockSchema.extendSchema((prev) => {
 });
 
 const mathInlineId = "math_inline";
+const toggleLatexCommandName = "ToggleLatex";
+
 const mathInlineSchema = $nodeSchema(mathInlineId, () => ({
   group: "inline",
   inline: true,
@@ -111437,7 +111335,7 @@ const LatexTooltip = defineComponent({
       props.updateValue.value();
     };
     return () => {
-      return /* @__PURE__ */ h("div", { class: "container" }, props.innerView && /* @__PURE__ */ h("div", { ref: innerViewRef }), /* @__PURE__ */ h("button", { type: "button", onPointerdown: onUpdate }, /* @__PURE__ */ h(Icon$6, { icon: props.config.inlineEditConfirm })));
+      return /* @__PURE__ */ h("div", { class: "container" }, props.innerView.value && /* @__PURE__ */ h("div", { ref: innerViewRef }), /* @__PURE__ */ h("button", { type: "button", onPointerdown: onUpdate }, /* @__PURE__ */ h(Icon$6, { icon: props.config.inlineEditConfirm })));
     };
   }
 });
@@ -111768,11 +111666,86 @@ const table = (editor, config) => {
   }).use(tableBlock);
 };
 
+function keymapRef(slice, entry) {
+  return { slice, entry };
+}
+function normalizeKey(key) {
+  if (key === " " || key.toLowerCase() === "space")
+    return { display: "Space", aria: " " };
+  if (key.length === 1) {
+    const upper = key.toUpperCase();
+    return { display: upper, aria: upper };
+  }
+  return { display: key, aria: key };
+}
+function formatKeymapShortcut(shortcut, mac) {
+  var _a;
+  const parts = shortcut.split(/-(?!$)/);
+  const rawKey = (_a = parts[parts.length - 1]) != null ? _a : "";
+  const modifiers = parts.slice(0, -1);
+  let meta = false;
+  let control = false;
+  let alt = false;
+  let shift = false;
+  for (const modifier of modifiers) {
+    switch (modifier.toLowerCase()) {
+      case "mod":
+        if (mac) meta = true;
+        else control = true;
+        break;
+      case "meta":
+      case "cmd":
+      case "m":
+        meta = true;
+        break;
+      case "ctrl":
+      case "control":
+      case "c":
+        control = true;
+        break;
+      case "alt":
+      case "option":
+      case "a":
+        alt = true;
+        break;
+      case "shift":
+      case "s":
+        shift = true;
+        break;
+    }
+  }
+  const key = normalizeKey(rawKey);
+  const display = mac ? [control && "\u2303", alt && "\u2325", shift && "\u21E7", meta && "\u2318", key.display].filter(Boolean).join("") : [
+    control && "Ctrl",
+    alt && "Alt",
+    shift && "Shift",
+    meta && "Meta",
+    key.display
+  ].filter(Boolean).join("+");
+  const aria = [
+    meta && "Meta",
+    control && "Control",
+    alt && "Alt",
+    shift && "Shift",
+    key.aria
+  ].filter(Boolean).join("+");
+  return { display, aria };
+}
+function resolveKeymapShortcut(ctx, ref) {
+  if (!ctx.isInjected(ref.slice)) return void 0;
+  const entry = ctx.get(ref.slice)[ref.entry];
+  const shortcut = entry ? [entry.shortcuts].flat()[0] : void 0;
+  if (!shortcut) return void 0;
+  return formatKeymapShortcut(shortcut, browser.mac);
+}
+
 function getGroups$1(config, ctx) {
-  var _a, _b, _c, _d, _e, _f, _g, _h, _i;
+  var _a, _b, _c, _d, _e, _f, _g, _h, _i, _j, _k, _l, _m, _n, _o, _p, _q, _r;
   const groupBuilder = new GroupBuilder();
   groupBuilder.addGroup("formatting", "Formatting").addItem("bold", {
     icon: (_a = config == null ? void 0 : config.boldIcon) != null ? _a : boldIcon,
+    label: (_b = config == null ? void 0 : config.boldLabel) != null ? _b : "Bold",
+    keymap: keymapRef(strongKeymap.key, "ToggleBold"),
     active: (ctx2) => {
       const commands = ctx2.get(commandsCtx);
       return commands.call(isMarkSelectedCommand.key, strongSchema.type(ctx2));
@@ -111782,7 +111755,9 @@ function getGroups$1(config, ctx) {
       commands.call(toggleStrongCommand.key);
     }
   }).addItem("italic", {
-    icon: (_b = config == null ? void 0 : config.italicIcon) != null ? _b : italicIcon,
+    icon: (_c = config == null ? void 0 : config.italicIcon) != null ? _c : italicIcon,
+    label: (_d = config == null ? void 0 : config.italicLabel) != null ? _d : "Italic",
+    keymap: keymapRef(emphasisKeymap.key, "ToggleEmphasis"),
     active: (ctx2) => {
       const commands = ctx2.get(commandsCtx);
       return commands.call(
@@ -111795,7 +111770,9 @@ function getGroups$1(config, ctx) {
       commands.call(toggleEmphasisCommand.key);
     }
   }).addItem("strikethrough", {
-    icon: (_c = config == null ? void 0 : config.strikethroughIcon) != null ? _c : strikethroughIcon,
+    icon: (_e = config == null ? void 0 : config.strikethroughIcon) != null ? _e : strikethroughIcon,
+    label: (_f = config == null ? void 0 : config.strikethroughLabel) != null ? _f : "Strikethrough",
+    keymap: keymapRef(strikethroughKeymap.key, "ToggleStrikethrough"),
     active: (ctx2) => {
       const commands = ctx2.get(commandsCtx);
       return commands.call(
@@ -111810,7 +111787,9 @@ function getGroups$1(config, ctx) {
   });
   const functionGroup = groupBuilder.addGroup("function", "Function");
   functionGroup.addItem("code", {
-    icon: (_d = config == null ? void 0 : config.codeIcon) != null ? _d : codeIcon,
+    icon: (_g = config == null ? void 0 : config.codeIcon) != null ? _g : codeIcon,
+    label: (_h = config == null ? void 0 : config.codeLabel) != null ? _h : "Inline code",
+    keymap: keymapRef(inlineCodeKeymap.key, "ToggleInlineCode"),
     active: (ctx2) => {
       const commands = ctx2.get(commandsCtx);
       return commands.call(
@@ -111827,22 +111806,22 @@ function getGroups$1(config, ctx) {
   const isLatexEnabled = flags == null ? void 0 : flags.includes(CrepeFeature.Latex);
   if (isLatexEnabled) {
     functionGroup.addItem("latex", {
-      icon: (_e = config == null ? void 0 : config.latexIcon) != null ? _e : functionsIcon,
+      icon: (_i = config == null ? void 0 : config.latexIcon) != null ? _i : functionsIcon,
+      label: (_j = config == null ? void 0 : config.latexLabel) != null ? _j : "Inline math",
       active: (ctx2) => {
         const commands = ctx2.get(commandsCtx);
-        return commands.call(
-          isNodeSelectedCommand.key,
-          mathInlineSchema.type(ctx2)
-        );
+        const nodeType = ctx2.get(schemaCtx).nodes[mathInlineId];
+        return commands.call(isNodeSelectedCommand.key, nodeType);
       },
       onRun: (ctx2) => {
         const commands = ctx2.get(commandsCtx);
-        commands.call(toggleLatexCommand.key);
+        commands.call(toggleLatexCommandName);
       }
     });
   }
   functionGroup.addItem("link", {
-    icon: (_f = config == null ? void 0 : config.linkIcon) != null ? _f : linkIcon,
+    icon: (_k = config == null ? void 0 : config.linkIcon) != null ? _k : linkIcon,
+    label: (_l = config == null ? void 0 : config.linkLabel) != null ? _l : "Link",
     active: (ctx2) => {
       const commands = ctx2.get(commandsCtx);
       return commands.call(isMarkSelectedCommand.key, linkSchema.type(ctx2));
@@ -111856,7 +111835,8 @@ function getGroups$1(config, ctx) {
     const aiCfg = ctx.get(aiProviderConfig.key);
     if (aiCfg.provider) {
       functionGroup.addItem("ai", {
-        icon: (_h = (_g = config == null ? void 0 : config.aiIcon) != null ? _g : aiCfg.aiIcon) != null ? _h : aiIcon,
+        icon: (_n = (_m = config == null ? void 0 : config.aiIcon) != null ? _m : aiCfg.aiIcon) != null ? _n : aiIcon,
+        label: (_o = config == null ? void 0 : config.aiLabel) != null ? _o : "Ask AI",
         active: () => false,
         onRun: (ctx2) => {
           const api = ctx2.get(aiInstructionTooltipAPI.key);
@@ -111867,11 +111847,23 @@ function getGroups$1(config, ctx) {
       });
     }
   }
-  (_i = config == null ? void 0 : config.buildToolbar) == null ? void 0 : _i.call(config, groupBuilder);
-  return groupBuilder.build();
+  (_p = config == null ? void 0 : config.buildToolbar) == null ? void 0 : _p.call(config, groupBuilder);
+  const groups = groupBuilder.build();
+  if (ctx) {
+    for (const group of groups) {
+      for (const item of group.items) {
+        if (!item.keymap) continue;
+        const resolved = resolveKeymapShortcut(ctx, item.keymap);
+        if (!resolved) continue;
+        (_q = item.shortcut) != null ? _q : item.shortcut = resolved.display;
+        (_r = item.ariaKeyshortcuts) != null ? _r : item.ariaKeyshortcuts = resolved.aria;
+      }
+    }
+  }
+  return groups;
 }
 
-keepAlive(h, Fragment$1);
+keepAlive(h, Fragment);
 const Toolbar = defineComponent({
   props: {
     ctx: {
@@ -111910,8 +111902,12 @@ const Toolbar = defineComponent({
       return checker(ctx);
     }
     const groupInfo = computed(() => getGroups$1(config, ctx));
+    function tooltipFor(item) {
+      if (!item.label) return void 0;
+      return item.shortcut ? `${item.label} (${item.shortcut})` : item.label;
+    }
     return () => {
-      return /* @__PURE__ */ h(Fragment$1, null, groupInfo.value.map((group) => {
+      return /* @__PURE__ */ h(Fragment, null, groupInfo.value.map((group) => {
         return group.items.map((item) => {
           return /* @__PURE__ */ h(
             "button",
@@ -111921,6 +111917,10 @@ const Toolbar = defineComponent({
                 "toolbar-item",
                 ctx && checkActive(item.active) && "active"
               ),
+              "data-toolbar-item": item.key,
+              title: tooltipFor(item),
+              "aria-label": item.label,
+              "aria-keyshortcuts": item.ariaKeyshortcuts,
               onPointerdown: onClick(item.onRun)
             },
             /* @__PURE__ */ h(Icon$6, { icon: item.icon })
@@ -112252,7 +112252,7 @@ function getGroups(config, ctx) {
   return groupBuilder.build();
 }
 
-keepAlive(h, Fragment$1);
+keepAlive(h, Fragment);
 const TopBar = defineComponent({
   props: {
     ctx: {
@@ -148174,3 +148174,4 @@ var index = /*#__PURE__*/Object.freeze({
 });
 
 export { Crepe, CrepeBuilder, CrepeFeature, callCommand, commonmark$1 as commonmark, gfm, liftListItemCommand, replaceAll$1 as replaceAll, sinkListItemCommand, useCrepe, useCrepeFeatures };
+//# sourceMappingURL=milkdown.mjs.map
