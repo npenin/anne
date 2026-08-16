@@ -1,0 +1,110 @@
+{
+    "title": "Moelleux cannelés Pomme Amande",
+    "slug": "moelleux-canneles-pomme-amande",
+    "private": true,
+    "toppings": [
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Beurre mou"
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Compote de pommes non sucrée"
+        },
+        {
+            "quantity": "140",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "1",
+            "unit": "sachet",
+            "name": "Sucre vanillé "
+        },
+        {
+            "quantity": "150",
+            "unit": "g",
+            "name": "Poudre d'amande"
+        },
+        {
+            "quantity": "4",
+            "unit": "Oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "40",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "5",
+            "unit": "g",
+            "name": "Levure chimique"
+        },
+        {
+            "quantity": "2",
+            "unit": "Pommes",
+            "name": ""
+        },
+        {
+            "quantity": "Amandes effilées",
+            "unit": "",
+            "name": ""
+        },
+        {
+            "quantity": "4",
+            "unit": "gouttes",
+            "name": "Arôme Amande amère (à ajuster suivant vos goûts)"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-thickbox_default/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Spatule double embouts",
+            "picture": "https://boutique.guydemarle.com/5792-thickbox_default/spatule-double-embout-gris-anthracite.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1793-spatule-double-embout-gris-anthracite.html"
+        },
+        {
+            "name": "Fouet 13cm ",
+            "picture": "https://boutique.guydemarle.com/5820-thickbox_default/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-thickbox_default/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm - Accessoires",
+            "picture": "https://boutique.guydemarle.com/2234-thickbox_default/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-thickbox_default/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Arôme Amande amère",
+            "picture": "https://boutique.guydemarle.com/18795-thickbox_default/arome-amande-amere.jpg",
+            "url": "https://boutique.guydemarle.com/epicerie-en-ligne/9317-arome-amande-amere.html"
+        }
+    ],
+    "steps": "1. Préchauffer votre four à 180°C. \n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dans un cul de poule,  mélanger le beurre mou avec le sucre, à l’aide de la spatule double embouts.\n4. Ajouter la compote de pomme et mélanger. \n5. Ajouter les œufs un à un en fouettant. \n6. Incorporer la poudre d'amande, la farine et la levure. \n7. Incorporer les gouttes d'arôme d’amande amère et mélanger.\n8. Couper les pommes en petits dés.\n9. Répartir les dés de pomme dans la pâte et mélanger à l'aide de la spatule double embouts. \n10. Répartir la pâte dans les empreintes.\n11. Parsemer d'amandes effilées. \n12. Enfourner à 180 °C, pendant 18-20 min (suivant votre four).\n13. Laisser refroidir avant de démouler.\n\n",
+    "for": "6-12",
+    "preptime": "15",
+    "resttime": "0",
+    "cooktime": "18-20",
+    "gallery": [],
+    "mold": {
+        "name": "Moule 12 Moelleux Cannelés OHRA®",
+        "picture": "https://boutique.guydemarle.com/19086-thickbox_default/moule-12-moelleux-canneles-ohra.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/9369-moule-12-moelleux-canneles-ohra.html?s=Louise59"
+    }
+}
