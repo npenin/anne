@@ -1,7 +1,7 @@
 {
     "title": "Moelleux cannelés Pomme Amande",
     "slug": "moelleux-canneles-pomme-amande",
-    "private": true,
+    "private": false,
     "toppings": [
         {
             "quantity": "100",
