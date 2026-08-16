@@ -511,7 +511,7 @@ async function uploadPendingImages(recipe: Recipe)
         const filename = safeFilename(pendingCoverFile.file.name || 'couverture');
         const targetPath = `/assets/recettes/${slug}/cover-${filename}`;
         const base64 = await fileToBase64(pendingCoverFile.file);
-        await uploadFileToGithub(targetPath, base64, `cover ${slug}`);
+        await uploadFileToGithub('/wwwroot' + targetPath, base64, `cover ${slug}`);
         updatedCover = targetPath;
         renderCover(updatedCover);
         if (pendingCoverFile?.blobUrl)
