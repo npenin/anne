@@ -317,6 +317,7 @@ header {
         display: block;
         position: fixed;
         top: 0;
+        left: 0;
         object-fit: cover;
         max-width: 100vw;
         mask-image: linear-gradient(0deg, #fff0, #ffff 80%);
