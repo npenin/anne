@@ -33,12 +33,18 @@ meta:
     <meta charset="UTF-8">
     <link rel="canonical" href="https://anneetsesdelices.fr/{{ permalink | url }}" />
 
+    <meta property="og:site_name" content="Anne et ses Délices" />
     {%- if meta %}
-      {%- if meta["og:type"] %}<meta property="og:type" content="{{ meta["og:type"] }}" />{% endif -%}
-      {%- if meta["og:title"] %}<meta property="og:title" content="{{ meta["og:title"] }}" />{% endif -%}
-      {%- if meta["og:description"] %}<meta property="og:description" content="{{ meta["og:description"] }}" />{% endif -%}
-      {%- if meta["og:image"] %}<meta property="og:image" content="{{ meta["og:image"] }}" />{% endif -%}
-      {%- if meta["og:url"] %}<meta property="og:url" content="{{ meta["og:url"] }}" />{% endif -%}
+      {%- if meta["og:type"] %}<meta property="og:type" content="{{ meta["og:type"] }}" />
+      {% endif -%}
+      {%- if meta["og:title"] %}<meta property="og:title" content="{{ meta["og:title"] }}" />
+      {% endif -%}
+      {%- if meta["og:description"] %}<meta property="og:description" content="{{ meta["og:description"] }}" />
+      {% endif -%}
+      {%- if meta["og:image"] %}<meta property="og:image" content="{{ meta["og:image"] }}" />
+      {% endif -%}
+      {%- if meta["og:url"] %}<meta property="og:url" content="{{ meta["og:url"] }}" />
+      {% endif -%}
     {%- else %}
         <meta property="og:title" content="{{ title }}" />
         <meta property="og:type" content="website" />
