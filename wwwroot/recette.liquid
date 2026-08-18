@@ -13,8 +13,8 @@ eleventyComputed:
         og:type: "recipe"
         og:title: "{{recette.title}} - Anne et ses Délices"
         og:description: "Découvrez la recette {{ recette.title }} sur Anne et ses Délices."
-        og:image: "https://anneetsesdelices.fr/{{recette.cover | default: '/assets/logo.svg'}}"
-        og:url: "https://anneetsesdelices.fr/{{ page.url }}"
+        og:image: "https://anneetsesdelices.fr{{recette.cover | default: '/assets/logo.svg'}}"
+        og:url: "https://anneetsesdelices.fr{{ page.url }}"
 tags:
     - recettes
 ---
