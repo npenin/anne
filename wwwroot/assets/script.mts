@@ -1,7 +1,5 @@
 import { Crepe, replaceAll, sinkListItemCommand, liftListItemCommand, callCommand, commonmark, gfm } from './milkdown.mjs';
-// import type { Crepe } from '@milkdown/crepe';
 import type { TopBarFeatureConfig } from '@milkdown/crepe/feature/top-bar';
-// import type { Ctx } from '@milkdown/ctx';
 
 declare global
 {
@@ -25,15 +23,24 @@ type Recipe = {
     mold: { name: string; picture: string; url: string };
 }
 
+type ProcessedImage = {
+    blob: Blob;
+    filename: string;
+    width: number;
+    height: number;
+};
+
 let token = localStorage.getItem('GITHUB_TOKEN');
 if (!token && (token = prompt('Token?')))
-    localStorage.setItem('GITHUB_TOKEN', token)
+    localStorage.setItem('GITHUB_TOKEN', token);
+
 let username = localStorage.getItem('user.name');
 if (!username && (username = prompt('user name?')))
-    localStorage.setItem('user.name', username)
+    localStorage.setItem('user.name', username);
+
 let usermail = localStorage.getItem('user.email');
 if (!usermail && (usermail = prompt('user.email')))
-    localStorage.setItem('user.email', usermail)
+    localStorage.setItem('user.email', usermail);
 
 const dir = "/{{recette.title|slugify}}"
 const root = globalThis.location.href.substring(0, globalThis.location.href.length - '{{page.url}}'.length + '/admin/'.length);
@@ -45,7 +52,7 @@ const galleryGridEl = document.querySelector('.gallery-grid');
 const isGalleryEditor = !!document.querySelector('.gallery-editor');
 let galleryImages: string[] = [];
 let pendingCoverFile: { file: File, blobUrl?: string } | undefined | null = null;
-const pendingGalleryFiles = new Map();
+const pendingGalleryFiles = new Map<string, File>();
 
 function isBlobUrl(url: unknown)
 {
@@ -54,14 +61,20 @@ function isBlobUrl(url: unknown)
 
 function slugifyTitle(title: string)
 {
-    return title.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[ ’]+/g, '-').toLowerCase();
+    return title
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/[ ’]+/g, '-')
+        .toLowerCase();
 }
 
 function getRecipeSlug()
 {
     const title = document.querySelector('h1')?.innerText?.trim();
+
     if (!title)
         return '';
+
     return slugifyTitle(title);
 }
 
@@ -79,7 +92,11 @@ function safeFilename(name: string)
 function notifyError(message: string)
 {
     if (Swal?.fire)
-        Swal.fire({ title: 'Erreur', text: message, icon: 'error' });
+        Swal.fire({
+            title: 'Erreur',
+            text: message,
+            icon: 'error'
+        });
     else
         alert(message);
 }
@@ -88,13 +105,18 @@ function renderCover(coverImageUrl: string)
 {
     if (!coverImageEl)
         return;
+
     if (coverImageUrl)
     {
         if (window.location.hostname == 'localhost' && coverImageUrl.startsWith('/assets/'))
             fetch(coverImageUrl, { method: 'HEAD' }).then(res =>
             {
                 if (!res.ok)
-                    coverImageUrl = 'https://github.com/npenin/anne/blob/master' + coverImageUrl + '?raw=true';
+                    coverImageUrl =
+                        'https://github.com/npenin/anne/blob/master' +
+                        coverImageUrl +
+                        '?raw=true';
+
                 coverImageEl.src = coverImageUrl;
             });
         else
@@ -110,31 +132,45 @@ function renderGallery(images: string[])
 {
     if (!galleryGridEl)
         return;
+
     galleryImages = Array.isArray(images) ? images : [];
     galleryGridEl.innerHTML = '';
+
     galleryImages.forEach((url, index) =>
     {
         const figure = document.createElement('figure');
         const img = document.createElement('img');
+
         img.src = url;
         img.loading = 'lazy';
         img.alt = 'Photo de la recette';
+
         figure.appendChild(img);
 
         if (isGalleryEditor)
         {
             const removeBtn = document.createElement('button');
+
             removeBtn.type = 'button';
             removeBtn.classList.add('remove-photo');
             removeBtn.innerHTML = '<i class="fa fa-trash"></i>';
+
             removeBtn.addEventListener('click', () =>
             {
                 if (isBlobUrl(url))
+                {
+                    const file = pendingGalleryFiles.get(url);
                     pendingGalleryFiles.delete(url);
+
+                    if (file)
+                        URL.revokeObjectURL(url);
+                }
+
                 galleryImages.splice(index, 1);
                 renderGallery(galleryImages);
                 saveLocally();
             });
+
             figure.appendChild(removeBtn);
         }
 
@@ -142,23 +178,137 @@ function renderGallery(images: string[])
     });
 }
 
-async function uploadFileToGithub(pathInRepo: string, contentBase64: string, message: string)
+/**
+ * Loads an image in the browser.
+ *
+ * When the image is subsequently drawn to a canvas, the browser applies
+ * the EXIF orientation while decoding it. The canvas export then strips
+ * all EXIF metadata, including GPS data.
+ */
+function loadImage(file: Blob): Promise<HTMLImageElement>
 {
-    const apiPath = pathInRepo.replace(/^\/+/, '');
-    let res = await fetch('https://api.github.com/repos/npenin/anne/contents/' + apiPath, {
-        headers: { accept: 'application/vnd.github+json', authorization: 'Bearer ' + token, 'X-GitHub-Api-Version': '2022-11-28' },
-        method: 'GET'
+    return new Promise((resolve, reject) =>
+    {
+        const url = URL.createObjectURL(file);
+        const image = new Image();
+
+        image.onload = () =>
+        {
+            URL.revokeObjectURL(url);
+            resolve(image);
+        };
+
+        image.onerror = () =>
+        {
+            URL.revokeObjectURL(url);
+            reject(new Error('Impossible de lire l’image.'));
+        };
+
+        image.src = url;
+    });
+}
+
+/**
+ * Resizes and re-encodes an image entirely client-side.
+ *
+ * Drawing the source image to a canvas and exporting it removes the
+ * original EXIF metadata, including GPS coordinates.
+ */
+async function processImage(
+    file: Blob,
+    options: {
+        maxWidth: number;
+        maxHeight: number;
+        quality?: number;
+    }
+): Promise<ProcessedImage>
+{
+    const image = await loadImage(file);
+
+    const scale = Math.min(
+        1,
+        options.maxWidth / image.naturalWidth,
+        options.maxHeight / image.naturalHeight
+    );
+
+    const width = Math.round(image.naturalWidth * scale);
+    const height = Math.round(image.naturalHeight * scale);
+
+    const canvas = document.createElement('canvas');
+    canvas.width = width;
+    canvas.height = height;
+
+    const ctx = canvas.getContext('2d');
+
+    if (!ctx)
+        throw new Error('Impossible de créer le contexte graphique.');
+
+    ctx.drawImage(image, 0, 0, width, height);
+
+    const blob = await new Promise<Blob>((resolve, reject) =>
+    {
+        canvas.toBlob(
+            result =>
+            {
+                if (result)
+                    resolve(result);
+                else
+                    reject(new Error('Impossible de convertir l’image.'));
+            },
+            'image/jpeg',
+            options.quality ?? 0.85
+        );
     });
 
+    return {
+        blob,
+        filename: 'image.jpg',
+        width,
+        height
+    };
+}
+
+async function uploadFileToGithub(
+    pathInRepo: string,
+    contentBase64: string,
+    message: string
+)
+{
+    const apiPath = pathInRepo.replace(/^\/+/, '');
+
+    let res = await fetch(
+        'https://api.github.com/repos/npenin/anne/contents/' + apiPath,
+        {
+            headers: {
+                accept: 'application/vnd.github+json',
+                authorization: 'Bearer ' + token,
+                'X-GitHub-Api-Version': '2022-11-28'
+            },
+            method: 'GET'
+        }
+    );
+
     let sha;
+
     if (res.ok)
         sha = (await res.json()).sha;
     else if (res.status !== 404)
         throw new Error(await res.text());
 
-    const body = {
+    const body: {
+        message: string;
+        committer: {
+            name: string | null;
+            email: string | null;
+        };
+        content: string;
+        sha?: string;
+    } = {
         message,
-        committer: { name: localStorage.getItem('user.name'), email: localStorage.getItem('user.email') },
+        committer: {
+            name: localStorage.getItem('user.name'),
+            email: localStorage.getItem('user.email')
+        },
         content: contentBase64,
         sha: undefined
     };
@@ -166,11 +316,18 @@ async function uploadFileToGithub(pathInRepo: string, contentBase64: string, mes
     if (sha)
         body.sha = sha;
 
-    res = await fetch('https://api.github.com/repos/npenin/anne/contents/' + apiPath, {
-        headers: { accept: 'application/vnd.github+json', authorization: 'Bearer ' + token, 'X-GitHub-Api-Version': '2022-11-28' },
-        method: 'PUT',
-        body: JSON.stringify(body)
-    });
+    res = await fetch(
+        'https://api.github.com/repos/npenin/anne/contents/' + apiPath,
+        {
+            headers: {
+                accept: 'application/vnd.github+json',
+                authorization: 'Bearer ' + token,
+                'X-GitHub-Api-Version': '2022-11-28'
+            },
+            method: 'PUT',
+            body: JSON.stringify(body)
+        }
+    );
 
     if (!res.ok)
         throw new Error(await res.text());
@@ -183,12 +340,15 @@ function fileToBase64(file: Blob): Promise<string>
     return new Promise((resolve, reject) =>
     {
         const reader = new FileReader();
+
         reader.onload = () =>
         {
             const result = reader.result?.toString() || '';
             const base64 = result.split(',')[1];
+
             resolve(base64 || '');
         };
+
         reader.onerror = reject;
         reader.readAsDataURL(file);
     });
@@ -197,17 +357,40 @@ function fileToBase64(file: Blob): Promise<string>
 async function handleCoverUpload(file: File)
 {
     const slug = getRecipeSlug();
+
     if (!slug)
     {
         notifyError('Renseignez le titre de la recette avant de téléverser une couverture.');
         return;
     }
 
-    // Create blob URL for immediate display
+    // Covers are resized to at most 1200x1200 and converted to JPEG.
+    // This also removes all EXIF metadata, including GPS coordinates.
+    const processed = await processImage(file, {
+        maxWidth: 1200,
+        maxHeight: 1200,
+        quality: 0.85
+    });
+
+    const processedFile = new File(
+        [processed.blob],
+        `${safeFilename(file.name).replace(/\.[^.]+$/, '')}.jpg`,
+        {
+            type: 'image/jpeg',
+            lastModified: Date.now()
+        }
+    );
+
     if (pendingCoverFile?.blobUrl)
         URL.revokeObjectURL(pendingCoverFile.blobUrl);
-    const blobUrl = URL.createObjectURL(file);
-    pendingCoverFile = { file, blobUrl };
+
+    const blobUrl = URL.createObjectURL(processedFile);
+
+    pendingCoverFile = {
+        file: processedFile,
+        blobUrl
+    };
+
     renderCover(blobUrl);
     saveLocally();
 }
@@ -215,20 +398,58 @@ async function handleCoverUpload(file: File)
 async function handleGalleryUpload(files: (Blob | MediaSource)[])
 {
     const slug = getRecipeSlug();
+
     if (!slug)
     {
         notifyError('Renseignez le titre de la recette avant de téléverser des photos.');
         return;
     }
 
-    // Create blob URLs for immediate display
-    const blobUrls = Array.from(files).map(file => URL.createObjectURL(file));
-    const currentGallery = Array.isArray(getRecipe().gallery) ? getRecipe().gallery.filter(Boolean) : [];
+    const processedFiles: File[] = [];
+
+    for (const file of files)
+    {
+        // Gallery images are allowed to be larger than covers.
+        // Maximum 2048x2048, EXIF/GPS stripped.
+        const processed = await processImage(file as Blob, {
+            maxWidth: 2048,
+            maxHeight: 2048,
+            quality: 0.85
+        });
+
+        const originalName =
+            file instanceof File
+                ? file.name
+                : 'photo';
+
+        processedFiles.push(
+            new File(
+                [processed.blob],
+                `${safeFilename(originalName).replace(/\.[^.]+$/, '')}.jpg`,
+                {
+                    type: 'image/jpeg',
+                    lastModified: Date.now()
+                }
+            )
+        );
+    }
+
+    const blobUrls = processedFiles.map(file =>
+        URL.createObjectURL(file)
+    );
+
+    const currentGallery =
+        Array.isArray(getRecipe().gallery)
+            ? getRecipe().gallery.filter(Boolean)
+            : [];
+
     currentGallery.push(...blobUrls);
+
     blobUrls.forEach((blobUrl, index) =>
     {
-        pendingGalleryFiles.set(blobUrl, files[index]);
+        pendingGalleryFiles.set(blobUrl, processedFiles[index]);
     });
+
     renderGallery(currentGallery);
     saveLocally();
 }
@@ -238,8 +459,10 @@ if (coverInput)
     coverInput.addEventListener('change', async (ev: any) =>
     {
         const file: File = ev.target.files?.[0];
+
         if (!file)
             return;
+
         try
         {
             await handleCoverUpload(file);
@@ -248,6 +471,7 @@ if (coverInput)
         {
             notifyError(error.message || 'Erreur lors du téléversement de la couverture.');
         }
+
         ev.target.value = '';
     });
 
@@ -255,9 +479,12 @@ const galleryInput = document.querySelector<HTMLInputElement>('#galleryUpload');
 if (galleryInput)
     galleryInput.addEventListener('change', async (ev: any) =>
     {
-        const files: File[] = Array.from(ev.target.files || []);
+        const files: File[] =
+            Array.from(ev.target.files || []);
+
         if (!files.length)
             return;
+
         try
         {
             await handleGalleryUpload(files);
@@ -266,34 +493,39 @@ if (galleryInput)
         {
             notifyError(error.message || 'Erreur lors du téléversement des photos.');
         }
+
         ev.target.value = '';
     });
 
 globalThis.triggerCoverUpload = function triggerCoverUpload()
 {
     coverInput?.click();
-}
+};
 
 globalThis.triggerGalleryUpload = function triggerGalleryUpload()
 {
     galleryInput?.click();
-}
+};
 
 globalThis.removeCover = function removeCover()
 {
     if (pendingCoverFile?.blobUrl)
         URL.revokeObjectURL(pendingCoverFile.blobUrl);
+
     pendingCoverFile = null;
     renderCover('');
     saveLocally();
-}
+};
 
 dynamic(document.querySelector('.info>.mold>.name')!, {
     Enter(ev)
     {
-        fetchmold(ev).then(() => ev.target.blur()).then(() => saveLocally());
+        fetchmold(ev)
+            .then(() => ev.target.blur())
+            .then(() => saveLocally());
     }
-})
+}
+);
 
 globalThis.loadRecipe = function (recipe: Recipe)
 {
@@ -331,7 +563,7 @@ globalThis.loadRecipe = function (recipe: Recipe)
         {
             const li = addPrepStep(false);
             li.innerText = t;
-        })
+        });
     }
 
     pendingCoverFile = null;
@@ -346,7 +578,8 @@ globalThis.loadRecipe = function (recipe: Recipe)
 let mdSteps = '';
 
 const editor: Crepe = new Crepe({
-    root: '#steps', features: {
+    root: '#steps',
+    features: {
         [Crepe.Feature.TopBar]: true,
     },
     featureConfigs: {
@@ -367,8 +600,9 @@ const editor: Crepe = new Crepe({
                     {
                         return outdent(editor);
                     }
-                }).addItem('right', {
-                    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img">
+                })
+                    .addItem('right', {
+                        icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img">
   <title>Indent</title>
   <line x1="10" y1="6" x2="20" y2="6"/>
   <line x1="10" y1="12" x2="17" y2="12"/>
@@ -376,13 +610,12 @@ const editor: Crepe = new Crepe({
   <line x1="3" y1="12" x2="8" y2="12"/>
   <polyline points="4,8 8,12 4,16"/>
 </svg>`,
-                    active: () => false,
-                    onRun()
-                    {
-                        return indent(editor);
-                    }
-                })
-
+                        active: () => false,
+                        onRun()
+                        {
+                            return indent(editor);
+                        }
+                    });
             }
         } as TopBarFeatureConfig
     }
@@ -407,18 +640,52 @@ await editor.create();
 document.querySelector('.mold')!.addEventListener('click', () => document.querySelector<HTMLElement>('.info>.mold>.name')!.focus());
 async function fetchmold(ev: Event)
 {
-    const res = await fetch(new URL((ev.target as HTMLElement).innerText.replace('https://boutique.guydemarle.com', 'https://d2quloop9d8ihx.cloudfront.net'), root));
+    const res = await fetch(
+        new URL(
+            (ev.target as HTMLElement)
+                .innerText
+                .replace(
+                    'https://boutique.guydemarle.com',
+                    'https://d2quloop9d8ihx.cloudfront.net'
+                ),
+            root
+        )
+    );
+
     const content = res.text();
     const dummy = document.createElement('div');
+
     dummy.innerHTML = await content;
-    const meta = Object.fromEntries(Array.from(dummy.querySelectorAll('meta').values()).filter(v => v.attributes.getNamedItem('property')).map(v => [v.attributes.getNamedItem('property')!.value, v.attributes.getNamedItem('content')!.value]));
+
+    const meta = Object.fromEntries(
+        Array.from(dummy.querySelectorAll('meta'))
+            .filter(v =>
+                v.attributes.getNamedItem('property')
+            )
+            .map(v => [
+                v.attributes.getNamedItem('property')!.value,
+                v.attributes.getNamedItem('content')!.value
+            ])
+    );
+
     dummy.remove();
-    (ev.target as HTMLElement)!.innerText = meta['og:title'];
-    (ev.target as HTMLElement)!.parentNode!.querySelector('img')!.src = meta['og:image'];
-    (ev.target as HTMLElement)!.parentNode!.querySelector('a')!.href = meta['og:url'];
+
+    (ev.target as HTMLElement)!.innerText =
+        meta['og:title'];
+
+    (ev.target as HTMLElement)!
+        .parentNode!
+        .querySelector('img')!
+        .src = meta['og:image'];
+
+    (ev.target as HTMLElement)!
+        .parentNode!
+        .querySelector('a')!
+        .href = meta['og:url'];
 }
 
 globalThis.fetchmold = fetchmold;
+
 export function getRecipe()
 {
     return {
@@ -454,13 +721,8 @@ async function blobToBase64(blobUrl: string): Promise<string>
 {
     const response = await fetch(blobUrl);
     const blob = await response.blob();
-    return new Promise((resolve, reject) =>
-    {
-        const reader = new FileReader();
-        reader.onloadend = () => resolve(reader.result as string);
-        reader.onerror = reject;
-        reader.readAsDataURL(blob);
-    });
+
+    return fileToBase64(blob);
 }
 
 export async function getRecipeWithBase64Images()
@@ -469,20 +731,17 @@ export async function getRecipeWithBase64Images()
 
     // Convert cover blob to base64
     if (recipe.cover && isBlobUrl(recipe.cover))
-    {
         recipe.cover = await blobToBase64(recipe.cover);
-    }
 
     // Convert gallery blobs to base64
     if (Array.isArray(recipe.gallery))
     {
         recipe.gallery = await Promise.all(
-            recipe.gallery.map(async (url) =>
+            recipe.gallery.map(async url =>
             {
                 if (url && isBlobUrl(url))
-                {
                     return await blobToBase64(url);
-                }
+
                 return url;
             })
         );
@@ -493,16 +752,19 @@ export async function getRecipeWithBase64Images()
 
 function saveLocally()
 {
-    getRecipeWithBase64Images().then(recipe => globalThis.saveLocally(recipe));
+    getRecipeWithBase64Images()
+        .then(recipe => globalThis.saveLocally(recipe));
 }
 
 async function uploadPendingImages(recipe: Recipe)
 {
     const slug = recipe.slug || getRecipeSlug();
+
     if (!slug)
         throw new Error('Renseignez le titre de la recette avant de sauvegarder.');
 
     let updatedCover = recipe.cover;
+
     if (isBlobUrl(updatedCover))
     {
         if (!pendingCoverFile?.file)
@@ -513,21 +775,32 @@ async function uploadPendingImages(recipe: Recipe)
         const base64 = await fileToBase64(pendingCoverFile.file);
         await uploadFileToGithub('/wwwroot' + targetPath, base64, `cover ${slug}`);
         updatedCover = targetPath;
+
         renderCover(updatedCover);
+
         if (pendingCoverFile?.blobUrl)
-            URL.revokeObjectURL(pendingCoverFile.blobUrl);
+            URL.revokeObjectURL(
+                pendingCoverFile.blobUrl
+            );
+
         pendingCoverFile = null;
     }
 
     const updatedGallery = [];
-    const sourceGallery = Array.isArray(recipe.gallery) ? recipe.gallery : [];
+    const sourceGallery =
+        Array.isArray(recipe.gallery)
+            ? recipe.gallery
+            : [];
+
     for (const url of sourceGallery)
     {
         if (!url)
             continue;
+
         if (isBlobUrl(url))
         {
             const file = pendingGalleryFiles.get(url);
+
             if (!file)
                 throw new Error('Une photo en attente est introuvable. Rechargez l\'image.');
 
@@ -554,25 +827,61 @@ async function uploadPendingImages(recipe: Recipe)
 globalThis.saveAsDraft = async function saveAsDraft()
 {
     const recipe = getRecipe();
+
     globalThis.saveLocally(recipe);
 
-    const filename = `${dir}/recettes/${recipe.title.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/ +/g, '-').toLowerCase()}.json`;
-    let res = await fetch('https://api.github.com/repos/npenin/anne/contents/' + filename.substring(dir.length + 1), {
-        headers: { accept: 'application/vnd.github+json', authorization: 'Bearer ' + token, 'X-GitHub-Api-Version': '2022-11-28' }, method: 'GET'
-    });
-    // console.log((await res.json()).sha);
-    res = await fetch('https://api.github.com/repos/npenin/anne/contents/' + filename.substring(dir.length + 1), {
-        headers: { accept: 'application/vnd.github+json', authorization: 'Bearer ' + token, 'X-GitHub-Api-Version': '2022-11-28' }, method: 'DELETE', body: JSON.stringify(
-            { "message": "delete " + recipe.title, "committer": { "name": localStorage.getItem('user.name'), "email": localStorage.getItem('user.email') }, sha: (await res.json()).sha }
-        )
-    });
+    const filename =
+        `${dir}/recettes/${recipe.title
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .replace(/ +/g, '-')
+            .toLowerCase()}.json`;
+
+    let res = await fetch(
+        'https://api.github.com/repos/npenin/anne/contents/' +
+        filename.substring(dir.length + 1),
+        {
+            headers: {
+                accept: 'application/vnd.github+json',
+                authorization: 'Bearer ' + token,
+                'X-GitHub-Api-Version': '2022-11-28'
+            },
+            method: 'GET'
+        }
+    );
+
+    res = await fetch(
+        'https://api.github.com/repos/npenin/anne/contents/' +
+        filename.substring(dir.length + 1),
+        {
+            headers: {
+                accept: 'application/vnd.github+json',
+                authorization: 'Bearer ' + token,
+                'X-GitHub-Api-Version': '2022-11-28'
+            },
+            method: 'DELETE',
+            body: JSON.stringify({
+                message: 'delete ' + recipe.title,
+                committer: {
+                    name: localStorage.getItem('user.name'),
+                    email: localStorage.getItem('user.email')
+                },
+                sha: (await res.json()).sha
+            })
+        }
+    );
 
     location.replace('/admin/recette/');
-}
+};
+
 globalThis.save = async function save()
 {
-    document.querySelector<HTMLElement>('.toolbar')!.style.display = 'none';
+    document.querySelector<HTMLElement>(
+        '.toolbar'
+    )!.style.display = 'none';
+
     let recipe = getRecipe();
+
     try
     {
         recipe = await uploadPendingImages(recipe);
@@ -584,71 +893,162 @@ globalThis.save = async function save()
         return;
     }
 
-    const filename = `${dir}/recettes/${recipe.title.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/ +/g, '-').toLowerCase()}.json`;
-    let res = await fetch('https://api.github.com/repos/npenin/anne/contents/' + filename.substring(dir.length + 1), {
-        headers: { accept: 'application/vnd.github+json', authorization: 'Bearer ' + token, 'X-GitHub-Api-Version': '2022-11-28' }, method: 'GET'
-    });
+    const filename =
+        `${dir}/recettes/${recipe.title
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .replace(/ +/g, '-')
+            .toLowerCase()}.json`;
+
+    let res = await fetch(
+        'https://api.github.com/repos/npenin/anne/contents/' +
+        filename.substring(dir.length + 1),
+        {
+            headers: {
+                accept: 'application/vnd.github+json',
+                authorization: 'Bearer ' + token,
+                'X-GitHub-Api-Version': '2022-11-28'
+            },
+            method: 'GET'
+        }
+    );
 
     const create = res.status == 404;
+
     if (create)
     {
-        res = await fetch('https://api.github.com/repos/npenin/anne/contents/' + filename.substring(dir.length + 1), {
-            headers: { accept: 'application/vnd.github+json', authorization: 'Bearer ' + token, 'X-GitHub-Api-Version': '2022-11-28' }, method: 'PUT', body: JSON.stringify(
-                { "message": "create " + recipe.title, "committer": { "name": localStorage.getItem('user.name'), "email": localStorage.getItem('user.email') }, "content": btoa(unescape(encodeURIComponent(JSON.stringify(recipe, null, 4)))) }
-            )
-        });
+        res = await fetch(
+            'https://api.github.com/repos/npenin/anne/contents/' +
+            filename.substring(dir.length + 1),
+            {
+                headers: {
+                    accept: 'application/vnd.github+json',
+                    authorization: 'Bearer ' + token,
+                    'X-GitHub-Api-Version': '2022-11-28'
+                },
+                method: 'PUT',
+                body: JSON.stringify({
+                    message: 'create ' + recipe.title,
+                    committer: {
+                        name: localStorage.getItem('user.name'),
+                        email: localStorage.getItem('user.email')
+                    },
+                    content: btoa(
+                        unescape(
+                            encodeURIComponent(
+                                JSON.stringify(
+                                    recipe,
+                                    null,
+                                    4
+                                )
+                            )
+                        )
+                    )
+                })
+            }
+        );
     }
     else
     {
         if (!res.ok)
         {
-            Swal.fire({ title: 'Probleme lors de la recuperation', text: await res.text() });
+            Swal.fire({
+                title: 'Probleme lors de la recuperation',
+                text: await res.text()
+            });
+
             return;
         }
 
-        res = await fetch('https://api.github.com/repos/npenin/anne/contents/' + filename.substring(dir.length + 1), {
-            headers: { accept: 'application/vnd.github+json', authorization: 'Bearer ' + token, 'X-GitHub-Api-Version': '2022-11-28' }, method: 'PUT', body: JSON.stringify(
-                { "message": "update " + recipe.title, "committer": { "name": localStorage.getItem('user.name'), "email": localStorage.getItem('user.email') }, sha: (await res.json()).sha, "content": btoa(unescape(encodeURIComponent(JSON.stringify(recipe, null, 4)))) }
-            )
-        });
+        res = await fetch(
+            'https://api.github.com/repos/npenin/anne/contents/' +
+            filename.substring(dir.length + 1),
+            {
+                headers: {
+                    accept: 'application/vnd.github+json',
+                    authorization: 'Bearer ' + token,
+                    'X-GitHub-Api-Version': '2022-11-28'
+                },
+                method: 'PUT',
+                body: JSON.stringify({
+                    message: 'update ' + recipe.title,
+                    committer: {
+                        name: localStorage.getItem('user.name'),
+                        email: localStorage.getItem('user.email')
+                    },
+                    sha: (await res.json()).sha,
+                    content: btoa(
+                        unescape(
+                            encodeURIComponent(
+                                JSON.stringify(
+                                    recipe,
+                                    null,
+                                    4
+                                )
+                            )
+                        )
+                    )
+                })
+            }
+        );
     }
 
     if (res.ok)
     {
         if (create)
         {
-            globalThis.saveLocally({ ...recipe, toppings: [], steps: [], title: '' });
+            globalThis.saveLocally({
+                ...recipe,
+                toppings: [],
+                steps: [],
+                title: ''
+            });
+
             let timerInterval;
+
             Swal.fire({
-                title: "Recette enregistrée !",
-                html: "Redirection vers la recette créée dans <b></b>s...",
+                title: 'Recette enregistrée !',
+                html: 'Redirection vers la recette créée dans <b></b>s...',
                 timerProgressBar: true,
-                icon: "success",
+                icon: 'success',
                 timer: 30000,
+
                 didOpen: () =>
                 {
                     Swal.showLoading();
-                    const timer = Swal.getPopup().querySelector("b");
+
+                    const timer =
+                        Swal.getPopup().querySelector('b');
+
                     timerInterval = setInterval(() =>
                     {
-                        timer.textContent = `${Swal.getTimerLeft() / 1000}`;
+                        timer.textContent =
+                            `${Swal.getTimerLeft() / 1000}`;
                     }, 1000);
                 },
+
                 willClose: () =>
                 {
                     clearInterval(timerInterval);
-                    location.replace(filename.substring(dir.length).replace('.json', '/'));
+
+                    location.replace(
+                        filename
+                            .substring(dir.length)
+                            .replace('.json', '/')
+                    );
                 }
             });
         }
         else
         {
             globalThis.saveLocally(null);
+
             Swal.fire({
-                title: "Recette enregistrée !",
+                title: 'Recette enregistrée !',
                 timer: 10000,
                 timerProgressBar: true,
-                icon: "success",
+                icon: 'success',
+
                 willClose: () =>
                 {
                     delete document.querySelector<HTMLElement>('.toolbar').style.display;
@@ -662,30 +1062,32 @@ globalThis.save = async function save()
             if (notif == "granted")
                 new Notification('Recette enregistree');
         }
-
     }
     else
     {
         Swal.fire({
-            title: "Une erreur s\'est produite",
+            title: 'Une erreur s\'est produite',
             timer: 10000,
             timerProgressBar: true,
-            icon: "error",
+            icon: 'error',
             text: await res.text()
         });
     }
-}
+};
 
 function addAccessory(focus)
 {
-    const li = document.createElement('li')
+    const li = document.createElement('li');
     li.classList.add('mold');
+
     const a = document.createElement('a');
     a.target = '_blank';
     li.appendChild(a);
+
     const img = document.createElement('img');
     a.appendChild(img);
-    const name = document.createElement('span')
+
+    const name = document.createElement('span');
     name.classList.add('name');
     name.contentEditable = true as unknown as string;
     li.appendChild(name);
@@ -702,33 +1104,46 @@ function addAccessory(focus)
             }
         }
     });
+
     if (focus)
         name.focus();
+
     return li;
 }
 
-globalThis.addAccessory = addAccessory
+globalThis.addAccessory = addAccessory;
 
 function addPrepStep(focus)
 {
-    const li = document.createElement('li')
-    li.contentEditable = true as unknown as string;
-    document.querySelector('.steps ol').appendChild(li);
+    const li = document.createElement('li');
+
+    li.contentEditable =
+        true as unknown as string;
+
+    document
+        .querySelector('.steps ol')
+        .appendChild(li);
+
     dynamic(li);
+
     if (focus)
         li.focus();
+
     li.addEventListener('blur', saveLocally);
+
     return li;
 }
 
-globalThis.addPrepStep = addPrepStep
+globalThis.addPrepStep = addPrepStep;
 
 function addtoppings(focus)
 {
-    const li = document.createElement('li')
-    const quantity = document.createElement('span')
-    const unit = document.createElement('span')
-    const topping = document.createElement('span')
+    const li = document.createElement('li');
+
+    const quantity = document.createElement('span');
+    const unit = document.createElement('span');
+    const topping = document.createElement('span');
+
     quantity.classList.add('quantity');
     unit.classList.add('unit');
     topping.classList.add('topping');
@@ -745,30 +1160,41 @@ function addtoppings(focus)
     dynamic(topping, { Enter(ev) { topping.blur(); setTimeout(() => addtoppings(true)); ev.preventDefault(); return false } });
     if (focus)
         quantity.focus();
+
     quantity.addEventListener('blur', saveLocally);
     unit.addEventListener('blur', saveLocally);
     topping.addEventListener('blur', saveLocally);
+
     return li;
 }
-globalThis.addtoppings = addtoppings
+
+globalThis.addtoppings = addtoppings;
 
 function dynamic(self: HTMLElement, keys?: Record<string, (ev: KeyboardEvent & { target: HTMLElement }) => void>)
 {
     keys = Object.assign({}, keys);
+
     self.addEventListener('keydown', function (ev)
     {
-        if (self.innerText === '' && (ev.key == 'Delete' || ev.key == 'Backspace' || ev.key == 'Escape'))
+        if (
+            self.innerText === '' &&
+            (
+                ev.key == 'Delete' ||
+                ev.key == 'Backspace' ||
+                ev.key == 'Escape'
+            )
+        )
         {
             self.blur();
         }
-        //else if (this.innerText === '' && ev.key.length > 1 && ev.key !== 'Unidentified')
-        //    self.innerText = ev.key;
         else if (ev.key in keys)
             keys[ev.key](ev as any);
     });
-    self.addEventListener('blur', function (ev)
+
+    self.addEventListener('blur', function ()
     {
         let li = self;
+
         while (li && li.tagName !== 'LI')
             li = li.parentElement;
 
