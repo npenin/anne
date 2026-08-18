@@ -31,10 +31,6 @@ meta:
     <meta name="generator" content="{{ eleventy.generator }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <meta property="og:title" content="{{ title }}" />
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="{{ description | default: 'Recettes gourmandes et astuces cuisine par Anne, conseillère Guy Demarle.' }}" />
-    <meta property="og:url" content="https://anneetsesdelices.fr/{{ permalink | url }}" />
     <link rel="canonical" href="https://anneetsesdelices.fr/{{ permalink | url }}" />
 
     {%- if meta %}
@@ -43,6 +39,11 @@ meta:
       {%- if meta["og:description"] %}<meta property="og:description" content="{{ meta["og:description"] }}" />{% endif -%}
       {%- if meta["og:image"] %}<meta property="og:image" content="{{ meta["og:image"] }}" />{% endif -%}
       {%- if meta["og:url"] %}<meta property="og:url" content="{{ meta["og:url"] }}" />{% endif -%}
+    {%- else %}
+        <meta property="og:title" content="{{ title }}" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="{{ description | default: 'Recettes gourmandes et astuces cuisine par Anne, conseillère Guy Demarle.' }}" />
+        <meta property="og:url" content="https://anneetsesdelices.fr/{{ permalink | url }}" />
     {% endif -%}
 
     <!-- Placeholder for JSON-LD structured data -->
