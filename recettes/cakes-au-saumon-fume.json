@@ -1,0 +1,142 @@
+{
+    "title": "Cakes au saumon fumé",
+    "slug": "cakes-au-saumon-fume",
+    "private": false,
+    "toppings": [
+        {
+            "quantity": "4",
+            "unit": "Œufs",
+            "name": ""
+        },
+        {
+            "quantity": "1",
+            "unit": "sachet",
+            "name": "Levure chimique"
+        },
+        {
+            "quantity": "200",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "10",
+            "unit": "cL",
+            "name": "Huile neutre (pépins de raisin)"
+        },
+        {
+            "quantity": "12",
+            "unit": "cL",
+            "name": "Lait demi-écrémé"
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Gruyère râpé"
+        },
+        {
+            "quantity": "200",
+            "unit": "g",
+            "name": "Saumon fumé ou truite fumée"
+        },
+        {
+            "quantity": "1",
+            "unit": "Citron bio (zestes + 1 à 2 c-à-s jus (selon votre goût)",
+            "name": ""
+        },
+        {
+            "quantity": "1/2",
+            "unit": "c-à-c",
+            "name": "Thym séché (à frotter entre les mains pour libérer les arômes) "
+        },
+        {
+            "quantity": "3 à 4",
+            "unit": "tours",
+            "name": "Moulin à poivre 5 baies"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Grande Maryse pâtissière en silicone",
+            "picture": "https://boutique.guydemarle.com/17265-thickbox_default/grande-maryse-patissiere-en-silicone.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/8600-grande-maryse-patissiere-en-silicone.html"
+        },
+        {
+            "name": "Zesteur 4 en 1",
+            "picture": "https://boutique.guydemarle.com/7325-thickbox_default/zesteur-4-en-1.jpg",
+            "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/2527-zesteur-4-en-1.html"
+        },
+        {
+            "name": "Presse agrumes inox",
+            "picture": "https://boutique.guydemarle.com/2219-thickbox_default/presse-agrumes-inox-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/675-presse-agrumes-inox-guy-demarle.html"
+        }
+    ],
+    "steps": [
+        "Text",
+        "List",
+        "Advanced",
+        "\n    \n      \n    \n    \n      \n        \n      \n    \n  Text",
+        "\n    \n      \n    \n    \n      \n        \n      \n    \n  Heading 1",
+        "\n    \n      \n    \n    \n      \n        \n      \n    \n  Heading 2",
+        "\n    \n      \n    \n    \n      \n        \n      \n    \n  Heading 3",
+        "\n    \n      \n    \n    \n      \n        \n      \n    \n  Heading 4",
+        "\n    \n      \n    \n    \n      \n        \n      \n    \n  Heading 5",
+        "\n    \n      \n    \n    \n      \n        \n      \n    \n  Heading 6",
+        "\n    \n      \n    \n    \n      \n        \n      \n    \n  Quote",
+        "\n    \n      \n    \n    \n      \n        \n      \n    \n  Divider",
+        "\n    \n      \n    \n    \n      \n        \n      \n    \n  Bullet List",
+        "\n    \n      \n    \n    \n      \n        \n      \n    \n  Ordered List",
+        "\n    \n  Task List",
+        "\n    \n      \n    \n    \n      \n        \n      \n    \n  Image",
+        "\n    \n      \n    \n    \n      \n        \n      \n    \n  Code",
+        "\n    \n      \n    \n    \n      \n        \n      \n    \n  Table",
+        "\n    \n  Math",
+        "Préchauffer votre four à 180°C.",
+        "Poser votre moule sur une plaque aluminium perforée.",
+        "Dans un cul de poule, mélanger les œufs, la farine, la levure.",
+        "Incorporer progressivement le lait et l’huile pour obtenir une pâte lisse.",
+        "Couper le saumon en petits dés.",
+        "Zester le citron, à l'aide du zesteur 4 en 1 et presser le citron avec le presse agrumes.",
+        "Ajouter le fromage râpé, le zeste et le jus de citron, le thym séché, le poivre 5 baies.",
+        "Incorporer le saumon à la préparation et mélanger délicatement avec la maryse.",
+        "Remplir les empreintes.",
+        "Enfourner à 180°C pandant 25 - 30 min (suivant votre four).",
+        "Laisser tiédir/refroidir avant de démouler.\n\n\nP.S : A déguster tiède avec une salade ou froid en apéritif (sortir du réfrigérateur 15 à 20 minutes avant de servir)."
+    ],
+    "for": "12",
+    "preptime": "15",
+    "resttime": "0",
+    "cooktime": "25-30",
+    "cover": "",
+    "gallery": [],
+    "mold": {
+        "name": "Moule 5 cakes longs OHRA®",
+        "picture": "https://boutique.guydemarle.com/11509-nq_social_share/moule-5-cakes-longs-ohra.jpg",
+        "url": "https://anneetsesdelices.fr/admin/recette/cakes-au-saumon-fume/#"
+    }
+}
