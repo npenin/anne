@@ -1,0 +1,81 @@
+{
+    "title": "Cake pain de poisson",
+    "slug": "cake-pain-de-poisson",
+    "private": true,
+    "toppings": [
+        {
+            "quantity": "6",
+            "unit": "Oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "3",
+            "unit": "boîtes",
+            "name": "Thon au naturel (environ 400 g égoutté au total)  "
+        },
+        {
+            "quantity": "15",
+            "unit": "cL",
+            "name": "Lait"
+        },
+        {
+            "quantity": "15",
+            "unit": "cL",
+            "name": "Crème fraîche"
+        },
+        {
+            "quantity": "15",
+            "unit": "g",
+            "name": "Maïzena"
+        },
+        {
+            "quantity": "Sel",
+            "unit": " ",
+            "name": ""
+        },
+        {
+            "quantity": "Poivre",
+            "unit": " ",
+            "name": ""
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-thickbox_default/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Fouet 13cm ",
+            "picture": "https://boutique.guydemarle.com/5820-thickbox_default/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-thickbox_default/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm - Accessoires",
+            "picture": "https://boutique.guydemarle.com/2234-thickbox_default/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-thickbox_default/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Préchauffer votre four à 180 °C (chaleur tournante).\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dans un cul-de-poule, battre les œufs avec la crème, puis ajouter le lait et la Maïzena. Assaisonner en sel et généreusement en poivre.\n4. Égoutter soigneusement le thon, l'émietter et l'incorporer à l'appareil puis mélanger.\n5. Verser la préparation dans le moule.\n6. Enfourner à 180°C pendant 40 - 45 min (suivant votre four).\n7. Laisser refroidir avant de démouler.\n\n",
+    "for": "6-8",
+    "preptime": "10",
+    "resttime": "0",
+    "cooktime": "40-45",
+    "cover": "",
+    "gallery": [],
+    "mold": {
+        "name": "Moule à Cake",
+        "picture": "https://boutique.guydemarle.com/11587-thickbox_default/moule-a-cake-ohra.jpg",
+        "url": "https://anneetsesdelices.fr/admin/recette/#"
+    }
+}
