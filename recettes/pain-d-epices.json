@@ -76,21 +76,7 @@
             "url": "https://boutique.guydemarle.com/epicerie-en-ligne/1372-pain-depices-melange-d-epices-et-d-aromates-bio-50g.html"
         }
     ],
-    "steps": [
-        "Préchauffer votre four à 180°C.",
-        "Sur la plaque perforée, poser le moule.",
-        "Dans une casserole, verser le lait et chauffer pendant 1 min 30 à 90°C.",
-        "Dans la casserole, ajouter le miel et mélanger pendant 2 min.",
-        "Dans la casserole, ajouter le beurre et chauffer pendant 1 min à 60°C.",
-        "Dans un cul-de-poule, mettre la farine, la levure, le mélange pour pain d'épices, le sel, l'œuf et la cassonade, puis verser progressivement le contenu de la casserole.",
-        "Dans le cul-de-poule, mélanger pendant 1 min au fouet à main.",
-        "Dans le cul-de-poule, ajouter les zestes d'oranges et mélanger pendant 1 min.",
-        "Dans le moule, verser la préparation.",
-        "Enfourner à 180°C pendant 50 min (suivant votre four).",
-        "Le pain d'épices est meilleur lorsqu'il est réalisé la veille.",
-        "Le pain d'épices peut être congelé sans problème.",
-        "Avant la dégustation, décongeler le pain d'épices 1 à 2 jours à l'avance."
-    ],
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Sur la plaque perforée, poser le moule.\n3. Dans une casserole, verser le lait et chauffer pendant 1 min 30 à 90°C.\n4. Dans la casserole, ajouter le miel et mélanger pendant 2 min.\n5. Dans la casserole, ajouter le beurre et chauffer pendant 1 min à 60°C.\n6. Dans un cul-de-poule, mettre la farine, la levure, le mélange pour pain d'épices, le sel, l'œuf et la cassonade, puis verser progressivement le contenu de la casserole.\n7. Dans le cul-de-poule, mélanger pendant 1 min au fouet à main.\n8. Dans le cul-de-poule, ajouter les zestes d'oranges et mélanger pendant 1 min.\n9. Dans le moule, verser la préparation.\n10. Enfourner à 180°C pendant 50 min (suivant votre four).\n11. Le pain d'épices est meilleur lorsqu'il est réalisé la veille.\n12. Le pain d'épices peut être congelé sans problème.\n13. Avant la dégustation, décongeler le pain d'épices 1 à 2 jours à l'avance.\n",
     "for": "12",
     "preptime": "10",
     "resttime": "0",
