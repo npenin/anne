@@ -11,7 +11,7 @@
         {
             "quantity": "3",
             "unit": "boîtes",
-            "name": "Thon au naturel (environ 400 g égoutté au total)  "
+            "name": "Thon au naturel (environ 400 g égoutté au total)"
         },
         {
             "quantity": "15",
@@ -74,8 +74,8 @@
     "cover": "",
     "gallery": [],
     "mold": {
-        "name": "Moule à Cake",
-        "picture": "https://boutique.guydemarle.com/11587-thickbox_default/moule-a-cake-ohra.jpg",
-        "url": "https://anneetsesdelices.fr/admin/recette/#"
+        "name": "Moule à cake OHRA®",
+        "picture": "https://boutique.guydemarle.com/11587-nq_social_share/moule-a-cake-ohra.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/4364-moule-a-cake-ohra.html"
     }
 }
