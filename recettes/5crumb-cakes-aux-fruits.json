@@ -107,25 +107,6 @@
         }
     ],
     "steps": [
-        "Text",
-        "List",
-        "Advanced",
-        "\n    \n      \n    \n    \n      \n        \n      \n    \n  Text",
-        "\n    \n      \n    \n    \n      \n        \n      \n    \n  Heading 1",
-        "\n    \n      \n    \n    \n      \n        \n      \n    \n  Heading 2",
-        "\n    \n      \n    \n    \n      \n        \n      \n    \n  Heading 3",
-        "\n    \n      \n    \n    \n      \n        \n      \n    \n  Heading 4",
-        "\n    \n      \n    \n    \n      \n        \n      \n    \n  Heading 5",
-        "\n    \n      \n    \n    \n      \n        \n      \n    \n  Heading 6",
-        "\n    \n      \n    \n    \n      \n        \n      \n    \n  Quote",
-        "\n    \n      \n    \n    \n      \n        \n      \n    \n  Divider",
-        "\n    \n      \n    \n    \n      \n        \n      \n    \n  Bullet List",
-        "\n    \n      \n    \n    \n      \n        \n      \n    \n  Ordered List",
-        "\n    \n  Task List",
-        "\n    \n      \n    \n    \n      \n        \n      \n    \n  Image",
-        "\n    \n      \n    \n    \n      \n        \n      \n    \n  Code",
-        "\n    \n      \n    \n    \n      \n        \n      \n    \n  Table",
-        "\n    \n  Math",
         "Préchauffer votre four à 180°C.",
         "Poser votre moule sur une plaque aluminium perforée.",
         "Dans le bol micro-ondes, faire fondre le beurre et réserver.",
@@ -146,6 +127,6 @@
     "mold": {
         "name": "Moule 5 cakes longs OHRA®",
         "picture": "https://boutique.guydemarle.com/11509-nq_social_share/moule-5-cakes-longs-ohra.jpg",
-        "url": "https://anneetsesdelices.fr/admin/recette/crumb-cakes-aux-fruits/#"
+        "url": "https://boutique.guydemarle.com/moules-ohra/4328-moule-5-cakes-longs-ohra.html"
     }
 }
