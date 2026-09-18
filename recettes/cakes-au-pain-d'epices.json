@@ -75,18 +75,7 @@
             "url": "https://boutique.guydemarle.com/epicerie-en-ligne/1372-pain-depices-melange-d-epices-et-d-aromates-bio-50g.html"
         }
     ],
-    "steps": [
-        "Préchauffer votrte four à 170°C.",
-        "Poser votre moule sur une plaque aluminium perforée.",
-        "Dans un cul de poule, mélanger la farine avec les épices et la levure.",
-        "Dans une casserole, mettre le lait à tiédir avec le beurre, le lait et le sucre.",
-        "Verser petit à petit le mélange dans la farine.",
-        "Pétrir en incroporant l'oeuf et ajouter le zeste d'orange.",
-        "Remplir les 5 cakes environ au 3/4.",
-        "Enfourner à 170°C pendant 25 min.",
-        "Laisser refroidir avant de démouler.",
-        "Le pain d'épices est meilleur lorsqu'il est réalisé la veille."
-    ],
+    "steps": "1. Préchauffer votrte four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dans un cul de poule, mélanger la farine avec les épices et la levure.\n4. Dans une casserole, mettre le lait à tiédir avec le beurre, le lait et le sucre.\n5. Verser petit à petit le mélange dans la farine.\n6. Pétrir en incroporant l'oeuf et ajouter le zeste d'orange.\n7. Remplir les 5 cakes environ au 3/4.\n8. Enfourner à 170°C pendant 25 min.\n9. Laisser refroidir avant de démouler.\n10. Le pain d'épices est meilleur lorsqu'il est réalisé la veille.\n",
     "for": "12",
     "preptime": "30",
     "resttime": "0",

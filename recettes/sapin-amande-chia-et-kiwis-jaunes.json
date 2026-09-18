@@ -79,19 +79,7 @@
             "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1009-bol-micro-ondes-1l.html"
         }
     ],
-    "steps": [
-        "Préchauffer votre four à 180°C.",
-        "Poser votre moule sur une plaque aluminium perforée.",
-        "Dans le bol micro-ondes, faire fondre le beurre et réserver.",
-        "Éplucher et couper les kiwis en morceaux et les écraser à l’aide d’une fourchette dans un bol.",
-        "Dans un cul de poule, fouetter les œufs avec le sucre.",
-        "Ajouter la poudre d'amandes, la farine et la levure puis mélanger.",
-        "Ajouter le beurre fondu et mélanger.",
-        "Ajouter la purée de kiwis et les graines de chia puis mélanger à nouveau.",
-        "Verser la préparation dans le moule puis poser la toile de cuisson sur le moule.",
-        "Enfourner à 180°C pendant 45 min et retirer la toile de cuisson au bout de 30 min.",
-        "Laisser refroidir avant de démouler."
-    ],
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dans le bol micro-ondes, faire fondre le beurre et réserver.\n4. Éplucher et couper les kiwis en morceaux et les écraser à l’aide d’une fourchette dans un bol.\n5. Dans un cul de poule, fouetter les œufs avec le sucre.\n6. Ajouter la poudre d'amandes, la farine et la levure puis mélanger.\n7. Ajouter le beurre fondu et mélanger.\n8. Ajouter la purée de kiwis et les graines de chia puis mélanger à nouveau.\n9. Verser la préparation dans le moule puis poser la toile de cuisson sur le moule.\n10. Enfourner à 180°C pendant 45 min et retirer la toile de cuisson au bout de 30 min.\n11. Laisser refroidir avant de démouler.\n",
     "for": "6",
     "preptime": "15",
     "resttime": "0",

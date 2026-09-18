@@ -65,18 +65,7 @@
             "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
         }
     ],
-    "steps": [
-        "Préchauffer votre four à 170 °C.",
-        "Poser votre moule sur une plaque aluminium perforée.",
-        "Mixer les amandes, pour obtenir des petits éclats.",
-        "Faire fondre le beurre et le chocolat dans le bol micro-ondes ou au bain marie.",
-        "Verser le mélange beurre/chocolat dans le pichet verseur.",
-        "Ajouter le sucre et incorporer les œufs un à un en mélangeant entre chaque ajout.",
-        "Ajouter la farine, les amandes et mélanger.",
-        "Verser dans les empreintes aux 2/3 et racler le pichet avec la spatule double embouts pour ne pas perdre de préparation.",
-        "Enfourner à 170°C pendant 11 min .",
-        "Laisser refroidir avant de démouler."
-    ],
+    "steps": "1. Préchauffer votre four à 170 °C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Mixer les amandes, pour obtenir des petits éclats.\n4. Faire fondre le beurre et le chocolat dans le bol micro-ondes ou au bain marie.\n5. Verser le mélange beurre/chocolat dans le pichet verseur.\n6. Ajouter le sucre et incorporer les œufs un à un en mélangeant entre chaque ajout.\n7. Ajouter la farine, les amandes et mélanger.\n8. Verser dans les empreintes aux 2/3 et racler le pichet avec la spatule double embouts pour ne pas perdre de préparation.\n9. Enfourner à 170°C pendant 11 min .\n10. Laisser refroidir avant de démouler.\n",
     "for": "12",
     "preptime": "10",
     "resttime": "0",

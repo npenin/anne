@@ -85,23 +85,7 @@
             "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
         }
     ],
-    "steps": [
-        "Préchauffer votre four à 180°C.",
-        "Poser votre moule sur une plaque aluminium perforée.",
-        "Dans le bol micro-ondes, faire fondre le beurre.",
-        "Dans un cul de poule, mélanger le beurre et le sucre.",
-        "Incorporer les œufs un à un en mélangeant bien entre chaque ajout.",
-        "Ajouter la farine et la poudre d'amandes puis mélanger.",
-        "Ajouter la pâte de pistache et l’arôme de pistache ou d'amande puis mélanger.",
-        "Verser la préparation dans les empreintes.",
-        "Enfourner à 180°C pendant 10 min, le centre doit rester fondant.",
-        "Laisser refroidir avant de démouler.\n\n\nPour la décoration, plusieurs idées possibles :\n\n",
-        "Un coulis de fruits comme un coulis de fraises, de framboises ou de fruits de la passion.",
-        "Une crème fouettée légèrement sucrée.",
-        "Des éclats de pistaches.",
-        "Des fruits frais, fraises, framboises,...",
-        "Une coque en chocolat...."
-    ],
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dans le bol micro-ondes, faire fondre le beurre.\n4. Dans un cul de poule, mélanger le beurre et le sucre.\n5. Incorporer les œufs un à un en mélangeant bien entre chaque ajout.\n6. Ajouter la farine et la poudre d'amandes puis mélanger.\n7. Ajouter la pâte de pistache et l’arôme de pistache ou d'amande puis mélanger.\n8. Verser la préparation dans les empreintes.\n9. Enfourner à 180°C pendant 10 min, le centre doit rester fondant.\n10. Laisser refroidir avant de démouler.\n\n\n### Pour la décoration, plusieurs idées possibles :\n11. Un coulis de fruits comme un coulis de fraises, de framboises ou de fruits de la passion.\n12. Une crème fouettée légèrement sucrée.\n13. Des éclats de pistaches.\n14. Des fruits frais, fraises, framboises,...\n15. Une coque en chocolat....\n",
     "for": "12",
     "preptime": "15",
     "resttime": "0",

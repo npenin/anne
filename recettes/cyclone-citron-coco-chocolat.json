@@ -100,18 +100,7 @@
             "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/683-petit-cul-de-poule-2l-20-cm-guy-demarle.html"
         }
     ],
-    "steps": [
-        "Préchauffer votre four à 180 °C.",
-        "Poser votre moule sur une plaque aluminium perforée.",
-        "Dans un grand cul de poule, tamiser la farine et le levure chimique. Ajouter la noix de coco râpée, le sucre, la pincée de sel et bien mélanger.",
-        "Dans un petit cul de poule, battre les œufs avec le lait concentré. Ajouter le beurre fondu, les zestes de citrons, le jus de citron, l'arôme de vanille et mélanger bien.",
-        "Verser doucement les ingrédients liquides dans les ingrédients secs et mélanger délicatement jusqu'à obtenir une pâte homogène.",
-        "Incorporer délicatement les pépites de chocolat blanc à la pâte sans trop mélanger.",
-        "Verser la pâte dans le moule et égaliser la surface en tapotant légèrement la plaque aluminium sur le plan de travail.",
-        "Poser votre toile de cuisson ronde sur le moule.",
-        "Enfourner à 180°C pendant 30-35 min (suivant votre four).",
-        "Laisser refroidir avant de démouler."
-    ],
+    "steps": "1. Préchauffer votre four à 180 °C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dans un grand cul de poule, tamiser la farine et le levure chimique. Ajouter la noix de coco râpée, le sucre, la pincée de sel et bien mélanger.\n4. Dans un petit cul de poule, battre les œufs avec le lait concentré. Ajouter le beurre fondu, les zestes de citrons, le jus de citron, l'arôme de vanille et mélanger bien.\n5. Verser doucement les ingrédients liquides dans les ingrédients secs et mélanger délicatement jusqu'à obtenir une pâte homogène.\n6. Incorporer délicatement les pépites de chocolat blanc à la pâte sans trop mélanger.\n7. Verser la pâte dans le moule et égaliser la surface en tapotant légèrement la plaque aluminium sur le plan de travail.\n8. Poser votre toile de cuisson ronde sur le moule.\n9. Enfourner à 180°C pendant 30-35 min (suivant votre four).\n10. Laisser refroidir avant de démouler.\n",
     "for": "8",
     "preptime": "15",
     "resttime": "0",

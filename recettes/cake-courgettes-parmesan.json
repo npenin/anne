@@ -100,19 +100,7 @@
             "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/3030-mandoline-professionnelle-de-cuisine-guy-demarle.html"
         }
     ],
-    "steps": [
-        "Poser votre moule sur une plaque aluminium perforée.",
-        "Laver et râper les courgettes en julienne avec la mandoline.",
-        "Dans une poêle, faire fondre le beurre et y faire revenir les courgettes.",
-        "Préchauffer votre four à 180°C.",
-        "Dans un cul de poule, fouetter les œufs et incorporer les huiles et le lait puis mélanger.",
-        "Saler et poivrer.",
-        "Ajouter la farine, la levure et mélanger.",
-        "Ajouter le parmesan, le gruyère, le thym et les courgettes puis mélanger.",
-        "Verser la préparation dans le moule.",
-        "Enfourner à 180°C pendant 45-50 min (suivant votre four).",
-        "Laisser refroidir avant de démouler."
-    ],
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée.\n2. Laver et râper les courgettes en julienne avec la mandoline.\n3. Dans une poêle, faire fondre le beurre et y faire revenir les courgettes.\n4. Préchauffer votre four à 180°C.\n5. Dans un cul de poule, fouetter les œufs et incorporer les huiles et le lait puis mélanger.\n6. Saler et poivrer.\n7. Ajouter la farine, la levure et mélanger.\n8. Ajouter le parmesan, le gruyère, le thym et les courgettes puis mélanger.\n9. Verser la préparation dans le moule.\n10. Enfourner à 180°C pendant 45-50 min (suivant votre four).\n11. Laisser refroidir avant de démouler.\n",
     "for": "8",
     "preptime": "20",
     "resttime": "0",

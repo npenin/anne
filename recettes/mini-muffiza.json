@@ -89,18 +89,7 @@
             "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
         }
     ],
-    "steps": [
-        "Poser votre moule sur une plaque aluminium perforée.",
-        "Préchauffer votre four à 190°C.",
-        "Dans un cul de poule, mélanger la farine, la levure, la semoule et le sel.",
-        "Dans un autre cul de poule, mélanger à l’aide de la cuillère magique, le lait, l’huile d’olive et l’œuf.",
-        "Verser le mélange liquide dans le cul de poule des ingrédients secs et mélanger jusqu'à obtenir une pâte lisse.",
-        "Ajouter le fromage râpé et mélanger.",
-        "Répartir la préparation dans les empreintes mini-muffins.",
-        "Incorporer les garnitures dans chaque empreinte et les enfoncer un peu.",
-        "Ajouter une petite cuillère de sauce tomate sur chaque mini-muffins et déposer un peu de fromages râpés dessus.",
-        "Enfourner 15-20 min à 190°C."
-    ],
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée.\n2. Préchauffer votre four à 190°C.\n3. Dans un cul de poule, mélanger la farine, la levure, la semoule et le sel.\n4. Dans un autre cul de poule, mélanger à l’aide de la cuillère magique, le lait, l’huile d’olive et l’œuf.\n5. Verser le mélange liquide dans le cul de poule des ingrédients secs et mélanger jusqu'à obtenir une pâte lisse.\n6. Ajouter le fromage râpé et mélanger.\n7. Répartir la préparation dans les empreintes mini-muffins.\n8. Incorporer les garnitures dans chaque empreinte et les enfoncer un peu.\n9. Ajouter une petite cuillère de sauce tomate sur chaque mini-muffins et déposer un peu de fromages râpés dessus.\n10. Enfourner 15-20 min à 190°C.\n",
     "for": "4-5",
     "preptime": "15",
     "resttime": "0",

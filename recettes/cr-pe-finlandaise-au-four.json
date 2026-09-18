@@ -89,18 +89,7 @@
             "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1009-bol-micro-ondes-1l.html"
         }
     ],
-    "steps": [
-        "Poser votre moule sur une plaque aluminium perforée.\n",
-        "Dans le bol micro-ondes, faire fondre le beurre et réserver.",
-        "Dans un cul de poule, fouetter les œufs avec les sucres jusqu'à ce que le mélange blanchisse.",
-        "Ajouter le beurre fondu et l’arôme de vanille et mélanger.",
-        "Ajouter, tout en remuant, la farine, le sel et la levure.",
-        "Préchauffer votre four à 210°C et laisser reposer la pâte pendant ce temps.",
-        "Une fois le four chaud, verser la préparation dans les empreintes.",
-        "Enfourner à 210°C pendant 30 min.",
-        "A la sortie du four, démouler.",
-        "Ajouter vos toppings (car la recette est peu sucrée) : sucre, pâte à tartiner, confiture, sirop d'érable, ..."
-    ],
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée.\n\n2. Dans le bol micro-ondes, faire fondre le beurre et réserver.\n3. Dans un cul de poule, fouetter les œufs avec les sucres jusqu'à ce que le mélange blanchisse.\n4. Ajouter le beurre fondu et l’arôme de vanille et mélanger.\n5. Ajouter, tout en remuant, la farine, le sel et la levure.\n6. Préchauffer votre four à 210°C et laisser reposer la pâte pendant ce temps.\n7. Une fois le four chaud, verser la préparation dans les empreintes.\n8. Enfourner à 210°C pendant 30 min.\n9. A la sortie du four, démouler.\n10. Ajouter vos toppings (car la recette est peu sucrée) : sucre, pâte à tartiner, confiture, sirop d'érable, ...\n",
     "for": "12",
     "preptime": "15",
     "resttime": "0",

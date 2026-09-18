@@ -85,19 +85,7 @@
             "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
         }
     ],
-    "steps": [
-        "Préchauffer votre four à 180°C.",
-        "Poser votre moule sur une plaque aluminium perforée.",
-        "Dénoyauter les abricots et les couper en petits morceaux.",
-        "Dans un cul de poule, fouetter les œufs avec le sucre jusqu'à ce que le mélange blanchisse.",
-        "Faire fondre le beurre dans le bol micro-ondes.",
-        "Ajouter le beurre fondu à la préparation puis mélanger jusqu'à obtenir une pâte homogène",
-        "Incorporer la farine, la levure, la poudre d'amandes et l’extrait d'amande amère puis mélanger.",
-        "Mettre les petits morceaux d’abricots dans la préparation puis mélanger délicatement.",
-        "Verser la préparation dans les empreintes puis parsemer d'amandes effilées.",
-        "Enfourner à 180°C pendant 25 min.",
-        "Laisser refroidir avant de démouler."
-    ],
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dénoyauter les abricots et les couper en petits morceaux.\n4. Dans un cul de poule, fouetter les œufs avec le sucre jusqu'à ce que le mélange blanchisse.\n5. Faire fondre le beurre dans le bol micro-ondes.\n6. Ajouter le beurre fondu à la préparation puis mélanger jusqu'à obtenir une pâte homogène\n7. Incorporer la farine, la levure, la poudre d'amandes et l’extrait d'amande amère puis mélanger.\n8. Mettre les petits morceaux d’abricots dans la préparation puis mélanger délicatement.\n9. Verser la préparation dans les empreintes puis parsemer d'amandes effilées.\n10. Enfourner à 180°C pendant 25 min.\n11. Laisser refroidir avant de démouler.\n",
     "for": "15",
     "preptime": "15",
     "resttime": "0",

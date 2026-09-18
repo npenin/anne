@@ -106,18 +106,7 @@
             "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
         }
     ],
-    "steps": [
-        "Préchauffer votre four à 180°C.\n",
-        "Poser votre moule sur une plaque aluminium perforée.",
-        "Dans un cul de poule, fouetter les œufs, la farine, la levure, le sel et le poivre.",
-        "Incorporer l'huile, le lait et mélanger.",
-        "Ajouter le gruyère et mélanger.",
-        "Diviser la préparation dans 5 bols.",
-        "Répartir chaque garniture dans les 5 bols et mélanger.",
-        "Verser dans les empreintes.",
-        "Enfourner à 180°C pendant 25-30 min (suivant votre four).",
-        "Laisser refroidir avant de démouler."
-    ],
+    "steps": "1. Préchauffer votre four à 180°C.\n\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dans un cul de poule, fouetter les œufs, la farine, la levure, le sel et le poivre.\n4. Incorporer l'huile, le lait et mélanger.\n5. Ajouter le gruyère et mélanger.\n6. Diviser la préparation dans 5 bols.\n7. Répartir chaque garniture dans les 5 bols et mélanger.\n8. Verser dans les empreintes.\n9. Enfourner à 180°C pendant 25-30 min (suivant votre four).\n10. Laisser refroidir avant de démouler.\n",
     "for": "12",
     "preptime": "30",
     "resttime": "0",

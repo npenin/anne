@@ -79,18 +79,7 @@
             "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
         }
     ],
-    "steps": [
-        "Poser votre moule sur une plaque aluminium perforée.",
-        "Presser le citron et mettre le jus dans un cul de poule.",
-        "Ajouter les œufs, les sucres et fouetter jusqu'à ce que les sucres soient dissous.",
-        "Ajouter la farine et la levure puis mélanger.",
-        "Ajouter le beurre et mélanger.",
-        "Mettre l’appareil dans les empreintes.",
-        "Placer votre moule au réfrigérateur pendant 30 min.",
-        "Préchauffer votre four à 220°C, attendre qu'il soit bien chaud pour mettre le moule dedans. En effet, c'est le choc thermique froid/chaud qui provoquera la belle bosse du gâteau.",
-        "Enfourner à 220°C pendant 12 min.",
-        "Laisser refroidir avant de démouler."
-    ],
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée.\n2. Presser le citron et mettre le jus dans un cul de poule.\n3. Ajouter les œufs, les sucres et fouetter jusqu'à ce que les sucres soient dissous.\n4. Ajouter la farine et la levure puis mélanger.\n5. Ajouter le beurre et mélanger.\n6. Mettre l’appareil dans les empreintes.\n7. Placer votre moule au réfrigérateur pendant 30 min.\n8. Préchauffer votre four à 220°C, attendre qu'il soit bien chaud pour mettre le moule dedans. En effet, c'est le choc thermique froid/chaud qui provoquera la belle bosse du gâteau.\n9. Enfourner à 220°C pendant 12 min.\n10. Laisser refroidir avant de démouler.\n",
     "for": "10",
     "preptime": "15",
     "resttime": "0",

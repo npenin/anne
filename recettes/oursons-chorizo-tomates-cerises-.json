@@ -95,16 +95,7 @@
             "url": "https://boutique.guydemarle.com/toiles-et-tapis-de-cuisson/4508-toile-de-cuisson-en-silicone-40-x-30-cm.html"
         }
     ],
-    "steps": [
-        "Préchauffer votre four à 160 °C.",
-        "Poser votre moule sur une plaque aluminium perforée.",
-        "Dans un cul de poule, battre les œufs avec le lait et l’huile d’olive jusqu'à obtenir un mélange homogène.",
-        "Dans un autre cul de poule, tamiser la farine avec la levure chimique.  Ajouter progressivement ce mélange au mélange liquide, bien mélanger.",
-        "Incorporer les dés de chorizo, les tomates cerises et  le fromage râpé. Assaisonner avec les herbes, le sel, le poivre et mélanger.",
-        "Verser la pâte dans les empreintes, poser une toile de cuisson sur le moule.",
-        "Enfourner à 160 °C pendant 15-20 min (suivant votre four)",
-        "A déguster chaud ou froid."
-    ],
+    "steps": "1. Préchauffer votre four à 160 °C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dans un cul de poule, battre les œufs avec le lait et l’huile d’olive jusqu'à obtenir un mélange homogène.\n4. Dans un autre cul de poule, tamiser la farine avec la levure chimique.  Ajouter progressivement ce mélange au mélange liquide, bien mélanger.\n5. Incorporer les dés de chorizo, les tomates cerises et  le fromage râpé. Assaisonner avec les herbes, le sel, le poivre et mélanger.\n6. Verser la pâte dans les empreintes, poser une toile de cuisson sur le moule.\n7. Enfourner à 160 °C pendant 15-20 min (suivant votre four)\n8. A déguster chaud ou froid.\n",
     "for": "6",
     "preptime": "15",
     "resttime": "0",

@@ -100,19 +100,7 @@
             "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
         }
     ],
-    "steps": [
-        "Préchauffer votre four à 180°C.",
-        "Poser votre moule sur une plaque aluminium perforée.",
-        "Éplucher les pommes, les couper à l'aide du coupe-pommes puis faire des petits morceaux.",
-        "Dans le bol micro-ondes, faire fondre le beurre et réserver.",
-        "Dans un cul de poule, battre les œufs avec les sucres jusqu'à obtenir un mélange mousseux.",
-        "Ajouter la farine et la levure puis mélanger.",
-        "Incorporer le beurre fondu et mélanger.",
-        "Ajouter la noix de coco et les morceaux de pommes puis mélanger à nouveau.",
-        "Répartir aux 2/3 des empreintes.",
-        "Enfourner à 180°C pendant 15 min.",
-        "Laisser refroidir avant de démouler."
-    ],
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Éplucher les pommes, les couper à l'aide du coupe-pommes puis faire des petits morceaux.\n4. Dans le bol micro-ondes, faire fondre le beurre et réserver.\n5. Dans un cul de poule, battre les œufs avec les sucres jusqu'à obtenir un mélange mousseux.\n6. Ajouter la farine et la levure puis mélanger.\n7. Incorporer le beurre fondu et mélanger.\n8. Ajouter la noix de coco et les morceaux de pommes puis mélanger à nouveau.\n9. Répartir aux 2/3 des empreintes.\n10. Enfourner à 180°C pendant 15 min.\n11. Laisser refroidir avant de démouler.\n",
     "for": "12",
     "preptime": "15",
     "resttime": "0",

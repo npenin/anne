@@ -79,20 +79,7 @@
             "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
         }
     ],
-    "steps": [
-        "Préchauffer votre four à 180°C.",
-        "Poser votre moule sur une plaque aluminium perforée.",
-        "Dans le bol micro-ondes, faire fondre le beurre.",
-        "Dans le Tornado, mixer le chorizo.",
-        "Dans un cul de poule, mélanger les œufs avec le lait.",
-        "Ajouter la farine et la levure.",
-        "Incorporer le beurre et le chorizo et mélanger.",
-        "Ajouter le fromage et mélanger à nouveau.",
-        "Répartir dans les empreintes.",
-        "Enfourner à 200°C pendant 15 min.",
-        "Laisser refroidir légèrement avant de démouler.",
-        "Déguster tiède ou froid."
-    ],
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dans le bol micro-ondes, faire fondre le beurre.\n4. Dans le Tornado, mixer le chorizo.\n5. Dans un cul de poule, mélanger les œufs avec le lait.\n6. Ajouter la farine et la levure.\n7. Incorporer le beurre et le chorizo et mélanger.\n8. Ajouter le fromage et mélanger à nouveau.\n9. Répartir dans les empreintes.\n10. Enfourner à 200°C pendant 15 min.\n11. Laisser refroidir légèrement avant de démouler.\n12. Déguster tiède ou froid.\n",
     "for": "24",
     "preptime": "15",
     "resttime": "0",

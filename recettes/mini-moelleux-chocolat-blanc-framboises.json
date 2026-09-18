@@ -69,17 +69,7 @@
             "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
         }
     ],
-    "steps": [
-        "Préchauffer votre four à 180°C.",
-        "Poser votre moule sur une plaque aluminium perforée.",
-        "Faire fondre dans le bol micro-ondes le chocolat et le beurre en surveillant bien et jusqu'à ce que l’ensemble soit complètement fondu, puis remuer pour une texture lisse.",
-        "Dans un cul de poule, fouetter les œufs et le sucre jusqu'à ce que le mélange blanchisse et devienne mousseux.",
-        "Ajouter la préparation beurre-chocolat aux œufs battus puis mélanger.",
-        "Incorporer la farine petit à petit et remuer délicatement pour obtenir une pâte homogène.",
-        "Verser un petit peu de pâte dans chaque empreinte puis mettre une framboise et remettre un petit peu de pâte pour remplir aux trois quarts.",
-        "Enfourner, en chaleur statique, 15-20 min en fonction du moelleux que vous souhaitez.",
-        "Laisser refroidir avant de démouler."
-    ],
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Faire fondre dans le bol micro-ondes le chocolat et le beurre en surveillant bien et jusqu'à ce que l’ensemble soit complètement fondu, puis remuer pour une texture lisse.\n4. Dans un cul de poule, fouetter les œufs et le sucre jusqu'à ce que le mélange blanchisse et devienne mousseux.\n5. Ajouter la préparation beurre-chocolat aux œufs battus puis mélanger.\n6. Incorporer la farine petit à petit et remuer délicatement pour obtenir une pâte homogène.\n7. Verser un petit peu de pâte dans chaque empreinte puis mettre une framboise et remettre un petit peu de pâte pour remplir aux trois quarts.\n8. Enfourner, en chaleur statique, 15-20 min en fonction du moelleux que vous souhaitez.\n9. Laisser refroidir avant de démouler.\n",
     "for": "15",
     "preptime": "10",
     "resttime": "0",

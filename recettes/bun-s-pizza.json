@@ -91,21 +91,7 @@
             "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/996-rouleau-a-patisserie-reglable-en-inox.html"
         }
     ],
-    "steps": [
-        "Poser votre moule sur une plaque aluminium perforée.",
-        "Dans un cul de poule, mélanger la farine et la préparation pour pâtes à pizzas.",
-        "Ajouter l’eau tiède, l’huile d’olive et mélanger la pâte pendant 5 min.",
-        "Laisser lever pendant 30 min en couvrant le cul de poule.",
-        "Reprendre la pâte, la dégazer (en appuyant dessus avec le point) et la diviser en 20 boules.",
-        "Déposer un peu de farine sur les boules et les aplatir à l'aide du rouleau à pâtisserie.",
-        "Déposer au centre de la pâte, le coulis de tomates, les champignons, le fromage râpé et les petits dés de jambon ou chorizo.",
-        "Refermer chaque boule.",
-        "Déposer les boules dans les empreintes avec la partie fermée en dessous.",
-        "Laisser pousser 20 min à couvert.",
-        "Préchauffer votre four à 210 °C.",
-        "Badigeonner d’huile d’olive, déposer du fromage râpé et des épices.",
-        "Enfourner à 200°C pendant 18-20 min selon votre four."
-    ],
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée.\n2. Dans un cul de poule, mélanger la farine et la préparation pour pâtes à pizzas.\n3. Ajouter l’eau tiède, l’huile d’olive et mélanger la pâte pendant 5 min.\n4. Laisser lever pendant 30 min en couvrant le cul de poule.\n5. Reprendre la pâte, la dégazer (en appuyant dessus avec le point) et la diviser en 20 boules.\n6. Déposer un peu de farine sur les boules et les aplatir à l'aide du rouleau à pâtisserie.\n7. Déposer au centre de la pâte, le coulis de tomates, les champignons, le fromage râpé et les petits dés de jambon ou chorizo.\n8. Refermer chaque boule.\n9. Déposer les boules dans les empreintes avec la partie fermée en dessous.\n10. Laisser pousser 20 min à couvert.\n11. Préchauffer votre four à 210 °C.\n12. Badigeonner d’huile d’olive, déposer du fromage râpé et des épices.\n13. Enfourner à 200°C pendant 18-20 min selon votre four.\n",
     "for": "8",
     "preptime": "25",
     "resttime": "50",

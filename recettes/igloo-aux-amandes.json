@@ -75,19 +75,7 @@
             "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1009-bol-micro-ondes-1l.html"
         }
     ],
-    "steps": [
-        "Préchauffer votre four à 180°C.",
-        "Poser votre moule sur une plaque aluminium perforée.",
-        "Dans un cul de poule, mélanger la poudre d'amandes, le sucre, la farine et la levure.",
-        "Dans le bol micro-ondes, faire fondre le beurre et réserver.",
-        "Ajouter à la préparation, les œufs puis mélanger.",
-        "Ajouter l’amande amère et le beurre fondu et mélanger jusqu'à obtenir une pâte homogène.",
-        "Verser dans le moule et tapoter légèrement la plaque avec le moule dessus sur votre plan de travail.",
-        "Mettre une toile de cuisson sur le moule.",
-        "Enfourner à 180°C pendant 45-55 min (suivant votre four).",
-        "Attendre quelques minutes avant de démouler.",
-        "A déguster tiède de préférence."
-    ],
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dans un cul de poule, mélanger la poudre d'amandes, le sucre, la farine et la levure.\n4. Dans le bol micro-ondes, faire fondre le beurre et réserver.\n5. Ajouter à la préparation, les œufs puis mélanger.\n6. Ajouter l’amande amère et le beurre fondu et mélanger jusqu'à obtenir une pâte homogène.\n7. Verser dans le moule et tapoter légèrement la plaque avec le moule dessus sur votre plan de travail.\n8. Mettre une toile de cuisson sur le moule.\n9. Enfourner à 180°C pendant 45-55 min (suivant votre four).\n10. Attendre quelques minutes avant de démouler.\n11. A déguster tiède de préférence.\n",
     "for": "8-12",
     "preptime": "15",
     "resttime": "0",

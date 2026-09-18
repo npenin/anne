@@ -80,17 +80,7 @@
             "url": "https://boutique.guydemarle.com/epicerie-en-ligne/121-extrait-liquide-de-vanille-avec-graines-50.html"
         }
     ],
-    "steps": [
-        "Préchauffer votre four à 180 °C (chaleur tournante).",
-        "Poser votre moule sur une plaque aluminium perforée.",
-        "Dans un cul de poule, fouetter ensemble le yaourt, le sucre et les œufs jusqu'à obtenir un mélange homogène.",
-        "Incorporer la farine et la pincée de sel puis mélanger pour éviter les grumeaux.",
-        "Ajouter progressivement le lait, la crème et la vanille et mélanger jusqu'à ce que la pâte soit bien lisse.",
-        "Verser la préparation dans le moule.",
-        "Enfourner à 180°C pendant 60 à 80 min (suivant votre four).",
-        "Laisser refroidir et placer au réfrigérateur pour au moins 4 h avant de démouler.",
-        "Vous pouvez garnir le creux du gâteau de coulis ou de confiture."
-    ],
+    "steps": "1. Préchauffer votre four à 180 °C (chaleur tournante).\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dans un cul de poule, fouetter ensemble le yaourt, le sucre et les œufs jusqu'à obtenir un mélange homogène.\n4. Incorporer la farine et la pincée de sel puis mélanger pour éviter les grumeaux.\n5. Ajouter progressivement le lait, la crème et la vanille et mélanger jusqu'à ce que la pâte soit bien lisse.\n6. Verser la préparation dans le moule.\n7. Enfourner à 180°C pendant 60 à 80 min (suivant votre four).\n8. Laisser refroidir et placer au réfrigérateur pour au moins 4 h avant de démouler.\n9. Vous pouvez garnir le creux du gâteau de coulis ou de confiture.\n",
     "for": "8",
     "preptime": "15",
     "resttime": "0",

@@ -79,17 +79,7 @@
             "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1795-spatule-double-embout-corail.html"
         }
     ],
-    "steps": [
-        "Préchauffer votre four à 180°C.",
-        "Poser votre toile de cuisson sur une plaque aluminium perforée.",
-        "Dans le bol micro-ondes, faire fondre le beurre et réserver.",
-        "Dans un cul de poule, fouetter les jaunes d’œufs avec le sucre jusqu'à ce que le mélange blanchisse.",
-        "Ajouter le beurre fondu et mélanger.",
-        "Ajouter la poudre d'amandes, la farine, l'amande amère et l’extrait de vanille.",
-        "A l’aide de la spatule, mélanger puis finir de malaxer à la main jusqu'à obtenir une pâte homogène.",
-        "Former des petites boules, les déposer sur la toile cuisson et les aplatir légèrement.",
-        "Enfourner à 180°C pendant 8-10 min selon votre four."
-    ],
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre toile de cuisson sur une plaque aluminium perforée.\n3. Dans le bol micro-ondes, faire fondre le beurre et réserver.\n4. Dans un cul de poule, fouetter les jaunes d’œufs avec le sucre jusqu'à ce que le mélange blanchisse.\n5. Ajouter le beurre fondu et mélanger.\n6. Ajouter la poudre d'amandes, la farine, l'amande amère et l’extrait de vanille.\n7. A l’aide de la spatule, mélanger puis finir de malaxer à la main jusqu'à obtenir une pâte homogène.\n8. Former des petites boules, les déposer sur la toile cuisson et les aplatir légèrement.\n9. Enfourner à 180°C pendant 8-10 min selon votre four.\n",
     "for": "6",
     "preptime": "10",
     "resttime": "0",

@@ -90,18 +90,7 @@
             "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/622-spatule-haute-temperature-25-cm-guy-demarle.html"
         }
     ],
-    "steps": [
-        "Préchauffer votre four à 180°C.",
-        "Poser votre moule sur une plaque aluminium perforée.",
-        "Dans un cul de poule, mélanger la poudre d'amandes, la Maïzena, les sucres et la levure.",
-        "Ajouter les œufs, l’huile, le lait, la crème puis mélanger.",
-        "Couper les fraises en morceaux.",
-        "Ajouter les fraises à la préparation et mélanger délicatement avec une spatule.",
-        "Répartir dans les empreintes.",
-        "Parsemer les empreintes d’éclats de pistaches.",
-        "Enfourner à 180°C pendant 20-25 min selon votre four.",
-        "Laisser refroidir avant de démouler."
-    ],
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dans un cul de poule, mélanger la poudre d'amandes, la Maïzena, les sucres et la levure.\n4. Ajouter les œufs, l’huile, le lait, la crème puis mélanger.\n5. Couper les fraises en morceaux.\n6. Ajouter les fraises à la préparation et mélanger délicatement avec une spatule.\n7. Répartir dans les empreintes.\n8. Parsemer les empreintes d’éclats de pistaches.\n9. Enfourner à 180°C pendant 20-25 min selon votre four.\n10. Laisser refroidir avant de démouler.\n",
     "for": "8",
     "preptime": "10",
     "resttime": "0",

@@ -85,20 +85,7 @@
             "url": "https://boutique.guydemarle.com/epicerie-en-ligne/3510-mix-d-epices-special-pizza-pasta.html"
         }
     ],
-    "steps": [
-        "Préchauffer votre four à 180°C.",
-        "Poser votre moule sur une plaque aluminium perforée.",
-        "Dans le pichet verseur, à l’aide de la cuillère magique, battre les œufs, le lait, le sel et le poivre.",
-        "Déposer du fromage râpé dans le fond du moule, verser un peu de préparation du pichet verseur sans tout recouvrir.",
-        "Poser 5 tranches de pain de mie.",
-        "Déposer le jambon, chorizo ou blanc de poulet selon vos goûts.",
-        "Déposer les toastinettes sur la garniture, en les superposant un peu.",
-        "Mettre un peu de fromage râpé.",
-        "Recouvrir de 5 tranches de pain de mie.",
-        "Verser le reste de la préparation, ajouter le reste de fromage râpé et les épices.",
-        "Enfourner à 180 °C pendant 25 à 30 min suivant votre four.",
-        "Démouler et servir chaud."
-    ],
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dans le pichet verseur, à l’aide de la cuillère magique, battre les œufs, le lait, le sel et le poivre.\n4. Déposer du fromage râpé dans le fond du moule, verser un peu de préparation du pichet verseur sans tout recouvrir.\n5. Poser 5 tranches de pain de mie.\n6. Déposer le jambon, chorizo ou blanc de poulet selon vos goûts.\n7. Déposer les toastinettes sur la garniture, en les superposant un peu.\n8. Mettre un peu de fromage râpé.\n9. Recouvrir de 5 tranches de pain de mie.\n10. Verser le reste de la préparation, ajouter le reste de fromage râpé et les épices.\n11. Enfourner à 180 °C pendant 25 à 30 min suivant votre four.\n12. Démouler et servir chaud.\n",
     "for": "5",
     "preptime": "15",
     "resttime": "0",

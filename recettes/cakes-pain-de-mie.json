@@ -75,19 +75,7 @@
             "url": "https://boutique.guydemarle.com/toiles-et-tapis-de-cuisson/4508-toile-de-cuisson-en-silicone-40-x-30-cm.html"
         }
     ],
-    "steps": [
-        "Poser votre moule sur une plaque aluminium perforée.",
-        "Dans un cul de poule, mélanger la farine, le sucre et la levure.",
-        "Dans une casserole, faire tiédir le lait avec le beurre et rajouter au mélange farine/sucre.",
-        "Pétrir la pâte pendant 5 min.",
-        "Laisser fermenter pendant 40 min.",
-        "Diviser la pâte en 5 morceaux et rouler la pâte pour former des boudins de la taille des empreintes.",
-        "Placer la pâte, avec la partie lisse sur le dessus, dans chaque empreinte.",
-        "Badigeonner de lait et couvrir d'une toile de cuisson et laisser fermenter jusquà ce que la pâte arrive sur les bords des empreintes.",
-        "Préchauffer le four à 200°C.",
-        "Enfourner à 200°C pendant 5 min, puis à 180°C pendant 15 min.",
-        "Laisser refroidir avant de démouler."
-    ],
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée.\n2. Dans un cul de poule, mélanger la farine, le sucre et la levure.\n3. Dans une casserole, faire tiédir le lait avec le beurre et rajouter au mélange farine/sucre.\n4. Pétrir la pâte pendant 5 min.\n5. Laisser fermenter pendant 40 min.\n6. Diviser la pâte en 5 morceaux et rouler la pâte pour former des boudins de la taille des empreintes.\n7. Placer la pâte, avec la partie lisse sur le dessus, dans chaque empreinte.\n8. Badigeonner de lait et couvrir d'une toile de cuisson et laisser fermenter jusquà ce que la pâte arrive sur les bords des empreintes.\n9. Préchauffer le four à 200°C.\n10. Enfourner à 200°C pendant 5 min, puis à 180°C pendant 15 min.\n11. Laisser refroidir avant de démouler.\n",
     "for": "12",
     "preptime": "15",
     "resttime": "40+60",

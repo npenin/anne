@@ -70,20 +70,7 @@
             "url": "https://boutique.guydemarle.com/toiles-et-tapis-de-cuisson/4508-toile-de-cuisson-en-silicone-40-x-30-cm.html"
         }
     ],
-    "steps": [
-        "Préchauffer votre four à 180°C.",
-        "Poser votre moule sur une plaque aluminium perforée.",
-        "Dans le bol micro-ondes, faire fondre le beurre et réserver.",
-        "Séparer les blancs des jaunes d’œufs.",
-        "Battre les jaunes d’œufs avec les sucres jusqu'à ce que le mélange blanchisse et devienne mousseux. Ajouter l’arôme de vanille.",
-        "Incorporer la farine et la levure puis le beurre fondu. Bien mélanger pour obtenir une pâte homogène.",
-        "Battre les blancs d'œufs en neige ferme.",
-        "Incorporer délicatement les blancs en neige à la pâte en veillant à ne pas les casser.",
-        "Répartir la pâte dans les empreintes et déposer une toile de cuisson sur le moule.",
-        "Enfourner à 180°C pendant 12-15 min suivant votre four.",
-        "Laisser refroidir avant de démouler.",
-        "Garniture pour le creux : confiture, pâte à tartiner, crème de citron, ..."
-    ],
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dans le bol micro-ondes, faire fondre le beurre et réserver.\n4. Séparer les blancs des jaunes d’œufs.\n5. Battre les jaunes d’œufs avec les sucres jusqu'à ce que le mélange blanchisse et devienne mousseux. Ajouter l’arôme de vanille.\n6. Incorporer la farine et la levure puis le beurre fondu. Bien mélanger pour obtenir une pâte homogène.\n7. Battre les blancs d'œufs en neige ferme.\n8. Incorporer délicatement les blancs en neige à la pâte en veillant à ne pas les casser.\n9. Répartir la pâte dans les empreintes et déposer une toile de cuisson sur le moule.\n10. Enfourner à 180°C pendant 12-15 min suivant votre four.\n11. Laisser refroidir avant de démouler.\n12. Garniture pour le creux : confiture, pâte à tartiner, crème de citron, ...\n",
     "for": "12",
     "preptime": "15",
     "resttime": "0",

@@ -85,16 +85,7 @@
             "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
         }
     ],
-    "steps": [
-        "Poser votre toile de cuisson sur une plaque aluminium perforée.",
-        "Préchauffer votre four à 180°C.",
-        "Dans un cul de poule, mélanger tous les ingrédients.",
-        "Sur la toile roul'pat, étaler la pâte sur une épaisseur de 5mm.",
-        "A l'aide d'un emporte-pièce, découper les crackers.",
-        "Disposer les crackers sur la toile de cuisson. Vous ferez plusieurs plaques.",
-        "Enfourner à 180°C pendant 13-15 min (suivant votre four), jusqu'à ce que les crackers soient légèrement dorés.",
-        ""
-    ],
+    "steps": "1. Poser votre toile de cuisson sur une plaque aluminium perforée.\n2. Préchauffer votre four à 180°C.\n3. Dans un cul de poule, mélanger tous les ingrédients.\n4. Sur la toile roul'pat, étaler la pâte sur une épaisseur de 5mm.\n5. A l'aide d'un emporte-pièce, découper les crackers.\n6. Disposer les crackers sur la toile de cuisson. Vous ferez plusieurs plaques.\n7. Enfourner à 180°C pendant 13-15 min (suivant votre four), jusqu'à ce que les crackers soient légèrement dorés.\n8. \n",
     "for": "6",
     "preptime": "10",
     "resttime": "0",

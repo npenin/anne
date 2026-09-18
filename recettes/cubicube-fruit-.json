@@ -89,20 +89,7 @@
             "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
         }
     ],
-    "steps": [
-        "Préchauffer votre four à 180°C.",
-        "Poser votre moule sur une plaque aluminium perforée.",
-        "Dans le pichet verseur, mélanger à l'aide de la cuillère magique le beurre et le sucre jusqu'à obtenir une consistance crémeuse.",
-        "Ajouter les œufs un par un, en mélangeant après chaque ajout.",
-        "Ajouter le jus et le zeste et mélanger.",
-        "Dans un cul de poule, mélanger la levure, farine et le sel.",
-        "Incorporer petit à petit le mélange liquide au mélange sec en mélangeant pour obtenir une pâte homogène.",
-        "Mélanger délicatement les fruits à la pâte.",
-        "Verser la pâte dans le moule puis lisser avec la spatule coudée.",
-        "Enfourner à 180°C pendant 40-45 min (suivant votre four).",
-        "Laisser refroidir avant de démouler.",
-        "Peut être accompagné d’une crème ou glace (vanille, pistache,...)."
-    ],
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dans le pichet verseur, mélanger à l'aide de la cuillère magique le beurre et le sucre jusqu'à obtenir une consistance crémeuse.\n4. Ajouter les œufs un par un, en mélangeant après chaque ajout.\n5. Ajouter le jus et le zeste et mélanger.\n6. Dans un cul de poule, mélanger la levure, farine et le sel.\n7. Incorporer petit à petit le mélange liquide au mélange sec en mélangeant pour obtenir une pâte homogène.\n8. Mélanger délicatement les fruits à la pâte.\n9. Verser la pâte dans le moule puis lisser avec la spatule coudée.\n10. Enfourner à 180°C pendant 40-45 min (suivant votre four).\n11. Laisser refroidir avant de démouler.\n12. Peut être accompagné d’une crème ou glace (vanille, pistache,...).\n",
     "for": "10-20",
     "preptime": "10",
     "resttime": "0",

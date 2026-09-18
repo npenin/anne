@@ -70,17 +70,7 @@
             "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
         }
     ],
-    "steps": [
-        "Préchauffer votre four à 180°C.",
-        "Poser votre moule sur la plaque perforée.",
-        "Dans un cul de poule, mélanger la farine avec la levure.",
-        "Ajouter les œufs et mélanger.",
-        "Verser le lait petit à petit tout en continuant à remuer.",
-        "Enlever la peau du Chorizo, le couper et le mixer grossièrement avec le Tornado.",
-        "Ajouter à la préparation, le Chorizo, le Comté, le sel et le poivre puis mélanger.",
-        "Verser 3 mini-louches de préparation par empreinte.",
-        "Enfourner à 180°C pendant 30 min."
-    ],
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur la plaque perforée.\n3. Dans un cul de poule, mélanger la farine avec la levure.\n4. Ajouter les œufs et mélanger.\n5. Verser le lait petit à petit tout en continuant à remuer.\n6. Enlever la peau du Chorizo, le couper et le mixer grossièrement avec le Tornado.\n7. Ajouter à la préparation, le Chorizo, le Comté, le sel et le poivre puis mélanger.\n8. Verser 3 mini-louches de préparation par empreinte.\n9. Enfourner à 180°C pendant 30 min.\n",
     "for": "2-3",
     "preptime": "10",
     "resttime": "0",

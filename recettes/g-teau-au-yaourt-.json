@@ -85,17 +85,7 @@
             "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
         }
     ],
-    "steps": [
-        "Préchauffer votre four à 180°C.",
-        "Poser votre moule sur une plaque aluminium perforée.",
-        "Dans un cul de poule, fouetter le yaourt avec les œufs.",
-        "Ajouter les sucres, la vanille en poudre et mélanger.",
-        "Ajouter l’huile, le sel et mélanger.",
-        "Ajouter la farine, la levure chimique et la Maïzena tamisées puis mélanger pour obtenir une pâte lisse et homogène.",
-        "Verser la préparation dans le moule,  tapoter un peu la plaque sur votre plan de travail.",
-        "Enfourner à 180°C pendant 40 - 45 min (suivant votre four).",
-        "Laisser refroidir avant de démouler."
-    ],
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dans un cul de poule, fouetter le yaourt avec les œufs.\n4. Ajouter les sucres, la vanille en poudre et mélanger.\n5. Ajouter l’huile, le sel et mélanger.\n6. Ajouter la farine, la levure chimique et la Maïzena tamisées puis mélanger pour obtenir une pâte lisse et homogène.\n7. Verser la préparation dans le moule,  tapoter un peu la plaque sur votre plan de travail.\n8. Enfourner à 180°C pendant 40 - 45 min (suivant votre four).\n9. Laisser refroidir avant de démouler.\n",
     "for": "6-8",
     "preptime": "10",
     "resttime": "0",

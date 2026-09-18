@@ -105,22 +105,7 @@
             "url": "https://boutique.guydemarle.com/toiles-et-tapis-de-cuisson/4508-toile-de-cuisson-en-silicone-40-x-30-cm.html"
         }
     ],
-    "steps": [
-        "Préchauffer votre four à 180°C.",
-        "Poser votre moule sur une plaque aluminium perforée.",
-        "Laver et équeuter les fraises puis les couper en petits morceaux et réserver.",
-        "Dans le bol micro-ondes, faire fondre le beurre et réserver.",
-        "Dans un cul de poule, battre les œufs et le sucre avec la cuillère magique jusqu'à ce que le mélange blanchisse.",
-        "Ajouter le beurre fondu, le lait, l'extrait de vanille et l'arôme de pistaches puis mélanger.",
-        "Incorporer progressivement la farine, la levure et le sel et mélanger doucement pour obtenir une pâte homogène.",
-        "Ajouter la pâte de pistaches et mélanger.",
-        "Incorporer les morceaux de fraises à la pâte en mélangeant doucement avec une spatule double embouts.",
-        "Répartir la pâte dans les empreintes.",
-        "Tapoter le moule pour enlever les bulles d'air.",
-        "Poser une toile de cuisson sur le moule.",
-        "Enfourner à 180°C pendant 20 min.",
-        "Laisser refroidir avant de démouler."
-    ],
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Laver et équeuter les fraises puis les couper en petits morceaux et réserver.\n4. Dans le bol micro-ondes, faire fondre le beurre et réserver.\n5. Dans un cul de poule, battre les œufs et le sucre avec la cuillère magique jusqu'à ce que le mélange blanchisse.\n6. Ajouter le beurre fondu, le lait, l'extrait de vanille et l'arôme de pistaches puis mélanger.\n7. Incorporer progressivement la farine, la levure et le sel et mélanger doucement pour obtenir une pâte homogène.\n8. Ajouter la pâte de pistaches et mélanger.\n9. Incorporer les morceaux de fraises à la pâte en mélangeant doucement avec une spatule double embouts.\n10. Répartir la pâte dans les empreintes.\n11. Tapoter le moule pour enlever les bulles d'air.\n12. Poser une toile de cuisson sur le moule.\n13. Enfourner à 180°C pendant 20 min.\n14. Laisser refroidir avant de démouler.\n",
     "for": "12",
     "preptime": "15",
     "resttime": "0",

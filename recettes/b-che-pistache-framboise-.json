@@ -30,7 +30,7 @@
         {
             "quantity": "1",
             "unit": "pointe",
-            "name": "Colorant vert                                                                                              "
+            "name": "Colorant vert "
         },
         {
             "quantity": "Génoise aux amandes :",
@@ -60,7 +60,7 @@
         {
             "quantity": "90",
             "unit": "g",
-            "name": "Sucre                                                                                                                  "
+            "name": "Sucre"
         },
         {
             "quantity": "Mousse pistache :",
@@ -175,32 +175,7 @@
             "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1793-spatule-double-embout-gris-anthracite.html"
         }
     ],
-    "steps": [
-        "Poser votre tapis à génoise sur une plaque aluminium perforée.\n\nPâte à cigarette :",
-        "Dans un petit cul de poule, mélanger au fouet le beurre et le sucre glace.",
-        "Ajouter le blanc d’œuf, la farine et le colorant.",
-        "Étaler la pâte à cigarette sur un tapis décor puis le placer dans un coin du tapis à génoise (relief vers l'extérieur).\n\nGénoise aux amandes :",
-        "Préchauffer votre à 180°C.",
-        "Dans un cul de poule, mélanger la poudre d’amandes et la farine tamisées.",
-        "Dans le bol micro-ondes, faire fondre le beurre et réserver.",
-        "Séparer les jaunes des blancs d'œufs.",
-        "Monter les blancs en neige avec le sucre.",
-        "Incorporer les jaunes puis le mélange farine/amande.",
-        "Ajouter le beurre fondu et mélanger avec la spatule double embouts.",
-        "Répartir la pâte sur le tapis à génoise et égaliser à l'aide de la petite spatule coudée.",
-        "Enfourner à 180°C pendant 12 min.\n\nMousse pistache :",
-        "Réhydrater les feuilles de gélatine dans de l’eau froide.",
-        "Dans un cul de poule, mélanger les jaunes d’œufs avec la moitié du sucre et la Maïzena.",
-        "Dans une casserole, faire chauffer le lait avec le reste du sucre. Verser sur le mélange œufs/Maïzena et remettre le tout dans la casserole jusqu'à épaississement.",
-        "Incorporer le chocolat blanc, la pâte de pistache, la gélatine bien essorée et laisser refroidir.",
-        "Monter la crème en chantilly et mélanger les 2 préparations.\n\nMontage:",
-        "Démouler la génoise et couper autour du tapis décor. Poser votre tapis décor dans le moule bûche (dessin non visible).",
-        "Garnir d’une couche de crème, déposer au milieu les framboises puis une bande de génoise. Remettre de la mousse et finir avec la dernière bande de génoise.",
-        "Filmer au contact.",
-        "Mettre au congélateur pour au moins 5h.\n\nDémoulage :",
-        "Démouler votre bûche.",
-        "Laisser décongeler au réfrigérateur au moins 6h."
-    ],
+    "steps": "### Pâte à cigarette :\n\n1. Poser votre tapis à génoise sur une plaque aluminium perforée.\n2. Dans un petit cul de poule, mélanger au fouet le beurre et le sucre glace.\n3. Ajouter le blanc d’œuf, la farine et le colorant.\n4. Étaler la pâte à cigarette sur un tapis décor puis le placer dans un coin du tapis à génoise (relief vers l'extérieur).\n\n### Génoise aux amandes :\n5. Préchauffer votre à 180°C.\n6. Dans un cul de poule, mélanger la poudre d’amandes et la farine tamisées.\n7. Dans le bol micro-ondes, faire fondre le beurre et réserver.\n8. Séparer les jaunes des blancs d'œufs.\n9. Monter les blancs en neige avec le sucre.\n10. Incorporer les jaunes puis le mélange farine/amande.\n11. Ajouter le beurre fondu et mélanger avec la spatule double embouts.\n12. Répartir la pâte sur le tapis à génoise et égaliser à l'aide de la petite spatule coudée.\n13. Enfourner à 180°C pendant 12 min.\n\n### Mousse pistache :\n14. Réhydrater les feuilles de gélatine dans de l’eau froide.\n15. Dans un cul de poule, mélanger les jaunes d’œufs avec la moitié du sucre et la Maïzena.\n16. Dans une casserole, faire chauffer le lait avec le reste du sucre. Verser sur le mélange œufs/Maïzena et remettre le tout dans la casserole jusqu'à épaississement.\n17. Incorporer le chocolat blanc, la pâte de pistache, la gélatine bien essorée et laisser refroidir.\n18. Monter la crème en chantilly et mélanger les 2 préparations.\n\n### Montage:\n19. Démouler la génoise et couper autour du tapis décor. Poser votre tapis décor dans le moule bûche (dessin non visible).\n20. Garnir d’une couche de crème, déposer au milieu les framboises puis une bande de génoise. Remettre de la mousse et finir avec la dernière bande de génoise.\n21. Filmer au contact.\n22. Mettre au congélateur pour au moins 5h.\n\n### Démoulage :\n23. Démouler votre bûche.\n24. Laisser décongeler au réfrigérateur au moins 6h.\n",
     "for": "10",
     "preptime": "60",
     "resttime": "5h+6h",

@@ -64,7 +64,7 @@
         {
             "quantity": "2",
             "unit": "gouttes",
-            "name": "Extrait d’amandes amères "
+            "name": "Extrait d’amandes amères"
         },
         {
             "quantity": "Garnitures : 500 g de fruits frais ( fraises, framboises, myrtilles,...)",
@@ -129,29 +129,7 @@
             "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
         }
     ],
-    "steps": [
-        "Placer le moule sur une plaque aluminium perforée.\n\n\nSablé breton\n\n",
-        "Dans un cul de poule, mélanger la farine, le sucre et le sel.",
-        "Ajouter le beurre mou et travailler du bout des doigts jusqu'à obtenir une texture sableuse.",
-        "Ajouter les jaunes d’œufs et mélanger jusqu'à obtenir une boule de pâte.",
-        "Envelopper la boule dans du film étirable et placer au réfrigérateur 30 min.",
-        "Poser votre pâte sur la roul'pat et mettre un toile de cuisson sur la pâte puis étaler à l'aide du rouleau à pâtisserie.",
-        "Faire une incision au milieu de la pâte avec le racloir.",
-        "Déposer la pâte dans le moule, enlever l'excédent et le repartir sur la pâte et appuyer bien sur les bords.",
-        "Remettre au frais quelques minutes.",
-        "Préchauffer votre four à 180°C.\n\n\nCrème d'amandes\n\n",
-        "Dans un cul de poule, mélanger le beurre et le sucre avec la spatule double embouts jusqu'à obtenir une préparation crémeuse.",
-        "Ajouter la poudre d'amandes.",
-        "Incorporer les œufs un à un en mélangeant bien entre chaque ajout puis déposer l'extrait d'amandes amères.",
-        "Ajouter la farine et mélanger jusqu'à obtenir une crème homogène.",
-        "A l’aide de la spatule coudée, répartir la crème sur le fond du sablé.",
-        "Enfourner 25-30 min à 180°C.",
-        "Laisser refroidir avant de démouler.\n\n\nGarnitures et décoration \n\n",
-        "Laver les fruits et les couper si besoin.",
-        "Disposer les fruits sur la crème d'amandes.",
-        "Décorer avec du sucre glace, des éclats de pistaches, feuilles de menthe.",
-        "Servir aussitôt."
-    ],
+    "steps": "### Sablé breton\n\n1. Placer le moule sur une plaque aluminium perforée.\n2. Dans un cul de poule, mélanger la farine, le sucre et le sel.\n3. Ajouter le beurre mou et travailler du bout des doigts jusqu'à obtenir une texture sableuse.\n4. Ajouter les jaunes d’œufs et mélanger jusqu'à obtenir une boule de pâte.\n5. Envelopper la boule dans du film étirable et placer au réfrigérateur 30 min.\n6. Poser votre pâte sur la roul'pat et mettre un toile de cuisson sur la pâte puis étaler à l'aide du rouleau à pâtisserie.\n7. Faire une incision au milieu de la pâte avec le racloir.\n8. Déposer la pâte dans le moule, enlever l'excédent et le repartir sur la pâte et appuyer bien sur les bords.\n9. Remettre au frais quelques minutes.\n10. Préchauffer votre four à 180°C.\n\n\n### Crème d'amandes\n11. Dans un cul de poule, mélanger le beurre et le sucre avec la spatule double embouts jusqu'à obtenir une préparation crémeuse.\n12. Ajouter la poudre d'amandes.\n13. Incorporer les œufs un à un en mélangeant bien entre chaque ajout puis déposer l'extrait d'amandes amères.\n14. Ajouter la farine et mélanger jusqu'à obtenir une crème homogène.\n15. A l’aide de la spatule coudée, répartir la crème sur le fond du sablé.\n16. Enfourner 25-30 min à 180°C.\n17. Laisser refroidir avant de démouler.\n\n\n### Garnitures et décoration \n18. Laver les fruits et les couper si besoin.\n19. Disposer les fruits sur la crème d'amandes.\n20. Décorer avec du sucre glace, des éclats de pistaches, feuilles de menthe.\n21. Servir aussitôt.\n",
     "for": "6-8",
     "preptime": "60",
     "resttime": "45",

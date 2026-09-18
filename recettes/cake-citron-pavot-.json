@@ -80,17 +80,7 @@
             "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1009-bol-micro-ondes-1l.html"
         }
     ],
-    "steps": [
-        "Préchauffer votre four à 180° C.",
-        "Poser votre moule sur une plaque aluminium perforée.",
-        "Dans un cul de poule, battre les œufs avec le sucre jusqu'à ce que le mélange blanchisse.",
-        "Dans le bol micro-ondes, faire fondre le beurre.",
-        "Incorporer le beurre fondu, le jus, les zestes et les graines de pavot à la préparation et mélanger.",
-        "Ajouter progressivement la farine, le sel et la levure en mélangeant délicatement pour obtenir une pâte homogène.",
-        "Verser dans le moule et poser une toile de cuisson sur le moule.",
-        "Enfourner à 180°C pendant 45 min en surveillant la cuisson, 10 min avant la fin enlever la toile de cuisson.",
-        "Laisser refroidir un petit peu avant de démouler."
-    ],
+    "steps": "1. Préchauffer votre four à 180° C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dans un cul de poule, battre les œufs avec le sucre jusqu'à ce que le mélange blanchisse.\n4. Dans le bol micro-ondes, faire fondre le beurre.\n5. Incorporer le beurre fondu, le jus, les zestes et les graines de pavot à la préparation et mélanger.\n6. Ajouter progressivement la farine, le sel et la levure en mélangeant délicatement pour obtenir une pâte homogène.\n7. Verser dans le moule et poser une toile de cuisson sur le moule.\n8. Enfourner à 180°C pendant 45 min en surveillant la cuisson, 10 min avant la fin enlever la toile de cuisson.\n9. Laisser refroidir un petit peu avant de démouler.\n",
     "for": "6",
     "preptime": "15",
     "resttime": "0",

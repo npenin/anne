@@ -84,21 +84,7 @@
             "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/2528-mini-louche-cuisine.html"
         }
     ],
-    "steps": [
-        "Préchauffer votre four à 180°C.\n",
-        "Poser votre moule sur une plaque aluminium perforée.",
-        "Dans le bol micro-ondes, faire fondre le beurre et réserver.",
-        "Dans un cul de poule, mélanger la farine, le sucre, le sel et le beurre fondu.",
-        "Ajouter les œufs l’un après l’autre et mélanger.",
-        "Ajouter le lait et le rhum puis mélanger.",
-        "Répartir la préparation dans les empreintes. Attention, les empreintes seront peu remplies.",
-        "Eplucher, évider et couper la pomme en fines tranches ou en petits dés. ",
-        "Déposer les morceaux de pomme dans les empreintes.",
-        "Recette peu sucrée, saupoudrer, si vous le souhaitez, du sucre cassonade sur la préparation.",
-        "Enfourner à 180°C pendant 20-30 min.",
-        "Attendre 5 à 10 min avant de démouler.",
-        "Déguster tiède ou froid."
-    ],
+    "steps": "1. Préchauffer votre four à 180°C.\n\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dans le bol micro-ondes, faire fondre le beurre et réserver.\n4. Dans un cul de poule, mélanger la farine, le sucre, le sel et le beurre fondu.\n5. Ajouter les œufs l’un après l’autre et mélanger.\n6. Ajouter le lait et le rhum puis mélanger.\n7. Répartir la préparation dans les empreintes. Attention, les empreintes seront peu remplies.\n8. Eplucher, évider et couper la pomme en fines tranches ou en petits dés. \n9. Déposer les morceaux de pomme dans les empreintes.\n10. Recette peu sucrée, saupoudrer, si vous le souhaitez, du sucre cassonade sur la préparation.\n11. Enfourner à 180°C pendant 20-30 min.\n12. Attendre 5 à 10 min avant de démouler.\n13. Déguster tiède ou froid.\n",
     "for": "6",
     "preptime": "10",
     "resttime": "0",

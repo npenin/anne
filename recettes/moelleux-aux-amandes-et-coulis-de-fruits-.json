@@ -105,21 +105,7 @@
             "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
         }
     ],
-    "steps": [
-        "Préchauffer votre four à 180°C.",
-        "Poser votre moule sur une plaque aluminium perforée.",
-        "Dans le bol micro-ondes, faire fondre le beurre.",
-        "Dans un cul de poule, mélanger la crème, le sucre, les œufs.",
-        "Ajouter la poudre d'amandes, le beurre, l'amande amère puis mélanger.",
-        "Répartir la préparation dans une poche à douille avec juste l'embout sans douille.",
-        "Répartir la préparation dans les empreintes.",
-        "Enfourner à 180°C pendant 20 min.",
-        "Laisser refroidir avant de démouler.",
-        "Pour le coulis : à l'aide du Tornado, mixer les fruits avec le sucre.",
-        "Passer le coulis au tamis pour enlever les grains.",
-        "Si le coulis est trop épais rajouter de l’eau ou un peu de citron pour obtenir la consistance souhaitée.",
-        "Verser le coulis sur le creux de l'empreinte, vous pouvez aussi y mettre un fruit, du chocolat ou autre."
-    ],
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dans le bol micro-ondes, faire fondre le beurre.\n4. Dans un cul de poule, mélanger la crème, le sucre, les œufs.\n5. Ajouter la poudre d'amandes, le beurre, l'amande amère puis mélanger.\n6. Répartir la préparation dans une poche à douille avec juste l'embout sans douille.\n7. Répartir la préparation dans les empreintes.\n8. Enfourner à 180°C pendant 20 min.\n9. Laisser refroidir avant de démouler.\n10. Pour le coulis : à l'aide du Tornado, mixer les fruits avec le sucre.\n11. Passer le coulis au tamis pour enlever les grains.\n12. Si le coulis est trop épais rajouter de l’eau ou un peu de citron pour obtenir la consistance souhaitée.\n13. Verser le coulis sur le creux de l'empreinte, vous pouvez aussi y mettre un fruit, du chocolat ou autre.\n",
     "for": "12",
     "preptime": "15",
     "resttime": "0",

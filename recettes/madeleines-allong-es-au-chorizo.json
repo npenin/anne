@@ -69,18 +69,7 @@
             "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
         }
     ],
-    "steps": [
-        "Poser votre moule sur une plaque aluminium perforée.",
-        "Dans un cul de poule, mélanger, à l’aide de la cuillère magique, les œufs avec le sel, la farine, la levure",
-        "Ajouter l’huile et mélanger.",
-        "Couper le chorizo en petits dés et l'incorporer à la préparation.",
-        "Ajouter le parmesan et mélanger à nouveau.",
-        "Répartir dans les empreintes.",
-        "Mettre quelques minutes au réfrigérateur votre moule pendant que vous préchauffer votre four à 180°C.",
-        "Une fois le four chaud, enfourner à 180°C pendant 10 min.",
-        "Laisser refroidir un peu avant de démouler.",
-        "A déguster chaud ou froid."
-    ],
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée.\n2. Dans un cul de poule, mélanger, à l’aide de la cuillère magique, les œufs avec le sel, la farine, la levure\n3. Ajouter l’huile et mélanger.\n4. Couper le chorizo en petits dés et l'incorporer à la préparation.\n5. Ajouter le parmesan et mélanger à nouveau.\n6. Répartir dans les empreintes.\n7. Mettre quelques minutes au réfrigérateur votre moule pendant que vous préchauffer votre four à 180°C.\n8. Une fois le four chaud, enfourner à 180°C pendant 10 min.\n9. Laisser refroidir un peu avant de démouler.\n10. A déguster chaud ou froid.\n",
     "for": "10",
     "preptime": "10",
     "resttime": "0",

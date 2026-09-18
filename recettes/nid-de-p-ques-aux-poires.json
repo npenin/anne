@@ -70,18 +70,7 @@
             "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
         }
     ],
-    "steps": [
-        "Préchauffer votre four à 180°C.",
-        "Poser votre moule sur une plaque aluminium perforée.",
-        "Dans un cul de poule, mettre les yaourts, l’huile, les œufs puis mélanger.",
-        "Ajouter la farine, le sucre, la levure puis mélanger à nouveau.",
-        "Couper les poires en petits morceaux et les ajouter à la préparation.",
-        "Mettre la cuillère à café de jus de poires au sirop et mélanger.",
-        "Répartir dans les empreintes.",
-        "Enfourner à 180°C pendant 25-30 min (suivant votre four).",
-        "Laisser refroidir avant de démouler.",
-        "Décorer à votre guise les nids de Pâques (vermicelles, petits chocolats,...)"
-    ],
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dans un cul de poule, mettre les yaourts, l’huile, les œufs puis mélanger.\n4. Ajouter la farine, le sucre, la levure puis mélanger à nouveau.\n5. Couper les poires en petits morceaux et les ajouter à la préparation.\n6. Mettre la cuillère à café de jus de poires au sirop et mélanger.\n7. Répartir dans les empreintes.\n8. Enfourner à 180°C pendant 25-30 min (suivant votre four).\n9. Laisser refroidir avant de démouler.\n10. Décorer à votre guise les nids de Pâques (vermicelles, petits chocolats,...)\n",
     "for": "8",
     "preptime": "10",
     "resttime": "0",

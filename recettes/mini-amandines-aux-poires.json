@@ -80,19 +80,7 @@
             "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1009-bol-micro-ondes-1l.html"
         }
     ],
-    "steps": [
-        "Préchauffer votre four à 180°C.",
-        "Poser votre moule sur la plaque aluminium perforée.",
-        "Dans un cul de poule, mélanger avec la cuillère magique les œufs et les sucres, jusqu'à ce que le mélange blanchisse.",
-        "Dans le bol micro-ondes, faire fondre le beurre et réserver.",
-        "Ajouter à la préparation l’extrait d’amande amère et le beurre, puis mélanger.",
-        "Ajouter la farine, la levure puis la poudre d'amandes.",
-        "Remplir les empreintes aux 2/3 de la hauteur.",
-        "Couper la poire en 20 petits morceaux.",
-        "Déposer un morceau de poire sur le dessus de la préparation et enfoncer légèrement.",
-        "Enfourner 15 min à 180°C, chaleur statique.",
-        "Laisser refroidir et démouler."
-    ],
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur la plaque aluminium perforée.\n3. Dans un cul de poule, mélanger avec la cuillère magique les œufs et les sucres, jusqu'à ce que le mélange blanchisse.\n4. Dans le bol micro-ondes, faire fondre le beurre et réserver.\n5. Ajouter à la préparation l’extrait d’amande amère et le beurre, puis mélanger.\n6. Ajouter la farine, la levure puis la poudre d'amandes.\n7. Remplir les empreintes aux 2/3 de la hauteur.\n8. Couper la poire en 20 petits morceaux.\n9. Déposer un morceau de poire sur le dessus de la préparation et enfoncer légèrement.\n10. Enfourner 15 min à 180°C, chaleur statique.\n11. Laisser refroidir et démouler.\n",
     "for": "10",
     "preptime": "10",
     "resttime": "0",

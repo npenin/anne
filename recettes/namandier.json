@@ -70,18 +70,7 @@
             "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/615-cuillere-magique-guy-demarle.html"
         }
     ],
-    "steps": [
-        "Préchauffer votre four à °C.\n",
-        "Poser votre moule sur une plaque aluminium perforée.",
-        "Dans le bol micro-ondes, faire fondre le beurre et réserver.",
-        "Dans un cul de poule, mélanger avec la cuillère magique, les œufs et les sucres jusqu'à ce que le mélange blanchisse.",
-        "Ajouter, en 2 fois, la poudre d'amandes tamisée et mélanger avec une spatule.",
-        "Ajouter le beurre et l’arôme d'amande amère puis mélanger à nouveau.",
-        "Verser la préparation dans le moule. ",
-        "Enfourner à °C pendant min.",
-        "Laisser refroidir avant de démouler.",
-        "Ce gâteau est encore meilleur le lendemain."
-    ],
+    "steps": "1. Préchauffer votre four à °C.\n\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dans le bol micro-ondes, faire fondre le beurre et réserver.\n4. Dans un cul de poule, mélanger avec la cuillère magique, les œufs et les sucres jusqu'à ce que le mélange blanchisse.\n5. Ajouter, en 2 fois, la poudre d'amandes tamisée et mélanger avec une spatule.\n6. Ajouter le beurre et l’arôme d'amande amère puis mélanger à nouveau.\n7. Verser la préparation dans le moule. \n8. Enfourner à °C pendant min.\n9. Laisser refroidir avant de démouler.\n10. Ce gâteau est encore meilleur le lendemain.\n",
     "for": "6-8",
     "preptime": "10",
     "resttime": "0",

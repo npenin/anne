@@ -30,7 +30,7 @@
         {
             "quantity": "3",
             "unit": "g",
-            "name": "Cacao non sucré                                                                                                "
+            "name": "Cacao non sucré"
         },
         {
             "quantity": "Génoise aux amandes :",
@@ -145,30 +145,7 @@
             "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/617-petite-spatule-coudee-9-cm-guy-demarle.html"
         }
     ],
-    "steps": [
-        "Poser votre tapis à génoise sur une plaque aluminium perforée.\n\nPâte à cigarette :",
-        "Dans un petit cul de poule, mélanger au fouet le beurre et le sucre glace.",
-        "Ajouter le blanc d’œuf, la farine et le cacao.",
-        "Étaler la pâte à cigarette sur un tapis décor puis le placer dans un coin du tapis à génoise (relief vers l’extérieur).\n\nGénoise aux amandes :",
-        "Préchauffer votre four à 180°C",
-        "Dans un cul de poule, mélanger la poudre d'amandes et la farine tamisées.",
-        "Dans le bol micro-ondes, faire fondre le beurre et réserver.",
-        "Séparer les jaunes des blancs d’œufs.",
-        "Monter les blancs en neige avec le sucre.",
-        "Incorporer les jaunes puis le mélange farine/amande.",
-        "Ajouter le beurre fondu et mélanger à l'aide de la spatule double embouts.",
-        "Répartir la pâte sur le tapis à génoise et égaliser à l'aide de la petite spatule coudée.",
-        "Enfourner à 180°C pendant 12 min.\n\nMousse Ferrero Rocher :",
-        "Dans le Tornado, mixer 7 Ferrero et réserver puis mixer les 7 autres.",
-        "Dans un cul de poule froid, monter au batteur électrique le Mascarpone, la crème et le sucre.",
-        "Quand la masse commence à prendre, ajouter les morceaux de Ferrero Rocher et mélanger.\n\nMontage :",
-        "Découper la génoise et poser le tapis décor dans le moule bûche (dessin non visible).",
-        "Garnir la moitié de la mousse puis déposer une bande de génoise puis mettre le reste de mousse et finir avec la dernière bande de génoise.",
-        "Filmer au contact.",
-        "Mettre au frais au moins 1h, vous pouvez congeler.\n\n\nDémoulage :",
-        "Démouler la bûche.",
-        "Laisser décongeler au réfrigérateur 6 à 8h."
-    ],
+    "steps": "### Pâte à cigarette :\n\n1. Poser votre tapis à génoise sur une plaque aluminium perforée.\n2. Dans un petit cul de poule, mélanger au fouet le beurre et le sucre glace.\n3. Ajouter le blanc d’œuf, la farine et le cacao.\n4. Étaler la pâte à cigarette sur un tapis décor puis le placer dans un coin du tapis à génoise (relief vers l’extérieur).\n\n### Génoise aux amandes :\n5. Préchauffer votre four à 180°C\n6. Dans un cul de poule, mélanger la poudre d'amandes et la farine tamisées.\n7. Dans le bol micro-ondes, faire fondre le beurre et réserver.\n8. Séparer les jaunes des blancs d’œufs.\n9. Monter les blancs en neige avec le sucre.\n10. Incorporer les jaunes puis le mélange farine/amande.\n11. Ajouter le beurre fondu et mélanger à l'aide de la spatule double embouts.\n12. Répartir la pâte sur le tapis à génoise et égaliser à l'aide de la petite spatule coudée.\n13. Enfourner à 180°C pendant 12 min.\n\n### Mousse Ferrero Rocher :\n14. Dans le Tornado, mixer 7 Ferrero et réserver puis mixer les 7 autres.\n15. Dans un cul de poule froid, monter au batteur électrique le Mascarpone, la crème et le sucre.\n16. Quand la masse commence à prendre, ajouter les morceaux de Ferrero Rocher et mélanger.\n\n### Montage :\n17. Découper la génoise et poser le tapis décor dans le moule bûche (dessin non visible).\n18. Garnir la moitié de la mousse puis déposer une bande de génoise puis mettre le reste de mousse et finir avec la dernière bande de génoise.\n19. Filmer au contact.\n20. Mettre au frais au moins 1h, vous pouvez congeler.\n\n\n### Démoulage :\n21. Démouler la bûche.\n22. Laisser décongeler au réfrigérateur 6 à 8h.\n",
     "for": "8",
     "preptime": "25",
     "resttime": "Min 1h",

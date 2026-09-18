@@ -65,18 +65,7 @@
             "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
         }
     ],
-    "steps": [
-        "Préchauffer votre four à 180°C.",
-        "Poser votre moule sur une plaque aluminium perforée.",
-        "Éplucher les pommes. Tailler vos pommes à l'aide du coupe-pommes puis couper les tranches en petits dès.",
-        "Dans un cul de poule, mélanger les œufs et le sucre.",
-        "Ajouter la crème, la poudre d'amandes puis mélanger à nouveau.",
-        "Déposer les dès de pommes dans la pâte et mélanger délicatement.",
-        "Étaler votre pâte sur le moule et piquer légèrement en surface.",
-        "Verser la préparation sur la pâte.",
-        "Enfourner à 180°C pendant 35-40 min (suivant votre four).",
-        "Laisser refroidir avant de démouler."
-    ],
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Éplucher les pommes. Tailler vos pommes à l'aide du coupe-pommes puis couper les tranches en petits dès.\n4. Dans un cul de poule, mélanger les œufs et le sucre.\n5. Ajouter la crème, la poudre d'amandes puis mélanger à nouveau.\n6. Déposer les dès de pommes dans la pâte et mélanger délicatement.\n7. Étaler votre pâte sur le moule et piquer légèrement en surface.\n8. Verser la préparation sur la pâte.\n9. Enfourner à 180°C pendant 35-40 min (suivant votre four).\n10. Laisser refroidir avant de démouler.\n",
     "for": "8",
     "preptime": "10",
     "resttime": "0",
