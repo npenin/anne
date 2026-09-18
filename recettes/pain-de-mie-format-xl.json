@@ -1,0 +1,77 @@
+{
+    "title": "Le pain de mie format XL",
+    "slug": "pain-de-mie-format-xl",
+    "private": true,
+    "toppings": [
+        {
+            "quantity": "300",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "1",
+            "unit": "sachet",
+            "name": "Préparation pour pain de mie"
+        },
+        {
+            "quantity": "20",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "190",
+            "unit": "g",
+            "name": "Lait"
+        },
+        {
+            "quantity": "20",
+            "unit": "g",
+            "name": "Beurre"
+        },
+        {
+            "quantity": "2",
+            "unit": "c-à-s",
+            "name": "Lait"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Préparation pour pain de mie, 5 sachets de 25g",
+            "picture": "https://boutique.guydemarle.com/8770-nq_social_share/preparation-pour-pain-de-mie-5-sachets-de-25g.jpg",
+            "url": "https://boutique.guydemarle.com/epicerie-en-ligne/8770-preparation-pour-pain-de-mie-5-sachets-de-25g.html"
+        }
+    ],
+    "steps": [
+        "Dans le bol du robot, mélanger la farine, le sucre et la préparation pour pain de mie.",
+        "Rajouter le lait tiède. Mélanger, puis ajouter le beurre froid.",
+        "Travailler la pâte pendant 5 à 10 minutes à l'aide du crochet.",
+        "Couvrir le bol avec du film alimentaire.",
+        "Laisser fermenter pendant 40 minutes.",
+        "Placer le moule à cake sur la plaque perforée.",
+        "Diviser la pâte en 4 morceaux.",
+        "Rouler et bouler la pâte, puis la déposer dans le moule à cake.",
+        "Laisser fermenter jusqu'à ce que la pâte atteigne les bords du moule.",
+        "Préchauffer le four à 180°C.",
+        "Mettre au four pendant environ 25 à 30 minutes à 180°C."
+    ],
+    "for": "2",
+    "preptime": "15",
+    "resttime": "40+",
+    "cooktime": "30",
+    "gallery": [],
+    "mold": {
+        "name": "Moule à cake OHRA®",
+        "picture": "https://boutique.guydemarle.com/11587-nq_social_share/moule-a-cake-ohra.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/4364-moule-a-cake-ohra.html"
+    }
+}
