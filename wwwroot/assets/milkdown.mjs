@@ -148174,4 +148174,3 @@ var index = /*#__PURE__*/Object.freeze({
 });
 
 export { Crepe, CrepeBuilder, CrepeFeature, callCommand, commonmark$1 as commonmark, gfm, liftListItemCommand, replaceAll$1 as replaceAll, sinkListItemCommand, useCrepe, useCrepeFeatures };
-//# sourceMappingURL=milkdown.mjs.map

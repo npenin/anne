@@ -10,6 +10,9 @@ meta:
     <link href="/assets/fa/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/assets/milkdown.css">
     <link rel="stylesheet" href="/assets/style.css">
+    {% if page.url contains '/admin/' %}
+      <script type="module" src="/assets/admin-auth.js"></script>
+    {% endif %}
     <title>{{ title }}</title>
     <meta name="description" content="{{ description | default: 'Recettes gourmandes par Anne, conseillère Guy Demarle.' }}">
     <!-- Google Tag Manager -->
@@ -60,7 +63,7 @@ meta:
     {% endif -%}
   </head>
 
-  <body>
+  <body{% if page.url contains '/admin/' %} class="admin-site admin-auth-required{% if page.url contains '/admin/moule/' %} mold-ebook-site{% endif %}"{% endif %}>
     <!-- Google Tag Manager (noscript) -->
     <noscript>
       <iframe

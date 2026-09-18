@@ -5,37 +5,14 @@ permalink: /admin/
 tags:
     - menu
 ---
-<div id="admin-menu" >
+<div id="admin-menu" hidden>
     <a href="./recette" class="panel">
         Créer une recette
     </a>
     <a href="./recettes" class="panel">
         Lister toutes les recettes
     </a>
+    <a href="./moules" class="panel">
+        Créer un ebook par moule
+    </a>
 </div>
-    
-<script type="module">
-    let token = localStorage.getItem('GITHUB_TOKEN');
-    if (!token && (token = prompt('Token?')))
-        localStorage.setItem('GITHUB_TOKEN', token)
-    let username = localStorage.getItem('user.name');
-    if (!username && (username = prompt('user name?')))
-        localStorage.setItem('user.name', username)
-    let usermail = localStorage.getItem('user.email');
-    if (!usermail && (usermail = prompt('user.email')))
-        localStorage.setItem('user.email', usermail)
-
-        // if(token)
-        // {
-        //     const res=await fetch('https://api.github.com/repos/npenin/anne', {
-        //         headers: { accept: 'application/vnd.github+json', authorization: 'Bearer ' + token, 'X-GitHub-Api-Version': '2022-11-28' }, method: 'GET'
-        //     });
-        //     const repo=await res.json();
-        //     if(repo.permissions.write)
-        //         document.querySelector('#admin-menu').style.display='block'
-        //     else
-        //         document.querySelector('#admin-menu').remove()
-        // }
-        // else
-        //     document.querySelector('#admin-menu').remove()
-</script>

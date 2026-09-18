@@ -1,4 +1,6 @@
 import { Crepe, replaceAll, sinkListItemCommand, liftListItemCommand, callCommand, commonmark, gfm } from './milkdown.mjs';
+if (!await globalThis.adminAuthReady)
+    throw new Error('Admin authentication required.');
 let token = localStorage.getItem('GITHUB_TOKEN');
 if (!token && (token = prompt('Token?')))
     localStorage.setItem('GITHUB_TOKEN', token);
@@ -17,23 +19,27 @@ const isGalleryEditor = !!document.querySelector('.gallery-editor');
 let galleryImages = [];
 let pendingCoverFile = null;
 const pendingGalleryFiles = new Map();
-function isBlobUrl(url) {
+function isBlobUrl(url)
+{
     return typeof url === 'string' && url.startsWith('blob:');
 }
-function slugifyTitle(title) {
+function slugifyTitle(title)
+{
     return title
         .normalize('NFD')
         .replace(/[\u0300-\u036f]/g, '')
         .replace(/[ ’]+/g, '-')
         .toLowerCase();
 }
-function getRecipeSlug() {
+function getRecipeSlug()
+{
     const title = document.querySelector('h1')?.innerText?.trim();
     if (!title)
         return '';
     return slugifyTitle(title);
 }
-function safeFilename(name) {
+function safeFilename(name)
+{
     return name
         .normalize('NFD')
         .replace(/[\u0300-\u036f]/g, '')
@@ -42,7 +48,8 @@ function safeFilename(name) {
         .replace(/^-|-$/g, '')
         .toLowerCase();
 }
-function notifyError(message) {
+function notifyError(message)
+{
     if (Swal?.fire)
         Swal.fire({
             title: 'Erreur',
@@ -52,45 +59,54 @@ function notifyError(message) {
     else
         alert(message);
 }
-function renderCover(coverImageUrl) {
+function renderCover(coverImageUrl)
+{
     if (!coverImageEl)
         return;
-    if (coverImageUrl) {
+    if (coverImageUrl)
+    {
         if (window.location.hostname == 'localhost' && coverImageUrl.startsWith('/assets/'))
-            fetch(coverImageUrl, { method: 'HEAD' }).then(res => {
+            fetch(coverImageUrl, { method: 'HEAD' }).then(res =>
+            {
                 if (!res.ok)
                     coverImageUrl =
                         'https://github.com/npenin/anne/blob/master' +
-                            coverImageUrl +
-                            '?raw=true';
+                        coverImageUrl +
+                        '?raw=true';
                 coverImageEl.src = coverImageUrl;
             });
         else
             coverImageEl.src = coverImageUrl;
     }
-    else {
+    else
+    {
         coverImageEl.removeAttribute('src');
     }
 }
-function renderGallery(images) {
+function renderGallery(images)
+{
     if (!galleryGridEl)
         return;
     galleryImages = Array.isArray(images) ? images : [];
     galleryGridEl.innerHTML = '';
-    galleryImages.forEach((url, index) => {
+    galleryImages.forEach((url, index) =>
+    {
         const figure = document.createElement('figure');
         const img = document.createElement('img');
         img.src = url;
         img.loading = 'lazy';
         img.alt = 'Photo de la recette';
         figure.appendChild(img);
-        if (isGalleryEditor) {
+        if (isGalleryEditor)
+        {
             const removeBtn = document.createElement('button');
             removeBtn.type = 'button';
             removeBtn.classList.add('remove-photo');
             removeBtn.innerHTML = '<i class="fa fa-trash"></i>';
-            removeBtn.addEventListener('click', () => {
-                if (isBlobUrl(url)) {
+            removeBtn.addEventListener('click', () =>
+            {
+                if (isBlobUrl(url))
+                {
                     const file = pendingGalleryFiles.get(url);
                     pendingGalleryFiles.delete(url);
                     if (file)
@@ -112,15 +128,19 @@ function renderGallery(images) {
  * the EXIF orientation while decoding it. The canvas export then strips
  * all EXIF metadata, including GPS data.
  */
-function loadImage(file) {
-    return new Promise((resolve, reject) => {
+function loadImage(file)
+{
+    return new Promise((resolve, reject) =>
+    {
         const url = URL.createObjectURL(file);
         const image = new Image();
-        image.onload = () => {
+        image.onload = () =>
+        {
             URL.revokeObjectURL(url);
             resolve(image);
         };
-        image.onerror = () => {
+        image.onerror = () =>
+        {
             URL.revokeObjectURL(url);
             reject(new Error('Impossible de lire l’image.'));
         };
@@ -133,7 +153,8 @@ function loadImage(file) {
  * Drawing the source image to a canvas and exporting it removes the
  * original EXIF metadata, including GPS coordinates.
  */
-async function processImage(file, options) {
+async function processImage(file, options)
+{
     const image = await loadImage(file);
     const scale = Math.min(1, options.maxWidth / image.naturalWidth, options.maxHeight / image.naturalHeight);
     const width = Math.round(image.naturalWidth * scale);
@@ -145,8 +166,10 @@ async function processImage(file, options) {
     if (!ctx)
         throw new Error('Impossible de créer le contexte graphique.');
     ctx.drawImage(image, 0, 0, width, height);
-    const blob = await new Promise((resolve, reject) => {
-        canvas.toBlob(result => {
+    const blob = await new Promise((resolve, reject) =>
+    {
+        canvas.toBlob(result =>
+        {
             if (result)
                 resolve(result);
             else
@@ -160,7 +183,8 @@ async function processImage(file, options) {
         height
     };
 }
-async function uploadFileToGithub(pathInRepo, contentBase64, message) {
+async function uploadFileToGithub(pathInRepo, contentBase64, message)
+{
     const apiPath = pathInRepo.replace(/^\/+/, '');
     let res = await fetch('https://api.github.com/repos/npenin/anne/contents/' + apiPath, {
         headers: {
@@ -199,10 +223,13 @@ async function uploadFileToGithub(pathInRepo, contentBase64, message) {
         throw new Error(await res.text());
     return res.json();
 }
-function fileToBase64(file) {
-    return new Promise((resolve, reject) => {
+function fileToBase64(file)
+{
+    return new Promise((resolve, reject) =>
+    {
         const reader = new FileReader();
-        reader.onload = () => {
+        reader.onload = () =>
+        {
             const result = reader.result?.toString() || '';
             const base64 = result.split(',')[1];
             resolve(base64 || '');
@@ -211,9 +238,11 @@ function fileToBase64(file) {
         reader.readAsDataURL(file);
     });
 }
-async function handleCoverUpload(file) {
+async function handleCoverUpload(file)
+{
     const slug = getRecipeSlug();
-    if (!slug) {
+    if (!slug)
+    {
         notifyError('Renseignez le titre de la recette avant de téléverser une couverture.');
         return;
     }
@@ -238,14 +267,17 @@ async function handleCoverUpload(file) {
     renderCover(blobUrl);
     saveLocally();
 }
-async function handleGalleryUpload(files) {
+async function handleGalleryUpload(files)
+{
     const slug = getRecipeSlug();
-    if (!slug) {
+    if (!slug)
+    {
         notifyError('Renseignez le titre de la recette avant de téléverser des photos.');
         return;
     }
     const processedFiles = [];
-    for (const file of files) {
+    for (const file of files)
+    {
         // Gallery images are allowed to be larger than covers.
         // Maximum 2048x2048, EXIF/GPS stripped.
         const processed = await processImage(file, {
@@ -266,7 +298,8 @@ async function handleGalleryUpload(files) {
         ? getRecipe().gallery.filter(Boolean)
         : [];
     currentGallery.push(...blobUrls);
-    blobUrls.forEach((blobUrl, index) => {
+    blobUrls.forEach((blobUrl, index) =>
+    {
         pendingGalleryFiles.set(blobUrl, processedFiles[index]);
     });
     renderGallery(currentGallery);
@@ -274,39 +307,48 @@ async function handleGalleryUpload(files) {
 }
 const coverInput = document.querySelector('#coverUpload');
 if (coverInput)
-    coverInput.addEventListener('change', async (ev) => {
+    coverInput.addEventListener('change', async (ev) =>
+    {
         const file = ev.target.files?.[0];
         if (!file)
             return;
-        try {
+        try
+        {
             await handleCoverUpload(file);
         }
-        catch (error) {
+        catch (error)
+        {
             notifyError(error.message || 'Erreur lors du téléversement de la couverture.');
         }
         ev.target.value = '';
     });
 const galleryInput = document.querySelector('#galleryUpload');
 if (galleryInput)
-    galleryInput.addEventListener('change', async (ev) => {
+    galleryInput.addEventListener('change', async (ev) =>
+    {
         const files = Array.from(ev.target.files || []);
         if (!files.length)
             return;
-        try {
+        try
+        {
             await handleGalleryUpload(files);
         }
-        catch (error) {
+        catch (error)
+        {
             notifyError(error.message || 'Erreur lors du téléversement des photos.');
         }
         ev.target.value = '';
     });
-globalThis.triggerCoverUpload = function triggerCoverUpload() {
+globalThis.triggerCoverUpload = function triggerCoverUpload()
+{
     coverInput?.click();
 };
-globalThis.triggerGalleryUpload = function triggerGalleryUpload() {
+globalThis.triggerGalleryUpload = function triggerGalleryUpload()
+{
     galleryInput?.click();
 };
-globalThis.removeCover = function removeCover() {
+globalThis.removeCover = function removeCover()
+{
     if (pendingCoverFile?.blobUrl)
         URL.revokeObjectURL(pendingCoverFile.blobUrl);
     pendingCoverFile = null;
@@ -314,13 +356,15 @@ globalThis.removeCover = function removeCover() {
     saveLocally();
 };
 dynamic(document.querySelector('.info>.mold>.name'), {
-    Enter(ev) {
+    Enter(ev)
+    {
         fetchmold(ev)
             .then(() => ev.target.blur())
             .then(() => saveLocally());
     }
 });
-globalThis.loadRecipe = function (recipe) {
+globalThis.loadRecipe = function (recipe)
+{
     document.querySelector('h1').innerText = recipe.title;
     document.querySelector('input[name="private"]').checked = recipe.private;
     document.querySelector('.info .count').innerText = recipe.for;
@@ -329,24 +373,29 @@ globalThis.loadRecipe = function (recipe) {
     document.querySelector('.info .cooktime').innerText = recipe.cooktime;
     document.querySelector('.info .mold>.name').innerText = recipe.mold?.name;
     document.querySelector('.info .mold>a>img').src = recipe.mold?.picture;
-    recipe.toppings?.forEach(t => {
+    recipe.toppings?.forEach(t =>
+    {
         const li = addtoppings(false);
         li.querySelector('.quantity').innerText = t.quantity;
         li.querySelector('.unit').innerText = t.unit;
         li.querySelector('.topping').innerText = t.name;
     });
-    recipe.accessories?.forEach(a => {
+    recipe.accessories?.forEach(a =>
+    {
         const li = addAccessory(false);
         li.querySelector('.name').innerText = a.name;
         li.querySelector('img').src = a.picture;
         li.querySelector('a').href = a.url;
     });
-    if (typeof recipe.steps === 'string') {
+    if (typeof recipe.steps === 'string')
+    {
         // After crepe.create() has resolved, call:
         editor.editor.action(replaceAll(mdSteps = recipe.steps));
     }
-    else {
-        recipe.steps?.forEach(t => {
+    else
+    {
+        recipe.steps?.forEach(t =>
+        {
             const li = addPrepStep(false);
             li.innerText = t;
         });
@@ -366,7 +415,8 @@ const editor = new Crepe({
     },
     featureConfigs: {
         [Crepe.Feature.TopBar]: {
-            buildTopBar: (builder) => {
+            buildTopBar: (builder) =>
+            {
                 builder.addGroup('indent', 'Indentation').addItem('left', {
                     icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img">
   <title>Outdent</title>
@@ -377,12 +427,13 @@ const editor = new Crepe({
   <polyline points="7,8 3,12 7,16"/>
 </svg>`,
                     active: () => false,
-                    onRun() {
+                    onRun()
+                    {
                         return outdent(editor);
                     }
                 })
                     .addItem('right', {
-                    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img">
+                        icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" role="img">
   <title>Indent</title>
   <line x1="10" y1="6" x2="20" y2="6"/>
   <line x1="10" y1="12" x2="17" y2="12"/>
@@ -390,28 +441,32 @@ const editor = new Crepe({
   <line x1="3" y1="12" x2="8" y2="12"/>
   <polyline points="4,8 8,12 4,16"/>
 </svg>`,
-                    active: () => false,
-                    onRun() {
-                        return indent(editor);
-                    }
-                });
+                        active: () => false,
+                        onRun()
+                        {
+                            return indent(editor);
+                        }
+                    });
             }
         }
     }
 });
 // returns true if it actually did something, false if the cursor
 // wasn't inside a list item (so it's safe to call unconditionally)
-export function outdent(crepe) {
+export function outdent(crepe)
+{
     return !!crepe.editor.action(callCommand(liftListItemCommand.key));
 }
-export function indent(crepe) {
+export function indent(crepe)
+{
     return !!crepe.editor.action(callCommand(sinkListItemCommand.key));
 }
 editor.editor.use(commonmark).use(gfm);
 editor.on((listener) => listener.markdownUpdated((ctx, markdown) => { mdSteps = markdown; saveLocally(); }));
 await editor.create();
 document.querySelector('.mold').addEventListener('click', () => document.querySelector('.info>.mold>.name').focus());
-async function fetchmold(ev) {
+async function fetchmold(ev)
+{
     const res = await fetch(new URL(ev.target
         .innerText
         .replace('https://boutique.guydemarle.com', 'https://d2quloop9d8ihx.cloudfront.net'), root));
@@ -421,9 +476,9 @@ async function fetchmold(ev) {
     const meta = Object.fromEntries(Array.from(dummy.querySelectorAll('meta'))
         .filter(v => v.attributes.getNamedItem('property'))
         .map(v => [
-        v.attributes.getNamedItem('property').value,
-        v.attributes.getNamedItem('content').value
-    ]));
+            v.attributes.getNamedItem('property').value,
+            v.attributes.getNamedItem('content').value
+        ]));
     dummy.remove();
     ev.target.innerText =
         meta['og:title'];
@@ -437,7 +492,8 @@ async function fetchmold(ev) {
         .href = meta['og:url'];
 }
 globalThis.fetchmold = fetchmold;
-export function getRecipe() {
+export function getRecipe()
+{
     return {
         title: document.querySelector('h1').innerText,
         slug: getRecipeSlug(),
@@ -466,19 +522,23 @@ export function getRecipe() {
         },
     };
 }
-async function blobToBase64(blobUrl) {
+async function blobToBase64(blobUrl)
+{
     const response = await fetch(blobUrl);
     const blob = await response.blob();
     return fileToBase64(blob);
 }
-export async function getRecipeWithBase64Images() {
+export async function getRecipeWithBase64Images()
+{
     const recipe = getRecipe();
     // Convert cover blob to base64
     if (recipe.cover && isBlobUrl(recipe.cover))
         recipe.cover = await blobToBase64(recipe.cover);
     // Convert gallery blobs to base64
-    if (Array.isArray(recipe.gallery)) {
-        recipe.gallery = await Promise.all(recipe.gallery.map(async (url) => {
+    if (Array.isArray(recipe.gallery))
+    {
+        recipe.gallery = await Promise.all(recipe.gallery.map(async (url) =>
+        {
             if (url && isBlobUrl(url))
                 return await blobToBase64(url);
             return url;
@@ -486,16 +546,19 @@ export async function getRecipeWithBase64Images() {
     }
     return recipe;
 }
-function saveLocally() {
+function saveLocally()
+{
     getRecipeWithBase64Images()
         .then(recipe => globalThis.saveLocally(recipe));
 }
-async function uploadPendingImages(recipe) {
+async function uploadPendingImages(recipe)
+{
     const slug = recipe.slug || getRecipeSlug();
     if (!slug)
         throw new Error('Renseignez le titre de la recette avant de sauvegarder.');
     let updatedCover = recipe.cover;
-    if (isBlobUrl(updatedCover)) {
+    if (isBlobUrl(updatedCover))
+    {
         if (!pendingCoverFile?.file)
             throw new Error('La couverture en attente est introuvable. Rechargez l\'image.');
         const filename = safeFilename(pendingCoverFile.file.name || 'couverture');
@@ -512,10 +575,12 @@ async function uploadPendingImages(recipe) {
     const sourceGallery = Array.isArray(recipe.gallery)
         ? recipe.gallery
         : [];
-    for (const url of sourceGallery) {
+    for (const url of sourceGallery)
+    {
         if (!url)
             continue;
-        if (isBlobUrl(url)) {
+        if (isBlobUrl(url))
+        {
             const file = pendingGalleryFiles.get(url);
             if (!file)
                 throw new Error('Une photo en attente est introuvable. Rechargez l\'image.');
@@ -527,7 +592,8 @@ async function uploadPendingImages(recipe) {
             updatedGallery.push(`/assets/recettes/${slug}/${uniqueName}`);
             pendingGalleryFiles.delete(url);
         }
-        else {
+        else
+        {
             updatedGallery.push(url);
         }
     }
@@ -535,7 +601,8 @@ async function uploadPendingImages(recipe) {
     renderGallery(galleryImages);
     return { ...recipe, cover: updatedCover, gallery: updatedGallery };
 }
-globalThis.saveAsDraft = async function saveAsDraft() {
+globalThis.saveAsDraft = async function saveAsDraft()
+{
     const recipe = getRecipe();
     globalThis.saveLocally(recipe);
     const filename = `${dir}/recettes/${recipe.title
@@ -571,13 +638,16 @@ globalThis.saveAsDraft = async function saveAsDraft() {
     });
     location.replace('/admin/recette/');
 };
-globalThis.save = async function save() {
+globalThis.save = async function save()
+{
     document.querySelector('.toolbar').style.display = 'none';
     let recipe = getRecipe();
-    try {
+    try
+    {
         recipe = await uploadPendingImages(recipe);
     }
-    catch (error) {
+    catch (error)
+    {
         notifyError(error.message || 'Erreur lors du téléversement des images.');
         delete document.querySelector('.toolbar').style.display;
         return;
@@ -597,7 +667,8 @@ globalThis.save = async function save() {
         method: 'GET'
     });
     const create = res.status == 404;
-    if (create) {
+    if (create)
+    {
         res = await fetch('https://api.github.com/repos/npenin/anne/contents/' +
             filename.substring(dir.length + 1), {
             headers: {
@@ -616,8 +687,10 @@ globalThis.save = async function save() {
             })
         });
     }
-    else {
-        if (!res.ok) {
+    else
+    {
+        if (!res.ok)
+        {
             Swal.fire({
                 title: 'Probleme lors de la recuperation',
                 text: await res.text()
@@ -643,8 +716,10 @@ globalThis.save = async function save() {
             })
         });
     }
-    if (res.ok) {
-        if (create) {
+    if (res.ok)
+    {
+        if (create)
+        {
             globalThis.saveLocally({
                 ...recipe,
                 toppings: [],
@@ -658,15 +733,18 @@ globalThis.save = async function save() {
                 timerProgressBar: true,
                 icon: 'success',
                 timer: 30000,
-                didOpen: () => {
+                didOpen: () =>
+                {
                     Swal.showLoading();
                     const timer = Swal.getPopup().querySelector('b');
-                    timerInterval = setInterval(() => {
+                    timerInterval = setInterval(() =>
+                    {
                         timer.textContent =
                             `${Swal.getTimerLeft() / 1000}`;
                     }, 1000);
                 },
-                willClose: () => {
+                willClose: () =>
+                {
                     clearInterval(timerInterval);
                     location.replace(filename
                         .substring(dir.length)
@@ -674,25 +752,29 @@ globalThis.save = async function save() {
                 }
             });
         }
-        else {
+        else
+        {
             globalThis.saveLocally(null);
             Swal.fire({
                 title: 'Recette enregistrée !',
                 timer: 10000,
                 timerProgressBar: true,
                 icon: 'success',
-                willClose: () => {
+                willClose: () =>
+                {
                     delete document.querySelector('.toolbar').style.display;
                 }
             });
         }
-        if ('Notification' in globalThis) {
+        if ('Notification' in globalThis)
+        {
             const notif = await Notification.requestPermission();
             if (notif == "granted")
                 new Notification('Recette enregistree');
         }
     }
-    else {
+    else
+    {
         Swal.fire({
             title: 'Une erreur s\'est produite',
             timer: 10000,
@@ -702,7 +784,8 @@ globalThis.save = async function save() {
         });
     }
 };
-function addAccessory(focus) {
+function addAccessory(focus)
+{
     const li = document.createElement('li');
     li.classList.add('mold');
     const a = document.createElement('a');
@@ -716,10 +799,12 @@ function addAccessory(focus) {
     li.appendChild(name);
     document.querySelector('.accessories>ul').appendChild(li);
     dynamic(name, {
-        Enter: (ev) => {
+        Enter: (ev) =>
+        {
             if (ev.target.innerText !== '' && ev.target.innerText !== '\n')
                 fetchmold(ev).then(() => ev.target.blur()).then(() => saveLocally());
-            else {
+            else
+            {
                 li.remove();
                 saveLocally();
             }
@@ -730,7 +815,8 @@ function addAccessory(focus) {
     return li;
 }
 globalThis.addAccessory = addAccessory;
-function addPrepStep(focus) {
+function addPrepStep(focus)
+{
     const li = document.createElement('li');
     li.contentEditable =
         true;
@@ -744,7 +830,8 @@ function addPrepStep(focus) {
     return li;
 }
 globalThis.addPrepStep = addPrepStep;
-function addtoppings(focus) {
+function addtoppings(focus)
+{
     const li = document.createElement('li');
     const quantity = document.createElement('span');
     const unit = document.createElement('span');
@@ -771,23 +858,28 @@ function addtoppings(focus) {
     return li;
 }
 globalThis.addtoppings = addtoppings;
-function dynamic(self, keys) {
+function dynamic(self, keys)
+{
     keys = Object.assign({}, keys);
-    self.addEventListener('keydown', function (ev) {
+    self.addEventListener('keydown', function (ev)
+    {
         if (self.innerText === '' &&
             (ev.key == 'Delete' ||
                 ev.key == 'Backspace' ||
-                ev.key == 'Escape')) {
+                ev.key == 'Escape'))
+        {
             self.blur();
         }
         else if (ev.key in keys)
             keys[ev.key](ev);
     });
-    self.addEventListener('blur', function () {
+    self.addEventListener('blur', function ()
+    {
         let li = self;
         while (li && li.tagName !== 'LI')
             li = li.parentElement;
-        if (li?.textContent == '') {
+        if (li?.textContent == '')
+        {
             li.remove();
             saveLocally();
         }

@@ -1,0 +1,232 @@
+---
+layout: index.liquid
+pagination:
+    data: moules
+    size: 1
+    alias: moule
+    reverse: true
+permalink: "/admin/moule/{{ moule.displayName | slugify }}/"
+eleventyComputed:
+    title: "Ebook {{ moule.displayName }} - Anne et ses Délices"
+---
+<div class="mold-ebook">
+    <section class="mold-ebook-page mold-ebook-cover">
+        <img src="{{ moule.picture }}" alt="{{ moule.displayName }}" />
+        <h1>{{ moule.displayName }}</h1>
+        <p>Recettes et conseils d'utilisation</p>
+    </section>
+
+    <section class="mold-ebook-page mold-ebook-tutorial">
+        <h1>Conseils d'utilisation</h1>
+        <div class="mold-ebook-panel">
+            {% include "tuto-content.liquid" %}
+        </div>
+    </section>
+
+    <section class="mold-ebook-page mold-ebook-index">
+        <h1>Recettes avec {{ moule.displayName }}</h1>
+        <ol>
+            {% assign recipeNumber = 0 %}
+            {% for item in collections.recettes %}
+                {% if item.data.recette.mold.name == moule.name and item.data.recette.private != true %}
+                    {% assign recipeSlug = item.data.recette.slug | default: item.data.recette.title | slugify %}
+                    <li>
+                        <a href="#recipe-{{ recipeSlug }}">{{ item.data.recette.title }}</a>
+                        <span class="recipe-page-number" data-recipe-id="recipe-{{ recipeSlug }}" aria-label="Page en cours"></span>
+                    </li>
+                    {% assign recipeNumber = recipeNumber | plus: 1 %}
+                {% endif %}
+            {% endfor %}
+        </ol>
+        <div class="mold-ebook-contact">
+            <h2>Contact</h2>
+            <p><a href="https://www.guydemarle.com/profil/annep_a143-44563">Anne Penin</a>, votre conseillère Guy Demarle</p>
+            <p><a href="https://www.facebook.com/profile.php?id=100090744024852">Anne et ses Délices sur Facebook</a></p>
+        </div>
+    </section>
+
+    {% for item in collections.recettes %}
+        {% if item.data.recette.mold.name == moule.name and item.data.recette.private != true %}
+            {% assign recette = item.data.recette %}
+            <article id="recipe-{{ recette.slug | default: recette.title | slugify }}" class="mold-ebook-page mold-ebook-recipe">
+                <header>
+                    {% if recette.cover %}
+                        <img class="cover" src="{{ recette.cover }}" alt="Photo de {{ recette.title }}" />
+                    {% endif %}
+                    <h1>{{ recette.title }}</h1>
+                </header>
+                <div class="info panel">
+                    <div>
+                        <span class="count fal fa-utensils">{{ recette.for }}</span>
+                        <span class="preptime fal fa-hat-chef">{{ recette.preptime }}</span>
+                        <span class="resttime fal fa-snooze">{{ recette.resttime }}</span>
+                        <span class="cooktime fal fa-oven">{{ recette.cooktime }}</span>
+                    </div>
+                </div>
+                {% if recette.accessories.length %}
+                    <div class="accessories panel">
+                        <h2>Accessoires</h2>
+                        <ul>
+                            {% for accessory in recette.accessories %}
+                                <li class="mold">
+                                    <a href="{{ accessory.url }}?s=AnneetsesDelices">
+                                        <img src="{{ accessory.picture }}" alt="{{ accessory.name }}" />
+                                        <span class="name">{{ accessory.name }}</span>
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endif %}
+                <div class="toppings panel">
+                    <h2>Ingrédients</h2>
+                    <ul>
+                        {% if recette.categorizedToppings[''] %}
+                            {% for topping in recette.categorizedToppings[''] %}
+                                <li>{{ topping.quantity }} {{ topping.unit }} {{ topping.name }}</li>
+                            {% endfor %}
+                        {% else %}
+                            {% for category in recette.categorizedToppings %}
+                                <li><h3>{{ category[0] }}</h3><ul>{% for topping in category[1] %}<li>{{ topping.quantity }} {{ topping.unit }} {{ topping.name }}</li>{% endfor %}</ul></li>
+                            {% endfor %}
+                        {% endif %}
+                    </ul>
+                </div>
+                <div class="steps panel">
+                    <h2>Préparation</h2>
+                    {{ recette.formattedSteps }}
+                    {% if recette.gallery and recette.gallery.length %}
+                        <div class="gallery"><h3>Galerie</h3><div class="gallery-grid">{% for photo in recette.gallery %}<img src="{{ photo }}" alt="Photo de la recette" />{% endfor %}</div></div>
+                    {% endif %}
+                    <p><a href="https://www.guydemarle.com/profil/annep_a143-44563">Anne Penin</a>, votre conseillère Guy Demarle</p>
+                </div>
+            </article>
+        {% endif %}
+    {% endfor %}
+</div>
+
+<style>
+    @media screen and (min-width: 769px)
+    {
+        body.mold-ebook-site
+        {
+            display: block !important;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        body.mold-ebook-site .mold-ebook
+        {
+            width: calc(100% - 40px);
+            max-width: none;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        body.mold-ebook-site .mold-ebook-recipe
+        {
+            display: grid;
+            grid-template-columns: minmax(0, 35%) minmax(0, 65%);
+        }
+    }
+</style>
+
+<script>
+    async function updateRecipePageNumbers()
+    {
+        const ebook = document.querySelector('.mold-ebook');
+        const tocNumbers = document.querySelectorAll('.recipe-page-number');
+
+        if (!ebook || !tocNumbers.length)
+            return;
+
+        const iframe = document.createElement('iframe');
+        const printWidth = 718;
+        const printHeight = 1047;
+        const printStyles = `
+            html, body { margin: 0; width: ${printWidth}px; }
+            body { display: block !important; width: ${printWidth}px; }
+            .mold-ebook { display: block !important; width: ${printWidth}px !important; max-width: none !important; padding: 0 !important; }
+            .mold-ebook-page { width: ${printWidth}px !important; min-height: 0 !important; box-sizing: border-box; }
+            .mold-ebook-page { break-before: auto !important; page-break-before: auto !important; }
+            .mold-ebook-tutorial { padding: 19px 38px 38px !important; }
+            .mold-ebook-index { padding: 38px !important; }
+            .mold-ebook-recipe { display: grid !important; grid-template-columns: 35% 65% !important; grid-template-rows: auto auto auto 1fr !important; }
+            .mold-ebook-recipe .accessories .mold a > img { display: none !important; }
+        `;
+
+        iframe.setAttribute('aria-hidden', 'true');
+        iframe.style.position = 'fixed';
+        iframe.style.width = printWidth + 'px';
+        iframe.style.height = printHeight + 'px';
+        iframe.style.left = '-10000px';
+        iframe.style.top = '0';
+        iframe.style.visibility = 'hidden';
+        document.body.appendChild(iframe);
+
+        const frameDocument = iframe.contentDocument;
+        frameDocument.open();
+        frameDocument.write(
+            '<!doctype html><html><head>' +
+            '<link rel="stylesheet" href="/assets/style.css" />' +
+            '<style>' + printStyles + '</style>' +
+            '</head><body class="mold-ebook-site"><main>' +
+            ebook.outerHTML +
+            '</main></body></html>'
+        );
+        frameDocument.close();
+
+        await new Promise(resolve =>
+        {
+            const images = Array.from(frameDocument.images);
+            const pending = images.filter(image => !image.complete);
+
+            if (!pending.length)
+                resolve();
+            else
+                Promise.all(pending.map(image => new Promise(done =>
+                {
+                    image.addEventListener('load', done, { once: true });
+                    image.addEventListener('error', done, { once: true });
+                }))).then(resolve);
+        });
+
+        await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+
+        const measuredPages = Array.from(frameDocument.querySelectorAll('.mold-ebook-page'));
+        const pageHeights = measuredPages.map(page => page.getBoundingClientRect().height);
+        let documentHeight = 0;
+        const pageBreakTolerance = printHeight * 0.02;
+        const realPages = document.querySelectorAll('.mold-ebook-page');
+
+        measuredPages.forEach((page, index) =>
+        {
+            const pageHeight = pageHeights[index];
+            const recipeId = page.id;
+            const number = document.querySelector(`[data-recipe-id="${recipeId}"]`);
+
+            if (index > 0)
+            {
+                const remainder = documentHeight % printHeight;
+                const needsPageBreak = remainder > pageBreakTolerance;
+                realPages[index].classList.toggle('ebook-page-break-before', needsPageBreak);
+
+                if (needsPageBreak)
+                    documentHeight = Math.ceil(documentHeight / printHeight) * printHeight;
+            }
+
+            if (number)
+            {
+                const pageNumber = Math.floor(documentHeight / printHeight) + 1;
+                number.textContent = pageNumber;
+                number.setAttribute('aria-label', 'Page ' + pageNumber);
+            }
+
+            documentHeight += pageHeight;
+        });
+
+        iframe.remove();
+    }
+
+    window.addEventListener('load', updateRecipePageNumbers);
+</script>

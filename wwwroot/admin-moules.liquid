@@ -1,0 +1,16 @@
+---
+layout: generic.liquid
+title: Choisir un moule pour créer un ebook
+permalink: "/admin/moules/"
+mainContentTitle: Ebooks par moule
+---
+<ul class="admin-mold-list">
+  {% for moule in moules %}
+    <li class="mold">
+      <a href="/admin/moule/{{ moule.displayName | slugify }}/">
+        <img src="{{ moule.picture }}" alt="{{ moule.displayName }}" />
+        <span class="name">{{ moule.displayName }}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>

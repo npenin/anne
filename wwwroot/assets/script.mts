@@ -30,6 +30,9 @@ type ProcessedImage = {
     height: number;
 };
 
+if (!await globalThis.adminAuthReady)
+    throw new Error('Admin authentication required.');
+
 let token = localStorage.getItem('GITHUB_TOKEN');
 if (!token && (token = prompt('Token?')))
     localStorage.setItem('GITHUB_TOKEN', token);

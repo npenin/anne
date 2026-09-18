@@ -3,7 +3,7 @@
     <a href="/">Accueil</a>
   </li>
   {%- for item in collections.menu %}
-    <li>
+    <li{% if item.page.url contains '/admin/' %} class="admin-menu-link"{% endif %}>
       <a href="{{item.page.url}}">{{ item.data.title }}</a>
     </li>
   {% endfor -%}
@@ -12,3 +12,7 @@
     <a href="mailto:anne@anneetsesdelices.fr">Contact</a>
   </li>
 </ul>
+<script>
+  if (!localStorage.getItem('GITHUB_TOKEN'))
+    document.querySelectorAll('.admin-menu-link').forEach(item => item.remove());
+</script>
