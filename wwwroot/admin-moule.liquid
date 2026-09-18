@@ -28,7 +28,7 @@ eleventyComputed:
         <ol>
             {% assign recipeNumber = 0 %}
             {% for item in collections.recettes %}
-                {% if item.data.recette.mold.name == moule.name and item.data.recette.private != true %}
+                {% if item.data.recette.mold.name == moule.name %}
                     {% assign recipeSlug = item.data.recette.slug | default: item.data.recette.title | slugify %}
                     <li>
                         <a href="#recipe-{{ recipeSlug }}">{{ item.data.recette.title }}</a>
