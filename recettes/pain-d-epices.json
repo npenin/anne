@@ -1,0 +1,104 @@
+{
+    "title": "Le pain d'épices",
+    "slug": "pain-d-epices",
+    "private": true,
+    "toppings": [
+        {
+            "quantity": "200",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "250",
+            "unit": "g",
+            "name": "Miel"
+        },
+        {
+            "quantity": "2",
+            "unit": "c-à-c",
+            "name": "Mélange d'épices pour pain d'épices"
+        },
+        {
+            "quantity": "1",
+            "unit": "sachet",
+            "name": "Levure chimique"
+        },
+        {
+            "quantity": "1",
+            "unit": "pincée",
+            "name": "Sel"
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Lait"
+        },
+        {
+            "quantity": "1",
+            "unit": "Oeuf",
+            "name": ""
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Beurre"
+        },
+        {
+            "quantity": "70",
+            "unit": "g",
+            "name": "Zestes d'oranges"
+        },
+        {
+            "quantity": "50",
+            "unit": "g",
+            "name": "Cassonade"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Mélange d'épices pour pain d'épices bio, 50g",
+            "picture": "https://boutique.guydemarle.com/4555-nq_social_share/pain-depices-melange-d-epices-et-d-aromates-bio-50g.jpg",
+            "url": "https://boutique.guydemarle.com/epicerie-en-ligne/1372-pain-depices-melange-d-epices-et-d-aromates-bio-50g.html"
+        }
+    ],
+    "steps": [
+        "Préchauffer votre four à 180°C.",
+        "Sur la plaque perforée, poser le moule.",
+        "Dans une casserole, verser le lait et chauffer pendant 1 min 30 à 90°C.",
+        "Dans la casserole, ajouter le miel et mélanger pendant 2 min.",
+        "Dans la casserole, ajouter le beurre et chauffer pendant 1 min à 60°C.",
+        "Dans un cul-de-poule, mettre la farine, la levure, le mélange pour pain d'épices, le sel, l'œuf et la cassonade, puis verser progressivement le contenu de la casserole.",
+        "Dans le cul-de-poule, mélanger pendant 1 min au fouet à main.",
+        "Dans le cul-de-poule, ajouter les zestes d'oranges et mélanger pendant 1 min.",
+        "Dans le moule, verser la préparation.",
+        "Enfourner à 180°C pendant 50 min (suivant votre four).",
+        "Le pain d'épices est meilleur lorsqu'il est réalisé la veille.",
+        "Le pain d'épices peut être congelé sans problème.",
+        "Avant la dégustation, décongeler le pain d'épices 1 à 2 jours à l'avance."
+    ],
+    "for": "12",
+    "preptime": "10",
+    "resttime": "0",
+    "cooktime": "50",
+    "gallery": [],
+    "mold": {
+        "name": "Moule à cake OHRA®",
+        "picture": "https://boutique.guydemarle.com/11587-nq_social_share/moule-a-cake-ohra.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/4364-moule-a-cake-ohra.html"
+    }
+}
