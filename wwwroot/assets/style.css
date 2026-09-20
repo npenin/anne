@@ -131,6 +131,7 @@ a.panel {
 }
 
 .steps>ol,
+.steps>ul,
 .steps>p {
     margin-top: 0;
     margin-right: 20px;
@@ -172,7 +173,7 @@ a.panel {
     display: inline;
 }
 
-.steps>ol>li>ul>li {
+.steps>ol>li ul>li {
     padding-left: 26px;
 }
 
