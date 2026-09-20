@@ -671,6 +671,10 @@ async function fetchmold(ev: Event)
             ])
     );
 
+    const gallerie = JSON.parse(dummy.querySelector<HTMLElement>('#fancy')!.dataset.gallerie!);
+    meta['og:image'] = gallerie[0].imgThumbnail;
+    meta['og:title'] = gallerie[0].legend;
+
     dummy.remove();
 
     (ev.target as HTMLElement)!.innerText =
@@ -684,7 +688,15 @@ async function fetchmold(ev: Event)
     (ev.target as HTMLElement)!
         .parentNode!
         .querySelector('a')!
-        .href = meta['og:url'];
+        .href = meta['og:url'] || new URL(
+            (ev.target as HTMLElement)
+                .innerText
+                .replace(
+                    'https://boutique.guydemarle.com',
+                    'https://d2quloop9d8ihx.cloudfront.net'
+                ),
+            root
+        ).toString();
 }
 
 globalThis.fetchmold = fetchmold;

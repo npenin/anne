@@ -96,9 +96,10 @@ async function validateToken(token)
 
 const token = localStorage.getItem('GITHUB_TOKEN');
 const hasIdentity = localStorage.getItem('user.name')?.trim() && localStorage.getItem('user.email')?.trim();
-const authenticated = token && hasIdentity && await validateToken(token);
+const authenticated = token && hasIdentity && validateToken(token);
+globalThis.adminAuthReady = authenticated;
 
-if (authenticated)
+if (await authenticated)
 {
     document.body.classList.remove('admin-auth-required');
     document.body.classList.add('admin-authenticated');
@@ -110,4 +111,3 @@ else
     showAdminGate();
 }
 
-globalThis.adminAuthReady = Promise.resolve(!!authenticated);
