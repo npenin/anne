@@ -1,5 +1,5 @@
 {
-    "title": "Le pain d'épices",
+    "title": "Pain d'épices",
     "slug": "pain-d-epices",
     "private": true,
     "toppings": [
@@ -44,9 +44,9 @@
             "name": "Beurre"
         },
         {
-            "quantity": "70",
-            "unit": "g",
-            "name": "Zestes d'oranges"
+            "quantity": "1",
+            "unit": "Orange bio (zestes)",
+            "name": ""
         },
         {
             "quantity": "50",
@@ -74,17 +74,38 @@
             "name": "Mélange d'épices pour pain d'épices bio, 50g",
             "picture": "https://boutique.guydemarle.com/4555-nq_social_share/pain-depices-melange-d-epices-et-d-aromates-bio-50g.jpg",
             "url": "https://boutique.guydemarle.com/epicerie-en-ligne/1372-pain-depices-melange-d-epices-et-d-aromates-bio-50g.html"
+        },
+        {
+            "name": "Spatule haute température 25 cm",
+            "picture": "https://boutique.guydemarle.com/3113-thickbox_default/spatule-haute-temperature-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/622-spatule-haute-temperature-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Râpe double parois ",
+            "picture": "https://boutique.guydemarle.com/7342-thickbox_default/rape-double-paroi-de-cuisine.jpg",
+            "url": "https://boutique.guydemarle.com/Accessoire-de-decoupe/2531-rape-double-paroi-de-cuisine.html"
+        },
+        {
+            "name": "Spatule double embouts",
+            "picture": "https://boutique.guydemarle.com/5792-thickbox_default/spatule-double-embout-gris-anthracite.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1793-spatule-double-embout-gris-anthracite.html"
+        },
+        {
+            "name": "Support cul-de-poule ",
+            "picture": "https://boutique.guydemarle.com/2231-thickbox_default/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 180°C.\n2. Sur la plaque perforée, poser le moule.\n3. Dans une casserole, verser le lait et chauffer pendant 1 min 30 à 90°C.\n4. Dans la casserole, ajouter le miel et mélanger pendant 2 min.\n5. Dans la casserole, ajouter le beurre et chauffer pendant 1 min à 60°C.\n6. Dans un cul-de-poule, mettre la farine, la levure, le mélange pour pain d'épices, le sel, l'œuf et la cassonade, puis verser progressivement le contenu de la casserole.\n7. Dans le cul-de-poule, mélanger pendant 1 min au fouet à main.\n8. Dans le cul-de-poule, ajouter les zestes d'oranges et mélanger pendant 1 min.\n9. Dans le moule, verser la préparation.\n10. Enfourner à 180°C pendant 50 min (suivant votre four).\n11. Le pain d'épices est meilleur lorsqu'il est réalisé la veille.\n12. Le pain d'épices peut être congelé sans problème.\n13. Avant la dégustation, décongeler le pain d'épices 1 à 2 jours à l'avance.\n",
+    "steps": "1. Préchauffer votre four à 180°C (chaleur tournante).\n2. Poser votre moule sur une plaque aluminium perforée. \n3. Dans une petite casserole, faire chauffer ensemble le lait, le miel et le beurre à feu doux.\n4. Mélanger doucement avec la spatule haute température jusqu'à ce que le beurre soit entièrement fondu et le mélange bien fluide. Retirer du feu et laisser tiédir quelques instants.\n5. Dans un cul-de-poule, verser la farine, la cassonade, le sachet de levure, les épices à pain d'épices, le sel et mélanger.\n6. Verser progressivement le mélange tiède (lait / miel / beurre) dans le cul-de-poule en fouettant au centre pour éviter les grumeaux.\n7. Incorporer l'œuf et fouetter énergiquement jusqu'à obtenir une pâte lisse et brillante.\n8. À l'aide de la râpe double parois, prélevez les zestes de l'orange bio directement au-dessus de la préparation.\n9. Mélanger une dernière fois à l'aide de la spatule double embouts pour bien répartir les zestes.\n10. Verser l'appareil dans le moule.\n11. Enfourner à 180°C pour 45 - 50 min.\n12. Laisser refroidir avant de démouler.\n\n<br />\n\n💡**Astuces** : \n\n* Emballer dans du film alimentaire après refroidissement, il se conserve plusieurs jours sans sécher et gagne en moelleux le lendemain.\n\n- À congeler sans problème et à décongeler 1 à 2 jours avant de le déguster.\n\n",
     "for": "12",
     "preptime": "10",
     "resttime": "0",
-    "cooktime": "50",
+    "cooktime": "45-50",
+    "cover": "",
     "gallery": [],
     "mold": {
         "name": "Moule à cake OHRA®",
         "picture": "https://boutique.guydemarle.com/11587-nq_social_share/moule-a-cake-ohra.jpg",
-        "url": "https://boutique.guydemarle.com/moule-en-silicone/4364-moule-a-cake-ohra.html"
+        "url": "https://anneetsesdelices.fr/admin/recette/pain-d-epices/#"
     }
 }
