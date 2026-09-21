@@ -193,13 +193,13 @@ eleventyComputed:
             Array.from(document.querySelectorAll('style')).map(e=>e.textContent).join('\n')+
             '';
 
-        //iframe.setAttribute('aria-hidden', 'true');
+        iframe.setAttribute('aria-hidden', 'true');
         iframe.style.position = 'fixed';
         iframe.style.width = printWidth + 'px';
         iframe.style.height = printHeight + 'px';
-        //iframe.style.left = '-10000px';
+        iframe.style.left = '-10000px';
         iframe.style.top = '0';
-        //iframe.style.visibility = 'hidden';
+        iframe.style.visibility = 'hidden';
         document.body.appendChild(iframe);
 
         const frameDocument = iframe.contentDocument;
@@ -265,7 +265,7 @@ eleventyComputed:
             documentHeight += pageHeight;
         });
 
-        //iframe.remove();
+        iframe.remove();
     }
 
     window.addEventListener('load', updateRecipePageNumbers);
