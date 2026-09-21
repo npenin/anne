@@ -23,6 +23,13 @@ type Recipe = {
     mold: { name: string; picture: string; url: string };
 }
 
+type ImportedItem = {
+    name: string;
+    picture: string;
+    url: string;
+    type: 'mold' | 'accessory';
+}
+
 type ProcessedImage = {
     blob: Blob;
     filename: string;
@@ -47,6 +54,22 @@ if (!usermail && (usermail = prompt('user.email')))
 
 const dir = "/{{recette.title|slugify}}"
 const root = globalThis.location.href.substring(0, globalThis.location.href.length - '{{page.url}}'.length + '/admin/'.length);
+const importedItemsPromise = fetch(new URL('imported-items.json', root))
+    .then(async response =>
+    {
+        console.log('[imported-items] fetch', response.url, response.status);
+        return response.ok ? await response.json() as ImportedItem[] : [];
+    })
+    .then(items =>
+    {
+        console.log('[imported-items] loaded', items.length);
+        return items;
+    })
+    .catch(error =>
+    {
+        console.error('[imported-items] fetch failed', error);
+        return [] as ImportedItem[];
+    });
 
 await Notification.requestPermission();
 
@@ -541,6 +564,7 @@ globalThis.loadRecipe = function (recipe: Recipe)
     document.querySelector<HTMLElement>('.info .cooktime')!.innerText = recipe.cooktime;
     document.querySelector<HTMLElement>('.info .mold>.name')!.innerText = recipe.mold?.name;
     document.querySelector<HTMLImageElement>('.info .mold>a>img')!.src = recipe.mold?.picture;
+    document.querySelector<HTMLAnchorElement>('.info .mold>a')!.href = recipe.mold?.url;
     recipe.toppings?.forEach(t =>
     {
         const li = addtoppings(false);
@@ -644,10 +668,19 @@ await editor.create();
 document.querySelector('.mold')!.addEventListener('click', () => document.querySelector<HTMLElement>('.info>.mold>.name')!.focus());
 async function fetchmold(ev: Event)
 {
+    const input = ev.target as HTMLElement;
+    const type = input.closest('.info') ? 'mold' : 'accessory';
+    const importedItem = (await importedItemsPromise).find(item => item.type === type && item.name === input.innerText.trim());
+
+    if (importedItem)
+    {
+        applyImportedItem(input.closest('.mold')!, importedItem);
+        return;
+    }
+
     const res = await fetch(
         new URL(
-            (ev.target as HTMLElement)
-                .innerText
+            input.innerText
                 .replace(
                     'https://boutique.guydemarle.com',
                     'https://d2quloop9d8ihx.cloudfront.net'
@@ -673,20 +706,24 @@ async function fetchmold(ev: Event)
     );
 
     const gallerie = JSON.parse(dummy.querySelector<HTMLElement>('#fancy')!.dataset.gallerie!);
-    meta['og:image'] = gallerie[0].imgThumbnail;
+    const productImages = gallerie
+        .map(image => image.imgThumbnail || image.img || image.url)
+        .filter(Boolean);
+    meta['og:image'] = productImages[0];
     meta['og:title'] = gallerie[0].legend;
 
     dummy.remove();
 
-    (ev.target as HTMLElement)!.innerText =
+    input.innerText =
         meta['og:title'];
 
-    (ev.target as HTMLElement)!
+    const productImage = input
         .parentNode!
-        .querySelector('img')!
-        .src = meta['og:image'];
+        .querySelector<HTMLImageElement>('img')!;
+    productImage.src = meta['og:image'];
+    setupImagePicker(productImage, productImages);
 
-    (ev.target as HTMLElement)!
+    input
         .parentNode!
         .querySelector('a')!
         .href = meta['og:url'] || new URL(
@@ -726,7 +763,7 @@ export function getRecipe()
         cover: document.querySelector<HTMLImageElement>('.cover-image')!.src,
         gallery: galleryImages,
         mold: {
-            name: document.querySelector<HTMLElement>('.info>.mold')!.innerText,
+            name: document.querySelector<HTMLElement>('.info>.mold>.name')!.innerText,
             picture: document.querySelector<HTMLImageElement>('.info>.mold>a>img')!.src,
             url: document.querySelector<HTMLAnchorElement>('.info>.mold>a')!.href,
         },
@@ -1105,13 +1142,13 @@ function addAccessory(focus)
 
     const name = document.createElement('span');
     name.classList.add('name');
-    name.contentEditable = true as unknown as string;
+    name.contentEditable = 'true';
     li.appendChild(name);
     document.querySelector('.accessories>ul').appendChild(li);
     dynamic(name, {
         Enter: (ev: Event & { target: HTMLElement }) =>
         {
-            if (ev.target.innerText !== '' && ev.target.innerText !== '\n')
+            if (name.innerText.trim() !== '')
                 fetchmold(ev).then(() => ev.target.blur()).then(() => saveLocally());
             else
             {
@@ -1124,21 +1161,201 @@ function addAccessory(focus)
     if (focus)
         name.focus();
 
+    setupImportedPicker(name, 'accessory');
+
     return li;
 }
 
 globalThis.addAccessory = addAccessory;
 
-function addPrepStep(focus)
+function applyImportedItem(container: Element, item: ImportedItem)
+{
+    const input = container.querySelector<HTMLElement>('.name');
+    const image = container.querySelector<HTMLImageElement>('img');
+    const link = container.querySelector<HTMLAnchorElement>('a');
+
+    if (input)
+        input.innerText = item.name;
+    if (image)
+        image.src = item.picture;
+    if (link)
+        link.href = item.url;
+}
+
+function setupImagePicker(image: HTMLImageElement, images: string[])
+{
+    if (image.dataset.hasImagePicker)
+    {
+        image.dataset.imagePickerImages = JSON.stringify(images);
+        return;
+    }
+
+    image.dataset.hasImagePicker = 'true';
+    image.dataset.imagePickerImages = JSON.stringify(images);
+    image.title = 'Choisir une image';
+    image.addEventListener('click', event =>
+    {
+        event.preventDefault();
+
+        const pickerImages: string[] = JSON.parse(image.dataset.imagePickerImages || '[]');
+        if (pickerImages.length < 2)
+            return;
+
+        document.querySelector('.product-image-menu')?.remove();
+
+        const menu = document.createElement('div');
+        menu.className = 'imported-item-menu product-image-menu';
+        menu.setAttribute('role', 'listbox');
+
+        pickerImages.forEach(url =>
+        {
+            const option = document.createElement('button');
+            option.type = 'button';
+            option.className = 'imported-item-option product-image-option';
+            option.setAttribute('role', 'option');
+
+            const thumbnail = document.createElement('img');
+            thumbnail.src = url;
+            thumbnail.alt = '';
+            option.appendChild(thumbnail);
+            option.addEventListener('click', () =>
+            {
+                image.src = url;
+                menu.remove();
+                saveLocally();
+            });
+            menu.appendChild(option);
+        });
+
+        document.body.appendChild(menu);
+        const bounds = image.getBoundingClientRect();
+        menu.style.left = `${bounds.left + window.scrollX}px`;
+        menu.style.top = `${bounds.bottom + window.scrollY + 6}px`;
+        menu.style.width = `${Math.max(bounds.width, 280)}px`;
+
+        const close = (closeEvent: MouseEvent) =>
+        {
+            if (!menu.contains(closeEvent.target as Node) && closeEvent.target !== image)
+            {
+                menu.remove();
+                document.removeEventListener('mousedown', close);
+            }
+        };
+        setTimeout(() => document.addEventListener('mousedown', close));
+    });
+}
+
+async function initializeImportedItems()
+{
+    const items = await importedItemsPromise;
+    console.log('[imported-items] initializing', {
+        spans: document.querySelectorAll('.mold>.name').length,
+        items: items.length
+    });
+    document.querySelectorAll<HTMLElement>('.mold>.name').forEach(input =>
+    {
+        const type = input.closest('.info') ? 'mold' : 'accessory';
+        console.log('[imported-items] attach picker', type, input);
+        setupImportedPicker(input, type, items);
+    });
+}
+
+function setupImportedPicker(input: HTMLElement, type: ImportedItem['type'], loadedItems?: ImportedItem[])
+{
+    let menu: HTMLDivElement | undefined;
+    let highlightedIndex = -1;
+
+    const close = () =>
+    {
+        menu?.remove();
+        menu = undefined;
+        highlightedIndex = -1;
+    };
+
+    const render = async () =>
+    {
+        const allItems = loadedItems || await importedItemsPromise;
+        const items = allItems
+            .filter(item => item.type === type && item.name.toLocaleLowerCase().includes(input.innerText.trim().toLocaleLowerCase()))
+            .slice(0, 8);
+
+        console.log('[imported-items] render', {
+            type,
+            value: input.innerText,
+            matches: items.length
+        });
+
+        close();
+        if (!items.length)
+            return;
+
+        menu = document.createElement('div');
+        menu.className = 'imported-item-menu';
+        menu.setAttribute('role', 'listbox');
+        items.forEach((item, index) =>
+        {
+            const option = document.createElement('button');
+            option.type = 'button';
+            option.className = 'imported-item-option';
+            option.setAttribute('role', 'option');
+            const image = document.createElement('img');
+            image.src = item.picture;
+            image.alt = '';
+            const label = document.createElement('span');
+            label.innerText = item.name;
+            option.append(image, label);
+            option.addEventListener('mousedown', event =>
+            {
+                event.preventDefault();
+                applyImportedItem(input.closest('.mold')!, item);
+                close();
+                saveLocally();
+            });
+            option.addEventListener('mouseenter', () => highlightedIndex = index);
+            menu!.appendChild(option);
+        });
+        document.body.appendChild(menu);
+        const bounds = input.getBoundingClientRect();
+        menu.style.left = `${bounds.left + window.scrollX}px`;
+        menu.style.top = `${bounds.bottom + window.scrollY + 6}px`;
+        menu.style.width = `${Math.max(bounds.width, 280)}px`;
+    };
+
+    input.addEventListener('input', render);
+    input.addEventListener('focus', render);
+    input.addEventListener('blur', () => setTimeout(close, 150));
+    input.addEventListener('keydown', event =>
+    {
+        if (!menu)
+            return;
+
+        const options = Array.from(menu.querySelectorAll<HTMLButtonElement>('.imported-item-option'));
+        if (event.key === 'ArrowDown' || event.key === 'ArrowUp')
+        {
+            event.preventDefault();
+            highlightedIndex = (highlightedIndex + (event.key === 'ArrowDown' ? 1 : options.length - 1)) % options.length;
+            options.forEach((option, index) => option.classList.toggle('highlighted', index === highlightedIndex));
+        }
+        else if (event.key === 'Enter' && highlightedIndex >= 0)
+        {
+            event.preventDefault();
+            options[highlightedIndex].dispatchEvent(new MouseEvent('mousedown'));
+        }
+        else if (event.key === 'Escape')
+            close();
+    });
+}
+
+initializeImportedItems();
+
+function addPrepStep(focus: boolean)
 {
     const li = document.createElement('li');
 
     li.contentEditable =
         true as unknown as string;
 
-    document
-        .querySelector('.steps ol')
-        .appendChild(li);
+    document.querySelector('.steps ol')!.appendChild(li);
 
     dynamic(li);
 
@@ -1152,7 +1369,7 @@ function addPrepStep(focus)
 
 globalThis.addPrepStep = addPrepStep;
 
-function addtoppings(focus)
+function addtoppings(focus: boolean)
 {
     const li = document.createElement('li');
 
@@ -1170,7 +1387,7 @@ function addtoppings(focus)
     li.appendChild(unit);
     li.appendChild(topping);
     // li.contentEditable = true;
-    document.querySelector('.toppings ul').appendChild(li);
+    document.querySelector('.toppings ul')!.appendChild(li);
     dynamic(quantity, { Enter(ev) { unit.focus(); ev.preventDefault(); return false } })
     dynamic(unit, { Enter(ev) { topping.focus(); ev.preventDefault(); return false } })
     dynamic(topping, { Enter(ev) { topping.blur(); setTimeout(() => addtoppings(true)); ev.preventDefault(); return false } });
@@ -1209,12 +1426,12 @@ function dynamic(self: HTMLElement, keys?: Record<string, (ev: KeyboardEvent & {
 
     self.addEventListener('blur', function ()
     {
-        let li = self;
+        let li: HTMLElement | null = self;
 
         while (li && li.tagName !== 'LI')
             li = li.parentElement;
 
-        if (li?.textContent == '')
+        if (li && Array.from(li.querySelectorAll<HTMLInputElement>('input')).every(input => input.value == '') && li.textContent == '')
         {
             li.remove();
             saveLocally();

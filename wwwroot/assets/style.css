@@ -559,6 +559,74 @@ h2 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.imported-item-menu {
+    position: absolute;
+    z-index: 20;
+    padding: 6px;
+    background: rgba(255, 253, 247, .98);
+    border: 1px solid #d9b477;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(80, 45, 10, .22);
+    max-height: 280px;
+    overflow: auto;
+}
+
+.imported-item-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 100%;
+    padding: 8px;
+    border: 0;
+    border-radius: 8px;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+.imported-item-option:hover,
+.imported-item-option.highlighted {
+    background: #fff0d5;
+}
+
+.imported-item-option img {
+    width: 38px;
+    height: 38px;
+    flex: 0 0 38px;
+    object-fit: contain;
+    border-radius: 6px;
+    background: white;
+}
+
+.imported-item-option span {
+    /* overflow: hidden;
+    text-overflow: ellipsis; */
+    white-space: nowrap;
+}
+
+.mold>a>img[data-has-image-picker="true"] {
+    cursor: pointer;
+}
+
+.product-image-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+    padding: 8px;
+}
+
+.product-image-option {
+    min-width: 0;
+    padding: 4px;
+}
+
+.product-image-option img {
+    width: 100%;
+    height: 64px;
+}
+
 .accessories>ul>.mold {
     display: flex;
     flex-direction: row;
