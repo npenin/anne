@@ -14,7 +14,7 @@ pagination:
 <ul style="font-size:larger; display:none" id="recipes">
   {% for item in pagination.items  %}
     <li>
-  <a href="{{item.page.url }}">{% if item.data.recette.private %} [PRIVEE] {% endif %}{{ item.data.recette.title }}</a>
+  <a href="{{item.page.url }}">{% if item.data.recette.draft %} [BROUILLON] {% endif %}{% if item.data.recette.private %} [PRIVEE] {% endif %}{{ item.data.recette.title }}</a>
     </li>{% endfor %}
 </ul>
 {% if pagination.pages.length > 1 %}

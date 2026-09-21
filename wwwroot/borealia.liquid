@@ -7,7 +7,7 @@ tags:
 ---
 <ul>
   {% for item in collections.recettes %}
-    {% if item.data.recette.mold.name == 'Borealia® - Turbine à glace & Yaourtière' and item.data.recette.private!=true %}
+    {% if item.data.recette.mold.name == 'Borealia® - Turbine à glace & Yaourtière' and item.data.recette.private!=true and item.data.recette.draft!=true %}
       <li>
         <a href="{{item.page.url}}">{{ item.data.recette.title }}</a>
       </li>

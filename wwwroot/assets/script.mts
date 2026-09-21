@@ -11,6 +11,7 @@ type Recipe = {
     title: string;
     slug: string;
     private: boolean;
+    draft: boolean;
     toppings: { quantity: string; unit: string; name: string }[];
     accessories: { name: string; picture: string; url: string }[];
     steps: string[] | string;
@@ -558,6 +559,7 @@ globalThis.loadRecipe = function (recipe: Recipe)
 {
     document.querySelector('h1')!.innerText = recipe.title;
     document.querySelector<HTMLInputElement>('input[name="private"]')!.checked = recipe.private;
+    document.querySelector<HTMLInputElement>('input[name="draft"]')!.checked = recipe.draft;
     document.querySelector<HTMLElement>('.info .count')!.innerText = recipe.for;
     document.querySelector<HTMLElement>('.info .preptime')!.innerText = recipe.preptime;
     document.querySelector<HTMLElement>('.info .resttime')!.innerText = recipe.resttime;
@@ -745,6 +747,7 @@ export function getRecipe()
         title: document.querySelector('h1')!.innerText,
         slug: getRecipeSlug(),
         private: document.querySelector<HTMLInputElement>('input[name="private"]')!.checked,
+        draft: document.querySelector<HTMLInputElement>('input[name="draft"]')!.checked,
         toppings: Array.from(document.querySelectorAll('.toppings li')).map(li => ({
             quantity: li.querySelector<HTMLElement>('.quantity')!.innerText,
             unit: li.querySelector<HTMLElement>('.unit')!.innerText,
