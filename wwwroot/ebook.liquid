@@ -1,0 +1,295 @@
+---
+layout: index.liquid
+pagination:
+    data: moules
+    size: 1
+    alias: moule
+    reverse: true
+permalink: "/ebook/{{ moule.ebook }}/"
+eleventyComputed:
+    title: "Ebook {{ moule.displayName }} - Anne et ses Délices"
+---
+<section class="page ebook-cover">
+    <img src="{{ moule.picture }}" alt="{{ moule.displayName }}" />
+    <h1>Ebook</h1>
+    <h2>{{ moule.displayName }}</h2>
+</section>
+
+<section class="page tutorial">
+    <h1>Conseils d'utilisation</h1>
+    <div class="ebook-panel">
+        {% include "tuto-content.liquid" %}
+    </div>
+</section>
+
+<section class="page index">
+    <h1>Recettes avec {{ moule.displayName }}</h1>
+    <ol>
+        {% assign recipeNumber = 0 %}
+        {% for item in collections.recettes %}
+            {% if item.data.recette.mold.name == moule.name %}
+                {% assign recipeSlug = item.data.recette.slug | default: item.data.recette.title | slugify %}
+                <li>
+                    <a href="#{{ recipeSlug }}">{{ item.data.recette.title }}</a>
+                    <span class="recipe-page-number" data-recipe-id="recipe-{{ recipeSlug }}" aria-label="Page en cours"></span>
+                </li>
+                {% assign recipeNumber = recipeNumber | plus: 1 %}
+            {% endif %}
+        {% endfor %}
+    </ol>
+    <div class="contact">
+        <h2>Contact</h2>
+        <p><a href="https://www.guydemarle.com/profil/annep_a143-44563">Anne Penin</a>, votre conseillère Guy Demarle</p>
+        <p><a href="https://www.facebook.com/profile.php?id=100090744024852">Anne et ses Délices sur Facebook</a></p>
+    </div>
+</section>
+
+{% for item in collections.recettes %}
+    {% if item.data.recette.mold.name == moule.name %}
+        {% assign recette = item.data.recette %}
+        <article id="recipe-{{ recette.slug | default: recette.title | slugify }}" class="page recipe">
+            <header>
+                {% if recette.cover %}
+                    <img class="cover" src="{{ recette.cover }}" alt="Photo de {{ recette.title }}" />
+                {% endif %}
+                <h1><a name="{{ recette.slug | default: recette.title | slugify }}">{{ recette.title }}</a></h1>
+            </header>
+            <div class="info panel">
+                <div>
+                    <span class="count fal fa-utensils">{{ recette.for }}</span>
+                    <span class="preptime fal fa-hat-chef">{{ recette.preptime }}</span>
+                    <span class="resttime fal fa-snooze">{{ recette.resttime }}</span>
+                    <span class="cooktime fal fa-oven">{{ recette.cooktime }}</span>
+                </div>
+            </div>
+            {% if recette.accessories.length %}
+                <div class="accessories panel">
+                    <h2>Accessoires</h2>
+                    <ul>
+                        {% for accessory in recette.accessories %}
+                            <li class="mold">
+                                <a href="{{ accessory.url }}?s=AnneetsesDelices">
+                                    <img src="{{ accessory.picture }}" alt="{{ accessory.name }}" />
+                                    <span class="name">{{ accessory.name }}</span>
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endif %}
+            <div class="toppings panel">
+                <h2>Ingrédients</h2>
+                <ul>
+                    {% if recette.categorizedToppings[''] %}
+                        {% for topping in recette.categorizedToppings[''] %}
+                            <li>{{ topping.quantity }} {{ topping.unit }} {{ topping.name }}</li>
+                        {% endfor %}
+                    {% else %}
+                        {% for category in recette.categorizedToppings %}
+                            <li><h3>{{ category[0] }}</h3><ul>{% for topping in category[1] %}<li>{{ topping.quantity }} {{ topping.unit }} {{ topping.name }}</li>{% endfor %}</ul></li>
+                        {% endfor %}
+                    {% endif %}
+                </ul>
+            </div>
+            <div class="steps panel">
+                <h2>Préparation</h2>
+                {{ recette.formattedSteps }}
+                {% if recette.gallery and recette.gallery.length %}
+                    <div class="gallery"><h3>Galerie</h3><div class="gallery-grid">{% for photo in recette.gallery %}<img src="{{ photo }}" alt="Photo de la recette" />{% endfor %}</div></div>
+                {% endif %}
+                <p><a href="https://www.guydemarle.com/profil/annep_a143-44563">Anne Penin</a>, votre conseillère Guy Demarle</p>
+            </div>
+        </article>
+    {% endif %}
+{% endfor %}
+
+<style>
+
+    html{
+
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+
+        overscroll-behavior-x: contain;
+        overflow: auto;
+    }
+
+    body {
+
+        display:flex;
+        margin:0;
+
+        @media print{
+            flex-direction: column;
+        }
+
+        .page {
+            break-before: page;
+            min-width: 100vw;
+            max-width: 100vw;
+            
+            @media screen{
+                max-height: calc(100vh - 16px);
+                overflow: auto;
+                scroll-snap-align: start;
+            }
+
+        }
+
+        .ebook{ display:content; }
+         
+        section.ebook-cover{
+                display: flex;
+                @media print {
+                    min-height: calc(100vh - 16px);
+                }
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+
+                img{
+                    max-height: 350px;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+</style>
+
+<script>
+    async function updateRecipePageNumbers()
+    {
+        const ebookPages = document.querySelectorAll('section,article');
+        const tocNumbers = document.querySelectorAll('.recipe-page-number');
+
+        if (!ebookPages || !tocNumbers.length)
+            return;
+
+        const iframe = document.createElement('iframe');
+        const printWidth = 718;
+        const printHeight = 1047;
+        const printStyles = `body{ flex-direction:column; }
+            .page{ overflow:unset !important; max-height:unset !important; }
+            
+            @media (min-width:15cm) {
+
+                body,
+                .recipe {
+                    grid-template-columns: 9cm auto;
+                }
+
+                .info>div>span.fal {
+                    width: 2cm;
+                }
+            }
+
+            @media (max-width:14cm) {
+
+                body,
+                .recipe {
+                    grid-template-columns: 6.2cm auto;
+                }
+            }\n` +
+            Array.from(document.querySelectorAll('style')).map(e=>e.textContent).join('\n')+
+            '';
+
+        //iframe.setAttribute('aria-hidden', 'true');
+        iframe.style.position = 'fixed';
+        iframe.style.width = printWidth + 'px';
+        iframe.style.height = printHeight + 'px';
+        //iframe.style.left = '-10000px';
+        iframe.style.top = '0';
+        //iframe.style.visibility = 'hidden';
+        document.body.appendChild(iframe);
+
+        const frameDocument = iframe.contentDocument;
+        frameDocument.open();
+        frameDocument.write(
+            '<!doctype html><html><head>' +
+            '<link rel="stylesheet" href="/assets/style.css" />' +
+            '<link rel="stylesheet" href="/assets/print-style.css" />' +
+            '<style>' + printStyles + '</style>' +
+            '</head><body class="ebook-site"><main>'+
+            '</main></body></html>'
+        );
+        const main = frameDocument.querySelector('main');
+        ebookPages.forEach(p=>main.appendChild(p.cloneNode(true)))
+        frameDocument.close();
+
+        await new Promise(resolve =>
+        {
+            const images = Array.from(frameDocument.images);
+            const pending = images.filter(image => !image.complete);
+
+            if (!pending.length)
+                resolve();
+            else
+                Promise.all(pending.map(image => new Promise(done =>
+                {
+                    image.addEventListener('load', done, { once: true });
+                    image.addEventListener('error', done, { once: true });
+                }))).then(resolve);
+        });
+
+        await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+
+        const measuredPages = Array.from(frameDocument.querySelectorAll('.page'));
+        const pageHeights = measuredPages.map(page => page.getBoundingClientRect().height);
+        let documentHeight = 0;
+        const pageBreakTolerance = printHeight * 0.02;
+        const realPages = document.querySelectorAll('.page');
+
+        measuredPages.forEach((page, index) =>
+        {
+            const pageHeight = pageHeights[index];
+            const recipeId = page.id;
+            const number = document.querySelector(`[data-recipe-id="${recipeId}"]`);
+
+            if (index > 0)
+            {
+                const remainder = documentHeight % printHeight;
+                const needsPageBreak = remainder > pageBreakTolerance;
+                realPages[index].classList.toggle('ebook-page-break-before', needsPageBreak);
+
+                if (needsPageBreak)
+                    documentHeight = Math.ceil(documentHeight / printHeight) * printHeight;
+            }
+
+            if (number)
+            {
+                const pageNumber = Math.floor(documentHeight / printHeight) + 1;
+                number.textContent = pageNumber;
+                number.setAttribute('aria-label', 'Page ' + pageNumber);
+            }
+
+            documentHeight += pageHeight;
+        });
+
+        //iframe.remove();
+    }
+
+    window.addEventListener('load', updateRecipePageNumbers);
+
+    function scrollToHash() {
+    const id = location.hash.slice(1);
+    if (!id) return;
+
+    const article = document.querySelector('a[name="'+id+'"]');
+    if (!article) return;
+
+    article.scrollIntoView({
+        behavior: 'smooth',
+        block: 'nearest',
+        inline: 'start'
+    });
+    }
+
+    // Initial navigation
+    scrollToHash();
+
+    // Browser back / forward
+    window.addEventListener('popstate', scrollToHash);
+
+    // Hash navigation
+    window.addEventListener('hashchange', scrollToHash);
+</script>
