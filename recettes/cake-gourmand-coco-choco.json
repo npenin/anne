@@ -1,0 +1,91 @@
+{
+    "title": "Cake gourmand Coco Choco",
+    "slug": "cake-gourmand-coco-choco",
+    "private": true,
+    "toppings": [
+        {
+            "quantity": "2",
+            "unit": "Oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "170",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "1",
+            "unit": "Yaourt nature",
+            "name": ""
+        },
+        {
+            "quantity": "150",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "4",
+            "unit": "g",
+            "name": "Levure chimique"
+        },
+        {
+            "quantity": "10",
+            "unit": "cL",
+            "name": "Huile de tournesol"
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Noix de coco râpée"
+        },
+        {
+            "quantity": "50",
+            "unit": "g",
+            "name": "Pépites de chocolat"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-thickbox_default/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 20 x 30 cm ",
+            "picture": "https://boutique.guydemarle.com/2179-small_default/plaque-aluminium-perforee-20-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/652-plaque-aluminium-perforee-20-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-small_default/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-small_default/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-small_default/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Grande Maryse pâtissière ",
+            "picture": "https://boutique.guydemarle.com/17264-small_default/grande-maryse-patissiere-en-silicone.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/8600-grande-maryse-patissiere-en-silicone.html"
+        }
+    ],
+    "steps": "1. Préchauffer votre four à 170 °C (chaleur tournante).\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dans un cul-de-poule, fouetter les œufs et le sucre.\n4. Ajouter le yaourt, la farine et la levure chimique, puis mélanger jusqu'à obtenir un mélange homogène.\n5. Incorporer l’huile petit à petit tout en mélangeant pour obtenir une pâte bien lisse.\n6. Ajouter la noix de coco râpée et mélanger.\n7. Dans un ramequin, enrober les pépites de chocolat d'une petite cuillère à café de farine. Cela évitera qu'elles ne tombent au fond du moule à la cuisson.\n8. Incorporer les pépites délicatement à la préparation à l'aide d'une maryse.\n9. Verser la pâte dans le moule.\n10. Enfourner à 170°C pendant environ 45 min (suivant votre four).\n11. Laisser refroidir avant de démouler.\n\n",
+    "for": "12",
+    "preptime": "10",
+    "resttime": "0",
+    "cooktime": "45",
+    "cover": "",
+    "gallery": [],
+    "mold": {
+        "name": "Moule à cake OHRA®",
+        "picture": "https://boutique.guydemarle.com/11587-small_default/moule-a-cake-ohra.jpg",
+        "url": "https://anneetsesdelices.fr/admin/recette/cake-gourmand-coco-chocolat/#"
+    }
+}
