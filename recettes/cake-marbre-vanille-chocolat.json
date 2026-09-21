@@ -1,0 +1,91 @@
+{
+    "title": "Cake marbré Vanille Chocolat",
+    "slug": "cake-marbre-vanille-chocolat",
+    "private": true,
+    "toppings": [
+        {
+            "quantity": "200",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "200",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Beurre mou"
+        },
+        {
+            "quantity": "3",
+            "unit": "Oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "10",
+            "unit": "cL",
+            "name": "Lait"
+        },
+        {
+            "quantity": "60",
+            "unit": "g",
+            "name": "Chocolat à pâtisser"
+        },
+        {
+            "quantity": "1",
+            "unit": "sachet",
+            "name": "Levure chimique"
+        },
+        {
+            "quantity": "1",
+            "unit": "sachet",
+            "name": "Sucre vanillé"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-thickbox_default/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 20 x 30 cm ",
+            "picture": "https://boutique.guydemarle.com/2179-small_default/plaque-aluminium-perforee-20-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/652-plaque-aluminium-perforee-20-x-30-cm-guy-demarle.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-small_default/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-small_default/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-small_default/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Grande Maryse pâtissière",
+            "picture": "https://boutique.guydemarle.com/17264-small_default/grande-maryse-patissiere-en-silicone.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/8600-grande-maryse-patissiere-en-silicone.html"
+        }
+    ],
+    "steps": "1. Préchauffer votre four à 170 °C (chaleur tournante).\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dans un cul-de-poule, travailler le beurre mou avec le**** sucre à la maryse ou au fouet jusqu'à ce que le mélange devienne crémeux.\n4. Séparer les blancs de jaunes d'oeufs.\n5. Ajouter les jaunes d'œufs, la farine, la levure et le**** lait. Mélanger bien pour obtenir une pâte lisse.\n6. Faire fondre le chocolat au bain-marie et réserver.\n7. Monter les blancs d'œufs en neige ferme.\n8. Les incorporer délicatement à la préparation à l'aide d'une maryse en soulevant la pâte pour conserver toute sa légèreté.\n9. Diviser la pâte en deux portions égales, dans la première moitié, ajouter le sucre vanillé et dans la seconde moitié, incorporer le chocolat fondu.\n10. Dans le moule, alterner les couches de pâte à la vanille et de pâte au chocolat.\n11. Pour former les marbrures, passer la pointe d'un couteau ou un pic en bois en effectuant des mouvements de zigzag du bas vers le haut en faisant attention à ne pas toucher le fond du moule.\n12. Enfourner à 170 °C pendant 45 à 50 min (suivant votre four).\n13. Laisser refroidir avant de démouler.\n\n",
+    "for": "12",
+    "preptime": "20",
+    "resttime": "0",
+    "cooktime": "45-50",
+    "cover": "",
+    "gallery": [],
+    "mold": {
+        "name": "Moule à cake OHRA®",
+        "picture": "https://boutique.guydemarle.com/11587-small_default/moule-a-cake-ohra.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/4364-moule-a-cake-ohra.html"
+    }
+}
