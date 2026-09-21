@@ -39,8 +39,9 @@ eleventyComputed:
     </ol>
     <div class="contact">
         <h2>Contact</h2>
-        <p><a href="https://www.guydemarle.com/profil/annep_a143-44563">Anne Penin</a>, votre conseillère Guy Demarle</p>
-        <p><a href="https://www.facebook.com/profile.php?id=100090744024852">Anne et ses Délices sur Facebook</a></p>
+        <p><a target="_blank" href="https://www.guydemarle.com/profil/annep_a143-44563">Anne Penin</a>, votre conseillère Guy Demarle</p>
+        <p><a target="_blank" href="https://www.facebook.com/profile.php?id=100090744024852">Anne et ses Délices sur Facebook</a></p>
+        <p><a target="_blank" href="https://www.instagram.com/anneetsesdelices">Anne et ses Délices sur Instagram</a></p>
     </div>
 </section>
 
@@ -151,6 +152,16 @@ eleventyComputed:
                     max-height: 350px;
                     object-fit: contain;
                 }
+            }
+        }
+
+        section.index{
+            display:flex;
+            flex-direction: column;
+
+            .contact {
+                padding:5px;
+                margin-top: auto;
             }
         }
     }
