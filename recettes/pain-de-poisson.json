@@ -1,5 +1,6 @@
 {
     "title": "Pain de poisson",
+    "slug": "pain-de-poisson",
     "private": false,
     "toppings": [
         {
@@ -10,7 +11,7 @@
         {
             "quantity": "3",
             "unit": "boites",
-            "name": "Thon en conserve (2 x 140g égoutté)"
+            "name": "Thon en conserve (environ 400 g égoutté au total)"
         },
         {
             "quantity": "15",
@@ -23,7 +24,7 @@
             "name": "Crème fraîche"
         },
         {
-            "quantity": "20",
+            "quantity": "15",
             "unit": "g",
             "name": "Maîzena"
         },
@@ -80,14 +81,16 @@
             "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Déposer le tapis décor, face visible, dans le moule bûche. \n4. Egoutter le thon.\n6. Dans un cul de poule, émietter le thon à l'aide d'une fourchette.\n7. Ajouter les oeufs, le lait, la crème, la maîzena, le sel et le poivre puis mélanger.\n8. Verser la préparation dans le moule.\n9. Recouvrir le moule d'une toile de cuisson et d'une plaque aluminium perforée.\n10. Enfourner à 180°C pendant 1h20-1h25 (suivant votre four).\n11. Laisser refroidir et démouler puis placer au refrigerateur.\n12. Filmer au contact.\n13. Ce pain de poisson se déguste bien froid.",
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Déposer le tapis décor, face visible, dans le moule bûche.\n4. Egoutter le thon.\n5. Dans un cul de poule, émietter le thon à l'aide d'une fourchette.\n6. Ajouter les oeufs, le lait, la crème, la maîzena, le sel et le poivre puis mélanger.\n7. Verser la préparation dans le moule.\n8. Recouvrir le moule d'une toile de cuisson et d'une plaque aluminium perforée.\n9. Enfourner à 180°C pendant 1h20-1h25 (suivant votre four).\n10. Laisser refroidir et démouler puis placer au refrigerateur.\n11. Filmer au contact.\n12. Ce pain de poisson se déguste bien froid.\n\n",
     "for": "10",
     "preptime": "10",
     "resttime": "0",
     "cooktime": "1h20",
+    "cover": "",
+    "gallery": [],
     "mold": {
         "name": "Moule à bûche OHRA®",
         "picture": "https://boutique.guydemarle.com/16302-nq_social_share/moule-a-buche-en-silicone-ohra.jpg",
-        "url": "https://boutique.guydemarle.com/moule-en-silicone/4419-moule-a-buche-en-silicone-ohra.html"
+        "url": "https://anneetsesdelices.fr/admin/recette/pain-de-poisson/#"
     }
 }
