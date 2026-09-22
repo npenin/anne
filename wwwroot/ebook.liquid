@@ -48,7 +48,8 @@ eleventyComputed:
 {% for item in collections.recettes %}
     {% if item.data.recette.mold.name == moule.name %}
         {% assign recette = item.data.recette %}
-        <article id="recipe-{{ recette.slug | default: recette.title | slugify }}" class="page recipe">
+        <section id="recipe-{{ recette.slug | default: recette.title | slugify }}" class="page">
+        <article class="recipe">
             <header>
                 {% if recette.cover %}
                     <img class="cover" src="{{ recette.cover }}" alt="Photo de {{ recette.title }}" />
@@ -101,6 +102,7 @@ eleventyComputed:
                 <p><a href="https://www.guydemarle.com/profil/annep_a143-44563">Anne Penin</a>, votre conseillère Guy Demarle</p>
             </div>
         </article>
+        </section>
     {% endif %}
 {% endfor %}
 
