@@ -10,7 +10,8 @@ const preferredUrls = [
     'https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/672-support-poches-a-douilles-guy-demarle.html',
     'https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/2528-mini-louche-cuisine.html',
     'https://boutique.guydemarle.com/machine-a-glace/4458-borealia-turbine-a-glace-yaourtiere.html',
-    'https://boutique.guydemarle.com/moule-en-silicone/9282-moules-individuels-air-fryer-muffins-cupcakes-x6-ohra.html'
+    'https://boutique.guydemarle.com/moule-en-silicone/9282-moules-individuels-air-fryer-muffins-cupcakes-x6-ohra.html',
+    'https://boutique.guydemarle.com/11591-product_md/moule-a-cake-ohra.webp'
 ]
 
 for (const recipeFile of await readdir('./recettes', { withFileTypes: true }))
@@ -28,6 +29,19 @@ for (const recipeFile of await readdir('./recettes', { withFileTypes: true }))
                 continue;
             else
                 console.warn(`Conflict for mold ${recipe.mold.name}: "${index[recipe.mold.name].url}" vs "${recipe.mold.url}"`);
+        }
+        if (!index[recipe.mold.name] && recipe.mold.picture && !recipe.mold.picture.startsWith('https://anneetsesdelices.fr/') && !recipe.mold.picture.startsWith('http://localhost'))
+            index[recipe.mold.name] = recipe.mold;
+        else if (index[recipe.mold.name] && index[recipe.mold.name].picture !== recipe.mold.picture)
+        {
+            if (preferredUrls.includes(recipe.mold.picture))
+                index[recipe.mold.name] = recipe.mold;
+            else if (!recipe.mold.picture || recipe.mold.picture.startsWith('https://anneetsesdelices.fr/') || recipe.mold.picture.startsWith('http://localhost'))
+                continue;
+            else if (preferredUrls.includes(index[recipe.mold.name].picture))
+                recipe.mold = index[recipe.mold.name];
+            else
+                console.warn(`Conflict for mold ${recipe.mold.name}: "${index[recipe.mold.name].picture}" vs "${recipe.mold.picture}"`);
         }
 
         if (recipe.accessories?.length)
@@ -59,7 +73,7 @@ for (const recipeFile of await readdir('./recettes', { withFileTypes: true }))
         if (!index[recipe.mold.name])
             console.warn(`Missing mold ${recipe.mold.name} in index`);
         else
-            if (index[recipe.mold.name].url !== recipe.mold.url)
+            if (index[recipe.mold.name].url !== recipe.mold.url || index[recipe.mold.name].picture !== recipe.mold.picture)
                 recipe.mold = index[recipe.mold.name];
 
         if (recipe.accessories?.length)
