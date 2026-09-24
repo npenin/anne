@@ -13,7 +13,7 @@ eleventyComputed:
     <section class="page ebook-cover">
         <img src="{{ moule.picture }}" alt="{{ moule.displayName }}" />
         <h1>Ebook</h1>
-        <h2>{{ moule.displayName }}</h2>
+        <h2><a href="{{moule.url}}?s=AnneetsesDelices">{{ moule.displayName }}</a></h2>
     </section>
 
     <section class="contact page">
@@ -213,6 +213,20 @@ eleventyComputed:
                 img{
                     max-height: 350px;
                     object-fit: contain;
+                    -webkit-mask-image: radial-gradient(
+                        circle,
+                        white 40%,
+                        transparent 75%
+                    );
+                    mask-image: radial-gradient(
+                        circle,
+                        white 40%,
+                        transparent 75%
+                    );
+                }
+
+                a{
+                    color:inherit;
                 }
             }
         }
