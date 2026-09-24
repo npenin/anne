@@ -688,7 +688,6 @@ h2 {
     .toppings {
         grid-row: 5;
         grid-column: 1;
-        margin-left: 20px;
     }
 
     .logo {
@@ -711,7 +710,8 @@ h2 {
         max-height: 300px;
     }
 
-    body {
+    body,
+    .recipe {
         grid-template-columns: auto;
         grid-template-rows: auto;
     }
