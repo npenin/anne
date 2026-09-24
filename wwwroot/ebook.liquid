@@ -16,6 +16,45 @@ eleventyComputed:
         <h2>{{ moule.displayName }}</h2>
     </section>
 
+    <section class="contact page">
+        <h1>Pour aller plus loin</h1>
+        <p>Je vous partage ici des recettes simples à réaliser, pensées pour faire de chaque préparation un vrai moment de Délice avec l'univers Guy Demarle.</p>
+        <section>
+            <h2>🔍 Où trouver encore plus d'inspirations ?</h2>
+            <ul>
+            <style>
+                
+            </style>
+            <li><b>Mon site internet</b>
+                Retrouvez des idées gourmandes et mes dernières créations sur <a href="https://anneetsesdelices.fr">https://anneetsesdelices.fr</a>.
+            </li>
+            <li><b>Le club Guy Demarle</b>
+                Retrouvez des recettes exclusives directement sur le club Guy Demarle <a href="https://club.guydemarle.fr">https://club.guydemarle.fr</a>.
+            </li>
+            <li><b>Vos réalisations</b>
+                Cet ebook est aussi le vôtre ! Toutes les recettes présentées peuvent être adaptées et refaites à votre goût.
+            </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="underline">📨 Restons en contact<br/>
+            <small style="font-size: large">Une question sur une recette ou du matériel ?</small>
+            </h2>
+            <ul>
+            <li><b>Conseillère : </b><a target="_blank" href="https://www.guydemarle.com/profil/annep_a143-44563">Anne Penin</a></li>
+            <li><b>Téléphone : </b>+33 6 07 <span id="digit-1"></span> <span id="digit-2"></span> <span id="digit-3"></span> (n'hésitez pas à m'envoyer un SMS ou un WhatsApp)</li>
+            <li><b>E-mail : </b><a href="mailto:anne@anneetsesdelices.fr">anne@anneetsesdelices.fr</a></li>
+            <li>
+                <b>Réseaux sociaux : </b>
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=100090744024852">Facebook</a> | 
+                <a target="_blank" href="https://www.instagram.com/anneetsesdelices">Instagram</a>
+            </li>
+    
+            </ul>
+        </section>
+   </section>
+
     <section class="page tutorial">
         <h1>Conseils d'utilisation</h1>
         <div class="ebook-panel">
@@ -38,12 +77,6 @@ eleventyComputed:
                 {% endif %}
             {% endfor %}
         </ol>
-        <div class="contact">
-            <h2>Contact</h2>
-            <p><a target="_blank" href="https://www.guydemarle.com/profil/annep_a143-44563">Anne Penin</a>, votre conseillère Guy Demarle</p>
-            <p><a target="_blank" href="https://www.facebook.com/profile.php?id=100090744024852">Anne et ses Délices sur Facebook</a></p>
-            <p><a target="_blank" href="https://www.instagram.com/anneetsesdelices">Anne et ses Délices sur Instagram</a></p>
-        </div>
     </section>
 
     {% for item in collections.recettes %}
@@ -121,6 +154,24 @@ eleventyComputed:
 
     .tutorial {
         padding: 10px;
+    }
+
+    .contact.page {        
+        display:flex;
+        flex-direction:column;
+        justify-content: space-between;
+
+        padding: 10px;
+
+        h2 { font-family: var(--default-font-face); font-size: x-large; margin-top: 20px; }
+
+        li {
+            margin-top: 10px;
+            b {
+                font-weight: 600;
+            }
+
+        }
     }
 
     .ebook-viewport{
@@ -238,6 +289,10 @@ eleventyComputed:
 <script>
     async function updateRecipePageNumbers()
     {
+        document.getElementById('digit-1').innerText=new Date(441759600000).getFullYear()-1900;
+        document.getElementById('digit-2').innerText=Number(document.getElementById('digit-1').innerText)-17;
+        document.getElementById('digit-3').innerText=new Date(new Date(new Date().getFullYear(), 0, 1).valueOf()-1).getMonth()+1;
+
         const ebookPages = document.querySelectorAll('section,article');
         const tocNumbers = document.querySelectorAll('.recipe-page-number');
 
