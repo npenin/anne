@@ -9,103 +9,104 @@ permalink: "/ebook/{{ moule.ebook }}/"
 eleventyComputed:
     title: "Ebook {{ moule.displayName }} - Anne et ses Délices"
 ---
-<section class="page ebook-cover">
-    <img src="{{ moule.picture }}" alt="{{ moule.displayName }}" />
-    <h1>Ebook</h1>
-    <h2>{{ moule.displayName }}</h2>
-</section>
+<div class="ebook-viewport">
+    <section class="page ebook-cover">
+        <img src="{{ moule.picture }}" alt="{{ moule.displayName }}" />
+        <h1>Ebook</h1>
+        <h2>{{ moule.displayName }}</h2>
+    </section>
 
-<section class="page tutorial">
-    <h1>Conseils d'utilisation</h1>
-    <div class="ebook-panel">
-        {% include "tuto-content.liquid" %}
-    </div>
-</section>
+    <section class="page tutorial">
+        <h1>Conseils d'utilisation</h1>
+        <div class="ebook-panel">
+            {% include "tuto-content.liquid" %}
+        </div>
+    </section>
 
-<section class="page index">
-    <h1>Recettes avec {{ moule.displayName }}</h1>
-    <ol>
-        {% assign recipeNumber = 0 %}
-        {% for item in collections.recettes %}
-            {% if item.data.recette.mold.name == moule.name %}
-                {% assign recipeSlug = item.data.recette.slug | default: item.data.recette.title | slugify %}
-                <li>
-                    <a href="#{{ recipeSlug }}">{{ item.data.recette.title }}</a>
-                    <span class="recipe-page-number" data-recipe-id="recipe-{{ recipeSlug }}" aria-label="Page en cours"></span>
-                </li>
-                {% assign recipeNumber = recipeNumber | plus: 1 %}
-            {% endif %}
-        {% endfor %}
-    </ol>
-    <div class="contact">
-        <h2>Contact</h2>
-        <p><a target="_blank" href="https://www.guydemarle.com/profil/annep_a143-44563">Anne Penin</a>, votre conseillère Guy Demarle</p>
-        <p><a target="_blank" href="https://www.facebook.com/profile.php?id=100090744024852">Anne et ses Délices sur Facebook</a></p>
-        <p><a target="_blank" href="https://www.instagram.com/anneetsesdelices">Anne et ses Délices sur Instagram</a></p>
-    </div>
-</section>
-
-{% for item in collections.recettes %}
-    {% if item.data.recette.mold.name == moule.name %}
-        {% assign recette = item.data.recette %}
-        <section id="recipe-{{ recette.slug | default: recette.title | slugify }}" class="page">
-        <article class="recipe">
-            <header>
-                {% if recette.cover %}
-                    <img class="cover" src="{{ recette.cover }}" alt="Photo de {{ recette.title }}" />
+    <section class="page index">
+        <h1>Recettes avec {{ moule.displayName }}</h1>
+        <ol>
+            {% assign recipeNumber = 0 %}
+            {% for item in collections.recettes %}
+                {% if item.data.recette.mold.name == moule.name %}
+                    {% assign recipeSlug = item.data.recette.slug | default: item.data.recette.title | slugify %}
+                    <li>
+                        <a href="#{{ recipeSlug }}">{{ item.data.recette.title }}</a>
+                        <span class="recipe-page-number" data-recipe-id="recipe-{{ recipeSlug }}" aria-label="Page en cours"></span>
+                    </li>
+                    {% assign recipeNumber = recipeNumber | plus: 1 %}
                 {% endif %}
-                <h1><a name="{{ recette.slug | default: recette.title | slugify }}">{{ recette.title }}</a></h1>
-            </header>
-            <div class="info panel">
-                <div>
-                    <span class="count fal fa-utensils">{{ recette.for }}</span>
-                    <span class="preptime fal fa-hat-chef">{{ recette.preptime }}</span>
-                    <span class="resttime fal fa-snooze">{{ recette.resttime }}</span>
-                    <span class="cooktime fal fa-oven">{{ recette.cooktime }}</span>
+            {% endfor %}
+        </ol>
+        <div class="contact">
+            <h2>Contact</h2>
+            <p><a target="_blank" href="https://www.guydemarle.com/profil/annep_a143-44563">Anne Penin</a>, votre conseillère Guy Demarle</p>
+            <p><a target="_blank" href="https://www.facebook.com/profile.php?id=100090744024852">Anne et ses Délices sur Facebook</a></p>
+            <p><a target="_blank" href="https://www.instagram.com/anneetsesdelices">Anne et ses Délices sur Instagram</a></p>
+        </div>
+    </section>
+
+    {% for item in collections.recettes %}
+        {% if item.data.recette.mold.name == moule.name %}
+            {% assign recette = item.data.recette %}
+            <section id="recipe-{{ recette.slug | default: recette.title | slugify }}" class="page">
+            <article class="recipe">
+                <header>
+                    {% if recette.cover %}
+                        <img class="cover" src="{{ recette.cover }}" alt="Photo de {{ recette.title }}" />
+                    {% endif %}
+                    <h1><a name="{{ recette.slug | default: recette.title | slugify }}">{{ recette.title }}</a></h1>
+                </header>
+                <div class="info panel">
+                    <div>
+                        <span class="count fal fa-utensils">{{ recette.for }}</span>
+                        <span class="preptime fal fa-hat-chef">{{ recette.preptime }}</span>
+                        <span class="resttime fal fa-snooze">{{ recette.resttime }}</span>
+                        <span class="cooktime fal fa-oven">{{ recette.cooktime }}</span>
+                    </div>
                 </div>
-            </div>
-            {% if recette.accessories.length %}
-                <div class="accessories panel">
-                    <h2>Accessoires</h2>
+                {% if recette.accessories.length %}
+                    <div class="accessories panel">
+                        <h2>Accessoires</h2>
+                        <ul>
+                            {% for accessory in recette.accessories %}
+                                <li class="mold">
+                                    <a href="{{ accessory.url }}?s=AnneetsesDelices">
+                                        <img src="{{ accessory.picture }}" alt="{{ accessory.name }}" />
+                                        <span class="name">{{ accessory.name }}</span>
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endif %}
+                <div class="toppings panel">
+                    <h2>Ingrédients</h2>
                     <ul>
-                        {% for accessory in recette.accessories %}
-                            <li class="mold">
-                                <a href="{{ accessory.url }}?s=AnneetsesDelices">
-                                    <img src="{{ accessory.picture }}" alt="{{ accessory.name }}" />
-                                    <span class="name">{{ accessory.name }}</span>
-                                </a>
-                            </li>
-                        {% endfor %}
+                        {% if recette.categorizedToppings[''] %}
+                            {% for topping in recette.categorizedToppings[''] %}
+                                <li>{{ topping.quantity }} {{ topping.unit }} {{ topping.name }}</li>
+                            {% endfor %}
+                        {% else %}
+                            {% for category in recette.categorizedToppings %}
+                                <li><h3>{{ category[0] }}</h3><ul>{% for topping in category[1] %}<li>{{ topping.quantity }} {{ topping.unit }} {{ topping.name }}</li>{% endfor %}</ul></li>
+                            {% endfor %}
+                        {% endif %}
                     </ul>
                 </div>
-            {% endif %}
-            <div class="toppings panel">
-                <h2>Ingrédients</h2>
-                <ul>
-                    {% if recette.categorizedToppings[''] %}
-                        {% for topping in recette.categorizedToppings[''] %}
-                            <li>{{ topping.quantity }} {{ topping.unit }} {{ topping.name }}</li>
-                        {% endfor %}
-                    {% else %}
-                        {% for category in recette.categorizedToppings %}
-                            <li><h3>{{ category[0] }}</h3><ul>{% for topping in category[1] %}<li>{{ topping.quantity }} {{ topping.unit }} {{ topping.name }}</li>{% endfor %}</ul></li>
-                        {% endfor %}
+                <div class="steps panel">
+                    <h2>Préparation</h2>
+                    {{ recette.formattedSteps }}
+                    {% if recette.gallery and recette.gallery.length %}
+                        <div class="gallery"><h3>Galerie</h3><div class="gallery-grid">{% for photo in recette.gallery %}<img src="{{ photo }}" alt="Photo de la recette" />{% endfor %}</div></div>
                     {% endif %}
-                </ul>
-            </div>
-            <div class="steps panel">
-                <h2>Préparation</h2>
-                {{ recette.formattedSteps }}
-                {% if recette.gallery and recette.gallery.length %}
-                    <div class="gallery"><h3>Galerie</h3><div class="gallery-grid">{% for photo in recette.gallery %}<img src="{{ photo }}" alt="Photo de la recette" />{% endfor %}</div></div>
-                {% endif %}
-                <p><a href="https://www.guydemarle.com/profil/annep_a143-44563">Anne Penin</a>, votre conseillère Guy Demarle</p>
-            </div>
-        </article>
-        </section>
-    {% endif %}
-{% endfor %}
-
+                    <p><a href="https://www.guydemarle.com/profil/annep_a143-44563">Anne Penin</a>, votre conseillère Guy Demarle</p>
+                </div>
+            </article>
+            </section>
+        {% endif %}
+    {% endfor %}
+</div>
 <nav class="ebook-nav" aria-label="Navigation des pages">
     <button type="button" class="nav-arrow prev" aria-label="Page précédente">&#10094;</button>
     <button type="button" class="nav-arrow next" aria-label="Page suivante">&#10095;</button>
@@ -113,19 +114,27 @@ eleventyComputed:
 
 <style>
 
-    html{
+    body {
+        margin:0;
+        display:flex;
+    }
+
+    .tutorial {
+        padding: 10px;
+    }
+
+    .ebook-viewport{
+        margin:0;
+        display:flex;
+        position:fixed;
+        height:100vh;
+        width:100vw;
 
         scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
 
         overscroll-behavior-x: contain;
         overflow: auto;
-    }
-
-    body {
-
-        display:flex;
-        margin:0;
 
         @media print{
             flex-direction: column;
@@ -363,13 +372,14 @@ eleventyComputed:
     // Hash navigation
     window.addEventListener('hashchange', scrollToHash);
 
+    const viewport = document.querySelector('.ebook-viewport');
     const ebookPages = Array.from(document.querySelectorAll('.page'));
     const prevButton = document.querySelector('.ebook-nav .prev');
     const nextButton = document.querySelector('.ebook-nav .next');
 
     function currentEbookPageIndex()
     {
-        return Math.min(ebookPages.length - 1, Math.max(0, Math.round(window.scrollX / window.innerWidth)));
+        return Math.min(ebookPages.length - 1, Math.max(0, Math.round(viewport.scrollLeft / window.innerWidth)));
     }
 
     function updateNavButtons()
@@ -389,6 +399,6 @@ eleventyComputed:
         ebookPages[Math.min(ebookPages.length - 1, currentEbookPageIndex() + 1)].scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
     });
 
-    window.addEventListener('scroll', updateNavButtons, { passive: true });
+    viewport.addEventListener('scroll', updateNavButtons, { passive: true });
     updateNavButtons();
 </script>
