@@ -54,8 +54,8 @@ let usermail = localStorage.getItem('user.email');
 if (!usermail && (usermail = prompt('user.email')))
     localStorage.setItem('user.email', usermail);
 
-const dir = "/{{recette.title|slugify}}"
-const root = globalThis.location.href.substring(0, globalThis.location.href.length - '{{page.url}}'.length + '/admin/'.length);
+// const dir = "/{{recette.title|slugify}}"
+const root = new URL('../admin/', import.meta.url);
 const importedItemsPromise = fetch(new URL('imported-items.json', root))
     .then(async response =>
     {
@@ -945,16 +945,11 @@ globalThis.saveAsDraft = async function saveAsDraft()
 
     globalThis.saveLocally(recipe);
 
-    const filename =
-        `${dir}/recettes/${recipe.title
-            .normalize('NFD')
-            .replace(/[\u0300-\u036f]/g, '')
-            .replace(/ +/g, '-')
-            .toLowerCase()}.json`;
+    const filename = `/recettes/${slugifyTitle(recipe.title)}.json`;
 
     let res = await fetch(
-        'https://api.github.com/repos/npenin/anne/contents/' +
-        filename.substring(dir.length + 1),
+        'https://api.github.com/repos/npenin/anne/contents' +
+        filename,
         {
             headers: {
                 accept: 'application/vnd.github+json',
@@ -966,8 +961,8 @@ globalThis.saveAsDraft = async function saveAsDraft()
     );
 
     res = await fetch(
-        'https://api.github.com/repos/npenin/anne/contents/' +
-        filename.substring(dir.length + 1),
+        'https://api.github.com/repos/npenin/anne/contents' +
+        filename,
         {
             headers: {
                 accept: 'application/vnd.github+json',
@@ -1009,7 +1004,7 @@ globalThis.save = async function save()
     }
 
     const newFilepath = slugifyTitle(recipe.title);
-    const filename = `${dir}/recettes/${newFilepath}.json`;
+    const filename = `/recettes/${newFilepath}.json`;
 
     const renamed = !!originalFilepath && originalFilepath !== newFilepath;
     let create = false;
@@ -1033,8 +1028,8 @@ globalThis.save = async function save()
     else
     {
         res = await fetch(
-            'https://api.github.com/repos/npenin/anne/contents/' +
-            filename.substring(dir.length + 1),
+            'https://api.github.com/repos/npenin/anne/contents' +
+            filename,
             {
                 headers: {
                     accept: 'application/vnd.github+json',
@@ -1050,8 +1045,8 @@ globalThis.save = async function save()
         if (create)
         {
             res = await fetch(
-                'https://api.github.com/repos/npenin/anne/contents/' +
-                filename.substring(dir.length + 1),
+                'https://api.github.com/repos/npenin/anne/contents' +
+                filename,
                 {
                     headers: {
                         accept: 'application/vnd.github+json',
@@ -1093,8 +1088,8 @@ globalThis.save = async function save()
             }
 
             res = await fetch(
-                'https://api.github.com/repos/npenin/anne/contents/' +
-                filename.substring(dir.length + 1),
+                'https://api.github.com/repos/npenin/anne/contents' +
+                filename,
                 {
                     headers: {
                         accept: 'application/vnd.github+json',
