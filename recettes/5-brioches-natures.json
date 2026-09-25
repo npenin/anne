@@ -1,6 +1,8 @@
 {
     "title": "5 brioches natures",
+    "slug": "5-brioches-natures",
     "private": false,
+    "draft": true,
     "toppings": [
         {
             "quantity": "500",
@@ -80,11 +82,13 @@
             "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/615-cuillere-magique-guy-demarle.html"
         }
     ],
-    "steps": "1. Poser votre moule sur une plaque aluminium perforée.\n2. Dans un cul de poule, mélanger à la spatule, la farine, le sucre et la levure.\n3. Faire un puits, ajouter l’œuf et le lait tiède, bien mélanger.\n4. Ajouter le beurre coupé en petits dés.\n5. Pétrir à la main ou au robot 5 à 10 minutes.\n6. Laisser fermenter 1 heure à couvert, la pâte doit doubler de volume.\n7. Former 5 boules, puis à nouveau 5 boules  et déposer dans le moule et laisser lever une deuxième fois, environ 30 à 40 min.\n8. Préchauffer votre four à 180°C.\n9. Battre l'oeuf, à l'aide de la cuillère magique et badigeonner la pâte. Vous pouver parsemer de sucre en grains pour la décoration.\n10. Enfourner à 180°C pendant 25 minutes (suivant votre four).\n\n\n",
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée.\n2. Dans un cul de poule, mélanger à la spatule, la farine, le sucre et la levure.\n3. Faire un puits, ajouter l’œuf et le lait tiède, bien mélanger.\n4. Ajouter le beurre coupé en petits dés.\n5. Pétrir à la main ou au robot 5 à 10 minutes.\n6. Laisser fermenter 1 heure à couvert, la pâte doit doubler de volume.\n7. Former 5 boules, puis à nouveau 5 boules  et déposer dans le moule et laisser lever une deuxième fois, environ 30 à 40 min.\n8. Préchauffer votre four à 180°C.\n9. Battre l'oeuf, à l'aide de la cuillère magique et badigeonner la pâte. Vous pouver parsemer de sucre en grains pour la décoration.\n10. Enfourner à 180°C pendant 25 minutes (suivant votre four).\n\n",
     "for": "8",
     "preptime": "25",
     "resttime": "60+30",
     "cooktime": "25",
+    "cover": "",
+    "gallery": [],
     "mold": {
         "name": "Moule 5 cakes longs OHRA®",
         "picture": "https://boutique.guydemarle.com/11510-large_default/moule-5-cakes-longs-ohra.webp",
