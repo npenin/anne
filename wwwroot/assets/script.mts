@@ -21,6 +21,7 @@ type Recipe = {
     cooktime: string;
     cover?: string;
     gallery?: string[];
+    filepath?: string;
     mold: { name: string; picture: string; url: string };
 }
 
@@ -78,6 +79,7 @@ const coverImageEl = document.querySelector<HTMLImageElement>('.cover-image');
 const galleryGridEl = document.querySelector('.gallery-grid');
 const isGalleryEditor = !!document.querySelector('.gallery-editor');
 let galleryImages: string[] = [];
+let originalFilepath: string | undefined;
 let pendingCoverFile: { file: File, blobUrl?: string } | undefined | null = null;
 const pendingGalleryFiles = new Map<string, File>();
 
@@ -557,6 +559,7 @@ dynamic(document.querySelector('.info>.mold>.name')!, {
 
 globalThis.loadRecipe = function (recipe: Recipe)
 {
+    originalFilepath = recipe.filepath || originalFilepath;
     document.querySelector('h1')!.innerText = recipe.title;
     document.querySelector<HTMLInputElement>('input[name="private"]')!.checked = recipe.private;
     document.querySelector<HTMLInputElement>('input[name="draft"]')!.checked = recipe.draft;
@@ -812,6 +815,62 @@ function saveLocally()
         .then(recipe => globalThis.saveLocally(recipe));
 }
 
+async function commitRecipeRename(oldFilepath: string, newFilepath: string, recipe: Recipe)
+{
+    const apiUrl = 'https://api.github.com/repos/npenin/anne';
+    const headers = {
+        accept: 'application/vnd.github+json',
+        authorization: 'Bearer ' + token,
+        'X-GitHub-Api-Version': '2022-11-28',
+        'content-type': 'application/json'
+    };
+    const request = async (path: string, method: string, body?: unknown) =>
+    {
+        const response = await fetch(apiUrl + path, {
+            headers,
+            method,
+            body: body ? JSON.stringify(body) : undefined
+        });
+
+        if (!response.ok)
+            throw new Error(await response.text());
+
+        return await response.json();
+    };
+    const reference = await request('/git/ref/heads/master', 'GET');
+    const parentSha = reference.object.sha;
+    const parentCommit = await request('/git/commits/' + parentSha, 'GET');
+    const committer = {
+        name: localStorage.getItem('user.name'),
+        email: localStorage.getItem('user.email')
+    };
+    const tree = await request('/git/trees', 'POST', {
+        base_tree: parentCommit.tree.sha,
+        tree: [
+            {
+                path: `recettes/${newFilepath}.json`,
+                mode: '100644',
+                type: 'blob',
+                content: JSON.stringify(recipe, null, 4)
+            },
+            {
+                path: `recettes/${oldFilepath}.json`,
+                mode: '100644',
+                type: 'blob',
+                sha: null
+            }
+        ]
+    });
+    const commit = await request('/git/commits', 'POST', {
+        message: 'rename ' + recipe.title,
+        tree: tree.sha,
+        parents: [parentSha],
+        committer
+    });
+
+    await request('/git/refs/heads/master', 'PATCH', { sha: commit.sha });
+}
+
 async function uploadPendingImages(recipe: Recipe)
 {
     const slug = recipe.slug || getRecipeSlug();
@@ -949,73 +1008,30 @@ globalThis.save = async function save()
         return;
     }
 
-    const filename =
-        `${dir}/recettes/${recipe.title
-            .normalize('NFD')
-            .replace(/[\u0300-\u036f]/g, '')
-            .replace(/ +/g, '-')
-            .toLowerCase()}.json`;
+    const newFilepath = slugifyTitle(recipe.title);
+    const filename = `${dir}/recettes/${newFilepath}.json`;
 
-    let res = await fetch(
-        'https://api.github.com/repos/npenin/anne/contents/' +
-        filename.substring(dir.length + 1),
-        {
-            headers: {
-                accept: 'application/vnd.github+json',
-                authorization: 'Bearer ' + token,
-                'X-GitHub-Api-Version': '2022-11-28'
-            },
-            method: 'GET'
-        }
-    );
+    const renamed = !!originalFilepath && originalFilepath !== newFilepath;
+    let create = false;
+    let res: Response;
 
-    const create = res.status == 404;
-
-    if (create)
+    if (renamed)
     {
-        res = await fetch(
-            'https://api.github.com/repos/npenin/anne/contents/' +
-            filename.substring(dir.length + 1),
-            {
-                headers: {
-                    accept: 'application/vnd.github+json',
-                    authorization: 'Bearer ' + token,
-                    'X-GitHub-Api-Version': '2022-11-28'
-                },
-                method: 'PUT',
-                body: JSON.stringify({
-                    message: 'create ' + recipe.title,
-                    committer: {
-                        name: localStorage.getItem('user.name'),
-                        email: localStorage.getItem('user.email')
-                    },
-                    content: btoa(
-                        unescape(
-                            encodeURIComponent(
-                                JSON.stringify(
-                                    recipe,
-                                    null,
-                                    4
-                                )
-                            )
-                        )
-                    )
-                })
-            }
-        );
+        try
+        {
+            await commitRecipeRename(originalFilepath!, newFilepath, recipe);
+            originalFilepath = newFilepath;
+            res = new Response(null, { status: 200 });
+        }
+        catch (error: any)
+        {
+            notifyError(error.message || 'Erreur lors du renommage de la recette.');
+            delete document.querySelector<HTMLElement>('.toolbar').style.display;
+            return;
+        }
     }
     else
     {
-        if (!res.ok)
-        {
-            Swal.fire({
-                title: 'Probleme lors de la recuperation',
-                text: await res.text()
-            });
-
-            return;
-        }
-
         res = await fetch(
             'https://api.github.com/repos/npenin/anne/contents/' +
             filename.substring(dir.length + 1),
@@ -1025,33 +1041,94 @@ globalThis.save = async function save()
                     authorization: 'Bearer ' + token,
                     'X-GitHub-Api-Version': '2022-11-28'
                 },
-                method: 'PUT',
-                body: JSON.stringify({
-                    message: 'update ' + recipe.title,
-                    committer: {
-                        name: localStorage.getItem('user.name'),
-                        email: localStorage.getItem('user.email')
+                method: 'GET'
+            }
+        );
+
+        create = res.status == 404;
+
+        if (create)
+        {
+            res = await fetch(
+                'https://api.github.com/repos/npenin/anne/contents/' +
+                filename.substring(dir.length + 1),
+                {
+                    headers: {
+                        accept: 'application/vnd.github+json',
+                        authorization: 'Bearer ' + token,
+                        'X-GitHub-Api-Version': '2022-11-28'
                     },
-                    sha: (await res.json()).sha,
-                    content: btoa(
-                        unescape(
-                            encodeURIComponent(
-                                JSON.stringify(
-                                    recipe,
-                                    null,
-                                    4
+                    method: 'PUT',
+                    body: JSON.stringify({
+                        message: 'create ' + recipe.title,
+                        committer: {
+                            name: localStorage.getItem('user.name'),
+                            email: localStorage.getItem('user.email')
+                        },
+                        content: btoa(
+                            unescape(
+                                encodeURIComponent(
+                                    JSON.stringify(
+                                        recipe,
+                                        null,
+                                        4
+                                    )
                                 )
                             )
                         )
-                    )
-                })
+                    })
+                }
+            );
+        }
+        else
+        {
+            if (!res.ok)
+            {
+                Swal.fire({
+                    title: 'Probleme lors de la recuperation',
+                    text: await res.text()
+                });
+
+                return;
             }
-        );
+
+            res = await fetch(
+                'https://api.github.com/repos/npenin/anne/contents/' +
+                filename.substring(dir.length + 1),
+                {
+                    headers: {
+                        accept: 'application/vnd.github+json',
+                        authorization: 'Bearer ' + token,
+                        'X-GitHub-Api-Version': '2022-11-28'
+                    },
+                    method: 'PUT',
+                    body: JSON.stringify({
+                        message: 'update ' + recipe.title,
+                        committer: {
+                            name: localStorage.getItem('user.name'),
+                            email: localStorage.getItem('user.email')
+                        },
+                        sha: (await res.json()).sha,
+                        content: btoa(
+                            unescape(
+                                encodeURIComponent(
+                                    JSON.stringify(
+                                        recipe,
+                                        null,
+                                        4
+                                    )
+                                )
+                            )
+                        )
+                    })
+                }
+            );
+        }
     }
 
     if (res.ok)
     {
-        if (create)
+        if (create || renamed)
         {
             globalThis.saveLocally({
                 ...recipe,
@@ -1060,7 +1137,7 @@ globalThis.save = async function save()
                 title: ''
             });
 
-            let timerInterval;
+            let timerInterval: number;
 
             Swal.fire({
                 title: 'Recette enregistrée !',
