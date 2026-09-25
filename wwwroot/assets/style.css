@@ -26,7 +26,8 @@ blockquote {
     margin-top: .75em;
     margin-bottom: .75em;
 
-    >p {
+    >p,
+    >ul {
         margin-top: 0;
         margin-bottom: 0;
     }
