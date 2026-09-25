@@ -5,7 +5,7 @@ pagination:
     size: 1
     alias: moule
     reverse: true
-permalink: "/ebook/{{ moule.ebook }}/"
+permalink: "/ebook/{{ moule.ebook }}-{{moule.displayName|slugify}}/"
 eleventyComputed:
     title: "Ebook {{ moule.displayName }} - Anne et ses Délices"
 ---
@@ -171,20 +171,19 @@ eleventyComputed:
 
     .ebook-viewport{
         margin:0;
-        display:flex;
-        position:fixed;
-        height:100vh;
-        width:100vw;
+        
+        /* @media screen {
+            display:flex;
+            position:fixed;
+            height:100vh;
+            width:100vw;
 
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smooth;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
 
-        overscroll-behavior-x: contain;
-        overflow: auto;
-
-        @media print{
-            flex-direction: column;
-        }
+            overscroll-behavior-x: contain;
+            overflow: auto;
+        } */
 
         .page {
             break-before: page;

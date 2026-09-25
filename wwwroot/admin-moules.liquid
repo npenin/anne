@@ -7,7 +7,7 @@ mainContentTitle: Ebooks par moule
 <ul class="admin-mold-list">
   {% for moule in moules %}
     <li class="mold">
-      <a href="/ebook/{{ moule.ebook }}/">
+      <a href="/ebook/{{ moule.ebook }}-{{ moule.displayName|slugify}}/">
         <img src="{{ moule.picture }}" alt="{{ moule.displayName }}" />
         <span class="name">{{ moule.displayName }}</span>
       </a>
