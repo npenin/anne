@@ -45,34 +45,84 @@
             "name": "Sel"
         },
         {
-            "quantity": "Garnitures :",
+            "quantity": "Garniture Amande :",
             "unit": "",
             "name": ""
         },
         {
             "quantity": "3",
             "unit": "c-à-s",
-            "name": "Poudre d'amandes + 1/2 c-à-c Extrait d'amande amère + 1 c-à-s Amandes effilées"
+            "name": "Poudre d'amandes"
+        },
+        {
+            "quantity": "1/2",
+            "unit": "c-à-c",
+            "name": "Extrait d'amande amère"
+        },
+        {
+            "quantity": "1",
+            "unit": "c-à-s",
+            "name": "Amandes effilées"
+        },
+        {
+            "quantity": "Garniture Pomme-cannelle :",
+            "unit": "",
+            "name": ""
         },
         {
             "quantity": "1/2",
             "unit": "",
-            "name": "Pomme + 1/2 c-à-c Cannelle"
+            "name": "Pomme"
+        },
+        {
+            "quantity": "1/2",
+            "unit": "c-à-c",
+            "name": "Cannelle"
+        },
+        {
+            "quantity": "Garniture Citron-pavot :",
+            "unit": "",
+            "name": ""
         },
         {
             "quantity": "1",
             "unit": "",
-            "name": "Citron bio (zestes) + 1 c-à-c Graines de pavot"
+            "name": "Citron bio (zestes)"
+        },
+        {
+            "quantity": "1",
+            "unit": "c-à-c",
+            "name": "Graines de pavot"
+        },
+        {
+            "quantity": "Garniture Spéculoos / Caramel :",
+            "unit": "",
+            "name": ""
         },
         {
             "quantity": "2",
             "unit": "c-à-s",
-            "name": "Pate de spéculoos ou caramel au beurre salé + 2 biscuits spéculoos"
+            "name": "Pate de spéculoos ou caramel au beurre salé"
+        },
+        {
+            "quantity": "2",
+            "unit": "biscuits",
+            "name": "spéculoos"
+        },
+        {
+            "quantity": "Garniture Pralin-noisettes :",
+            "unit": "",
+            "name": ""
         },
         {
             "quantity": "2",
             "unit": "c-à-s",
-            "name": "Pralin + 1 c-à-s Noisettes concassées"
+            "name": "Pralin"
+        },
+        {
+            "quantity": "1",
+            "unit": "c-à-s",
+            "name": "Noisettes concassées"
         }
     ],
     "accessories": [
@@ -112,7 +162,7 @@
             "url": "https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/2527-zesteur-4-en-1.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 180°C (chaleur tournante). \n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dans un cul-de-poule, fouetter les œufs avec le sucre roux jusqu'à ce que le mélange devienne mousseux.\n4. Ajouter le yaourt et l'huile, puis mélanger.\n5. Incorporer la farine, la levure et le sel jusqu'à obtenir une pâte lisse et fluide.\n6. Répartir la pâte équitablement dans les 5 empreintes du moule.\n7. Ajouter ensuite les garnitures directement dans chaque cake :\n\n   * **Empreinte 1 (Amande) :** Mettre la poudre d'amandes et l'extrait d'amande amère. Mélanger délicatement à l'aide d'une petite spatule. Parsemez d'amandes effilées sur le dessus.\n   * **Empreinte 2 (Pomme / Cannelle) :** Couper la pomme en petits dés. Incorporer les dés et la cannelle. Mélanger doucement dans l'empreinte pour bien répartir les fruits.\n   * **Empreinte 3 (Citron / Pavot) :** Ajouter le zeste de citron et les graines de pavot, puis mélanger à la pâte.\n   * **Empreinte 4 (Spéculoos / Caramel) :** Déposer la pâte de spéculoos ou le caramel au centre, puis marbrer légèrement avec la petite spatule. Parsemer de biscuits spéculoos émiettés.\n   * **Empreinte 5 (Pralin / Noisettes) :** Incorporer le pralin dans la pâte et saupoudrer de noisettes concassées sur le dessus.\n\n8) Enfourner à 180°C pendant 20 à 25 min (suivant votre four). \n\n",
+    "steps": "1. Préchauffer votre four à 180°C (chaleur tournante).\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dans un cul-de-poule, fouetter les œufs avec le sucre roux jusqu'à ce que le mélange devienne mousseux.\n4. Ajouter le yaourt et l'huile, puis mélanger.\n5. Incorporer la farine, la levure et le sel jusqu'à obtenir une pâte lisse et fluide.\n6. Répartir la pâte équitablement dans les 5 empreintes du moule.\n7. Ajouter ensuite les garnitures directement dans chaque cake :\n\n   * **Empreinte 1 (Amande) :** Mettre la poudre d'amandes et l'extrait d'amande amère. Mélanger délicatement à l'aide d'une petite spatule. Parsemez d'amandes effilées sur le dessus.\n   * **Empreinte 2 (Pomme / Cannelle) :** Couper la pomme en petits dés. Incorporer les dés et la cannelle. Mélanger doucement dans l'empreinte pour bien répartir les fruits.\n   * **Empreinte 3 (Citron / Pavot) :** Ajouter le zeste de citron et les graines de pavot, puis mélanger à la pâte.\n   * **Empreinte 4 (Spéculoos / Caramel) :** Déposer la pâte de spéculoos ou le caramel au centre, puis marbrer légèrement avec la petite spatule. Parsemer de biscuits spéculoos émiettés.\n   * **Empreinte 5 (Pralin / Noisettes) :** Incorporer le pralin dans la pâte et saupoudrer de noisettes concassées sur le dessus.\n\n8) Enfourner à 180°C pendant 20 à 25 min (suivant votre four). \n\n",
     "for": "8-10",
     "preptime": "15",
     "resttime": "0",
