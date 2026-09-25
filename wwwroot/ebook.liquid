@@ -64,7 +64,7 @@ eleventyComputed:
         <ol>
             {% assign recipeNumber = 0 %}
             {% for item in collections.recettes %}
-                {% if item.data.recette.mold.name == moule.name %}
+                {% if item.data.recette.mold.name == moule.name and not item.data.recette.draft %}
                     {% assign recipeSlug = item.data.recette.slug | default: item.data.recette.title | slugify %}
                     <li>
                         <a href="#{{ recipeSlug }}">{{ item.data.recette.title }}</a>
@@ -77,7 +77,7 @@ eleventyComputed:
     </section>
 
     {% for item in collections.recettes %}
-        {% if item.data.recette.mold.name == moule.name %}
+        {% if item.data.recette.mold.name == moule.name and not item.data.recette.draft %}
             {% assign recette = item.data.recette %}
             <section id="recipe-{{ recette.slug | default: recette.title | slugify }}" class="page">
             <article class="recipe">
