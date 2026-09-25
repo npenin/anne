@@ -103,7 +103,7 @@ tags:
     window.saveLocally=function saveLocally(recipe)
     {
         if(recipe)
-            localStorage.setItem('tmp-{{recette.title | slugify }}', JSON.stringify(recipe))
+            localStorage.setItem('tmp-{{recette.title | slugify }}', JSON.stringify({ ...recipe, filepath: '{{ recette.filepath }}' }))
         else
             localStorage.removeItem('tmp-{{recette.title | slugify }}');
     }
