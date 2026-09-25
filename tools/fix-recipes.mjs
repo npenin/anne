@@ -11,7 +11,8 @@ const preferredUrls = [
     'https://boutique.guydemarle.com/ustensiles-de-cuisine-patisserie/2528-mini-louche-cuisine.html',
     'https://boutique.guydemarle.com/machine-a-glace/4458-borealia-turbine-a-glace-yaourtiere.html',
     'https://boutique.guydemarle.com/moule-en-silicone/9282-moules-individuels-air-fryer-muffins-cupcakes-x6-ohra.html',
-    'https://boutique.guydemarle.com/11591-product_md/moule-a-cake-ohra.webp'
+    'https://boutique.guydemarle.com/11591-product_md/moule-a-cake-ohra.webp',
+    'https://boutique.guydemarle.com/11510-large_default/moule-5-cakes-longs-ohra.webp'
 ]
 
 for (const recipeFile of await readdir('./recettes', { withFileTypes: true }))
