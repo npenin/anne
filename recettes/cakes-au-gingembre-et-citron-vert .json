@@ -1,7 +1,8 @@
 {
     "title": "Cakes au gingembre et citron vert ",
     "slug": "cakes-au-gingembre-et-citron-vert",
-    "private": true,
+    "private": false,
+    "draft": true,
     "toppings": [
         {
             "quantity": "150",
