@@ -28,7 +28,7 @@
     "@rollup/plugin-replace": "^6.0.3",
     "@types/cookie-parser": "^1.4.10",
     "@types/node": "^24.10.0",
-    "marked": "^17.0.0",
+    "marked": "^18.0.0",
     "postcss": "^8.4.0",
     "postcss-import": "^14.0.0",
     "rollup": "^4.12.0",
