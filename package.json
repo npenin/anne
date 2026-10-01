@@ -13,16 +13,11 @@
     "serve": "yarn dlx serve _site",
     "fix-recipes": "node ./tools/fix-recipes.mjs"
   },
-  "dependencies": {
-    "@milkdown/crepe": "^7.22.2",
-    "body-parser": "^2.3.0",
-    "cookie-parser": "^1.4.7",
-    "express": "^5.2.1"
-  },
   "packageManager": "yarn@4.18.1",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.6",
     "@akala/core": "^44.2.8",
+    "@milkdown/crepe": "^7.22.2",
     "@rollup/plugin-commonjs": "^29.0.3",
     "@rollup/plugin-node-resolve": "^16.0.3",
     "@rollup/plugin-replace": "^6.0.3",
