@@ -3,8 +3,23 @@ import type { TopBarFeatureConfig } from '@milkdown/crepe/feature/top-bar';
 
 declare global
 {
-    export function saveLocally(recipe: Recipe): void;
+    export function saveLocally(recipe: Recipe | null): void;
     export const Swal: any;
+    var adminAuthReady: Promise<boolean>;
+    var triggerCoverUpload: () => void;
+    var triggerGalleryUpload: () => void;
+    var removeCover: () => void;
+    var fetchmold: (ev: Event) => Promise<void>;
+    var loadRecipe: (recipe: Recipe) => void;
+    var getRecipe: () => Recipe;
+    var getRecipeWithBase64Images: () => Promise<Recipe>;
+    var uploadPendingImages: (recipe: Recipe) => Promise<void>;
+    var commitRecipeRename: (oldFilepath: string, newFilepath: string, recipe: Recipe) => Promise<void>;
+    var saveAsDraft: (recipe: Recipe) => Promise<void>;
+    var addPrepStep: (focus: boolean) => HTMLLIElement;
+    var addtoppings: (focus: boolean) => HTMLLIElement;
+    var addAccessory: (focus: boolean) => HTMLLIElement;
+    var save: (recipe: Recipe) => Promise<void>;
 }
 
 type Recipe = {
@@ -39,7 +54,7 @@ type ProcessedImage = {
     height: number;
 };
 
-if (!await globalThis.adminAuthReady)
+if (!await adminAuthReady)
     throw new Error('Admin authentication required.');
 
 let token = localStorage.getItem('GITHUB_TOKEN');
@@ -470,7 +485,7 @@ async function handleGalleryUpload(files: (Blob | MediaSource)[])
 
     const currentGallery =
         Array.isArray(getRecipe().gallery)
-            ? getRecipe().gallery.filter(Boolean)
+            ? getRecipe().gallery!.filter(Boolean)
             : [];
 
     currentGallery.push(...blobUrls);
@@ -667,7 +682,7 @@ export function indent(crepe: Crepe)
     return !!crepe.editor.action(callCommand(sinkListItemCommand.key));
 }
 editor.editor.use(commonmark).use(gfm)
-editor.on((listener: any) => listener.markdownUpdated((ctx, markdown) => { mdSteps = markdown; saveLocally(); }));
+editor.on((listener: any) => listener.markdownUpdated((ctx: any, markdown: string) => { mdSteps = markdown; saveLocally(); }));
 await editor.create();
 
 document.querySelector('.mold')!.addEventListener('click', () => document.querySelector<HTMLElement>('.info>.mold>.name')!.focus());
@@ -712,7 +727,7 @@ async function fetchmold(ev: Event)
 
     const gallerie = JSON.parse(dummy.querySelector<HTMLElement>('#fancy')!.dataset.gallerie!);
     const productImages = gallerie
-        .map(image => image.imgThumbnail || image.img || image.url)
+        .map((image: any) => image.imgThumbnail || image.img || image.url)
         .filter(Boolean);
     meta['og:image'] = productImages[0];
     meta['og:title'] = gallerie[0].legend;
@@ -744,7 +759,7 @@ async function fetchmold(ev: Event)
 
 globalThis.fetchmold = fetchmold;
 
-export function getRecipe()
+export function getRecipe(): Recipe
 {
     return {
         title: document.querySelector('h1')!.innerText,
@@ -871,7 +886,7 @@ async function commitRecipeRename(oldFilepath: string, newFilepath: string, reci
     await request('/git/refs/heads/master', 'PATCH', { sha: commit.sha });
 }
 
-async function uploadPendingImages(recipe: Recipe)
+async function uploadPendingImages(recipe: Recipe): Promise<Recipe>
 {
     const slug = recipe.slug || getRecipeSlug();
 
@@ -999,7 +1014,7 @@ globalThis.save = async function save()
     catch (error: any)
     {
         notifyError(error.message || 'Erreur lors du téléversement des images.');
-        delete document.querySelector<HTMLElement>('.toolbar').style.display;
+        delete (document.querySelector<HTMLElement>('.toolbar')!.style as any).display;
         return;
     }
 
@@ -1021,7 +1036,7 @@ globalThis.save = async function save()
         catch (error: any)
         {
             notifyError(error.message || 'Erreur lors du renommage de la recette.');
-            delete document.querySelector<HTMLElement>('.toolbar').style.display;
+            delete (document.querySelector<HTMLElement>('.toolbar')!.style as any).display;
             return;
         }
     }
@@ -1161,7 +1176,6 @@ globalThis.save = async function save()
 
                     location.replace(
                         filename
-                            .substring(dir.length)
                             .replace('.json', '/')
                     );
                 }
@@ -1179,7 +1193,7 @@ globalThis.save = async function save()
 
                 willClose: () =>
                 {
-                    delete document.querySelector<HTMLElement>('.toolbar').style.display;
+                    delete (document.querySelector<HTMLElement>('.toolbar')!.style as any).display;
                 }
             });
         }
@@ -1203,7 +1217,7 @@ globalThis.save = async function save()
     }
 };
 
-function addAccessory(focus)
+function addAccessory(focus: boolean): HTMLLIElement
 {
     const li = document.createElement('li');
     li.classList.add('mold');
@@ -1219,7 +1233,7 @@ function addAccessory(focus)
     name.classList.add('name');
     name.contentEditable = 'true';
     li.appendChild(name);
-    document.querySelector('.accessories>ul').appendChild(li);
+    document.querySelector('.accessories>ul')!.appendChild(li);
     dynamic(name, {
         Enter: (ev: Event & { target: HTMLElement }) =>
         {
