@@ -824,21 +824,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@milkdown/components@npm:7.22.2":
-  version: 7.22.2
-  resolution: "@milkdown/components@npm:7.22.2"
+"@milkdown/components@npm:7.22.3":
+  version: 7.22.3
+  resolution: "@milkdown/components@npm:7.22.3"
   dependencies:
     "@floating-ui/dom": "npm:^1.5.1"
-    "@milkdown/core": "npm:7.22.2"
-    "@milkdown/ctx": "npm:7.22.2"
-    "@milkdown/exception": "npm:7.22.2"
-    "@milkdown/plugin-diff": "npm:7.22.2"
-    "@milkdown/plugin-tooltip": "npm:7.22.2"
-    "@milkdown/preset-commonmark": "npm:7.22.2"
-    "@milkdown/preset-gfm": "npm:7.22.2"
-    "@milkdown/prose": "npm:7.22.2"
-    "@milkdown/transformer": "npm:7.22.2"
-    "@milkdown/utils": "npm:7.22.2"
+    "@milkdown/core": "npm:7.22.3"
+    "@milkdown/ctx": "npm:7.22.3"
+    "@milkdown/exception": "npm:7.22.3"
+    "@milkdown/plugin-diff": "npm:7.22.3"
+    "@milkdown/plugin-tooltip": "npm:7.22.3"
+    "@milkdown/preset-commonmark": "npm:7.22.3"
+    "@milkdown/preset-gfm": "npm:7.22.3"
+    "@milkdown/prose": "npm:7.22.3"
+    "@milkdown/transformer": "npm:7.22.3"
+    "@milkdown/utils": "npm:7.22.3"
     "@types/lodash-es": "npm:^4.17.12"
     clsx: "npm:^2.0.0"
     dompurify: "npm:^3.2.5"
@@ -850,28 +850,28 @@ __metadata:
     "@codemirror/language": ^6
     "@codemirror/state": ^6
     "@codemirror/view": ^6
-  checksum: 10/c3af9110ce0d6766cb86011055a3f10092415ea678b4a26f17135e385bb60f493ed89fa1c444b9fb14d021d2b8bd2af2eda8a5edc0b0d9ef599aa18a4c792727
+  checksum: 10/646445facad90792a7f46c752b89a531432bb85c38a2d5ac517cd83b03b199b1c599081761304b1ce28e205e7cd6bff9fd55d102ec01693b7514a5cd510573ed
   languageName: node
   linkType: hard
 
-"@milkdown/core@npm:7.22.2":
-  version: 7.22.2
-  resolution: "@milkdown/core@npm:7.22.2"
+"@milkdown/core@npm:7.22.3":
+  version: 7.22.3
+  resolution: "@milkdown/core@npm:7.22.3"
   dependencies:
-    "@milkdown/ctx": "npm:7.22.2"
-    "@milkdown/exception": "npm:7.22.2"
-    "@milkdown/prose": "npm:7.22.2"
-    "@milkdown/transformer": "npm:7.22.2"
+    "@milkdown/ctx": "npm:7.22.3"
+    "@milkdown/exception": "npm:7.22.3"
+    "@milkdown/prose": "npm:7.22.3"
+    "@milkdown/transformer": "npm:7.22.3"
     remark-parse: "npm:^11.0.0"
     remark-stringify: "npm:^11.0.0"
     unified: "npm:^11.0.3"
-  checksum: 10/1ed9ed5e74b02b721619d608cd7b9681fc765cc113e365e948f906c3f98cb50888a48e9e41cbc369129060bfd461755e80cfecedfd17cb32c20be459c14b1d54
+  checksum: 10/96e5b460b04d235544cf485b595a928911d3b50c7a32e869fc6f9d3658f732c17f6db1a8ccf5d36146a0a37520191b805c288fea95840dafea100d1fe85f7727
   languageName: node
   linkType: hard
 
 "@milkdown/crepe@npm:^7.22.2":
-  version: 7.22.2
-  resolution: "@milkdown/crepe@npm:7.22.2"
+  version: 7.22.3
+  resolution: "@milkdown/crepe@npm:7.22.3"
   dependencies:
     "@codemirror/commands": "npm:^6.2.4"
     "@codemirror/language": "npm:^6.10.1"
@@ -879,258 +879,258 @@ __metadata:
     "@codemirror/state": "npm:^6.4.1"
     "@codemirror/theme-one-dark": "npm:^6.1.2"
     "@codemirror/view": "npm:^6.16.0"
-    "@milkdown/kit": "npm:7.22.2"
+    "@milkdown/kit": "npm:7.22.3"
     "@types/lodash-es": "npm:^4.17.12"
     clsx: "npm:^2.0.0"
     codemirror: "npm:^6.0.1"
     dompurify: "npm:^3.2.5"
-    katex: "npm:^0.18.0"
+    katex: "npm:^0.19.0"
     lodash-es: "npm:^4.17.21"
     prosemirror-virtual-cursor: "npm:^0.4.2"
     remark-math: "npm:^6.0.0"
     unist-util-visit: "npm:^5.0.0"
     vue: "npm:^3.5.20"
-  checksum: 10/c18e02e31b0626d01cf7d21402cdb4b3ff8cfbd86ad509e7042043fac2d8c6c0879e152ad4e58f4538dcb85caf651e22a6e7f01044f8c0682fdf9a9a898ee3f7
+  checksum: 10/dd2165927f11f835a43445744e8a49dc2599b24748701af937678de0196914b36e7be77d05ff4946fd77536a603acc6d27a12d765546e37704570d435e18cf1a
   languageName: node
   linkType: hard
 
-"@milkdown/ctx@npm:7.22.2":
-  version: 7.22.2
-  resolution: "@milkdown/ctx@npm:7.22.2"
+"@milkdown/ctx@npm:7.22.3":
+  version: 7.22.3
+  resolution: "@milkdown/ctx@npm:7.22.3"
   dependencies:
-    "@milkdown/exception": "npm:7.22.2"
-  checksum: 10/4c6e2551594e698354250997d7608fbc092b6baf6450f6ea4b0babdef2c88bc97a24153f5a472656d57bc6b30c8f341a3c4bfdcfd10b1cb85b122444a0644f10
+    "@milkdown/exception": "npm:7.22.3"
+  checksum: 10/bad69192315e134ff2bef206035af13700aca595d9cf32c8804a03f11218fe15cb99aa397211a0e52541e3121bd142fe1331ea0d7e765cf3b79bdca4dd0fb61a
   languageName: node
   linkType: hard
 
-"@milkdown/exception@npm:7.22.2":
-  version: 7.22.2
-  resolution: "@milkdown/exception@npm:7.22.2"
-  checksum: 10/f05426c03f9590be8a39b4c668dd52e62ccbbfa6a06b0bae521f0a190d4ea3e427b0f73f820b07529d6958fbf51192033869f8e813b19300031be5336a7b5868
+"@milkdown/exception@npm:7.22.3":
+  version: 7.22.3
+  resolution: "@milkdown/exception@npm:7.22.3"
+  checksum: 10/a6927769a12f899825ca3a4d99b36e794f747bde377b97d7b4b2e1b3c02bfc39629b94c60408698190b333e62a2df1104ed7cd63f721ae105df9b717a5f7e873
   languageName: node
   linkType: hard
 
-"@milkdown/kit@npm:7.22.2":
-  version: 7.22.2
-  resolution: "@milkdown/kit@npm:7.22.2"
+"@milkdown/kit@npm:7.22.3":
+  version: 7.22.3
+  resolution: "@milkdown/kit@npm:7.22.3"
   dependencies:
-    "@milkdown/components": "npm:7.22.2"
-    "@milkdown/core": "npm:7.22.2"
-    "@milkdown/ctx": "npm:7.22.2"
-    "@milkdown/exception": "npm:7.22.2"
-    "@milkdown/plugin-block": "npm:7.22.2"
-    "@milkdown/plugin-clipboard": "npm:7.22.2"
-    "@milkdown/plugin-cursor": "npm:7.22.2"
-    "@milkdown/plugin-diff": "npm:7.22.2"
-    "@milkdown/plugin-history": "npm:7.22.2"
-    "@milkdown/plugin-indent": "npm:7.22.2"
-    "@milkdown/plugin-listener": "npm:7.22.2"
-    "@milkdown/plugin-slash": "npm:7.22.2"
-    "@milkdown/plugin-streaming": "npm:7.22.2"
-    "@milkdown/plugin-tooltip": "npm:7.22.2"
-    "@milkdown/plugin-trailing": "npm:7.22.2"
-    "@milkdown/plugin-upload": "npm:7.22.2"
-    "@milkdown/preset-commonmark": "npm:7.22.2"
-    "@milkdown/preset-gfm": "npm:7.22.2"
-    "@milkdown/prose": "npm:7.22.2"
-    "@milkdown/transformer": "npm:7.22.2"
-    "@milkdown/utils": "npm:7.22.2"
-  checksum: 10/0c4ae734edbea12f4959195c6c1319ac1b57b5f7d41d04b739c5caa515f8587ae0e10634f5686ae8b5f976783127065010ee24446f3ad921112d4c5e4f008a01
+    "@milkdown/components": "npm:7.22.3"
+    "@milkdown/core": "npm:7.22.3"
+    "@milkdown/ctx": "npm:7.22.3"
+    "@milkdown/exception": "npm:7.22.3"
+    "@milkdown/plugin-block": "npm:7.22.3"
+    "@milkdown/plugin-clipboard": "npm:7.22.3"
+    "@milkdown/plugin-cursor": "npm:7.22.3"
+    "@milkdown/plugin-diff": "npm:7.22.3"
+    "@milkdown/plugin-history": "npm:7.22.3"
+    "@milkdown/plugin-indent": "npm:7.22.3"
+    "@milkdown/plugin-listener": "npm:7.22.3"
+    "@milkdown/plugin-slash": "npm:7.22.3"
+    "@milkdown/plugin-streaming": "npm:7.22.3"
+    "@milkdown/plugin-tooltip": "npm:7.22.3"
+    "@milkdown/plugin-trailing": "npm:7.22.3"
+    "@milkdown/plugin-upload": "npm:7.22.3"
+    "@milkdown/preset-commonmark": "npm:7.22.3"
+    "@milkdown/preset-gfm": "npm:7.22.3"
+    "@milkdown/prose": "npm:7.22.3"
+    "@milkdown/transformer": "npm:7.22.3"
+    "@milkdown/utils": "npm:7.22.3"
+  checksum: 10/9a5f898d2d28ecda29e552d34cb43c7a30d0a9bb86b46c922129999f6057eb2252f5943e37bdd74a88049c283f72ee6ae03b40ada7c2d8d06ab64de3800c9366
   languageName: node
   linkType: hard
 
-"@milkdown/plugin-block@npm:7.22.2":
-  version: 7.22.2
-  resolution: "@milkdown/plugin-block@npm:7.22.2"
+"@milkdown/plugin-block@npm:7.22.3":
+  version: 7.22.3
+  resolution: "@milkdown/plugin-block@npm:7.22.3"
   dependencies:
     "@floating-ui/dom": "npm:^1.5.1"
-    "@milkdown/core": "npm:7.22.2"
-    "@milkdown/ctx": "npm:7.22.2"
-    "@milkdown/prose": "npm:7.22.2"
-    "@milkdown/utils": "npm:7.22.2"
+    "@milkdown/core": "npm:7.22.3"
+    "@milkdown/ctx": "npm:7.22.3"
+    "@milkdown/prose": "npm:7.22.3"
+    "@milkdown/utils": "npm:7.22.3"
     "@types/lodash-es": "npm:^4.17.12"
     lodash-es: "npm:^4.17.21"
-  checksum: 10/6c29dead267fc0c2b339b4de4c04b1221e2477eaa22ec0481a96b720f0f794404c4b84edc3bc623ff3ee9b4993f42986d37e260dac0f49f5dd2e1ff06c0e59f0
+  checksum: 10/b07c6c396f9618baf0dc98bc7ae14c1233247daee2cf843fa8958066b72983ff07a7377b1772643499153776a37c34f7c4af00041e866649ab258f8f73f1195c
   languageName: node
   linkType: hard
 
-"@milkdown/plugin-clipboard@npm:7.22.2":
-  version: 7.22.2
-  resolution: "@milkdown/plugin-clipboard@npm:7.22.2"
+"@milkdown/plugin-clipboard@npm:7.22.3":
+  version: 7.22.3
+  resolution: "@milkdown/plugin-clipboard@npm:7.22.3"
   dependencies:
-    "@milkdown/core": "npm:7.22.2"
-    "@milkdown/ctx": "npm:7.22.2"
-    "@milkdown/prose": "npm:7.22.2"
-    "@milkdown/utils": "npm:7.22.2"
-  checksum: 10/4c8fe586e51c5716a9c6d8331daf0ea101392333b282be110feba8b7fcfed45131016db9e50ff568984e0bb4a7f272564ae5311fb04e287e56e4943a1275589d
+    "@milkdown/core": "npm:7.22.3"
+    "@milkdown/ctx": "npm:7.22.3"
+    "@milkdown/prose": "npm:7.22.3"
+    "@milkdown/utils": "npm:7.22.3"
+  checksum: 10/af69fa4dd60617607a2b1fe18861e889cb988533557c88dd90cc8d4fef349c5bdf76b4f5054a19b10bc36e8413b8366e7b769b85c5bcbee2379a102a26320cc5
   languageName: node
   linkType: hard
 
-"@milkdown/plugin-cursor@npm:7.22.2":
-  version: 7.22.2
-  resolution: "@milkdown/plugin-cursor@npm:7.22.2"
+"@milkdown/plugin-cursor@npm:7.22.3":
+  version: 7.22.3
+  resolution: "@milkdown/plugin-cursor@npm:7.22.3"
   dependencies:
-    "@milkdown/ctx": "npm:7.22.2"
-    "@milkdown/prose": "npm:7.22.2"
-    "@milkdown/utils": "npm:7.22.2"
+    "@milkdown/ctx": "npm:7.22.3"
+    "@milkdown/prose": "npm:7.22.3"
+    "@milkdown/utils": "npm:7.22.3"
     prosemirror-drop-indicator: "npm:^0.1.0"
-  checksum: 10/82a7ae6e26406c92e9e086bacaa6c8fd3e82ec2c45cbf7add94c345a1c188fa7a53d3722fcc11f203cce4bb8aa58b0b44b2de83b404f54311a8f89824b412a6f
+  checksum: 10/c4b6a9fe5b787fafb386401f38b8ed0a5058870bd511a47ea30f334562360d401604eea6e51aabf666b3b0bd7485badddcf5d99c2478998dd044cca2bf800f6b
   languageName: node
   linkType: hard
 
-"@milkdown/plugin-diff@npm:7.22.2":
-  version: 7.22.2
-  resolution: "@milkdown/plugin-diff@npm:7.22.2"
+"@milkdown/plugin-diff@npm:7.22.3":
+  version: 7.22.3
+  resolution: "@milkdown/plugin-diff@npm:7.22.3"
   dependencies:
-    "@milkdown/core": "npm:7.22.2"
-    "@milkdown/ctx": "npm:7.22.2"
-    "@milkdown/prose": "npm:7.22.2"
-    "@milkdown/transformer": "npm:7.22.2"
-    "@milkdown/utils": "npm:7.22.2"
-  checksum: 10/2baecab15c843927c643bd8aedaea0df9f8c57739dad72ec948852025f113e29b7b9a54cc36a7e426a1202e6b253539efa4cc51bd12c4e434ab82da283cb60db
+    "@milkdown/core": "npm:7.22.3"
+    "@milkdown/ctx": "npm:7.22.3"
+    "@milkdown/prose": "npm:7.22.3"
+    "@milkdown/transformer": "npm:7.22.3"
+    "@milkdown/utils": "npm:7.22.3"
+  checksum: 10/deea8043c55570a87f284e6d96a6a9ba95911d14505755fefa0e453178ea1eade87ec68c742cf4c0f2fc0e56a026c4d1cffa82693e2d9ffc4a11263b195cad3a
   languageName: node
   linkType: hard
 
-"@milkdown/plugin-history@npm:7.22.2":
-  version: 7.22.2
-  resolution: "@milkdown/plugin-history@npm:7.22.2"
+"@milkdown/plugin-history@npm:7.22.3":
+  version: 7.22.3
+  resolution: "@milkdown/plugin-history@npm:7.22.3"
   dependencies:
-    "@milkdown/core": "npm:7.22.2"
-    "@milkdown/ctx": "npm:7.22.2"
-    "@milkdown/prose": "npm:7.22.2"
-    "@milkdown/utils": "npm:7.22.2"
-  checksum: 10/2365f8ed9859532018dbb07375bd25464428539c12a833319f8098081e2bce384bd3fc66b4a6b385a5e51b5dec4b8ca9cd4ef9ec63c05c8fcbe4d8ebd0647d15
+    "@milkdown/core": "npm:7.22.3"
+    "@milkdown/ctx": "npm:7.22.3"
+    "@milkdown/prose": "npm:7.22.3"
+    "@milkdown/utils": "npm:7.22.3"
+  checksum: 10/b2e3451b6962b339cab0aa08712563f7fdf4455ee45f3c827b05a4986dd502acd89a5e9966716450b3a14d5d15e18a9f2b6970a7e8b8b960725546a5fff9024e
   languageName: node
   linkType: hard
 
-"@milkdown/plugin-indent@npm:7.22.2":
-  version: 7.22.2
-  resolution: "@milkdown/plugin-indent@npm:7.22.2"
+"@milkdown/plugin-indent@npm:7.22.3":
+  version: 7.22.3
+  resolution: "@milkdown/plugin-indent@npm:7.22.3"
   dependencies:
-    "@milkdown/ctx": "npm:7.22.2"
-    "@milkdown/prose": "npm:7.22.2"
-    "@milkdown/utils": "npm:7.22.2"
-  checksum: 10/ae4f2eed171cd29f6c43b03644f1576e5ccabbb9bc3375f13560f76114b5693bbd8982ad9108edcd90f01c67c4334991922db5ec9c6ef1d7c13e48d18d804731
+    "@milkdown/ctx": "npm:7.22.3"
+    "@milkdown/prose": "npm:7.22.3"
+    "@milkdown/utils": "npm:7.22.3"
+  checksum: 10/385ea931325a772cf3b3a674b994fc6fabc37a2138eaa53a0b32b3d68ffa05d7b1441356cddd667ce13c7d166b7460ad81cf37bb83ce14f5f12cc30840fc5758
   languageName: node
   linkType: hard
 
-"@milkdown/plugin-listener@npm:7.22.2":
-  version: 7.22.2
-  resolution: "@milkdown/plugin-listener@npm:7.22.2"
+"@milkdown/plugin-listener@npm:7.22.3":
+  version: 7.22.3
+  resolution: "@milkdown/plugin-listener@npm:7.22.3"
   dependencies:
-    "@milkdown/core": "npm:7.22.2"
-    "@milkdown/ctx": "npm:7.22.2"
-    "@milkdown/prose": "npm:7.22.2"
+    "@milkdown/core": "npm:7.22.3"
+    "@milkdown/ctx": "npm:7.22.3"
+    "@milkdown/prose": "npm:7.22.3"
     "@types/lodash-es": "npm:^4.17.12"
     lodash-es: "npm:^4.17.21"
-  checksum: 10/ce0a764b02575fcbe0859b3a2e4bc9de633df49f20fef9ce19a1a41f8bae4135924b7fc509e7abc1d6535a1e91b620e139cc03b773c673f72e245127ba9da903
+  checksum: 10/747cc02ccc7ad4b908ee6757b2342c7489c75dc5e57903f4b29c820bd5f96e16ce7828ccf3f83f498633e280f5a494f72fa15b469af6fea9c72687f3457909e9
   languageName: node
   linkType: hard
 
-"@milkdown/plugin-slash@npm:7.22.2":
-  version: 7.22.2
-  resolution: "@milkdown/plugin-slash@npm:7.22.2"
+"@milkdown/plugin-slash@npm:7.22.3":
+  version: 7.22.3
+  resolution: "@milkdown/plugin-slash@npm:7.22.3"
   dependencies:
     "@floating-ui/dom": "npm:^1.5.1"
-    "@milkdown/ctx": "npm:7.22.2"
-    "@milkdown/prose": "npm:7.22.2"
-    "@milkdown/utils": "npm:7.22.2"
+    "@milkdown/ctx": "npm:7.22.3"
+    "@milkdown/prose": "npm:7.22.3"
+    "@milkdown/utils": "npm:7.22.3"
     "@types/lodash-es": "npm:^4.17.12"
     lodash-es: "npm:^4.17.21"
-  checksum: 10/f7021a5bda36fa94f120ca1e288bfdb457b47e613077c355dc3ee0e90cbe62dce8789bd3b267476cb8dc3a94f950dfe536653bfe6c8dc50194fe7c78191169bf
+  checksum: 10/88ba4de8cf8dd5070dd830d90d38dbac4ca3cd3ac7026e4478ead7ede7167a9702494278bcb87b445199fac1f1315f881584ae997332de12098426d6dfe984bb
   languageName: node
   linkType: hard
 
-"@milkdown/plugin-streaming@npm:7.22.2":
-  version: 7.22.2
-  resolution: "@milkdown/plugin-streaming@npm:7.22.2"
+"@milkdown/plugin-streaming@npm:7.22.3":
+  version: 7.22.3
+  resolution: "@milkdown/plugin-streaming@npm:7.22.3"
   dependencies:
-    "@milkdown/core": "npm:7.22.2"
-    "@milkdown/ctx": "npm:7.22.2"
-    "@milkdown/plugin-diff": "npm:7.22.2"
-    "@milkdown/prose": "npm:7.22.2"
-    "@milkdown/utils": "npm:7.22.2"
-  checksum: 10/317a64e70d28217d1c4f7eae9f9c93f3b700df3c2023cc30e505cb923448bd68645312cd3ef7b370ced2e93d2bd2f245bd7c6601c1a2046bb72c705f5439a349
+    "@milkdown/core": "npm:7.22.3"
+    "@milkdown/ctx": "npm:7.22.3"
+    "@milkdown/plugin-diff": "npm:7.22.3"
+    "@milkdown/prose": "npm:7.22.3"
+    "@milkdown/utils": "npm:7.22.3"
+  checksum: 10/3a536439d428fc396483018c1bcc52d47957599203e988f4d32d32f31f90484d79822e0535c9bb2120a52db29f10ab00e8c51a72c0f5ca6920879c4534c9a949
   languageName: node
   linkType: hard
 
-"@milkdown/plugin-tooltip@npm:7.22.2":
-  version: 7.22.2
-  resolution: "@milkdown/plugin-tooltip@npm:7.22.2"
+"@milkdown/plugin-tooltip@npm:7.22.3":
+  version: 7.22.3
+  resolution: "@milkdown/plugin-tooltip@npm:7.22.3"
   dependencies:
     "@floating-ui/dom": "npm:^1.5.1"
-    "@milkdown/ctx": "npm:7.22.2"
-    "@milkdown/prose": "npm:7.22.2"
-    "@milkdown/utils": "npm:7.22.2"
+    "@milkdown/ctx": "npm:7.22.3"
+    "@milkdown/prose": "npm:7.22.3"
+    "@milkdown/utils": "npm:7.22.3"
     "@types/lodash-es": "npm:^4.17.12"
     lodash-es: "npm:^4.17.21"
-  checksum: 10/7302dbca82eb78868f5beb34534f6771e64ea518376bcc6d232b8bcb5dc44b96ac2741098a4c097b731c3f0cc532e6632524ac4827484e8d73c3aeca63f925a9
+  checksum: 10/85e7337ca33ccfc26ada7fb6e795f56fd59a5788899afcdef97fc08ec80929f8ba305c201c6a22cb4b2651283ced6f9b01560c40c6ae50d8c9093cf7f47191bd
   languageName: node
   linkType: hard
 
-"@milkdown/plugin-trailing@npm:7.22.2":
-  version: 7.22.2
-  resolution: "@milkdown/plugin-trailing@npm:7.22.2"
+"@milkdown/plugin-trailing@npm:7.22.3":
+  version: 7.22.3
+  resolution: "@milkdown/plugin-trailing@npm:7.22.3"
   dependencies:
-    "@milkdown/ctx": "npm:7.22.2"
-    "@milkdown/prose": "npm:7.22.2"
-    "@milkdown/utils": "npm:7.22.2"
-  checksum: 10/b58158fb1699931693208987e1168a27095214fd0f926368588d3c5ed4fa834a67b80fecf6b4b6095db16ef9c830f5d7fdb977b0f1ba0a1d9af64d04544ee3b9
+    "@milkdown/ctx": "npm:7.22.3"
+    "@milkdown/prose": "npm:7.22.3"
+    "@milkdown/utils": "npm:7.22.3"
+  checksum: 10/c9cc803dc43b5784e41e41a0410d75a5c37433fc14af5120240d139f0545571016cd559a8dea1f5688c2f2a35ea9749ff83ba62080bc19ecbf09d07009444e15
   languageName: node
   linkType: hard
 
-"@milkdown/plugin-upload@npm:7.22.2":
-  version: 7.22.2
-  resolution: "@milkdown/plugin-upload@npm:7.22.2"
+"@milkdown/plugin-upload@npm:7.22.3":
+  version: 7.22.3
+  resolution: "@milkdown/plugin-upload@npm:7.22.3"
   dependencies:
-    "@milkdown/core": "npm:7.22.2"
-    "@milkdown/ctx": "npm:7.22.2"
-    "@milkdown/exception": "npm:7.22.2"
-    "@milkdown/prose": "npm:7.22.2"
-    "@milkdown/utils": "npm:7.22.2"
-  checksum: 10/17b722adc0123cd342d7336ebef82f754dcfa15a49ab15397b01e48242a22b8e5acade462cb059f32f11a0e046320af332b9746ec74001c76114ffae80393f5f
+    "@milkdown/core": "npm:7.22.3"
+    "@milkdown/ctx": "npm:7.22.3"
+    "@milkdown/exception": "npm:7.22.3"
+    "@milkdown/prose": "npm:7.22.3"
+    "@milkdown/utils": "npm:7.22.3"
+  checksum: 10/3adbc9804c09d597c457e2a0b72af21da3925f55118aceb844b23569d94e1f0f081f2febcae2f66af6b4b1bf1d58fd08900c0b535031ed56ba048ff7f0d85b15
   languageName: node
   linkType: hard
 
-"@milkdown/preset-commonmark@npm:7.22.2":
-  version: 7.22.2
-  resolution: "@milkdown/preset-commonmark@npm:7.22.2"
+"@milkdown/preset-commonmark@npm:7.22.3":
+  version: 7.22.3
+  resolution: "@milkdown/preset-commonmark@npm:7.22.3"
   dependencies:
-    "@milkdown/core": "npm:7.22.2"
-    "@milkdown/ctx": "npm:7.22.2"
-    "@milkdown/exception": "npm:7.22.2"
-    "@milkdown/prose": "npm:7.22.2"
-    "@milkdown/transformer": "npm:7.22.2"
-    "@milkdown/utils": "npm:7.22.2"
+    "@milkdown/core": "npm:7.22.3"
+    "@milkdown/ctx": "npm:7.22.3"
+    "@milkdown/exception": "npm:7.22.3"
+    "@milkdown/prose": "npm:7.22.3"
+    "@milkdown/transformer": "npm:7.22.3"
+    "@milkdown/utils": "npm:7.22.3"
     remark-inline-links: "npm:^7.0.0"
     unist-util-visit: "npm:^5.0.0"
     unist-util-visit-parents: "npm:^6.0.1"
-  checksum: 10/d13600e0efcbf7623dccb5b9599ac986b67d069a33b107fb16cecc4587a40966609960604104524e61c71cee6974aa8ae923c1f50e21410b5b583573025f59ae
+  checksum: 10/3dc236e8e1ce3cdac577f14decf8fc20921aea647792fd792347d0705f17feee5c3556b816608596e331113d27ad36196e6c816e44c5efc7ee729a679a9dd6e1
   languageName: node
   linkType: hard
 
-"@milkdown/preset-gfm@npm:7.22.2":
-  version: 7.22.2
-  resolution: "@milkdown/preset-gfm@npm:7.22.2"
+"@milkdown/preset-gfm@npm:7.22.3":
+  version: 7.22.3
+  resolution: "@milkdown/preset-gfm@npm:7.22.3"
   dependencies:
-    "@milkdown/core": "npm:7.22.2"
-    "@milkdown/ctx": "npm:7.22.2"
-    "@milkdown/exception": "npm:7.22.2"
-    "@milkdown/preset-commonmark": "npm:7.22.2"
-    "@milkdown/prose": "npm:7.22.2"
-    "@milkdown/transformer": "npm:7.22.2"
-    "@milkdown/utils": "npm:7.22.2"
+    "@milkdown/core": "npm:7.22.3"
+    "@milkdown/ctx": "npm:7.22.3"
+    "@milkdown/exception": "npm:7.22.3"
+    "@milkdown/preset-commonmark": "npm:7.22.3"
+    "@milkdown/prose": "npm:7.22.3"
+    "@milkdown/transformer": "npm:7.22.3"
+    "@milkdown/utils": "npm:7.22.3"
     prosemirror-safari-ime-span: "npm:^1.0.1"
     remark-gfm: "npm:^4.0.1"
-  checksum: 10/6e4f9bc162f44ef269af7f533664d0fb651e1e3e19fd5788dee20ed5967594941726f22bb833de83ff1257ae0754c4522c07685a41b9e090148bc85efa4cf17c
+  checksum: 10/6e5264ccf331de6db05bdedbff85e47cb3c4a02f71136a9c7a65d0645d8244c18177c169734b9f8b67e50f1e3f7bd1b1851496f9a21057a9a9cdffb4d1ae7d79
   languageName: node
   linkType: hard
 
-"@milkdown/prose@npm:7.22.2":
-  version: 7.22.2
-  resolution: "@milkdown/prose@npm:7.22.2"
+"@milkdown/prose@npm:7.22.3":
+  version: 7.22.3
+  resolution: "@milkdown/prose@npm:7.22.3"
   dependencies:
-    "@milkdown/exception": "npm:7.22.2"
+    "@milkdown/exception": "npm:7.22.3"
     prosemirror-changeset: "npm:^2.3.1"
     prosemirror-commands: "npm:^1.7.1"
     prosemirror-dropcursor: "npm:^1.8.2"
@@ -1144,33 +1144,33 @@ __metadata:
     prosemirror-tables: "npm:^1.8.1"
     prosemirror-transform: "npm:^1.10.5"
     prosemirror-view: "npm:^1.41.3"
-  checksum: 10/71365fae21c0dcc259e89c10f79f591fb656bd767e9c204f69798e6e9b04815ecece2c6375ce64d1a5055b41e089de1ca66b358ec50eacfa9512a005e1b5b3e6
+  checksum: 10/6ff0cb1cb525530661b390b881042b607b26ad374dd2dfdd97779faced833c4f6f3d7a87bfb2093e39dcfc0f924ef8a52e15a6307d9a753a07471d7f47e19a2c
   languageName: node
   linkType: hard
 
-"@milkdown/transformer@npm:7.22.2":
-  version: 7.22.2
-  resolution: "@milkdown/transformer@npm:7.22.2"
+"@milkdown/transformer@npm:7.22.3":
+  version: 7.22.3
+  resolution: "@milkdown/transformer@npm:7.22.3"
   dependencies:
-    "@milkdown/exception": "npm:7.22.2"
-    "@milkdown/prose": "npm:7.22.2"
+    "@milkdown/exception": "npm:7.22.3"
+    "@milkdown/prose": "npm:7.22.3"
     remark: "npm:^15.0.1"
     unified: "npm:^11.0.3"
-  checksum: 10/c77e0f4d315a85657050702133f1103d4c74c18cfdcb3e5ebe1fb90cdf8caeff6102c1f83c25b90846158c77d5751c6799bf4f3a9102831d6a0b810eaa01e7b0
+  checksum: 10/2f20f4a9d1f72f593fce203353288b7b0bafecd514704c7c91d4949107d8103fcfa3aae60de0ac5e3738bd8a01f0d12429882b04b0540d3bbe764426f27e38b7
   languageName: node
   linkType: hard
 
-"@milkdown/utils@npm:7.22.2":
-  version: 7.22.2
-  resolution: "@milkdown/utils@npm:7.22.2"
+"@milkdown/utils@npm:7.22.3":
+  version: 7.22.3
+  resolution: "@milkdown/utils@npm:7.22.3"
   dependencies:
-    "@milkdown/core": "npm:7.22.2"
-    "@milkdown/ctx": "npm:7.22.2"
-    "@milkdown/exception": "npm:7.22.2"
-    "@milkdown/prose": "npm:7.22.2"
-    "@milkdown/transformer": "npm:7.22.2"
+    "@milkdown/core": "npm:7.22.3"
+    "@milkdown/ctx": "npm:7.22.3"
+    "@milkdown/exception": "npm:7.22.3"
+    "@milkdown/prose": "npm:7.22.3"
+    "@milkdown/transformer": "npm:7.22.3"
     nanoid: "npm:^6.0.0"
-  checksum: 10/8d5d9842f956f112cc16eb30a8b62c1d6b930206955277e9a3cd295bc2a903220a59ec2066965c350ccb63562b1c4d96401f6b5eedd1a60fa82af24649a85b46
+  checksum: 10/b33cbd3b0ae70f5eb0aff215d70443977516cacb42f7064b17717c03966ad8470ab1ff244ed637f53b9f5b07c2ecb3349022047cfde9d51fc2dfdbd075baafc6
   languageName: node
   linkType: hard
 
@@ -2250,6 +2250,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"commander@npm:^15.0.0":
+  version: 15.0.0
+  resolution: "commander@npm:15.0.0"
+  checksum: 10/a5dab1f5c3f1bf2ea19e8089f650f7fb65c3ed88e13ddde62e490d34b20057bcb2cd3de5b6ddc8aae93286083f8256ca0b812df842f574cbebe0e40f5b2f98f7
+  languageName: node
+  linkType: hard
+
 "commander@npm:^5.1.0":
   version: 5.1.0
   resolution: "commander@npm:5.1.0"
@@ -3287,14 +3294,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"katex@npm:^0.18.0":
-  version: 0.18.4
-  resolution: "katex@npm:0.18.4"
+"katex@npm:^0.19.0":
+  version: 0.19.0
+  resolution: "katex@npm:0.19.0"
   dependencies:
-    commander: "npm:^8.3.0"
+    commander: "npm:^15.0.0"
   bin:
     katex: cli.js
-  checksum: 10/cf760043aaccba10aa2a1f73905b2922fa9bf471eb79f779f10680e77feba2edfdf7067a67123ef1b61bbb4c083af26a83ab91394a62f9b14ec7745df5393dfa
+  checksum: 10/b7122f04ef687fabad397721398ebc74c25df15284ab18815f4815e3632263850daa2bd18eb690c99eacd77f7fc0250d6b73be465e6b0973474873ed21e5d572
   languageName: node
   linkType: hard
 
