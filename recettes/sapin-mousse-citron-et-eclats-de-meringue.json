@@ -1,0 +1,77 @@
+{
+    "title": "Sapin mousse citron et éclats de meringue",
+    "slug": "sapin-mousse-citron-et-eclats-de-meringue",
+    "private": false,
+    "draft": true,
+    "toppings": [
+        {
+            "quantity": "3 1/2",
+            "unit": "",
+            "name": "Citrons (jus et zeste)"
+        },
+        {
+            "quantity": "290",
+            "unit": "g",
+            "name": "Crème liquide entière froide"
+        },
+        {
+            "quantity": "140",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "3 1/2",
+            "unit": "Oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "7",
+            "unit": "g",
+            "name": "Gélatine en feuilles"
+        },
+        {
+            "quantity": "70",
+            "unit": "g",
+            "name": "Meringues émiettées"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Ramollir la gélatine. Cuire jus, zeste, sucre et œufs en remuant jusqu'à épaississement, ajouter la gélatine essorée puis laisser refroidir.\n3. Monter la crème en chantilly et l'incorporer.\n4. Verser la préparation dans le moule (environ 965 g ; le moule contient 100 cl).\n5. Placer au réfrigérateur pendant au moins 5h.\n6. Démouler et parsemer d'éclats de meringue.",
+    "for": "10",
+    "preptime": "15",
+    "resttime": "5h",
+    "cooktime": "0",
+    "cover": "",
+    "gallery": [],
+    "mold": {
+        "name": "Moule Sapin OHRA®",
+        "picture": "https://boutique.guydemarle.com/12425-thickbox_default/moule-sapin-3d-silicone.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/4630-moule-sapin-3d-silicone.html"
+    }
+}

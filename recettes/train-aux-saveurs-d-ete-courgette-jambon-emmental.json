@@ -1,0 +1,87 @@
+{
+    "title": "Train aux saveurs d'été courgette-jambon-emmental",
+    "slug": "train-aux-saveurs-d-ete-courgette-jambon-emmental",
+    "private": false,
+    "draft": true,
+    "toppings": [
+        {
+            "quantity": "255",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "1",
+            "unit": "sachet",
+            "name": "Levure chimique"
+        },
+        {
+            "quantity": "3 1/2",
+            "unit": "Oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "115",
+            "unit": "g",
+            "name": "Lait"
+        },
+        {
+            "quantity": "70",
+            "unit": "g",
+            "name": "Huile d'olive"
+        },
+        {
+            "quantity": "175",
+            "unit": "g",
+            "name": "Courgette râpée et essorée"
+        },
+        {
+            "quantity": "115",
+            "unit": "g",
+            "name": "Jambon blanc"
+        },
+        {
+            "quantity": "115",
+            "unit": "g",
+            "name": "Emmental râpé"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le lait et l'huile d'olive.\n4. Ajouter la farine et la levure puis la courgette, le jambon en dés et l'emmental.\n5. Verser la préparation dans le moule (environ 1040 g ; le moule contient 139 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 180°C pendant 38-45 min (suivant votre four).\n8. Laisser refroidir avant de démouler.",
+    "for": "10",
+    "preptime": "15",
+    "resttime": "0",
+    "cooktime": "38-45",
+    "cover": "",
+    "gallery": [],
+    "mold": {
+        "name": "Moule Train OHRA® Express",
+        "picture": "https://boutique.guydemarle.com/19171-thickbox_default/moule-train-ohra-express.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/9371-moule-train-ohra-express.html"
+    }
+}

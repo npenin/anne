@@ -1,0 +1,87 @@
+{
+    "title": "Couronne tressée au pavot et à l'orange",
+    "slug": "couronne-tressee-au-pavot-et-a-l-orange",
+    "private": false,
+    "draft": true,
+    "toppings": [
+        {
+            "quantity": "300",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "20",
+            "unit": "g",
+            "name": "Levure fraîche de boulanger"
+        },
+        {
+            "quantity": "50",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "1 1/2",
+            "unit": "Oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "90",
+            "unit": "g",
+            "name": "Beurre mou"
+        },
+        {
+            "quantity": "75",
+            "unit": "g",
+            "name": "Lait tiède"
+        },
+        {
+            "quantity": "1",
+            "unit": "",
+            "name": "Orange (zeste)"
+        },
+        {
+            "quantity": "2",
+            "unit": "c-à-s",
+            "name": "Graines de pavot"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Délayer la levure dans le lait tiède.\n2. Pétrir farine, sucre, œufs, zeste d'orange et levure 10 min puis incorporer le beurre. Laisser pousser 1 h 30.\n3. Étaler, parsemer de pavot, rouler et tresser deux boudins puis fermer en couronne.\n4. Poser votre moule sur une plaque aluminium perforée.\n5. Verser la préparation dans le moule (environ 720 g ; le moule contient 158 cl).\n6. Laisser lever encore 30 min à température ambiante.\n7. Préchauffer votre four à 180°C.\n8. Enfourner à 180°C pendant 38-45 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
+    "for": "7",
+    "preptime": "40",
+    "resttime": "2h30",
+    "cooktime": "38-45",
+    "cover": "",
+    "gallery": [],
+    "mold": {
+        "name": "Moule Couronne Tressée OHRA®",
+        "picture": "https://boutique.guydemarle.com/19158-thickbox_default/moule-couronne-tressee-ohra.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/9368-moule-couronne-tressee-ohra.html"
+    }
+}

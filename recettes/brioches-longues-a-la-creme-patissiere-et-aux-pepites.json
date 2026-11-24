@@ -1,0 +1,92 @@
+{
+    "title": "Brioches longues à la crème pâtissière et aux pépites",
+    "slug": "brioches-longues-a-la-creme-patissiere-et-aux-pepites",
+    "private": false,
+    "draft": true,
+    "toppings": [
+        {
+            "quantity": "525",
+            "unit": "g",
+            "name": "Farine T45"
+        },
+        {
+            "quantity": "30",
+            "unit": "g",
+            "name": "Levure fraîche de boulanger"
+        },
+        {
+            "quantity": "75",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "3",
+            "unit": "Oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "150",
+            "unit": "g",
+            "name": "Lait tiède"
+        },
+        {
+            "quantity": "150",
+            "unit": "g",
+            "name": "Beurre mou"
+        },
+        {
+            "quantity": "1.0",
+            "unit": "pincée",
+            "name": "Sel"
+        },
+        {
+            "quantity": "225",
+            "unit": "g",
+            "name": "Crème pâtissière"
+        },
+        {
+            "quantity": "90",
+            "unit": "g",
+            "name": "Pépites de chocolat"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Délayer la levure dans le lait tiède.\n2. Pétrir farine, sucre, sel, œufs et levure 10 min puis incorporer le beurre. Laisser pousser 1 h 30.\n3. Étaler la pâte, tartiner de crème pâtissière, parsemer de pépites, rouler et couper.\n4. Poser votre moule sur une plaque aluminium perforée.\n5. Répartir la préparation dans les 3 empreintes (environ 360 g par empreinte ; chaque empreinte contient 70 cl).\n6. Laisser lever encore 30 min à température ambiante.\n7. Préchauffer votre four à 180°C.\n8. Enfourner à 180°C pendant 33-38 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
+    "for": "3",
+    "preptime": "40",
+    "resttime": "2h30",
+    "cooktime": "33-38",
+    "cover": "",
+    "gallery": [],
+    "mold": {
+        "name": "Moule 3 Brioches OHRA®",
+        "picture": "https://boutique.guydemarle.com/18261-thickbox_default/moule-3-brioches-ohra.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/9172-moule-3-brioches-ohra.html"
+    }
+}

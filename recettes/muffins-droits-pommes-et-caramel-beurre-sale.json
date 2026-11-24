@@ -1,0 +1,87 @@
+{
+    "title": "Muffins droits pommes et caramel beurre salé",
+    "slug": "muffins-droits-pommes-et-caramel-beurre-sale",
+    "private": false,
+    "draft": true,
+    "toppings": [
+        {
+            "quantity": "280",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "1",
+            "unit": "sachet",
+            "name": "Levure chimique"
+        },
+        {
+            "quantity": "130",
+            "unit": "g",
+            "name": "Sucre roux"
+        },
+        {
+            "quantity": "2",
+            "unit": "Oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "180",
+            "unit": "g",
+            "name": "Lait"
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Beurre fondu"
+        },
+        {
+            "quantity": "2",
+            "unit": "",
+            "name": "Pommes en petits dés"
+        },
+        {
+            "quantity": "60",
+            "unit": "g",
+            "name": "Caramel au beurre salé"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Mélanger la farine, la levure et le sucre.\n4. Fouetter les œufs avec le lait et le beurre fondu puis verser sur les ingrédients secs.\n5. Ajouter les dés de pomme.\n6. Répartir la préparation dans les 12 empreintes (environ 85 g par empreinte ; chaque empreinte contient 12,5 cl).\n7. Déposer une cuillère de caramel au centre de chaque muffin et l'enfoncer légèrement.\n8. Taper la plaque sur le plan de travail pour égaliser la pâte.\n9. Enfourner à 180°C pendant 18-22 min (suivant votre four).\n10. Laisser refroidir avant de démouler.",
+    "for": "12",
+    "preptime": "15",
+    "resttime": "0",
+    "cooktime": "18-22",
+    "cover": "",
+    "gallery": [],
+    "mold": {
+        "name": "Moule 12 muffins droits OHRA®",
+        "picture": "https://boutique.guydemarle.com/18242-thickbox_default/moule-12-muffins-droits-ohra.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/9176-moule-12-muffins-droits-ohra.html"
+    }
+}

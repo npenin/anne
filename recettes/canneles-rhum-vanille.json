@@ -1,0 +1,87 @@
+{
+    "title": "Cannelés rhum-vanille",
+    "slug": "canneles-rhum-vanille",
+    "private": false,
+    "draft": true,
+    "toppings": [
+        {
+            "quantity": "310",
+            "unit": "g",
+            "name": "Lait entier"
+        },
+        {
+            "quantity": "125",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "150",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "2 1/2",
+            "unit": "Oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "30",
+            "unit": "g",
+            "name": "Beurre"
+        },
+        {
+            "quantity": "2 1/2",
+            "unit": "c-à-s",
+            "name": "Rhum brun"
+        },
+        {
+            "quantity": "1",
+            "unit": "c-à-s",
+            "name": "Extrait de vanille"
+        },
+        {
+            "quantity": "1.0",
+            "unit": "pincée",
+            "name": "Sel"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Chauffer le lait avec le beurre et la vanille puis laisser tiédir.\n2. Mélanger la farine, le sucre et le sel, ajouter les œufs puis verser le lait tiède en fouettant doucement.\n3. Ajouter le rhum et laisser reposer 12 h au réfrigérateur.\n4. Remuer la pâte avant de l'utiliser.\n5. Poser votre moule sur une plaque aluminium perforée.\n6. Répartir la préparation dans les 12 empreintes (environ 65 g par empreinte ; chaque empreinte contient 8,5 cl).\n7. Préchauffer votre four à 200°C.\n8. Taper la plaque sur le plan de travail pour égaliser la pâte.\n9. Enfourner à 200°C pendant 16-20 min (suivant votre four).\n10. Laisser tiédir 10 min avant de démouler.",
+    "for": "12",
+    "preptime": "15",
+    "resttime": "12h",
+    "cooktime": "16-20",
+    "cover": "",
+    "gallery": [],
+    "mold": {
+        "name": "Moule 12 Moelleux Cannelés OHRA®",
+        "picture": "https://boutique.guydemarle.com/19086-thickbox_default/moule-12-moelleux-canneles-ohra.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/9369-moule-12-moelleux-canneles-ohra.html"
+    }
+}

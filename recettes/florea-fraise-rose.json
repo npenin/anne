@@ -1,0 +1,77 @@
+{
+    "title": "Florea fraise-rose",
+    "slug": "florea-fraise-rose",
+    "private": false,
+    "draft": true,
+    "toppings": [
+        {
+            "quantity": "500",
+            "unit": "g",
+            "name": "Fraises"
+        },
+        {
+            "quantity": "415",
+            "unit": "g",
+            "name": "Crème liquide entière"
+        },
+        {
+            "quantity": "135",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "15",
+            "unit": "g",
+            "name": "Gélatine en feuilles"
+        },
+        {
+            "quantity": "1 1/2",
+            "unit": "c-à-s",
+            "name": "Eau de rose"
+        },
+        {
+            "quantity": "415",
+            "unit": "g",
+            "name": "Fromage blanc épais"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Ramollir la gélatine. Mixer les fraises avec le sucre et chauffer un quart de la purée pour dissoudre la gélatine essorée.\n3. Mélanger avec le reste de purée, l'eau de rose et le fromage blanc.\n4. Monter la crème en chantilly et l'incorporer.\n5. Verser la préparation dans le moule (environ 1505 g ; le moule contient 167 cl).\n6. Placer au congélateur pendant au moins 6h.\n7. Démouler et laisser 20 min à température ambiante avant de servir.",
+    "for": "15",
+    "preptime": "15",
+    "resttime": "6h",
+    "cooktime": "0",
+    "cover": "",
+    "gallery": [],
+    "mold": {
+        "name": "FLOREA - MOULE SIGNATURE MERCOTTE",
+        "picture": "https://boutique.guydemarle.com/18712-thickbox_default/florea-moule-signature-mercotte-ohra.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/9266-florea-moule-signature-mercotte-ohra.html"
+    }
+}

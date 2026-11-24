@@ -1,0 +1,87 @@
+{
+    "title": "Briochettes salées au cantal et aux lardons",
+    "slug": "briochettes-salees-au-cantal-et-aux-lardons",
+    "private": false,
+    "draft": true,
+    "toppings": [
+        {
+            "quantity": "200",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "15",
+            "unit": "g",
+            "name": "Levure fraîche de boulanger"
+        },
+        {
+            "quantity": "2",
+            "unit": "Oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "40",
+            "unit": "g",
+            "name": "Beurre mou"
+        },
+        {
+            "quantity": "55",
+            "unit": "g",
+            "name": "Lait tiède"
+        },
+        {
+            "quantity": "65",
+            "unit": "g",
+            "name": "Cantal râpé"
+        },
+        {
+            "quantity": "65",
+            "unit": "g",
+            "name": "Lardons fumés"
+        },
+        {
+            "quantity": "1/2",
+            "unit": "c-à-c",
+            "name": "Sel"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Délayer la levure dans le lait tiède.\n2. Pétrir la farine, le sel, les œufs et la levure 10 min puis incorporer le beurre.\n3. Ajouter le cantal et les lardons revenus à la poêle et laisser pousser 1 h.\n4. Dégazer et diviser la pâte en boules.\n5. Poser votre moule sur une plaque aluminium perforée.\n6. Répartir la préparation dans les 12 empreintes (environ 45 g par empreinte ; chaque empreinte contient 10,5 cl).\n7. Laisser lever encore 30 min à température ambiante.\n8. Préchauffer votre four à 180°C.\n9. Enfourner à 180°C pendant 18-22 min (suivant votre four).\n10. Laisser refroidir avant de démouler.",
+    "for": "12",
+    "preptime": "30",
+    "resttime": "2h",
+    "cooktime": "18-22",
+    "cover": "",
+    "gallery": [],
+    "mold": {
+        "name": "Moule 12 briochettes OHRA®",
+        "picture": "https://boutique.guydemarle.com/17601-thickbox_default/moule-12-briochettes-ohra-guy-demarle.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/8787-moule-12-briochettes-ohra-guy-demarle.html"
+    }
+}

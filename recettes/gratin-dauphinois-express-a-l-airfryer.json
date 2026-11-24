@@ -1,0 +1,87 @@
+{
+    "title": "Gratin dauphinois express à l'airfryer",
+    "slug": "gratin-dauphinois-express-a-l-airfryer",
+    "private": false,
+    "draft": true,
+    "toppings": [
+        {
+            "quantity": "585",
+            "unit": "g",
+            "name": "Pommes de terre en fines lamelles"
+        },
+        {
+            "quantity": "195",
+            "unit": "g",
+            "name": "Crème liquide"
+        },
+        {
+            "quantity": "145",
+            "unit": "g",
+            "name": "Lait"
+        },
+        {
+            "quantity": "1",
+            "unit": "",
+            "name": "Gousse d'ail"
+        },
+        {
+            "quantity": "1.0",
+            "unit": "pincée",
+            "name": "Noix de muscade"
+        },
+        {
+            "quantity": "1.0",
+            "unit": "pincée",
+            "name": "Sel"
+        },
+        {
+            "quantity": "1.0",
+            "unit": "pincée",
+            "name": "Poivre"
+        },
+        {
+            "quantity": "50",
+            "unit": "g",
+            "name": "Gruyère râpé"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Préchauffer votre airfryer à 170°C.\n2. Poser votre moule sur la grille du panier de l'airfryer.\n3. Frotter le moule avec la gousse d'ail.\n4. Mélanger les pommes de terre avec la crème, le lait, la muscade, le sel et le poivre.\n5. Verser la préparation dans le moule (environ 1020 g ; le moule contient 104,2 cl).\n6. Parsemer de gruyère râpé.\n7. Taper le moule sur le plan de travail pour égaliser la pâte.\n8. Cuire à 170°C pendant 32-36 min (suivant votre appareil).\n9. Laisser reposer 5 min avant de servir.",
+    "for": "10",
+    "preptime": "15",
+    "resttime": "0",
+    "cooktime": "32-36",
+    "cover": "",
+    "gallery": [],
+    "mold": {
+        "name": "Moule air fryer Crispy - Rectangulaire",
+        "picture": "https://boutique.guydemarle.com/19156-thickbox_default/moule-air-fryer-crispy-rectangulaire.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/9364-moule-air-fryer-crispy-rectangulaire.html"
+    }
+}

@@ -1,0 +1,77 @@
+{
+    "title": "Maxi cubicube terrine poivrons et chèvre",
+    "slug": "maxi-cubicube-terrine-poivrons-et-chevre",
+    "private": false,
+    "draft": true,
+    "toppings": [
+        {
+            "quantity": "715",
+            "unit": "g",
+            "name": "Poivrons grillés"
+        },
+        {
+            "quantity": "595",
+            "unit": "g",
+            "name": "Chèvre frais"
+        },
+        {
+            "quantity": "475",
+            "unit": "g",
+            "name": "Crème liquide"
+        },
+        {
+            "quantity": "20",
+            "unit": "g",
+            "name": "Gélatine en feuilles"
+        },
+        {
+            "quantity": "2 1/2",
+            "unit": "c-à-s",
+            "name": "Basilic"
+        },
+        {
+            "quantity": "1.0",
+            "unit": "pincée",
+            "name": "Poivre"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Ramollir la gélatine. Mixer les poivrons avec le chèvre, le basilic et le poivre.\n3. Dissoudre la gélatine dans la crème chaude puis mélanger à la préparation.\n4. Verser la préparation dans le moule (environ 1845 g ; le moule contient 205 cl).\n5. Placer au réfrigérateur pendant au moins 6h.\n6. Démouler en poussant doucement depuis le dessous du moule silicone.",
+    "for": "18",
+    "preptime": "15",
+    "resttime": "6h",
+    "cooktime": "0",
+    "cover": "",
+    "gallery": [],
+    "mold": {
+        "name": "Moule Maxi cubicube",
+        "picture": "https://boutique.guydemarle.com/18723-thickbox_default/moule-maxi-cubicube.jpg",
+        "url": "https://boutique.guydemarle.com/moules-ohra/9304-moule-maxi-cubicube.html"
+    }
+}

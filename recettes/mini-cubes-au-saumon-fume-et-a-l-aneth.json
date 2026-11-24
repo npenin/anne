@@ -1,0 +1,87 @@
+{
+    "title": "Mini cubes au saumon fumé et à l'aneth",
+    "slug": "mini-cubes-au-saumon-fume-et-a-l-aneth",
+    "private": false,
+    "draft": true,
+    "toppings": [
+        {
+            "quantity": "150",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "1",
+            "unit": "sachet",
+            "name": "Levure chimique"
+        },
+        {
+            "quantity": "2",
+            "unit": "Oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "90",
+            "unit": "g",
+            "name": "Lait"
+        },
+        {
+            "quantity": "50",
+            "unit": "g",
+            "name": "Huile d'olive"
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Saumon fumé"
+        },
+        {
+            "quantity": "1",
+            "unit": "c-à-s",
+            "name": "Aneth"
+        },
+        {
+            "quantity": "1",
+            "unit": "",
+            "name": "Citron (zeste)"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le lait et l'huile d'olive.\n4. Ajouter la farine, la levure, le zeste de citron, le saumon haché et l'aneth.\n5. Répartir la préparation dans les 48 empreintes (environ 15 g par empreinte ; chaque empreinte contient 1,7 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 180°C pendant 10-12 min (suivant votre four).\n8. Laisser refroidir avant de démouler.",
+    "for": "48",
+    "preptime": "15",
+    "resttime": "0",
+    "cooktime": "10-12",
+    "cover": "",
+    "gallery": [],
+    "mold": {
+        "name": "Moule 48 mini cubes OHRA®",
+        "picture": "https://boutique.guydemarle.com/11564-thickbox_default/moule-48-mini-cubes-ohra.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/4359-moule-48-mini-cubes-ohra.html"
+    }
+}

@@ -1,0 +1,82 @@
+{
+    "title": "Petites charlottes salées au saumon et à l'aneth",
+    "slug": "petites-charlottes-salees-au-saumon-et-a-l-aneth",
+    "private": false,
+    "draft": true,
+    "toppings": [
+        {
+            "quantity": "485",
+            "unit": "g",
+            "name": "Fromage frais type St Môret"
+        },
+        {
+            "quantity": "290",
+            "unit": "g",
+            "name": "Saumon fumé"
+        },
+        {
+            "quantity": "290",
+            "unit": "g",
+            "name": "Crème liquide entière"
+        },
+        {
+            "quantity": "2",
+            "unit": "c-à-s",
+            "name": "Aneth ciselé"
+        },
+        {
+            "quantity": "2",
+            "unit": "",
+            "name": "Citron (jus)"
+        },
+        {
+            "quantity": "1.0",
+            "unit": "pincée",
+            "name": "Poivre"
+        },
+        {
+            "quantity": "10",
+            "unit": "g",
+            "name": "Gélatine en feuilles"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Ramollir la gélatine dans l'eau froide, la dissoudre dans la crème chauffée puis laisser tiédir.\n3. Mixer le fromage frais avec la moitié du saumon, le jus de citron, l'aneth et le poivre.\n4. Ajouter la crème à la gélatine puis le reste du saumon coupé en dés.\n5. Répartir la préparation dans les 12 empreintes (environ 110 g par empreinte ; chaque empreinte contient 12 cl).\n6. Placer au réfrigérateur pendant au moins 4h.\n7. Démouler en poussant doucement depuis le dessous du moule silicone.",
+    "for": "12",
+    "preptime": "15",
+    "resttime": "4h",
+    "cooktime": "0",
+    "cover": "",
+    "gallery": [],
+    "mold": {
+        "name": "Moule 12 Petites Charlottes",
+        "picture": "https://boutique.guydemarle.com/19175-thickbox_default/moule-12-petites-charlottes.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/9418-moule-12-petites-charlottes.html"
+    }
+}

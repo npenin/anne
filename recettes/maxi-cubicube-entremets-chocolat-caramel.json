@@ -1,0 +1,72 @@
+{
+    "title": "Maxi cubicube entremets chocolat-caramel",
+    "slug": "maxi-cubicube-entremets-chocolat-caramel",
+    "private": false,
+    "draft": true,
+    "toppings": [
+        {
+            "quantity": "550",
+            "unit": "g",
+            "name": "Chocolat noir"
+        },
+        {
+            "quantity": "960",
+            "unit": "g",
+            "name": "Crème liquide entière froide"
+        },
+        {
+            "quantity": "11",
+            "unit": "Jaunes d'oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "165",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "275",
+            "unit": "g",
+            "name": "Caramel au beurre salé"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Fouetter les jaunes avec le sucre au bain-marie puis verser sur le chocolat fondu.\n3. Monter la crème en chantilly et l'incorporer.\n4. Alterner dans le moule la mousse et des filets de caramel.\n5. Verser la préparation dans le moule (environ 1900 g ; le moule contient 205 cl).\n6. Placer au congélateur pendant au moins 8h.\n7. Démouler en poussant doucement depuis le dessous du moule silicone.",
+    "for": "19",
+    "preptime": "15",
+    "resttime": "8h",
+    "cooktime": "0",
+    "cover": "",
+    "gallery": [],
+    "mold": {
+        "name": "Moule Maxi cubicube",
+        "picture": "https://boutique.guydemarle.com/18723-thickbox_default/moule-maxi-cubicube.jpg",
+        "url": "https://boutique.guydemarle.com/moules-ohra/9304-moule-maxi-cubicube.html"
+    }
+}

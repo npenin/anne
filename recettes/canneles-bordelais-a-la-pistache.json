@@ -1,0 +1,77 @@
+{
+    "title": "Cannelés bordelais à la pistache",
+    "slug": "canneles-bordelais-a-la-pistache",
+    "private": false,
+    "draft": true,
+    "toppings": [
+        {
+            "quantity": "375",
+            "unit": "g",
+            "name": "Lait entier"
+        },
+        {
+            "quantity": "135",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "180",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "3",
+            "unit": "Oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "40",
+            "unit": "g",
+            "name": "Beurre"
+        },
+        {
+            "quantity": "45",
+            "unit": "g",
+            "name": "Pâte de pistache"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Chauffer le lait avec le beurre et la pâte de pistache en mélangeant bien puis laisser tiédir.\n2. Mélanger la farine et le sucre, ajouter les œufs puis le lait pistaché.\n3. Laisser reposer 24 h au réfrigérateur.\n4. Poser votre moule sur une plaque aluminium perforée.\n5. Répartir la préparation dans les 15 empreintes (environ 60 g par empreinte ; chaque empreinte contient 8,3 cl).\n6. Préchauffer votre four à 200°C.\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 200°C pendant 16-20 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
+    "for": "15",
+    "preptime": "15",
+    "resttime": "24h",
+    "cooktime": "16-20",
+    "cover": "",
+    "gallery": [],
+    "mold": {
+        "name": "Moule 15 cannelés bordelais OHRA®",
+        "picture": "https://boutique.guydemarle.com/11814-thickbox_default/moule-canneles.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/4418-moule-canneles.html"
+    }
+}

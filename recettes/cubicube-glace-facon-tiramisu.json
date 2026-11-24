@@ -1,0 +1,82 @@
+{
+    "title": "Cubicube glacé façon tiramisu",
+    "slug": "cubicube-glace-facon-tiramisu",
+    "private": false,
+    "draft": true,
+    "toppings": [
+        {
+            "quantity": "500",
+            "unit": "g",
+            "name": "Mascarpone"
+        },
+        {
+            "quantity": "500",
+            "unit": "g",
+            "name": "Crème liquide entière"
+        },
+        {
+            "quantity": "160",
+            "unit": "g",
+            "name": "Sucre glace"
+        },
+        {
+            "quantity": "6",
+            "unit": "Jaunes d'oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "300",
+            "unit": "g",
+            "name": "Café fort refroidi"
+        },
+        {
+            "quantity": "300",
+            "unit": "g",
+            "name": "Biscuits à la cuillère"
+        },
+        {
+            "quantity": "4",
+            "unit": "c-à-s",
+            "name": "Cacao en poudre"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Fouetter les jaunes avec le sucre glace puis le mascarpone.\n3. Monter la crème en chantilly et l'incorporer délicatement.\n4. Tremper rapidement les biscuits dans le café.\n5. Remplir le moule en couches : crème, biscuits imbibés, crème.\n6. Verser la préparation dans le moule (environ 1940 g ; le moule contient 210 cl).\n7. Placer au congélateur pendant au moins 6h.\n8. Démouler puis saupoudrer de cacao. Sortir 20 min avant la dégustation.",
+    "for": "19",
+    "preptime": "15",
+    "resttime": "6h",
+    "cooktime": "0",
+    "cover": "",
+    "gallery": [],
+    "mold": {
+        "name": "Moule Cubicube OHRA®",
+        "picture": "https://boutique.guydemarle.com/12404-thickbox_default/moule-en-silicone-cubicube-ohra.webp",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/4423-moule-en-silicone-cubicube-ohra.html"
+    }
+}

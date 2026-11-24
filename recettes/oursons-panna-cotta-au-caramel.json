@@ -1,0 +1,72 @@
+{
+    "title": "Oursons panna cotta au caramel",
+    "slug": "oursons-panna-cotta-au-caramel",
+    "private": false,
+    "draft": true,
+    "toppings": [
+        {
+            "quantity": "540",
+            "unit": "g",
+            "name": "Crème liquide entière"
+        },
+        {
+            "quantity": "270",
+            "unit": "g",
+            "name": "Lait entier"
+        },
+        {
+            "quantity": "110",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "15",
+            "unit": "g",
+            "name": "Gélatine en feuilles"
+        },
+        {
+            "quantity": "110",
+            "unit": "g",
+            "name": "Caramel au beurre salé"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Ramollir la gélatine dans l'eau froide.\n3. Réaliser un caramel à sec avec le sucre, déglacer avec la crème et le lait chauds.\n4. Dissoudre la gélatine essorée puis laisser tiédir.\n5. Répartir la préparation dans les 12 empreintes (environ 75 g par empreinte ; chaque empreinte contient 8,6 cl).\n6. Placer au réfrigérateur pendant au moins 6h.\n7. Démouler et servir avec un filet de caramel au beurre salé.",
+    "for": "12",
+    "preptime": "15",
+    "resttime": "6h",
+    "cooktime": "0",
+    "cover": "",
+    "gallery": [],
+    "mold": {
+        "name": "Moule 12 Oursons OHRA®",
+        "picture": "https://boutique.guydemarle.com/12241-nq_social_share/moule-12-oursons-ohra.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/4576-moule-12-oursons-ohra.html"
+    }
+}

@@ -1,0 +1,77 @@
+{
+    "title": "Barquettes chocolat-framboise",
+    "slug": "barquettes-chocolat-framboise",
+    "private": false,
+    "draft": true,
+    "toppings": [
+        {
+            "quantity": "225",
+            "unit": "g",
+            "name": "Chocolat noir"
+        },
+        {
+            "quantity": "165",
+            "unit": "g",
+            "name": "Beurre"
+        },
+        {
+            "quantity": "4 1/2",
+            "unit": "Oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "150",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "75",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "150",
+            "unit": "g",
+            "name": "Framboises"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Faire fondre le chocolat avec le beurre.\n4. Fouetter les œufs avec le sucre puis ajouter le chocolat et la farine.\n5. Répartir la préparation dans les 12 empreintes (environ 70 g par empreinte ; chaque empreinte contient 9,3 cl).\n6. Enfoncer 2 framboises dans chaque barquette.\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 170°C pendant 13-15 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
+    "for": "12",
+    "preptime": "15",
+    "resttime": "0",
+    "cooktime": "13-15",
+    "cover": "",
+    "gallery": [],
+    "mold": {
+        "name": "Moule 12 Barquettes Amande OHRA®",
+        "picture": "https://boutique.guydemarle.com/16742-nq_social_share/moule-12-barquettes-amande-ohra.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/8431-moule-12-barquettes-amande-ohra.html"
+    }
+}

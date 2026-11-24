@@ -1,0 +1,92 @@
+{
+    "title": "Donuts fantastiques coco et glaçage rose",
+    "slug": "donuts-fantastiques-coco-et-glacage-rose",
+    "private": false,
+    "draft": true,
+    "toppings": [
+        {
+            "quantity": "210",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "1",
+            "unit": "sachet",
+            "name": "Levure chimique"
+        },
+        {
+            "quantity": "110",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "2 1/2",
+            "unit": "Oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Lait de coco"
+        },
+        {
+            "quantity": "75",
+            "unit": "g",
+            "name": "Huile de coco"
+        },
+        {
+            "quantity": "40",
+            "unit": "g",
+            "name": "Noix de coco râpée"
+        },
+        {
+            "quantity": "125",
+            "unit": "g",
+            "name": "Sucre glace"
+        },
+        {
+            "quantity": "1",
+            "unit": "c-à-s",
+            "name": "Jus de framboise"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le sucre, le lait de coco et l'huile de coco fondue.\n4. Incorporer la farine, la levure et la noix de coco.\n5. Répartir la préparation dans les 12 empreintes (environ 55 g par empreinte ; chaque empreinte contient 8,4 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 170°C pendant 15-18 min (suivant votre four).\n8. Laisser refroidir, démouler et glacer avec le sucre glace délayé au jus de framboise.",
+    "for": "12",
+    "preptime": "15",
+    "resttime": "0",
+    "cooktime": "15-18",
+    "cover": "",
+    "gallery": [],
+    "mold": {
+        "name": "MOULE 12 DONUTS FANTASTIQUES OHRA®",
+        "picture": "https://boutique.guydemarle.com/18829-thickbox_default/moule-12-donuts-fantastiques-ohra.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/9323-moule-12-donuts-fantastiques-ohra.html"
+    }
+}

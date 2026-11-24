@@ -1,0 +1,87 @@
+{
+    "title": "Gaufres au four briochées et sucre perlé",
+    "slug": "gaufres-au-four-briochees-et-sucre-perle",
+    "private": false,
+    "draft": true,
+    "toppings": [
+        {
+            "quantity": "150",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "1/2",
+            "unit": "sachet",
+            "name": "Levure chimique"
+        },
+        {
+            "quantity": "40",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "1 1/2",
+            "unit": "Oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Lait"
+        },
+        {
+            "quantity": "50",
+            "unit": "g",
+            "name": "Beurre fondu"
+        },
+        {
+            "quantity": "1/2",
+            "unit": "c-à-s",
+            "name": "Extrait de vanille"
+        },
+        {
+            "quantity": "20",
+            "unit": "g",
+            "name": "Sucre perlé"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Mélanger la farine, la levure et le sucre.\n2. Ajouter les œufs, le lait, le beurre fondu et la vanille puis mélanger jusqu'à obtenir une pâte lisse.\n3. Poser votre moule sur une plaque aluminium perforée.\n4. Répartir la préparation dans les 8 empreintes (environ 55 g par empreinte ; chaque empreinte contient 10 cl).\n5. Parsemer de sucre perlé.\n6. Laisser lever encore 30 min à température ambiante.\n7. Préchauffer votre four à 180°C.\n8. Enfourner à 180°C pendant 14-16 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
+    "for": "8",
+    "preptime": "15",
+    "resttime": "0",
+    "cooktime": "14-16",
+    "cover": "",
+    "gallery": [],
+    "mold": {
+        "name": "Moule 8 Gaufres OHRA®",
+        "picture": "https://boutique.guydemarle.com/11808-large_default/moule-gaufres.webp",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/4416-moule-gaufres.html"
+    }
+}

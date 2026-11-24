@@ -1,0 +1,67 @@
+{
+    "title": "Mini glaces mangue et coco",
+    "slug": "mini-glaces-mangue-et-coco",
+    "private": false,
+    "draft": true,
+    "toppings": [
+        {
+            "quantity": "200",
+            "unit": "g",
+            "name": "Purée de mangue"
+        },
+        {
+            "quantity": "135",
+            "unit": "g",
+            "name": "Lait de coco"
+        },
+        {
+            "quantity": "25",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "1/2",
+            "unit": "",
+            "name": "Citron vert (jus)"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Mélanger la purée de mangue avec le lait de coco, le sucre et le jus de citron vert.\n3. Répartir la préparation dans les 8 empreintes (environ 55 g par empreinte ; chaque empreinte contient 5,8 cl).\n4. Placer au congélateur pendant au moins 6h.\n5. Démouler en poussant doucement depuis le dessous du moule silicone.",
+    "for": "8",
+    "preptime": "15",
+    "resttime": "6h",
+    "cooktime": "0",
+    "cover": "",
+    "gallery": [],
+    "mold": {
+        "name": "Moule à glace mini x 8 OHRA®",
+        "picture": "https://boutique.guydemarle.com/11908-thickbox_default/moule-a-glace-mini-x-8-ohra.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/4460-moule-a-glace-mini-x-8-ohra.html"
+    }
+}

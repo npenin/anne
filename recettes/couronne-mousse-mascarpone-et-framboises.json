@@ -1,0 +1,72 @@
+{
+    "title": "Couronne mousse mascarpone et framboises",
+    "slug": "couronne-mousse-mascarpone-et-framboises",
+    "private": false,
+    "draft": true,
+    "toppings": [
+        {
+            "quantity": "465",
+            "unit": "g",
+            "name": "Mascarpone"
+        },
+        {
+            "quantity": "465",
+            "unit": "g",
+            "name": "Crème liquide entière froide"
+        },
+        {
+            "quantity": "130",
+            "unit": "g",
+            "name": "Sucre glace"
+        },
+        {
+            "quantity": "370",
+            "unit": "g",
+            "name": "Framboises"
+        },
+        {
+            "quantity": "9",
+            "unit": "g",
+            "name": "Gélatine en feuilles"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Ramollir la gélatine. Chauffer 50 g de crème, y dissoudre la gélatine puis mélanger au mascarpone et au sucre glace.\n3. Monter le reste de crème en chantilly et l'incorporer.\n4. Ajouter la moitié des framboises écrasées.\n5. Verser la préparation dans le moule (environ 1440 g ; le moule contient 160 cl).\n6. Placer au réfrigérateur pendant au moins 5h.\n7. Démouler et garnir de framboises entières.",
+    "for": "14",
+    "preptime": "15",
+    "resttime": "5h",
+    "cooktime": "0",
+    "cover": "",
+    "gallery": [],
+    "mold": {
+        "name": "Moule Tarte Couronne OHRA®",
+        "picture": "https://boutique.guydemarle.com/11828-thickbox_default/moule-tarte-couronne.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/4422-moule-tarte-couronne.html"
+    }
+}

@@ -1,0 +1,82 @@
+{
+    "title": "Mini cannelés au chocolat noir",
+    "slug": "mini-canneles-au-chocolat-noir",
+    "private": false,
+    "draft": true,
+    "toppings": [
+        {
+            "quantity": "250",
+            "unit": "g",
+            "name": "Lait entier"
+        },
+        {
+            "quantity": "80",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "20",
+            "unit": "g",
+            "name": "Cacao non sucré"
+        },
+        {
+            "quantity": "120",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "2",
+            "unit": "Oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "60",
+            "unit": "g",
+            "name": "Chocolat noir"
+        },
+        {
+            "quantity": "1",
+            "unit": "c-à-s",
+            "name": "Rhum"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Chauffer le lait, verser sur le chocolat haché et lisser.\n2. Mélanger farine, cacao et sucre, ajouter les œufs, le lait chocolaté et le rhum.\n3. Laisser reposer 12 h au réfrigérateur.\n4. Poser votre moule sur une plaque aluminium perforée.\n5. Répartir la préparation dans les 30 empreintes (environ 20 g par empreinte ; chaque empreinte contient 2,4 cl).\n6. Préchauffer votre four à 190°C.\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 190°C pendant 11-13 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
+    "for": "30",
+    "preptime": "15",
+    "resttime": "12h",
+    "cooktime": "11-13",
+    "cover": "",
+    "gallery": [],
+    "mold": {
+        "name": "Moule 30 Mini cannelés OHRA®",
+        "picture": "https://boutique.guydemarle.com/11584-thickbox_default/moule-30-mini-canneles-ohra.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/4363-moule-30-mini-canneles-ohra.html"
+    }
+}

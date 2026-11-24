@@ -1,0 +1,77 @@
+{
+    "title": "Dino mousse vanille et fraise",
+    "slug": "dino-mousse-vanille-et-fraise",
+    "private": false,
+    "draft": true,
+    "toppings": [
+        {
+            "quantity": "525",
+            "unit": "g",
+            "name": "Fraises"
+        },
+        {
+            "quantity": "525",
+            "unit": "g",
+            "name": "Crème liquide entière froide"
+        },
+        {
+            "quantity": "350",
+            "unit": "g",
+            "name": "Fromage blanc"
+        },
+        {
+            "quantity": "120",
+            "unit": "g",
+            "name": "Sucre glace"
+        },
+        {
+            "quantity": "15",
+            "unit": "g",
+            "name": "Gélatine en feuilles"
+        },
+        {
+            "quantity": "1 1/2",
+            "unit": "c-à-s",
+            "name": "Extrait de vanille"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Ramollir la gélatine. Mixer les fraises, chauffer un quart de la purée et dissoudre la gélatine essorée.\n3. Mélanger avec le reste de purée, le fromage blanc, le sucre et la vanille.\n4. Monter la crème en chantilly et l'incorporer.\n5. Verser la préparation dans le moule (environ 1555 g ; le moule contient 173 cl).\n6. Placer au congélateur pendant au moins 6h.\n7. Démouler en poussant doucement depuis le dessous du moule silicone.",
+    "for": "16",
+    "preptime": "15",
+    "resttime": "6h",
+    "cooktime": "0",
+    "cover": "",
+    "gallery": [],
+    "mold": {
+        "name": "Moule dino OHRA®",
+        "picture": "https://boutique.guydemarle.com/17922-thickbox_default/moule-dino-ohra.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/9012-moule-dino-ohra.html"
+    }
+}

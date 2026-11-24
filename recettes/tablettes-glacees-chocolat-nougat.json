@@ -1,0 +1,72 @@
+{
+    "title": "Tablettes glacées chocolat-nougat",
+    "slug": "tablettes-glacees-chocolat-nougat",
+    "private": false,
+    "draft": true,
+    "toppings": [
+        {
+            "quantity": "630",
+            "unit": "g",
+            "name": "Crème liquide entière"
+        },
+        {
+            "quantity": "315",
+            "unit": "g",
+            "name": "Lait"
+        },
+        {
+            "quantity": "210",
+            "unit": "g",
+            "name": "Chocolat noir"
+        },
+        {
+            "quantity": "210",
+            "unit": "g",
+            "name": "Nougat tendre"
+        },
+        {
+            "quantity": "85",
+            "unit": "g",
+            "name": "Sucre"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Chauffer le lait et 100 g de crème, verser sur le chocolat et le nougat coupé en morceaux puis mixer.\n3. Laisser refroidir puis monter le reste de la crème en chantilly et l'incorporer.\n4. Répartir la préparation dans les 3 empreintes (environ 485 g par empreinte ; chaque empreinte contient 52,6 cl).\n5. Placer au congélateur pendant au moins 6h.\n6. Démouler et trancher en tablettes.",
+    "for": "3",
+    "preptime": "15",
+    "resttime": "6h",
+    "cooktime": "0",
+    "cover": "",
+    "gallery": [],
+    "mold": {
+        "name": "Moule 3 Tablettes OHRA®",
+        "picture": "https://boutique.guydemarle.com/11504-thickbox_default/moule-3-tablettes-ohra.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/4327-moule-3-tablettes-ohra.html"
+    }
+}

@@ -1,0 +1,72 @@
+{
+    "title": "Glaces animaux au chocolat au lait et aux cacahuètes",
+    "slug": "glaces-animaux-au-chocolat-au-lait-et-aux-cacahuetes",
+    "private": false,
+    "draft": true,
+    "toppings": [
+        {
+            "quantity": "250",
+            "unit": "g",
+            "name": "Lait entier"
+        },
+        {
+            "quantity": "150",
+            "unit": "g",
+            "name": "Crème liquide"
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Chocolat au lait"
+        },
+        {
+            "quantity": "50",
+            "unit": "g",
+            "name": "Beurre de cacahuète"
+        },
+        {
+            "quantity": "40",
+            "unit": "g",
+            "name": "Sucre"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Chauffer le lait et la crème, verser sur le chocolat haché et le beurre de cacahuète.\n3. Ajouter le sucre et laisser refroidir.\n4. Répartir la préparation dans les 8 empreintes (environ 75 g par empreinte ; chaque empreinte contient 8 cl).\n5. Placer au congélateur pendant au moins 6h.\n6. Démouler en poussant doucement depuis le dessous du moule silicone.",
+    "for": "8",
+    "preptime": "15",
+    "resttime": "6h",
+    "cooktime": "0",
+    "cover": "",
+    "gallery": [],
+    "mold": {
+        "name": "Moule Glaces Animaux OHRA®",
+        "picture": "https://boutique.guydemarle.com/16615-thickbox_default/moule-glaces-animaux-ohra.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/8370-moule-glaces-animaux-ohra.html"
+    }
+}

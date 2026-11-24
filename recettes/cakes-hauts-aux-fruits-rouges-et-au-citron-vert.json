@@ -1,0 +1,87 @@
+{
+    "title": "Cakes hauts aux fruits rouges et au citron vert",
+    "slug": "cakes-hauts-aux-fruits-rouges-et-au-citron-vert",
+    "private": false,
+    "draft": true,
+    "toppings": [
+        {
+            "quantity": "465",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "2 1/2",
+            "unit": "sachets",
+            "name": "Levure chimique"
+        },
+        {
+            "quantity": "350",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "7",
+            "unit": "Oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "280",
+            "unit": "g",
+            "name": "Beurre fondu"
+        },
+        {
+            "quantity": "185",
+            "unit": "g",
+            "name": "Yaourt"
+        },
+        {
+            "quantity": "2 1/2",
+            "unit": "",
+            "name": "Citron vert (zeste et jus)"
+        },
+        {
+            "quantity": "350",
+            "unit": "g",
+            "name": "Fruits rouges"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le sucre, le beurre, le yaourt, le zeste et le jus.\n4. Incorporer la farine et la levure puis les fruits rouges.\n5. Répartir la préparation dans les 6 empreintes (environ 375 g par empreinte ; chaque empreinte contient 52,6 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 170°C pendant 28-33 min (suivant votre four).\n8. Laisser refroidir avant de démouler.",
+    "for": "6",
+    "preptime": "15",
+    "resttime": "0",
+    "cooktime": "28-33",
+    "cover": "",
+    "gallery": [],
+    "mold": {
+        "name": "Moule 6 Cakes Hauts OHRA®",
+        "picture": "https://boutique.guydemarle.com/11010-nq_social_share/moule-cake-haut.jpg",
+        "url": "https://boutique.guydemarle.com/moules-ohra/4146-moule-cake-haut.html"
+    }
+}

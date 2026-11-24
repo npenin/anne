@@ -1,0 +1,77 @@
+{
+    "title": "Chalets crémeux vanille et spéculoos",
+    "slug": "chalets-cremeux-vanille-et-speculoos",
+    "private": false,
+    "draft": true,
+    "toppings": [
+        {
+            "quantity": "590",
+            "unit": "g",
+            "name": "Crème liquide entière"
+        },
+        {
+            "quantity": "220",
+            "unit": "g",
+            "name": "Lait entier"
+        },
+        {
+            "quantity": "105",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "1 1/2",
+            "unit": "c-à-s",
+            "name": "Extrait de vanille"
+        },
+        {
+            "quantity": "12",
+            "unit": "g",
+            "name": "Gélatine en feuilles"
+        },
+        {
+            "quantity": "120",
+            "unit": "g",
+            "name": "Spéculoos émiettés"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Faire tremper la gélatine 10 min dans un grand volume d'eau froide.\n3. Chauffer la crème, le lait, le sucre et la vanille sans laisser bouillir.\n4. Hors du feu, ajouter la gélatine essorée et mélanger jusqu'à dissolution. Laisser tiédir.\n5. Répartir la préparation dans les 6 empreintes (environ 160 g par empreinte ; chaque empreinte contient 17,5 cl).\n6. Placer au réfrigérateur pendant au moins 6h.\n7. Démouler délicatement et déposer chaque chalet sur un lit de spéculoos émiettés.",
+    "for": "6",
+    "preptime": "15",
+    "resttime": "6h",
+    "cooktime": "0",
+    "cover": "",
+    "gallery": [],
+    "mold": {
+        "name": "Moule 6 Petits Chalets",
+        "picture": "https://boutique.guydemarle.com/19180-thickbox_default/moule-6-petits-chalets.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/9424-moule-6-petits-chalets.html"
+    }
+}

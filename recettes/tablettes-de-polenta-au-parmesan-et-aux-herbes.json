@@ -1,0 +1,82 @@
+{
+    "title": "Tablettes de polenta au parmesan et aux herbes",
+    "slug": "tablettes-de-polenta-au-parmesan-et-aux-herbes",
+    "private": false,
+    "draft": true,
+    "toppings": [
+        {
+            "quantity": "225",
+            "unit": "g",
+            "name": "Polenta précuite"
+        },
+        {
+            "quantity": "900",
+            "unit": "g",
+            "name": "Lait"
+        },
+        {
+            "quantity": "90",
+            "unit": "g",
+            "name": "Parmesan"
+        },
+        {
+            "quantity": "3",
+            "unit": "Oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "1 1/2",
+            "unit": "c-à-s",
+            "name": "Herbes de Provence"
+        },
+        {
+            "quantity": "1.0",
+            "unit": "pincée",
+            "name": "Sel"
+        },
+        {
+            "quantity": "1.0",
+            "unit": "pincée",
+            "name": "Poivre"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Préchauffer votre four à 190°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Porter le lait à ébullition, verser la polenta en pluie et cuire 5 min en remuant.\n4. Hors du feu ajouter le parmesan, les œufs et les herbes.\n5. Répartir la préparation dans les 3 empreintes (environ 460 g par empreinte ; chaque empreinte contient 52,6 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 190°C pendant 28-33 min (suivant votre four).\n8. Laisser refroidir puis découper en barres et passer à la poêle si vous le souhaitez.",
+    "for": "3",
+    "preptime": "15",
+    "resttime": "0",
+    "cooktime": "28-33",
+    "cover": "",
+    "gallery": [],
+    "mold": {
+        "name": "Moule 3 Tablettes OHRA®",
+        "picture": "https://boutique.guydemarle.com/11504-thickbox_default/moule-3-tablettes-ohra.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/4327-moule-3-tablettes-ohra.html"
+    }
+}

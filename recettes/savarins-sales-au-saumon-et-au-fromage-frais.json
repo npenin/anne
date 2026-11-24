@@ -1,0 +1,77 @@
+{
+    "title": "Savarins salés au saumon et au fromage frais",
+    "slug": "savarins-sales-au-saumon-et-au-fromage-frais",
+    "private": false,
+    "draft": true,
+    "toppings": [
+        {
+            "quantity": "695",
+            "unit": "g",
+            "name": "Fromage frais"
+        },
+        {
+            "quantity": "555",
+            "unit": "g",
+            "name": "Saumon fumé"
+        },
+        {
+            "quantity": "415",
+            "unit": "g",
+            "name": "Crème liquide entière"
+        },
+        {
+            "quantity": "15",
+            "unit": "g",
+            "name": "Gélatine en feuilles"
+        },
+        {
+            "quantity": "3",
+            "unit": "c-à-s",
+            "name": "Aneth"
+        },
+        {
+            "quantity": "3",
+            "unit": "",
+            "name": "Citron (jus)"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Ramollir la gélatine. Mixer le saumon avec le fromage frais, l'aneth et le citron.\n3. Dissoudre la gélatine essorée dans la crème chaude et mélanger.\n4. Répartir la préparation dans les 12 empreintes (environ 165 g par empreinte ; chaque empreinte contient 18,5 cl).\n5. Placer au réfrigérateur pendant au moins 4h.\n6. Démouler en poussant doucement depuis le dessous du moule silicone.",
+    "for": "12",
+    "preptime": "15",
+    "resttime": "4h",
+    "cooktime": "0",
+    "cover": "",
+    "gallery": [],
+    "mold": {
+        "name": "MOULE 12 SAVARINS RONDS OHRA®",
+        "picture": "https://boutique.guydemarle.com/18653-thickbox_default/moule-12-savarins-ronds-ohra.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/9280-moule-12-savarins-ronds-ohra.html"
+    }
+}

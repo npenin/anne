@@ -1,0 +1,72 @@
+{
+    "title": "Petites charlottes poire-chocolat",
+    "slug": "petites-charlottes-poire-chocolat",
+    "private": false,
+    "draft": true,
+    "toppings": [
+        {
+            "quantity": "575",
+            "unit": "g",
+            "name": "Crème liquide entière"
+        },
+        {
+            "quantity": "385",
+            "unit": "g",
+            "name": "Purée de poire"
+        },
+        {
+            "quantity": "230",
+            "unit": "g",
+            "name": "Chocolat noir"
+        },
+        {
+            "quantity": "95",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "12",
+            "unit": "g",
+            "name": "Gélatine en feuilles"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Ramollir la gélatine dans l'eau froide.\n3. Chauffer la purée de poire avec le sucre puis dissoudre la gélatine essorée.\n4. Verser sur le chocolat haché et mélanger jusqu'à obtenir un appareil lisse. Laisser tiédir.\n5. Monter la crème en chantilly et l'incorporer délicatement.\n6. Répartir la préparation dans les 12 empreintes (environ 110 g par empreinte ; chaque empreinte contient 12 cl).\n7. Placer au réfrigérateur pendant au moins 5h.\n8. Démouler en poussant doucement depuis le dessous du moule silicone.",
+    "for": "12",
+    "preptime": "15",
+    "resttime": "5h",
+    "cooktime": "0",
+    "cover": "",
+    "gallery": [],
+    "mold": {
+        "name": "Moule 12 Petites Charlottes",
+        "picture": "https://boutique.guydemarle.com/19175-thickbox_default/moule-12-petites-charlottes.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/9418-moule-12-petites-charlottes.html"
+    }
+}

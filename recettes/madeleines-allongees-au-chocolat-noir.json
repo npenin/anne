@@ -1,0 +1,82 @@
+{
+    "title": "Madeleines allongées au chocolat noir",
+    "slug": "madeleines-allongees-au-chocolat-noir",
+    "private": false,
+    "draft": true,
+    "toppings": [
+        {
+            "quantity": "65",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "15",
+            "unit": "g",
+            "name": "Cacao non sucré"
+        },
+        {
+            "quantity": "1/2",
+            "unit": "sachet",
+            "name": "Levure chimique"
+        },
+        {
+            "quantity": "65",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "2",
+            "unit": "Oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "65",
+            "unit": "g",
+            "name": "Beurre fondu"
+        },
+        {
+            "quantity": "35",
+            "unit": "g",
+            "name": "Pépites de chocolat"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Fouetter les œufs avec le sucre puis ajouter le beurre fondu.\n2. Incorporer la farine, le cacao et la levure puis les pépites.\n3. Réserver 1 h au frais.\n4. Poser votre moule sur une plaque aluminium perforée.\n5. Répartir la préparation dans les 30 empreintes (environ 12 g par empreinte ; chaque empreinte contient 1,6 cl).\n6. Préchauffer votre four à 190°C.\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 190°C pendant 9-11 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
+    "for": "30",
+    "preptime": "15",
+    "resttime": "1h",
+    "cooktime": "9-11",
+    "cover": "",
+    "gallery": [],
+    "mold": {
+        "name": "Moule 30 madeleines allongées OHRA®",
+        "picture": "https://boutique.guydemarle.com/12251-nq_social_share/moule-a-madeleines-allongees-silicone.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/4578-moule-a-madeleines-allongees-silicone.html"
+    }
+}

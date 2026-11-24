@@ -1,0 +1,77 @@
+{
+    "title": "Mini tartelettes citron meringuées",
+    "slug": "mini-tartelettes-citron-meringuees",
+    "private": false,
+    "draft": true,
+    "toppings": [
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "50",
+            "unit": "g",
+            "name": "Beurre froid"
+        },
+        {
+            "quantity": "25",
+            "unit": "g",
+            "name": "Sucre glace"
+        },
+        {
+            "quantity": "1/2",
+            "unit": "Oeuf",
+            "name": ""
+        },
+        {
+            "quantity": "60",
+            "unit": "g",
+            "name": "Lemon curd"
+        },
+        {
+            "quantity": "1",
+            "unit": "Blancs d'oeufs",
+            "name": ""
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Sabler la farine avec le beurre froid, ajouter le sucre glace puis l'œuf et former une boule. Réserver 30 min au froid.\n4. Répartir la préparation dans les 30 empreintes (environ 7 g par empreinte ; chaque empreinte contient 1,3 cl).\n5. Presser la pâte du bout des doigts au fond et sur les bords de chaque empreinte.\n6. Enfourner à 170°C pendant 7-9 min (suivant votre four).\n7. Après cuisson, garnir de lemon curd et d'une petite meringue dorée au chalumeau.",
+    "for": "30",
+    "preptime": "15",
+    "resttime": "0",
+    "cooktime": "7-9",
+    "cover": "",
+    "gallery": [],
+    "mold": {
+        "name": "Moule 30 Mini-Tartelettes OHRA®",
+        "picture": "https://boutique.guydemarle.com/12522-thickbox_default/moule-mini-tartelettes.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/4427-moule-mini-tartelettes.html"
+    }
+}

@@ -1,0 +1,87 @@
+{
+    "title": "Dunes d'or aux dattes et au miel",
+    "slug": "dunes-d-or-aux-dattes-et-au-miel",
+    "private": false,
+    "draft": true,
+    "toppings": [
+        {
+            "quantity": "405",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "2",
+            "unit": "sachets",
+            "name": "Levure chimique"
+        },
+        {
+            "quantity": "275",
+            "unit": "g",
+            "name": "Dattes dénoyautées"
+        },
+        {
+            "quantity": "185",
+            "unit": "g",
+            "name": "Miel"
+        },
+        {
+            "quantity": "5 1/2",
+            "unit": "Oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "255",
+            "unit": "g",
+            "name": "Beurre fondu"
+        },
+        {
+            "quantity": "185",
+            "unit": "g",
+            "name": "Lait"
+        },
+        {
+            "quantity": "2",
+            "unit": "c-à-c",
+            "name": "Cannelle"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Hacher les dattes grossièrement.\n4. Fouetter le miel avec les œufs puis ajouter le beurre et le lait.\n5. Incorporer la farine, la levure, la cannelle puis les dattes.\n6. Verser la préparation dans le moule (environ 1605 g ; le moule contient 225 cl).\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 170°C pendant 45-52 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
+    "for": "16",
+    "preptime": "15",
+    "resttime": "0",
+    "cooktime": "45-52",
+    "cover": "",
+    "gallery": [],
+    "mold": {
+        "name": "Moule dunes d'or OHRA®",
+        "picture": "https://boutique.guydemarle.com/18272-thickbox_default/moule-dunes-or-ohra.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/9174-moule-dunes-or-ohra.html"
+    }
+}

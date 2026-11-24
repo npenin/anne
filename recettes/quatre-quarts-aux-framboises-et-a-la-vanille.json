@@ -1,0 +1,82 @@
+{
+    "title": "Quatre-quarts aux framboises et à la vanille",
+    "slug": "quatre-quarts-aux-framboises-et-a-la-vanille",
+    "private": false,
+    "draft": true,
+    "toppings": [
+        {
+            "quantity": "525",
+            "unit": "g",
+            "name": "Beurre pommade"
+        },
+        {
+            "quantity": "525",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "10 1/2",
+            "unit": "Oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "525",
+            "unit": "g",
+            "name": "Farine"
+        },
+        {
+            "quantity": "2",
+            "unit": "sachets",
+            "name": "Levure chimique"
+        },
+        {
+            "quantity": "2",
+            "unit": "c-à-s",
+            "name": "Extrait de vanille"
+        },
+        {
+            "quantity": "420",
+            "unit": "g",
+            "name": "Framboises"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Crémer le beurre avec le sucre puis ajouter les œufs un à un et la vanille.\n4. Incorporer la farine et la levure.\n5. Verser la préparation dans le moule (environ 2575 g ; le moule contient 357 cl).\n6. Enfoncer les framboises dans la pâte.\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 170°C pendant 50-60 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
+    "for": "26",
+    "preptime": "15",
+    "resttime": "0",
+    "cooktime": "50-60",
+    "cover": "",
+    "gallery": [],
+    "mold": {
+        "name": "Moule rectangulaire familial OHRA®",
+        "picture": "https://boutique.guydemarle.com/11212-thickbox_default/moule-rectangulaire.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/4231-moule-rectangulaire.html"
+    }
+}

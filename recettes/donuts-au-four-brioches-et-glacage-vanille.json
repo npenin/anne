@@ -1,0 +1,92 @@
+{
+    "title": "Donuts au four briochés et glaçage vanille",
+    "slug": "donuts-au-four-brioches-et-glacage-vanille",
+    "private": false,
+    "draft": true,
+    "toppings": [
+        {
+            "quantity": "300",
+            "unit": "g",
+            "name": "Farine T45"
+        },
+        {
+            "quantity": "20",
+            "unit": "g",
+            "name": "Levure fraîche de boulanger"
+        },
+        {
+            "quantity": "50",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "2",
+            "unit": "Oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Lait tiède"
+        },
+        {
+            "quantity": "60",
+            "unit": "g",
+            "name": "Beurre mou"
+        },
+        {
+            "quantity": "1.0",
+            "unit": "pincée",
+            "name": "Sel"
+        },
+        {
+            "quantity": "100",
+            "unit": "g",
+            "name": "Sucre glace"
+        },
+        {
+            "quantity": "2",
+            "unit": "c-à-s",
+            "name": "Lait"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Délayer la levure dans le lait tiède.\n2. Pétrir farine, sucre, sel, œufs et levure 10 min puis incorporer le beurre. Laisser pousser 1 h.\n3. Dégazer et former des boudins que l'on dépose dans les empreintes.\n4. Poser votre moule sur une plaque aluminium perforée.\n5. Répartir la préparation dans les 8 empreintes (environ 80 g par empreinte ; chaque empreinte contient 14 cl).\n6. Laisser lever encore 30 min à température ambiante.\n7. Préchauffer votre four à 180°C.\n8. Enfourner à 180°C pendant 18-22 min (suivant votre four).\n9. Laisser refroidir puis glacer avec le sucre glace délayé dans le lait.",
+    "for": "8",
+    "preptime": "30",
+    "resttime": "2h",
+    "cooktime": "18-22",
+    "cover": "",
+    "gallery": [],
+    "mold": {
+        "name": "Moule 8 Donuts OHRA®",
+        "picture": "https://boutique.guydemarle.com/11566-thickbox_default/moule-8-donuts-ohra.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/4361-moule-8-donuts-ohra.html"
+    }
+}

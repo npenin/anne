@@ -1,0 +1,77 @@
+{
+    "title": "Sphères mousse chocolat et coco",
+    "slug": "spheres-mousse-chocolat-et-coco",
+    "private": false,
+    "draft": true,
+    "toppings": [
+        {
+            "quantity": "180",
+            "unit": "g",
+            "name": "Chocolat noir"
+        },
+        {
+            "quantity": "300",
+            "unit": "g",
+            "name": "Lait de coco"
+        },
+        {
+            "quantity": "2",
+            "unit": "Jaunes d'oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "30",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "3",
+            "unit": "g",
+            "name": "Gélatine en feuilles"
+        },
+        {
+            "quantity": "30",
+            "unit": "g",
+            "name": "Noix de coco râpée"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Ramollir la gélatine. Chauffer le lait de coco, fouetter les jaunes avec le sucre et cuire en remuant à 83°C.\n3. Dissoudre la gélatine, verser sur le chocolat et mélanger.\n4. Répartir la préparation dans les 6 empreintes (environ 90 g par empreinte ; chaque empreinte contient 9,4 cl).\n5. Placer au réfrigérateur pendant au moins 4h.\n6. Démouler et rouler dans la noix de coco.",
+    "for": "6",
+    "preptime": "15",
+    "resttime": "4h",
+    "cooktime": "0",
+    "cover": "",
+    "gallery": [],
+    "mold": {
+        "name": "Moule 6 sphères OHRA",
+        "picture": "https://boutique.guydemarle.com/17227-thickbox_default/moule-6-spheres-ohra.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/8595-moule-6-spheres-ohra.html"
+    }
+}

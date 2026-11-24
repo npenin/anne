@@ -1,0 +1,77 @@
+{
+    "title": "Bûche glacée au praliné et à la vanille",
+    "slug": "buche-glacee-au-praline-et-a-la-vanille",
+    "private": false,
+    "draft": true,
+    "toppings": [
+        {
+            "quantity": "600",
+            "unit": "g",
+            "name": "Crème liquide entière"
+        },
+        {
+            "quantity": "300",
+            "unit": "g",
+            "name": "Lait entier"
+        },
+        {
+            "quantity": "6",
+            "unit": "Jaunes d'oeufs",
+            "name": ""
+        },
+        {
+            "quantity": "135",
+            "unit": "g",
+            "name": "Sucre"
+        },
+        {
+            "quantity": "150",
+            "unit": "g",
+            "name": "Praliné noisette"
+        },
+        {
+            "quantity": "75",
+            "unit": "g",
+            "name": "Noisettes caramélisées concassées"
+        }
+    ],
+    "accessories": [
+        {
+            "name": "Balance de cuisine en inox",
+            "picture": "https://boutique.guydemarle.com/9078-nq_social_share/balance-de-cuisine-alimentaire-electronique-en-inox.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/3392-balance-de-cuisine-alimentaire-electronique-en-inox.html"
+        },
+        {
+            "name": "Grand cul de poule 3,7L / 25 cm",
+            "picture": "https://boutique.guydemarle.com/2234-nq_social_share/grand-cul-de-poule-37l-25-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/684-grand-cul-de-poule-37l-25-cm-guy-demarle.html"
+        },
+        {
+            "name": "Support cul-de-poule",
+            "picture": "https://boutique.guydemarle.com/2231-nq_social_share/support-cul-de-poule-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/682-support-cul-de-poule-guy-demarle.html"
+        },
+        {
+            "name": "Fouet 13 cm",
+            "picture": "https://boutique.guydemarle.com/5820-nq_social_share/fouet-13-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/accessoires-de-cuisine/1799-fouet-13-cm-guy-demarle.html"
+        },
+        {
+            "name": "Plaque Aluminium perforée 40 x 30 cm",
+            "picture": "https://boutique.guydemarle.com/2202-nq_social_share/plaque-aluminium-perforee-40-x-30-cm-guy-demarle.jpg",
+            "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
+        }
+    ],
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Blanchir les jaunes avec le sucre.\n3. Chauffer le lait avec 100 g de crème puis verser sur les jaunes. Remettre sur le feu en remuant jusqu'à 83°C, hors du feu ajouter le praliné et laisser refroidir.\n4. Monter le reste de crème en chantilly et l'incorporer délicatement.\n5. Verser la préparation dans le moule (environ 1305 g ; le moule contient 138 cl).\n6. Placer au congélateur pendant au moins 8h.\n7. Démouler et rouler la bûche dans les noisettes caramélisées. Laisser 15 min à température ambiante avant de trancher.",
+    "for": "13",
+    "preptime": "15",
+    "resttime": "8h",
+    "cooktime": "0",
+    "cover": "",
+    "gallery": [],
+    "mold": {
+        "name": "Moule à bûche OHRA®",
+        "picture": "https://boutique.guydemarle.com/16302-nq_social_share/moule-a-buche-en-silicone-ohra.jpg",
+        "url": "https://boutique.guydemarle.com/moule-en-silicone/4419-moule-a-buche-en-silicone-ohra.html"
+    }
+}
