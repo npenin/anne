@@ -5,7 +5,7 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "165",
+            "quantity": "130",
             "unit": "g",
             "name": "Farine"
         },
@@ -15,32 +15,32 @@
             "name": "Levure chimique"
         },
         {
-            "quantity": "2 1/2",
+            "quantity": "2",
             "unit": "Oeufs",
             "name": ""
         },
         {
-            "quantity": "85",
+            "quantity": "70",
             "unit": "g",
             "name": "Lait"
         },
         {
-            "quantity": "50",
+            "quantity": "40",
             "unit": "g",
             "name": "Huile de noix"
         },
         {
-            "quantity": "100",
+            "quantity": "80",
             "unit": "g",
             "name": "Fourme d'Ambert"
         },
         {
-            "quantity": "85",
+            "quantity": "70",
             "unit": "g",
             "name": "Figues séchées"
         },
         {
-            "quantity": "50",
+            "quantity": "40",
             "unit": "g",
             "name": "Noix"
         }
@@ -72,8 +72,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le lait et l'huile de noix.\n4. Ajouter la farine et la levure.\n5. Incorporer le fromage en dés, les figues coupées en morceaux et les noix.\n6. Verser la préparation dans le moule (environ 670 g ; le moule contient 87,7 cl).\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 180°C pendant 33-38 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
-    "for": "7",
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le lait et l'huile de noix.\n4. Ajouter la farine et la levure.\n5. Incorporer le fromage en dés, les figues coupées en morceaux et les noix.\n6. Verser la préparation dans le moule (environ 535 g ; le moule contient 87,7 cl).\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 180°C pendant 33-38 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
+    "for": "5",
     "preptime": "15",
     "resttime": "0",
     "cooktime": "33-38",

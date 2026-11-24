@@ -5,7 +5,7 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "225",
+            "quantity": "180",
             "unit": "g",
             "name": "Farine"
         },
@@ -15,22 +15,22 @@
             "name": "Levure chimique"
         },
         {
-            "quantity": "125",
+            "quantity": "100",
             "unit": "g",
             "name": "Miel"
         },
         {
-            "quantity": "100",
+            "quantity": "80",
             "unit": "g",
             "name": "Beurre fondu"
         },
         {
-            "quantity": "2 1/2",
+            "quantity": "2",
             "unit": "Oeufs",
             "name": ""
         },
         {
-            "quantity": "50",
+            "quantity": "40",
             "unit": "g",
             "name": "Lait"
         },
@@ -67,7 +67,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter le miel avec le beurre fondu et les œufs.\n4. Ajouter le lait et l'eau de fleur d'oranger puis la farine et la levure.\n5. Répartir la préparation dans les 30 empreintes (environ 20 g par empreinte ; chaque empreinte contient 2,8 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 170°C pendant 10-12 min (suivant votre four).\n8. Laisser refroidir avant de démouler.",
+    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter le miel avec le beurre fondu et les œufs.\n4. Ajouter le lait et l'eau de fleur d'oranger puis la farine et la levure.\n5. Répartir la préparation dans les 30 empreintes (environ 15 g par empreinte ; chaque empreinte contient 2,8 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 170°C pendant 10-12 min (suivant votre four).\n8. Laisser refroidir avant de démouler.",
     "for": "30",
     "preptime": "15",
     "resttime": "0",

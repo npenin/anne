@@ -5,42 +5,42 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "135",
+            "quantity": "90",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "1",
+            "quantity": "1/2",
             "unit": "sachet",
             "name": "Levure chimique"
         },
         {
-            "quantity": "80",
+            "quantity": "55",
             "unit": "g",
             "name": "Sucre roux"
         },
         {
-            "quantity": "1 1/2",
-            "unit": "Oeufs",
+            "quantity": "1",
+            "unit": "Oeuf",
             "name": ""
         },
         {
-            "quantity": "75",
+            "quantity": "50",
             "unit": "g",
             "name": "Beurre fondu"
         },
         {
-            "quantity": "40",
+            "quantity": "25",
             "unit": "g",
             "name": "Lait"
         },
         {
-            "quantity": "1 1/2",
+            "quantity": "1",
             "unit": "c-à-c",
             "name": "Cannelle"
         },
         {
-            "quantity": "15",
+            "quantity": "10",
             "unit": "g",
             "name": "Sucre glace"
         }
@@ -72,7 +72,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le sucre roux, le beurre fondu et le lait.\n4. Incorporer la farine, la levure et la cannelle.\n5. Répartir la préparation dans les 12 empreintes (environ 35 g par empreinte ; chaque empreinte contient 4,9 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 170°C pendant 12-15 min (suivant votre four).\n8. Laisser refroidir puis saupoudrer de sucre glace.",
+    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le sucre roux, le beurre fondu et le lait.\n4. Incorporer la farine, la levure et la cannelle.\n5. Répartir la préparation dans les 12 empreintes (environ 25 g par empreinte ; chaque empreinte contient 4,9 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 170°C pendant 12-15 min (suivant votre four).\n8. Laisser refroidir puis saupoudrer de sucre glace.",
     "for": "12",
     "preptime": "15",
     "resttime": "0",

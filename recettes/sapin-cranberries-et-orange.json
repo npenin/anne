@@ -5,7 +5,7 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "185",
+            "quantity": "150",
             "unit": "g",
             "name": "Farine"
         },
@@ -15,22 +15,22 @@
             "name": "Levure chimique"
         },
         {
-            "quantity": "115",
+            "quantity": "90",
             "unit": "g",
             "name": "Sucre"
         },
         {
-            "quantity": "2 1/2",
+            "quantity": "2",
             "unit": "Oeufs",
             "name": ""
         },
         {
-            "quantity": "90",
+            "quantity": "70",
             "unit": "g",
             "name": "Beurre fondu"
         },
         {
-            "quantity": "50",
+            "quantity": "40",
             "unit": "g",
             "name": "Lait"
         },
@@ -40,7 +40,7 @@
             "name": "Orange (zeste et jus)"
         },
         {
-            "quantity": "85",
+            "quantity": "70",
             "unit": "g",
             "name": "Cranberries séchées"
         }
@@ -72,8 +72,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le sucre puis ajouter le beurre, le lait, le zeste et le jus d'orange.\n4. Incorporer la farine, la levure puis les cranberries.\n5. Verser la préparation dans le moule (environ 740 g ; le moule contient 100 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 170°C pendant 33-38 min (suivant votre four).\n8. Laisser refroidir avant de démouler.",
-    "for": "7",
+    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le sucre puis ajouter le beurre, le lait, le zeste et le jus d'orange.\n4. Incorporer la farine, la levure puis les cranberries.\n5. Verser la préparation dans le moule (environ 590 g ; le moule contient 100 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 170°C pendant 33-38 min (suivant votre four).\n8. Laisser refroidir avant de démouler.",
+    "for": "6",
     "preptime": "15",
     "resttime": "0",
     "cooktime": "33-38",

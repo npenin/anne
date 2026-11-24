@@ -5,7 +5,7 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "235",
+            "quantity": "200",
             "unit": "g",
             "name": "Farine"
         },
@@ -15,22 +15,22 @@
             "name": "Levure chimique"
         },
         {
-            "quantity": "130",
+            "quantity": "110",
             "unit": "g",
             "name": "Sucre"
         },
         {
-            "quantity": "3 1/2",
+            "quantity": "3",
             "unit": "Oeufs",
             "name": ""
         },
         {
-            "quantity": "115",
+            "quantity": "100",
             "unit": "g",
             "name": "Beurre fondu"
         },
         {
-            "quantity": "70",
+            "quantity": "60",
             "unit": "g",
             "name": "Lait"
         },
@@ -40,7 +40,7 @@
             "name": "Poire en petits dés"
         },
         {
-            "quantity": "70",
+            "quantity": "60",
             "unit": "g",
             "name": "Pépites de chocolat"
         }
@@ -72,7 +72,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le sucre puis ajouter le beurre et le lait.\n4. Incorporer la farine et la levure.\n5. Ajouter les dés de poire et les pépites.\n6. Répartir la préparation dans les 12 empreintes (environ 75 g par empreinte ; chaque empreinte contient 10 cl).\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 170°C pendant 15-18 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
+    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le sucre puis ajouter le beurre et le lait.\n4. Incorporer la farine et la levure.\n5. Ajouter les dés de poire et les pépites.\n6. Répartir la préparation dans les 12 empreintes (environ 65 g par empreinte ; chaque empreinte contient 10 cl).\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 170°C pendant 15-18 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
     "for": "12",
     "preptime": "15",
     "resttime": "0",

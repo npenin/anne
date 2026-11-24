@@ -5,7 +5,7 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "225",
+            "quantity": "250",
             "unit": "g",
             "name": "Farine"
         },
@@ -15,32 +15,32 @@
             "name": "Levure chimique"
         },
         {
-            "quantity": "105",
+            "quantity": "115",
             "unit": "g",
             "name": "Poudre d'amande"
         },
         {
-            "quantity": "180",
+            "quantity": "200",
             "unit": "g",
             "name": "Sucre"
         },
         {
-            "quantity": "4 1/2",
+            "quantity": "5",
             "unit": "Oeufs",
             "name": ""
         },
         {
-            "quantity": "150",
+            "quantity": "165",
             "unit": "g",
             "name": "Beurre fondu"
         },
         {
-            "quantity": "600",
+            "quantity": "665",
             "unit": "g",
             "name": "Abricots"
         },
         {
-            "quantity": "60",
+            "quantity": "65",
             "unit": "g",
             "name": "Amandes effilées"
         }
@@ -72,8 +72,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Couper les abricots en deux et les disposer face bombée contre le fond du moule avec les amandes effilées.\n4. Fouetter les œufs avec le sucre puis ajouter le beurre fondu.\n5. Incorporer la farine, la levure et la poudre d'amande.\n6. Verser la préparation dans le moule (environ 900 g ; le moule contient 130 cl).\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 170°C pendant 38-45 min (suivant votre four).\n9. Laisser tiédir puis démouler en retournant.",
-    "for": "9",
+    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Couper les abricots en deux et les disposer face bombée contre le fond du moule avec les amandes effilées.\n4. Fouetter les œufs avec le sucre puis ajouter le beurre fondu.\n5. Incorporer la farine, la levure et la poudre d'amande.\n6. Verser la préparation dans le moule (environ 1000 g ; le moule contient 130 cl).\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 170°C pendant 38-45 min (suivant votre four).\n9. Laisser tiédir puis démouler en retournant.",
+    "for": "10",
     "preptime": "15",
     "resttime": "0",
     "cooktime": "38-45",

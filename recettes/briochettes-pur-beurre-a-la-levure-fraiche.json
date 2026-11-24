@@ -5,27 +5,27 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "250",
+            "quantity": "300",
             "unit": "g",
             "name": "Farine T45"
         },
         {
-            "quantity": "25",
+            "quantity": "30",
             "unit": "g",
             "name": "Levure fraîche de boulanger"
         },
         {
-            "quantity": "35",
+            "quantity": "40",
             "unit": "g",
             "name": "Sucre"
         },
         {
-            "quantity": "2 1/2",
+            "quantity": "3",
             "unit": "Oeufs",
             "name": ""
         },
         {
-            "quantity": "100",
+            "quantity": "120",
             "unit": "g",
             "name": "Beurre mou"
         },
@@ -35,7 +35,7 @@
             "name": "Sel"
         },
         {
-            "quantity": "1 1/2",
+            "quantity": "2",
             "unit": "c-à-s",
             "name": "Lait tiède"
         }
@@ -67,7 +67,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Délayer la levure dans le lait tiède.\n2. Pétrir la farine, le sucre, le sel, les œufs et la levure 10 min jusqu'à ce que la pâte se décolle.\n3. Incorporer le beurre mou en plusieurs fois et pétrir encore 8 min.\n4. Laisser pousser 1 h sous un linge.\n5. Dégazer et diviser la pâte en boules.\n6. Poser votre moule sur une plaque aluminium perforée.\n7. Répartir la préparation dans les 12 empreintes (environ 45 g par empreinte ; chaque empreinte contient 10,5 cl).\n8. Laisser lever encore 30 min à température ambiante.\n9. Préchauffer votre four à 180°C.\n10. Enfourner à 180°C pendant 17-21 min (suivant votre four).\n11. Laisser tiédir avant de démouler.",
+    "steps": "1. Délayer la levure dans le lait tiède.\n2. Pétrir la farine, le sucre, le sel, les œufs et la levure 10 min jusqu'à ce que la pâte se décolle.\n3. Incorporer le beurre mou en plusieurs fois et pétrir encore 8 min.\n4. Laisser pousser 1 h sous un linge.\n5. Dégazer et diviser la pâte en boules.\n6. Poser votre moule sur une plaque aluminium perforée.\n7. Répartir la préparation dans les 12 empreintes (environ 55 g par empreinte ; chaque empreinte contient 10,5 cl).\n8. Laisser lever encore 30 min à température ambiante.\n9. Préchauffer votre four à 180°C.\n10. Enfourner à 180°C pendant 17-21 min (suivant votre four).\n11. Laisser tiédir avant de démouler.",
     "for": "12",
     "preptime": "30",
     "resttime": "2h",

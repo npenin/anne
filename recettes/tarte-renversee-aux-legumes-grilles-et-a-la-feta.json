@@ -5,7 +5,7 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "235",
+            "quantity": "200",
             "unit": "g",
             "name": "Farine"
         },
@@ -15,22 +15,22 @@
             "name": "Levure chimique"
         },
         {
-            "quantity": "3 1/2",
+            "quantity": "3",
             "unit": "Oeufs",
             "name": ""
         },
         {
-            "quantity": "115",
+            "quantity": "100",
             "unit": "g",
             "name": "Lait"
         },
         {
-            "quantity": "70",
+            "quantity": "60",
             "unit": "g",
             "name": "Huile d'olive"
         },
         {
-            "quantity": "140",
+            "quantity": "120",
             "unit": "g",
             "name": "Feta"
         },
@@ -77,8 +77,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Couper les légumes en rondelles et les faire griller 10 min à la poêle avec un peu d'huile d'olive. Les ranger au fond du moule.\n4. Fouetter les œufs avec le lait et l'huile, ajouter la farine, la levure et la feta émiettée.\n5. Verser la préparation dans le moule (environ 750 g ; le moule contient 104,4 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 180°C pendant 33-38 min (suivant votre four).\n8. Laisser tiédir puis démouler en retournant.",
-    "for": "7",
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Couper les légumes en rondelles et les faire griller 10 min à la poêle avec un peu d'huile d'olive. Les ranger au fond du moule.\n4. Fouetter les œufs avec le lait et l'huile, ajouter la farine, la levure et la feta émiettée.\n5. Verser la préparation dans le moule (environ 645 g ; le moule contient 104,4 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 180°C pendant 33-38 min (suivant votre four).\n8. Laisser tiédir puis démouler en retournant.",
+    "for": "6",
     "preptime": "15",
     "resttime": "0",
     "cooktime": "33-38",

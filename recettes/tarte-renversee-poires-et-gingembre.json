@@ -5,7 +5,7 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "270",
+            "quantity": "240",
             "unit": "g",
             "name": "Farine"
         },
@@ -15,22 +15,22 @@
             "name": "Levure chimique"
         },
         {
-            "quantity": "165",
+            "quantity": "145",
             "unit": "g",
             "name": "Sucre"
         },
         {
-            "quantity": "4 1/2",
+            "quantity": "4",
             "unit": "Oeufs",
             "name": ""
         },
         {
-            "quantity": "150",
+            "quantity": "135",
             "unit": "g",
             "name": "Beurre fondu"
         },
         {
-            "quantity": "90",
+            "quantity": "80",
             "unit": "g",
             "name": "Lait"
         },
@@ -40,17 +40,17 @@
             "name": "Gingembre en poudre"
         },
         {
-            "quantity": "600",
+            "quantity": "535",
             "unit": "g",
             "name": "Poires"
         },
         {
-            "quantity": "75",
+            "quantity": "65",
             "unit": "g",
             "name": "Sucre roux"
         },
         {
-            "quantity": "30",
+            "quantity": "25",
             "unit": "g",
             "name": "Beurre"
         }
@@ -82,8 +82,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Peler les poires, les couper en quartiers et les caraméliser 5 min à la poêle avec le beurre et le sucre roux.\n4. Les disposer en rosace au fond du moule.\n5. Fouetter les œufs avec le sucre, le beurre fondu et le lait puis incorporer la farine, la levure et le gingembre.\n6. Verser la préparation dans le moule (environ 925 g ; le moule contient 130 cl).\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 170°C pendant 38-45 min (suivant votre four).\n9. Laisser tiédir 10 min puis démouler en retournant sur un plat.",
-    "for": "9",
+    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Peler les poires, les couper en quartiers et les caraméliser 5 min à la poêle avec le beurre et le sucre roux.\n4. Les disposer en rosace au fond du moule.\n5. Fouetter les œufs avec le sucre, le beurre fondu et le lait puis incorporer la farine, la levure et le gingembre.\n6. Verser la préparation dans le moule (environ 820 g ; le moule contient 130 cl).\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 170°C pendant 38-45 min (suivant votre four).\n9. Laisser tiédir 10 min puis démouler en retournant sur un plat.",
+    "for": "8",
     "preptime": "15",
     "resttime": "0",
     "cooktime": "38-45",

@@ -5,7 +5,7 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "290",
+            "quantity": "250",
             "unit": "g",
             "name": "Farine"
         },
@@ -15,22 +15,22 @@
             "name": "Levure chimique"
         },
         {
-            "quantity": "175",
+            "quantity": "150",
             "unit": "g",
             "name": "Sucre roux"
         },
         {
-            "quantity": "3 1/2",
+            "quantity": "3",
             "unit": "Oeufs",
             "name": ""
         },
         {
-            "quantity": "140",
+            "quantity": "120",
             "unit": "g",
             "name": "Huile"
         },
         {
-            "quantity": "235",
+            "quantity": "200",
             "unit": "g",
             "name": "Carottes râpées"
         },
@@ -72,8 +72,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le sucre roux et l'huile.\n4. Ajouter les carottes râpées, les épices, la farine et la levure.\n5. Verser la préparation dans le moule (environ 1040 g ; le moule contient 139 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 170°C pendant 38-45 min (suivant votre four).\n8. Laisser refroidir avant de démouler.",
-    "for": "10",
+    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le sucre roux et l'huile.\n4. Ajouter les carottes râpées, les épices, la farine et la levure.\n5. Verser la préparation dans le moule (environ 890 g ; le moule contient 139 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 170°C pendant 38-45 min (suivant votre four).\n8. Laisser refroidir avant de démouler.",
+    "for": "9",
     "preptime": "15",
     "resttime": "0",
     "cooktime": "38-45",

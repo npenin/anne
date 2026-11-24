@@ -5,47 +5,47 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "120",
+            "quantity": "80",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "1",
+            "quantity": "1/2",
             "unit": "sachet",
             "name": "Levure chimique"
         },
         {
-            "quantity": "70",
+            "quantity": "45",
             "unit": "g",
             "name": "Sucre"
         },
         {
-            "quantity": "1 1/2",
-            "unit": "Oeufs",
-            "name": ""
-        },
-        {
-            "quantity": "60",
-            "unit": "g",
-            "name": "Lait"
-        },
-        {
-            "quantity": "45",
-            "unit": "g",
-            "name": "Beurre fondu"
-        },
-        {
             "quantity": "1",
-            "unit": "c-à-c",
-            "name": "Cannelle"
+            "unit": "Oeuf",
+            "name": ""
         },
         {
             "quantity": "40",
             "unit": "g",
+            "name": "Lait"
+        },
+        {
+            "quantity": "30",
+            "unit": "g",
+            "name": "Beurre fondu"
+        },
+        {
+            "quantity": "1/2",
+            "unit": "c-à-c",
+            "name": "Cannelle"
+        },
+        {
+            "quantity": "25",
+            "unit": "g",
             "name": "Sucre en poudre"
         },
         {
-            "quantity": "1",
+            "quantity": "1/2",
             "unit": "c-à-c",
             "name": "Cannelle"
         }
@@ -77,7 +77,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le sucre, le lait et le beurre fondu.\n4. Incorporer la farine, la levure et la cannelle.\n5. Répartir la préparation dans les 24 empreintes (environ 15 g par empreinte ; chaque empreinte contient 2,4 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 170°C pendant 10-12 min (suivant votre four).\n8. Démouler tièdes et rouler aussitôt dans un mélange de sucre et de cannelle.",
+    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le sucre, le lait et le beurre fondu.\n4. Incorporer la farine, la levure et la cannelle.\n5. Répartir la préparation dans les 24 empreintes (environ 10 g par empreinte ; chaque empreinte contient 2,4 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 170°C pendant 10-12 min (suivant votre four).\n8. Démouler tièdes et rouler aussitôt dans un mélange de sucre et de cannelle.",
     "for": "24",
     "preptime": "15",
     "resttime": "0",

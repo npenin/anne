@@ -5,7 +5,7 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "125",
+            "quantity": "100",
             "unit": "g",
             "name": "Farine"
         },
@@ -15,27 +15,27 @@
             "name": "Levure chimique"
         },
         {
-            "quantity": "2 1/2",
+            "quantity": "2",
             "unit": "Oeufs",
             "name": ""
         },
         {
-            "quantity": "65",
+            "quantity": "50",
             "unit": "g",
             "name": "Beurre fondu"
         },
         {
-            "quantity": "50",
+            "quantity": "40",
             "unit": "g",
             "name": "Parmesan râpé"
         },
         {
-            "quantity": "2 1/2",
+            "quantity": "2",
             "unit": "c-à-s",
             "name": "Pesto"
         },
         {
-            "quantity": "25",
+            "quantity": "20",
             "unit": "g",
             "name": "Lait"
         }
@@ -67,7 +67,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Fouetter les œufs avec le lait et le beurre fondu.\n2. Ajouter le pesto, le parmesan puis la farine et la levure.\n3. Réserver 1 h au frais.\n4. Poser votre moule sur une plaque aluminium perforée.\n5. Répartir la préparation dans les 20 empreintes (environ 20 g par empreinte ; chaque empreinte contient 3 cl).\n6. Préchauffer votre four à 190°C.\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 190°C pendant 9-11 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
+    "steps": "1. Fouetter les œufs avec le lait et le beurre fondu.\n2. Ajouter le pesto, le parmesan puis la farine et la levure.\n3. Réserver 1 h au frais.\n4. Poser votre moule sur une plaque aluminium perforée.\n5. Répartir la préparation dans les 20 empreintes (environ 15 g par empreinte ; chaque empreinte contient 3 cl).\n6. Préchauffer votre four à 190°C.\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 190°C pendant 9-11 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
     "for": "20",
     "preptime": "15",
     "resttime": "1h",

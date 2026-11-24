@@ -5,47 +5,47 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "130",
+            "quantity": "85",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "1",
+            "quantity": "1/2",
             "unit": "sachet",
             "name": "Levure chimique"
         },
         {
-            "quantity": "70",
+            "quantity": "45",
             "unit": "g",
             "name": "Sucre"
         },
         {
-            "quantity": "1 1/2",
-            "unit": "Oeufs",
+            "quantity": "1",
+            "unit": "Oeuf",
             "name": ""
-        },
-        {
-            "quantity": "70",
-            "unit": "g",
-            "name": "Lait"
         },
         {
             "quantity": "45",
             "unit": "g",
+            "name": "Lait"
+        },
+        {
+            "quantity": "30",
+            "unit": "g",
             "name": "Beurre fondu"
         },
         {
-            "quantity": "1",
+            "quantity": "1/2",
             "unit": "c-à-s",
             "name": "Extrait de vanille"
         },
         {
-            "quantity": "110",
+            "quantity": "75",
             "unit": "g",
             "name": "Crème liquide"
         },
         {
-            "quantity": "15",
+            "quantity": "10",
             "unit": "g",
             "name": "Sucre glace"
         }
@@ -77,7 +77,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre airfryer à 170°C.\n2. Poser votre moule sur la grille du panier de l'airfryer.\n3. Fouetter les œufs avec le sucre, le lait, le beurre et la vanille.\n4. Incorporer la farine et la levure.\n5. Répartir la préparation dans les 6 empreintes (environ 65 g par empreinte ; chaque empreinte contient 10 cl).\n6. Taper le moule sur le plan de travail pour égaliser la pâte.\n7. Cuire à 170°C pendant 15-18 min (suivant votre appareil).\n8. Laisser refroidir puis décorer de chantilly (crème montée avec le sucre glace).",
+    "steps": "1. Préchauffer votre airfryer à 170°C.\n2. Poser votre moule sur la grille du panier de l'airfryer.\n3. Fouetter les œufs avec le sucre, le lait, le beurre et la vanille.\n4. Incorporer la farine et la levure.\n5. Répartir la préparation dans les 6 empreintes (environ 45 g par empreinte ; chaque empreinte contient 10 cl).\n6. Taper le moule sur le plan de travail pour égaliser la pâte.\n7. Cuire à 170°C pendant 15-18 min (suivant votre appareil).\n8. Laisser refroidir puis décorer de chantilly (crème montée avec le sucre glace).",
     "for": "6",
     "preptime": "15",
     "resttime": "0",

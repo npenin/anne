@@ -5,32 +5,32 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "335",
+            "quantity": "400",
             "unit": "g",
             "name": "Farine T45"
         },
         {
-            "quantity": "20",
+            "quantity": "25",
             "unit": "g",
             "name": "Levure fraîche de boulanger"
         },
         {
-            "quantity": "50",
+            "quantity": "60",
             "unit": "g",
             "name": "Sucre"
         },
         {
-            "quantity": "2 1/2",
+            "quantity": "3",
             "unit": "Oeufs",
             "name": ""
         },
         {
-            "quantity": "125",
+            "quantity": "150",
             "unit": "g",
             "name": "Beurre mou"
         },
         {
-            "quantity": "40",
+            "quantity": "50",
             "unit": "g",
             "name": "Lait tiède"
         },
@@ -40,7 +40,7 @@
             "name": "Sel"
         },
         {
-            "quantity": "85",
+            "quantity": "100",
             "unit": "g",
             "name": "Pralines roses concassées"
         }
@@ -72,8 +72,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Délayer la levure dans le lait tiède.\n2. Pétrir farine, sucre, sel, œufs et levure 10 min puis incorporer le beurre. Laisser pousser 1 h 30.\n3. Diviser en trois boudins, les tresser et fermer en couronne.\n4. Poser votre moule sur une plaque aluminium perforée.\n5. Verser la préparation dans le moule (environ 780 g ; le moule contient 158 cl).\n6. Parsemer de pralines concassées.\n7. Laisser lever encore 30 min à température ambiante.\n8. Préchauffer votre four à 180°C.\n9. Enfourner à 180°C pendant 38-45 min (suivant votre four).\n10. Laisser refroidir avant de démouler.",
-    "for": "8",
+    "steps": "1. Délayer la levure dans le lait tiède.\n2. Pétrir farine, sucre, sel, œufs et levure 10 min puis incorporer le beurre. Laisser pousser 1 h 30.\n3. Diviser en trois boudins, les tresser et fermer en couronne.\n4. Poser votre moule sur une plaque aluminium perforée.\n5. Verser la préparation dans le moule (environ 935 g ; le moule contient 158 cl).\n6. Parsemer de pralines concassées.\n7. Laisser lever encore 30 min à température ambiante.\n8. Préchauffer votre four à 180°C.\n9. Enfourner à 180°C pendant 38-45 min (suivant votre four).\n10. Laisser refroidir avant de démouler.",
+    "for": "9",
     "preptime": "40",
     "resttime": "2h30",
     "cooktime": "38-45",

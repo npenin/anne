@@ -5,42 +5,42 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "300",
+            "quantity": "400",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "20",
+            "quantity": "25",
             "unit": "g",
             "name": "Levure fraîche de boulanger"
         },
         {
-            "quantity": "50",
+            "quantity": "65",
             "unit": "g",
             "name": "Sucre"
         },
         {
-            "quantity": "1 1/2",
+            "quantity": "2",
             "unit": "Oeufs",
             "name": ""
         },
         {
-            "quantity": "90",
+            "quantity": "120",
             "unit": "g",
             "name": "Beurre mou"
         },
         {
-            "quantity": "75",
+            "quantity": "100",
             "unit": "g",
             "name": "Lait tiède"
         },
         {
-            "quantity": "1",
+            "quantity": "1 1/2",
             "unit": "",
             "name": "Orange (zeste)"
         },
         {
-            "quantity": "2",
+            "quantity": "2 1/2",
             "unit": "c-à-s",
             "name": "Graines de pavot"
         }
@@ -72,8 +72,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Délayer la levure dans le lait tiède.\n2. Pétrir farine, sucre, œufs, zeste d'orange et levure 10 min puis incorporer le beurre. Laisser pousser 1 h 30.\n3. Étaler, parsemer de pavot, rouler et tresser deux boudins puis fermer en couronne.\n4. Poser votre moule sur une plaque aluminium perforée.\n5. Verser la préparation dans le moule (environ 720 g ; le moule contient 158 cl).\n6. Laisser lever encore 30 min à température ambiante.\n7. Préchauffer votre four à 180°C.\n8. Enfourner à 180°C pendant 38-45 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
-    "for": "7",
+    "steps": "1. Délayer la levure dans le lait tiède.\n2. Pétrir farine, sucre, œufs, zeste d'orange et levure 10 min puis incorporer le beurre. Laisser pousser 1 h 30.\n3. Étaler, parsemer de pavot, rouler et tresser deux boudins puis fermer en couronne.\n4. Poser votre moule sur une plaque aluminium perforée.\n5. Verser la préparation dans le moule (environ 960 g ; le moule contient 158 cl).\n6. Laisser lever encore 30 min à température ambiante.\n7. Préchauffer votre four à 180°C.\n8. Enfourner à 180°C pendant 38-45 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
+    "for": "10",
     "preptime": "40",
     "resttime": "2h30",
     "cooktime": "38-45",

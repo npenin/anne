@@ -5,7 +5,7 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "100",
+            "quantity": "95",
             "unit": "g",
             "name": "Farine"
         },
@@ -15,7 +15,7 @@
             "name": "Beurre froid"
         },
         {
-            "quantity": "1/2",
+            "quantity": "1",
             "unit": "Oeuf",
             "name": ""
         },
@@ -25,7 +25,7 @@
             "name": "Sel"
         },
         {
-            "quantity": "60",
+            "quantity": "55",
             "unit": "g",
             "name": "Fromage de chèvre frais"
         },

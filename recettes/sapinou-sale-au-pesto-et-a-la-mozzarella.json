@@ -5,37 +5,37 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "110",
+            "quantity": "75",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "1",
+            "quantity": "1/2",
             "unit": "sachet",
             "name": "Levure chimique"
         },
         {
-            "quantity": "1 1/2",
-            "unit": "Oeufs",
+            "quantity": "1",
+            "unit": "Oeuf",
             "name": ""
         },
         {
-            "quantity": "60",
+            "quantity": "40",
             "unit": "g",
             "name": "Lait"
         },
         {
-            "quantity": "30",
+            "quantity": "20",
             "unit": "g",
             "name": "Huile d'olive"
         },
         {
-            "quantity": "2",
+            "quantity": "1 1/2",
             "unit": "c-à-s",
             "name": "Pesto"
         },
         {
-            "quantity": "60",
+            "quantity": "40",
             "unit": "g",
             "name": "Mozzarella"
         }
@@ -67,8 +67,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le lait, l'huile et le pesto.\n4. Ajouter la farine, la levure puis la mozzarella en dés.\n5. Verser la préparation dans le moule (environ 380 g ; le moule contient 61,7 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 180°C pendant 33-38 min (suivant votre four).\n8. Laisser refroidir avant de démouler.",
-    "for": "4",
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le lait, l'huile et le pesto.\n4. Ajouter la farine, la levure puis la mozzarella en dés.\n5. Verser la préparation dans le moule (environ 255 g ; le moule contient 61,7 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 180°C pendant 33-38 min (suivant votre four).\n8. Laisser refroidir avant de démouler.",
+    "for": "3",
     "preptime": "15",
     "resttime": "0",
     "cooktime": "33-38",

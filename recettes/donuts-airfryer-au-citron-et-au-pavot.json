@@ -5,7 +5,7 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "35",
+            "quantity": "30",
             "unit": "g",
             "name": "Farine"
         },
@@ -20,7 +20,7 @@
             "name": "Sucre"
         },
         {
-            "quantity": "1/2",
+            "quantity": "1",
             "unit": "Oeuf",
             "name": ""
         },
@@ -30,7 +30,7 @@
             "name": "Yaourt"
         },
         {
-            "quantity": "10",
+            "quantity": "9",
             "unit": "g",
             "name": "Beurre fondu"
         },

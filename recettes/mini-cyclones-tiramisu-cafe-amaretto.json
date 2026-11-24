@@ -5,7 +5,7 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "140",
+            "quantity": "160",
             "unit": "g",
             "name": "Farine"
         },
@@ -15,22 +15,22 @@
             "name": "Levure chimique"
         },
         {
-            "quantity": "115",
+            "quantity": "130",
             "unit": "g",
             "name": "Sucre"
         },
         {
-            "quantity": "3 1/2",
+            "quantity": "4",
             "unit": "Oeufs",
             "name": ""
         },
         {
-            "quantity": "95",
+            "quantity": "110",
             "unit": "g",
             "name": "Beurre fondu"
         },
         {
-            "quantity": "2 1/2",
+            "quantity": "3",
             "unit": "c-à-s",
             "name": "Café fort"
         },
@@ -40,7 +40,7 @@
             "name": "Amaretto"
         },
         {
-            "quantity": "115",
+            "quantity": "130",
             "unit": "g",
             "name": "Mascarpone"
         },

@@ -5,37 +5,37 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "150",
+            "quantity": "100",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "1",
+            "quantity": "1/2",
             "unit": "sachet",
             "name": "Levure chimique"
         },
         {
-            "quantity": "100",
+            "quantity": "65",
             "unit": "g",
             "name": "Miel"
         },
         {
-            "quantity": "60",
+            "quantity": "40",
             "unit": "g",
             "name": "Beurre fondu"
         },
         {
-            "quantity": "1 1/2",
-            "unit": "Oeufs",
+            "quantity": "1",
+            "unit": "Oeuf",
             "name": ""
         },
         {
-            "quantity": "75",
+            "quantity": "50",
             "unit": "g",
             "name": "Lait"
         },
         {
-            "quantity": "1 1/2",
+            "quantity": "1",
             "unit": "c-à-c",
             "name": "Épices à pain d'épices"
         }
@@ -67,7 +67,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter le miel avec le beurre et les œufs puis ajouter le lait.\n4. Incorporer la farine, la levure et les épices.\n5. Répartir la préparation dans les 6 empreintes (environ 80 g par empreinte ; chaque empreinte contient 9,4 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 170°C pendant 15-18 min (suivant votre four).\n8. Laisser refroidir avant de démouler.",
+    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter le miel avec le beurre et les œufs puis ajouter le lait.\n4. Incorporer la farine, la levure et les épices.\n5. Répartir la préparation dans les 6 empreintes (environ 55 g par empreinte ; chaque empreinte contient 9,4 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 170°C pendant 15-18 min (suivant votre four).\n8. Laisser refroidir avant de démouler.",
     "for": "6",
     "preptime": "15",
     "resttime": "0",
