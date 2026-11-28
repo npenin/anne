@@ -5,37 +5,37 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "225",
+            "quantity": "175",
             "unit": "g",
             "name": "Polenta précuite"
         },
         {
-            "quantity": "900",
+            "quantity": "725",
             "unit": "g",
             "name": "Lait"
         },
         {
-            "quantity": "90",
+            "quantity": "70",
             "unit": "g",
             "name": "Parmesan"
         },
         {
-            "quantity": "3",
+            "quantity": "2",
             "unit": "Oeufs",
             "name": ""
         },
         {
-            "quantity": "1 1/2",
+            "quantity": "1",
             "unit": "c-à-s",
             "name": "Herbes de Provence"
         },
         {
-            "quantity": "1.0",
+            "quantity": "1",
             "unit": "pincée",
             "name": "Sel"
         },
         {
-            "quantity": "1.0",
+            "quantity": "1",
             "unit": "pincée",
             "name": "Poivre"
         }
@@ -67,7 +67,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 190°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Porter le lait à ébullition, verser la polenta en pluie et cuire 5 min en remuant.\n4. Hors du feu ajouter le parmesan, les œufs et les herbes.\n5. Répartir la préparation dans les 3 empreintes (environ 460 g par empreinte ; chaque empreinte contient 52,6 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 190°C pendant 28-33 min (suivant votre four).\n8. Laisser refroidir puis découper en barres et passer à la poêle si vous le souhaitez.",
+    "steps": "1. Préchauffer votre four à 190°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Porter le lait à ébullition, verser la polenta en pluie et cuire 5 min en remuant.\n4. Hors du feu ajouter le parmesan, les œufs et les herbes.\n5. Répartir la préparation dans les 3 empreintes (environ 360 g par empreinte ; chaque empreinte contient 52,6 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 190°C pendant 28-33 min (suivant votre four).\n8. Laisser refroidir puis découper en barres et passer à la poêle si vous le souhaitez.",
     "for": "3",
     "preptime": "15",
     "resttime": "0",

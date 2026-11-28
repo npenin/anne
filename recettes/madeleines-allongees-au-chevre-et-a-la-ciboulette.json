@@ -5,13 +5,13 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "85",
+            "quantity": "100",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "1/2",
-            "unit": "sachet",
+            "quantity": "5",
+            "unit": "g",
             "name": "Levure chimique"
         },
         {
@@ -20,24 +20,29 @@
             "name": ""
         },
         {
-            "quantity": "55",
+            "quantity": "60",
             "unit": "g",
             "name": "Beurre fondu"
         },
         {
-            "quantity": "65",
+            "quantity": "75",
             "unit": "g",
             "name": "Chèvre frais"
         },
         {
-            "quantity": "1/2",
+            "quantity": "1",
             "unit": "c-à-s",
             "name": "Ciboulette"
         },
         {
-            "quantity": "1.0",
+            "quantity": "1",
             "unit": "pincée",
             "name": "Poivre"
+        },
+        {
+            "quantity": "15",
+            "unit": "g",
+            "name": "Lait"
         }
     ],
     "accessories": [
@@ -67,7 +72,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Fouetter les œufs avec le beurre fondu et le chèvre.\n2. Incorporer la farine, la levure, la ciboulette et le poivre.\n3. Réserver 1 h au frais.\n4. Poser votre moule sur une plaque aluminium perforée.\n5. Répartir la préparation dans les 30 empreintes (environ 11 g par empreinte ; chaque empreinte contient 1,6 cl).\n6. Préchauffer votre four à 190°C.\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 190°C pendant 9-11 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
+    "steps": "1. Fouetter les œufs avec le beurre fondu et le chèvre.\n2. Incorporer la farine, la levure, la ciboulette et le poivre.\n3. Réserver 1 h au frais.\n4. Ajouter le lait et mélanger.\n5. Poser votre moule sur une plaque aluminium perforée.\n6. Répartir la préparation dans les 30 empreintes (environ 12 g par empreinte ; chaque empreinte contient 1,6 cl).\n7. Préchauffer votre four à 190°C.\n8. Taper la plaque sur le plan de travail pour égaliser la pâte.\n9. Enfourner à 190°C pendant 9-11 min (suivant votre four).\n10. Laisser refroidir avant de démouler.",
     "for": "30",
     "preptime": "15",
     "resttime": "1h",

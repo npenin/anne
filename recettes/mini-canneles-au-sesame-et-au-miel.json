@@ -5,22 +5,22 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "250",
+            "quantity": "285",
             "unit": "g",
             "name": "Lait entier"
         },
         {
-            "quantity": "100",
+            "quantity": "110",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "100",
+            "quantity": "110",
             "unit": "g",
             "name": "Sucre"
         },
         {
-            "quantity": "30",
+            "quantity": "35",
             "unit": "g",
             "name": "Miel"
         },
@@ -67,7 +67,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Chauffer le lait avec le beurre et le miel.\n2. Mélanger farine et sucre, ajouter les œufs puis le lait tiède et le sésame.\n3. Laisser reposer 12 h au réfrigérateur.\n4. Poser votre moule sur une plaque aluminium perforée.\n5. Répartir la préparation dans les 30 empreintes (environ 20 g par empreinte ; chaque empreinte contient 2,4 cl).\n6. Préchauffer votre four à 190°C.\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 190°C pendant 11-13 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
+    "steps": "1. Chauffer le lait avec le beurre et le miel.\n2. Mélanger farine et sucre, ajouter les œufs puis le lait tiède et le sésame.\n3. Laisser reposer 12 h au réfrigérateur.\n4. Poser votre moule sur une plaque aluminium perforée.\n5. Répartir la préparation dans les 30 empreintes (environ 23 g par empreinte ; chaque empreinte contient 2,4 cl).\n6. Préchauffer votre four à 190°C.\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 190°C pendant 11-13 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
     "for": "30",
     "preptime": "15",
     "resttime": "12h",

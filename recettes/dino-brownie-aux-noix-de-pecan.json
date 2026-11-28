@@ -5,34 +5,39 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "285",
+            "quantity": "250",
             "unit": "g",
             "name": "Chocolat noir"
         },
         {
-            "quantity": "250",
+            "quantity": "220",
             "unit": "g",
             "name": "Beurre"
         },
         {
-            "quantity": "5",
+            "quantity": "4",
             "unit": "Oeufs",
             "name": ""
         },
         {
-            "quantity": "235",
+            "quantity": "205",
             "unit": "g",
             "name": "Sucre"
         },
         {
-            "quantity": "135",
+            "quantity": "115",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "135",
+            "quantity": "115",
             "unit": "g",
             "name": "Noix de pécan"
+        },
+        {
+            "quantity": "20",
+            "unit": "g",
+            "name": "Crème liquide"
         }
     ],
     "accessories": [
@@ -62,8 +67,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Faire fondre le chocolat avec le beurre.\n4. Fouetter les œufs avec le sucre puis ajouter le chocolat.\n5. Incorporer la farine puis les noix de pécan concassées.\n6. Verser la préparation dans le moule (environ 1285 g ; le moule contient 173 cl).\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 170°C pendant 32-38 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
-    "for": "13",
+    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Faire fondre le chocolat avec le beurre.\n4. Fouetter les œufs avec le sucre puis ajouter le chocolat.\n5. Incorporer la farine puis les noix de pécan concassées.\n6. Ajouter la crème et mélanger.\n7. Verser la préparation dans le moule (environ 1125 g ; le moule contient 173 cl).\n8. Taper la plaque sur le plan de travail pour égaliser la pâte.\n9. Enfourner à 170°C pendant 32-38 min (suivant votre four).\n10. Laisser refroidir avant de démouler.",
+    "for": "11",
     "preptime": "15",
     "resttime": "0",
     "cooktime": "32-38",

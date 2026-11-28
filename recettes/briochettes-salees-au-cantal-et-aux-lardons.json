@@ -5,42 +5,42 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "200",
+            "quantity": "255",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "15",
+            "quantity": "20",
             "unit": "g",
             "name": "Levure fraîche de boulanger"
         },
         {
-            "quantity": "2",
+            "quantity": "3",
             "unit": "Oeufs",
             "name": ""
         },
         {
-            "quantity": "40",
+            "quantity": "50",
             "unit": "g",
             "name": "Beurre mou"
         },
         {
-            "quantity": "55",
+            "quantity": "45",
             "unit": "g",
             "name": "Lait tiède"
         },
         {
-            "quantity": "65",
+            "quantity": "85",
             "unit": "g",
             "name": "Cantal râpé"
         },
         {
-            "quantity": "65",
+            "quantity": "85",
             "unit": "g",
             "name": "Lardons fumés"
         },
         {
-            "quantity": "1/2",
+            "quantity": "1",
             "unit": "c-à-c",
             "name": "Sel"
         }
@@ -72,7 +72,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Délayer la levure dans le lait tiède.\n2. Pétrir la farine, le sel, les œufs et la levure 10 min puis incorporer le beurre.\n3. Ajouter le cantal et les lardons revenus à la poêle et laisser pousser 1 h.\n4. Dégazer et diviser la pâte en boules.\n5. Poser votre moule sur une plaque aluminium perforée.\n6. Répartir la préparation dans les 12 empreintes (environ 45 g par empreinte ; chaque empreinte contient 10,5 cl).\n7. Laisser lever encore 30 min à température ambiante.\n8. Préchauffer votre four à 180°C.\n9. Enfourner à 180°C pendant 18-22 min (suivant votre four).\n10. Laisser refroidir avant de démouler.",
+    "steps": "1. Délayer la levure dans le lait tiède.\n2. Pétrir la farine, le sel, les œufs et la levure 10 min puis incorporer le beurre.\n3. Ajouter le cantal et les lardons revenus à la poêle et laisser pousser 1 h.\n4. Dégazer et diviser la pâte en boules.\n5. Poser votre moule sur une plaque aluminium perforée.\n6. Répartir la préparation dans les 12 empreintes (environ 60 g par empreinte ; chaque empreinte contient 10,5 cl).\n7. Laisser lever encore 30 min à température ambiante.\n8. Préchauffer votre four à 180°C.\n9. Enfourner à 180°C pendant 18-22 min (suivant votre four).\n10. Laisser refroidir avant de démouler.",
     "for": "12",
     "preptime": "30",
     "resttime": "2h",

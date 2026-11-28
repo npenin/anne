@@ -5,12 +5,12 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "600",
+            "quantity": "570",
             "unit": "g",
             "name": "Fromage frais type Philadelphia"
         },
         {
-            "quantity": "150",
+            "quantity": "145",
             "unit": "g",
             "name": "Sucre"
         },
@@ -20,7 +20,7 @@
             "name": ""
         },
         {
-            "quantity": "150",
+            "quantity": "145",
             "unit": "g",
             "name": "Crème liquide"
         },
@@ -35,12 +35,12 @@
             "name": "Maïzena"
         },
         {
-            "quantity": "150",
+            "quantity": "145",
             "unit": "g",
             "name": "Spéculoos écrasés"
         },
         {
-            "quantity": "60",
+            "quantity": "55",
             "unit": "g",
             "name": "Beurre fondu"
         }
@@ -72,7 +72,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 150°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Mélanger les spéculoos avec le beurre fondu et tasser au fond de chaque empreinte.\n4. Fouetter le fromage frais avec le sucre, les œufs, la crème, la vanille et la maïzena.\n5. Répartir la préparation dans les 6 empreintes (environ 185 g par empreinte ; chaque empreinte contient 24 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 150°C pendant 26-32 min (suivant votre four).\n8. Laisser refroidir puis 4 h au réfrigérateur avant de démouler.",
+    "steps": "1. Préchauffer votre four à 150°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Mélanger les spéculoos avec le beurre fondu et tasser au fond de chaque empreinte.\n4. Fouetter le fromage frais avec le sucre, les œufs, la crème, la vanille et la maïzena.\n5. Répartir la préparation dans les 6 empreintes (environ 175 g par empreinte ; chaque empreinte contient 24 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 150°C pendant 26-32 min (suivant votre four).\n8. Laisser refroidir puis 4 h au réfrigérateur avant de démouler.",
     "for": "6",
     "preptime": "15",
     "resttime": "0",

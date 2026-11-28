@@ -5,37 +5,37 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "5",
+            "quantity": "4",
             "unit": "Oeufs",
             "name": ""
         },
         {
-            "quantity": "335",
+            "quantity": "300",
             "unit": "g",
             "name": "Crème liquide"
         },
         {
-            "quantity": "165",
+            "quantity": "140",
             "unit": "g",
             "name": "Lait"
         },
         {
-            "quantity": "335",
+            "quantity": "285",
             "unit": "g",
             "name": "Courgettes en rondelles"
         },
         {
-            "quantity": "250",
+            "quantity": "215",
             "unit": "g",
             "name": "Poivrons en dés"
         },
         {
-            "quantity": "165",
+            "quantity": "140",
             "unit": "g",
             "name": "Gruyère râpé"
         },
         {
-            "quantity": "1.0",
+            "quantity": "1",
             "unit": "pincée",
             "name": "Poivre"
         }
@@ -67,8 +67,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Faire revenir courgettes et poivrons 8 min à la poêle.\n4. Fouetter les œufs avec la crème, le lait et le poivre.\n5. Disposer les légumes et le gruyère dans le moule.\n6. Verser la préparation dans le moule (environ 1500 g ; le moule contient 160 cl).\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 170°C pendant 46-54 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
-    "for": "15",
+    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Faire revenir courgettes et poivrons 8 min à la poêle.\n4. Fouetter les œufs avec la crème, le lait et le poivre.\n5. Disposer les légumes et le gruyère dans le moule.\n6. Verser la préparation dans le moule (environ 1280 g ; le moule contient 160 cl).\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 170°C pendant 46-54 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
+    "for": "13",
     "preptime": "15",
     "resttime": "0",
     "cooktime": "46-54",

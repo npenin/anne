@@ -5,22 +5,22 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "635",
+            "quantity": "505",
             "unit": "g",
             "name": "Chocolat blanc"
         },
         {
-            "quantity": "315",
+            "quantity": "255",
             "unit": "g",
             "name": "Purée de fruit de la passion"
         },
         {
-            "quantity": "950",
+            "quantity": "760",
             "unit": "g",
             "name": "Crème liquide entière froide"
         },
         {
-            "quantity": "15",
+            "quantity": "10",
             "unit": "g",
             "name": "Gélatine en feuilles"
         }
@@ -52,7 +52,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Ramollir la gélatine. Chauffer la purée de passion et y dissoudre la gélatine essorée.\n3. Verser sur le chocolat blanc haché et mélanger. Laisser tiédir.\n4. Monter la crème en chantilly et l'incorporer délicatement.\n5. Répartir la préparation dans les 12 empreintes (environ 160 g par empreinte ; chaque empreinte contient 17,7 cl).\n6. Placer au congélateur pendant au moins 6h.\n7. Démouler en poussant doucement depuis le dessous du moule silicone.",
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Ramollir la gélatine. Chauffer la purée de passion et y dissoudre la gélatine essorée.\n3. Verser sur le chocolat blanc haché et mélanger. Laisser tiédir.\n4. Monter la crème en chantilly et l'incorporer délicatement.\n5. Répartir la préparation dans les 12 empreintes (environ 125 g par empreinte ; chaque empreinte contient 17,7 cl).\n6. Placer au congélateur pendant au moins 6h.\n7. Démouler en poussant doucement depuis le dessous du moule silicone.",
     "for": "12",
     "preptime": "15",
     "resttime": "6h",

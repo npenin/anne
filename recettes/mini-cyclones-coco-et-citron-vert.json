@@ -5,37 +5,37 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "70",
+            "quantity": "95",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "1",
-            "unit": "sachet",
+            "quantity": "6",
+            "unit": "g",
             "name": "Levure chimique"
         },
         {
-            "quantity": "40",
+            "quantity": "50",
             "unit": "g",
             "name": "Noix de coco râpée"
         },
         {
-            "quantity": "70",
+            "quantity": "95",
             "unit": "g",
             "name": "Sucre"
         },
         {
-            "quantity": "2",
+            "quantity": "3",
             "unit": "Oeufs",
             "name": ""
         },
         {
-            "quantity": "60",
+            "quantity": "50",
             "unit": "g",
             "name": "Lait de coco"
         },
         {
-            "quantity": "30",
+            "quantity": "40",
             "unit": "g",
             "name": "Huile de coco"
         },
@@ -72,7 +72,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le sucre, le lait de coco et l'huile de coco fondue.\n4. Ajouter le zeste et le jus du citron vert.\n5. Incorporer la farine, la levure et la noix de coco.\n6. Répartir la préparation dans les 35 empreintes (environ 10 g par empreinte ; chaque empreinte contient 2,3 cl).\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 170°C pendant 10-12 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
+    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le sucre, le lait de coco et l'huile de coco fondue.\n4. Ajouter le zeste et le jus du citron vert.\n5. Incorporer la farine, la levure et la noix de coco.\n6. Répartir la préparation dans les 35 empreintes (environ 15 g par empreinte ; chaque empreinte contient 2,3 cl).\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 170°C pendant 10-12 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
     "for": "35",
     "preptime": "15",
     "resttime": "0",

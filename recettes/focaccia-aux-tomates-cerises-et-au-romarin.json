@@ -5,42 +5,42 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "925",
+            "quantity": "820",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "20",
+            "quantity": "15",
             "unit": "g",
             "name": "Levure sèche de boulanger"
         },
         {
-            "quantity": "650",
+            "quantity": "575",
             "unit": "g",
             "name": "Eau tiède"
         },
         {
-            "quantity": "95",
+            "quantity": "80",
             "unit": "g",
             "name": "Huile d'olive"
         },
         {
-            "quantity": "2 1/2",
+            "quantity": "2",
             "unit": "c-à-c",
             "name": "Sel"
         },
         {
-            "quantity": "465",
+            "quantity": "410",
             "unit": "g",
             "name": "Tomates cerises"
         },
         {
-            "quantity": "4 1/2",
+            "quantity": "4",
             "unit": "c-à-s",
             "name": "Romarin"
         },
         {
-            "quantity": "2 1/2",
+            "quantity": "2",
             "unit": "c-à-s",
             "name": "Fleur de sel"
         }
@@ -72,8 +72,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Mélanger la farine, la levure, le sel, l'eau et l'huile d'olive pour obtenir une pâte souple.\n2. Laisser pousser 1 h 30 sous un linge.\n3. Poser votre moule sur une plaque aluminium perforée.\n4. Verser la préparation dans le moule (environ 1695 g ; le moule contient 357 cl).\n5. Marquer des alvéoles avec les doigts, y déposer les tomates cerises coupées en deux, le romarin, un filet d'huile d'olive et la fleur de sel puis laisser pousser 30 min.\n6. Laisser lever encore 30 min à température ambiante.\n7. Préchauffer votre four à 210°C.\n8. Enfourner à 210°C pendant 20-24 min (suivant votre four).\n9. Laisser tiédir sur une grille.",
-    "for": "17",
+    "steps": "1. Mélanger la farine, la levure, le sel, l'eau et l'huile d'olive pour obtenir une pâte souple.\n2. Laisser pousser 1 h 30 sous un linge.\n3. Poser votre moule sur une plaque aluminium perforée.\n4. Verser la préparation dans le moule (environ 1500 g ; le moule contient 357 cl).\n5. Marquer des alvéoles avec les doigts, y déposer les tomates cerises coupées en deux, le romarin, un filet d'huile d'olive et la fleur de sel puis laisser pousser 30 min.\n6. Laisser lever encore 30 min à température ambiante.\n7. Préchauffer votre four à 210°C.\n8. Enfourner à 210°C pendant 20-24 min (suivant votre four).\n9. Laisser tiédir sur une grille.",
+    "for": "15",
     "preptime": "20",
     "resttime": "2h",
     "cooktime": "20-24",

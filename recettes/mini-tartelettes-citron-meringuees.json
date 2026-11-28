@@ -5,12 +5,12 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "100",
+            "quantity": "105",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "50",
+            "quantity": "55",
             "unit": "g",
             "name": "Beurre froid"
         },
@@ -20,12 +20,12 @@
             "name": "Sucre glace"
         },
         {
-            "quantity": "1",
-            "unit": "Oeuf",
-            "name": ""
+            "quantity": "25",
+            "unit": "g",
+            "name": "Oeuf battu (une partie d'un oeuf)"
         },
         {
-            "quantity": "60",
+            "quantity": "65",
             "unit": "g",
             "name": "Lemon curd"
         },

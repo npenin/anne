@@ -5,27 +5,27 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "675",
+            "quantity": "525",
             "unit": "g",
             "name": "Purée de mangue"
         },
         {
-            "quantity": "225",
+            "quantity": "175",
             "unit": "g",
             "name": "Purée de fruit de la passion"
         },
         {
-            "quantity": "790",
+            "quantity": "610",
             "unit": "g",
             "name": "Crème liquide entière froide"
         },
         {
-            "quantity": "225",
+            "quantity": "175",
             "unit": "g",
             "name": "Sucre"
         },
         {
-            "quantity": "9",
+            "quantity": "7",
             "unit": "Jaunes d'oeufs",
             "name": ""
         }
@@ -57,8 +57,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Cuire les jaunes avec le sucre et 3 cuillères d'eau au bain-marie en fouettant jusqu'à obtenir une mousse épaisse puis fouetter à froid.\n3. Ajouter les purées de fruits.\n4. Monter la crème en chantilly et l'incorporer délicatement.\n5. Verser la préparation dans le moule (environ 2090 g ; le moule contient 225 cl).\n6. Placer au congélateur pendant au moins 8h.\n7. Démouler en poussant doucement depuis le dessous du moule silicone.",
-    "for": "21",
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Cuire les jaunes avec le sucre et 3 cuillères d'eau au bain-marie en fouettant jusqu'à obtenir une mousse épaisse puis fouetter à froid.\n3. Ajouter les purées de fruits.\n4. Monter la crème en chantilly et l'incorporer délicatement.\n5. Verser la préparation dans le moule (environ 1620 g ; le moule contient 225 cl).\n6. Placer au congélateur pendant au moins 8h.\n7. Démouler en poussant doucement depuis le dessous du moule silicone.",
+    "for": "16",
     "preptime": "15",
     "resttime": "8h",
     "cooktime": "0",

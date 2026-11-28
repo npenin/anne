@@ -5,17 +5,17 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "110",
+            "quantity": "145",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "1/2",
-            "unit": "sachet",
+            "quantity": "7",
+            "unit": "g",
             "name": "Levure chimique"
         },
         {
-            "quantity": "45",
+            "quantity": "60",
             "unit": "g",
             "name": "Sucre"
         },
@@ -25,22 +25,22 @@
             "name": ""
         },
         {
-            "quantity": "65",
+            "quantity": "100",
             "unit": "g",
             "name": "Yaourt nature"
         },
         {
-            "quantity": "40",
+            "quantity": "55",
             "unit": "g",
             "name": "Lait"
         },
         {
-            "quantity": "30",
+            "quantity": "40",
             "unit": "g",
             "name": "Beurre fondu"
         },
         {
-            "quantity": "40",
+            "quantity": "55",
             "unit": "g",
             "name": "Pépites de chocolat"
         }
@@ -72,7 +72,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le sucre, le yaourt, le lait et le beurre.\n4. Incorporer la farine et la levure puis les pépites.\n5. Répartir la préparation dans les 8 empreintes (environ 45 g par empreinte ; chaque empreinte contient 10 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 170°C pendant 15-18 min (suivant votre four).\n8. Laisser refroidir avant de démouler.",
+    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le sucre, le yaourt, le lait et le beurre.\n4. Incorporer la farine et la levure puis les pépites.\n5. Répartir la préparation dans les 8 empreintes (environ 65 g par empreinte ; chaque empreinte contient 10 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 170°C pendant 15-18 min (suivant votre four).\n8. Laisser refroidir avant de démouler.",
     "for": "8",
     "preptime": "15",
     "resttime": "0",

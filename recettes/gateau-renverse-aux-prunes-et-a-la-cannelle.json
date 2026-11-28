@@ -5,44 +5,49 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "240",
+            "quantity": "160",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "1 1/2",
-            "unit": "sachets",
+            "quantity": "7",
+            "unit": "g",
             "name": "Levure chimique"
         },
         {
-            "quantity": "160",
+            "quantity": "110",
             "unit": "g",
             "name": "Sucre"
         },
         {
-            "quantity": "4",
+            "quantity": "2",
             "unit": "Oeufs",
             "name": ""
         },
         {
-            "quantity": "135",
+            "quantity": "90",
             "unit": "g",
             "name": "Beurre fondu"
         },
         {
-            "quantity": "1 1/2",
+            "quantity": "1",
             "unit": "c-à-c",
             "name": "Cannelle"
         },
         {
-            "quantity": "535",
+            "quantity": "360",
             "unit": "g",
             "name": "Prunes"
         },
         {
-            "quantity": "65",
+            "quantity": "45",
             "unit": "g",
             "name": "Sucre roux"
+        },
+        {
+            "quantity": "35",
+            "unit": "g",
+            "name": "Lait"
         }
     ],
     "accessories": [
@@ -72,8 +77,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Couper les prunes en deux, les saupoudrer de sucre roux et les disposer au fond du moule face bombée contre le fond.\n4. Fouetter les œufs avec le sucre puis ajouter le beurre.\n5. Incorporer la farine, la levure et la cannelle.\n6. Verser la préparation dans le moule (environ 755 g ; le moule contient 104,4 cl).\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 170°C pendant 33-38 min (suivant votre four).\n9. Laisser tiédir puis démouler en retournant.",
-    "for": "8",
+    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Couper les prunes en deux, les saupoudrer de sucre roux et les disposer au fond du moule face bombée contre le fond.\n4. Fouetter les œufs avec le sucre puis ajouter le beurre.\n5. Incorporer la farine, la levure et la cannelle.\n6. Ajouter le lait et mélanger.\n7. Verser la préparation dans le moule (environ 505 g ; le moule contient 104,4 cl).\n8. Taper la plaque sur le plan de travail pour égaliser la pâte.\n9. Enfourner à 170°C pendant 33-38 min (suivant votre four).\n10. Laisser tiédir puis démouler en retournant.",
+    "for": "5",
     "preptime": "15",
     "resttime": "0",
     "cooktime": "33-38",

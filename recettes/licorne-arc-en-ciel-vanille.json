@@ -5,17 +5,17 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "300",
+            "quantity": "335",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "1",
-            "unit": "sachet",
+            "quantity": "12",
+            "unit": "g",
             "name": "Levure chimique"
         },
         {
-            "quantity": "200",
+            "quantity": "225",
             "unit": "g",
             "name": "Sucre"
         },
@@ -25,12 +25,12 @@
             "name": ""
         },
         {
-            "quantity": "150",
+            "quantity": "170",
             "unit": "g",
             "name": "Beurre fondu"
         },
         {
-            "quantity": "120",
+            "quantity": "160",
             "unit": "g",
             "name": "Lait"
         },
@@ -72,7 +72,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le sucre puis ajouter le beurre, le lait et la vanille.\n4. Incorporer la farine et la levure.\n5. Diviser la pâte en trois et colorer chaque part.\n6. Verser les pâtes par couches dans le moule.\n7. Verser la préparation dans le moule (environ 1145 g ; le moule contient 174 cl).\n8. Taper la plaque sur le plan de travail pour égaliser la pâte.\n9. Enfourner à 170°C pendant 38-45 min (suivant votre four).\n10. Laisser refroidir avant de démouler.",
+    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le sucre puis ajouter le beurre, le lait et la vanille.\n4. Incorporer la farine et la levure.\n5. Diviser la pâte en trois et colorer chaque part.\n6. Verser les pâtes par couches dans le moule.\n7. Verser la préparation dans le moule (environ 1115 g ; le moule contient 174 cl).\n8. Taper la plaque sur le plan de travail pour égaliser la pâte.\n9. Enfourner à 170°C pendant 38-45 min (suivant votre four).\n10. Laisser refroidir avant de démouler.",
     "for": "11",
     "preptime": "15",
     "resttime": "0",

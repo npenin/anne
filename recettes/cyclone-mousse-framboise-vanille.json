@@ -5,22 +5,22 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "695",
+            "quantity": "555",
             "unit": "g",
             "name": "Purée de framboise"
         },
         {
-            "quantity": "835",
+            "quantity": "670",
             "unit": "g",
             "name": "Crème liquide entière froide"
         },
         {
-            "quantity": "280",
+            "quantity": "225",
             "unit": "g",
             "name": "Fromage blanc"
         },
         {
-            "quantity": "195",
+            "quantity": "155",
             "unit": "g",
             "name": "Sucre"
         },
@@ -30,7 +30,7 @@
             "name": "Gélatine en feuilles"
         },
         {
-            "quantity": "3",
+            "quantity": "2",
             "unit": "c-à-s",
             "name": "Extrait de vanille"
         }
@@ -62,8 +62,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Ramollir la gélatine. Chauffer un quart de la purée et dissoudre la gélatine essorée puis mélanger au reste, au fromage blanc, au sucre et à la vanille.\n3. Monter la crème en chantilly et l'incorporer.\n4. Verser la préparation dans le moule (environ 2070 g ; le moule contient 230 cl).\n5. Placer au congélateur pendant au moins 6h.\n6. Démouler en poussant doucement depuis le dessous du moule silicone.",
-    "for": "21",
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Ramollir la gélatine. Chauffer un quart de la purée et dissoudre la gélatine essorée puis mélanger au reste, au fromage blanc, au sucre et à la vanille.\n3. Monter la crème en chantilly et l'incorporer.\n4. Verser la préparation dans le moule (environ 1655 g ; le moule contient 230 cl).\n5. Placer au congélateur pendant au moins 6h.\n6. Démouler en poussant doucement depuis le dessous du moule silicone.",
+    "for": "17",
     "preptime": "15",
     "resttime": "6h",
     "cooktime": "0",

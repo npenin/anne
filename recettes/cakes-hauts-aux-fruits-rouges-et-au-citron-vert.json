@@ -5,17 +5,17 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "465",
+            "quantity": "455",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "2 1/2",
+            "quantity": "2",
             "unit": "sachets",
             "name": "Levure chimique"
         },
         {
-            "quantity": "350",
+            "quantity": "340",
             "unit": "g",
             "name": "Sucre"
         },
@@ -25,12 +25,12 @@
             "name": ""
         },
         {
-            "quantity": "280",
+            "quantity": "270",
             "unit": "g",
             "name": "Beurre fondu"
         },
         {
-            "quantity": "185",
+            "quantity": "170",
             "unit": "g",
             "name": "Yaourt"
         },
@@ -40,7 +40,7 @@
             "name": "Citron vert (zeste et jus)"
         },
         {
-            "quantity": "350",
+            "quantity": "340",
             "unit": "g",
             "name": "Fruits rouges"
         }
@@ -72,7 +72,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le sucre, le beurre, le yaourt, le zeste et le jus.\n4. Incorporer la farine et la levure puis les fruits rouges.\n5. Répartir la préparation dans les 6 empreintes (environ 375 g par empreinte ; chaque empreinte contient 52,6 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 170°C pendant 28-33 min (suivant votre four).\n8. Laisser refroidir avant de démouler.",
+    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le sucre, le beurre, le yaourt, le zeste et le jus.\n4. Incorporer la farine et la levure puis les fruits rouges.\n5. Répartir la préparation dans les 6 empreintes (environ 335 g par empreinte ; chaque empreinte contient 52,6 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 170°C pendant 28-33 min (suivant votre four).\n8. Laisser refroidir avant de démouler.",
     "for": "6",
     "preptime": "15",
     "resttime": "0",

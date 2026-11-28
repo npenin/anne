@@ -5,37 +5,37 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "8",
+            "quantity": "7",
             "unit": "Oeufs",
             "name": ""
         },
         {
-            "quantity": "500",
+            "quantity": "490",
             "unit": "g",
             "name": "Crème liquide"
         },
         {
-            "quantity": "300",
+            "quantity": "280",
             "unit": "g",
             "name": "Lait"
         },
         {
-            "quantity": "600",
+            "quantity": "560",
             "unit": "g",
             "name": "Épinards cuits égouttés"
         },
         {
-            "quantity": "300",
+            "quantity": "280",
             "unit": "g",
             "name": "Chèvre en bûche"
         },
         {
-            "quantity": "1.0",
+            "quantity": "1",
             "unit": "pincée",
             "name": "Noix de muscade"
         },
         {
-            "quantity": "1.0",
+            "quantity": "1",
             "unit": "pincée",
             "name": "Sel"
         }
@@ -67,8 +67,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec la crème, le lait, la muscade et le sel.\n4. Disposer les épinards et le chèvre émietté au fond du moule.\n5. Verser la préparation dans le moule (environ 2100 g ; le moule contient 245 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 170°C pendant 54-62 min (suivant votre four).\n8. Laisser refroidir avant de démouler.",
-    "for": "21",
+    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec la crème, le lait, la muscade et le sel.\n4. Disposer les épinards et le chèvre émietté au fond du moule.\n5. Verser la préparation dans le moule (environ 1960 g ; le moule contient 245 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 170°C pendant 54-62 min (suivant votre four).\n8. Laisser refroidir avant de démouler.",
+    "for": "20",
     "preptime": "15",
     "resttime": "0",
     "cooktime": "54-62",

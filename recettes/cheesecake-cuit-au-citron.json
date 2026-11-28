@@ -5,42 +5,42 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "1000",
+            "quantity": "855",
             "unit": "g",
             "name": "Fromage frais"
         },
         {
-            "quantity": "260",
+            "quantity": "220",
             "unit": "g",
             "name": "Sucre"
         },
         {
-            "quantity": "6",
+            "quantity": "5",
             "unit": "Oeufs",
             "name": ""
         },
         {
-            "quantity": "300",
+            "quantity": "255",
             "unit": "g",
             "name": "Crème liquide"
         },
         {
-            "quantity": "4",
+            "quantity": "3 1/2",
             "unit": "",
             "name": "Citrons (zeste et jus)"
         },
         {
-            "quantity": "4",
+            "quantity": "3 1/2",
             "unit": "c-à-s",
             "name": "Maïzena"
         },
         {
-            "quantity": "300",
+            "quantity": "255",
             "unit": "g",
             "name": "Biscuits sablés écrasés"
         },
         {
-            "quantity": "120",
+            "quantity": "105",
             "unit": "g",
             "name": "Beurre fondu"
         }
@@ -72,8 +72,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 150°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Mélanger les biscuits avec le beurre fondu et tasser au fond du moule.\n4. Fouetter le fromage frais avec le sucre, les œufs, la crème, le zeste, le jus de citron et la maïzena.\n5. Verser la préparation dans le moule (environ 2320 g ; le moule contient 245 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 150°C pendant 54-62 min (suivant votre four).\n8. Laisser refroidir puis 4 h au réfrigérateur avant de démouler.",
-    "for": "23",
+    "steps": "1. Préchauffer votre four à 150°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Mélanger les biscuits avec le beurre fondu et tasser au fond du moule.\n4. Fouetter le fromage frais avec le sucre, les œufs, la crème, le zeste, le jus de citron et la maïzena.\n5. Verser la préparation dans le moule (environ 1775 g ; le moule contient 245 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 150°C pendant 54-62 min (suivant votre four).\n8. Laisser refroidir puis 4 h au réfrigérateur avant de démouler.",
+    "for": "18",
     "preptime": "15",
     "resttime": "0",
     "cooktime": "54-62",

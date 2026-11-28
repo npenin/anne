@@ -5,34 +5,39 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "300",
+            "quantity": "235",
             "unit": "g",
             "name": "Crème de marrons"
         },
         {
-            "quantity": "300",
+            "quantity": "235",
             "unit": "g",
             "name": "Beurre fondu"
         },
         {
-            "quantity": "6",
+            "quantity": "4",
             "unit": "Oeufs",
             "name": ""
         },
         {
-            "quantity": "160",
+            "quantity": "125",
             "unit": "g",
             "name": "Sucre"
         },
         {
-            "quantity": "300",
+            "quantity": "235",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "2",
-            "unit": "sachets",
+            "quantity": "1",
+            "unit": "sachet",
             "name": "Levure chimique"
+        },
+        {
+            "quantity": "35",
+            "unit": "g",
+            "name": "Lait"
         }
     ],
     "accessories": [
@@ -62,8 +67,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Mélanger la crème de marrons avec le beurre fondu et le sucre.\n4. Ajouter les œufs un à un puis la farine et la levure.\n5. Verser la préparation dans le moule (environ 1380 g ; le moule contient 170 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 170°C pendant 38-45 min (suivant votre four).\n8. Laisser refroidir avant de démouler.",
-    "for": "14",
+    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Mélanger la crème de marrons avec le beurre fondu et le sucre.\n4. Ajouter les œufs un à un puis la farine et la levure.\n5. Ajouter le lait et mélanger.\n6. Verser la préparation dans le moule (environ 1090 g ; le moule contient 170 cl).\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 170°C pendant 38-45 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
+    "for": "11",
     "preptime": "15",
     "resttime": "0",
     "cooktime": "38-45",

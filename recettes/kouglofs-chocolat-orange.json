@@ -5,17 +5,17 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "75",
+            "quantity": "115",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "5",
+            "quantity": "8",
             "unit": "g",
             "name": "Levure fraîche de boulanger"
         },
         {
-            "quantity": "15",
+            "quantity": "25",
             "unit": "g",
             "name": "Sucre"
         },
@@ -25,17 +25,17 @@
             "name": ""
         },
         {
-            "quantity": "20",
+            "quantity": "25",
             "unit": "g",
             "name": "Lait tiède"
         },
         {
-            "quantity": "20",
+            "quantity": "30",
             "unit": "g",
             "name": "Beurre mou"
         },
         {
-            "quantity": "1.0",
+            "quantity": "1",
             "unit": "pincée",
             "name": "Sel"
         },
@@ -45,7 +45,7 @@
             "name": "Orange (zeste)"
         },
         {
-            "quantity": "20",
+            "quantity": "30",
             "unit": "g",
             "name": "Pépites de chocolat"
         }
@@ -77,7 +77,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Délayer la levure dans le lait tiède.\n2. Pétrir farine, sucre, sel, œufs, zeste et levure 10 min puis incorporer le beurre. Laisser pousser 1 h.\n3. Ajouter les pépites de chocolat.\n4. Poser votre moule sur une plaque aluminium perforée.\n5. Répartir la préparation dans les 6 empreintes (environ 35 g par empreinte ; chaque empreinte contient 8,6 cl).\n6. Laisser lever encore 30 min à température ambiante.\n7. Préchauffer votre four à 180°C.\n8. Enfourner à 180°C pendant 15-18 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
+    "steps": "1. Délayer la levure dans le lait tiède.\n2. Pétrir farine, sucre, sel, œufs, zeste et levure 10 min puis incorporer le beurre. Laisser pousser 1 h.\n3. Ajouter les pépites de chocolat.\n4. Poser votre moule sur une plaque aluminium perforée.\n5. Répartir la préparation dans les 6 empreintes (environ 45 g par empreinte ; chaque empreinte contient 8,6 cl).\n6. Laisser lever encore 30 min à température ambiante.\n7. Préchauffer votre four à 180°C.\n8. Enfourner à 180°C pendant 15-18 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
     "for": "6",
     "preptime": "30",
     "resttime": "2h",

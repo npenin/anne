@@ -5,13 +5,13 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "150",
+            "quantity": "175",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "1",
-            "unit": "sachet",
+            "quantity": "8",
+            "unit": "g",
             "name": "Levure chimique"
         },
         {
@@ -20,17 +20,17 @@
             "name": ""
         },
         {
-            "quantity": "100",
+            "quantity": "130",
             "unit": "g",
             "name": "Lait"
         },
         {
-            "quantity": "50",
+            "quantity": "60",
             "unit": "g",
             "name": "Huile d'olive"
         },
         {
-            "quantity": "80",
+            "quantity": "90",
             "unit": "g",
             "name": "Parmesan râpé"
         },
@@ -40,7 +40,7 @@
             "name": "Romarin ciselé"
         },
         {
-            "quantity": "1.0",
+            "quantity": "1",
             "unit": "pincée",
             "name": "Poivre"
         }
@@ -72,7 +72,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le lait et l'huile d'olive.\n4. Ajouter la farine, la levure, le parmesan, le romarin et le poivre puis mélanger sans trop travailler.\n5. Répartir la préparation dans les 30 empreintes (environ 15 g par empreinte ; chaque empreinte contient 2,8 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 180°C pendant 10-12 min (suivant votre four).\n8. Laisser tiédir avant de démouler : à servir à l'apéritif.",
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le lait et l'huile d'olive.\n4. Ajouter la farine, la levure, le parmesan, le romarin et le poivre puis mélanger sans trop travailler.\n5. Répartir la préparation dans les 30 empreintes (environ 19 g par empreinte ; chaque empreinte contient 2,8 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 180°C pendant 10-12 min (suivant votre four).\n8. Laisser tiédir avant de démouler : à servir à l'apéritif.",
     "for": "30",
     "preptime": "15",
     "resttime": "0",

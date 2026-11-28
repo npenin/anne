@@ -5,7 +5,7 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "300",
+            "quantity": "295",
             "unit": "g",
             "name": "Farine T45"
         },
@@ -35,7 +35,7 @@
             "name": "Beurre mou"
         },
         {
-            "quantity": "1.0",
+            "quantity": "1",
             "unit": "pincée",
             "name": "Sel"
         },
@@ -77,7 +77,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Délayer la levure dans le lait tiède.\n2. Pétrir farine, sucre, sel, œufs et levure 10 min puis incorporer le beurre. Laisser pousser 1 h.\n3. Dégazer et former des boudins que l'on dépose dans les empreintes.\n4. Poser votre moule sur une plaque aluminium perforée.\n5. Répartir la préparation dans les 8 empreintes (environ 80 g par empreinte ; chaque empreinte contient 14 cl).\n6. Laisser lever encore 30 min à température ambiante.\n7. Préchauffer votre four à 180°C.\n8. Enfourner à 180°C pendant 18-22 min (suivant votre four).\n9. Laisser refroidir puis glacer avec le sucre glace délayé dans le lait.",
+    "steps": "1. Délayer la levure dans le lait tiède.\n2. Pétrir farine, sucre, sel, œufs et levure 10 min puis incorporer le beurre. Laisser pousser 1 h.\n3. Dégazer et former des boudins que l'on dépose dans les empreintes.\n4. Poser votre moule sur une plaque aluminium perforée.\n5. Répartir la préparation dans les 8 empreintes (environ 75 g par empreinte ; chaque empreinte contient 14 cl).\n6. Laisser lever encore 30 min à température ambiante.\n7. Préchauffer votre four à 180°C.\n8. Enfourner à 180°C pendant 18-22 min (suivant votre four).\n9. Laisser refroidir puis glacer avec le sucre glace délayé dans le lait.",
     "for": "8",
     "preptime": "30",
     "resttime": "2h",

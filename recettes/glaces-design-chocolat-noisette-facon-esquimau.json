@@ -5,27 +5,27 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "315",
+            "quantity": "345",
             "unit": "g",
             "name": "Lait entier"
         },
         {
-            "quantity": "190",
+            "quantity": "205",
             "unit": "g",
             "name": "Crème liquide"
         },
         {
-            "quantity": "125",
+            "quantity": "135",
             "unit": "g",
             "name": "Chocolat noir"
         },
         {
-            "quantity": "65",
+            "quantity": "70",
             "unit": "g",
             "name": "Pâte de noisette"
         },
         {
-            "quantity": "65",
+            "quantity": "70",
             "unit": "g",
             "name": "Sucre"
         }
@@ -57,7 +57,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Chauffer le lait et la crème, verser sur le chocolat haché et la pâte de noisette puis mélanger jusqu'à obtenir une crème lisse.\n3. Ajouter le sucre et laisser refroidir complètement.\n4. Répartir la préparation dans les 8 empreintes (environ 95 g par empreinte ; chaque empreinte contient 10,3 cl).\n5. Placer au congélateur pendant au moins 6h.\n6. Démouler en poussant doucement depuis le dessous du moule silicone.",
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Chauffer le lait et la crème, verser sur le chocolat haché et la pâte de noisette puis mélanger jusqu'à obtenir une crème lisse.\n3. Ajouter le sucre et laisser refroidir complètement.\n4. Répartir la préparation dans les 8 empreintes (environ 105 g par empreinte ; chaque empreinte contient 10,3 cl).\n5. Placer au congélateur pendant au moins 6h.\n6. Démouler en poussant doucement depuis le dessous du moule silicone.",
     "for": "8",
     "preptime": "15",
     "resttime": "6h",

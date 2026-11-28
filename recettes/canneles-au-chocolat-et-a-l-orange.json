@@ -5,42 +5,42 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "250",
+            "quantity": "375",
             "unit": "g",
             "name": "Lait entier"
         },
         {
-            "quantity": "80",
+            "quantity": "120",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "20",
+            "quantity": "30",
             "unit": "g",
             "name": "Cacao non sucré"
         },
         {
-            "quantity": "120",
+            "quantity": "180",
             "unit": "g",
             "name": "Sucre"
         },
         {
-            "quantity": "2",
+            "quantity": "3",
             "unit": "Oeufs",
             "name": ""
         },
         {
-            "quantity": "60",
+            "quantity": "90",
             "unit": "g",
             "name": "Chocolat noir"
         },
         {
-            "quantity": "1",
+            "quantity": "1 1/2",
             "unit": "",
             "name": "Orange (zeste)"
         },
         {
-            "quantity": "1",
+            "quantity": "1 1/2",
             "unit": "c-à-s",
             "name": "Liqueur d'orange"
         }
@@ -72,7 +72,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Chauffer le lait avec le zeste d'orange, verser sur le chocolat haché et lisser.\n2. Mélanger farine, cacao et sucre puis ajouter les œufs, la préparation au chocolat tiède et la liqueur.\n3. Laisser reposer 12 h au réfrigérateur.\n4. Poser votre moule sur une plaque aluminium perforée.\n5. Répartir la préparation dans les 12 empreintes (environ 60 g par empreinte ; chaque empreinte contient 8,5 cl).\n6. Préchauffer votre four à 190°C.\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 190°C pendant 16-20 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
+    "steps": "1. Chauffer le lait avec le zeste d'orange, verser sur le chocolat haché et lisser.\n2. Mélanger farine, cacao et sucre puis ajouter les œufs, la préparation au chocolat tiède et la liqueur.\n3. Laisser reposer 12 h au réfrigérateur.\n4. Poser votre moule sur une plaque aluminium perforée.\n5. Répartir la préparation dans les 12 empreintes (environ 80 g par empreinte ; chaque empreinte contient 8,5 cl).\n6. Préchauffer votre four à 190°C.\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 190°C pendant 16-20 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
     "for": "12",
     "preptime": "15",
     "resttime": "12h",

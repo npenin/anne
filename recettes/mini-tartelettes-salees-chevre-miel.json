@@ -5,27 +5,27 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "95",
+            "quantity": "125",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "50",
+            "quantity": "60",
             "unit": "g",
             "name": "Beurre froid"
         },
         {
-            "quantity": "1",
-            "unit": "Oeuf",
-            "name": ""
+            "quantity": "30",
+            "unit": "g",
+            "name": "Oeuf battu (une partie d'un oeuf)"
         },
         {
-            "quantity": "1.0",
+            "quantity": "1",
             "unit": "pincée",
             "name": "Sel"
         },
         {
-            "quantity": "55",
+            "quantity": "75",
             "unit": "g",
             "name": "Fromage de chèvre frais"
         },
@@ -67,7 +67,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Sabler la farine, le sel et le beurre froid puis ajouter l'œuf. Réserver 30 min au froid.\n4. Répartir la préparation dans les 30 empreintes (environ 6 g par empreinte ; chaque empreinte contient 1,3 cl).\n5. Presser la pâte du bout des doigts au fond et sur les bords de chaque empreinte.\n6. Enfourner à 180°C pendant 7-9 min (suivant votre four).\n7. Garnir de chèvre frais, d'un filet de miel et de noix.",
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Sabler la farine, le sel et le beurre froid puis ajouter l'œuf. Réserver 30 min au froid.\n4. Répartir la préparation dans les 30 empreintes (environ 7 g par empreinte ; chaque empreinte contient 1,3 cl).\n5. Presser la pâte du bout des doigts au fond et sur les bords de chaque empreinte.\n6. Enfourner à 180°C pendant 7-9 min (suivant votre four).\n7. Garnir de chèvre frais, d'un filet de miel et de noix.",
     "for": "30",
     "preptime": "15",
     "resttime": "0",

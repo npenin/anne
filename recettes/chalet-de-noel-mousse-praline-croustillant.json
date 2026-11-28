@@ -5,22 +5,22 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "680",
+            "quantity": "545",
             "unit": "g",
             "name": "Praliné noisette"
         },
         {
-            "quantity": "1365",
+            "quantity": "1090",
             "unit": "g",
             "name": "Crème liquide entière froide"
         },
         {
-            "quantity": "20",
+            "quantity": "15",
             "unit": "g",
             "name": "Gélatine en feuilles"
         },
         {
-            "quantity": "275",
+            "quantity": "220",
             "unit": "g",
             "name": "Crêpes dentelle émiettées"
         }
@@ -52,8 +52,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Ramollir la gélatine. Chauffer 100 g de crème, y dissoudre la gélatine essorée puis mélanger au praliné.\n3. Monter le reste de la crème en chantilly et l'incorporer délicatement.\n4. Ajouter les crêpes dentelle émiettées.\n5. Verser la préparation dans le moule (environ 2340 g ; le moule contient 260 cl).\n6. Placer au congélateur pendant au moins 8h.\n7. Démouler et laisser 20 min à température ambiante avant de servir.",
-    "for": "23",
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Ramollir la gélatine. Chauffer 100 g de crème, y dissoudre la gélatine essorée puis mélanger au praliné.\n3. Monter le reste de la crème en chantilly et l'incorporer délicatement.\n4. Ajouter les crêpes dentelle émiettées.\n5. Verser la préparation dans le moule (environ 1870 g ; le moule contient 260 cl).\n6. Placer au congélateur pendant au moins 8h.\n7. Démouler et laisser 20 min à température ambiante avant de servir.",
+    "for": "19",
     "preptime": "15",
     "resttime": "8h",
     "cooktime": "0",

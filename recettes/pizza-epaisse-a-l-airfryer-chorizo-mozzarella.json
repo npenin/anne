@@ -5,22 +5,22 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "430",
+            "quantity": "400",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "10",
+            "quantity": "11",
             "unit": "g",
             "name": "Levure sèche de boulanger"
         },
         {
-            "quantity": "255",
+            "quantity": "240",
             "unit": "g",
             "name": "Eau tiède"
         },
         {
-            "quantity": "45",
+            "quantity": "40",
             "unit": "g",
             "name": "Huile d'olive"
         },
@@ -30,17 +30,17 @@
             "name": "Sel"
         },
         {
-            "quantity": "215",
+            "quantity": "200",
             "unit": "g",
             "name": "Coulis de tomate"
         },
         {
-            "quantity": "180",
+            "quantity": "165",
             "unit": "g",
             "name": "Mozzarella"
         },
         {
-            "quantity": "115",
+            "quantity": "105",
             "unit": "g",
             "name": "Chorizo en rondelles"
         }
@@ -72,7 +72,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Mélanger la farine, la levure, le sel, l'eau et l'huile, pétrir 10 min et laisser pousser 1 h.\n2. Poser votre moule sur la grille du panier de l'airfryer.\n3. Verser la préparation dans le moule (environ 750 g ; le moule contient 175 cl).\n4. Laisser reposer 20 min puis garnir de coulis, de mozzarella et de chorizo.\n5. Laisser lever encore 30 min à température ambiante.\n6. Préchauffer votre airfryer à 180°C.\n7. Cuire à 180°C pendant 19-22 min (suivant votre appareil).\n8. Laisser refroidir avant de démouler.",
+    "steps": "1. Mélanger la farine, la levure, le sel, l'eau et l'huile, pétrir 10 min et laisser pousser 1 h.\n2. Poser votre moule sur la grille du panier de l'airfryer.\n3. Verser la préparation dans le moule (environ 700 g ; le moule contient 175 cl).\n4. Laisser reposer 20 min puis garnir de coulis, de mozzarella et de chorizo.\n5. Laisser lever encore 30 min à température ambiante.\n6. Préchauffer votre airfryer à 180°C.\n7. Cuire à 180°C pendant 19-22 min (suivant votre appareil).\n8. Laisser refroidir avant de démouler.",
     "for": "7",
     "preptime": "20",
     "resttime": "1h30",

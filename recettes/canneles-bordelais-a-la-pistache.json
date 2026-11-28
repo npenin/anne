@@ -5,32 +5,32 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "375",
+            "quantity": "480",
             "unit": "g",
             "name": "Lait entier"
         },
         {
-            "quantity": "135",
+            "quantity": "175",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "180",
+            "quantity": "230",
             "unit": "g",
             "name": "Sucre"
         },
         {
-            "quantity": "3",
+            "quantity": "4",
             "unit": "Oeufs",
             "name": ""
         },
         {
-            "quantity": "40",
+            "quantity": "50",
             "unit": "g",
             "name": "Beurre"
         },
         {
-            "quantity": "45",
+            "quantity": "60",
             "unit": "g",
             "name": "Pâte de pistache"
         }
@@ -62,7 +62,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Chauffer le lait avec le beurre et la pâte de pistache en mélangeant bien puis laisser tiédir.\n2. Mélanger la farine et le sucre, ajouter les œufs puis le lait pistaché.\n3. Laisser reposer 24 h au réfrigérateur.\n4. Poser votre moule sur une plaque aluminium perforée.\n5. Répartir la préparation dans les 15 empreintes (environ 60 g par empreinte ; chaque empreinte contient 8,3 cl).\n6. Préchauffer votre four à 200°C.\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 200°C pendant 16-20 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
+    "steps": "1. Chauffer le lait avec le beurre et la pâte de pistache en mélangeant bien puis laisser tiédir.\n2. Mélanger la farine et le sucre, ajouter les œufs puis le lait pistaché.\n3. Laisser reposer 24 h au réfrigérateur.\n4. Poser votre moule sur une plaque aluminium perforée.\n5. Répartir la préparation dans les 15 empreintes (environ 80 g par empreinte ; chaque empreinte contient 8,3 cl).\n6. Préchauffer votre four à 200°C.\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 200°C pendant 16-20 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
     "for": "15",
     "preptime": "15",
     "resttime": "24h",

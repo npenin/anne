@@ -5,37 +5,37 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "150",
+            "quantity": "190",
             "unit": "g",
             "name": "Farine T45"
         },
         {
-            "quantity": "10",
+            "quantity": "15",
             "unit": "g",
             "name": "Levure fraîche de boulanger"
         },
         {
-            "quantity": "20",
+            "quantity": "25",
             "unit": "g",
             "name": "Sucre"
         },
         {
-            "quantity": "1",
-            "unit": "Oeuf",
-            "name": ""
+            "quantity": "30",
+            "unit": "g",
+            "name": "Oeuf battu (une partie d'un oeuf)"
         },
         {
-            "quantity": "75",
+            "quantity": "95",
             "unit": "g",
             "name": "Lait tiède"
         },
         {
-            "quantity": "25",
+            "quantity": "30",
             "unit": "g",
             "name": "Beurre mou"
         },
         {
-            "quantity": "1.0",
+            "quantity": "1",
             "unit": "pincée",
             "name": "Sel"
         }
@@ -67,7 +67,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Délayer la levure dans le lait tiède.\n2. Pétrir la farine, le sucre, le sel, l'œuf et le lait avec la levure 10 min puis incorporer le beurre.\n3. Laisser pousser 1 h, dégazer et former des boules.\n4. Poser votre moule sur une plaque aluminium perforée.\n5. Répartir la préparation dans les 20 empreintes (environ 15 g par empreinte ; chaque empreinte contient 3,5 cl).\n6. Laisser lever encore 30 min à température ambiante.\n7. Préchauffer votre four à 180°C.\n8. Enfourner à 180°C pendant 12-15 min (suivant votre four).\n9. Badigeonner de lait à la sortie du four et laisser tiédir.",
+    "steps": "1. Délayer la levure dans le lait tiède.\n2. Pétrir la farine, le sucre, le sel, l'œuf et le lait avec la levure 10 min puis incorporer le beurre.\n3. Laisser pousser 1 h, dégazer et former des boules.\n4. Poser votre moule sur une plaque aluminium perforée.\n5. Répartir la préparation dans les 20 empreintes (environ 19 g par empreinte ; chaque empreinte contient 3,5 cl).\n6. Laisser lever encore 30 min à température ambiante.\n7. Préchauffer votre four à 180°C.\n8. Enfourner à 180°C pendant 12-15 min (suivant votre four).\n9. Badigeonner de lait à la sortie du four et laisser tiédir.",
     "for": "20",
     "preptime": "30",
     "resttime": "1h30",

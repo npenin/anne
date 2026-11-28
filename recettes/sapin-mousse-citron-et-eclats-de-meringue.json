@@ -5,17 +5,17 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "3",
+            "quantity": "3 1/2",
             "unit": "",
             "name": "Citrons (jus et zeste)"
         },
         {
-            "quantity": "250",
+            "quantity": "285",
             "unit": "g",
             "name": "Crème liquide entière froide"
         },
         {
-            "quantity": "120",
+            "quantity": "130",
             "unit": "g",
             "name": "Sucre"
         },
@@ -25,12 +25,12 @@
             "name": ""
         },
         {
-            "quantity": "6",
+            "quantity": "7",
             "unit": "g",
             "name": "Gélatine en feuilles"
         },
         {
-            "quantity": "60",
+            "quantity": "65",
             "unit": "g",
             "name": "Meringues émiettées"
         }
@@ -62,8 +62,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Ramollir la gélatine. Cuire jus, zeste, sucre et œufs en remuant jusqu'à épaississement, ajouter la gélatine essorée puis laisser refroidir.\n3. Monter la crème en chantilly et l'incorporer.\n4. Verser la préparation dans le moule (environ 825 g ; le moule contient 100 cl).\n5. Placer au réfrigérateur pendant au moins 5h.\n6. Démouler et parsemer d'éclats de meringue.",
-    "for": "8",
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Ramollir la gélatine. Cuire jus, zeste, sucre et œufs en remuant jusqu'à épaississement, ajouter la gélatine essorée puis laisser refroidir.\n3. Monter la crème en chantilly et l'incorporer.\n4. Verser la préparation dans le moule (environ 720 g ; le moule contient 100 cl).\n5. Placer au réfrigérateur pendant au moins 5h.\n6. Démouler et parsemer d'éclats de meringue.",
+    "for": "7",
     "preptime": "15",
     "resttime": "5h",
     "cooktime": "0",

@@ -5,42 +5,42 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "250",
+            "quantity": "380",
             "unit": "g",
             "name": "Lait entier"
         },
         {
-            "quantity": "100",
+            "quantity": "150",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "120",
+            "quantity": "180",
             "unit": "g",
             "name": "Sucre"
         },
         {
-            "quantity": "2",
+            "quantity": "3",
             "unit": "Oeufs",
             "name": ""
         },
         {
-            "quantity": "25",
+            "quantity": "40",
             "unit": "g",
             "name": "Beurre"
         },
         {
-            "quantity": "2",
+            "quantity": "3",
             "unit": "c-à-s",
             "name": "Rhum brun"
         },
         {
-            "quantity": "1",
+            "quantity": "1 1/2",
             "unit": "c-à-s",
             "name": "Extrait de vanille"
         },
         {
-            "quantity": "1.0",
+            "quantity": "1",
             "unit": "pincée",
             "name": "Sel"
         }
@@ -72,7 +72,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Chauffer le lait avec le beurre et la vanille puis laisser tiédir.\n2. Mélanger la farine, le sucre et le sel, ajouter les œufs puis verser le lait tiède en fouettant doucement.\n3. Ajouter le rhum et laisser reposer 12 h au réfrigérateur.\n4. Remuer la pâte avant de l'utiliser.\n5. Poser votre moule sur une plaque aluminium perforée.\n6. Répartir la préparation dans les 12 empreintes (environ 50 g par empreinte ; chaque empreinte contient 8,5 cl).\n7. Préchauffer votre four à 200°C.\n8. Taper la plaque sur le plan de travail pour égaliser la pâte.\n9. Enfourner à 200°C pendant 16-20 min (suivant votre four).\n10. Laisser tiédir 10 min avant de démouler.",
+    "steps": "1. Chauffer le lait avec le beurre et la vanille puis laisser tiédir.\n2. Mélanger la farine, le sucre et le sel, ajouter les œufs puis verser le lait tiède en fouettant doucement.\n3. Ajouter le rhum et laisser reposer 12 h au réfrigérateur.\n4. Remuer la pâte avant de l'utiliser.\n5. Poser votre moule sur une plaque aluminium perforée.\n6. Répartir la préparation dans les 12 empreintes (environ 80 g par empreinte ; chaque empreinte contient 8,5 cl).\n7. Préchauffer votre four à 200°C.\n8. Taper la plaque sur le plan de travail pour égaliser la pâte.\n9. Enfourner à 200°C pendant 16-20 min (suivant votre four).\n10. Laisser tiédir 10 min avant de démouler.",
     "for": "12",
     "preptime": "15",
     "resttime": "12h",

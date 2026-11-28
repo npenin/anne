@@ -5,12 +5,12 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "1 1/2",
+            "quantity": "2 1/2",
             "unit": "",
             "name": "Bananes mûres"
         },
         {
-            "quantity": "60",
+            "quantity": "100",
             "unit": "g",
             "name": "Sucre roux"
         },
@@ -20,24 +20,29 @@
             "name": ""
         },
         {
-            "quantity": "40",
+            "quantity": "65",
             "unit": "g",
             "name": "Beurre fondu"
         },
         {
-            "quantity": "110",
+            "quantity": "185",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "1/2",
-            "unit": "sachet",
+            "quantity": "8",
+            "unit": "g",
             "name": "Levure chimique"
         },
         {
-            "quantity": "50",
+            "quantity": "85",
             "unit": "g",
             "name": "Pépites de chocolat"
+        },
+        {
+            "quantity": "35",
+            "unit": "g",
+            "name": "Lait"
         }
     ],
     "accessories": [
@@ -67,11 +72,11 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Écraser les bananes à la fourchette.\n4. Ajouter le sucre, les œufs et le beurre fondu.\n5. Incorporer la farine et la levure puis les pépites.\n6. Verser la préparation dans le moule (environ 495 g ; le moule contient 87,7 cl).\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 170°C pendant 33-38 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
-    "for": "5",
+    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Écraser les bananes à la fourchette.\n4. Ajouter le sucre, les œufs et le beurre fondu.\n5. Incorporer la farine et la levure puis les pépites.\n6. Ajouter le lait et mélanger.\n7. Verser la préparation dans le moule (environ 830 g ; le moule contient 130 cl).\n8. Taper la plaque sur le plan de travail pour égaliser la pâte.\n9. Enfourner à 170°C pendant 38-45 min (suivant votre four).\n10. Laisser refroidir avant de démouler.",
+    "for": "8",
     "preptime": "15",
     "resttime": "0",
-    "cooktime": "33-38",
+    "cooktime": "38-45",
     "cover": "",
     "gallery": [],
     "mold": {

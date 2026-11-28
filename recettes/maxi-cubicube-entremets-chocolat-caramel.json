@@ -5,27 +5,27 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "550",
+            "quantity": "430",
             "unit": "g",
             "name": "Chocolat noir"
         },
         {
-            "quantity": "960",
+            "quantity": "750",
             "unit": "g",
             "name": "Crème liquide entière froide"
         },
         {
-            "quantity": "11",
+            "quantity": "9",
             "unit": "Jaunes d'oeufs",
             "name": ""
         },
         {
-            "quantity": "165",
+            "quantity": "130",
             "unit": "g",
             "name": "Sucre"
         },
         {
-            "quantity": "275",
+            "quantity": "215",
             "unit": "g",
             "name": "Caramel au beurre salé"
         }
@@ -57,8 +57,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Fouetter les jaunes avec le sucre au bain-marie puis verser sur le chocolat fondu.\n3. Monter la crème en chantilly et l'incorporer.\n4. Alterner dans le moule la mousse et des filets de caramel.\n5. Verser la préparation dans le moule (environ 1900 g ; le moule contient 205 cl).\n6. Placer au congélateur pendant au moins 8h.\n7. Démouler en poussant doucement depuis le dessous du moule silicone.",
-    "for": "19",
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Fouetter les jaunes avec le sucre au bain-marie puis verser sur le chocolat fondu.\n3. Monter la crème en chantilly et l'incorporer.\n4. Alterner dans le moule la mousse et des filets de caramel.\n5. Verser la préparation dans le moule (environ 1475 g ; le moule contient 205 cl).\n6. Placer au congélateur pendant au moins 8h.\n7. Démouler en poussant doucement depuis le dessous du moule silicone.",
+    "for": "15",
     "preptime": "15",
     "resttime": "8h",
     "cooktime": "0",

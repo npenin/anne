@@ -5,17 +5,17 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "715",
+            "quantity": "810",
             "unit": "g",
             "name": "Poivrons grillés"
         },
         {
-            "quantity": "595",
+            "quantity": "675",
             "unit": "g",
             "name": "Chèvre frais"
         },
         {
-            "quantity": "475",
+            "quantity": "540",
             "unit": "g",
             "name": "Crème liquide"
         },
@@ -30,7 +30,7 @@
             "name": "Basilic"
         },
         {
-            "quantity": "1.0",
+            "quantity": "1",
             "unit": "pincée",
             "name": "Poivre"
         }
@@ -62,8 +62,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Ramollir la gélatine. Mixer les poivrons avec le chèvre, le basilic et le poivre.\n3. Dissoudre la gélatine dans la crème chaude puis mélanger à la préparation.\n4. Verser la préparation dans le moule (environ 1845 g ; le moule contient 205 cl).\n5. Placer au réfrigérateur pendant au moins 6h.\n6. Démouler en poussant doucement depuis le dessous du moule silicone.",
-    "for": "18",
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Ramollir la gélatine. Mixer les poivrons avec le chèvre, le basilic et le poivre.\n3. Dissoudre la gélatine dans la crème chaude puis mélanger à la préparation.\n4. Verser la préparation dans le moule (environ 2050 g ; le moule contient 205 cl).\n5. Placer au réfrigérateur pendant au moins 6h.\n6. Démouler en poussant doucement depuis le dessous du moule silicone.",
+    "for": "20",
     "preptime": "15",
     "resttime": "6h",
     "cooktime": "0",

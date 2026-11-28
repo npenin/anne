@@ -5,13 +5,13 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "100",
+            "quantity": "105",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "1/2",
-            "unit": "sachet",
+            "quantity": "5",
+            "unit": "g",
             "name": "Levure chimique"
         },
         {
@@ -20,7 +20,7 @@
             "name": ""
         },
         {
-            "quantity": "60",
+            "quantity": "65",
             "unit": "g",
             "name": "Lait"
         },
@@ -30,7 +30,7 @@
             "name": "Huile d'olive"
         },
         {
-            "quantity": "75",
+            "quantity": "80",
             "unit": "g",
             "name": "Thon au naturel"
         },

@@ -5,22 +5,22 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "150",
+            "quantity": "215",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "30",
+            "quantity": "40",
             "unit": "g",
             "name": "Cacao non sucré"
         },
         {
-            "quantity": "1",
-            "unit": "sachet",
+            "quantity": "10",
+            "unit": "g",
             "name": "Levure chimique"
         },
         {
-            "quantity": "120",
+            "quantity": "175",
             "unit": "g",
             "name": "Sucre"
         },
@@ -30,19 +30,24 @@
             "name": ""
         },
         {
-            "quantity": "80",
+            "quantity": "115",
             "unit": "g",
             "name": "Beurre fondu"
         },
         {
-            "quantity": "70",
+            "quantity": "95",
             "unit": "g",
             "name": "Café fort"
         },
         {
-            "quantity": "100",
+            "quantity": "145",
             "unit": "g",
             "name": "Crème au beurre ou ganache"
+        },
+        {
+            "quantity": "45",
+            "unit": "g",
+            "name": "Lait"
         }
     ],
     "accessories": [
@@ -72,11 +77,11 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le sucre puis ajouter le beurre et le café.\n4. Incorporer la farine, le cacao et la levure.\n5. Verser la préparation dans le moule (environ 550 g ; le moule contient 95,3 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 170°C pendant 33-38 min (suivant votre four).\n8. Laisser refroidir puis couper en trois disques que l'on garnit de crème au chocolat.",
-    "for": "5",
+    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le sucre puis ajouter le beurre et le café.\n4. Incorporer la farine, le cacao et la levure.\n5. Ajouter le lait et mélanger.\n6. Verser la préparation dans le moule (environ 800 g ; le moule contient 125 cl).\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 170°C pendant 38-45 min (suivant votre four).\n9. Laisser refroidir puis couper en trois disques que l'on garnit de crème au chocolat.",
+    "for": "8",
     "preptime": "15",
     "resttime": "0",
-    "cooktime": "33-38",
+    "cooktime": "38-45",
     "cover": "",
     "gallery": [],
     "mold": {

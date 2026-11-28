@@ -5,37 +5,37 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "250",
+            "quantity": "460",
             "unit": "g",
             "name": "Lait entier"
         },
         {
-            "quantity": "100",
+            "quantity": "190",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "120",
+            "quantity": "225",
             "unit": "g",
             "name": "Sucre"
         },
         {
-            "quantity": "2",
+            "quantity": "4",
             "unit": "Oeufs",
             "name": ""
         },
         {
-            "quantity": "25",
+            "quantity": "45",
             "unit": "g",
             "name": "Beurre"
         },
         {
-            "quantity": "2",
+            "quantity": "4",
             "unit": "c-à-s",
             "name": "Rhum blanc"
         },
         {
-            "quantity": "2",
+            "quantity": "4",
             "unit": "",
             "name": "Citrons verts (zeste)"
         }
@@ -67,7 +67,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Chauffer le lait avec le beurre et les zestes puis laisser tiédir.\n2. Mélanger la farine et le sucre, ajouter les œufs puis le lait. Ajouter le rhum.\n3. Laisser reposer 24 h au réfrigérateur.\n4. Poser votre moule sur une plaque aluminium perforée.\n5. Répartir la préparation dans les 15 empreintes (environ 55 g par empreinte ; chaque empreinte contient 8,3 cl).\n6. Préchauffer votre four à 200°C.\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 200°C pendant 16-20 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
+    "steps": "1. Chauffer le lait avec le beurre et les zestes puis laisser tiédir.\n2. Mélanger la farine et le sucre, ajouter les œufs puis le lait. Ajouter le rhum.\n3. Laisser reposer 24 h au réfrigérateur.\n4. Poser votre moule sur une plaque aluminium perforée.\n5. Répartir la préparation dans les 15 empreintes (environ 80 g par empreinte ; chaque empreinte contient 8,3 cl).\n6. Préchauffer votre four à 200°C.\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 200°C pendant 16-20 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
     "for": "15",
     "preptime": "15",
     "resttime": "24h",

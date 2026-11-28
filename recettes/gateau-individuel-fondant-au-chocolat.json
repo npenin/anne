@@ -15,12 +15,12 @@
             "name": "Beurre"
         },
         {
-            "quantity": "1",
-            "unit": "Oeuf",
-            "name": ""
+            "quantity": "20",
+            "unit": "g",
+            "name": "Oeuf battu (une partie d'un oeuf)"
         },
         {
-            "quantity": "10",
+            "quantity": "15",
             "unit": "g",
             "name": "Sucre"
         },

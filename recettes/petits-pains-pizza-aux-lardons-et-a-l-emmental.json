@@ -5,17 +5,17 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "160",
+            "quantity": "165",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "5",
+            "quantity": "6",
             "unit": "g",
             "name": "Levure sèche de boulanger"
         },
         {
-            "quantity": "90",
+            "quantity": "95",
             "unit": "g",
             "name": "Eau tiède"
         },
@@ -35,7 +35,7 @@
             "name": "Lardons fumés"
         },
         {
-            "quantity": "40",
+            "quantity": "45",
             "unit": "g",
             "name": "Emmental râpé"
         }
@@ -67,7 +67,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Mélanger la farine, la levure, le sel, l'eau et l'huile puis pétrir 10 min.\n2. Incorporer les lardons revenus et l'emmental. Laisser pousser 1 h.\n3. Dégazer et former des boules.\n4. Poser votre moule sur une plaque aluminium perforée.\n5. Répartir la préparation dans les 20 empreintes (environ 20 g par empreinte ; chaque empreinte contient 3,5 cl).\n6. Laisser lever encore 30 min à température ambiante.\n7. Préchauffer votre four à 180°C.\n8. Enfourner à 180°C pendant 12-15 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
+    "steps": "1. Mélanger la farine, la levure, le sel, l'eau et l'huile puis pétrir 10 min.\n2. Incorporer les lardons revenus et l'emmental. Laisser pousser 1 h.\n3. Dégazer et former des boules.\n4. Poser votre moule sur une plaque aluminium perforée.\n5. Répartir la préparation dans les 20 empreintes (environ 19 g par empreinte ; chaque empreinte contient 3,5 cl).\n6. Laisser lever encore 30 min à température ambiante.\n7. Préchauffer votre four à 180°C.\n8. Enfourner à 180°C pendant 12-15 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
     "for": "20",
     "preptime": "30",
     "resttime": "1h30",

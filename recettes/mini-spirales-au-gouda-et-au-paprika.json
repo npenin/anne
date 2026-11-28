@@ -5,13 +5,13 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "150",
+            "quantity": "140",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "1",
-            "unit": "sachet",
+            "quantity": "6",
+            "unit": "g",
             "name": "Levure chimique"
         },
         {
@@ -20,17 +20,17 @@
             "name": ""
         },
         {
-            "quantity": "90",
+            "quantity": "85",
             "unit": "g",
             "name": "Lait"
         },
         {
-            "quantity": "50",
+            "quantity": "45",
             "unit": "g",
             "name": "Huile"
         },
         {
-            "quantity": "90",
+            "quantity": "85",
             "unit": "g",
             "name": "Gouda râpé"
         },
@@ -67,7 +67,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le lait et l'huile.\n4. Ajouter la farine, la levure, le paprika et le gouda.\n5. Répartir la préparation dans les 24 empreintes (environ 20 g par empreinte ; chaque empreinte contient 2,8 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 180°C pendant 10-12 min (suivant votre four).\n8. Laisser refroidir avant de démouler.",
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le lait et l'huile.\n4. Ajouter la farine, la levure, le paprika et le gouda.\n5. Répartir la préparation dans les 24 empreintes (environ 19 g par empreinte ; chaque empreinte contient 2,8 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 180°C pendant 10-12 min (suivant votre four).\n8. Laisser refroidir avant de démouler.",
     "for": "24",
     "preptime": "15",
     "resttime": "0",

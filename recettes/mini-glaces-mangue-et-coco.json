@@ -5,22 +5,22 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "200",
+            "quantity": "240",
             "unit": "g",
             "name": "Purée de mangue"
         },
         {
-            "quantity": "135",
+            "quantity": "160",
             "unit": "g",
             "name": "Lait de coco"
         },
         {
-            "quantity": "25",
+            "quantity": "30",
             "unit": "g",
             "name": "Sucre"
         },
         {
-            "quantity": "1/2",
+            "quantity": "1",
             "unit": "",
             "name": "Citron vert (jus)"
         }
@@ -52,7 +52,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Mélanger la purée de mangue avec le lait de coco, le sucre et le jus de citron vert.\n3. Répartir la préparation dans les 8 empreintes (environ 55 g par empreinte ; chaque empreinte contient 5,8 cl).\n4. Placer au congélateur pendant au moins 6h.\n5. Démouler en poussant doucement depuis le dessous du moule silicone.",
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Mélanger la purée de mangue avec le lait de coco, le sucre et le jus de citron vert.\n3. Répartir la préparation dans les 8 empreintes (environ 60 g par empreinte ; chaque empreinte contient 5,8 cl).\n4. Placer au congélateur pendant au moins 6h.\n5. Démouler en poussant doucement depuis le dessous du moule silicone.",
     "for": "8",
     "preptime": "15",
     "resttime": "6h",

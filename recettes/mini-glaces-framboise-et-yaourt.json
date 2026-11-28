@@ -5,17 +5,17 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "230",
+            "quantity": "250",
             "unit": "g",
             "name": "Yaourt grec"
         },
         {
-            "quantity": "150",
+            "quantity": "165",
             "unit": "g",
             "name": "Framboises"
         },
         {
-            "quantity": "45",
+            "quantity": "50",
             "unit": "g",
             "name": "Miel"
         }
@@ -47,7 +47,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Mixer les framboises avec le miel et passer au tamis.\n3. Mélanger avec le yaourt grec.\n4. Répartir la préparation dans les 8 empreintes (environ 55 g par empreinte ; chaque empreinte contient 5,8 cl).\n5. Placer au congélateur pendant au moins 6h.\n6. Démouler en poussant doucement depuis le dessous du moule silicone.",
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Mixer les framboises avec le miel et passer au tamis.\n3. Mélanger avec le yaourt grec.\n4. Répartir la préparation dans les 8 empreintes (environ 60 g par empreinte ; chaque empreinte contient 5,8 cl).\n5. Placer au congélateur pendant au moins 6h.\n6. Démouler en poussant doucement depuis le dessous du moule silicone.",
     "for": "8",
     "preptime": "15",
     "resttime": "6h",

@@ -5,17 +5,17 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "75",
+            "quantity": "100",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "1/2",
-            "unit": "sachet",
+            "quantity": "4",
+            "unit": "g",
             "name": "Levure chimique"
         },
         {
-            "quantity": "50",
+            "quantity": "65",
             "unit": "g",
             "name": "Sucre"
         },
@@ -25,12 +25,12 @@
             "name": ""
         },
         {
-            "quantity": "45",
+            "quantity": "60",
             "unit": "g",
             "name": "Beurre fondu"
         },
         {
-            "quantity": "30",
+            "quantity": "55",
             "unit": "g",
             "name": "Lait"
         },
@@ -40,7 +40,7 @@
             "name": "Extrait de vanille"
         },
         {
-            "quantity": "40",
+            "quantity": "50",
             "unit": "g",
             "name": "Myrtilles"
         }
@@ -72,8 +72,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le sucre puis ajouter le beurre, le lait et la vanille.\n4. Incorporer la farine et la levure puis les myrtilles.\n5. Verser la préparation dans le moule (environ 305 g ; le moule contient 61,7 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 170°C pendant 33-38 min (suivant votre four).\n8. Laisser refroidir avant de démouler.",
-    "for": "3",
+    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le sucre puis ajouter le beurre, le lait et la vanille.\n4. Incorporer la farine et la levure puis les myrtilles.\n5. Verser la préparation dans le moule (environ 395 g ; le moule contient 61,7 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 170°C pendant 33-38 min (suivant votre four).\n8. Laisser refroidir avant de démouler.",
+    "for": "4",
     "preptime": "15",
     "resttime": "0",
     "cooktime": "33-38",

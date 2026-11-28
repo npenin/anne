@@ -5,27 +5,27 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "525",
+            "quantity": "420",
             "unit": "g",
             "name": "Fraises"
         },
         {
-            "quantity": "525",
+            "quantity": "420",
             "unit": "g",
             "name": "Crème liquide entière froide"
         },
         {
-            "quantity": "350",
+            "quantity": "280",
             "unit": "g",
             "name": "Fromage blanc"
         },
         {
-            "quantity": "120",
+            "quantity": "100",
             "unit": "g",
             "name": "Sucre glace"
         },
         {
-            "quantity": "15",
+            "quantity": "11",
             "unit": "g",
             "name": "Gélatine en feuilles"
         },
@@ -62,8 +62,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Ramollir la gélatine. Mixer les fraises, chauffer un quart de la purée et dissoudre la gélatine essorée.\n3. Mélanger avec le reste de purée, le fromage blanc, le sucre et la vanille.\n4. Monter la crème en chantilly et l'incorporer.\n5. Verser la préparation dans le moule (environ 1555 g ; le moule contient 173 cl).\n6. Placer au congélateur pendant au moins 6h.\n7. Démouler en poussant doucement depuis le dessous du moule silicone.",
-    "for": "16",
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Ramollir la gélatine. Mixer les fraises, chauffer un quart de la purée et dissoudre la gélatine essorée.\n3. Mélanger avec le reste de purée, le fromage blanc, le sucre et la vanille.\n4. Monter la crème en chantilly et l'incorporer.\n5. Verser la préparation dans le moule (environ 1245 g ; le moule contient 173 cl).\n6. Placer au congélateur pendant au moins 6h.\n7. Démouler en poussant doucement depuis le dessous du moule silicone.",
+    "for": "12",
     "preptime": "15",
     "resttime": "6h",
     "cooktime": "0",

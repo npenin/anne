@@ -5,22 +5,22 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "135",
+            "quantity": "185",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "1/2",
-            "unit": "sachet",
+            "quantity": "8",
+            "unit": "g",
             "name": "Levure chimique"
         },
         {
-            "quantity": "100",
+            "quantity": "140",
             "unit": "g",
             "name": "Beurre pommade"
         },
         {
-            "quantity": "100",
+            "quantity": "140",
             "unit": "g",
             "name": "Sucre"
         },
@@ -30,14 +30,19 @@
             "name": ""
         },
         {
-            "quantity": "135",
+            "quantity": "185",
             "unit": "g",
             "name": "Fruits confits macérés"
         },
         {
-            "quantity": "1 1/2",
+            "quantity": "2",
             "unit": "c-à-s",
             "name": "Rhum"
+        },
+        {
+            "quantity": "40",
+            "unit": "g",
+            "name": "Lait"
         }
     ],
     "accessories": [
@@ -67,11 +72,11 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Crémer le beurre avec le sucre puis ajouter les œufs un à un.\n4. Incorporer la farine et la levure puis le rhum.\n5. Ajouter les fruits confits farinés.\n6. Verser la préparation dans le moule (environ 595 g ; le moule contient 87,7 cl).\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 170°C pendant 36-42 min (suivant votre four).\n9. Laisser refroidir, démouler et laisser reposer une nuit avant de déguster.",
-    "for": "6",
+    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Crémer le beurre avec le sucre puis ajouter les œufs un à un.\n4. Incorporer la farine et la levure puis le rhum.\n5. Ajouter les fruits confits farinés.\n6. Ajouter le lait et mélanger.\n7. Verser la préparation dans le moule (environ 830 g ; le moule contient 130 cl).\n8. Taper la plaque sur le plan de travail pour égaliser la pâte.\n9. Enfourner à 170°C pendant 42-50 min (suivant votre four).\n10. Laisser refroidir, démouler et laisser reposer une nuit avant de déguster.",
+    "for": "8",
     "preptime": "15",
     "resttime": "0",
-    "cooktime": "36-42",
+    "cooktime": "42-50",
     "cover": "",
     "gallery": [],
     "mold": {

@@ -5,13 +5,13 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "150",
+            "quantity": "135",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "1",
-            "unit": "sachet",
+            "quantity": "6",
+            "unit": "g",
             "name": "Levure chimique"
         },
         {
@@ -20,22 +20,22 @@
             "name": ""
         },
         {
-            "quantity": "90",
+            "quantity": "75",
             "unit": "g",
             "name": "Lait"
         },
         {
-            "quantity": "50",
+            "quantity": "45",
             "unit": "g",
             "name": "Huile d'olive"
         },
         {
-            "quantity": "80",
+            "quantity": "75",
             "unit": "g",
             "name": "Mozzarella en dés"
         },
         {
-            "quantity": "60",
+            "quantity": "55",
             "unit": "g",
             "name": "Tomates séchées"
         },
@@ -72,7 +72,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le lait et l'huile d'olive.\n4. Ajouter la farine et la levure puis la mozzarella, les tomates séchées et le basilic.\n5. Répartir la préparation dans les 28 empreintes (environ 20 g par empreinte ; chaque empreinte contient 2,6 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 180°C pendant 10-12 min (suivant votre four).\n8. Laisser refroidir avant de démouler.",
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le lait et l'huile d'olive.\n4. Ajouter la farine et la levure puis la mozzarella, les tomates séchées et le basilic.\n5. Répartir la préparation dans les 28 empreintes (environ 18 g par empreinte ; chaque empreinte contient 2,6 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 180°C pendant 10-12 min (suivant votre four).\n8. Laisser refroidir avant de démouler.",
     "for": "28",
     "preptime": "15",
     "resttime": "0",

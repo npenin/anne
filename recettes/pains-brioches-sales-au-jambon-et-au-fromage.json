@@ -5,12 +5,12 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "530",
+            "quantity": "460",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "30",
+            "quantity": "25",
             "unit": "g",
             "name": "Levure fraîche de boulanger"
         },
@@ -20,27 +20,27 @@
             "name": ""
         },
         {
-            "quantity": "180",
+            "quantity": "140",
             "unit": "g",
             "name": "Lait tiède"
         },
         {
-            "quantity": "90",
+            "quantity": "80",
             "unit": "g",
             "name": "Beurre mou"
         },
         {
-            "quantity": "1",
+            "quantity": "1 1/2",
             "unit": "c-à-c",
             "name": "Sel"
         },
         {
-            "quantity": "180",
+            "quantity": "160",
             "unit": "g",
             "name": "Jambon blanc"
         },
         {
-            "quantity": "150",
+            "quantity": "130",
             "unit": "g",
             "name": "Emmental râpé"
         }
@@ -72,7 +72,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Délayer la levure dans le lait tiède.\n2. Pétrir farine, sel, œufs et levure 10 min puis incorporer le beurre. Laisser pousser 1 h 30.\n3. Incorporer le jambon en dés et l'emmental.\n4. Poser votre moule sur une plaque aluminium perforée.\n5. Répartir la préparation dans les 3 empreintes (environ 440 g par empreinte ; chaque empreinte contient 70 cl).\n6. Laisser lever encore 30 min à température ambiante.\n7. Préchauffer votre four à 180°C.\n8. Enfourner à 180°C pendant 33-38 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
+    "steps": "1. Délayer la levure dans le lait tiède.\n2. Pétrir farine, sel, œufs et levure 10 min puis incorporer le beurre. Laisser pousser 1 h 30.\n3. Incorporer le jambon en dés et l'emmental.\n4. Poser votre moule sur une plaque aluminium perforée.\n5. Répartir la préparation dans les 3 empreintes (environ 385 g par empreinte ; chaque empreinte contient 70 cl).\n6. Laisser lever encore 30 min à température ambiante.\n7. Préchauffer votre four à 180°C.\n8. Enfourner à 180°C pendant 33-38 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
     "for": "3",
     "preptime": "40",
     "resttime": "2h30",

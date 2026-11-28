@@ -5,13 +5,13 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "265",
+            "quantity": "260",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "1 1/2",
-            "unit": "sachets",
+            "quantity": "1",
+            "unit": "sachet",
             "name": "Levure chimique"
         },
         {
@@ -40,7 +40,7 @@
             "name": "Herbes de Provence"
         },
         {
-            "quantity": "1.0",
+            "quantity": "1",
             "unit": "pincée",
             "name": "Poivre"
         }

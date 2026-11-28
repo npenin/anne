@@ -40,12 +40,12 @@
             "name": "Échalote"
         },
         {
-            "quantity": "1.0",
+            "quantity": "1",
             "unit": "pincée",
             "name": "Sel"
         },
         {
-            "quantity": "1.0",
+            "quantity": "1",
             "unit": "pincée",
             "name": "Poivre"
         }
@@ -77,8 +77,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Faire revenir l'échalote et les champignons à la poêle jusqu'à évaporation de l'eau puis laisser tiédir.\n4. Mélanger le poulet haché avec les œufs, la crème, la chapelure, l'estragon, le sel et le poivre.\n5. Ajouter les champignons.\n6. Verser la préparation dans le moule (environ 1015 g ; le moule contient 138 cl).\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 180°C pendant 38-45 min (suivant votre four).\n9. Laisser reposer 10 min avant de démouler et trancher.",
-    "for": "10",
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Faire revenir l'échalote et les champignons à la poêle jusqu'à évaporation de l'eau puis laisser tiédir.\n4. Mélanger le poulet haché avec les œufs, la crème, la chapelure, l'estragon, le sel et le poivre.\n5. Ajouter les champignons.\n6. Verser la préparation dans le moule (environ 940 g ; le moule contient 138 cl).\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 180°C pendant 38-45 min (suivant votre four).\n9. Laisser reposer 10 min avant de démouler et trancher.",
+    "for": "9",
     "preptime": "15",
     "resttime": "0",
     "cooktime": "38-45",

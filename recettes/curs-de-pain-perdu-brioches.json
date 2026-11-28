@@ -5,12 +5,12 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "400",
+            "quantity": "390",
             "unit": "g",
             "name": "Lait"
         },
         {
-            "quantity": "135",
+            "quantity": "130",
             "unit": "g",
             "name": "Crème liquide"
         },
@@ -30,7 +30,7 @@
             "name": "Extrait de vanille"
         },
         {
-            "quantity": "12",
+            "quantity": "10 1/2",
             "unit": "tranches",
             "name": "Brioche"
         }

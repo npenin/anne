@@ -5,17 +5,17 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "335",
+            "quantity": "290",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "1 1/2",
-            "unit": "sachets",
+            "quantity": "13",
+            "unit": "g",
             "name": "Levure chimique"
         },
         {
-            "quantity": "5",
+            "quantity": "4",
             "unit": "Oeufs",
             "name": ""
         },
@@ -25,27 +25,27 @@
             "name": "Lait"
         },
         {
-            "quantity": "100",
+            "quantity": "85",
             "unit": "g",
             "name": "Huile d'olive"
         },
         {
-            "quantity": "335",
+            "quantity": "290",
             "unit": "g",
             "name": "Thon au naturel égoutté"
         },
         {
-            "quantity": "135",
+            "quantity": "115",
             "unit": "g",
             "name": "Olives noires"
         },
         {
-            "quantity": "165",
+            "quantity": "145",
             "unit": "g",
             "name": "Tomates confites"
         },
         {
-            "quantity": "135",
+            "quantity": "115",
             "unit": "g",
             "name": "Gruyère râpé"
         }
@@ -77,8 +77,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le lait et l'huile d'olive.\n4. Ajouter la farine et la levure puis le thon émietté, les olives, les tomates et le gruyère.\n5. Verser la préparation dans le moule (environ 1635 g ; le moule contient 210 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 180°C pendant 45-52 min (suivant votre four).\n8. Laisser tiédir avant de démouler : se déguste tiède ou froid.",
-    "for": "16",
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le lait et l'huile d'olive.\n4. Ajouter la farine et la levure puis le thon émietté, les olives, les tomates et le gruyère.\n5. Verser la préparation dans le moule (environ 1430 g ; le moule contient 210 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 180°C pendant 45-52 min (suivant votre four).\n8. Laisser tiédir avant de démouler : se déguste tiède ou froid.",
+    "for": "14",
     "preptime": "15",
     "resttime": "0",
     "cooktime": "45-52",

@@ -5,7 +5,7 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "300",
+            "quantity": "260",
             "unit": "g",
             "name": "Farine"
         },
@@ -15,7 +15,7 @@
             "name": "Levure chimique"
         },
         {
-            "quantity": "150",
+            "quantity": "130",
             "unit": "g",
             "name": "Sucre"
         },
@@ -25,12 +25,12 @@
             "name": ""
         },
         {
-            "quantity": "200",
+            "quantity": "180",
             "unit": "g",
             "name": "Lait"
         },
         {
-            "quantity": "100",
+            "quantity": "90",
             "unit": "g",
             "name": "Beurre fondu"
         },
@@ -40,7 +40,7 @@
             "name": "Arôme vanille"
         },
         {
-            "quantity": "200",
+            "quantity": "175",
             "unit": "g",
             "name": "Myrtilles (fraîches ou surgelées)"
         }
@@ -72,7 +72,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dans un cul de poule, mélanger la farine, la levure et le sucre.\n4. Dans un autre récipient, fouetter les œufs avec le lait, le beurre fondu et l'arôme vanille.\n5. Verser les ingrédients liquides sur les ingrédients secs et mélanger juste assez pour obtenir une pâte homogène, sans trop travailler.\n6. Ajouter délicatement les myrtilles (sans les décongeler si elles sont surgelées).\n7. Répartir la pâte dans les 12 empreintes (environ 90 g par empreinte, soit aux trois quarts de la hauteur : chaque empreinte contient 12,5 cl).\n8. Taper la plaque sur le plan de travail pour égaliser la pâte.\n9. Enfourner à 180°C pendant 22-25 min (suivant votre four).\n10. Laisser refroidir avant de démouler.",
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Dans un cul de poule, mélanger la farine, la levure et le sucre.\n4. Dans un autre récipient, fouetter les œufs avec le lait, le beurre fondu et l'arôme vanille.\n5. Verser les ingrédients liquides sur les ingrédients secs et mélanger juste assez pour obtenir une pâte homogène, sans trop travailler.\n6. Ajouter délicatement les myrtilles (sans les décongeler si elles sont surgelées).\n7. Répartir la pâte dans les 12 empreintes (environ 80 g par empreinte, soit aux deux tiers de la hauteur : chaque empreinte contient 12,5 cl).\n8. Taper la plaque sur le plan de travail pour égaliser la pâte.\n9. Enfourner à 180°C pendant 22-25 min (suivant votre four).\n10. Laisser refroidir avant de démouler.",
     "for": "12",
     "preptime": "15",
     "resttime": "0",

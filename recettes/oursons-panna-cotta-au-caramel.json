@@ -5,17 +5,17 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "540",
+            "quantity": "600",
             "unit": "g",
             "name": "Crème liquide entière"
         },
         {
-            "quantity": "270",
+            "quantity": "300",
             "unit": "g",
             "name": "Lait entier"
         },
         {
-            "quantity": "110",
+            "quantity": "120",
             "unit": "g",
             "name": "Sucre"
         },
@@ -25,7 +25,7 @@
             "name": "Gélatine en feuilles"
         },
         {
-            "quantity": "110",
+            "quantity": "120",
             "unit": "g",
             "name": "Caramel au beurre salé"
         }
@@ -57,7 +57,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Ramollir la gélatine dans l'eau froide.\n3. Réaliser un caramel à sec avec le sucre, déglacer avec la crème et le lait chauds.\n4. Dissoudre la gélatine essorée puis laisser tiédir.\n5. Répartir la préparation dans les 12 empreintes (environ 75 g par empreinte ; chaque empreinte contient 8,6 cl).\n6. Placer au réfrigérateur pendant au moins 6h.\n7. Démouler et servir avec un filet de caramel au beurre salé.",
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Ramollir la gélatine dans l'eau froide.\n3. Réaliser un caramel à sec avec le sucre, déglacer avec la crème et le lait chauds.\n4. Dissoudre la gélatine essorée puis laisser tiédir.\n5. Répartir la préparation dans les 12 empreintes (environ 85 g par empreinte ; chaque empreinte contient 8,6 cl).\n6. Placer au réfrigérateur pendant au moins 6h.\n7. Démouler et servir avec un filet de caramel au beurre salé.",
     "for": "12",
     "preptime": "15",
     "resttime": "6h",

@@ -5,22 +5,22 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "300",
+            "quantity": "365",
             "unit": "g",
             "name": "Crème liquide entière"
         },
         {
-            "quantity": "200",
+            "quantity": "245",
             "unit": "g",
             "name": "Lait entier"
         },
         {
-            "quantity": "4",
+            "quantity": "5",
             "unit": "Jaunes d'oeufs",
             "name": ""
         },
         {
-            "quantity": "80",
+            "quantity": "100",
             "unit": "g",
             "name": "Sucre"
         },
@@ -30,7 +30,7 @@
             "name": "Extrait de vanille"
         },
         {
-            "quantity": "60",
+            "quantity": "75",
             "unit": "g",
             "name": "Spéculoos émiettés"
         }
@@ -62,7 +62,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Fouetter les jaunes avec le sucre. Chauffer le lait avec la crème et la vanille et verser sur les jaunes.\n3. Remettre sur le feu en remuant jusqu'à 83°C puis laisser refroidir complètement.\n4. Répartir la préparation dans les 8 empreintes (environ 85 g par empreinte ; chaque empreinte contient 10,3 cl).\n5. Parsemer de spéculoos émiettés.\n6. Placer au congélateur pendant au moins 6h.\n7. Démouler en poussant doucement sur le dessous du moule. Insérer un bâtonnet avant de congeler si vous le souhaitez.",
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Fouetter les jaunes avec le sucre. Chauffer le lait avec la crème et la vanille et verser sur les jaunes.\n3. Remettre sur le feu en remuant jusqu'à 83°C puis laisser refroidir complètement.\n4. Répartir la préparation dans les 8 empreintes (environ 105 g par empreinte ; chaque empreinte contient 10,3 cl).\n5. Parsemer de spéculoos émiettés.\n6. Placer au congélateur pendant au moins 6h.\n7. Démouler en poussant doucement sur le dessous du moule. Insérer un bâtonnet avant de congeler si vous le souhaitez.",
     "for": "8",
     "preptime": "15",
     "resttime": "6h",

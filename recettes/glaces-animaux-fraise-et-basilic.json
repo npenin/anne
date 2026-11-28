@@ -5,17 +5,17 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "345",
+            "quantity": "380",
             "unit": "g",
             "name": "Fraises"
         },
         {
-            "quantity": "170",
+            "quantity": "190",
             "unit": "g",
             "name": "Yaourt nature"
         },
         {
-            "quantity": "60",
+            "quantity": "65",
             "unit": "g",
             "name": "Sucre"
         },
@@ -52,7 +52,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Mixer les fraises avec le sucre et le basilic.\n3. Ajouter le yaourt et mélanger.\n4. Répartir la préparation dans les 8 empreintes (environ 75 g par empreinte ; chaque empreinte contient 8 cl).\n5. Placer au congélateur pendant au moins 6h.\n6. Démouler en poussant doucement depuis le dessous du moule silicone.",
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Mixer les fraises avec le sucre et le basilic.\n3. Ajouter le yaourt et mélanger.\n4. Répartir la préparation dans les 8 empreintes (environ 80 g par empreinte ; chaque empreinte contient 8 cl).\n5. Placer au congélateur pendant au moins 6h.\n6. Démouler en poussant doucement depuis le dessous du moule silicone.",
     "for": "8",
     "preptime": "15",
     "resttime": "6h",

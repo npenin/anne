@@ -5,22 +5,22 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "200",
+            "quantity": "210",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "1",
-            "unit": "sachet",
+            "quantity": "9",
+            "unit": "g",
             "name": "Levure chimique"
         },
         {
-            "quantity": "150",
+            "quantity": "155",
             "unit": "g",
             "name": "Miel"
         },
         {
-            "quantity": "80",
+            "quantity": "85",
             "unit": "g",
             "name": "Beurre fondu"
         },
@@ -30,7 +30,7 @@
             "name": ""
         },
         {
-            "quantity": "100",
+            "quantity": "105",
             "unit": "g",
             "name": "Lait"
         },
@@ -40,7 +40,7 @@
             "name": "Mélange d'épices à pain d'épices"
         },
         {
-            "quantity": "1.0",
+            "quantity": "1",
             "unit": "pincée",
             "name": "Sel"
         },

@@ -5,17 +5,17 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "190",
+            "quantity": "210",
             "unit": "g",
             "name": "Lait entier"
         },
         {
-            "quantity": "130",
+            "quantity": "140",
             "unit": "g",
             "name": "Crème liquide"
         },
         {
-            "quantity": "65",
+            "quantity": "70",
             "unit": "g",
             "name": "Chocolat noir"
         },
@@ -57,7 +57,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Chauffer le lait et la crème, verser sur le chocolat haché, le caramel et le sucre puis mixer.\n3. Laisser refroidir.\n4. Répartir la préparation dans les 6 empreintes (environ 75 g par empreinte ; chaque empreinte contient 8 cl).\n5. Placer au congélateur pendant au moins 6h.\n6. Démouler en poussant doucement depuis le dessous du moule silicone.",
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Chauffer le lait et la crème, verser sur le chocolat haché, le caramel et le sucre puis mixer.\n3. Laisser refroidir.\n4. Répartir la préparation dans les 6 empreintes (environ 80 g par empreinte ; chaque empreinte contient 8 cl).\n5. Placer au congélateur pendant au moins 6h.\n6. Démouler en poussant doucement depuis le dessous du moule silicone.",
     "for": "6",
     "preptime": "15",
     "resttime": "6h",

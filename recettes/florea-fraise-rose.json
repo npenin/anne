@@ -5,17 +5,17 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "500",
+            "quantity": "400",
             "unit": "g",
             "name": "Fraises"
         },
         {
-            "quantity": "415",
+            "quantity": "330",
             "unit": "g",
             "name": "Crème liquide entière"
         },
         {
-            "quantity": "135",
+            "quantity": "105",
             "unit": "g",
             "name": "Sucre"
         },
@@ -30,7 +30,7 @@
             "name": "Eau de rose"
         },
         {
-            "quantity": "415",
+            "quantity": "330",
             "unit": "g",
             "name": "Fromage blanc épais"
         }
@@ -62,8 +62,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Ramollir la gélatine. Mixer les fraises avec le sucre et chauffer un quart de la purée pour dissoudre la gélatine essorée.\n3. Mélanger avec le reste de purée, l'eau de rose et le fromage blanc.\n4. Monter la crème en chantilly et l'incorporer.\n5. Verser la préparation dans le moule (environ 1505 g ; le moule contient 167 cl).\n6. Placer au congélateur pendant au moins 6h.\n7. Démouler et laisser 20 min à température ambiante avant de servir.",
-    "for": "15",
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Ramollir la gélatine. Mixer les fraises avec le sucre et chauffer un quart de la purée pour dissoudre la gélatine essorée.\n3. Mélanger avec le reste de purée, l'eau de rose et le fromage blanc.\n4. Monter la crème en chantilly et l'incorporer.\n5. Verser la préparation dans le moule (environ 1200 g ; le moule contient 167 cl).\n6. Placer au congélateur pendant au moins 6h.\n7. Démouler et laisser 20 min à température ambiante avant de servir.",
+    "for": "12",
     "preptime": "15",
     "resttime": "6h",
     "cooktime": "0",

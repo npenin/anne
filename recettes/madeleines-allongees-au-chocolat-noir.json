@@ -5,7 +5,7 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "65",
+            "quantity": "70",
             "unit": "g",
             "name": "Farine"
         },
@@ -15,12 +15,12 @@
             "name": "Cacao non sucré"
         },
         {
-            "quantity": "1/2",
-            "unit": "sachet",
+            "quantity": "3",
+            "unit": "g",
             "name": "Levure chimique"
         },
         {
-            "quantity": "65",
+            "quantity": "70",
             "unit": "g",
             "name": "Sucre"
         },
@@ -30,7 +30,7 @@
             "name": ""
         },
         {
-            "quantity": "65",
+            "quantity": "70",
             "unit": "g",
             "name": "Beurre fondu"
         },

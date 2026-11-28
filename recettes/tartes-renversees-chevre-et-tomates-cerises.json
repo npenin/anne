@@ -5,12 +5,12 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "170",
+            "quantity": "130",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "1",
+            "quantity": "1/2",
             "unit": "sachet",
             "name": "Levure chimique"
         },
@@ -20,17 +20,17 @@
             "name": ""
         },
         {
-            "quantity": "80",
+            "quantity": "35",
             "unit": "g",
             "name": "Lait"
         },
         {
-            "quantity": "40",
+            "quantity": "30",
             "unit": "g",
             "name": "Huile d'olive"
         },
         {
-            "quantity": "80",
+            "quantity": "60",
             "unit": "g",
             "name": "Fromage de chèvre"
         },
@@ -40,7 +40,7 @@
             "name": "Thym"
         },
         {
-            "quantity": "200",
+            "quantity": "150",
             "unit": "g",
             "name": "Tomates cerises"
         },
@@ -77,7 +77,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Couper les tomates cerises en deux et les déposer face coupée contre le fond de chaque empreinte avec un filet d'huile d'olive.\n4. Fouetter les œufs avec le lait et l'huile.\n5. Ajouter la farine, la levure, le chèvre émietté et le thym.\n6. Répartir la préparation dans les 12 empreintes (environ 40 g par empreinte ; chaque empreinte contient 5,4 cl).\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 180°C pendant 12-15 min (suivant votre four).\n9. Laisser tiédir 5 min puis démouler en retournant.",
+    "steps": "1. Préchauffer votre four à 180°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Couper les tomates cerises en deux et les déposer face coupée contre le fond de chaque empreinte avec un filet d'huile d'olive.\n4. Fouetter les œufs avec le lait et l'huile.\n5. Ajouter la farine, la levure, le chèvre émietté et le thym.\n6. Répartir la préparation dans les 12 empreintes (environ 30 g par empreinte ; chaque empreinte contient 5,4 cl).\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 180°C pendant 12-15 min (suivant votre four).\n9. Laisser tiédir 5 min puis démouler en retournant.",
     "for": "12",
     "preptime": "15",
     "resttime": "0",

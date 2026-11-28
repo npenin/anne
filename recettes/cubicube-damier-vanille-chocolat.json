@@ -5,32 +5,32 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "325",
+            "quantity": "285",
             "unit": "g",
             "name": "Beurre pommade"
         },
         {
-            "quantity": "300",
+            "quantity": "260",
             "unit": "g",
             "name": "Sucre"
         },
         {
-            "quantity": "6",
+            "quantity": "5",
             "unit": "Oeufs",
             "name": ""
         },
         {
-            "quantity": "445",
+            "quantity": "390",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "1 1/2",
-            "unit": "sachets",
+            "quantity": "14",
+            "unit": "g",
             "name": "Levure chimique"
         },
         {
-            "quantity": "120",
+            "quantity": "110",
             "unit": "g",
             "name": "Lait"
         },
@@ -40,7 +40,7 @@
             "name": "Extrait de vanille"
         },
         {
-            "quantity": "3 1/2",
+            "quantity": "2 1/2",
             "unit": "c-à-s",
             "name": "Cacao non sucré"
         }
@@ -72,8 +72,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Crémer le beurre avec le sucre puis ajouter les œufs un à un.\n4. Incorporer la farine, la levure et le lait jusqu'à obtenir une pâte lisse.\n5. Séparer la pâte en deux : parfumer l'une à la vanille, l'autre au cacao.\n6. Remplir le moule en alternant des cuillerées de chaque pâte façon damier.\n7. Verser la préparation dans le moule (environ 1580 g ; le moule contient 210 cl).\n8. Taper la plaque sur le plan de travail pour égaliser la pâte.\n9. Enfourner à 170°C pendant 45-52 min (suivant votre four).\n10. Laisser refroidir avant de démouler.",
-    "for": "16",
+    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Crémer le beurre avec le sucre puis ajouter les œufs un à un.\n4. Incorporer la farine, la levure et le lait jusqu'à obtenir une pâte lisse.\n5. Séparer la pâte en deux : parfumer l'une à la vanille, l'autre au cacao.\n6. Remplir le moule en alternant des cuillerées de chaque pâte façon damier.\n7. Verser la préparation dans le moule (environ 1345 g ; le moule contient 210 cl).\n8. Taper la plaque sur le plan de travail pour égaliser la pâte.\n9. Enfourner à 170°C pendant 45-52 min (suivant votre four).\n10. Laisser refroidir avant de démouler.",
+    "for": "13",
     "preptime": "15",
     "resttime": "0",
     "cooktime": "45-52",

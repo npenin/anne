@@ -5,37 +5,37 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "175",
+            "quantity": "150",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "65",
+            "quantity": "55",
             "unit": "g",
             "name": "Flocons d'avoine"
         },
         {
-            "quantity": "1 1/2",
-            "unit": "sachets",
+            "quantity": "7",
+            "unit": "g",
             "name": "Levure chimique"
         },
         {
-            "quantity": "135",
+            "quantity": "115",
             "unit": "g",
             "name": "Miel"
         },
         {
-            "quantity": "4",
+            "quantity": "3",
             "unit": "Oeufs",
             "name": ""
         },
         {
-            "quantity": "105",
+            "quantity": "90",
             "unit": "g",
             "name": "Beurre fondu"
         },
         {
-            "quantity": "80",
+            "quantity": "90",
             "unit": "g",
             "name": "Lait"
         }
@@ -67,7 +67,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter le miel avec les œufs puis ajouter le beurre et le lait.\n4. Incorporer la farine, la levure et les flocons d'avoine.\n5. Répartir la préparation dans les 12 empreintes (environ 65 g par empreinte ; chaque empreinte contient 8,6 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 170°C pendant 15-18 min (suivant votre four).\n8. Laisser refroidir avant de démouler.",
+    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter le miel avec les œufs puis ajouter le beurre et le lait.\n4. Incorporer la farine, la levure et les flocons d'avoine.\n5. Répartir la préparation dans les 12 empreintes (environ 55 g par empreinte ; chaque empreinte contient 8,6 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 170°C pendant 15-18 min (suivant votre four).\n8. Laisser refroidir avant de démouler.",
     "for": "12",
     "preptime": "15",
     "resttime": "0",

@@ -5,7 +5,7 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "525",
+            "quantity": "490",
             "unit": "g",
             "name": "Farine T45"
         },
@@ -15,7 +15,7 @@
             "name": "Levure fraîche de boulanger"
         },
         {
-            "quantity": "75",
+            "quantity": "70",
             "unit": "g",
             "name": "Sucre"
         },
@@ -25,27 +25,27 @@
             "name": ""
         },
         {
-            "quantity": "150",
+            "quantity": "130",
             "unit": "g",
             "name": "Lait tiède"
         },
         {
-            "quantity": "150",
+            "quantity": "140",
             "unit": "g",
             "name": "Beurre mou"
         },
         {
-            "quantity": "1.0",
+            "quantity": "1",
             "unit": "pincée",
             "name": "Sel"
         },
         {
-            "quantity": "225",
+            "quantity": "210",
             "unit": "g",
             "name": "Crème pâtissière"
         },
         {
-            "quantity": "90",
+            "quantity": "85",
             "unit": "g",
             "name": "Pépites de chocolat"
         }
@@ -77,7 +77,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Délayer la levure dans le lait tiède.\n2. Pétrir farine, sucre, sel, œufs et levure 10 min puis incorporer le beurre. Laisser pousser 1 h 30.\n3. Étaler la pâte, tartiner de crème pâtissière, parsemer de pépites, rouler et couper.\n4. Poser votre moule sur une plaque aluminium perforée.\n5. Répartir la préparation dans les 3 empreintes (environ 360 g par empreinte ; chaque empreinte contient 70 cl).\n6. Laisser lever encore 30 min à température ambiante.\n7. Préchauffer votre four à 180°C.\n8. Enfourner à 180°C pendant 33-38 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
+    "steps": "1. Délayer la levure dans le lait tiède.\n2. Pétrir farine, sucre, sel, œufs et levure 10 min puis incorporer le beurre. Laisser pousser 1 h 30.\n3. Étaler la pâte, tartiner de crème pâtissière, parsemer de pépites, rouler et couper.\n4. Poser votre moule sur une plaque aluminium perforée.\n5. Répartir la préparation dans les 3 empreintes (environ 335 g par empreinte ; chaque empreinte contient 70 cl).\n6. Laisser lever encore 30 min à température ambiante.\n7. Préchauffer votre four à 180°C.\n8. Enfourner à 180°C pendant 33-38 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
     "for": "3",
     "preptime": "40",
     "resttime": "2h30",

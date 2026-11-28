@@ -5,17 +5,17 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "70",
+            "quantity": "90",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "10",
+            "quantity": "15",
             "unit": "g",
             "name": "Cacao non sucré"
         },
         {
-            "quantity": "1",
+            "quantity": "1/2",
             "unit": "sachet",
             "name": "Levure chimique"
         },
@@ -25,7 +25,7 @@
             "name": "Poudre de noisette"
         },
         {
-            "quantity": "70",
+            "quantity": "80",
             "unit": "g",
             "name": "Sucre"
         },
@@ -35,9 +35,14 @@
             "name": ""
         },
         {
-            "quantity": "70",
+            "quantity": "80",
             "unit": "g",
             "name": "Beurre fondu"
+        },
+        {
+            "quantity": "20",
+            "unit": "g",
+            "name": "Lait"
         }
     ],
     "accessories": [
@@ -67,7 +72,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le sucre puis ajouter le beurre fondu.\n4. Incorporer la farine, le cacao, la levure et la poudre de noisette.\n5. Répartir la préparation dans les 24 empreintes (environ 15 g par empreinte ; chaque empreinte contient 2,8 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 170°C pendant 10-12 min (suivant votre four).\n8. Laisser refroidir avant de démouler.",
+    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le sucre puis ajouter le beurre fondu.\n4. Incorporer la farine, le cacao, la levure et la poudre de noisette.\n5. Ajouter le lait et mélanger.\n6. Répartir la préparation dans les 24 empreintes (environ 18 g par empreinte ; chaque empreinte contient 2,8 cl).\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 170°C pendant 10-12 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
     "for": "24",
     "preptime": "15",
     "resttime": "0",

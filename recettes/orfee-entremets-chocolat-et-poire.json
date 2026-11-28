@@ -5,27 +5,27 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "465",
+            "quantity": "360",
             "unit": "g",
             "name": "Chocolat noir"
         },
         {
-            "quantity": "700",
+            "quantity": "540",
             "unit": "g",
             "name": "Crème liquide entière froide"
         },
         {
-            "quantity": "465",
+            "quantity": "360",
             "unit": "g",
             "name": "Poires pochées en dés"
         },
         {
-            "quantity": "7",
+            "quantity": "5",
             "unit": "Jaunes d'oeufs",
             "name": ""
         },
         {
-            "quantity": "140",
+            "quantity": "110",
             "unit": "g",
             "name": "Sucre"
         }
@@ -57,8 +57,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Fouetter les jaunes avec le sucre au bain-marie jusqu'à ce que le mélange épaississe, verser sur le chocolat fondu.\n3. Monter la crème en chantilly et l'incorporer.\n4. Ajouter les dés de poire.\n5. Verser la préparation dans le moule (environ 1915 g ; le moule contient 205 cl).\n6. Placer au congélateur pendant au moins 6h.\n7. Démouler en poussant doucement depuis le dessous du moule silicone.",
-    "for": "19",
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Fouetter les jaunes avec le sucre au bain-marie jusqu'à ce que le mélange épaississe, verser sur le chocolat fondu.\n3. Monter la crème en chantilly et l'incorporer.\n4. Ajouter les dés de poire.\n5. Verser la préparation dans le moule (environ 1475 g ; le moule contient 205 cl).\n6. Placer au congélateur pendant au moins 6h.\n7. Démouler en poussant doucement depuis le dessous du moule silicone.",
+    "for": "15",
     "preptime": "15",
     "resttime": "6h",
     "cooktime": "0",

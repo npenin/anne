@@ -5,27 +5,27 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "130",
+            "quantity": "105",
             "unit": "g",
             "name": "Pâte de pistache"
         },
         {
-            "quantity": "270",
+            "quantity": "215",
             "unit": "g",
             "name": "Crème liquide entière froide"
         },
         {
-            "quantity": "110",
+            "quantity": "85",
             "unit": "g",
             "name": "Mascarpone"
         },
         {
-            "quantity": "45",
+            "quantity": "35",
             "unit": "g",
             "name": "Sucre glace"
         },
         {
-            "quantity": "4",
+            "quantity": "3",
             "unit": "g",
             "name": "Gélatine en feuilles"
         }
@@ -57,8 +57,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Ramollir la gélatine. Chauffer 40 g de crème pour dissoudre la gélatine puis mélanger à la pâte de pistache, au mascarpone et au sucre.\n3. Monter le reste de crème en chantilly et l'incorporer.\n4. Verser la préparation dans le moule (environ 555 g ; le moule contient 61,7 cl).\n5. Placer au congélateur pendant au moins 5h.\n6. Démouler en poussant doucement depuis le dessous du moule silicone.",
-    "for": "6",
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Ramollir la gélatine. Chauffer 40 g de crème pour dissoudre la gélatine puis mélanger à la pâte de pistache, au mascarpone et au sucre.\n3. Monter le reste de crème en chantilly et l'incorporer.\n4. Verser la préparation dans le moule (environ 445 g ; le moule contient 61,7 cl).\n5. Placer au congélateur pendant au moins 5h.\n6. Démouler en poussant doucement depuis le dessous du moule silicone.",
+    "for": "4",
     "preptime": "15",
     "resttime": "5h",
     "cooktime": "0",

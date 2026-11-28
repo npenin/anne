@@ -5,42 +5,42 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "440",
+            "quantity": "365",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "2",
+            "quantity": "1 1/2",
             "unit": "sachets",
             "name": "Levure chimique"
         },
         {
-            "quantity": "300",
+            "quantity": "245",
             "unit": "g",
             "name": "Dattes dénoyautées"
         },
         {
-            "quantity": "200",
+            "quantity": "165",
             "unit": "g",
             "name": "Miel"
         },
         {
-            "quantity": "6",
+            "quantity": "5",
             "unit": "Oeufs",
             "name": ""
         },
         {
-            "quantity": "280",
+            "quantity": "230",
             "unit": "g",
             "name": "Beurre fondu"
         },
         {
-            "quantity": "200",
+            "quantity": "165",
             "unit": "g",
             "name": "Lait"
         },
         {
-            "quantity": "2",
+            "quantity": "1 1/2",
             "unit": "c-à-c",
             "name": "Cannelle"
         }
@@ -72,8 +72,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Hacher les dattes grossièrement.\n4. Fouetter le miel avec les œufs puis ajouter le beurre et le lait.\n5. Incorporer la farine, la levure, la cannelle puis les dattes.\n6. Verser la préparation dans le moule (environ 1750 g ; le moule contient 225 cl).\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 170°C pendant 45-52 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
-    "for": "18",
+    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Hacher les dattes grossièrement.\n4. Fouetter le miel avec les œufs puis ajouter le beurre et le lait.\n5. Incorporer la farine, la levure, la cannelle puis les dattes.\n6. Verser la préparation dans le moule (environ 1440 g ; le moule contient 225 cl).\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 170°C pendant 45-52 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
+    "for": "14",
     "preptime": "15",
     "resttime": "0",
     "cooktime": "45-52",

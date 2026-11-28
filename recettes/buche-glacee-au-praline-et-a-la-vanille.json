@@ -5,32 +5,32 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "600",
+            "quantity": "455",
             "unit": "g",
             "name": "Crème liquide entière"
         },
         {
-            "quantity": "300",
+            "quantity": "230",
             "unit": "g",
             "name": "Lait entier"
         },
         {
-            "quantity": "6",
+            "quantity": "5",
             "unit": "Jaunes d'oeufs",
             "name": ""
         },
         {
-            "quantity": "135",
+            "quantity": "105",
             "unit": "g",
             "name": "Sucre"
         },
         {
-            "quantity": "150",
+            "quantity": "115",
             "unit": "g",
             "name": "Praliné noisette"
         },
         {
-            "quantity": "75",
+            "quantity": "55",
             "unit": "g",
             "name": "Noisettes caramélisées concassées"
         }
@@ -62,8 +62,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Blanchir les jaunes avec le sucre.\n3. Chauffer le lait avec 100 g de crème puis verser sur les jaunes. Remettre sur le feu en remuant jusqu'à 83°C, hors du feu ajouter le praliné et laisser refroidir.\n4. Monter le reste de crème en chantilly et l'incorporer délicatement.\n5. Verser la préparation dans le moule (environ 1305 g ; le moule contient 138 cl).\n6. Placer au congélateur pendant au moins 8h.\n7. Démouler et rouler la bûche dans les noisettes caramélisées. Laisser 15 min à température ambiante avant de trancher.",
-    "for": "13",
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Blanchir les jaunes avec le sucre.\n3. Chauffer le lait avec 100 g de crème puis verser sur les jaunes. Remettre sur le feu en remuant jusqu'à 83°C, hors du feu ajouter le praliné et laisser refroidir.\n4. Monter le reste de crème en chantilly et l'incorporer délicatement.\n5. Verser la préparation dans le moule (environ 995 g ; le moule contient 138 cl).\n6. Placer au congélateur pendant au moins 8h.\n7. Démouler et rouler la bûche dans les noisettes caramélisées. Laisser 15 min à température ambiante avant de trancher.",
+    "for": "10",
     "preptime": "15",
     "resttime": "8h",
     "cooktime": "0",

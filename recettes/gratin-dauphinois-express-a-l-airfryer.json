@@ -5,17 +5,17 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "585",
+            "quantity": "525",
             "unit": "g",
             "name": "Pommes de terre en fines lamelles"
         },
         {
-            "quantity": "195",
+            "quantity": "175",
             "unit": "g",
             "name": "Crème liquide"
         },
         {
-            "quantity": "145",
+            "quantity": "130",
             "unit": "g",
             "name": "Lait"
         },
@@ -25,22 +25,22 @@
             "name": "Gousse d'ail"
         },
         {
-            "quantity": "1.0",
+            "quantity": "1",
             "unit": "pincée",
             "name": "Noix de muscade"
         },
         {
-            "quantity": "1.0",
+            "quantity": "1",
             "unit": "pincée",
             "name": "Sel"
         },
         {
-            "quantity": "1.0",
+            "quantity": "1",
             "unit": "pincée",
             "name": "Poivre"
         },
         {
-            "quantity": "50",
+            "quantity": "45",
             "unit": "g",
             "name": "Gruyère râpé"
         }
@@ -72,8 +72,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre airfryer à 170°C.\n2. Poser votre moule sur la grille du panier de l'airfryer.\n3. Frotter le moule avec la gousse d'ail.\n4. Mélanger les pommes de terre avec la crème, le lait, la muscade, le sel et le poivre.\n5. Verser la préparation dans le moule (environ 1020 g ; le moule contient 104,2 cl).\n6. Parsemer de gruyère râpé.\n7. Taper le moule sur le plan de travail pour égaliser la pâte.\n8. Cuire à 170°C pendant 32-36 min (suivant votre appareil).\n9. Laisser reposer 5 min avant de servir.",
-    "for": "10",
+    "steps": "1. Préchauffer votre airfryer à 170°C.\n2. Poser votre moule sur la grille du panier de l'airfryer.\n3. Frotter le moule avec la gousse d'ail.\n4. Mélanger les pommes de terre avec la crème, le lait, la muscade, le sel et le poivre.\n5. Verser la préparation dans le moule (environ 835 g ; le moule contient 104,2 cl).\n6. Parsemer de gruyère râpé.\n7. Taper le moule sur le plan de travail pour égaliser la pâte.\n8. Cuire à 170°C pendant 32-36 min (suivant votre appareil).\n9. Laisser reposer 5 min avant de servir.",
+    "for": "8",
     "preptime": "15",
     "resttime": "0",
     "cooktime": "32-36",

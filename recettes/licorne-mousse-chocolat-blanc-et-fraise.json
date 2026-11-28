@@ -5,22 +5,22 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "445",
+            "quantity": "355",
             "unit": "g",
             "name": "Chocolat blanc"
         },
         {
-            "quantity": "555",
+            "quantity": "445",
             "unit": "g",
             "name": "Purée de fraise"
         },
         {
-            "quantity": "555",
+            "quantity": "445",
             "unit": "g",
             "name": "Crème liquide entière froide"
         },
         {
-            "quantity": "15",
+            "quantity": "11",
             "unit": "g",
             "name": "Gélatine en feuilles"
         }
@@ -52,8 +52,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Ramollir la gélatine. Chauffer la purée de fraise et dissoudre la gélatine essorée.\n3. Verser sur le chocolat blanc haché et mélanger. Laisser tiédir.\n4. Monter la crème en chantilly et l'incorporer délicatement.\n5. Verser la préparation dans le moule (environ 1565 g ; le moule contient 174 cl).\n6. Placer au congélateur pendant au moins 6h.\n7. Démouler en poussant doucement depuis le dessous du moule silicone.",
-    "for": "16",
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Ramollir la gélatine. Chauffer la purée de fraise et dissoudre la gélatine essorée.\n3. Verser sur le chocolat blanc haché et mélanger. Laisser tiédir.\n4. Monter la crème en chantilly et l'incorporer délicatement.\n5. Verser la préparation dans le moule (environ 1255 g ; le moule contient 174 cl).\n6. Placer au congélateur pendant au moins 6h.\n7. Démouler en poussant doucement depuis le dessous du moule silicone.",
+    "for": "13",
     "preptime": "15",
     "resttime": "6h",
     "cooktime": "0",

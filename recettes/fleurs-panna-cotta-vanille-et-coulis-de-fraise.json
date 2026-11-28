@@ -5,17 +5,17 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "780",
+            "quantity": "865",
             "unit": "g",
             "name": "Crème liquide entière"
         },
         {
-            "quantity": "520",
+            "quantity": "575",
             "unit": "g",
             "name": "Lait entier"
         },
         {
-            "quantity": "155",
+            "quantity": "175",
             "unit": "g",
             "name": "Sucre"
         },
@@ -25,12 +25,12 @@
             "name": "Gélatine en feuilles"
         },
         {
-            "quantity": "2 1/2",
+            "quantity": "3",
             "unit": "c-à-s",
             "name": "Extrait de vanille"
         },
         {
-            "quantity": "390",
+            "quantity": "435",
             "unit": "g",
             "name": "Coulis de fraise"
         }
@@ -62,7 +62,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Ramollir la gélatine dans l'eau froide.\n3. Chauffer la crème, le lait, le sucre et la vanille puis dissoudre la gélatine essorée. Laisser tiédir.\n4. Répartir la préparation dans les 12 empreintes (environ 125 g par empreinte ; chaque empreinte contient 14 cl).\n5. Placer au réfrigérateur pendant au moins 6h.\n6. Démouler délicatement et napper de coulis de fraise.",
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Ramollir la gélatine dans l'eau froide.\n3. Chauffer la crème, le lait, le sucre et la vanille puis dissoudre la gélatine essorée. Laisser tiédir.\n4. Répartir la préparation dans les 12 empreintes (environ 140 g par empreinte ; chaque empreinte contient 14 cl).\n5. Placer au réfrigérateur pendant au moins 6h.\n6. Démouler délicatement et napper de coulis de fraise.",
     "for": "12",
     "preptime": "15",
     "resttime": "6h",

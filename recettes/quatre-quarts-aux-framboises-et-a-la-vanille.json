@@ -5,22 +5,22 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "550",
+            "quantity": "465",
             "unit": "g",
             "name": "Beurre pommade"
         },
         {
-            "quantity": "550",
+            "quantity": "465",
             "unit": "g",
             "name": "Sucre"
         },
         {
-            "quantity": "11",
+            "quantity": "9",
             "unit": "Oeufs",
             "name": ""
         },
         {
-            "quantity": "550",
+            "quantity": "465",
             "unit": "g",
             "name": "Farine"
         },
@@ -35,9 +35,14 @@
             "name": "Extrait de vanille"
         },
         {
-            "quantity": "440",
+            "quantity": "375",
             "unit": "g",
             "name": "Framboises"
+        },
+        {
+            "quantity": "15",
+            "unit": "g",
+            "name": "Lait"
         }
     ],
     "accessories": [
@@ -67,8 +72,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Crémer le beurre avec le sucre puis ajouter les œufs un à un et la vanille.\n4. Incorporer la farine et la levure.\n5. Verser la préparation dans le moule (environ 2700 g ; le moule contient 357 cl).\n6. Enfoncer les framboises dans la pâte.\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 170°C pendant 50-60 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
-    "for": "27",
+    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Crémer le beurre avec le sucre puis ajouter les œufs un à un et la vanille.\n4. Incorporer la farine et la levure.\n5. Ajouter le lait et mélanger.\n6. Verser la préparation dans le moule (environ 2285 g ; le moule contient 357 cl).\n7. Enfoncer les framboises dans la pâte.\n8. Taper la plaque sur le plan de travail pour égaliser la pâte.\n9. Enfourner à 170°C pendant 50-60 min (suivant votre four).\n10. Laisser refroidir avant de démouler.",
+    "for": "23",
     "preptime": "15",
     "resttime": "0",
     "cooktime": "50-60",

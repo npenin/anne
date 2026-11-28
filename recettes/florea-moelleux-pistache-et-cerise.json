@@ -5,42 +5,42 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "265",
+            "quantity": "220",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "1 1/2",
-            "unit": "sachets",
+            "quantity": "12",
+            "unit": "g",
             "name": "Levure chimique"
         },
         {
-            "quantity": "80",
+            "quantity": "65",
             "unit": "g",
             "name": "Poudre de pistache"
         },
         {
-            "quantity": "215",
+            "quantity": "180",
             "unit": "g",
             "name": "Sucre"
         },
         {
-            "quantity": "4",
+            "quantity": "3",
             "unit": "Oeufs",
             "name": ""
         },
         {
-            "quantity": "175",
+            "quantity": "145",
             "unit": "g",
             "name": "Beurre fondu"
         },
         {
-            "quantity": "135",
+            "quantity": "130",
             "unit": "g",
             "name": "Lait"
         },
         {
-            "quantity": "200",
+            "quantity": "165",
             "unit": "g",
             "name": "Cerises dénoyautées"
         }
@@ -72,8 +72,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le sucre puis ajouter le beurre et le lait.\n4. Incorporer la farine, la levure et la poudre de pistache.\n5. Ajouter les cerises délicatement.\n6. Verser la préparation dans le moule (environ 1280 g ; le moule contient 167 cl).\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 170°C pendant 38-45 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
-    "for": "13",
+    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le sucre puis ajouter le beurre et le lait.\n4. Incorporer la farine, la levure et la poudre de pistache.\n5. Ajouter les cerises délicatement.\n6. Verser la préparation dans le moule (environ 1070 g ; le moule contient 167 cl).\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 170°C pendant 38-45 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
+    "for": "11",
     "preptime": "15",
     "resttime": "0",
     "cooktime": "38-45",

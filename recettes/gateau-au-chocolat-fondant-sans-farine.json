@@ -5,29 +5,34 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "350",
+            "quantity": "325",
             "unit": "g",
             "name": "Chocolat noir"
         },
         {
-            "quantity": "260",
+            "quantity": "245",
             "unit": "g",
             "name": "Beurre"
         },
         {
-            "quantity": "7",
+            "quantity": "6",
             "unit": "Oeufs",
             "name": ""
         },
         {
-            "quantity": "210",
+            "quantity": "195",
             "unit": "g",
             "name": "Sucre"
         },
         {
-            "quantity": "2",
+            "quantity": "1 1/2",
             "unit": "c-à-s",
             "name": "Maïzena"
+        },
+        {
+            "quantity": "25",
+            "unit": "g",
+            "name": "Crème liquide"
         }
     ],
     "accessories": [
@@ -57,8 +62,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Faire fondre le chocolat avec le beurre.\n4. Fouetter les œufs avec le sucre et la maïzena puis ajouter le chocolat fondu.\n5. Verser la préparation dans le moule (environ 1200 g ; le moule contient 170 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 170°C pendant 32-38 min (suivant votre four).\n8. Laisser refroidir complètement avant de démouler.",
-    "for": "12",
+    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Faire fondre le chocolat avec le beurre.\n4. Fouetter les œufs avec le sucre et la maïzena puis ajouter le chocolat fondu.\n5. Ajouter la crème et mélanger.\n6. Verser la préparation dans le moule (environ 1105 g ; le moule contient 170 cl).\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 170°C pendant 32-38 min (suivant votre four).\n9. Laisser refroidir complètement avant de démouler.",
+    "for": "11",
     "preptime": "15",
     "resttime": "0",
     "cooktime": "32-38",

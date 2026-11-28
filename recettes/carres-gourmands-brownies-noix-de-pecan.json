@@ -5,17 +5,17 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "150",
+            "quantity": "160",
             "unit": "g",
             "name": "Chocolat noir"
         },
         {
-            "quantity": "120",
+            "quantity": "125",
             "unit": "g",
             "name": "Beurre"
         },
         {
-            "quantity": "130",
+            "quantity": "140",
             "unit": "g",
             "name": "Sucre"
         },
@@ -25,14 +25,19 @@
             "name": ""
         },
         {
-            "quantity": "70",
+            "quantity": "75",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "80",
+            "quantity": "85",
             "unit": "g",
             "name": "Noix de pécan concassées"
+        },
+        {
+            "quantity": "9",
+            "unit": "g",
+            "name": "Crème liquide"
         }
     ],
     "accessories": [
@@ -62,7 +67,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Faire fondre le chocolat et le beurre ensemble.\n4. Fouetter les œufs avec le sucre et ajouter le chocolat fondu.\n5. Incorporer la farine puis les noix de pécan.\n6. Répartir la préparation dans les 12 empreintes (environ 60 g par empreinte ; chaque empreinte contient 9,5 cl).\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 170°C pendant 13-15 min (suivant votre four).\n9. Laisser refroidir complètement avant de démouler : le cœur doit rester fondant.",
+    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Faire fondre le chocolat et le beurre ensemble.\n4. Fouetter les œufs avec le sucre et ajouter le chocolat fondu.\n5. Incorporer la farine puis les noix de pécan.\n6. Ajouter la crème et mélanger.\n7. Répartir la préparation dans les 12 empreintes (environ 60 g par empreinte ; chaque empreinte contient 9,5 cl).\n8. Taper la plaque sur le plan de travail pour égaliser la pâte.\n9. Enfourner à 170°C pendant 13-15 min (suivant votre four).\n10. Laisser refroidir complètement avant de démouler : le cœur doit rester fondant.",
     "for": "12",
     "preptime": "15",
     "resttime": "0",

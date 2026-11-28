@@ -5,44 +5,49 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "275",
+            "quantity": "240",
             "unit": "g",
             "name": "Crème de marrons"
         },
         {
-            "quantity": "190",
+            "quantity": "160",
             "unit": "g",
             "name": "Chocolat noir"
         },
         {
-            "quantity": "190",
+            "quantity": "160",
             "unit": "g",
             "name": "Beurre"
         },
         {
-            "quantity": "5",
+            "quantity": "4",
             "unit": "Oeufs",
             "name": ""
         },
         {
-            "quantity": "75",
+            "quantity": "65",
             "unit": "g",
             "name": "Sucre"
         },
         {
-            "quantity": "60",
+            "quantity": "55",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "125",
+            "quantity": "110",
             "unit": "g",
             "name": "Chocolat noir"
         },
         {
-            "quantity": "75",
+            "quantity": "65",
             "unit": "g",
             "name": "Crème liquide"
+        },
+        {
+            "quantity": "15",
+            "unit": "g",
+            "name": "Lait"
         }
     ],
     "accessories": [
@@ -72,8 +77,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Faire fondre le chocolat et le beurre puis ajouter la crème de marrons.\n4. Fouetter les œufs avec le sucre et les ajouter à la préparation puis la farine.\n5. Verser la préparation dans le moule (environ 1040 g ; le moule contient 138 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 170°C pendant 38-45 min (suivant votre four).\n8. Laisser refroidir puis démouler. Napper d'une ganache faite avec le chocolat et la crème chauds, et strier à la fourchette pour imiter l'écorce.",
-    "for": "10",
+    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Faire fondre le chocolat et le beurre puis ajouter la crème de marrons.\n4. Fouetter les œufs avec le sucre et les ajouter à la préparation puis la farine.\n5. Ajouter le lait et mélanger.\n6. Verser la préparation dans le moule (environ 895 g ; le moule contient 138 cl).\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 170°C pendant 38-45 min (suivant votre four).\n9. Laisser refroidir puis démouler. Napper d'une ganache faite avec le chocolat et la crème chauds, et strier à la fourchette pour imiter l'écorce.",
+    "for": "9",
     "preptime": "15",
     "resttime": "0",
     "cooktime": "38-45",

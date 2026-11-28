@@ -5,27 +5,27 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "225",
+            "quantity": "150",
             "unit": "g",
             "name": "Chocolat noir"
         },
         {
-            "quantity": "75",
+            "quantity": "50",
             "unit": "g",
             "name": "Pâte de noisette"
         },
         {
-            "quantity": "375",
+            "quantity": "255",
             "unit": "g",
             "name": "Crème liquide entière froide"
         },
         {
-            "quantity": "3",
+            "quantity": "2",
             "unit": "Jaunes d'oeufs",
             "name": ""
         },
         {
-            "quantity": "45",
+            "quantity": "30",
             "unit": "g",
             "name": "Sucre"
         }
@@ -57,8 +57,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Fouetter les jaunes avec le sucre au bain-marie puis verser sur le chocolat fondu et la pâte de noisette.\n3. Monter la crème en chantilly et l'incorporer.\n4. Verser la préparation dans le moule (environ 780 g ; le moule contient 73 cl).\n5. Placer au réfrigérateur pendant au moins 4h.\n6. Démouler en poussant doucement depuis le dessous du moule silicone.",
-    "for": "8",
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Fouetter les jaunes avec le sucre au bain-marie puis verser sur le chocolat fondu et la pâte de noisette.\n3. Monter la crème en chantilly et l'incorporer.\n4. Verser la préparation dans le moule (environ 525 g ; le moule contient 73 cl).\n5. Placer au congélateur pendant au moins 4h.\n6. Démouler en poussant doucement depuis le dessous du moule silicone.",
+    "for": "5",
     "preptime": "15",
     "resttime": "4h",
     "cooktime": "0",

@@ -5,27 +5,27 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "465",
+            "quantity": "370",
             "unit": "g",
             "name": "Mascarpone"
         },
         {
-            "quantity": "465",
+            "quantity": "370",
             "unit": "g",
             "name": "Crème liquide entière froide"
         },
         {
-            "quantity": "130",
+            "quantity": "105",
             "unit": "g",
             "name": "Sucre glace"
         },
         {
-            "quantity": "370",
+            "quantity": "295",
             "unit": "g",
             "name": "Framboises"
         },
         {
-            "quantity": "9",
+            "quantity": "7",
             "unit": "g",
             "name": "Gélatine en feuilles"
         }
@@ -57,8 +57,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Ramollir la gélatine. Chauffer 50 g de crème, y dissoudre la gélatine puis mélanger au mascarpone et au sucre glace.\n3. Monter le reste de crème en chantilly et l'incorporer.\n4. Ajouter la moitié des framboises écrasées.\n5. Verser la préparation dans le moule (environ 1440 g ; le moule contient 160 cl).\n6. Placer au réfrigérateur pendant au moins 5h.\n7. Démouler et garnir de framboises entières.",
-    "for": "14",
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Ramollir la gélatine. Chauffer 50 g de crème, y dissoudre la gélatine puis mélanger au mascarpone et au sucre glace.\n3. Monter le reste de crème en chantilly et l'incorporer.\n4. Ajouter la moitié des framboises écrasées.\n5. Verser la préparation dans le moule (environ 1150 g ; le moule contient 160 cl).\n6. Placer au réfrigérateur pendant au moins 5h.\n7. Démouler et garnir de framboises entières.",
+    "for": "12",
     "preptime": "15",
     "resttime": "5h",
     "cooktime": "0",

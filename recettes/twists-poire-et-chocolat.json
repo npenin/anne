@@ -5,17 +5,17 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "200",
+            "quantity": "185",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "1",
-            "unit": "sachet",
+            "quantity": "8",
+            "unit": "g",
             "name": "Levure chimique"
         },
         {
-            "quantity": "110",
+            "quantity": "100",
             "unit": "g",
             "name": "Sucre"
         },
@@ -25,12 +25,12 @@
             "name": ""
         },
         {
-            "quantity": "100",
+            "quantity": "90",
             "unit": "g",
             "name": "Beurre fondu"
         },
         {
-            "quantity": "60",
+            "quantity": "40",
             "unit": "g",
             "name": "Lait"
         },
@@ -40,7 +40,7 @@
             "name": "Poire en petits dés"
         },
         {
-            "quantity": "60",
+            "quantity": "55",
             "unit": "g",
             "name": "Pépites de chocolat"
         }

@@ -5,37 +5,37 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "760",
+            "quantity": "655",
             "unit": "g",
             "name": "Saumon fumé"
         },
         {
-            "quantity": "635",
+            "quantity": "545",
             "unit": "g",
             "name": "Fromage frais"
         },
         {
-            "quantity": "635",
+            "quantity": "545",
             "unit": "g",
             "name": "Crème liquide entière"
         },
         {
-            "quantity": "20",
+            "quantity": "15",
             "unit": "g",
             "name": "Gélatine en feuilles"
         },
         {
-            "quantity": "2 1/2",
+            "quantity": "2",
             "unit": "",
             "name": "Citron (jus)"
         },
         {
-            "quantity": "2 1/2",
+            "quantity": "2",
             "unit": "c-à-s",
             "name": "Aneth"
         },
         {
-            "quantity": "1.0",
+            "quantity": "1",
             "unit": "pincée",
             "name": "Poivre"
         }
@@ -67,8 +67,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Ramollir la gélatine. Mixer le saumon avec le fromage frais, le citron, l'aneth et le poivre.\n3. Chauffer 80 g de crème pour dissoudre la gélatine essorée puis l'ajouter à la mousse.\n4. Monter le reste de crème en chantilly et l'incorporer.\n5. Verser la préparation dans le moule (environ 2340 g ; le moule contient 260 cl).\n6. Placer au réfrigérateur pendant au moins 6h.\n7. Démouler en poussant doucement depuis le dessous du moule silicone.",
-    "for": "23",
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Ramollir la gélatine. Mixer le saumon avec le fromage frais, le citron, l'aneth et le poivre.\n3. Chauffer 80 g de crème pour dissoudre la gélatine essorée puis l'ajouter à la mousse.\n4. Monter le reste de crème en chantilly et l'incorporer.\n5. Verser la préparation dans le moule (environ 1870 g ; le moule contient 260 cl).\n6. Placer au réfrigérateur pendant au moins 6h.\n7. Démouler en poussant doucement depuis le dessous du moule silicone.",
+    "for": "19",
     "preptime": "15",
     "resttime": "6h",
     "cooktime": "0",

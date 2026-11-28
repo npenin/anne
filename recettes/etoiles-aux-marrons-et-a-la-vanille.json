@@ -5,7 +5,7 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "100",
+            "quantity": "95",
             "unit": "g",
             "name": "Crème de marrons"
         },
@@ -15,8 +15,8 @@
             "name": "Beurre fondu"
         },
         {
-            "quantity": "2",
-            "unit": "Oeufs",
+            "quantity": "1",
+            "unit": "Oeuf",
             "name": ""
         },
         {
@@ -30,14 +30,19 @@
             "name": "Farine"
         },
         {
-            "quantity": "1/2",
-            "unit": "sachet",
+            "quantity": "3",
+            "unit": "g",
             "name": "Levure chimique"
         },
         {
             "quantity": "1/2",
             "unit": "c-à-s",
             "name": "Extrait de vanille"
+        },
+        {
+            "quantity": "45",
+            "unit": "g",
+            "name": "Lait"
         }
     ],
     "accessories": [
@@ -67,7 +72,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Mélanger la crème de marrons avec le beurre fondu, le sucre et la vanille.\n4. Ajouter les œufs un à un puis la farine et la levure.\n5. Répartir la préparation dans les 12 empreintes (environ 35 g par empreinte ; chaque empreinte contient 4,9 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 170°C pendant 12-15 min (suivant votre four).\n8. Laisser refroidir avant de démouler.",
+    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Mélanger la crème de marrons avec le beurre fondu, le sucre et la vanille.\n4. Ajouter les œufs un à un puis la farine et la levure.\n5. Ajouter le lait et mélanger.\n6. Répartir la préparation dans les 12 empreintes (environ 30 g par empreinte ; chaque empreinte contient 4,9 cl).\n7. Taper la plaque sur le plan de travail pour égaliser la pâte.\n8. Enfourner à 170°C pendant 12-15 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
     "for": "12",
     "preptime": "15",
     "resttime": "0",

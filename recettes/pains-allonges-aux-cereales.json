@@ -5,22 +5,22 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "190",
+            "quantity": "280",
             "unit": "g",
             "name": "Farine T65"
         },
         {
-            "quantity": "40",
+            "quantity": "55",
             "unit": "g",
             "name": "Farine complète"
         },
         {
-            "quantity": "6",
+            "quantity": "9",
             "unit": "g",
             "name": "Levure sèche de boulanger"
         },
         {
-            "quantity": "145",
+            "quantity": "210",
             "unit": "g",
             "name": "Eau tiède"
         },
@@ -30,7 +30,7 @@
             "name": "Sel"
         },
         {
-            "quantity": "2 1/2",
+            "quantity": "3 1/2",
             "unit": "c-à-s",
             "name": "Graines de lin et de tournesol"
         }
@@ -62,7 +62,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Mélanger les farines, la levure, le sel et l'eau puis pétrir 10 min.\n2. Ajouter les graines. Laisser pousser 1 h.\n3. Diviser en petits boudins.\n4. Poser votre moule sur une plaque aluminium perforée.\n5. Répartir la préparation dans les 12 empreintes (environ 35 g par empreinte ; chaque empreinte contient 6,6 cl).\n6. Laisser lever encore 30 min à température ambiante.\n7. Préchauffer votre four à 180°C.\n8. Enfourner à 180°C pendant 15-18 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
+    "steps": "1. Mélanger les farines, la levure, le sel et l'eau puis pétrir 10 min.\n2. Ajouter les graines. Laisser pousser 1 h.\n3. Diviser en petits boudins.\n4. Poser votre moule sur une plaque aluminium perforée.\n5. Répartir la préparation dans les 12 empreintes (environ 50 g par empreinte ; chaque empreinte contient 9 cl).\n6. Laisser lever encore 30 min à température ambiante.\n7. Préchauffer votre four à 180°C.\n8. Enfourner à 180°C pendant 15-18 min (suivant votre four).\n9. Laisser refroidir avant de démouler.",
     "for": "12",
     "preptime": "25",
     "resttime": "1h30",

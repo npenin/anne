@@ -5,37 +5,37 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "500",
+            "quantity": "395",
             "unit": "g",
             "name": "Mascarpone"
         },
         {
-            "quantity": "500",
+            "quantity": "395",
             "unit": "g",
             "name": "Crème liquide entière"
         },
         {
-            "quantity": "160",
+            "quantity": "125",
             "unit": "g",
             "name": "Sucre glace"
         },
         {
-            "quantity": "6",
+            "quantity": "5",
             "unit": "Jaunes d'oeufs",
             "name": ""
         },
         {
-            "quantity": "300",
+            "quantity": "240",
             "unit": "g",
             "name": "Café fort refroidi"
         },
         {
-            "quantity": "300",
+            "quantity": "240",
             "unit": "g",
             "name": "Biscuits à la cuillère"
         },
         {
-            "quantity": "4",
+            "quantity": "3",
             "unit": "c-à-s",
             "name": "Cacao en poudre"
         }
@@ -67,8 +67,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Fouetter les jaunes avec le sucre glace puis le mascarpone.\n3. Monter la crème en chantilly et l'incorporer délicatement.\n4. Tremper rapidement les biscuits dans le café.\n5. Remplir le moule en couches : crème, biscuits imbibés, crème.\n6. Verser la préparation dans le moule (environ 1940 g ; le moule contient 210 cl).\n7. Placer au congélateur pendant au moins 6h.\n8. Démouler puis saupoudrer de cacao. Sortir 20 min avant la dégustation.",
-    "for": "19",
+    "steps": "1. Poser votre moule sur une plaque aluminium perforée (elle facilitera le passage au froid).\n2. Fouetter les jaunes avec le sucre glace puis le mascarpone.\n3. Monter la crème en chantilly et l'incorporer délicatement.\n4. Tremper rapidement les biscuits dans le café.\n5. Remplir le moule en couches : crème, biscuits imbibés, crème.\n6. Verser la préparation dans le moule (environ 1510 g ; le moule contient 210 cl).\n7. Placer au congélateur pendant au moins 6h.\n8. Démouler puis saupoudrer de cacao. Sortir 20 min avant la dégustation.",
+    "for": "15",
     "preptime": "15",
     "resttime": "6h",
     "cooktime": "0",

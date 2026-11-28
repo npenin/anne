@@ -5,17 +5,17 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "375",
+            "quantity": "340",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "1",
-            "unit": "sachet",
+            "quantity": "13",
+            "unit": "g",
             "name": "Levure chimique"
         },
         {
-            "quantity": "250",
+            "quantity": "225",
             "unit": "g",
             "name": "Sucre"
         },
@@ -25,12 +25,12 @@
             "name": ""
         },
         {
-            "quantity": "190",
+            "quantity": "150",
             "unit": "g",
             "name": "Yaourt nature"
         },
         {
-            "quantity": "150",
+            "quantity": "135",
             "unit": "g",
             "name": "Beurre fondu"
         },
@@ -40,12 +40,12 @@
             "name": "Citron (zeste et jus)"
         },
         {
-            "quantity": "190",
+            "quantity": "170",
             "unit": "g",
             "name": "Myrtilles"
         },
         {
-            "quantity": "100",
+            "quantity": "90",
             "unit": "g",
             "name": "Sucre glace"
         }
@@ -77,8 +77,8 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le sucre puis ajouter le yaourt, le beurre fondu, le zeste et le jus du citron.\n4. Incorporer la farine et la levure, puis les myrtilles farinées délicatement.\n5. Verser la préparation dans le moule (environ 1540 g ; le moule contient 209 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 170°C pendant 45-52 min (suivant votre four).\n8. Laisser refroidir avant de démouler et saupoudrer de sucre glace.",
-    "for": "15",
+    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le sucre puis ajouter le yaourt, le beurre fondu, le zeste et le jus du citron.\n4. Incorporer la farine et la levure, puis les myrtilles farinées délicatement.\n5. Verser la préparation dans le moule (environ 1340 g ; le moule contient 209 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 170°C pendant 45-52 min (suivant votre four).\n8. Laisser refroidir avant de démouler et saupoudrer de sucre glace.",
+    "for": "13",
     "preptime": "15",
     "resttime": "0",
     "cooktime": "45-52",

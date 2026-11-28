@@ -5,17 +5,17 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "300",
+            "quantity": "275",
             "unit": "g",
             "name": "Farine T45"
         },
         {
-            "quantity": "25",
+            "quantity": "30",
             "unit": "g",
             "name": "Levure fraîche de boulanger"
         },
         {
-            "quantity": "55",
+            "quantity": "45",
             "unit": "g",
             "name": "Sucre"
         },
@@ -25,22 +25,22 @@
             "name": ""
         },
         {
-            "quantity": "100",
+            "quantity": "90",
             "unit": "g",
             "name": "Lait tiède"
         },
         {
-            "quantity": "80",
+            "quantity": "75",
             "unit": "g",
             "name": "Beurre mou"
         },
         {
-            "quantity": "1.0",
+            "quantity": "1",
             "unit": "pincée",
             "name": "Sel"
         },
         {
-            "quantity": "95",
+            "quantity": "85",
             "unit": "g",
             "name": "Pépites de chocolat"
         }

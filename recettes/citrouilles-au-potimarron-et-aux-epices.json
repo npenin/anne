@@ -5,17 +5,17 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "85",
+            "quantity": "100",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "1/2",
-            "unit": "sachet",
+            "quantity": "4",
+            "unit": "g",
             "name": "Levure chimique"
         },
         {
-            "quantity": "50",
+            "quantity": "55",
             "unit": "g",
             "name": "Sucre roux"
         },
@@ -25,12 +25,12 @@
             "name": ""
         },
         {
-            "quantity": "40",
+            "quantity": "45",
             "unit": "g",
             "name": "Huile"
         },
         {
-            "quantity": "75",
+            "quantity": "85",
             "unit": "g",
             "name": "Purée de potimarron"
         },
@@ -72,7 +72,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le sucre roux et l'huile.\n4. Ajouter la purée de potimarron puis la farine, la levure et les épices.\n5. Répartir la préparation dans les 6 empreintes (environ 55 g par empreinte ; chaque empreinte contient 9,2 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 170°C pendant 15-18 min (suivant votre four).\n8. Laisser refroidir avant de démouler.",
+    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le sucre roux et l'huile.\n4. Ajouter la purée de potimarron puis la farine, la levure et les épices.\n5. Répartir la préparation dans les 6 empreintes (environ 60 g par empreinte ; chaque empreinte contient 9,2 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 170°C pendant 15-18 min (suivant votre four).\n8. Laisser refroidir avant de démouler.",
     "for": "6",
     "preptime": "15",
     "resttime": "0",

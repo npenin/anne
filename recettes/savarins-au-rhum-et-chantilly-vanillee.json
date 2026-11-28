@@ -5,54 +5,59 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "600",
+            "quantity": "560",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "25",
+            "quantity": "20",
             "unit": "g",
             "name": "Levure sèche de boulanger"
         },
         {
-            "quantity": "9",
+            "quantity": "8",
             "unit": "Oeufs",
             "name": ""
         },
         {
-            "quantity": "180",
+            "quantity": "165",
             "unit": "g",
             "name": "Beurre fondu"
         },
         {
-            "quantity": "60",
+            "quantity": "55",
             "unit": "g",
             "name": "Sucre"
         },
         {
-            "quantity": "600",
+            "quantity": "360",
             "unit": "g",
             "name": "Eau"
         },
         {
-            "quantity": "300",
+            "quantity": "180",
             "unit": "g",
             "name": "Sucre"
         },
         {
-            "quantity": "10",
+            "quantity": "8",
             "unit": "cl",
             "name": "Rhum"
         },
         {
-            "quantity": "600",
+            "quantity": "335",
             "unit": "g",
             "name": "Crème liquide"
         },
         {
-            "quantity": "60",
+            "quantity": "35",
             "unit": "g",
             "name": "Sucre glace"
+        },
+        {
+            "quantity": "20",
+            "unit": "g",
+            "name": "Lait"
         }
     ],
     "accessories": [
@@ -82,7 +87,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Mélanger la farine, la levure, le sucre, les œufs puis le beurre fondu. Battre la pâte 5 min et laisser pousser 45 min.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Répartir la préparation dans les 12 empreintes (environ 110 g par empreinte ; chaque empreinte contient 18,5 cl).\n4. Laisser lever encore 20 min.\n5. Préchauffer votre four à 180°C.\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 180°C pendant 22-27 min (suivant votre four).\n8. Préparer le sirop (eau, sucre, rhum) et y imbiber les savarins tièdes. Servir avec de la chantilly.",
+    "steps": "1. Mélanger la farine, la levure, le sucre, les œufs puis le beurre fondu. Battre la pâte 5 min et laisser pousser 45 min.\n2. Ajouter le lait et mélanger.\n3. Poser votre moule sur une plaque aluminium perforée.\n4. Répartir la préparation dans les 12 empreintes (environ 100 g par empreinte ; chaque empreinte contient 18,5 cl).\n5. Laisser lever encore 30 min à température ambiante.\n6. Préchauffer votre four à 180°C.\n7. Enfourner à 180°C pendant 22-27 min (suivant votre four).\n8. Préparer le sirop (eau, sucre, rhum) et y imbiber les savarins tièdes. Servir avec de la chantilly.",
     "for": "12",
     "preptime": "20",
     "resttime": "1h30",

@@ -5,22 +5,22 @@
     "draft": true,
     "toppings": [
         {
-            "quantity": "60",
+            "quantity": "85",
             "unit": "g",
             "name": "Farine"
         },
         {
-            "quantity": "15",
+            "quantity": "20",
             "unit": "g",
             "name": "Cacao non sucré"
         },
         {
-            "quantity": "1/2",
-            "unit": "sachet",
+            "quantity": "4",
+            "unit": "g",
             "name": "Levure chimique"
         },
         {
-            "quantity": "50",
+            "quantity": "70",
             "unit": "g",
             "name": "Sucre"
         },
@@ -30,22 +30,22 @@
             "name": ""
         },
         {
-            "quantity": "50",
+            "quantity": "95",
             "unit": "g",
             "name": "Lait"
         },
         {
-            "quantity": "25",
+            "quantity": "35",
             "unit": "g",
             "name": "Huile"
         },
         {
-            "quantity": "40",
+            "quantity": "60",
             "unit": "g",
             "name": "Chocolat noir"
         },
         {
-            "quantity": "15",
+            "quantity": "20",
             "unit": "g",
             "name": "Noisettes concassées"
         }
@@ -77,7 +77,7 @@
             "url": "https://boutique.guydemarle.com/plaque-de-cuisson-pour-four-et-plaque-a-patisserie/665-plaque-aluminium-perforee-40-x-30-cm-guy-demarle.html"
         }
     ],
-    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le sucre, le lait et l'huile.\n4. Incorporer la farine, le cacao et la levure tamisés.\n5. Répartir la préparation dans les 24 empreintes (environ 10 g par empreinte ; chaque empreinte contient 2,4 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 170°C pendant 10-12 min (suivant votre four).\n8. Laisser refroidir, tremper dans le chocolat fondu et parsemer de noisettes.",
+    "steps": "1. Préchauffer votre four à 170°C.\n2. Poser votre moule sur une plaque aluminium perforée.\n3. Fouetter les œufs avec le sucre, le lait et l'huile.\n4. Incorporer la farine, le cacao et la levure tamisés.\n5. Répartir la préparation dans les 24 empreintes (environ 15 g par empreinte ; chaque empreinte contient 2,4 cl).\n6. Taper la plaque sur le plan de travail pour égaliser la pâte.\n7. Enfourner à 170°C pendant 10-12 min (suivant votre four).\n8. Laisser refroidir, tremper dans le chocolat fondu et parsemer de noisettes.",
     "for": "24",
     "preptime": "15",
     "resttime": "0",
