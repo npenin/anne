@@ -97,8 +97,8 @@ M['9221']=[
 ]
 # --- 8 gaufres (8 x 10 cl)
 M['4416']=[
- R("Gaufres au four briochées et sucre perlé",'p',["300 g|Farine","1 sachet|Levure chimique","80 g|Sucre","3 œufs","200 g|Lait","100 g|Beurre fondu","1 cs|Extrait de vanille","*40 g|Sucre perlé"],
-  ["Mélanger la farine, la levure et le sucre.","Ajouter les œufs, le lait, le beurre fondu et la vanille puis mélanger jusqu'à obtenir une pâte lisse.","{FILL}","Parsemer de sucre perlé."],fill=.6,tm=.9),
+ R("Gaufres au four briochées et sucre perlé",'g',["300 g|Farine","1 sachet|Levure chimique","80 g|Sucre","3 œufs","200 g|Lait","100 g|Beurre fondu","1 cs|Extrait de vanille","*40 g|Sucre perlé"],
+  ["Mélanger la farine, la levure et le sucre.","Ajouter les œufs, le lait, le beurre fondu et la vanille puis mélanger jusqu'à obtenir une pâte lisse.","{FILL}","Parsemer de sucre perlé."],tm=.9),
  R("Gaufres au four au cheddar et au bacon",'s',["250 g|Farine","1 sachet|Levure chimique","3 œufs","200 g|Lait","60 g|Beurre fondu","100 g|Cheddar râpé","80 g|Lardons grillés","1 pincée|Poivre"],
   ["Fouetter les œufs avec le lait et le beurre fondu.","Ajouter la farine, la levure et le poivre.","Incorporer le cheddar et les lardons grillés.","{FILL}"],fill=.6),
  R("Gaufres moelleuses au yaourt et aux pépites de chocolat",'g',["220 g|Farine","1 sachet|Levure chimique","90 g|Sucre","2 œufs","125 g|Yaourt nature","80 g|Lait","60 g|Beurre fondu","80 g|Pépites de chocolat"],

@@ -107,8 +107,8 @@ M['9281']=[
   ["Fouetter les œufs avec le sucre, le yaourt, le beurre, le zeste et le jus de citron.","Incorporer la farine, la levure et le pavot.","{FILL}"]),
 ]
 M['9280']=[
- R("Savarins au rhum et chantilly vanillée",'g',["200 g|Farine","8 g|Levure sèche de boulanger","3 œufs","60 g|Beurre fondu","20 g|Sucre","*200 g|Eau","*100 g|Sucre","*4 cl|Rhum","*200 g|Crème liquide","*20 g|Sucre glace"],
-  ["Mélanger la farine, la levure, le sucre, les œufs puis le beurre fondu. Battre la pâte 5 min et laisser pousser 45 min.","{FILL}","Laisser lever encore 20 min."],tmp=180,fill=.55,rest='1h30',prep=20,cool="Préparer le sirop (eau, sucre, rhum) et y imbiber les savarins tièdes. Servir avec de la chantilly."),
+ R("Savarins au rhum et chantilly vanillée",'p',["200 g|Farine","8 g|Levure sèche de boulanger","3 œufs","60 g|Beurre fondu","20 g|Sucre","*130 g|Eau","*65 g|Sucre","*3 cl|Rhum","*120 g|Crème liquide","*12 g|Sucre glace"],
+  ["Mélanger la farine, la levure, le sucre, les œufs puis le beurre fondu. Battre la pâte 5 min et laisser pousser 45 min.","{FILL}"],tmp=180,rest='1h30',prep=20,cool="Préparer le sirop (eau, sucre, rhum) et y imbiber les savarins tièdes. Servir avec de la chantilly."),
  R("Savarins mousse chocolat noir",'e',["200 g|Chocolat noir","300 g|Crème liquide entière froide","4 jaunes","60 g|Sucre","*40 g|Éclats de noisette"],
   ["Fouetter les jaunes avec le sucre au bain-marie jusqu'à ce que le mélange épaississe.","Verser sur le chocolat fondu et lisser.","Monter la crème en chantilly et l'incorporer délicatement.","{FILL}"],cold='réfrigérateur',rest='4h',cool="Démouler et parsemer d'éclats de noisette."),
  R("Savarins salés au saumon et au fromage frais",'e',["250 g|Fromage frais","200 g|Saumon fumé","150 g|Crème liquide entière","6 g|Gélatine en feuilles","1 cs|Aneth","1 u|Citron (jus)"],
